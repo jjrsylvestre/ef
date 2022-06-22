@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-graphs" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Exercises</title>
+
+<!-- TODO check this against Roman -->
+<!-- TODO: figure out a way to put Hunter 2.1 #9 in here. Probably just leave it as an assignment question with attribution. -->
+
+<exercise>
+	<introduction>
+		<p> Consider the graph in <xref ref="figure-graphs-basics-exercise" />. </p>
+		<figure xml:id="figure-graphs-basics-exercise">
+			<caption>An example graph.</caption>
+			<image width="40%">
+				<description>An example graph.</description>
+				<latex-image><xi:include href="exercises.d/basics.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+	</introduction>
+	<task><p> Are vertices 1 and 2 incident? </p></task>
+	<task><p> Are any vertices adjacent to themselves? </p></task>
+	<task><p> Is vertex 3 adjacent to vertex 6? </p></task>
+	<task><p> Is this a simple graph? </p></task>
+	<task><p>
+		Compute the degree of each vertex in the graph.
+		Then verify that the sum of the degrees is equal to twice the number of edges.
+		(See <xref ref="theorem-graphs-sum-of-degrees" />.)
+	</p></task>
+</exercise>
+
+<exercise>
+	<task>
+		<statement><p> How many edges does the complete graph with ten vertices have? </p></statement>
+		<hint><p> See <xref ref="theorem-graphs-sum-of-degrees" />. </p></hint>
+	</task>
+	<task><p> Generalize your result to a formula for the number of edges in the complete graph with <m>n</m> vertices. </p></task>
+</exercise>
+
+<exercise>
+	<task><p> Draw an example of a simple graph that has no vertices of odd degree. </p></task>
+	<task><p> Draw an example of a simple graph that has no vertices of even degree. </p></task>
+</exercise>
+
+<exercise><p>
+	Given a collection of sets <m>A_1,A_2,\dotsc,A_n</m>,
+	the intersection graph of the collection is the simple graph that has a vertex for each of the sets in the collection,
+	with two vertices joined by an edge if and only if the two corresponding sets have nonempty intersection.
+	Draw the intersection graph of the following collection of sets.
+	<md alignment="gather">
+		<mrow> A_1 = \{1,2,3,4,5\}, </mrow>
+		<mrow> A_2 = \{2,4,6,8\}, </mrow>
+		<mrow> A_3 = \{3,5,12\}, </mrow>
+		<mrow> A_4 = \{5,8,10\}. </mrow>
+	</md>
+</p></exercise>
+
+<exercisegroup xml:id="exercisegroup-graphs-complement">
+	<title>Complement of a graph</title>
+	<introduction><p>
+		<xref ref="exercisegroup-graphs-complement" text="type-local">Exercises</xref>
+		concern the following definition.
+		<dl><li>
+			<title>complement (of a simple graph <m>G</m>)</title>
+			<idx><h>graph</h><h>complement</h></idx>
+			<idx><h>complement</h><h>of a simple graph</h></idx>
+			<p>
+			the simple graph that has the same vertex set as <m>G</m>,
+			but in which two vertices are joined by an edge if and only if those same two vertices are not joined by an edge in <m>G</m>
+			</p>
+		</li></dl>
+	</p></introduction>
+	<exercise>
+		<p> Draw the complement of the simple graph in <xref ref="figure-graphs-complement-basic" />. </p>
+		<figure xml:id="figure-graphs-complement-basic">
+			<caption>A simple graph.</caption>
+			<image width="20%">
+				<description>A simple graph.</description>
+				<latex-image><xi:include href="exercises.d/complement.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+	</exercise>
+	<exercise><p>
+		What is the complement of a complete graph?
+	</p></exercise>
+	<exercise>
+		<statement><p>
+			Suppose <m>G</m> is a simple graph with <m>n</m> vertices.
+			Determine a relationship between the number of edges in <m>G</m>,
+			the number of edges in the complement of <m>G</m>,
+			and the number of edges in the complete graph <m>K_n</m> with <m>n</m> vertices.
+		</p></statement>
+		<hint><p> Recall that every simple graph with <m>n</m> vertices is a subgraph of <m>K_n</m>. </p></hint>
+	</exercise>
+</exercisegroup>
+
+</exercises>

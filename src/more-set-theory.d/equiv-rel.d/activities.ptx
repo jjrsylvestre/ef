@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<worksheet xml:id="activities-equiv-rel">
+
+<activity>
+	<introduction><p>
+		For each of the relations provided,
+		carry out the following steps.
+		<ol label="(i)">
+			<li> Verify that the relation is an equivalence relation on the set <m>A</m>. </li>
+			<li>
+				Consider a few example equivalence classes, for the specific example representative elements provided (if applicable).
+				What other elements are in that class?
+			</li>
+			<li>
+				Devise a general way to describe <em>every</em> equivalence class,
+				using your experience from the example classes already considered (if applicable).
+				Make your class descriptions more meaningful than just <q>all elements equivalent to a specific representative element.</q>
+			</li>
+			<li> List/describe all elements in the quotient <m>A/\equiv</m>. </li>
+		</ol>
+	</p></introduction>
+	<task><p>
+		Relation <m>\mathord{\equiv}</m> on <m>A = \Z</m>,
+		where <m>m \equiv n</m> means <m>m^2 = n^2</m>.
+		Example equivalence classes for <m>1, 10, -2, 0</m>.
+	</p></task>
+	<task><p>
+		Relation <m>\mathord{\equiv}</m> on <m>A = \R \times \R</m>,
+		where <m>(x_1,y_1) \equiv (x_2,y_2)</m> means <m>x_1^2 + y_1^2 = x_2^2 + y_2^2</m>.
+		Example equivalence classes for <m>(1,1), (3,4), (\sqrt{2}/2,-\sqrt{2}/2), (0,0)</m>.
+	</p></task>
+	<task><p>
+		Relation <m>\mathord{\equiv}</m> on <m>A = \R \times \R</m>,
+		where <m>(x_1,y_1) \equiv (x_2,y_2)</m> means <m>y_1^2 - x_1 = y_2^2 - x_2</m>.
+		Example equivalence classes for <m>(0,0), (0,1), (1,-1)</m>.
+	</p></task>
+	<task><p>
+		Relation <m>\mathord{\equiv}</m> on <m>A = \powset{\{a,b,c,d\}}</m>,
+		where <m>X \equiv Y</m> means <m>\abs{\cmplmnt{X}} = \abs{\cmplmnt{Y}}</m>.
+		Example equivalence classes for <m>\emptyset, \{a\}, \{a,b\}, \{a,b,c\}, \{a,b,c,d\}</m>.
+	</p></task>
+	<task><p>
+		Relation <m>\mathord{\equiv}</m> on the vertex set <m>A = V</m> of a graph <m>G</m>,
+		where <m>v \equiv v'</m> means there exists a path in <m>G</m> from <m>v</m> to <m>v'</m>.
+	</p></task>
+	<task><p>
+		Given function <m>\funcdef{f}{A}{B}</m>,
+		the relation <m>\mathord{\equiv}</m> on the domain <m>A</m>,
+		where <m>a_1 \equiv a_2</m> means <m>f(a_1) = f(a_2)</m>.
+	</p></task>
+</activity>
+
+<activity>
+	<statement>
+		<p>
+		A sequence from a set <m>A</m> could also be called an <term>ordered list</term>.
+		For example, given distinct <m>a_1,a_2 \in A</m>,
+		the finite sequences <m>a_1,a_1,a_2</m> and <m>a_1,a_2,a_1</m> are different sequences,
+		because order matters in a sequence.
+		However, as an <term>unordered list</term>, <m>a_1,a_1,a_2</m> is the <em>same</em> as <m>a_1,a_2,a_1</m>.
+		</p><p>
+		Write <m>\mathscr{S}_A</m> for the set of all finite sequences from <m>A</m>.
+		Devise an equivalence relation <m>\mathord{\equiv}</m> on <m>\mathscr{S}_A</m>
+		such that the quotient set <m>\mathscr{S}_A / \mathord{\equiv}</m>
+		represents the set of all finite <em>un</em>ordered lists from <m>A</m>.
+		</p>
+	</statement>
+	<hint><p>
+		When should two different finite sequences be considered <em>equivalent</em> as unordered lists?
+	</p></hint>
+</activity>
+
+<activity>
+	<introduction><p>
+		Suppose <m>\mathord{\equiv}</m> and <m>\mathord{\equiv}'</m> are equivalence relations on a set <m>A</m>.
+		Determine which of the following are also equivalence relations.
+	</p></introduction>
+	<task><p> <m>\cmplmnt{\mathord{\equiv}}</m> </p></task>
+	<task><p> <m>\mathord{\equiv} \union \mathord{\equiv}'</m> </p></task>
+	<task><p> <m>\mathord{\equiv} \intersection \mathord{\equiv}' </m></p></task>
+	<conclusion><p> See <xref ref="activity-relations-propogation-of-properties" />. </p></conclusion>
+</activity>
+
+</worksheet>

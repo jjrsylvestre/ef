@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-combinations">
+<title>Exercises</title>
+
+<exercisegroup xml:id="exercisegroup-combinations-compute" cols="2">
+	<title>Evaluating the combination formula</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-combinations-compute" text="type-local">Exercises</xref>,
+		compute the value of the combination or formula of combinations.
+		To obtain exact answers, you should simplify the factorial expressions before computing.
+	</p></introduction>
+	<exercise><p><m>\combination{4}{4}</m></p></exercise>
+	<exercise><p><m>\combination{13}{5}</m></p></exercise>
+	<exercise><p><m>\combination{1000000}{999998}</m></p></exercise>
+	<exercise><p><m>\combination{7}{0}</m></p></exercise>
+	<exercise><p><m>\combination{10}{6} \cdot \combination{6}{3}</m></p></exercise>
+	<exercise><p><m>\combination{10}{9} / \combination{5}{2}</m></p></exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercisegroup-combinations-verify" cols="2">
+	<title>Combination formula identities</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-combinations-verify" text="type-local">Exercises</xref>,
+		verify the equality of combination formulas.
+		Remember to consider the left-hand and right-hand sides of each equality <alert>separately</alert>,
+		manipulating/simplifying one or the other or both sides until they are the same expression.
+	</p></introduction>
+	<exercise><p>
+		<m>\displaystyle \combination{n}{k} = \frac{n}{k} \cdot \combination{n-1}{k-1}</m>
+	</p></exercise>
+	<exercise><p> <m>\displaystyle \combination{n}{k} = \frac{n}{n - k} \cdot \combination{n - 1}{k}</m> </p></exercise>
+	<exercise><p> <m>\displaystyle \combination{n}{k} = \frac{n - k + 1}{k} \cdot \combination{n}{k - 1}</m> </p></exercise>
+	<exercise><p>
+		<m>\displaystyle \combination{n + k}{n} = \combination{n + k}{k}</m>
+	</p></exercise>
+</exercisegroup>
+
+<exercise><p>
+	Choose a value for <m>m</m> so that the equality in <xref ref="proposition-combinations-extram-comb-formula" />
+	becomes a formula for the sum <m>1 + 2 + 3 + \dotsb + n</m>.
+</p></exercise>
+
+</exercises>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<chapter xml:id="chapter-axioms" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Axiomatic systems</title>
+
+<section xml:id="section-axioms-basics">
+<title>Basics and examples</title>
+
+<p>
+Any mathematical system must have a starting point; we cannot create something out of nothing.
+The starting point of a mathematical system (or any logical system, for that matter) is a collection of basic terminology accompanied by a collection of assumed facts about the things the terminology describes.
+</p>
+
+<p><dl>
+	<li>
+		<title>primitive term</title>
+		<idx>primitive term</idx>
+		<idx><h>term</h><h>primitive</h></idx>
+		<p> a label for an object or action that is left <em>undefined</em> </p>
+	</li>
+	<li>
+		<title>axiom</title>
+		<idx>axiom</idx>
+		<p> a statement (usually involving primitive terms or terms defined in terms of primitive terms) that is held to be true <em>without proof</em> </p>
+	</li>
+	<li>
+		<title>axiomatic system</title>
+		<idx>axiomatic system</idx>
+		<p> a collection of primitive terms and axioms </p>
+	</li>
+</dl></p>
+
+<example xml:id="example-axioms-woozles-dorples">
+	<title>An axiomatic system</title>
+	<paragraphs><title>Primitive terms</title><p><ul>
+		<li> <term>woozle</term> (noun), </li>
+		<li> <term>dorple</term> (noun), </li>
+		<li> <term>snarf</term> (verb). </li>
+	</ul></p></paragraphs>
+	<paragraphs><title>Axioms</title><p><ol>
+		<li xml:id="example-axioms-woozles-dorples-exists-three-woozles">  <!-- \label{AXIOM::exists.three.woozles} -->
+			There exist at least three distinct woozles.
+		</li>
+		<li xml:id="example-axioms-woozles-dorples-symmetry">  <!-- \label{AXIOM::snarf.symmetry} -->
+			A woozle snarfs a dorple if and only if the dorple snarfs the woozle.
+		</li>
+		<li xml:id="example-axioms-woozles-dorples-unique-dorple">  <!-- \label{AXIOM::unique.dorple} -->
+			Each pair of distinct woozles snarfs exactly one dorple in common.
+		</li>
+		<li xml:id="example-axioms-woozles-dorples-triple-woozles">  <!-- \label{AXIOM::triple.woozles} -->
+			There is at least one trio of distinct woozles that snarf no dorple in common.
+		</li>
+		<li xml:id="example-axioms-woozles-dorples-snarf-pair">  <!-- \label{AXIOM::dorple.snarfs.pair} -->
+			Each dorple is snarfed by at least two distinct woozles.
+		</li>
+	</ol></p></paragraphs>
+</example>
+
+<remark><p>
+	In the axiomatic system of <xref ref="example-axioms-woozles-dorples">Axiom</xref>,
+	<xref ref="example-axioms-woozles-dorples-exists-three-woozles">Axiom</xref> is redundant
+	as we may infer from
+	<xref ref="example-axioms-woozles-dorples-triple-woozles">Axiom</xref>
+	that there exist three distinct woozles.
+	But there is no harm in including this axiom for clarity.
+	As well, we will later investigate the effect of altering it.
+</p></remark>
+
+<p>
+The axiomatic system of <xref ref="example-axioms-woozles-dorples" /> seems like nonsense,
+but we can actually prove things from it.
+</p>
+
+<theorem xml:id="theorem-axioms-three-distinct-dorples">
+	<!-- \label{THEOREM::three.distinct.dorples} -->
+	<statement><p> There exist at least three distinct dorples. </p></statement>
+	<proof xml:id="proof-axioms-three-distinct-dorples">
+		<p> (In this proof, all references to axioms refer to the axioms of <xref ref="example-axioms-woozles-dorples" />.) </p>
+		<p>
+		By <xref ref="example-axioms-woozles-dorples-triple-woozles">Axiom</xref>,
+		there exists a trio <m>w_1,w_2,w_3</m> of distinct woozles that snarf no dorple in common.
+		Breaking this trio into various pairs and applying
+		<xref ref="example-axioms-woozles-dorples-unique-dorple">Axiom</xref>,
+		we see that there exists a dorple <m>d_1</m> that <m>w_1</m> and <m>w_2</m> both snarf in common,
+		there also exists a dorple <m>d_2</m> that <m>w_1</m> and <m>w_3</m> both snarf in common,
+		and there also exists a dorple <m>d_3</m> that <m>w_2</m> and <m>w_3</m> both snarf in common.
+		These snarfing relationships are illustrated in the diagram below.
+		</p>
+		<image>
+			<description>A diagram of woozles snarfing dorples.</description>
+			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-1.tex" parse="text" /></latex-image>
+		</image>
+		<p> Now, suppose <m>d_1</m> and <m>d_2</m> were actually the same dorple <mdash /> then all three woozles would snarf it in common. </p>
+		<image>
+			<description>A diagram of woozles snarfing dorples, assuming two of the dorples coincide.</description>
+			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-2.tex" parse="text" /></latex-image>
+		</image>
+		<p>
+		As this would contradict our initial assumption, it must be the case that <m>d_1</m> and <m>d_2</m> are distinct.
+		Similar arguments allow us to also conclude that <m>d_1 \ne d_3</m> and <m>d_2 \ne d_3</m>.
+		</p>
+	</proof>
+</theorem>
+
+<p> It is often useful to give names to important properties of objects. </p>
+
+<p><dl>
+	<li>
+		<title>defined term</title>
+		<idx>defined term</idx>
+		<idx><h>term</h><h>defined</h></idx>
+		<p> a label for an object or action that is defined in terms of primitive terms, axioms, and/or other defined terms </p>
+	</li>
+	<li>
+		<title>definition</title>
+		<idx>definition</idx>
+		<p> an formal explanation of the meaning of a <term>defined term</term> </p>
+	</li>
+</dl></p>
+
+<example xml:id="example-axioms-making-a-definition"><title>Making a definition</title><p>
+	Here is a definition relative to the axiomatic system of <xref ref="example-axioms-woozles-dorples" />.
+	<dl><li xml:id="example-axioms-making-a-definition-snarf-buddies">
+		<title>snarf buddies</title>
+		<p> two distinct dorples that snarf a common woozle </p>
+	</li></dl>
+</p></example>
+
+<p> A definition allows us to more succinctly communicate ideas and facts about the objects of an axiomatic system. </p>
+
+<theorem xml:id="theorem-axioms-snarf-buddies-snarf-unique">
+	<!-- \label{THEOREM::snarf.buddies.snorf.unique} -->
+	<statement><p>
+		A pair of <term><xref ref="example-axioms-making-a-definition-snarf-buddies" text="title" /></term>
+		snarf a <em>unique</em> woozle in common.
+	</p></statement>
+	<proof><p>
+		Suppose <m>d_1,d_2</m> are snarf buddies.
+		By contradiction, suppose they snarf <em>more than one</em> woozle in common:
+		let <m>w_1,w_2</m> be distinct woozles both snarfed by <m>d_1</m> and <m>d_2</m>.
+		By <xref ref="example-axioms-woozles-dorples-symmetry">Axiom</xref>,
+		each of <m>w_1,w_2</m> snarfs each of <m>d_1,d_2</m>.
+		But this contradicts <xref ref="example-axioms-woozles-dorples-unique-dorple">Axiom</xref>,
+		as two distinct woozles cannot snarf more than one dorple in common.
+	</p></proof>
+</theorem>
+
+<p>
+Suppose we replace <xref ref="example-axioms-woozles-dorples-exists-three-woozles">Axiom</xref>
+in the system of <xref ref="example-axioms-woozles-dorples" /> with the following.
+<ol>
+	<li xml:id="example-axioms-woozles-dorples-new-exists-three-woozles">
+		There exist <em>exactly</em> three distinct woozles.
+	</li>
+</ol>
+In the new, modified axiomatic system, our previous two theorems
+(<xref ref="theorem-axioms-three-distinct-dorples" />
+and <xref ref="theorem-axioms-snarf-buddies-snarf-unique" />)
+remain true, because it is still true that there exist at least three distinct woozles.
+But we can now also prove the following.
+</p>
+
+<theorem xml:id="theorem-axioms-exactly-three-dorples">
+	<statement><p>
+		In the axiomatic system of <xref ref="example-axioms-woozles-dorples" />
+		with the above modified version of <xref ref="example-axioms-woozles-dorples-new-exists-three-woozles">Axiom</xref>,
+		there exist exactly three distinct dorples.
+	</p></statement>
+	<proof><p>
+		You are asked to prove this in the exercises.
+	</p></proof>
+</theorem>
+
+<p>
+A nonsense system like the one in <xref ref="example-axioms-woozles-dorples" /> is just that <mdash />
+nonsense <mdash />
+and not much use unless there are actual examples to which the developed theory can be applied.
+</p>
+
+<dl><li>
+	<title>model</title>
+	<idx>model (for an axiomatic system)</idx>
+	<p>
+	a system obtained by replacing the primitive terms in an axiomatic system with more <q>concrete</q> terms in such a way that all the axioms are true statements about the new terms
+	</p>
+</li></dl>
+
+<p>
+If we agree that the axiom statements are still all true with the new terms,
+then any theorems proved under the abstract system are still valid in the new model system.
+</p>
+
+<example>
+	<title>A model for the woozel-dorple system</title>
+	<p>
+	Again consider the axiomatic system of <xref ref="example-axioms-woozles-dorples" />,
+	still using the modified version of <xref ref="example-axioms-woozles-dorples-new-exists-three-woozles">Axiom</xref>.
+	Let the three distinct woozles be the points <m>(0,0)</m>, <m>(1,1)</m>, and <m>(2,0)</m> in the Cartesian plane.
+	Let <term>dorple</term> now mean <term>line in the plane</term>,
+	and let <term>snarf</term> now mean <term>lies on</term>.
+	Convince yourself that the axioms of the system are all true with this interpretation of the primitive terms.
+	</p>
+	<p>
+	<xref ref="theorem-axioms-exactly-three-dorples" /> now says that there exist exactly three distinct lines in the plane which fit into our axiomatic system; can you find their equations?
+	</p>
+	<image>
+		<description>A diagram of woozles snarfing dorples.</description>
+		<latex-image><xi:include href="axioms.d/points-lines-model.tex" parse="text" /></latex-image>
+	</image>
+</example>
+
+<remark><p>
+	Using nonsense terms like <term>woozle</term>, <term>dorple</term>, and <term>snarf</term> for the primitive terms in an axiomatic system is usually not a good idea, as it takes all intuition out of the process of discovering statements that can be deduced from the axioms.
+	It would have been much better if we had used the words <term>point</term> instead of <term>woozle</term>, <term>line</term> instead of <term>dorple</term>, and <term>lies on</term> instead of <term>snarfs</term> as our primitive terms, to be able to use our intuition about how such objects interact.
+	In such a case, the axioms we choose should be a reflection of our idea of the simplest possible properties about the primitive terms, properties that everyone could reasonably agree are <q>true</q> without proof.
+	However, for the theorems deduced from such an axiomatic system to have the widest possible applicability, we should leave the words <term>point</term> and <term>line</term> as truly <term>primitive</term>, undefined terms <mdash />
+	that is, <term>point</term> and <term>line</term> should not be taken to mean <term>point in the plane</term> and <term>line in the plane</term>, as in the example above, but rather just left as some abstract, intuitive idea of <term>point</term> and <term>line</term>.
+</p></remark>
+
+</section>
+
+<section xml:id="section-axioms-incompleteness">
+<title>Incompleteness of axiomatic systems</title>
+
+<p>
+It turns out that if we want to create an axiomatic system on which to base mathematics, we will always run into problems, and some things will remain out of our reach.
+</p>
+
+<theorem>
+	<title>Gödel's First Incompleteness Theorem</title>
+	<idx>Gödel's First Incompleteness Theorem</idx>
+	<idx>Incompleteness Theorem, Gödel's First</idx>
+	<idx><h>Theorem</h><h>Gödel's First Incompleteness</h></idx>
+	<p>
+	In any axiomatic system that is sufficiently complex for it to be possible to prove certain basic facts about the nonnegative whole numbers,
+	it is possible to devise a statement that is true but unprovable.
+	</p>
+</theorem>
+
+<p> May you never attempt to prove a statement that is true but unprovable! </p>
+
+</section>
+
+<!-- <xi:include href="./axioms.d/activities.ptx" /> -->  <!-- TODO no activities, maybe convert some exercises instead ? -->
+<xi:include href="./axioms.d/exercises.ptx" />
+
+</chapter>

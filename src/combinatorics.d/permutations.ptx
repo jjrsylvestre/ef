@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<chapter xml:id="chapter-permutations" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Permutations</title>
+
+<section xml:id="section-permutations-factorials">
+<title>Factorials</title>
+
+<p>
+In counting, factorials come up a lot.
+<dl>
+	<li>
+		<title><m>n!</m></title>
+		<idx>factorial</idx>
+		<notation>
+			<usage><m>n!</m></usage>
+			<description>factorial <m>n! = n (n - 1) (n - 2) \dotsm 2 \cdot 1</m></description>
+		</notation>
+		<p>
+		notation for the computation formula <me> n (n - 1) (n - 2) \dotsm 2 \cdot 1 </me>,
+		for natural number <m>n</m>
+		</p>
+	</li>
+</dl>
+</p>
+
+<example>
+	<title>Two factorial calculations</title>
+	<p><md><mrow>
+		3! \amp = 3 \cdot 2 \cdot 1 = 6, \amp
+		7! = 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5,040.
+	</mrow></md></p>
+</example>
+
+<example>
+	<title>Factorial factors</title>
+	<p>
+	A factorial contains every smaller factorial as a factor.
+	For example,
+	<me>
+		\frac{7!}{3!}
+		= \frac{
+			7 \cdot 6 \cdot 5 \cdot 4 \cdot \cancel{(3!)}
+		}{
+			\cancel{3!}
+		}
+		= 7 \cdot 6 \cdot 5 \cdot 4 = 840
+	</me>.
+	</p>
+</example>
+
+<convention xml:id="convention-permutations-0-factorial"><p>
+	To avoid division by zero in certain formulas, define <m>0! = 1</m>.
+	This choice is also made to be consistent with the methods for counting permutations we will explore in this chapter.
+</p></convention>
+
+</section>
+
+<section xml:id="section-permutations-defn">
+<title>Definition</title>
+
+<p> We often want to count how many ways we can <q>mix up</q> the objects in a collection. </p>
+
+<p><dl><li>
+	<title>permutation</title>
+	<idx>permutation</idx>
+	<idx><h>function</h><h>permutation</h></idx>
+	<idx><h>set(s)</h><h>permutation</h></idx>
+	<p> a bijection from a finite set to itself </p>
+</li></dl></p>
+
+<remark><p>
+	Once you have written the elements of a finite set in some order,
+	think of a permutation as a way of <em>re-ordering</em> them.
+</p></remark>
+
+<example>
+	<title>Permutations of three objects</title>
+	<p>
+	<xref ref="figure-permutations-all-on-three-objects" />
+	contains tables of values for all six possible permutations of the set <m>A = \{a,b,c\}</m>.
+	We have grouped them according to:
+	all elements fixed;
+	one element fixed and two mixed;
+	all elements mixed.
+	</p>
+	<figure xml:id="figure-permutations-all-on-three-objects">
+		<caption>All possible permutations on three objects.</caption>
+		<sidebyside>
+			<tabular top="medium" bottom="medium" halign="center">
+				<col right="minor" /><col /><col /><col />
+				<row bottom="minor">
+					<cell><m>x</m></cell>
+					<cell><m>a</m></cell>
+					<cell><m>b</m></cell>
+					<cell><m>c</m></cell>
+				</row>
+				<row>
+					<cell><m>\id_A(x)</m></cell>
+					<cell><m>a</m></cell>
+					<cell><m>b</m></cell>
+					<cell><m>c</m></cell>
+				</row>
+			</tabular>
+			<tabular top="medium" bottom="medium" halign="center">
+				<col right="minor" /><col /><col /><col />
+				<row bottom="minor">
+					<cell><m>x</m></cell>
+					<cell><m>a</m></cell>
+					<cell><m>b</m></cell>
+					<cell><m>c</m></cell>
+				</row>
+				<row>
+					<cell><m>f_a(x)</m></cell>
+					<cell><m>a</m></cell>
+					<cell><m>c</m></cell>
+					<cell><m>b</m></cell>
+				</row>
+				<row>
+					<cell><m>f_b(x)</m></cell>
+					<cell><m>c</m></cell>
+					<cell><m>b</m></cell>
+					<cell><m>a</m></cell>
+				</row>
+				<row>
+					<cell><m>f_c(x)</m></cell>
+					<cell><m>b</m></cell>
+					<cell><m>a</m></cell>
+					<cell><m>c</m></cell>
+				</row>
+			</tabular>
+			<tabular top="medium" bottom="medium" halign="center">
+				<col right="minor" /><col /><col /><col />
+				<row bottom="minor">
+					<cell><m>x</m></cell>
+					<cell><m>a</m></cell>
+					<cell><m>b</m></cell>
+					<cell><m>c</m></cell>
+				</row>
+				<row>
+					<cell><m>s_r(x)</m></cell>
+					<cell><m>c</m></cell>
+					<cell><m>a</m></cell>
+					<cell><m>b</m></cell>
+				</row>
+				<row>
+					<cell><m>s_l(x)</m></cell>
+					<cell><m>b</m></cell>
+					<cell><m>c</m></cell>
+					<cell><m>a</m></cell>
+				</row>
+			</tabular>
+		</sidebyside>
+	</figure>
+</example>
+
+</section>
+
+<section xml:id="section-permutations-counting">
+<title>Counting permutations</title>
+
+<theorem xml:id="theorem-permutations-counting">
+	<statement><p> For <m>\card{A} = n</m>, there are <m>n!</m> permutations on <m>A</m>. </p></statement>
+	<proof><title>Informal proof</title><p>
+		We want to count the number of ways of constructing an ordered list of the <m>n</m> elements of <m>A</m>.
+		There are <m>n</m> ways to choose the first element in the list,
+		<m>n-1</m> ways to choose the second,
+		<m>n-2</m> ways to choose the third,
+		and so on,
+		ending at a single way to choose the <m>\nth</m>.
+		By the <xref ref="theorem-counting-mult-rule" text="title" />, there are
+		<me> n \cdot (n - 1) \cdot (n - 2) \cdot \dotsb \cdot 1 = n! </me>
+		ways to construct such a list.
+	</p></proof>
+	<proof><title>Formal proof</title>
+		<p> By induction. </p>
+		<case><title>Base case <m>n=1</m></title><p>
+			If <m>\card{A} = 1</m>, then <m>A</m> consists of a single element, say <m>A = \{a\}</m>.
+			There is only one possible permutation of <m>A</m>, and that is the identity function <m>\funcdef{\id_A}{A}{A}</m> defined by <m>\id_A(a) = a</m>.
+			Thus, we have verified that there is <m>1! = 1</m> permutation of <m>A</m>.
+		</p></case>
+		<case><title>Induction step</title>
+			<p>
+			Let <m>k \ge 1</m> be a fixed integer.
+			Our induction hypothesis is to assume that if <m>B</m> is any set with <m>\card{B} = k</m> elements,
+			then there are <m>k!</m> permutations on <m>B</m>.
+			We want to use this hypothesis to prove that if <m>A</m> is a set with <m>\card{A} = k+1</m> elements,
+			then there are <m>(k+1)!</m> permutations on <m>A</m>.
+			</p><p>
+			Write <m>A = \{ a_0, a_1, \dotsc, a_k \}</m> and <m>B = \{ a_1, a_2, \dotsc, a_k \}</m>.
+			Then <m>B</m> is a subset of <m>A</m> that contains <m>k</m> elements,
+			and so by our induction hypothesis there are <m>k!</m> permutations on <m>B</m>.
+			For every such permutation of <m>B</m>, we can construct <m>k+1</m> permutations of <m>A</m> by <q>inserting</q> <m>a_0</m> at different positions in the output list.
+			For example, consider how the identity permutation on <m>B</m> can be turned into <m>k+1</m> different permutations on <m>A</m> <mdash />
+			see <xref ref="figure-permutations-induction-insert" />.
+			</p>
+			<figure xml:id="figure-permutations-induction-insert">
+				<caption>Inserting an extra element at various positions of a permutation to create new, longer permutations.</caption>
+				<sidebyside><stack>
+					<tabular top="medium" halign="center">
+						<col right="minor" /><col /><col /><col /><col /><col /><col />
+						<row bottom="minor">
+							<cell><m>x</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_{k-1}</m></cell>
+							<cell><m>a_k</m></cell>
+						</row>
+						<row bottom="medium">
+							<cell><m>\id_B(x)</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_{k-1}</m></cell>
+							<cell><m>a_k</m></cell>
+						</row>
+					</tabular>
+					<p><me>\downarrow</me></p>
+					<tabular top="medium" bottom="minor" halign="center">
+						<col right="minor" /><col /><col /><col /><col /><col /><col /><col />
+						<!-- <row bottom="minor"> -->
+						<row>
+							<cell><m>x</m></cell>
+							<cell><m>a_0</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_{k-1}</m></cell>
+							<cell><m>a_k</m></cell>
+						</row>
+						<row>
+							<cell><m>\id_B^{(0)}(x) = \id_A(x)</m></cell>
+							<cell><m>a_0</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_{k-1}</m></cell>
+							<cell><m>a_k</m></cell>
+						</row>
+						<row>
+							<cell><m>\id_B^{(1)}(x)</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_0</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_{k-1}</m></cell>
+							<cell><m>a_k</m></cell>
+						</row>
+						<row>
+							<cell><m>\id_B^{(2)}(x)</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_0</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_{k-1}</m></cell>
+							<cell><m>a_k</m></cell>
+						</row>
+						<row>
+							<cell><m>\id_B^{(3)}(x)</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><m>a_0</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_{k-1}</m></cell>
+							<cell><m>a_k</m></cell>
+						</row>
+						<row>
+							<cell><m>\vdots</m></cell>
+							<cell />
+							<cell />
+							<cell />
+							<cell><m>\vdots</m></cell>
+							<cell />
+							<cell />
+							<cell />
+						</row>
+						<row>
+							<cell><m>\id_B^{(k-1)}(x)</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><m>a_4</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_0</m></cell>
+							<cell><m>a_k</m></cell>
+						</row>
+						<row bottom="medium">
+							<cell><m>\id_B^{(k)}(x)</m></cell>
+							<cell><m>a_1</m></cell>
+							<cell><m>a_2</m></cell>
+							<cell><m>a_3</m></cell>
+							<cell><m>a_4</m></cell>
+							<cell><ellipsis /></cell>
+							<cell><m>a_k</m></cell>
+							<cell><m>a_0</m></cell>
+						</row>
+					</tabular>
+				</stack></sidebyside>
+			</figure>
+			<p>
+			<em>Each</em> of the <m>k!</m> permutations of <m>B</m> can be used to construct <m>k+1</m> permutations of <m>A</m>, in the same fashion as we have above for the identity permutation of <m>B</m>.
+			So we have in total <m>(k+1) \cdot k! = (k+1)!</m> permutations of <m>A</m>, as required.
+			</p>
+		</case>
+	</proof>
+</theorem>
+
+<remark><p>
+	When applying the method of mathematical induction in the formal proof,
+	we began our base case at <m>n = 1</m>.
+	But the formula <m>n!</m> is still valid for the number of permutations of the empty set.
+	In this case, <m>n = 0</m> and so <m>n! = 0! = 1</m> by <xref ref="convention-permutations-0-factorial" />.
+	And there is indeed exactly one permutation of the empty set <mdash />
+	the <xref ref="definition-cardinality-empty-function" text="title" />.
+	(See <xref ref="proposition-cardinality-empty-functions-bij" text="local">Statement</xref>
+	of <xref ref="proposition-cardinality-empty-functions" />.)
+</p></remark>
+
+<p>
+Each of the provided proofs for <xref ref="theorem-permutations-counting" /> above contains an idea that is of practical use in counting collections.
+<ul>
+	<li>
+		In the informal proof,
+		we used the <xref ref="theorem-counting-mult-rule" text="title" />
+		to count the number of ways to construct an ordered list,
+		where the tasks in the construction are choosing the elements in the list one at a time.
+		(We used this similar thinking often in <xref ref="chapter-counting" />,
+		though we didn't explicitly connect the <xref ref="theorem-counting-mult-rule" text="title" /> to ordered lists.)
+	</li>
+	<li>
+		In the formal proof, we used the idea of <q>inserting</q> an object into an existing ordered list to create a new ordered list.
+	</li>
+</ul>
+</p>
+
+<problem>  <!-- worked example -->
+	<title>Distributing items</title>
+	<statement><p>
+		For a class of twenty students,
+		in how many different orders can a professor hand back marked tests:
+		<ol>
+			<li> In total? </li>
+			<li> If Karishma's test must be handed back first? </li>
+			<li> If Elizabeth's and Ruijing's tests cannot immediately follow one another? </li>
+		</ol>
+	</p></statement>
+	<solution><p><ol>
+		<li>
+			A test distribution order is the same thing as a permutation of the students in the class,
+			so there are <m>20!</m> different handback orders
+			(approximately <m>2.4</m> quintillion).
+		</li>
+		<li>
+			This is just the number of ways of ordering the remaining nineteen students' papers,
+			which is <m>19!</m>
+			(approximately <m>122</m> quadrillion).
+		</li>
+		<li>
+			It is easier to count the ways that they <em>do</em> follow each other.
+			One way to do this is as follows.
+			Remove Elizabeth's test from the pile.
+			There are now <m>19!</m> ways to order the remaining nineteen papers.
+			There are two ways to insert Elizabeth's test back into any such ordering <mdash />
+			either immediately before or after Ruijing's paper.
+			So there are <m>2 \cdot 19!</m> orderings we <em>do not</em> want.
+			Therefore, applying the <xref ref="theorem-counting-subtr-rule" text="title" />
+			yields answer
+			<me>
+				20! - 2 \cdot 19!
+				= 20 \cdot 19! - 2 \cdot 19!
+				= 18 \cdot 19!
+			</me>.
+		</li>
+	</ol></p></solution>
+</problem>
+
+<problem xml:id="wexample-permutations-counting-words">  <!-- worked example -->
+	<title>Words using the entire alphabet</title>
+	<statement><p>
+		For an alphabet <m>\Sigma</m> with <m>\card{\Sigma} = n</m>,
+		how many words in <m>\words{\Sigma}</m> contain each element of the alphabet exactly once?
+	</p></statement>
+	<solution>
+		<p> Here we just want to order all the elements of <m>\Sigma</m> into a word, so the answer is <m>n!</m>. </p>
+		<aside><title>Compare</title><p> See <xref ref="wexample-counting-words-no-repeats" />. </p></aside>
+	</solution>
+</problem>
+
+<remark><p>
+	<xref ref="wexample-permutations-counting-words" /> justifies the convention <m>0! = 1</m>,
+	since if <m>\card{\Sigma} = 0</m>, then <m>\words{\Sigma}</m> contains exactly one word:
+	the empty word <m>\emptyword</m>.
+	And in this case it is vacuously true that <m>\emptyword</m> contains each element of <m>\Sigma</m> exactly once.
+</p></remark>
+
+<problem>  <!-- worked example -->
+	<title>Counting total orders</title>
+	<statement><p> If <m>\card{A} = n</m>, how many different total orders on <m>A</m> exist? </p></statement>
+	<solution><p>
+		Specifying a total order on <m>A</m> really just means ordering the elements of <m>A</m>:
+		<me> a_1 \le a_2 \le a_3 \le \dotsb \le a_n. </me>
+		So there are <m>n!</m> possible total orders.
+	</p></solution>
+</problem>
+
+<problem xml:id="wexample-permutations-bottle-colour-patterns">  <!-- worked example -->
+<!-- \label{WEXAMPLE::bottle.colour.patterns.1} -->
+	<title>Counting colour patterns</title>
+	<statement><p>
+		How many different colour patterns can we obtain by placing three red bottles and five blue bottles on a shelf?
+		(Assume the bottles are indistinguishable except by colour.)
+	</p></statement>
+	<solution><p>
+		Let's use the <xref ref="theorem-counting-div-rule" text="title" />,
+		where first we will count a more structured collection.
+		If the bottles of the same colour <em>were</em> distinguishable from each other,
+		we would have <m>8!</m> ways of lining them up on the shelf.
+		Assuming indistinguishability, we now consider two orderings with the same colour pattern but mixed up red and/or blue bottles to be <em>equivalent</em>.
+		For example, the two orderings
+		<md>
+			<mrow> \mathrm{R}_1 \; \mathrm{B}_1 \; \mathrm{B}_2 \; \mathrm{R}_2 \; \mathrm{R}_3 \; \mathrm{B}_3 \; \mathrm{B}_4 \; \mathrm{B}_5, </mrow>
+			<mrow> \mathrm{R}_2 \; \mathrm{B}_5 \; \mathrm{B}_3 \; \mathrm{R}_1 \; \mathrm{R}_3 \; \mathrm{B}_1 \; \mathrm{B}_4 \; \mathrm{B}_2, </mrow>
+		</md>
+		of distinguishable bottles create the same colour pattern, and so are equivalent.
+		Once red and blue bottle positions are determined, we can permute the reds (<m>3!</m> ways) and blues (<m>5!</m> ways) independently,
+		so each equivalence class inside the collection of orderings of <em>distinguishable</em> bottles contains <m>3! \cdot 5!</m> equivalent orderings.
+		Applying the <xref ref="theorem-counting-div-rule" text="title" />,
+		we arrive at
+		<me> \frac{8!}{3! \cdot 5!} = \frac{8\cdot 7 \cdot 6}{3 \cdot 2} = 56 </me>
+		possible colour patterns.
+	</p></solution>
+</problem>
+
+<problem>  <!-- worked example -->
+	<title>Circular orderings</title>
+	<statement><p>
+		How many different seating arrangements of ten people around a round table are possible,
+		if no one is considered to be at the <q>head</q> or <q>foot</q> of the table?
+	</p></statement>
+	<solution><p>
+		Let's use the <xref ref="theorem-counting-div-rule" text="title" />,
+		where first we will count a more structured collection.
+		There are <m>10!</m> ways to line the <m>10</m> people up.
+		Wrapping the end of the line around to meet the beginning forms a circular seating arrangement.
+		But <q>rotating</q> around the line (<m>10</m> possible rotations) yields an equivalent circular seating arrangement.
+		So the answer is <me> \frac{10!}{10} = 9! </me>.
+	</p></solution>
+	<solution><p>
+		Force one particular person to <em>always</em> be the <q>start</q> of the seating arrangement,
+		no matter what physical seat they are sitting in,
+		and ignoring the fact that a circular arrangement really has no <q>start.</q>
+		Then there are <m>9!</m> ways to arrange the remaining <m>9</m> people around the table starting from the seat to the left of the <q>start</q> person.
+	</p></solution>
+</problem>
+
+</section>
+
+<section xml:id="section-permutations-subsets">
+<title>Permutations of subsets</title>
+
+<p>
+Sometimes we want to create an ordered list of a certain length from a larger pool of candidates.
+<dl>
+	<li>
+		<title>permutation of size <m>k</m></title>
+		<idx><h>permutation</h><h>of size <m>k</m></h></idx>
+		<p> an ordered list of <m>k</m> elements from a given set <m>A</m>, with <m>\card{A} \ge k</m> </p>
+	</li>
+	<li>
+		<title><m>\permutation{n}{k}</m></title>
+		<notation>
+			<usage><m>\permutation{n}{k}</m></usage>
+			<description>the number of permutations of size <m>k</m> taken from a set of size <m>n</m></description>
+		</notation>
+		<p> the number of permutations of size <m>k</m> taken from a set of size <m>n</m> </p>
+	</li>
+	<li>
+		<title> <m>\permutationalt{n}{k}</m>, <m>\permutationaltalt{n}{k}</m></title>
+		<notation>
+			<usage><m>\permutationalt{n}{k}</m></usage>
+			<description>alternative notation for <m>\permutation{n}{k}</m></description>
+		</notation>
+		<notation>
+			<usage><m>\permutationaltalt{n}{k}</m></usage>
+			<description>alternative notation for <m>\permutation{n}{k}</m></description>
+		</notation>
+		<p>alternative notation choices for <m>\permutation{n}{k}</m></p>
+	</li>
+</dl>
+</p>
+
+<example xml:id="example-permutations-size-2-from-4">
+	<title>Visualizing <m>\permutation{4}{2}</m></title>
+	<p>
+	Consider <m>A = \{1,2,3,4\}</m>, so that <m>n = \card{A} = 4</m>.
+	There are <m> 4! = 24 </m> permutations of <m>A</m>.
+	</p>
+	<figure>
+		<caption>Permutations of a set of size <m>4</m>.</caption>
+		<sidebyside>
+			<tabular top="medium" halign="center">
+				<col right="minor" /><col /><col /><col /><col />
+				<row bottom="minor">
+					<cell><m>x</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>4</m></cell>
+				</row>
+				<row>
+					<cell><m>\id_A(x)</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>4</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_1(x)</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>3</m></cell>
+				</row>
+				<row>
+					<cell><m>p_2(x)</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>4</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_3(x)</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>2</m></cell>
+				</row>
+				<row>
+					<cell><m>p_4(x)</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>3</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_5(x)</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>2</m></cell>
+				</row>
+				<row>
+					<cell><m>p_6(x)</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>4</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_7(x)</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>3</m></cell>
+				</row>
+				<row>
+					<cell><m>p_8(x)</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>4</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_9(x)</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>1</m></cell>
+				</row>
+				<row>
+					<cell><m>p_{10}(x)</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>3</m></cell>
+				</row>
+				<row bottom="medium">
+					<cell><m>p_{11}(x)</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>1</m></cell>
+				</row>
+			</tabular>
+			<tabular top="medium" halign="center">
+				<col right="minor" /><col /><col /><col /><col />
+				<row bottom="minor">
+					<cell><m>x</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>4</m></cell>
+				</row>
+				<row>
+					<cell><m>p_{12}(x)</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>4</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_{13}(x)</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>2</m></cell>
+				</row>
+				<row>
+					<cell><m>p_{14}(x)</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>4</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_{15}(x)</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>1</m></cell>
+				</row>
+				<row>
+					<cell><m>p_{16}(x)</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>2</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_{17}(x)</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>1</m></cell>
+				</row>
+				<row>
+					<cell><m>p_{18}(x)</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>3</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_{19}(x)</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>2</m></cell>
+				</row>
+				<row>
+					<cell><m>p_{20}(x)</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>3</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell><m>p_{21}(x)</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>1</m></cell>
+				</row>
+				<row>
+					<cell><m>p_{22}(x)</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>1</m></cell>
+					<cell><m>2</m></cell>
+				</row>
+				<row bottom="medium">
+					<cell><m>p_{23}(x)</m></cell>
+					<cell><m>4</m></cell>
+					<cell><m>3</m></cell>
+					<cell><m>2</m></cell>
+					<cell><m>1</m></cell>
+				</row>
+			</tabular>
+		</sidebyside>
+	</figure>
+	<p>
+	Notice that the permutations above have been grouped into pairs,
+	where the two permutations in a given pair have the same two first elements in the same order.
+	From this, we can conclude that there are only <m>24/2 = 12</m> permutations of size <m>k=2</m> from <m>A</m>.
+	</p>
+</example>
+
+<theorem xml:id="theorem-permutations-size-k-formula">
+<!-- \label{THEOREM::permutation.formula} -->
+	<title>Computing <m>\permutation{n}{k}</m></title>
+	<statement><p> We have <me> \permutation{n}{k} = \frac{n!}{(n-k)!} = n (n-1) (n-2) \dotsm (n-k+1) </me>. </p></statement>
+	<proof><p>
+		One way to construct an ordered list of <m>k</m> elements from a set <m>A</m>, where <m>\card{A} = n</m>,
+		is as in <xref ref="example-permutations-size-2-from-4" />.
+		Form an ordered list of <em>all</em> the elements of <m>A</m> (<m>n!</m> ways),
+		and then take the first <m>k</m> elements from that list.
+		But we get the same ordered list of length <m>k</m> no matter how the last <m>n-k</m> elements are ordered.
+		That is, we consider any two orderings of all <m>n</m> elements to be <em>equivalent</em> if the first <m>k</m> elements in the list are the same between the two.
+		As there are <m>(n-k)!</m> different ways the last <m>n - k</m> elements could be ordered while keeping the first <m>k</m> elements the same,
+		each equivalence class has size <m>(n - k)!</m>.
+		Applying the <xref ref="theorem-counting-div-rule" text="title" />, we obtain the desired formula
+		<me>
+			\permutation{n}{k}
+			= \frac{\ncardop \{ \text{orderings of all } n \text{ elements} \} }{\ncardop \{ \text{reorderings of the last } n - k \text{ elements} \} }
+			= \frac{n!}{(n - k)!}
+		</me>.
+	</p></proof>
+</theorem>
+
+<remark><p>
+	The number <m>\permutation{n}{n}</m> represents the number of ways to construct an ordered list of <m>n</m> elements chosen from a set of <m>n</m> elements, so <m>P(n,n) = n!</m>.
+	The convention <m>0! = 1</m> ensures that
+	our formula for <m>P(n,k)</m> expressed in <xref ref="theorem-permutations-size-k-formula" />
+	remains valid in the case <m>k = n</m>.
+</p></remark>
+
+<problem>  <!-- worked example -->
+	<title>Elections</title>
+	<statement><p>
+		A class of twenty discrete mathematics students decides to elect a class president and vice-president.
+		How many possible outcomes to the election process are there?
+	</p></statement>
+	<solution><p>
+		An arbitrary way to elect students to these offices would be to line all the students up and choose the first two students in line to be the president and vice-president, respectively.
+		Therefore, there are
+		<me>
+			\permutation{20}{2}
+			= \frac{20!}{(20 - 2)!}
+			= 20 \cdot 19
+			= 380
+		</me>
+		possible outcomes to the election.
+	</p></solution>
+</problem>
+
+<problem>  <!-- worked example -->
+	<title>Ranking choices</title>
+	<statement><p>
+		You go to the horsetrack to bet on a race.
+		From a field of nine horses, how many ways are there to make a <q>Trifecta</q> bet
+		(<ie /> specify the first three finishers in order)?
+	</p></statement>
+	<solution><p> There are <me> \permutation{9}{3} = \frac{9!}{(9 - 3)!} = 9 \cdot 8 \cdot 7 = 504 </me> possible such bets. </p></solution>
+</problem>
+
+<problem>  <!-- worked example -->
+	<title>Words with no repeated letters</title>
+	<statement>
+		<p>
+		For alphabet <m>\Sigma = \EngAlphabet</m>,
+		how many four-letter words made up of distinct letters are there in <m>\words{\Sigma}</m>?
+		</p>
+		<aside><title>Compare</title><p> See <xref ref="wexample-counting-words-no-repeats" />. </p></aside>
+	</statement>
+	<solution><p>
+		A four-letter word with no repeated letters is the same as a permutation of size <m>4</m>,
+		so the number of such words is
+		<me> \permutation{26}{4} = \frac{26!}{(26 - 4)!} = 26 \cdot 25 \cdot 24 \cdot 23 = 358,800 </me>.
+	</p></solution>
+</problem>
+
+<problem xml:id="wexample-counting-injections-1">  <!-- worked example -->
+<!-- \label{WEXAMPLE::counting.injections.1} -->
+	<statement>
+		<p>
+		If <m>\card{A} = k</m> and <m>\card{B} = n</m>,
+		with <m>k \le n</m>, how many injective functions <m>\funcdef{f}{A}{B}</m> exist?
+		</p>
+		<aside><title>Compare</title><p> See <xref ref="wexample-counting-functions" />. </p></aside>
+	</statement>
+	<solution>
+		<p>
+		Fix an ordering <m>a_1,a_2,\dotsc,a_k</m> of the elements of <m>A</m>.
+		Then from any ordering <m> b_1, b_2, \dotsc, b_k</m> of size <m>k</m> from <m>B</m>,
+		we get an injective function <m>\ifuncdef{f}{A}{B}</m> by the following table of values.
+		</p>
+		<tabular top="medium" bottom="medium" halign="center">
+			<col right="minor" /><col /><col /><col /><col />
+			<row bottom="minor">
+				<cell><m>x</m></cell>
+				<cell><m>a_1</m></cell>
+				<cell><m>a_2</m></cell>
+				<cell><m>\cdots</m></cell>
+				<cell><m>a_k</m></cell>
+			</row>
+			<row>
+				<cell><m>f(x)</m></cell>
+				<cell><m>b_1</m></cell>
+				<cell><m>b_2</m></cell>
+				<cell><m>\cdots</m></cell>
+				<cell><m>b_k</m></cell>
+			</row>
+		</tabular>
+		<p>
+		That is, every permutation of <m>B</m> of size <m>k</m> corresponds to an injection <m>\ifuncdef{f}{A}{B}</m>,
+		and so the number of such injections is <m>\permutation{n}{k}</m>.
+		</p>
+	</solution>
+</problem>
+
+</section>
+
+<xi:include href="./permutations.d/activities.ptx" />
+<!-- <xi:include href="./counting.d/exercises.ptx" /> -->
+
+</chapter>

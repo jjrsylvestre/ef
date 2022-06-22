@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<worksheet xml:id="activities-logic-equiv">
+
+<activity><p>
+	Write an English language statement that has the logical form <m>\lgcnot (A \lgcor B)</m>.
+	Then write one that has the form <m>\lgcnot A \lgcand \lgcnot B</m>,
+	where <m>A</m> and <m>B</m> are the same as in your first sentence.
+	<xref ref="proposition-logic-equiv-rules-prop-calculus-demorgan" text="title" />
+	say your two sentences are logically equivalent.
+	Do you agree?
+</p></activity>
+
+<activity><p>
+	What do you think
+	<xref ref="proposition-logic-equiv-rules-prop-calculus-demorgan" text="title" />
+	would say about <m>\lgcnot (A \lgcand B \lgcand C)</m>?
+	Use propositional calculus to justify your answer.
+</p></activity>
+
+<activity xml:id="activity-logic-equiv-cartesian-conditionals">
+	<introduction>
+		<p> Recall that a pair of coordinates <m>(x,y)</m> defines a point in the Cartesian plane. </p>
+		<p> Consider the following conditional statement. </p>
+		<blockquote><p>
+			If Cartesian points <m>(a,b)</m> and <m>(c,d)</m> are actually the same point, then <m>a = c</m>.
+		</p></blockquote>
+	</introduction>
+	<task xml:id="activity-logic-equiv-cartesian-conditionals-related"><p>
+		Write out the converse, inverse, and contrapositive of the above statement.
+	</p></task>
+	<task><p>
+		You now have four conditional statements.
+		For each of the four, decide whether it is true, and justify your answer.
+	</p></task>
+	<task><p>
+		For each of the three new conditional statements from
+		<xref ref="activity-logic-equiv-cartesian-conditionals-related" text="type-local" /> in turn,
+		take the view that that statement is the original conditional, and decide which of the others are
+		<em>its</em> converse, inverse, and contrapositive.
+	</p></task>
+</activity>
+
+<activity xml:id="activity-logic-equiv-construct-bicond">
+	<introduction><p>
+		In this activity, we will justify the equivalence
+		<me> p \lgcbicond q \lgcequiv (p\lgccond q) \lgcand (q \lgccond p) </me>.
+		So consider the statements <m>A = p \lgcbicond q</m> and <m>B = (p\lgccond q) \lgcand (q \lgccond p)</m>.
+	</p></introduction>
+	<task xml:id="activity-logic-equiv-construct-bicond-1">
+		<p> Argue that if <m>A</m> is false, then so is <m>B</m>. </p>
+		<p> Do <em>not</em> use the proposed equivalence above as part of your argument. </p>
+	</task>
+	<task xml:id="activity-logic-equiv-construct-bicond-2">
+		<p> Argue that if <m>B</m> is false, then so is <m>A</m>. </p>
+		<p> Do <em>not</em> use the proposed equivalence above as part of your argument. </p>
+	</task>
+	<task><p>
+		Explain why the two arguments
+		in <xref ref="activity-logic-equiv-construct-bicond-1" text="type-local" />
+		and <xref ref="activity-logic-equiv-construct-bicond-2" text="type-local" />,
+		taken together,
+		justify the equivalence <m>A \lgcequiv B</m>.
+		Do this <em>without</em> making any further arguments about the truth values of <m>p</m> and <m>q</m>.
+	</p></task>
+</activity>
+
+<activity>
+	<p> Consider the statements <m>p \lgccond (q_1 \lgcor q_2)</m> and <m>(p \lgcand \lgcnot q_1) \lgccond q_2</m>. </p>
+	<p> Use propositional calculus and substitution to show that these two statements are equivalent. </p>
+</activity>
+
+</worksheet>

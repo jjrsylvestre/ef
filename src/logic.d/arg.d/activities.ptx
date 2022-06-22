@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<worksheet xml:id="activities-arg">
+
+<activity><p>
+	<task>
+		<p> Write an argument in English that has modus ponens form where at least one premise is false, and the conclusion is true. </p>
+		<p> Does your argument contradict the fact that every modus ponens argument is valid? </p>
+	</task>
+	<task><p>
+		Write an argument in English that has modus tollens form where at least one premises is false <em>and</em> the conclusion is false.
+		Does your argument contradict the fact that every modus tollens argument is valid?
+	</p></task>
+	<task><p>
+		Write an argument in English that has syllogistic form where all the premises are true.
+		Is your conclusion true or false?
+	</p></task>
+</p></activity>
+
+<activity><p>
+	Prove that modus tollens is valid without using a truth table.
+	Instead, use the following facts:
+	<ul>
+		<li> modus ponens is valid; and </li>
+		<li> a conditional is equivalent to its contrapositive. </li>
+	</ul>
+</p></activity>
+
+<activity><p> Discuss why an argument being valid is equivalent to its premises logically implying its conclusion. </p></activity>
+
+<activity xml:id="activity-arg-valid-arg-contrapos">
+	<!-- \label{valid.arg.contrapos} -->
+	<p> The definition of valid argument is as follows. </p>
+	<blockquote><p> Whenever the premises are all true, the conclusion is true as well. </p></blockquote>
+	<p> Create an equivalent definition that is the <em>contrapositive</em> of the definition above.
+</p></activity>
+
+<activity><p>
+	Show that the following argument is valid <em>without</em> using a truth table.
+	Instead, argue that the argument fulfills the equivalent definition for <term>valid argument</term> that you created in
+	<xref ref="activity-arg-valid-arg-contrapos" />.
+	<tabular halign="left">
+		<row><cell><m>p \lgccond \lgcnot q</m></cell></row>
+		<row bottom="minor"><cell><m>r \lgccond (p \lgcand q)</m></cell></row>
+		<row><cell><m>\lgcnot r</m></cell></row>
+	</tabular>
+</p></activity>
+
+</worksheet>

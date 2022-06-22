@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<chapter xml:id="chapter-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Sets</title>
+
+<section xml:id="section-sets-basics">
+<title>Basics</title>
+
+<p><dl><li>
+	<title>object</title>
+	<idx>object (informal definition)</idx>
+	<p> any distinct entity </p>
+</li></dl></p>
+
+<example><title>Some objects</title><p><ul>
+	<li> The number <m>2</m>. </li>
+	<li> The real number line. </li>
+	<li> A monkey. </li>
+	<li> A basket of tennis balls. </li>
+</ul></p></example>
+
+<p><dl><li>
+	<title>set</title>
+	<idx><h>set(s)</h><h>informal definition</h></idx>
+	<p> a collection of objects </p>
+</li></dl></p>
+
+<example><title>Some sets</title><p>
+	From our list of example objects above, we would intuitively consider
+	<ul>
+		<li> the number <m>2</m> to not be a set; </li>
+		<li> the real number line to be a set as it is a collection of points, each representing a different real number; </li>
+		<li> a monkey to not be a set; and </li>
+		<li> a basket of tennis balls to be a set as it is a collection of tennis balls (though the basket itself is not part of this set, just the container for the objects making up the set). </li>
+	</ul>
+	However, the answers above may depend on your point of view.
+	For example, a monkey could be considered a collection of cells.
+	Even the number <m>2</m> is sometimes <em>defined</em> to be a set!
+	(See <xref ref="example-recur-induct-construct-nat-nums" />.)
+</p></example>
+
+<remark><p>
+	Formally, we leave <term>object</term> and <term>set</term> as primitive terms in the axiomatic system of set theory.
+	The reason for leaving these terms undefined is because any attempt to define them would lead us down a never-ending rabbit-hole of definitions: what is an <q>entity</q>? what is a <q>collection</q>?
+</p></remark>
+
+<p>
+We will not discuss any axiomatic basis for set theory, but instead rely on <term>naive set theory</term>.
+<dl><li>
+	<title>naive set theory</title>
+	<idx>naive set theory</idx>
+	<p>
+	whatever axioms for set theory the experts decide upon,
+	we are safe
+	(usually, see <xref ref="warning-sets-russell-para" />)
+	to assume that all the mathematical objects that we would like to be <term>sets</term>,
+	will be
+	</p>
+</li></dl>
+</p>
+
+<p>
+We need one more primitive term to make set theory workable.
+<dl>
+	<li>
+		<title>membership</title>
+		<idx>membership (in a set)</idx>
+		<idx><h>set(s)</h><h>membership</h></idx>
+		<p>
+		a property of sets relative to other objects:
+		given object <m>x</m> and set <m>S</m>,
+		exactly <em>one</em> of the statements <q><m>x</m> is a member of <m>S</m></q> and <q><m>x</m> is not a member of <m>S</m></q> is true
+		</p>
+	</li>
+	<li>
+		<title>element</title>
+		<idx>element</idx>
+		<idx><h>set(s)</h><h>element</h></idx>
+		<p> an object that is a member of a set </p>
+	</li>
+	<li>
+		<title><m>x \in S</m></title>
+		<notation>
+			<usage><m>x \in S</m></usage>
+			<description>object <m>x</m> is an element of set <m>S</m></description>
+		</notation>
+		<p> object <m>x</m> is an element of set <m>S</m> </p>
+		</li>
+</dl>
+</p>
+
+</section>
+
+<section xml:id="section-sets-defining">
+<title>Defining sets</title>
+<idx><h>set(s)</h><h>defining</h></idx>
+
+<introduction><p>
+	Remember that mathematical notation is about <em>communicating mathematical information</em>.
+	Since a set is defined by its member objects,
+	to communicate the details of a set of objects one needs to provide a means to decide whether any given object is or is not an element of the set.
+</p></introduction>
+
+<subsection>
+<title>Listing elements</title>
+<idx><h>set(s)</h><h>defining</h><h>by listing</h></idx>
+
+<p>
+One way to communicate the details of a set definition is to <em>explicitly</em> list or describe <em>all</em> elements of the set.
+Such a list should be enclosed in
+<term>braces</term>
+<notation>
+  <usage><m>\{a,b,c,\dotsc\}</m></usage>
+  <description>a set defined by listing its elements, enclosed in braces</description>
+</notation>
+to indicate that the objects in the list are being collected into a set.
+</p>
+
+<example><title>Listing the elements of a set</title><p>
+	If we write <me> A = \{ \text{monkey, tennis ball, the number } 2 \} </me>,
+	then we intend for the letter <m>A</m> to become a label representing the set consisting of
+	some specific monkey,
+	some specific tennis ball,
+	and the number <m>2</m>.
+</p></example>
+
+<p>
+Here are some sets containing familiar collections of numbers.
+Notice how in the first two examples we <q>list</q> the elements by providing a pattern and then using <ellipsis /> to imply that the pattern continues as expected,
+and in the second two examples we merely describe what the elements are in words.
+<dl>
+	<li>
+		<title><m>\N</m></title>
+		<idx><h>natural</h><h>numbers, set of</h></idx>
+		<idx><h>numbers</h><h>natural</h></idx>
+		<notation>
+		  <usage><m>\N</m></usage>
+		  <description>the set of natural numbers</description>
+		</notation>
+		<p> the set <m>\{ 0, 1, 2, \dotsc \}</m> of <term>natural numbers</term> </p>
+	</li>
+	<li>
+		<title><m>\Z</m></title>
+		<idx>integers, set of</idx>
+		<idx><h>numbers</h><h>integers</h></idx>
+		<notation>
+		  <usage><m>\Z</m></usage>
+		  <description>the set of integers</description>
+		</notation>
+		<p> the set <m>\{ \dotsc, -2, -1, 0, 1, 2, \dotsc \}</m> of <term>integers</term> </p>
+	</li>
+	<li>
+		<title><m>\Q</m></title>
+		<idx>rational numbers, set of</idx>
+		<idx><h>numbers</h><h>rational</h></idx>
+		<notation>
+		  <usage><m>\Q</m></usage>
+		  <description>the set of rational numbers</description>
+		</notation>
+		<p> the set of all fractions, call the set of <term>rational numbers</term> </p>
+	</li>
+	<li>
+		<title><m>\R</m></title>
+		<idx>real numbers, set of</idx>
+		<idx><h>numbers</h><h>real</h></idx>
+		<notation>
+		  <usage><m>\R</m></usage>
+		  <description>the set of real numbers</description>
+		</notation>
+		<p> the set of all decimal numbers, called the set of <term>real numbers</term> </p>
+	</li>
+</dl></p>
+
+<note><p>
+	Keep the following in mind for a set defined by listing elements.
+	<ul>
+		<li>
+			<em>Order does not matter</em>.
+			For example, <m>\{a,b\}</m> and <m>\{b,a\}</m> are the same set because they consist of precisely the same member elements.
+		</li>
+		<li>
+			<em>Repetition does not matter</em>.
+			For example, <m>\{a,a,b\}</m> and <m>\{a,b\}</m> are the same set because they consist of precisely the same member elements.
+		</li>
+	</ul>
+</p></note>
+
+</subsection>
+
+<subsection xml:id="subsection-sets-defining-candidate-condition">
+<title>Candidate-condition notation</title>
+<idx>candidate-condition notation</idx>
+<idx><h>set(s)</h><h>defining</h><h>candidate-condition notation</h></idx>
+
+<p>
+Another way to define a set is <term>candidate-condition notation</term>:
+<me> \text{set} = \setdef{\text{candidate domain}}{\text{condition(s) on candidates}} </me>.
+This notation provides a means to decide whether an object is a member of the set by first using an already-defined set as a pool of <q>member candidates</q> as well a condition or a list of conditions each candidate must satisfy in order to actually be a member.
+</p><p>
+If we write <m>S</m> for the set being defined,
+<m>C</m> for the set of candidates, and <m>T</m> for the test those candidates must satisfy to be included in <m>S</m>
+(that is, <m>T</m> is a predicate with domain <m>C</m>),
+then the candidate-condition notation takes the form
+<me> S = \setdef{x \in C}{T(x)} </me>,
+and can be read as
+</p>
+<blockquote><p>
+	<m>S</m> is the set of those elements <m>x</m> in <m>C</m> for which <m>T(x)</m> is true.
+</p></blockquote>
+
+<example>
+	<title>Using candidate-condition notation to define a set</title>
+	<p>
+	Consider the set <me> A = \{ 0, 3, 6, 9, 12, \dotsc \} </me>.
+	We could define this set in a more precise manner
+	(<ie /> without resorting to using dots) as follows.
+	<me> A = \setdef{ n \in \N }{ n \text{ divisible by } 3 } </me>
+	The <q><m>n\in\N</m></q> part to the left of the divider tells us that the pool of <q>member candidates</q> for <m>A</m> is the set of natural numbers, and the test to the right of the divider tells us how to decide when a given candidate natural number <m>n</m> is actually a member of <m>A</m>.
+	In words, you should think of the above definition as saying the following.
+	</p>
+	<blockquote><p>
+		Set <m>A</m> consists of those elements of <m>\N</m> which are divisible by <m>3</m>.
+	</p></blockquote>
+</example>
+
+</subsection>
+
+<subsection xml:id="subsection-sets-defining-form-parameter">
+<title>Form-parameter notation</title>
+<idx>form-parameter notation</idx>
+<idx><h>set(s)</h><h>defining</h><h>form-parameter notation</h></idx>
+
+<p>
+Finally, sets can be defined by <term>form-parameter notation</term>:
+<me> \text{set} = \setdef{\text{form involving parameter}}{\text{parameter domain}} </me>.
+This notation describes the members of a set by providing a <q>form</q> to which the members must conform.
+Usually the <q>form</q> is based on parameter variables that can range over a set of possibilities.
+</p>
+
+<example>
+	<title>Using form-parameter notation to define a set</title>
+	<p>
+	Again consider the set <me> A = \{ 0, 3, 6, 9, 12, \dotsc \} </me>.
+	We could also define this set as
+	<me> A = \setdef{3n}{n\in \N} </me>.
+	Here, the <term>form</term> of the elements of <m>A</m> is given to the left of the divider as <q><m>3</m> times a number</q>, where the number is represented by the <term>parameter</term> <m>n</m>.
+	Then the allowed range of the number parameter <m>n</m> is given to the right of the divider.
+	In words, you should think of the above definition as saying the following.
+	</p>
+	<blockquote><p> The elements of set <m>A</m> are precisely those objects that are <m>3</m> times a natural number. </p></blockquote>
+</example>
+
+<example>
+	<title>Defining the set of fractions</title>
+	<p>
+	We could define the set <m>\Q</m> of <term>rational numbers</term> in this way:
+	<me> \Q = \setdef{\frac{m}{n}}{ m,n\in \Z,\, n\ne 0} </me>.
+	This says that the set <m>\Q</m> consists of all symbols of the form <q>number over number</q>,
+	where the numbers can be any integers, as long as the bottom number is not zero.
+	However, we need to be a little bit careful here, since we allow different symbols of this form to represent the same element.
+	For example,
+	<md><mrow>
+		\frac{3}{6} \amp = \frac{1}{2} \text{,} \amp
+		\frac{2}{-9} \amp = \frac{-2}{9} \text{,} \amp
+		\frac{0}{n} \amp = \frac{0}{1} \quad \text{(any } n\ne 0\text{).}
+	</mrow></md>
+	We really should make this element form duplication explicit in the definition of the set,
+	but to do this would be really cumbersome and would be expressing something that is learned in grade school,
+	so it is usually omitted.
+	</p>
+</example>
+
+</subsection>
+
+<subsection>
+<title>Empty set</title>
+
+<p>
+There is one special set, the elements of which are very easy to list.
+<dl>
+
+	<li>
+		<title>empty set</title>
+		<idx><h>empty</h><h>set</h></idx>
+		<idx><h>set(s)</h><h>empty</h></idx>
+		<p> the set which has <em>no</em> elements </p>
+	</li>
+
+	<li>
+		<title><m>\emptyset</m></title>
+		<notation>
+			<usage><m>\emptyset</m></usage>
+			<description>the empty set</description>
+		</notation>
+		<p> the empty set </p>
+	</li>
+
+</dl>
+</p>
+
+<remark><p>
+	The empty set is defined by requiring that the statement <q><m>x</m> is an element of <m>\emptyset</m></q> is <em>always</em> false, for every object <m>x</m>.
+</p></remark>
+
+<warning><p>
+	Be careful not to inadvertently try to prove some property of members of the empty set!
+	You will be proving a <xref ref="definition-pred-logic-vac-true" text="title" /> statement.
+	(See <xref ref="section-pred-logic-vacuous" />.)
+</p></warning>
+
+</subsection>
+
+</section>
+
+
+<section xml:id="section-sets-subsets-equality">
+<title>Subsets and equality of sets</title>
+
+<p>
+Often we want to distinguish a collection of certain <q>special</q> elements within a larger set of elements.
+<dl>
+
+	<li>
+		<title>subset</title>
+		<idx>subset</idx>
+		<idx><h>set(s)</h><h>sub-</h></idx>
+		<p> a set whose elements are all members of another set </p>
+	</li>
+
+	<li>
+		<title><m>A \subseteq B</m></title>
+		<notation>
+			<usage><m>A \subseteq B</m></usage>
+			<description>set <m>A</m> is a subset of set <m>B</m></description>
+		</notation>
+		<p> set <m>A</m> is a <term>subset of</term> or is <term>contained in</term> set <m>B</m> </p>
+	</li>
+
+</dl>
+</p>
+<figure>
+	<caption>A Venn diagram demonstrating a subset relationship.</caption>
+	<image width="33%">
+		<description>A Venn diagram demonstrating a subset relationship</description>
+		<latex-image><xi:include href="sets.d/subset.tex" parse="text" /></latex-image>
+	</image>
+</figure>
+
+<warning><p> We also sometimes use the phrase <q>contained in</q> to mean an object is an element of a set. </p></warning>
+
+<claim xml:id="test-sets-subset">
+	<title>Subset</title>
+	<idx><h>Test</h><h>subset</h></idx>
+	<idx><h>subset</h><h>Test</h></idx>
+	<idx><h>set(s)</h><h>sub-</h><h>Test</h></idx>
+	<statement><p> To demonstrate <m>A\subseteq B</m>, prove <m>(\forall x)(x \in A \lgcimplies x \in B)</m>. </p></statement>
+</claim>
+
+<example xml:id="example-sets-number-subsets">
+	<title>Basic examples involving familiar sets of numbers</title>
+	<p><ul>
+		<li>
+			Every natural number is an integer, so <m>\N \subseteq \Z</m>.
+			To emphasize this, we could write <m>\N = \inlinesetdef{m \in \Z}{m \ge 0}</m>.
+		</li>
+		<li>
+			Every integer can be considered to be a rational number,
+			since for every <m>m\in\Z</m> we can write <m>m = \frac{a}{b}</m> with <m>a=m</m> and <m>b=1</m>.
+			Thus <m>\Z \subseteq \Q</m>.
+		</li>
+		<li>
+			Every rational number can be considered to be a real number if we identify fractions with their decimal expansions via long division.
+			Thus <m>\Q \subseteq \R</m>.
+		</li>
+	</ul></p>
+</example>
+
+<example>
+	<title>Candidate-condition notation always defines subsets</title>
+	<p>
+	When we define a set by <term><xref ref="subsection-sets-defining-candidate-condition" text="title" /></term>,
+	we first specify a pool of candidate elements,
+	and then a condition or collection of conditions that those candidates must satisfy in order to actually be included in the set.
+	But then every element in the set we are defining must first be from the set of candidate elements,
+	so our defined set must be a subset of the candidate set.
+	</p><p>
+	For example, in <xref ref="example-sets-number-subsets" />,
+	we provided a definition for the set <m>\N</m> in candidate-condition form where the pool of candidates is the set <m>\Z</m>.
+	This definition makes it explicit that <m>\N \subseteq \Z</m>.
+	</p>
+</example>
+
+<problem xml:id="wexample-sets-subset"> <!-- worked example -->
+	<statement><p>
+		Prove that <m>A \subseteq B</m> for
+		<md><mrow>
+			A \amp = \setdef{3m + 1}{m \in \Z}, \amp
+			B \amp = \setdef{x \in \R}{\sin\left(\frac{\pi(x-1)}{3}\right) = 0}.
+		</mrow></md>
+	</p></statement>
+	<solution><p>
+		There are an infinite number of elements of <m>A</m>, so we cannot check that all elements of <m>A</m> are also elements of <m>B</m> one-by-one.
+		Instead, we let a variable <m>x</m> represent an <em>arbitrary</em> but unspecified element of <m>A</m>.
+		Since all elements of <m>A</m> have the form <m>3m+1</m> for some <m>m \in \Z</m>,
+		we have <m>x = 3m+1</m> for some <m>m \in \Z</m>.
+		Check the condition for being an element of <m>B</m> by calculating
+		<me>
+			\sin\left(\frac{\pi(x-1)}{3}\right)
+			= \sin\left(\frac{\pi\bbrac{(3m+1)-1}}{3}\right)
+			= \sin (m\pi)
+			= 0.
+		</me>
+		Therefore, <m>x \in B</m>.
+		Since the above calculation works for every <m>m \in \Z</m>,
+		all elements of <m>A</m> are elements of <m>B</m>.
+	</p></solution>
+</problem>
+
+<proposition>
+	<title>Basic properties of the subset relationship</title>
+	<ol>
+		<li>
+			Every set has an empty set as a subset.
+			That is, <m>\emptyset \subseteq S</m> is always true for a set <m>S</m>.
+		</li>
+		<li>
+			Every set is a subset of itself.
+			That is, <m>S \subseteq S</m> is always true for a set <m>S</m>.
+		</li>
+		<li>
+			The subset relation is <term>transitive</term>.
+			That is, whenever <m>A \subseteq B</m> and <m>B \subseteq C</m> are true,
+			then <m>A \subseteq C</m> is true as well.
+		</li>
+	</ol>
+</proposition>
+
+<paragraphs><title>A look ahead</title><p>
+	We will study abstract notions of <term>relation</term> and the <term>transitive property</term> in
+	<xref ref="chapter-relations" />.
+</p></paragraphs>
+
+<p><dl><li>
+	<title>set equality</title>
+	<idx><h>equality</h><h>of sets</h></idx>
+	<idx><h>set(s)</h><h>equality</h></idx>
+	<p> write <m>A = B</m> if both sets consist of precisely the same elements </p>
+</li></dl></p>
+
+<claim xml:id="test-sets-equality">
+	<title>For set equality</title>
+	<idx><h>Test</h><h>set equality</h></idx>
+	<idx><h>equality</h><h>of sets</h><h>test</h></idx>
+	<idx><h>set(s)</h><h>equality</h><h>test</h></idx>
+	<statement>
+		<p> To demonstrate <m>A = B</m>, check that both <m>A \subseteq B</m> and <m>B \subseteq A</m>. </p>
+		<p>
+		This requires two applications of the <xref ref="test-sets-subset" text="custom">Subset Test</xref>:
+		<ol label="(i)">
+			<li> begin with the assumption <m>x \in A</m> and proceed to the conclusion <m>x \in B</m>; </li>
+			<li> begin with the assumption <m>x \in B</m> and proceed to the conclusion <m>x \in A</m>. </li>
+		</ol>
+	</p></statement>
+</claim>
+
+<remark><p>
+	One could combine both applications of
+	the <xref ref="test-sets-subset" text="custom">Subset Test</xref>
+	described in the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref> above into one biconditional:
+	<m>A = B</m> is true if <me>(\forall x)(x \in A \lgcequiv x \in B)</me> is true.
+	If the logic of <m>x \in A \lgcimplies x \in B</m> is easily reversed,
+	then it makes sense to argue <m>x \in A \lgcequiv x \in B</m> instead of separately arguing
+	<m>x \in A \lgcimplies x \in B</m> and <m>x \in B \lgcimplies x \in A</m>.
+	However, in most cases separate arguments of these logical implications is preferred.
+</p></remark>
+
+<problem> <!-- worked example -->
+	<statement><p>
+		Let <m>A</m> and <m>B</m> be as in <xref ref="wexample-sets-subset" />.
+		Prove that <m>A = B</m>.
+	</p></statement>
+	<solution>
+		<case><title>Show <m>A\subseteq B</m></title><p> See <xref ref="wexample-sets-subset" />. </p> </case>
+		<case>
+			<title>Show <m>B \subseteq A</m></title>
+			<p>
+			Let <m>x</m> represent an arbitrary element of <m>B</m>.
+			This means that
+			<me> \sin\left(\frac{\pi(x-1)}{3}\right) = 0. </me>
+			However, we know from trigonometry that <m>\sin \theta = 0</m> if and only if <m>\theta</m> is an integer multiple of <m>\pi</m>;
+			<ie /> <m>\theta = m\pi</m> for some <m>m \in \Z</m>.
+			If we set
+			<me> \frac{\pi(x-1)}{3} = m\pi </me>
+			and solve for <m>x</m>, we get <m>x = 3m+1 \in A</m>.
+			</p>
+		</case>
+	</solution>
+</problem>
+
+<p><dl>
+	<li xml:id="definition-sets-proper-subset">
+		<title>proper subset</title>
+		<idx><h>proper</h><h>subset</h></idx>
+		<idx><h>subset</h><h>proper</h></idx>
+		<idx><h>set(s)</h><h>sub-</h><h>proper</h></idx>
+		<p> a set contained in <em>but not equal to</em> another set </p>
+	</li>
+	<li>
+		<title><m>A \subsetneqq B</m></title>
+		<notation>
+			<usage><m>A \subsetneqq B</m></usage>
+			<description>set <m>A</m> is a proper subset of set <m>B</m></description>
+		</notation>
+		<p> set <m>A</m> is a proper subset of set <m>B</m> </p>
+	</li>
+</dl></p>
+
+<note><p>
+	Some people exclude <m>\emptyset</m> from the definition of proper subset.
+</p></note>
+
+<claim>
+	<title>For a proper subset</title>
+	<idx><h>Test</h><h>subset</h><h>proper</h></idx>
+	<idx><h>proper</h><h>subset</h><h>Test</h></idx>
+	<idx><h>subset</h><h>proper</h><h>Test</h></idx>
+	<statement><p>
+		To demonstrate <m>A \subsetneqq B</m>,
+		first test <m>A \subseteq B</m> as usual (<xref ref="test-sets-subset" />),
+		but also demonstrate that there exists some <m>x \in B</m> such that <m>x \notin A</m>.
+	</p></statement>
+</claim>
+
+<example>
+	<title>Proper subsets of number sets</title>
+	<p>
+		We already know that <m> \N \subseteq \Z \subseteq \Q \subseteq \R</m>, but we have
+		<ol>
+			<li> <m>\N \subsetneqq \Z</m>, since, for example, <m>-1 \in \Z</m> but <m>-1 \notin \N</m>; </li>
+			<li> <m>\Z \subsetneqq \Q</m>, since, for example, <m>\frac{1}{2} \in \Q</m> but <m>\frac{1}{2} \notin \Z</m>; and </li>
+			<li> <m>\Q \subsetneqq \R</m>, since, for example, <m>\sqrt{2} \in \R</m> but <m>\sqrt{2} \notin \Q</m>. </li>
+		</ol>
+	</p>
+</example>
+
+<remark><p>
+	To show the <m>A \neq B</m> part of <m>A\subsetneqq B</m>, you only need to exhibit <em>one</em> example element of <m>B</m> which is not in <m>A</m>;
+	<ie /> you need to find a <term>counterexample</term> for the logical implication <m>x \in B \lgcimplies x \in A</m>.
+</p></remark>
+
+</section>
+
+
+<section xml:id="section-sets-complement-union-intersection">
+<title>Complement, union, and intersection</title>
+
+<introduction><p>
+	First, it is often convenient to restrict the scope of the discussion.
+	<dl><li>
+		<title>universal set</title>
+		<idx><h>universal</h><h>set</h></idx>
+		<idx><h>set(s)</h><h>universal</h></idx>
+		<p> a set that contains all objects currently under consideration </p>
+	</li></dl>
+	We will consider all of the following set operations to be performed within a universal set <m>U</m>.
+	In particular, suppose <m>A,B\subseteq U</m>.
+</p></introduction>
+
+<subsection>
+<title>Universal and relative complement</title>
+
+<p><dl>
+	<li>
+		<title>complement</title>
+		<idx><h>complement</h><h>set</h></idx>
+		<idx><h>set(s)</h><h>complement</h></idx>
+		<p> the set of elements of <m>U</m> which are <em>not</em> in <m>A</m> </p>
+	</li>
+	<li>
+		<title><m>\cmplmnt{A}</m></title>
+		<notation>
+			<usage><m>\cmplmnt{A}</m></usage>
+			<description>the complement of <m>A</m> relative to some universal set</description>
+		</notation>
+		<p>
+		the complement of <m>A</m> (in <m>U</m>), so that
+		<me> \cmplmnt{A} = \setdef{ x \in U }{ x \notin A } </me>
+		</p>
+	</li>
+
+	<li>
+		<title>relative complement</title>
+		<idx>relative complement</idx>
+		<idx><h>complement</h><h>set</h><h>relative</h></idx>
+		<p>
+		if <m>A,B \subseteq U</m>, the <term>complement of <m>A</m> in <m>B</m></term> is the set of elements of <m>B</m> which are not in <m>A</m>
+		</p>
+	</li>
+	<li>
+		<title><m>B \relcmplmnt A</m></title>
+		<notation>
+			<usage><m>B \relcmplmnt A</m></usage>
+			<description>the complement of <m>A</m> relative to some universal set</description>
+		</notation>
+		<p>
+		the complement of <m>A</m> in <m>B</m>, so that
+		<me> B \relcmplmnt A = \setdef{ x \in B }{ x \notin A } </me>
+		</p>
+	</li>
+</dl></p>
+
+<figure>
+	<caption>Venn diagrams of universal and relative set complements.</caption>
+	<sidebyside widths="40% 40%">
+		<image>
+			<description>A Venn diagram of a (universal) set complement.</description>
+			<latex-image><xi:include href="sets.d/complement.tex" parse="text" /></latex-image>
+		</image>
+		<image>
+			<description>A Venn diagram of a relative set complement.</description>
+			<latex-image><xi:include href="sets.d/relative-complement.tex" parse="text" /></latex-image>
+		</image>
+	</sidebyside>
+</figure>
+
+<note><p>
+	Another common notation for relative complement is <m>B - A</m>.
+	However, this conflicts with the notation for the algebraic operation of subtraction in certain contexts, so we will prefer the notation <m>B \relcmplmnt A</m>.
+</p></note>
+
+<example>
+	<title>Some examples of relative complement involving number sets</title>
+	<p><ul>
+		<li>
+			Suppose <m>B = \{ 1, 2, 3, 4, 5, 6 \}</m> and <m>A = \{ 1, 3, 5 \}</m>.
+			Then <m>B \relcmplmnt A = \{ 2, 4, 6 \}</m>.
+		</li>
+		<li>
+			The complement of the set of rational numbers <m>\Q</m> inside the set of real numbers <m>\R</m> is called the
+			<term>set of irrational numbers</term>,
+			<idx><h>set(s)</h><h>of irrational numbers</h></idx>
+			<idx><h>irrational number(s)</h><h>set of</h></idx>
+			and we write
+			<m> \I = \R \relcmplmnt \Q </m>
+			for this set.
+			<notation>
+				<usage><m>\I</m></usage>
+				<description> the set of irrational real numbers </description>
+			</notation>
+			If you are thinking of real numbers in terms of their decimal expanions,
+			the irrational numbers are precisely those that have nonterminating, nonrepeating decimal expansions.
+		</li>
+	</ul></p>
+</example>
+
+</subsection>
+
+<subsection>
+<title>Union, intersection, and disjoint sets</title>
+
+<p><dl>
+	<li>
+		<title>union</title>
+		<idx><h>union</h><h>of sets</h></idx>
+		<idx><h>set(s)</h><h>union</h></idx>
+		<p> the combined collection of all elements in a pair of sets </p>
+	</li>
+	<li>
+		<title><m>A \union B</m></title>
+		<notation>
+			<usage><m>A \union B</m></usage>
+			<description>the union of sets <m>A</m> and <m>B</m></description>
+		</notation>
+		<p>
+			the union of sets <m>A</m> and <m>B</m>, so that
+			<me> A \union B = \setdef{x\in U}{x\in A \text{ or } x\in B \text{ (or both)}} </me>
+		</p>
+	</li>
+	<li>
+		<title>intersection</title>
+		<idx><h>intersection</h><h>of sets</h></idx>
+		<idx><h>set(s)</h><h>intersection</h></idx>
+		<p> the collection of only those elements common to a pair of sets </p>
+	</li>
+	<li>
+		<title><m>A \intersection B</m></title>
+		<notation>
+			<usage><m>A \intersection B</m></usage>
+			<description>the intersection of <m>A</m> and <m>B</m></description>
+		</notation>
+		<p>
+			the intersection of <m>A</m> and <m>B</m>, so that
+			<me> A \intersection B = \setdef{x\in U}{x\in A \text{ and } x\in B} </me>
+		</p>
+	</li>
+</dl></p>
+
+<figure>
+	<caption>Venn diagrams of set union and intersection.</caption>
+	<sidebyside widths="40% 40%">
+		<image>
+			<description>A Venn diagram of a set union.</description>
+			<latex-image><xi:include href="sets.d/union.tex" parse="text" /></latex-image>
+		</image>
+		<image>
+			<description>A Venn diagram of a set intersection.</description>
+			<latex-image><xi:include href="sets.d/intersection.tex" parse="text" /></latex-image>
+		</image>
+	</sidebyside>
+</figure>
+
+<note><p>
+	A union contains every element from both sets, so it contains both sets as subsets:
+	<me> A, B \subseteq A \union B </me>.
+	On the other hand, every element in an intersection is in both sets, so the intersection is a subset of both sets:
+	<me> A \intersection B \subseteq A, B </me>.
+</p></note>
+
+<example><p>
+	For subsets <m>A = \{1,2,3,4\}</m> and <m>B = \{3,4,5,6\}</m> of <m>\N</m>,
+	we have
+	<md><mrow> A \union B \amp = \{1,2,3,4,5,6\}, \amp A \intersection B \amp = \{3,4\}. </mrow></md>
+</p></example>
+
+<example xml:id="example-sets-union-intersection-number-sets"><p>
+	Consider the following subsets of <m>\N</m>.
+	<md><mrow>
+		\scr{E} \amp = \setdef{n\in\N}{n\text{ even}} \amp
+		\scr{P} \amp = \setdef{n\in\N}{n\text{ prime, } n\ne 0} \\
+		\scr{O} \amp = \setdef{n\in\N}{n\text{ odd}} \amp
+		\scr{T} \amp = \setdef{3n}{n\in\N} = \{ 0,\, 3,\, 6,\, 9,\, \dotsc \}
+	</mrow></md>
+	Then,
+	<md><mrow>
+		\scr{E} \union\scr{O} \amp = \N, \amp
+		\scr{E} \intersection \scr{P} \amp = \{2\}, \amp
+		\scr{E} \intersection \scr{T} \amp = \setdef{6n}{n\in\N}, \\
+		\scr{E} \intersection \scr{O} \amp = \emptyset, \amp
+		\scr{O} \intersection \scr{P} \amp = \scr{P} \relcmplmnt \{2\}, \amp
+		\scr{O} \intersection \scr{T} \amp = \setdef{6n+3}{n\in\N}.
+	</mrow></md>
+</p></example>
+
+<p><dl>
+	<li xml:id="definition-sets-disjoint-sets">
+		<title>disjoint sets</title>
+		<idx><h>disjoint</h><h>sets</h></idx>
+		<idx><h>set(s)</h><h>disjoint</h></idx>
+		<p> sets that have no elements in common, <ie /> sets <m>A,B</m> such that <m>A\intersection B = \emptyset</m> </p>
+	</li>
+	<li xml:id="definition-sets-disjoint-union">
+		<title>disjoint union</title>
+		<idx><h>disjoint</h><h>union</h></idx>
+		<idx><h>set(s)</h><h>disjoint</h><h>union</h></idx>
+		<idx><h>union</h><h>of sets</h><h>disjoint</h></idx>
+		<p> a union <m>A \union B</m> where <m>A</m> and <m>B</m> are disjoint </p>
+	</li>
+	<li>
+		<title><m>A \disjunion B</m></title>
+		<notation>
+			<usage><m>A \disjunion B</m></usage>
+			<description>the disjoint union of sets <m>A</m> and <m>B</m></description>
+		</notation>
+		<p> the disjoint union of sets <m>A</m> and <m>B</m> </p>
+	</li>
+</dl></p>
+
+<figure>
+	<caption>A Venn diagram of a disjoint set union.</caption>
+	<image width="40%">
+		<description>A Venn diagram of a disjoint set union.</description>
+		<latex-image><xi:include href="sets.d/disj-union.tex" parse="text" /></latex-image>
+	</image>
+</figure>
+
+<example><p>
+	Sets <m>\scr{E},\scr{O}</m> from <xref ref="example-sets-union-intersection-number-sets" /> are disjoint,
+	and <m>\N = \scr{E} \disjunion \scr{O}</m>.
+</p></example>
+
+<remark><p>
+	If <m>A \subseteq U</m>, then we can express <m>U</m> as a disjoint union <m>U = A \disjunion \cmplmnt{A}</m>. Similarly, if <m>U = A \disjunion B</m>, then we must have <m>B = \cmplmnt{A}</m>.
+</p></remark>
+
+</subsection>
+
+<subsection>
+<title>Rules for set operations</title>
+
+<proposition xml:id="proposition-sets-rules-set-ops">
+	<!-- \zlabel{RULES::set.ops} -->
+	<title>Rules for Operations on Sets</title>
+	<idx><h>Rule(s)</h><h>for Operations on Sets</h></idx>
+	<idx><h>set operations</h><h>rules for</h></idx> <!-- TODO should have a <idx>set operations</idx> for the section or chapter or something... -->
+	<statement><p>
+		<!-- Don't really know what the heck this is:  \label{RULES::set.ops::inside.statement} -->
+		Suppose <m>A,B,C</m> are subsets of a universal set <m>U</m>.
+		Then the following set equalities hold.
+		<ol>
+			<li>
+				<title>Properties of the universal set</title>
+				<idx><h>set(s)</h><h>universal</h></idx>
+				<idx><h>universal</h><h>set</h></idx>
+				<p><ol cols="2">
+					<li><m> A \union U = U </m></li>
+					<li><m> A \intersection U = A </m></li>
+				</ol></p>
+			</li>
+			<li>
+				<title>Properties of the empty set</title>
+				<idx><h>set(s)</h><h>empty</h></idx>
+				<idx><h>empty</h><h>set</h></idx>
+				<p><ol cols="2">
+					<li><m> A \union \emptyset = A </m></li>
+					<li><m> A \intersection \emptyset = \emptyset </m></li>
+				</ol></p>
+			</li>
+			<li>
+				<title>Duality of universal and empty sets</title>
+				<idx><h>set(s)</h><h>empty</h></idx>
+				<idx><h>empty</h><h>set</h></idx>
+				<idx><h>set(s)</h><h>universal</h></idx>
+				<idx><h>universal</h><h>set</h></idx>
+				<idx><h>duality</h><h>of universal/empty sets</h></idx>
+				<p><ol cols="2">
+					<li><m> \cmplmnt{U} = \emptyset </m></li>
+					<li><m> \cmplmnt{\emptyset} = U </m></li>
+				</ol></p>
+			</li>
+			<li>
+				<title>Double complement</title>
+				<idx><h>double</h><h>complement</h></idx>
+				<idx><h>complement</h><h>double</h></idx>
+				<idx><h>set(s)</h><h>complement</h></idx>
+				<p><m> \cmplmnt{(\cmplmnt{A})} = A </m></p>
+			</li>
+			<li>
+				<title>Idempotence</title>
+				<idx><h>idempotence</h><h>of set operations</h></idx>
+				<p><ol cols="2">
+					<li><m> A \union A = A </m></li>
+					<li><m> A \intersection A = A </m></li>
+				</ol></p>
+			</li>
+			<li>
+				<title>Commutativity</title>
+				<idx><h>commutativity</h><h>of set operations</h></idx>
+				<p><ol cols="2">
+					<li><m> A \union B = B \union A </m></li>
+					<li><m> A \intersection B = B \intersection A </m></li>
+				</ol></p>
+			</li>
+			<li>
+				<title>Associativity</title>
+				<idx><h>associativity</h><h>of set operations</h></idx>
+				<p><ol cols="2">
+					<li><m> (A \union B) \union C = A \union (B \union C) </m></li>
+					<li><m> (A \intersection B) \intersection C = A \intersection (B \intersection C) </m></li>
+				</ol></p>
+			</li>
+			<li>
+				<title>Distributivity</title>
+				<idx><h>distributivity</h><h>of set operations</h></idx>
+				<p><ol>
+					<li><m> A \intersection (B \union C) = (A \intersection B) \union (A \intersection C) </m></li>
+					<li><m> A \union (B \intersection C) = (A \union B) \intersection (A \union C) </m></li>
+					<li><m> (A \union B) \intersection C  = (A \intersection C) \union (B \intersection C) </m></li>
+					<li><m> (A \intersection B) \union C = (A \union C) \intersection (B \union C) </m></li>
+				</ol></p>
+			</li>
+			<li>
+				<title>DeMorgan's Laws</title>
+				<idx><h>DeMorgan's Laws</h><h>for set operations</h></idx>
+				<idx><h>Law</h><h>DeMorgan's</h><h>for set operations</h></idx>
+				<p><ol cols="2">
+					<li xml:id="proposition-sets-rules-set-ops-demorgan-cmplmnt-union">
+						<m> \cmplmnt{(A \union B)} = \cmplmnt{A} \intersection \cmplmnt{B} </m>
+					</li>
+					<li xml:id="proposition-sets-rules-set-ops-demorgan-cmplmnt-intersection">
+						<m> \cmplmnt{(A \intersection B)} = \cmplmnt{A} \union \cmplmnt{B} </m>
+					</li>
+				</ol></p>
+			</li>
+		</ol>
+	</p></statement>
+
+	<proof xml:id="proof-proposition-sets-rules-set-ops">
+		<title>Proof of <xref ref="proposition-sets-rules-set-ops-demorgan-cmplmnt-union">Rule</xref></title>
+		<p>
+		Recall that to prove this set equality,
+		we need to show both
+		<md><mrow>
+			\cmplmnt{(A \union B)} \amp \subseteq \cmplmnt{A} \intersection \cmplmnt{B} \text{,} \amp
+			\cmplmnt{A} \intersection \cmplmnt{B} \amp \subseteq \cmplmnt{(A \union B)} \text{.}
+		</mrow></md>
+		</p>
+		<case><title>Show <m>\cmplmnt{(A \union B)} \subseteq \cmplmnt{A} \intersection \cmplmnt{B}</m></title><p>
+			We need to show
+			<me> x \in \cmplmnt{(A \union B)} \lgcimplies x \in \cmplmnt{A} \intersection \cmplmnt{B} </me>.
+			If <m>x \in \cmplmnt{(A \union B)}</m> then by definition of complement, <m>x\in U</m> but <m>x \notin A \union B</m>.
+			Then <m>x \notin A</m> must be true, since if <m>x</m> were in <m>A</m> then it would also be in <m>A \union B</m>.
+			Similarly, <m>x \notin B</m> must also be true.
+			So <m>x \in \cmplmnt{A}</m> and <m>x\in\cmplmnt{B}</m>; <ie /> <m>x\in \cmplmnt{A} \intersection \cmplmnt{B}</m>.
+		</p></case>
+		<case><title>Show <m>\cmplmnt{A} \intersection \cmplmnt{B} \subseteq \cmplmnt{(A \union B)} </m></title><p>
+			We need to show
+			<me> x \in \cmplmnt{A} \intersection \cmplmnt{B} \lgcimplies x \in \cmplmnt{(A \union B)} </me>.
+			If <m>x \in \cmplmnt{A} \intersection \cmplmnt{B}</m> then by definition of intersection, both <m>x \in \cmplmnt{A}</m> and <m>x \in \cmplmnt{B}</m> are true.; <ie /> <m>x \notin A</m> and <m>x \notin B</m>.
+			Since <m>A \union B</m> is all elements of <m>U</m> which are in one (or both) of <m>A,B</m>, we must have <m>x \notin A \union B</m>. Thus <m>x \in \cmplmnt{(A \union B)}</m>.
+		</p></case>
+	</proof>
+
+	<proof>
+		<title>Proofs of the other rules</title>
+		<p> These are left to you, the reader, in the <xref ref="exercise-sets-op-props" />. </p>
+	</proof>
+
+</proposition>
+
+<remark><p>
+	Compare the set operation rules of the proposition above with the
+	<xref ref="proposition-logic-equiv-rules-prop-calculus" text="title" />.
+</p></remark>
+
+</subsection>
+
+</section>
+
+<section xml:id="section-sets-cartesian-product">
+<title>Cartesian Product</title>
+
+<p><dl>
+
+	<li>
+		<title>Cartesian product</title>
+		<idx>Cartesian product</idx>
+		<idx><h>set(s)</h><h>Cartesian product</h></idx>
+		<p>
+		the set of all possible ordered pairs of elements from two given sets <m>A</m> and <m>B</m>,
+		where the first element in a pair is from <m>A</m> and the second is from <m>B</m>
+		</p>
+	</li>
+
+	<li>
+		<title><m>A \cartprod B</m></title>
+		<notation>
+			<usage><m>A \cartprod B</m></usage>
+			<description>the Cartesian product of <m>A</m> and <m>B</m></description>
+		</notation>
+		<p>
+		the Cartesian product of <m>A</m> and <m>B</m>:
+		<m> A \cartprod B = \setdef{(a,b)}{a\in A,\; b\in B} </m>
+		</p>
+	</li>
+
+</dl></p>
+
+<p>
+For <q>small</q> sets,
+we can list the elements of the Cartesian product by listing all ways of combining an element from the first with an element from the second.
+</p>
+
+<example><title>A Cartesian product of <q>small</q> sets</title><p>
+	Suppose <m>A = \{ 1, 2 \}</m> and <m>B = \{ a, b, c \}</m>.
+	Then <me> A \cartprod B = \{ (1,a), (1,b), (1,c), (2,a), (2,b), (2,c) \} </me>.
+</p></example>
+
+<example><title>A special subset of a certain Cartesian product</title><p>
+	Let <m>\N^+</m> represent the positive natural numbers: <m>\N^+ = \N \relcmplmnt \{0\}</m>.
+	Then we can describe the Cartesian product <m>\Z \cartprod \N^+</m> as
+	<me> \Z \cartprod \N^+ = \setdef{(m,n)}{m,n \in \Z, \; n>0} \subseteq \Z \cartprod \Z </me>.
+	Consider the subset
+	<me> A = \setdef{(m,n) \in \Z \cartprod \N^+}{n \text{ has no divisors in common with } \abs{m}} \subseteq \Z \cartprod \N^+</me>.
+	Does <m>A</m> resemble some more familiar set <ellipsis />?
+</p></example>
+
+<paragraphs><title>Extend</title>
+	<p> Define <m>A \cartprod B \cartprod C = \setdef{(a,b,c)}{a \in A\text{, } b\in B\text{, } c\in C}</m>. </p>
+	<example>
+		Suppose <m>A = \{ 1, 2 \}</m>, <m>B = \{ a, b, c \}</m>, <m>C = \{ \alpha, \beta \}</m>. Then,
+		<md>
+			<mrow>
+				A \cartprod B \cartprod C = \{ \;\;
+					\amp (1,a,\alpha), \, (1,a,\beta), \,
+					(1,b,\alpha), \, (1,b,\beta), \,
+					(1,c,\alpha), \, (1,c,\beta), \,
+			</mrow><mrow>
+					\amp (2,a,\alpha), \, (2,a,\beta), \,
+					(2,b,\alpha), \, (2,b,\beta), \,
+					(2,c,\alpha), \, (2,c,\beta)
+				\;\; \}
+			</mrow>.
+		</md>
+	</example>
+	<remark><p>
+		Technically, there is a difference between the elements of each of the sets
+		<md>
+			<mrow> (A \cartprod  B) \cartprod C  \amp = \setdef{\bbrac{(a,b),c}}{a \in A\text{, } b\in B\text{, } c\in C} \text{,} </mrow>
+			<mrow>  A \cartprod (B  \cartprod C) \amp = \setdef{\bbrac{a,(b,c)}}{a \in A\text{, } b\in B\text{, } c\in C} \text{,} </mrow>
+			<mrow>  A \cartprod  B  \cartprod C  \amp = \setdef{(a,b,c)}{a \in A\text{, } b\in B\text{, } c\in C} \text{,} </mrow>
+		</md>
+		but it is rare that anyone actually observes this technicality.
+		Usually, we consider these three sets to be the same set.
+	</p></remark>
+	<p>
+	We use special notation for Cartesian products of a set with itself.
+	<dl>
+		<li><title><m>A^2</m></title><p>notation to mean <m>A \cartprod A</m></p></li>
+		<li><title><m>A^3</m></title><p>notation to mean <m>A \cartprod A \cartprod A</m></p></li>
+		<li>
+			<title><m>A^n</m></title>
+			<notation>
+				<usage><m>A^n</m></usage>
+				<description>
+					the Cartesian product <m>A \cartprod A \cartprod \dotsb \cartprod A</m> involving <m>n</m> copies of <m>A</m>
+				</description>
+			</notation>
+			<p>notation to mean <m>A \cartprod A \cartprod \dotsb \cartprod A</m> involving <m>n</m> <q>factors</q> of <m>A</m></p>
+		</li>
+	</dl>
+	And so on.
+	</p>
+	<example><title>Cartesian products in linear algebra</title><p>
+		You have probably already encountered the notation
+		<md>
+			<mrow>\R^2 \amp = \setdef{(x,y)}{x,y \in \R} \text{,}</mrow>
+			<mrow>\R^3 \amp = \setdef{(x,y,z)}{x,y,z \in \R} \text{,}</mrow>
+			<mrow> \amp \vdots </mrow>
+			<mrow>\R^n \amp = \setdef{(x_1,x_2,\dotsc,x_n)}{x_j \in \R} \text{,}</mrow>
+			<mrow> \amp \vdots </mrow>
+		</md>
+		used to represent <m>2</m>-, <m>3</m>-, and higher-dimensional (real) vector spaces.
+	</p></example>
+</paragraphs>
+
+</section>
+
+<section xml:id="section-sets-words">
+<title>Alphabets and words</title>
+
+<p><dl>
+	<li>
+		<title>alphabet</title>
+		<idx>alphabet</idx>
+		<idx><h>set(s)</h><h>alphabet</h></idx>
+		<p>any set can be considered an <term>alphabet</term></p>
+	</li>
+	<li>
+		<title>letters</title>
+		<idx>letters</idx>
+		<idx><h>set(s)</h><h>letters</h></idx>
+		<p>the elements of an alphabet set</p>
+	</li>
+	<li>
+		<title>word</title>
+		<idx>word</idx>
+		<p>a finite-length, ordered list of letters</p>
+	</li>
+	<li>
+		<title><m>\words{\Sigma}</m></title>
+		<idx><h>set(s)</h><h>of words</h></idx>
+		<notation>
+			<usage><m>\words{\Sigma}</m></usage>
+			<description>the set of words using alphabet set <m>\Sigma</m></description>
+		</notation>
+		<p> the set of words using <term>alphabet</term> set <m>\Sigma</m> </p>
+	</li>
+</dl></p>
+
+<remark><p>
+	Even if the alphabet set <m>\Sigma</m> is the usual English-language alphabet,
+	we do not restrict ourselves to <em>actual</em> English-language words <mdash />
+	nonsense words are allowed.
+</p></remark>
+
+<example><title>English is not a full set of words</title><p>
+	Using <m>\Sigma = \EngAlphabet</m>, words
+	<me> \mathrm{math}, \; \mathrm{qwerty}, \; \mathrm{aabbccddijzuuu} </me>
+	are examples of elements in <m>\words{\Sigma}</m>.
+	So, ignoring punctuation, hyphenation, and capitalization, the English language is a <em>proper</em> subset of <m>\words{\Sigma}</m>.
+</p></example>
+
+<example xml:id="example-sets-natural-numbers-as-words">
+	<title>If digits are letters then numbers are words</title>
+	<p>
+	Using alphabet <m>\Sigma = \{ 0,\, 1,\, 2,\, \dotsc,\, 9 \}</m>,
+	then <m>\N \subsetneqq \words{\Sigma}</m>.
+	</p>
+</example>
+
+<exercise><p> Why is <m>\N \neq \words{\Sigma}</m> in <xref ref="example-sets-natural-numbers-as-words" />? </p></exercise>
+
+<p>
+In computing science, a certain set of words is of particular importance.
+<dl>
+	<li>
+		<title>binary word</title>
+		<idx><h>binary</h><h>word</h></idx>
+		<p>a word using alphabet <m>\{0,1\}</m></p>
+	</li>
+	<li>
+		<title>binary string</title>
+		<idx><h>binary</h><h>string</h><see>binary word</see></idx>
+		<p>synonym for <term>binary word</term></p>
+	</li>
+</dl>
+</p>
+
+<warning><p>
+	Order matters!
+	For example, using the alphabet <me>\Sigma = \EngAlphabet</me>,
+	the words <m>\mathrm{ab}</m> and <m>\mathrm{ba}</m> are <em>different</em> words in <m>\words{\Sigma}</m>.
+</p></warning>
+
+<p><dl>
+
+	<li>
+		<title>length (of a word)</title>
+		<idx><h>word</h><h>length</h></idx>
+		<idx>length, of a word</idx>
+		<p>
+			given <m>w \in \words{\Sigma}</m>, the <term>length of <m>w</m></term> is the number of elements from <m>\Sigma</m> used to form <m>w</m>, counting repetition
+		</p>
+	</li>
+
+	<li>
+		<title><m>\length{w}</m></title>
+		<notation>
+			<usage><m>\length{w}</m></usage>
+			<description>length of the word <m>w \in \words{\Sigma}</m></description>
+		</notation>
+		<p> length of the word <m>w \in \words{\Sigma}</m> </p>
+	</li>
+
+</dl></p>
+
+<example><p>
+	Using alphabet <m>\Sigma = \EngAlphabet</m>,
+	we have
+	<md><mrow> \length{\mathrm{qwerty}} \amp = 6 \text{,} \amp \length{\mathrm{aabab}} \amp = 5 </mrow></md>.
+</p></example>
+
+<p>
+The concept of <term>length</term> allows us to identify some special subsets and a special element of <m>\words{\Sigma}</m>.
+<dl>
+
+	<li>
+		<!-- \label{DEFN::subset.words.length.n} -->
+		<title><m>\words{\Sigma}_n</m></title>
+		<notation>
+			<usage><m>\words{\Sigma}_n</m></usage>
+			<description>for <m>n \in \N</m>, the subset of <m>\words{\Sigma}</m> consisting of all words of length <m>n</m></description>
+		</notation>
+		<p> for <m>n \in \N</m>, the subset of <m>\words{\Sigma}</m> consisting of all words of length <m>n</m> </p>
+	</li>
+
+	<li>
+		<title>empty word</title>
+		<idx><h>empty</h><h>word</h></idx>
+		<idx><h>word</h><h>empty</h></idx>
+		<p> given an alphabet <m>\Sigma</m>, we always consider <m>\words{\Sigma}</m> to contain a unique word of length <m>0</m> </p>
+	</li>
+
+	<li>
+		<title><m>\emptyword</m></title>
+		<notation>
+			<usage><m>\emptyword</m></usage>
+			<description>the empty word</description>
+		</notation>
+		<p> the empty word </p>
+	</li>
+
+</dl></p>
+
+</section>
+
+<section xml:id="section-sets-of-sets">
+<title>Sets of sets</title>
+
+<note><p>
+	Sets can be made up of <em>any</em> kind of objects, even other sets!
+	(But now we must be careful of the use of the phrase <q>contained in</q>.)
+</p></note>
+
+<example xml:id="example-sets-of-sets"><p>
+	Consider
+	<md><mrow>
+		\scr{T} \amp = \setdef{3n}{n\in\N} \text{,} \amp
+		X \amp = \setdef{A\subset \N}{A\intersection\scr{T} = \emptyset} \text{,} \amp
+		Y \amp = X \union \scr{T} \text{.}
+	</mrow></md>
+	Elements of <m>\scr{T}</m> are numbers.
+	Elements of <m>X</m> are <em>subsets</em> of <m>\N</m> <mdash />
+	that is, <m>X</m> is a set of subsets of <m>\N</m>, but <em>is not</em> itself a subset of <m>\N</m>.
+	Elements of <m>Y</m> are either from <m>X</m> or from <m>\scr{T}</m>, so some elements of <m>Y</m> are numbers, and some elements of <m>Y</m> are sets of numbers.
+</p></example>
+
+<p><dl>
+
+	<li>
+		<title>power set</title>
+		<idx>power set</idx>
+		<idx><h>set(s)</h><h>power</h></idx>
+		<p> given a set <m>A</m>, the <term>power set of <m>A</m></term> is the set <m>\{ B \subseteq A \}</m> of all subsets of <m>A</m> </p>
+	</li>
+
+	<li>
+		<title><m>\powset{A}</m></title>
+		<notation>
+			<usage><m>\powset{A}</m></usage>
+			<description>the power set of the set <m>A</m></description>
+		</notation>
+		<p> the power set of the set <m>A</m> </p>
+	</li>
+
+</dl></p>
+
+<warning xml:id="warning-sets-power-set-elements"><p>
+	The <term>elements</term> of a power set are <term>subsets</term> of the set in question.
+</p></warning>
+
+<fact>
+	<title>A power set is never empty</title>
+	<statement><p> For every set <m>A</m>, <m>\powset{A} \ne \emptyset</m>. </p></statement>
+	<proof><p>
+		Both <m>\emptyset</m> and <m>A</m> are <em>subsets</em> of <m>A</m>,
+		so both are <em>elements</em> of <m>\powset{A}</m>.
+		Even if <m>A = \emptyset</m>, we still have
+		<me> \powset{\emptyset} = \{\emptyset\} \ne \emptyset </me>.
+	</p></proof>
+</fact>
+
+<example><title>Power set of a <q>small</q> set</title><p>
+	For <m>A = \{a,b,c\}</m>, we have
+	<me>
+		\powset{A} = \left\{
+			\; \emptyset, \; \{a\}, \; \{b\}, \; \{c\},\;
+			\{a,b\},\; \{a,c\},\; \{b,c\},\; \{a,b,c\} \;
+		\right\}
+	</me>.
+	Note the use of curly braces here.
+	In particular, note that <m>\emptyset</m> has <em>not</em> been placed in its own set of curly braces because it is already a set itself.
+</p></example>
+
+<example><title>A set of sets as a subset of a power set</title><p>
+	For <m>X</m> as in <xref ref="example-sets-of-sets" />,
+	we have <m>X \subseteq \powset{\N}</m>.
+</p></example>
+
+<warning xml:id="warning-sets-russell-para"><p> <!-- \label{WARNING::russell.para} -->
+	We are not completely free to define sets any way we want.
+</p></warning>
+
+<example>
+	<p>
+	Let
+	<me>
+		R =
+		\setdef{
+			\text{any set } X
+		}{
+			X \text{ is not an element of itself.}
+		}
+	</me>.
+	First note that there exist sets which satisfy the condition for membership in <m>R</m>;
+	for example, the empty set.
+	So <m>R</m> should not be not empty.
+	If <m>R</m> is a set, then it is a <q>candidate</q> for membership in itself!
+	Break into cases.
+	</p>
+	<case><title>Case <m>R \in R</m></title><p> Then <m>R\notin R</m>, which contradicts the case assumption. </p></case>
+	<case><title>Case <m>R \notin R</m></title><p> Then <m>R\in R</m>, which contradicts the case assumption. </p></case>
+	<p>
+	Since all cases lead to a contradiction, <m>R</m> is <em>cannot be a set</em>!
+	This is called <term>Russell's Paradox</term>,<idx>Russell's Paradox</idx>
+	and is one of the reasons we rely upon <q>naive set theory</q> in this course.
+	</p>
+</example>
+
+<remark><p>
+	One of the ways to avoid Russell's Paradox is by requiring every object, including sets, to have a <term>type</term>,
+	similar to how variables in a computer language can be declared to have a type.
+	In such a scheme, a <term>set</term> is never just a set <mdash />
+	it is always a <term>set of a certain kind of object</term>.
+	Then an operation such as <m>\N \union \powset{\N}</m> would not be allowed,
+	as <m>\N</m> is a <term>set of numbers</term> while <m>\powset{\N}</m> is a <term>set of sets of numbers</term>,
+	and we have a type mismatch.
+	And, more importantly, asking a question like <q>Is <m>R \in R</m>?</q> becomes nonsensical,
+	as on the left of the <m>{} \in {}</m> symbol <m>R</m> is required to be some type of object while on the right <m>R</m> is required to be a <em>set</em> of that type of object, and again we have a type mismatch.
+</p></remark>
+
+</section>
+
+<xi:include href="./sets.d/activities.ptx" />
+<xi:include href="./sets.d/exercises.ptx" />
+
+</chapter>

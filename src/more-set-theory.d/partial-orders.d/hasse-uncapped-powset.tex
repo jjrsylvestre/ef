@@ -1,0 +1,33 @@
+% *********************************************************************
+% © 2010–2021 Jeremy Sylvestre
+%
+% Permission is granted to copy, distribute and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.3 or
+% any later version published by the Free Software Foundation; with no
+% Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+% copy of the license is included in the appendix entitled “GNU Free
+% Documentation License” that appears in the output document of this
+% PreTeXt source code. All trademarks™ are the registered® marks of
+% their respective owners.
+%
+% *********************************************************************
+
+\begin{tikzpicture}[
+	vertex/.style={ circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
+	vertexg/.style={ black!40!white, circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
+	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=4pt }
+]
+
+\node at (0,0) (e) [vertex,label=below:$\scriptstyle \emptyset$] {};
+\node at (-2,1) (a) [vertex,label=below:{$\scriptstyle \{a\}$}] {};
+\node at (0,1) (b) [vertex,label=above:{$\scriptstyle \{b\}$}] {};
+\node at (2,1) (c) [vertex,label=below:{$\scriptstyle \{c\}$}] {};
+\foreach \p in {a,b,c} \draw (e) to (\p);
+\node at (-2,2) (ab) [vertex,label=above:{$\scriptstyle \{a,b\}$}] {};
+\foreach \p in {a,b} \draw (\p) to (ab);
+\node at (0,2) (ac) [vertex,label={above:$\scriptstyle \{a,c\}$}] {};
+\foreach \p in {a,c} \draw (\p) to (ac);
+\node at (2,2) (bc) [vertex,label=above:{$\scriptstyle \{b,c\}$}] {};
+\foreach \p in {b,c} \draw (\p) to (bc);
+
+\end{tikzpicture}

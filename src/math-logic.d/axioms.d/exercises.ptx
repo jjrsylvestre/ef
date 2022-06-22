@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-axioms">
+<title>Exercises</title>
+
+<exercisegroup xml:id="exercisegroup-axioms-woozles-and-dorples">
+	<title>Reasoning in an abstract axiomatic system</title>
+
+	<introduction><p>
+		<xref ref="exercisegroup-axioms-woozles-and-dorples" text="type-local">Exercises</xref>
+		concern the axiomatic system described in <xref ref="example-axioms-woozles-dorples" />.
+	</p></introduction>
+
+	<exercise xml:id="exercise-axioms-rewrite-woozles-and-dorples-to-incidence-geom"><p>
+		<!-- \label{EXER::rewrite.woozles.and.dorples.to.incidence.geom} -->
+		Rewrite each axiom of the system
+		and each subsequent theorem proved in <xref ref="section-axioms-basics" />,
+		replacing the words <term>woozle</term> by <term>point</term>, <term>dorple</term> by <term>line</term>, and <term>snarfs</term> by <term>lies on</term>.
+		Come up with a replacement for the terminology <term>snarf buddies</term> that is consistent with these replacement primitive terms.
+		Do the statements make more sense now?
+	</p></exercise>
+
+	<exercise><p>
+		Rewrite <xref ref="theorem-axioms-snarf-buddies-snarf-unique" /> as an <q>if <ellipsis /> then <ellipsis /></q> statement.
+		Then form the converse of this conditional.
+		Now prove the converse.
+	</p></exercise>
+
+	<exercise xml:id="exercise-axioms-incidence-geom-disguised-as-woozles-and-dorples">
+		<!-- \label{EXER::incidence.geom.disguised.as.woozles.and.dorples} -->
+		<introduction><p>
+			Prove each of the following statements.
+			In your proofs, you may use as justification any combination of the five axioms in the system,
+			<xref ref="theorem-axioms-three-distinct-dorples" /> and <xref ref="theorem-axioms-snarf-buddies-snarf-unique" /> already proved in this chapter,
+			and/or any of the statements of this exercise that you have already proved.
+		</p></introduction>
+		<task><p> There is no dorple who snarfs all woozles. </p></task>
+		<task><p> Each woozle snarfs at least two distinct dorples. </p></task>
+		<task><p> Each dorple belongs to at least two distinct snarf buddy pairs. </p></task>
+		<task><p> There is no woolze who snarfs all dorples. </p></task>
+		<task><p> There is at least one trio of distinct dorples that snarf no woozle in common. </p></task>
+		<task xml:id="exercise-axioms-incidence-geom-disguised-as-woozles-and-dorples-each-woozle-in-a-trio"><p>
+			<!-- \label{EXER::incidence.geom.disguised.as.woozles.and.dorples::each.woozle.in.a.trio} -->
+			Each woozle belongs to a trio of woozles that snarf no dorple in common.
+		</p></task>
+		<task xml:id="exercise-axioms-incidence-geom-disguised-as-woozles-and-dorples-each-pair-woozle-in-a-trio"><p>
+			<!-- \label{EXER::incidence.geom.disguised.as.woozles.and.dorples::each.pair.woozles.in.a.trio} -->
+			Every pair of woozles can be increased to a trio of woozles that snarf no dorple in common.
+		</p></task>
+		<conclusion><p>
+			<alert>Note.</alert>
+			<xref ref="exercise-axioms-incidence-geom-disguised-as-woozles-and-dorples-each-woozle-in-a-trio" text="local">Statement</xref>
+			and <xref ref="exercise-axioms-incidence-geom-disguised-as-woozles-and-dorples-each-pair-woozle-in-a-trio" text="local">Statement</xref>
+			in <xref ref="exercise-axioms-incidence-geom-disguised-as-woozles-and-dorples" />
+			are indeed different statements and require separate proofs
+			(and each of these statements is different from <xref ref="example-axioms-woozles-dorples-triple-woozles">Axiom</xref>).
+		</p></conclusion>
+	</exercise>
+
+	<exercise><p>
+		Rewrite each statement in <xref ref="exercise-axioms-incidence-geom-disguised-as-woozles-and-dorples" />
+		using the replacement primitive terms <term>point</term> for <term>woozle</term>, <term>line</term> for <term>dorple</term>, and <term>lies on</term> for <term>snarfs</term>.
+		Also replace <term>snarf buddies</term> by whatever terminology you came up with in
+		<xref ref="exercise-axioms-rewrite-woozles-and-dorples-to-incidence-geom" />.
+	</p></exercise>
+
+	<exercise xml:id="exercise-axioms-revised-three-dorples">
+		<statement><p>
+			Now consider the system with the revised version of <xref ref="example-axioms-woozles-dorples-new-exists-three-woozles">Axiom</xref>.
+			Prove that there exist exactly three dorples.
+		</p></statement>
+		<hint><p>
+			Start with the first diagram in the <xref ref="proof-axioms-three-distinct-dorples" text="custom">proof</xref>
+			<!--
+				TODO see "PRETEXT QUESTIONS" at the bottom TODO.txt, -proof- title *should* default to "Proof".
+				So if fixed, the above xref shouldn't need "proof" content.
+			-->
+			of <xref ref="theorem-axioms-three-distinct-dorples" />.
+			Now argue by contradiction: what do the axioms say would happen if you added a fourth dorple <m>d_4</m>?
+		</p></hint>
+	</exercise>
+
+</exercisegroup>
+
+<exercise xml:id="exercise-axioms-wizards">
+	<introduction>
+		<p> Consider the following axiomatic system. </p>
+		<paragraphs><title>Primitive terms</title><p><ul>
+			<li> <term>wizard</term> (noun), </li>
+			<li> <term>zaps</term> (verb). </li>
+		</ul></p></paragraphs>
+		<paragraphs><title>Axioms</title><p><ol label="1.">
+			<li xml:id="exercise-axioms-wizards-axiom-three-wizards">
+				<!-- \label{AXIOM::three.wizards} -->
+				There are at least three distinct wizards.
+			</li>
+			<li xml:id="exercise-axioms-wizards-axiom-no-non-zap-pairs">
+				<!-- \label{AXIOM::no.non.frost.pairs} -->
+				If <m>W_1</m>, <m>W_2</m> are distinct wizards, then <m>W_1</m> zaps <m>W_2</m> or <m>W_2</m> zaps <m>W_1</m>.
+			</li>
+			<li xml:id="exercise-axioms-wizards-axiom-no-self-zap">
+				<!-- \label{AXIOM::no.self.frost} -->
+				No wizard zaps itself.
+			</li>
+			<li xml:id="exercise-axioms-wizards-axiom-zap-transitive">
+				<!-- \label{AXIOM::frosttransitive} -->
+				If <m>W_1</m>, <m>W_2</m>, <m>W_3</m> are wizards such that <m>W_1</m> zaps <m>W_2</m> and <m>W_2</m> zaps <m>W_3</m>, then <m>W_1</m> zaps <m>W_3</m>.
+			</li>
+		</ol></p></paragraphs>
+		<paragraphs><title>Notes</title><p><ul>
+			<li> Recall that in mathematics and logic, we always interpret <q>or</q> as <em>inclusive or</em>: one or the other or possibly both. </li>
+			<li>
+				In <xref ref="exercise-axioms-wizards-axiom-no-non-zap-pairs" text="local">Axiom</xref>
+				and <xref ref="exercise-axioms-wizards-axiom-zap-transitive" text="local">Axiom</xref>,
+				you should treat <m>W_1,W_2,W_3</m> as variables or placeholders that can be <q>substituted into</q>.
+				These axioms are not stating facts about <em>specific</em> wizards;
+				rather, they are stating facts about <em>all</em> wizards, and their relationships to each other through zapping.
+				In particular, <xref ref="exercise-axioms-wizards-axiom-zap-transitive" text="local">Axiom</xref> could (in principle) be applied to a collection <m>W_1,W_2,W_3</m> of wizards where <m>W_1</m> and <m>W_3</m> are in fact the <em>same</em> wizard.
+			</li>
+		</ul></p></paragraphs>
+		<p> Prove the following statements based on this axiomatic system. </p>
+	</introduction>
+	<task><p>
+		<term>Principle of Non-Retaliation</term>.
+		If wizard <m>A</m> zaps wizard <m>B</m>, then <m>B</m> does not zap <m>A</m>.
+	</p></task>
+	<task>
+		<statement><p>
+			<term>Friends and Enemies Theorem</term>.
+			If <m>A</m>, <m>B</m>, and <m>C</m> are <em>distinct</em> wizards such that <m>A</m> zaps <m>B</m>,
+			then <m>A</m> zaps <m>C</m> or <m>C</m> zaps <m>B</m>.
+		</p></statement>
+		<hint><p> You may wish to refer back to <xref ref="activity-proof-methods-disjunctive-wizards" />. </p></hint>
+	</task>
+	<task>
+		<statement><p>
+			<term>Bully Theorem</term>.
+			Given four distinct wizards, exactly one of the four zaps all of the others.
+		</p></statement>
+		<hint><p>
+			First argue there cannot be more than one of the four that zaps the other three.
+			Then show there is at least one.
+			You may need to consider several cases <mdash />
+			draw diagrams to help.)
+		</p></hint>
+	</task>
+</exercise>
+
+</exercises>

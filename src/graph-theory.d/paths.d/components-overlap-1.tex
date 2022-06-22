@@ -1,0 +1,48 @@
+% *********************************************************************
+% © 2010–2021 Jeremy Sylvestre
+%
+% Permission is granted to copy, distribute and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.3 or
+% any later version published by the Free Software Foundation; with no
+% Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+% copy of the license is included in the appendix entitled “GNU Free
+% Documentation License” that appears in the output document of this
+% PreTeXt source code. All trademarks™ are the registered® marks of
+% their respective owners.
+%
+% *********************************************************************
+
+\begin{tikzpicture}[
+	vertex/.style={ circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
+	vertexg/.style={ black!40!white, circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
+	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=4pt }
+]
+
+% very light "frame" so that his graph has roughly same width as
+% components-overlap-2.tex
+\draw[very thin,black!1!white] (-4.45,0) to (-4.5,0) to (-4.5,0.05);
+\draw[very thin,black!1!white] (3.45,0) to (3.5,0) to (3.5,0.05);
+\draw[very thin,black!1!white] (3.45,3.5) to (3.5,3.5) to (3.5,3.45);
+\draw[very thin,black!1!white] (-4.45,3.5) to (-4.5,3.5) to (-4.5,3.45);
+
+\node[vertex] at (-2,0) (g3v1) {};
+\node[vertex] at (-1,1) (g3v2) {};
+\draw (g3v2) to (g3v1);
+\node[vertex] at (0,2) (g3v3) {};
+\node[vertex] at (1,3) (g3v4) {};
+\draw (g3v4) to (g3v3);
+\draw (g3v2.north) to [out=90,in=180] (g3v3.west);
+\draw (g3v2.east) to [out=0,in=270] (g3v3.south);
+\draw (g3v4) arc (175:-175:0.25cm) to (g3v4);
+\draw (g3v1) arc (5:355:0.25cm) to (g3v1);
+\node[vertex] at (-2,3) (g3v5) {};
+\node[vertex] at (-1,2) (g3v6) {};
+\draw (g3v6) to (g3v5);
+\node[vertex] at (0,1) (g3v7) {};
+
+\node[vertex] at (1,0) (g3v8) {};
+\draw (g3v8) to (g3v7);
+\draw (g3v6.south) to [out=270,in=180] (g3v7.west);
+\draw (g3v6.east) to [out=0,in=90] (g3v7.north);
+
+\end{tikzpicture}

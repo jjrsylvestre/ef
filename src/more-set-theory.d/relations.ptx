@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<!-- TODO search for \not\mathrel and use proper notation once MathJax is updated to v3 -->
+
+<chapter xml:id="chapter-relations" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Relations</title>
+
+<section xml:id="section-relations-basics">
+<title>Basics</title>
+
+<p><dl width="narrow">
+	<li>
+		<title>relation (working definition)</title>
+		<idx><h>relation(s)</h><h>working definition</h></idx>
+		<p> a rule which assigns to <em>some</em> elements of a set <m>A</m> several elements from a set <m>B</m> </p>
+	</li>
+	<li>
+		<title><m>a \mathrel{R} b</m></title>
+		<notation>
+			<usage><m>a \mathrel{R} b</m></usage>
+			<description>element <m>a \in A</m> is related to element <m>b \in B</m> by relation <m>R</m></description>
+		</notation>
+		<p> element <m>a \in A</m> is related to element <m>b \in B</m> by relation <m>R</m> </p>
+	</li>
+	<li>
+		<title>relation on a set</title>
+		<p> a relation between elements of the same set </p>
+	</li>
+</dl></p>
+
+<remark><p>
+	Compare this working definition of <term>relation</term>
+	with our <term><xref ref="definition-funcs-working" text="custom">working definition of function</xref></term>
+	in <xref ref="section-funcs-basics" />.
+</p></remark>
+
+<p> As the name implies, a relation describes some relationship of elements of a set <m>A</m> to elements of a set <m>B</m>. </p>
+
+<example>
+	<title>Pet relation</title>
+	<p>
+	Let <m>C</m> represent the set of living cats,
+	and let <m>H</m> represent the set of living humans.
+	Then one relationship between elements of these two sets can be expressed by writing <m>c \mathrel{R} h</m> to mean that cat <m>c</m> is the pet of human <m>h</m>.
+	</p>
+</example>
+
+<example>
+	<title>Parent relation</title>
+	<p>
+	Let <m>H</m> represent the set of living humans.
+	Then one type of relationship between elements of this set can be expressed by writing <m>h_1 \mathrel{R} h_2</m> to mean that human <m>h_1</m> is the parent of human <m>h_2</m>.
+	</p>
+</example>
+
+<example>
+	<title>Division relation</title>
+	<p>
+	One type of relationship between elements of <m>\posset{\N}</m> can be expressed by writing <m>m \mid n</m> to mean that nonzero natural number <m>m</m> divides nonzero natural number <m>n</m>.
+	</p>
+</example>
+
+<p>
+Just as with functions, we want to avoid the use of the undefinable word <q>rule</q>.
+Notice that a relation just pairs elements of a set <m>A</m> with elements of a set <m>B</m>;
+we have seen this before.
+<dl width="narrow"><li>
+	<title>relation (formal definition)</title>
+	<idx><h>relation(s)</h><h>formal definition</h></idx>
+	<p> a subset of a Cartesian product </p>
+</li></dl>
+With this formal definition, writing <m>R \subseteq A \cartprod B</m> becomes the same as saying <q><m>R</m> is a relation between elements of <m>A</m> and <m>B</m>,</q>
+and writing <m>(a,b) \in R</m> becomes the same as writing <m>a \mathrel{R} b</m>.
+</p>
+
+<note><p>
+	With this formal definition,
+	a relation on a set <m>A</m> means a subset of <m>A \cartprod A</m>.
+</p></note>
+
+<remark>
+	<p>
+	Recall that our <term><xref ref="definition-funcs-formal" text="custom">formal definition of function</xref></term>
+	states that a function <m>A \to B</m> is a <em>special kind</em> of subset of <m>A \cartprod B</m>.
+	But <em>every</em> subset of <m>A \cartprod B</m> can be considered as a relation,
+	so a function is a special kind of relation.
+	</p><p>
+	The difference is that a function <m>A \to B</m> must assign <em>exactly one</em> element of <m>B</m> to <em>each</em> element of <m>A</m>,
+	whereas a relation from <m>A</m> to <m>B</m> can assign any number of elements of <m>B</m> (even zero) to each element of <m>A</m>.
+	That is, a relation does not have to be <term>well-defined</term>,
+	and can be left <term>undefined</term> on some elements of <m>A</m>.
+	</p>
+	<aside><title>See</title><p>
+		<xref ref="example-funcs-undefined" /> and <xref ref="example-funcs-well-defined" />.
+	</p></aside>
+</remark>
+
+<example>
+	<title>Identity relation</title>
+	<p>
+	Consider <me> R = \setdef{(a,a)}{a \in A} \subseteq A \cartprod A </me>.
+	Then <m>a_1 \mathrel{R} a_2</m> means <m>a_1 = a_2</m>.
+	This relation is the same as the identity function <m>\funcdef{\id_A}{A}{A}</m>.
+	</p>
+</example>
+
+<example>
+	<title>Element relation</title>
+	<p>
+	Consider <me> R = \setdef{(a,C)}{a \in C} \subseteq A \cartprod \powset{A} </me>.
+	Then <m>a \mathrel{R} C</m> means <m>a \in C</m>.
+	This relation is in general not a function, since it is not well-defined:
+	an element of <m>A</m> can be contained in several subsets of <m>A</m>.
+	</p>
+</example>
+
+<p>
+A relation between pairs of objects, such as the ones we have considered so far, is sometimes called a
+<term>binary relation</term>.
+<idx><h>binary</h><h>relation</h></idx>
+<idx><h>relation(s)</h><h>binary</h></idx>
+But we can consider relationships between collections of more than two objects.
+<dl><li>
+	<title>ternary relation</title>
+	<idx>ternary relation</idx>
+	<idx><h>relation(s)</h><h>ternary</h></idx>
+	<p> a subset of <m>A \cartprod B \cartprod C</m> for sets <m>A,B,C</m> </p>
+</li>
+</dl>
+</p>
+
+<example>
+	<title>A human (usually) has <em>two</em> biological parents</title>
+	<p>
+	Let <m>H</m> represent the set of all living humans.
+	Then we can define a ternary relation <m>R \subseteq H^3</m> by taking
+	<m>(h_1,h_2,h_3) \in R</m> to mean that humans <m>h_1,h_2</m> are the parents of human <m>h_3</m>.
+	</p>
+</example>
+
+</section>
+
+<section xml:id="section-relations-operations">
+<title>Operations on relations</title>
+<!-- \label{ANCHOR::new.relations.from.old} -->
+
+<p>
+Viewing relations as subsets of Cartesian products suggests ways to build new relations from old.
+<dl width="narrow">
+	<li>
+		<title>union (of relations <m>R_1,R_2</m>)</title>
+		<idx><h>union</h><h>of relations</h></idx>
+		<idx><h>relation(s)</h><h>union of</h></idx>
+		<notation>
+			<usage><m>R_1 \union R_2</m></usage>
+			<description>union of relations <m>R_1,R_2</m></description>
+		</notation>
+		<p> the relation where <m>a \mathrel{(R_1 \union R_2)} b</m> means that at least one of <m>a \mathrel{R_1} b</m> or <m>a \mathrel{R_2} b</m> is true </p>
+	</li>
+	<li>
+		<title>intersection (of relations <m>R_1,R_2</m>)</title>
+		<idx><h>intersection</h><h>of relations</h></idx>
+		<idx><h>relation(s)</h><h>intersection of</h></idx>
+		<notation>
+			<usage><m>R_1 \intersection R_2</m></usage>
+			<description>intersection of relations <m>R_1,R_2</m></description>
+		</notation>
+		<p> the relation where <m>a \mathrel{(R_1 \intersection R_2)} b</m> means that both <m>a \mathrel{R_1} b</m> and <m>a \mathrel{R_2} b</m> are true </p>
+	</li>
+	<li>
+		<title>complement (of relation <m>R</m>)</title>
+		<idx><h>complement</h><h>of a relation</h></idx>
+		<idx><h>relation(s)</h><h>complement of</h></idx>
+		<notation>
+			<usage><m>\cmplmnt{R}</m></usage>
+			<description>complement of relation <m>R</m></description>
+		</notation>
+		<p> the relation where <m>a \mathrel{\cmplmnt{R}} b</m> means that <m>a \mathrel{R} b</m> is <em>not</em> true </p>
+	</li>
+	<li>
+		<!-- <title><m>a \not\mathrel{R} b</m></title> -->
+		<title><m>a\ \not R\ b</m></title>
+		<notation>
+			<!-- <usage><m>a \not\mathrel{R} b</m></usage> -->
+			<usage><m>a\ \not R\ b</m></usage>
+			<description>alternative notation for <m>a \mathrel{\cmplmnt{R}} b</m></description>
+		</notation>
+		<p> alternative notation for <m>a \mathrel{\cmplmnt{R}} b</m> </p>
+	</li>
+</dl></p>
+
+<note><p>
+	Considering relations as subsets of Cartesian products,
+	the above relation operations mean precisely the same thing as the corresponding set operations.
+</p></note>
+
+<example>
+	<title>Union of <q>less than</q> and <q>equal to</q> relations</title>
+	<p>
+	Consider the relations <m>\mathord{\lt}</m> and <m>\mathord{=}</m> on <m>\R</m>,
+	and let <m>R</m> be the union <m>\mathord{\lt} \cup \mathord{=}</m>.
+	Then <m>x \mathrel{R} y</m> means that at least one of <m>x \lt y</m> or <m>x = y</m> is true.
+	That is, <m>R</m> is the same as the relation <m>\mathord{\le}</m>.
+	</p>
+</example>
+
+<example>
+	<title>Sibling relations</title>
+	<p>
+	Let <m>H</m> represent the set of all living humans.
+	Let relations <m>R_F, R_M \subseteq H \cartprod H</m> be defined by
+	<ul>
+		<li> <m>a \mathrel{R_F} b</m> if <m>a,b</m> have the same father; and </li>
+		<li> <m>a \mathrel{R_M} b</m> if <m>a,b</m> have the same mother. </li>
+	</ul>
+	Set <m>R_P = R_F \intersection R_M</m>.
+	Then <m>a \mathrel{R_P} b</m> means that <m>a,b</m> have the same parents.
+	</p>
+</example>
+
+<example>
+	<title>Complement of the subset relation</title>
+	<p>
+	Let <m>U</m> be a universal set and consider the relation <m>\mathord{\subseteq}</m> on <m>\powset{U}</m>.
+	Then <m>A \mathrel{\cmplmnt{\mathord{\subseteq}}} B</m> means that <m>A</m> is <em>not</em> a subset of <m>B</m>,
+	which can only happen if some elements of <m>A</m> are not in <m>B</m>.
+	In other words, <m>A \mathrel{\cmplmnt{\mathord{\subseteq}}} B</m> means that <m>A \cap \cmplmnt{B} \ne \varnothing</m>.
+	</p>
+	<aside><title>Careful</title><p>
+		Relation <m>A \mathrel{\cmplmnt{\mathord{\subseteq}}} B</m> does not (necessarily) mean <m>A \subseteq \cmplmnt{B}</m>.
+		Draw a representative Venn diagram to see why.
+	</p></aside>
+</example>
+
+<p>
+Unlike functions, which can only be reversed if bijective,
+every relation can be reversed by simply stating the relationship in the reverse order.
+<dl width="narrow"><li xml:id="definition-relations-inverse">
+	<title>inverse (of a relation <m>R</m>)</title>
+	<idx><h>inverse</h><h>relation</h></idx>
+	<idx><h>relation(s)</h><h>inverse</h></idx>
+	<notation>
+		<usage><m>\inv{R}</m></usage>
+		<description>inverse of the relation <m>R</m></description>
+	</notation>
+	<p> the relation where <m>b \mathrel{\inv{R}} a</m> means that <m>a \mathrel{R} b</m> is true </p>
+</li></dl>
+</p>
+
+<note><p><ul>
+	<li>
+		As subsets of Cartesian products,
+		if <m>R \subseteq A \cartprod B</m>,
+		then <m>\inv{R} \subseteq B \cartprod A</m>,
+		and <m>(a,b) \in R</m> if and only if <m>(b,a) \in \inv{R}</m>.
+	</li>
+	<li>
+		A relation <m>R</m> and its inverse <m>\inv{R}</m> express the <em>same relationship</em> between elements of two sets <m>A</m> and <m>B</m>,
+		just phrased in the opposite order.
+		In logical terms, <m>{b \mathrel{\inv{R}} a} \lgcequiv {a \mathrel{R} b}</m>.
+	</li>
+</ul></p></note>
+
+<example>
+	<title>Parent/child relations</title>
+	<p>
+	Let <m>H</m> represent the set of all living humans,
+	and let <m>R</m> represent the relation on <m>H</m> where <m>h_1 \mathrel{R} h_2</m> means human <m>h_1</m> is the parent of human <m>h_2</m>.
+	Then <m>h_2 \mathrel{\inv{R}} h_1</m> means human <m>h_2</m> is the child of human <m>h_1</m>.
+	Both relations express the same information, but in a different order.
+	</p>
+</example>
+
+<example>
+	<title>Inverse of division relation</title>
+	<p>
+	Recall that <m>\mid</m> is a relation on <m>\posset{\N}</m> where <m>m \mid n</m> means that <m>m</m> divides <m>n</m>.
+	Then for the inverse relation, <m>n \inv{\mid} m</m> means <m>n</m> is a multiple of <m>m</m>.
+	Both relations express the same information, but in a different order.
+	</p>
+</example>
+
+<example>
+	<title>Inverse of logical equivalence</title>
+	<p>
+	Let <m>\scr{L}</m> represent the set of all possible logical statements.
+	We have a relation <m>\equiv</m> on <m>\scr{L}</m>,
+	where <m>A \equiv B</m> means that logical statement <m>A</m> involves the same statement variables and has the same truth table as logical statement <m>B</m>.
+	Since <m>A \equiv B</m> if and only if <m>B \equiv A</m>,
+	we conclude that the logical equivalence relation on <m>\scr{L}</m> is its own inverse.
+	</p>
+</example>
+
+<p>
+There are two more set-theoretic ideas we can reinterpret as relations.
+<dl>
+	<li xml:id="definition-relations-empty">
+		<title>empty relation</title>
+		<idx><h>empty</h><h>relation</h></idx>
+		<idx><h>relation(s)</h><h>empty</h></idx>
+		<notation>
+			<usage><m>a \mathrel{\emptyset} b</m></usage>
+			<description>the empty relation between elements <m>a</m> and <m>b</m> (always false)</description>
+		</notation>
+		<p>
+		the relation between sets <m>A</m> and <m>B</m> corresponding to the empty subset <m>\emptyset \subseteq A \cartprod B</m>,
+		so that <m>a \mathrel{\emptyset} b</m> is always false
+		</p>
+	</li>
+	<li xml:id="definition-relations-universal">
+		<title>universal relation</title>
+		<idx><h>universal</h><h>relation</h></idx>
+		<idx><h>relation(s)</h><h>universal</h></idx>
+		<notation>
+			<usage><m>a \mathrel{U} b</m></usage>
+			<description>the universal relation between elements <m>a</m> and <m>b</m> (always true)</description>
+		</notation>
+		<p>
+		the relation between sets <m>A</m> and <m>B</m> corresponding to the full subset <m>U = {A \cartprod B} \subseteq {A \cartprod B}</m>,
+		so that <m>a \mathrel{U} b</m> is always true
+		</p>
+	</li>
+</dl></p>
+
+</section>
+
+<section xml:id="section-relations-properties">
+<title>Properties of relations</title>
+
+<introduction><p> Here we list some important properties a relation <m>R</m> on a set <m>A</m> can have. </p></introduction>
+
+<subsection>
+<title>Reflexivity</title>
+
+<p><dl><li xml:id="definition-relations-reflexive">
+	<title>reflexive</title>
+	<idx>reflexive relation</idx>
+	<idx><h>relation(s)</h><h>reflexive</h></idx>
+	<p> <m>a \mathrel{R} a</m> is true for all <m>a \in A</m> </p>
+</li></dl></p>
+
+<example>
+	<title>A reflexive and a non-reflexive relation on the set of real numbers</title>
+	<p> The relation <m>\mathord{\le}</m> on <m>\R</m> is reflexive, but the relation <m>\mathord{\lt}</m> is not. </p>
+</example>
+
+<claim xml:id="test-relations-reflexive">
+	<title>Reflexive relation</title>
+	<idx><h>Test</h><h>relation</h><h>reflexive</h></idx>
+	<idx><h>relation(s)</h><h>reflexive</h><h>Test</h></idx>
+	<statement><p>
+		To verify that relation <m>R</m> on set <m>A</m> is reflexive,
+		prove that <m>(\forall a \in A)(a \mathrel{R} a)</m>.
+	</p></statement>
+</claim>
+
+</subsection>
+
+<subsection>
+<title>Symmetry and antisymmetry</title>
+
+<p><dl><li xml:id="definition-relations-symmetric">
+	<title>symmetric</title>
+	<idx>symmetric relation</idx>
+	<idx><h>relation(s)</h><h>symmetric</h></idx>
+	<p>
+	for every pair of elements <m>a_1,a_2 \in A</m> for which <m>a_1 \mathrel{R} a_2</m> is true,
+	<m>a_2 \mathrel{R} a_1</m> is also true
+	</p>
+</li></dl></p>
+
+<example>
+	<title>Sibling relation is symmetric, brother/sister relation is not</title>
+	<p>
+	On the set of all living humans,
+	the relation <q><m>a</m> is the sibling of <m>b</m></q> is symmetric,
+	but neither the relation <q><m>a</m> is the brother of <m>b</m></q>
+	nor the relation <q><m>a</m> is the sister of <m>b</m></q>
+	is symmetric.
+	</p>
+</example>
+
+<claim xml:id="test-relations-symmetric">
+	<title>Symmetric relation</title>
+	<idx><h>Test</h><h>relation</h><h>symmetric</h></idx>
+	<idx><h>relation(s)</h><h>symmetric</h><h>Test</h></idx>
+	<statement><p>
+		To verify that relation <m>R</m> on set <m>A</m> is symmetric,
+		prove that
+		<me> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \mathrel{R} a_2} \lgcimplies {a_2 \mathrel{R} a_1}) </me>.
+	</p></statement>
+</claim>
+
+<p><dl><li xml:id="definition-relations-antisymmetric">
+	<title>antisymmetric</title>
+	<idx>antisymmetric relation</idx>
+	<idx><h>relation(s)</h><h>antisymmetric</h></idx>
+	<p>
+	for every pair of <em>distinct</em> elements <m>a_1,a_2 \in A</m>,
+	<!-- either <m>a_1 \not\mathrel{R} a_2</m> or <m>a_2 \not\mathrel{R} a_1</m> (or both) -->
+	either <m>a_1\ \not R\ a_2</m> or <m>a_2\ \not R\ a_1</m> (or both)
+	</p>
+</li></dl></p>
+
+<remark><p>
+	The <em>distinct</em> part of the definition is important,
+	since if <m>a_1,a_2 \in A</m> are <em>not</em> distinct (<ie /> <m>a_2 = a_1</m>),
+	then obviously both <m>a_1 \mathrel{R} a_2</m> and <m>a_2 \mathrel{R} a_1</m> can be simultaneously true because they are the same statement.
+</p></remark>
+
+<example>
+	<title>An antisymmetric relation on real numbers</title>
+	<p> The relation <m>\mathord{\le}</m> on <m>\R</m> is antisymmetric. </p>
+</example>
+
+<example xml:id="example-relations-neither-antisymmetric-symmetric">
+<!-- \label{EXAMPLE::neither.antisymmetric.nor.symmetric} -->
+	<title>A relation can be <em>neither</em> antisymmetric nor symmetric</title>
+	<p>
+	On <m>A = \{a,b,c\}</m>, the relation
+	<me> R = \{(a,b),(b,a),(a,c)\} \subseteq A \cartprod A </me>
+	is neither antisymmetric nor symmetric.
+	</p>
+</example>
+
+<example xml:id="example-relations-both-antisymmetric-symmetric">
+	<title>A relation can be <em>both</em> antisymmetric and symmetric</title>
+	<p>
+	The identity relation on any set,
+	where each element is related to itself and only to itself,
+	is both antisymmetric and symmetric.
+	</p>
+</example>
+
+<remark>
+	<p>
+	As <xref ref="example-relations-neither-antisymmetric-symmetric" />
+	and <xref ref="example-relations-both-antisymmetric-symmetric" />
+	demonstrate,
+	antisymmetry is <em>not</em> the opposite of symmetry.
+	However, for a relation <m>R</m> on set <m>A</m>, we may think of symmetry and antisymmetry as being at opposite ends of a spectrum,
+	measuring how often we have <em>both</em> <m>a_1 \mathrel{R} a_2</m> and <m>a_2 \mathrel{R} a_1</m> for <m>a_1 \ne a_2</m>.
+	</p><p>
+	By definition, <term><xref ref="definition-relations-antisymmetric" text="custom">antisymmetry</xref></term> is when we <em>never have both</em>.
+	On the other hand, <term><xref ref="definition-relations-symmetric" text="custom">symmetry</xref></term> is when we <em>always have both or neither</em>;
+	that is, for every distinct pair <m>a_1,a_2 \in A</m>, we either have both <m>a_1 \mathrel{R} a_2</m> and <m>a_2 \mathrel{R} a_1</m>, or we have both
+	<!-- <m>a_1 \not\mathrel{R} a_2</m> -->
+	<m>a_1\ \not R\ a_2</m>
+	and
+	<!-- <m>a_2 \not\mathrel{R} a_1</m>. -->
+	<m>a_2\ \not R\ a_1</m>.
+	However, a relation can fall <em>between</em> symmetry and antisymmetry on the spectrum,
+	such as in <xref ref="example-relations-neither-antisymmetric-symmetric" />,
+	where we sometimes have both (<eg /> both <m>a \mathrel{R} b</m> and <m>b \mathrel{R} a</m> for that example relation)
+	and we also sometimes have only one (<eg /> <m>a \mathrel{R} c</m> but
+	<!-- <m>c \not\mathrel{R} a</m> -->
+	<m>c\ \not R\ a</m>
+	for that example relation).
+	</p><p>
+	The equality relation on a set is a special case that is <em>both</em> symmetric and antisymmetric.
+	In fact, equality is essentially the <em>only</em> relation that is both symmetric and antisymmetric <mdash />
+	see <xref ref="exercise-relations-symm-antisymm-equality" />.
+</p></remark>
+
+<p>
+In symbolic language,
+the definition of <term><xref ref="definition-relations-antisymmetric" text="title" /> relation</term>
+is
+<!-- <me> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1 \not\mathrel{R} a_2} \lgcor {a_2 \not\mathrel{R} a_1}}) </me>. -->
+<me> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1\ \not R\ a_2} \lgcor {a_2\ \not R\ a_1}}) </me>.
+However, in practise we usually prove antisymmetry using one of two logically equivalent formulations.
+</p>
+
+<claim xml:id="test-relations-antisymmetric">
+	<title>Antiymmetric relation</title>
+	<idx><h>Test</h><h>relation</h><h>antisymmetric</h></idx>
+	<idx><h>relation(s)</h><h>antisymmetric</h><h>Test</h></idx>
+	<statement>
+		<p>
+		To verify that relation <m>R</m> on set <m>A</m> is antisymmetric,
+		prove either <alert>one</alert> of the following logical statements.
+		<ul>
+			<!-- <m> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \mathrel{R} a_2} \lgcimplies {a_2 \not\mathrel{R} a_1}) </m>. -->
+			<li><m>
+				(\forall a_1 \in A)(\forall a_2 \in A)({{a_1 \neq a_2} \lgcand {a_1 \mathrel{R} a_2}} \lgcimplies {a_2\ \not R\ a_1})
+			</m></li>
+			<li><m>
+				(\forall a_1 \in A)(\forall a_2 \in A)({{a_1 \mathrel{R} a_2} \lgcand {a_2 \mathrel{R} a_1}} \lgcimplies {a_2 = a_1})
+			</m></li>
+		</ul>
+		</p>
+	</statement>
+</claim>
+
+<remark><p>
+	The first formulation for proving antisymmetry provided above can be thought of as just a different way to say that it is not possible to have both
+	<m>a_1 \mathrel{R} a_2</m> and <m>a_2 \mathrel{R} a_1</m> for distinct elements <m>a_1,a_2</m>.
+	The second formulation essentially says that the only possible way to have both <m>a_1 \mathrel{R} a_2</m> and <m>a_2 \mathrel{R} a_1</m> is if <m>a_2 = a_1</m>.
+</p></remark>
+
+<note><p>
+	In <xref ref="exercise-relations-prove-antisymmetric-test-option" />
+	you are asked to prove that each of the two different ways of verifying that a relation is antisymmetric provided in the test above are equivalent.
+</p></note>
+
+</subsection>
+
+<subsection>
+<title>Transitivity</title>
+
+<p><dl><li xml:id="definition-relations-transitive">
+	<title>transitive</title>
+	<idx>transitive relation</idx>
+	<idx><h>relation(s)</h><h>transitive</h></idx>
+	<p>
+	for every triple of elements <m>a_1,a_2,a_3 \in A</m> for which both <m>a_1 \mathrel{R} a_2</m> and <m>a_2 \mathrel{R} a_3</m> are true,
+	<m>a_1 \mathrel{R} a_3</m> must also be true
+	</p>
+</li></dl></p>
+
+<example>
+	<title>Ancestry is transitive</title>
+	<p>
+	The relation on the set of all humans who ever lived defined by <q><m>a</m> is the ancestor of <m>b</m></q> is transitive.
+	</p>
+</example>
+
+<claim xml:id="test-relations-transitive">
+	<title>Transitive relation</title>
+	<idx><h>Test</h><h>relation</h><h>transitive</h></idx>
+	<idx><h>relation(s)</h><h>transitive</h><h>Test</h></idx>
+	<statement>
+		<p>
+		To verify that relation <m>R</m> on set <m>A</m> is transitive,
+		prove that
+		<me> (\forall a_1 \in A)(\forall a_2 \in A)(\forall a_3 \in A)({{a_1 \mathrel{R} a_2} \lgcand {a_2 \mathrel{R} a_3}} \lgcimplies {a_1 \mathrel{R} a_3}) </me>.
+		</p>
+	</statement>
+</claim>
+
+</subsection>
+
+</section>
+
+<section xml:id="section-relations-graphing">
+<title>Graphing relations</title>
+
+<p>
+Recall that if <m>R</m> is a relation on a set <m>A</m>,
+then formally <m>R</m> is a subset <m>A \cartprod A</m>.
+In other words, <m>R</m> is a collection of <em>ordered pairs</em> of elements from <m>A</m>.
+</p><p>
+Also recall that in a <em>directed</em> graph,
+the edge collection is formally defined to be a collection of ordered pairs of vertices.
+So when the set <m>A</m> is finite,
+we may regard <m>A</m> as a set of vertices and <m>R</m> as a collection of (directed) edges in a graph!
+</p><p>
+To summarize, we may represent a relation <m>R \subseteq A \cartprod A</m> by the directed graph <m>(A,R)</m>.
+The vertices of the graph are the elements of <m>A</m>, and for elements <m>a_1,a_2 \in A</m>,
+we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is true.
+</p>
+
+<example xml:id="example-relations-graph-divides-small-set">
+<!-- \label{EXAMPLE::basic.relation.graph.ex} -->
+	<title>Graph of the division relation on a finite set of natural numbers</title>
+	<p>
+	Recall that for natural numbers <m>m</m> and <m>n</m>, <m>m \mid n</m> means <q><m>m</m> divides <m>n</m></q>.
+	Consider this relation on the finite set <m>A = \{ 2,3,4,5,6,7,8,9,10 \}</m>.
+	The graph of this relation appears in <xref ref="figure-relations-divides-small-set" />.
+	</p>
+	<figure xml:id="figure-relations-divides-small-set">
+		<caption>Graph of the division relation on a small set of natural numbers.</caption>
+		<image width="60%">
+			<description>Graph of the division relation on a small set of natural numbers.</description>
+			<latex-image><xi:include href="relations.d/divides-example.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
+	<p> Note that each vertex has a loop since every number divides itself. </p>
+</example>
+
+<example>
+	<title>Graph of an inverse relation</title>
+	<p>
+	Using the same division relation on the same set <m>A</m> as in <xref ref="example-relations-graph-divides-small-set" /> above,
+	we may obtain the graph for the inverse relation by just reversing the direction of all the arrows in the graph in
+	<xref ref="figure-relations-divides-small-set" />.
+	</p>
+</example>
+
+<question><statement><p> How are the properties of a relation reflected in its graph? </p></statement></question>
+
+<paragraphs>
+	<title>Reflexive relations</title>
+	<p>
+	In this case, <m>a \mathrel{R} a</m> is true for every element <m>a \in A</m>, so every vertex has a loop.
+	For example, the relation in <xref ref="example-relations-graph-divides-small-set" /> is reflexive,
+	and we see this mirrored in the graph in <xref ref="figure-relations-divides-small-set" /> by the placement of a loop at every node.
+	</p>
+	<remark><p> When a relation is understood to be reflexive, we often omit the loops from its graph to reduce visual clutter. </p></remark>
+</paragraphs>
+
+<paragraphs>
+	<title>Symmetric relations</title>
+	<p>
+	In this case, the conditional <m>a_1 \mathrel{R} a_2 \lgcimplies a_2 \mathrel{R} a_1</m> is always true.
+	Therefore, in the graph for <m>R</m>, whenever we have an arrow from <m>a_1</m> to <m>a_2</m>,
+	we must also have an arrow from <m>a_2</m> to <m>a_1</m>.
+	</p>
+	<example xml:id="example-relations-graph-symmetric">
+		<title>Graph of a symmetric relation</title>
+		<p>
+		On the set <m>A = \{a,b,c,d\}</m>, the relation <me> R = \{(a,b),(b,a),(b,c),(c,b)\} </me> is symmetric,
+		and we see this property reflected in the graph in <xref ref="figure-relations-graph-symmetric-1" />,
+		as each pair of related (distinct) nodes has an arrow in each direction between them.
+		</p>
+		<figure xml:id="figure-relations-graph-symmetric-1">
+			<caption>The graph of a basic symmetric relation.</caption>
+			<image width="42%">
+				<description>The graph of a basic symmetric relation.</description>
+				<latex-image><xi:include href="relations.d/symmetric-example-1.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+	</example>
+	<remark><p>
+		When <m>R</m> is symmetric, arrows are essentially meaningless since between every pair of vertices we will have either no arrows or one arrow in each direction.
+		So we may as well draw the graph for <m>R</m> as an ordinary (undirected) graph instead of a directed graph,
+		replacing each pair of arrows with a single edge.
+	</p></remark>
+	<example>
+		<title>Simplified graph of a symmetric relation</title>
+		<p>
+		The relation in the previous example is more concisely depicted graphically as in
+		<xref ref="figure-relations-graph-symmetric-2" />
+		below.
+		</p>
+		<figure xml:id="figure-relations-graph-symmetric-2">
+			<caption>The simplified graph of a basic symmetric relation.</caption>
+			<image width="42%">
+				<description>The simplified graph of a basic symmetric relation.</description>
+				<latex-image><xi:include href="relations.d/symmetric-example-2.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+	</example>
+</paragraphs>
+
+<paragraphs>
+	<title>Antisymmetric relations</title>
+	<p>
+	In this case, we <em>never</em> have both <m>a_1 \mathrel{R} a_2</m> and <m>a_2 \mathrel{R} a_1</m> for <m>a_1 \ne a_2</m>,
+	so in the graph for <m>R</m>, <em>no</em> pair of vertices can have two oppositely-directed arrows between them.
+	</p>
+	<example>
+		<title>Graph of an antisymmetric relation</title>
+		<p>
+		On the set <m>A = \{a,b,c,d\}</m>,
+		the relation <me> R = \{(a,a),(a,b),(c,b)\} </me> is antisymmetric,
+		and we see this property reflected in the graph in <xref ref="figure-relations-graph-antisymmetric" />,
+		as each pair of distinct nodes has <em>at most</em> one arrow between them.
+		</p>
+		<figure xml:id="figure-relations-graph-antisymmetric">
+			<caption>The graph of a basic antisymmetric relation.</caption>
+			<image width="45%">
+				<description>The graph of a basic antisymmetric relation.</description>
+				<latex-image><xi:include href="relations.d/antisymmetric-example.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+	</example>
+</paragraphs>
+
+<paragraphs>
+	<title>Transitive relations</title>
+	<p>
+	In this case, the conditional <m>{{a_1 \mathrel{R} a_2} \lgcand {a_2 \mathrel{R} a_3}} \lgcimplies {a_1 \mathrel{R} a_3}</m> is always true.
+	Therefore, in the graph for <m>R</m>,
+	every <q>chain</q> of two arrows has a corresponding <q>composite</q> arrow.
+	</p>
+	<example>
+		<title>Graph of an transitive relation</title>
+		<p>
+		On the set <m> A = \{a,b,c,d,e\} </m>,
+		the relation <me> R = \{(a,b),(b,c),(a,c),(d,e),(e,d),(d,d),(e,e)\} </me>
+		is transitive,
+		and we see this property reflected in the graph in <xref ref="figure-relations-graph-transitive" />,
+		as each pair of arrows forming a <q>chain</q> between three nodes has a corresponding <q>composite</q> arrow from the first node in the chain to the third.
+		</p>
+		<figure xml:id="figure-relations-graph-transitive">
+			<caption>The graph of a basic antisymmetric relation.</caption>
+			<image width="60%">
+				<description>The graph of a basic transitive relation.</description>
+				<latex-image><xi:include href="relations.d/transitive-example.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+	</example>
+	<remark><p>
+		In the graph of a transitive relation,
+		we often omit the <q>composite</q> arrows to reduce visual clutter,
+		as we can infer from <q>chains</q> of arrows where the <q>composite</q> arrows would go.
+		For example, we did this in both the power set graph in <xref ref="example-graphs-pow-set" />
+		(see <xref ref="figure-graphs-pow-set" />)
+		and in the division graph in <xref ref="example-graphs-divides" />
+		(see <xref ref="figure-graphs-divides" />).
+		It should be obvious that the relations <q>is a subset of</q> and <q>divides</q> are transitive,
+		so there was no need to clutter up the graphs of those relations with extra <q>composite</q> arrows <mdash />
+		we could trace the fact that one set was a subset of another or the fact that one number divides another by following a chain of arrows through intermediate nodes, as necessary.
+	</p></remark>
+</paragraphs>
+
+</section>
+
+<xi:include href="./relations.d/activities.ptx" />
+<xi:include href="./relations.d/exercises.ptx" />
+
+</chapter>

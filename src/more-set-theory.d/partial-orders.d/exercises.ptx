@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-partial-orders" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Exercises</title>
+
+<!-- TODO check against Roman -->
+
+<exercisegroup xml:id="exercisegroup-partial-orders-verify-from-graph" cols="2">
+	<!-- TODO \refAdapt[s]{hunter+discrete}{2.5}{6,7} -->
+	<title>Recognizing a partial order from its graph</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-partial-orders-verify-from-graph" text="type-local">Exercises</xref>,
+		you are given a directed graph for a relation on the set <m>A = \{a,b,c,d\}</m>.
+		Determine whether the relation is a partial order.
+		Justify your answers.
+	</p></introduction>
+	<exercise>
+		<image width="60%">
+			<description>An example graph for verifying the partial order definition.</description>
+			<latex-image><xi:include href="exercises.d/verify-from-graph-1.tex" parse="text" /></latex-image>
+		</image>
+	</exercise>
+	<exercise>
+		<image width="60%">
+			<description>An example graph for verifying the partial order definition.</description>
+			<latex-image><xi:include href="exercises.d/verify-from-graph-2.tex" parse="text" /></latex-image>
+		</image>
+	</exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercisegroup-partial-orders-verify-from-desc">
+	<title>Testing partial orders</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-partial-orders-verify-from-desc" text="type-local">Exercises</xref>,
+		you are given a set <m>A</m> and a relation <m>R</m> on <m>A</m>.
+		Determine whether the relation is a partial order.
+		Justify your answers.
+	</p></introduction>
+	<exercise><p>
+		<m>A</m> is the set of all Augustana students; <m>a \mathrel{R} b</m> means that student <m>a</m> has a higher GPA than student <m>b</m>.
+	</p></exercise>
+	<exercise><p> <m>A</m> is the power set of some finite set; <m>S \mathrel{R} T</m> means <m>\card{S} \le \card{T}</m>. </p></exercise>
+	<exercise><p> <m>A</m> is the set of words on some alphabet; <m>w \mathrel{R} w'</m> means <m>\length{w} \le \length{w'}</m>, where <m>\length{w}</m> means the length of word <m>w</m>. </p></exercise>
+	<exercise><p>
+		<m>A = \R \cartprod \R</m>; <m>(x1,y1) \mathrel{R} (x2,y2)</m> means <m>x_1 \le x2</m> and <m>y_1 \le y2</m>.
+	</p></exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercisegroup-partial-orders-draw-Hasse">
+	<title>Drawing Hasse diagrams</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-partial-orders-draw-Hasse" text="type-local">Exercises</xref>,
+		you are given a finite, partially ordered set <m>A</m>.
+		Draw the Hasse diagram.
+	</p></introduction>
+	<exercise><p> <m>A = \powset{\{1,2,3,4\}}</m> under the subset relation. </p></exercise>
+	<exercise><p>
+		<m>A = \words{\Sigma}_4</m>, the set of words of length <m>4</m> in the alphabet <m>\Sigma = \{0,1\}</m>, under dictionary order.
+	</p></exercise>
+</exercisegroup>
+
+<exercise><p>
+	Draw all possible valid Hasse diagrams for each of the sets <m>A = \{a,b\}</m> and <m>B = \{a,b,c\}</m>.
+	(Thus, you will have determined all possible partial orders on those sets.)
+</p></exercise>
+
+<exercise>
+	<introduction><p>
+		Consider the <q>divides</q> relation <m>\mathord{\mid}</m> on <m>\posset{\N}</m>.
+		Provide an example of a set <m>A \subseteq \posset{\N}</m>
+	</p></introduction>
+	<task><p> that is finite, and on which <m>\mathord{\mid}</m> is a total order. </p></task>
+	<task><p> that is infinite, and on which <m>\mathord{\mid}</m> is a total order. </p></task>
+	<task><p> on which <m>\mathord{\mid}</m> is a partial order but not a total order. </p></task>
+</exercise>
+
+<exercise> <!-- TODO  \refAdapt{hunter+discrete}{2.5}{4} -->
+	<p>
+	Let <m>A = \{0,1,2\}</m>, and consider the partial order <m>\mathord{\subseteq}</m> on the power set <m>\powset{A}</m>.
+	List all pairs of incomparable elements in <m>\powset{A}</m>.
+	</p>
+</exercise>
+
+<exercisegroup xml:id="exercisegroup-partial-orders-maxmin">
+	<title>Determining maximal/maximum/minimal/minimum elements</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-partial-orders-maxmin" text="type-local">Exercises</xref>,
+		you are given a partially ordered set <m>A</m>.
+		Determine any and all maximal, maximum, minimal, and minimum elements.
+	</p></introduction>
+	<exercise><p> <m>A = \posset{\N}</m> under the usual <m>\mathord{\le}</m>. </p></exercise>
+	<exercise><p> <m>A = \posset{\Q}</m> under the usual <m>\mathord{\le}</m>. </p></exercise>
+	<exercise><p> <m>A = \N \relcmplmnt \{0,1\}</m> under the <q>divides</q> relation <m>\mathord{\mid}</m>. </p></exercise>
+	<exercise><p> <m>A = \{2,5,11,13,22,65,110,143,496\}</m> under the <q>divides</q> relation <m>\mathord{\mid}</m>. </p></exercise>
+	<exercise><p> <m>A</m> is the set of the first ten prime numbers under the <q>divides</q> relation <m>\mathord{\mid}</m>. </p></exercise>
+</exercisegroup>
+
+<exercise><p>
+	Suppose <m>\mathord{\partorder}</m> is a partial order on the set <m>A = \{0,1,2\}</m> such that <m>1</m> is a maximal element.
+	What are the possibilities for the Hasse diagram of <m>\mathord{\partorder}</m>?
+</p></exercise>
+
+<exercisegroup xml:id="exercisegroup-partial-orders-topsort" cols="2">
+	<title>Topological sorting</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-partial-orders-topsort" text="type-local">Exercises</xref>,
+		you are given the Hasse diagram for a partially ordered set <m>A</m>.
+		Use the <xref ref="algorithm-partial-orders-top-sorting" text="title" /> algorithm to determine a
+		<xref ref="definition-partial-orders-compatible-total-order" text="title" /> on <m>A</m>.
+	</p></introduction>
+	<exercise>
+		<image width="75%">
+			<description>A Hasse diagram for a topological sorting exercise.</description>
+			<latex-image><xi:include href="exercises.d/total-from-hasse-1.tex" parse="text" /></latex-image>
+		</image>
+	</exercise>
+	<exercise>
+		<image width="100%">
+			<description>A Hasse diagram for a topological sorting exercise.</description>
+			<latex-image><xi:include href="exercises.d/total-from-hasse-2.tex" parse="text" /></latex-image>
+		</image>
+	</exercise>
+</exercisegroup>
+
+</exercises>

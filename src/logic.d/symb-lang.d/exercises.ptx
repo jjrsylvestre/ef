@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-symb-lang">
+<title>Exercises</title>
+
+<!-- TODO fill out exercises -->
+	<!-- % THIS IS FROM ROMAN
+% 	<li> Determine which of the following sentences are logical statements. For each sentence that is a statement, determine whether it is a simple statement or a nonsimple compound statement.
+% 	<ol label="alph">
+% 		<li> All math classes are super fun.
+% 		<li> Go team!
+% 		<li> A long time ago.
+% 		<li> If you do not complete the exercies, you will have difficulty in this course.
+% 		<li> Did you study for the test?
+% 		<li> No parking.
+% 		<li> Math is hard, but it is also fun.
+% 		<li> <m>x + 2y = 9</m>.
+% 	</ol>
+
+% 	<li> Write an English language sentence that expresses the negation of each the following.
+% 	<ol label="alph">
+% 		<li> TODO
+% 	</ol>
+
+% 	<li> Let <m>p</m> represent the statement <q>TODO</q> and <m>q</m> represent the statement <q>TODO</q>. Translate the following English language statements into symbolic language.
+% 	<ol label="alph">
+% 		<li> TODO
+% 	</ol>
+
+% 	<li> Let <m>p</m> represent the statement <q>TODO</q> and <m>q</m> represent the statement <q>TODO</q>. Translate the following symbolic language statements into proper English sentences.
+% 	<ol label="alph">
+% 		<li> TODO
+% 	</ol>
+
+% 	<li> Assign variables to the <em>simple} substatements of the following English language statements. Then translate the statements into symbolic language.
+% 	<ol label="alph">
+% 		<li> TODO
+% 	</ol>
+
+% 	<li> \label{EXERCISE::symb.lang::truth.tables}
+% 	Construct a truth table for each of the following.
+% 	<ol label="alph">
+% 		<li> TODO
+% 	</ol> -->
+
+<exercise>
+	<!-- TODO do I need number="?" like in sample book ? -->
+	<!-- TODO  \refAdapt{hunter+discrete}{1.1}{13} -->
+	<p>
+	Let <m>p</m>, <m>q</m>, and <m>r</m> represent the following statements.
+	<md>
+		<mrow> p\colon\quad \amp \text{The game is on.} </mrow>
+		<mrow> q\colon\quad \amp \text{The popcorn is ready.} </mrow>
+		<mrow> r\colon\quad \amp \text{Joe is happy.} </mrow>
+	</md>
+	Suppose the following compound statement is true.
+	</p>
+	<blockquote><p> If the game is on and the popcorn is ready, then Joe is happy. </p></blockquote>
+	<p>
+	However, you just visited Joe's residence room and found that Joe is unhappy even though the game is on.
+	What can you conclude about the popcorn?
+	Use a truth table to justify your answer.
+	</p>
+</exercise>
+
+<exercise xml:id="exercise-symb-lang-disjunctive-tautology">
+	<!-- \label{EXERCISE::symb.lang::disjunctive tautology} -->
+	<p>
+	Consider the logical statement <m>(p \lgcand q_1) \lgccond (q_1 \lgcor q_2)</m>.
+	Partially translated, this statement says:
+	</p>
+	<blockquote><p> if <m>p</m> and <m>q_1</m> are both true, then at least one of <m>q_1</m> and <m>q_2</m> is true. </p></blockquote>
+	<p> Would you expect this statement to be a tautology? <ellipsis /> a contradiction? <ellipsis /> neither? </p>
+	<p> Use a truth table to check. </p>
+</exercise>
+
+<exercise xml:id="exercise-symb-lang-choices-for-implies">
+	<!-- \label{EXERCISE::symb.lang::choices.for.implies} -->
+	<!-- TODO \refAdapt{roman+discrete}{2.2}{29} -->
+	<introduction><p>
+		The wizard Hatty Porrer is studying logic at Cowpimples School for Second-Rate Wizards.
+		As an exercise, he is filling out the truth table for the conditional
+		<me> (r \lgcand s) \lgccond (r \lgcor s) </me>.
+		But he forgets what to do for the lines where the <q>if</q> part of the conditional evaluates to false,
+		so he only gets this far:
+		</p>
+		<tabular halign="center">
+			<col /><col right="minor" /><col /><col right="minor" /><col />
+			<row bottom="minor">
+				<cell><m>r</m></cell>
+				<cell><m>s</m></cell>
+				<cell><m>r \lgcand s</m></cell>
+				<cell><m>r \lgcor s</m></cell>
+				<cell><m>(r \lgcand s) \lgccond (r \lgcor s)</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell>?</cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell>?</cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell>?</cell>
+			</row>
+		</tabular>
+	</introduction>
+
+	<task><p> Help Hatty out by finishing his homework for him. </p></task>
+
+	<task>
+		<p>
+		While you were filling out the truth table, Hatty got bored and opened up a portal to a parallel universe.
+		Parallel Hatty is also working on the same truth table, and is stuck at the same spot that normal Hatty was.
+		However, you notice that parallel Hatty's textbook is open to the page with the truth table for the basic conditional <m>p \lgccond q</m>, and it looks as follows.
+		</p>
+		<tabular halign="center">
+			<col /><col right="minor" /><col />
+			<row bottom="minor">
+				<cell><m>p</m></cell>
+				<cell><m>q</m></cell>
+				<cell><m>p \lgccond q</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row>
+		</tabular>
+		<p>
+		Finish parallel Hatty's homework exercise.
+		Make sure parallel Hatty's instructor will like the result!
+		</p>
+	</task>
+
+	<task>
+		<p>
+		While you were finishing parallel Hatty's homework, Hatty got bored again and opened up a portal to <em>another</em> parallel universe!
+		Parallel Hatty number two is also working on the same truth table, and is stuck at the same spot that the previous two Hattys were.
+		This time, however, parallel Hatty number two's textbook says that the truth table for the basic conditional <m>p \lgccond q</m> is as follows.
+		</p>
+		<tabular halign="center">
+			<col /><col right="minor" /><col />
+			<row bottom="minor">
+				<cell><m>p</m></cell>
+				<cell><m>q</m></cell>
+				<cell><m>p \lgccond q</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row>
+		</tabular>
+		<p>
+		Finish parallel Hatty number two's homework exercise.
+		Make sure parallel Hatty number two's instructor will approve!
+		</p>
+	</task>
+
+	<task>
+		<p>
+		You'll never believe what happened while you were finishing parallel Hatty number two's homework!
+		Yep, Hatty got bored again and opened up a portal to <em>a third</em> parallel universe.
+		Parallel Hatty number three is also working on the same truth table, and is stuck at the same spot that the previous three Hattys were.
+		The truth table for the basic conditional <m>p \lgccond q</m> is different in parallel Hatty number three's universe, yet again.
+		</p>
+		<tabular halign="center">
+			<col /><col right="minor" /><col />
+			<row bottom="minor">
+				<cell><m>p</m></cell>
+				<cell><m>q</m></cell>
+				<cell><m>p \lgccond q</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row>
+		</tabular>
+		<p>
+		Finish parallel Hatty number three's homework exercise.
+		Make sure parallel Hatty number three's instructor will give him full marks!
+		</p>
+	</task>
+
+	<task>
+		<p>
+		OK, so what the heck is the point of all this?
+		The statement <m>(r \lgcand s) \lgccond (r \lgcor s)</m> could be read as:
+		</p>
+		<blockquote><p> If <m>r</m> and <m>s</m> are both true statements, then at least one of <m>r</m> and <m>s</m> is a true statement. </p></blockquote>
+		<p>
+		This conditional statement seems <q>obviously true</q>.
+		Based on this example, what do you think of each parallel universe's system of logic compared to our own?
+		</p>
+	</task>
+
+</exercise>
+
+<!-- TODO fill these out -->
+<!-- % 	<li> For each statement in Exercise \ref{EXERCISE::symb.lang::truth.tables}, use a truth table to determine whether it is a tautology, contradiction, or neither.
+
+% 	<li> For each of the following, use the Substitution Rule to show that it is a tautology.
+% 	<ol label="alph">
+% 		<li> TODO
+% 	</ol>
+
+% 	<li> For each of the following, use the Substitution Rule to show that it is a contradiction.
+% 	<ol label="alph">
+% 		<li> TODO
+% 	</ol> -->
+
+<exercise xml:id="exercise-symb-lang-taut-contra-1">
+	<!-- \label{EXERCISE::symb.lang::taut.contra.1} -->
+	<introduction><p> Suppose <m>A,E,U</m> are logical statements such that <m>U</m> is a tautology and <m>E</m> is a contradiction. </p></introduction>
+	<task><p> Show that <m>A \lgcor U</m> is always a tautology. </p></task>
+	<task><p> Show that <m>A \lgcand E</m> is always a contradiction. </p></task>
+</exercise>
+
+<exercise><p>
+	Suppose that <m>A</m>, <m>B</m>, and <m>C</m> are logical statements such that <m>A \lgcimplies B</m> and <m>B \lgcimplies C</m>.
+	Must <m>A \lgcimplies C</m>?
+</p></exercise>
+
+</exercises>

@@ -1,0 +1,6 @@
+<claim xml:id="test-CHPTR-NAME">
+	<title>NAME</title>
+	<idx><h>Test</h><h>NAME</h></idx>
+	<idx><h>NAME</h><h>Test</h></idx>
+	<statement><p> TODO </p></statement>
+</claim>

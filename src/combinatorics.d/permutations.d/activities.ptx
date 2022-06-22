@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<worksheet xml:id="activities-permutations">
+
+<introduction><p>
+	If you know what the <term>choose function</term> is,
+	for this activity set pretend that you don't.
+</p></introduction>
+
+<activity><p>
+	Write down all permutations of the set <m>A = \{c,a,t\}</m>.
+	Express your permutations as <em>functions</em> from <m>A</m> to itself.
+</p></activity>
+
+<activity><p> Write down some example permutations of size <m>3</m> from the set <m>A = \{t,r,u,c,k\}</m>. </p></activity>
+
+<activity><p> Verify the equality <me> \frac{(n+1)!}{(k+1)!(n-k)!} = \frac{n!}{k!(n-k)!} + \frac{n!}{(k+1)!(n-k-1)!} </me>. </p></activity>
+
+<activity>
+	<introduction><p> A child has the following set of refrigerator magnets: <m>\{A,B,C,D,E,F,G,H,I,J\}</m>. </p></introduction>
+	<task><p>
+		How many four-letter words can the child form?
+		(Nonsense words allowed.)
+	</p></task>
+	<task><p> How many five-letter words can the child form if the middle letter must always be a vowel? </p></task>
+	<task><p>
+		If the child were able to form one word per second, and never stopped to eat or sleep,
+		how many days would it take to form every possible word that uses all of the magnets?
+	</p></task>
+</activity>
+
+<activity>
+	<task><p>
+		How many ways could student groups have been formed today if both group membership and group station location matter?
+		(But assume that each station always has the number of students it has now.)
+	</p></task>
+	<task><p>
+		How many ways could student groups have been formed today if only group membership matters?
+		(Again assume that each group station always has the number of students it has now.)
+	</p></task>
+</activity>
+
+<activity>
+	<task><p> How many binary words of length <m>10</m> contain at least two zeros? </p></task>
+	<task><p> How many binary words of length <m>10</m> contain at least at least three ones? </p></task>
+</activity>
+
+<activity>
+	<introduction><p> Consider the letters in the word <m>PEANUT</m>. </p></introduction>
+	<task><p> How many six-letter words can be formed using these letters? (Each letter can only appear once.) </p></task>
+	<task><p> How about if the vowels must be at the beginning? </p></task>
+	<task><p> How about if no consonant may be isolated between two vowels? </p></task>
+</activity>
+
+<activity>
+	<introduction><p>
+		You're cleaning up your shop and it's time to hang all your screwdrivers in a row on your pegboard.
+		You have two slot-head screwdrivers, three Phillips-head screwdrivers, and four Robertson-head screwdrivers.
+		(Assume that screwdrivers of the same type are of different sizes.)
+	</p></introduction>
+	<task><p> In how many different orders can you arrange your screwdrivers? </p></task>
+	<task><p>
+		How about if all the slot-heads are arranged on the left, all the Phillips-heads in the middle, and all the Robertson-heads are arranged on the right?
+	</p></task>
+	<task><p> How about if all screwdrivers of a particular type are arranged together, but the types are arranged in no particular order? </p></task>
+</activity>
+
+<activity>
+	<introduction><p>
+		You're cleaning up your shop and it's time to hang all your screwdrivers in a row on your pegboard.
+		You have five screwdrivers of each type: slot-head, Phillips-head, and Robertson-head.
+		(Assume that screwdrivers of the same type are all of different sizes.)
+	</p></introduction>
+	<task><p>
+		In how many different orders can you arrange your screwdrivers if the types must alternate:
+		first slot-head, then Phillips-head, then Robertson-head, then slot-head, then Phillips-head, then <ellipsis />.
+	</p></task>
+	<task><p> How about if the types must alternate, but with no restriction on the order of the types? </p></task>
+</activity>
+
+<activity>
+	<task><p> How many ways are there to arrange six people in a circle? </p></task>
+	<task><p> How about if there are two people who cannot sit beside each other? </p></task>
+	<task><p> How about if there is one person who cannot sit directly to the right of some other person? </p></task>
+</activity>
+
+<activity>
+	<task><p> How many ways are there to arrange three professors and three students in a circle so that professors and students alternate? </p></task>
+	<task><p> Answer the same question for <m>n</m> professors and <m>n</m> students. </p></task>
+</activity>
+
+<activity><p>
+	How many ways could you choose numbers <m>a,b,c</m> from the set <m>\natnumlt{11}</m>, allowing repetition, so that the sum a+b+c is at least 5?
+</p></activity>
+
+</worksheet>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-paths" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Exercises</title>
+
+<!-- TODO check these against Roman -->
+
+<exercisegroup xml:id="exercisegroup-paths-path-or-trail">
+	<title>Recognizing paths and trails</title>
+	<introduction><p>
+		In each of
+		<xref ref="exercisegroup-paths-path-or-trail" text="type-local">Exercises</xref>,
+		you are given a walk through a graph.
+		Determine whether the walk is a path, a trail, or neither.
+		Also determine whether the walk is open or closed.
+	</p></introduction>
+	<exercise><p>
+		<m> v_1, e_1, v_2, e_2, v_3, e_3, v_4, e_{12}, v_6, e_6, v_3 </m>.
+	</p></exercise>
+	<exercise><p>
+		<m> v_1, e_1, v_2, e_2, v_3, e_3, v_4, e_4, v_5, e_5, v_6, e_6, v_3, e_7, v_7, e_8, v_1 </m>.
+	</p></exercise>
+	<exercise><p>
+		<m> v_1, e_8, v_7, e_7, v_3, e_7, v_7, e_8, v_1 </m>.
+	</p></exercise>
+	<exercise><p>
+		<m> v_3, e_3, v_4, e_4, v_5, e_5, v_6, e_6, v_3 </m>.
+	</p></exercise>
+</exercisegroup>
+
+<exercise>
+	<introduction>
+		<p> Consider the graph in <xref ref="figure-paths-find-paths-and-trails" />. </p>
+		<figure xml:id="figure-paths-find-paths-and-trails">
+			<caption>An example graph.</caption>
+			<image width="45%">
+				<description>An example graph for an exercise.</description>
+				<latex-image><xi:include href="exercises.d/find-paths-and-trails.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+	</introduction>
+	<task><p> Determine four different paths from vertex <m>1</m> to vertex <m>5</m>. </p></task>
+	<task><p> Determine four different trails from vertex <m>1</m> to vertex <m>5</m>, none of which are paths. </p></task>
+	<task><p> Determine four different walks from vertex <m>1</m> to vertex <m>5</m>, none of which are trails. </p></task>
+</exercise>
+
+<exercise>
+	<introduction>
+		<p> Consider the graph in <xref ref="figure-paths-find-all-paths-and-trails" />. </p>
+		<figure xml:id="figure-paths-find-all-paths-and-trails">
+			<caption>An example graph.</caption>
+			<image width="35%">
+				<description>An example graph for an exercise.</description>
+				<latex-image><xi:include href="exercises.d/find-all-paths-and-trails.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+	</introduction>
+	<task><p> How many different trails are there from vertex <m>1</m> to vertex <m>5</m>? </p></task>
+	<task><p>
+		How many different paths are there from vertex <m>1</m> to vertex <m>5</m>?
+		(<em>Hint:</em> See <xref ref="proposition-paths-open-is-trail" />.)
+	</p></task>
+	<task><p> How many different walks are there from vertex <m>1</m> to vertex <m>5</m>? </p></task>
+</exercise>
+
+<exercisegroup xml:id="exercisegroup-paths-find-bridges">
+	<title>Recognizing bridges</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-paths-find-bridges" text="type-local">Exercises</xref>,
+		identify each edge that is a bridge.
+	</p></introduction>
+	<exercise><image width="30%">
+		<description>An example graph for an exercise.</description>
+		<latex-image><xi:include href="exercises.d/find-bridges-1.tex" parse="text" /></latex-image>
+	</image></exercise>
+	<exercise><image width="30%">
+		<description>An example graph for an exercise.</description>
+		<latex-image><xi:include href="exercises.d/find-bridges-2.tex" parse="text" /></latex-image>
+	</image></exercise>
+	<exercise><image width="30%">
+		<description>An example graph for an exercise.</description>
+		<latex-image><xi:include href="exercises.d/find-bridges-3.tex" parse="text" /></latex-image>
+	</image></exercise>
+	<exercise><p> The complete graph with <m>n</m> vertices. </p></exercise>
+</exercisegroup>
+
+<exercise> <!-- TODO check activities, does this need to be edited or removed? -->
+	<statement><p>
+		Among all possible nonconnected graphs with <m>n</m> vertices,
+		let <m>H</m> be one with the maximum number of edges.
+		Prove that <m>H</m> has exactly two connected components.
+	</p></statement>
+	<hint><p> Argue by contradiction. </p></hint>
+</exercise>
+
+<exercise><p>
+	Suppose <m>G</m> is a connected graph that contains a closed path that is also a trail.
+	Prove that it is possible to remove any single edge from this path and be left with a connected subgraph of <m>G</m>.
+	That is, prove that no edge in this path could be a bridge.
+</p></exercise>
+
+<exercise><p> Prove that a graph in which every edge is a bridge cannot have a closed path that is also a trail. </p></exercise>
+
+</exercises>

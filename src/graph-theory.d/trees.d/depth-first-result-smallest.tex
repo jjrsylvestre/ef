@@ -1,0 +1,44 @@
+% *********************************************************************
+% © 2010–2021 Jeremy Sylvestre
+%
+% Permission is granted to copy, distribute and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.3 or
+% any later version published by the Free Software Foundation; with no
+% Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+% copy of the license is included in the appendix entitled “GNU Free
+% Documentation License” that appears in the output document of this
+% PreTeXt source code. All trademarks™ are the registered® marks of
+% their respective owners.
+%
+% *********************************************************************
+
+\begin{tikzpicture}[
+	vertex/.style={ circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
+	vertexg/.style={ black!40!white, circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
+	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=4pt }
+]
+
+% very light "frame" to form uniform fixed-size bounding box
+% across depth-first-result-* images
+\draw[very thin,black!1!white] (-5.45,0.5) to (-5.5,0.5) to (-5.5,0.45);
+\draw[very thin,black!1!white] (-5.5,-4.2) to (-5.5,-4.25) to (-5.45,-4.25);
+\draw[very thin,black!1!white] (3.45,0.5) to (3.5,0.5) to (3.5,0.45);
+\draw[very thin,black!1!white] (3.5,-4.2) to (3.5,-4.25) to (3.45,-4.25);
+
+\node at (0,0) (s1) [vertex,label=above:$\scriptstyle 1$] {};
+\node at (-2,-1) (s2) [vertex,label=above left:$\scriptstyle 2$] {};
+\node at (-3,-2) (s3) [vertex,label=above left:$\scriptstyle 3$] {};
+\node at (-4,-3) (s4) [vertex,label=above left:$\scriptstyle 4$] {};
+\node at (-5,-4) (s5) [vertex,label=left:$\scriptstyle 6$] {};
+\node at (-3,-4) (s6) [vertex,label=right:$\scriptstyle 12$] {};
+\node at (-1,-2) (s7) [vertex,label=above right:$\scriptstyle 5$] {};
+\node at (2,-1) (s8) [vertex,label=above right:$\scriptstyle 7$] {};
+\node at (1,-2) (s9) [vertex,label=above left:$\scriptstyle 8$] {};
+\node at (3,-2) (s10) [vertex,label=above right:$\scriptstyle 9$] {};
+\draw (s1) to (s2) to (s3) to (s4) to (s5);
+\draw (s1) to (s8) to (s9);
+\draw (s7) to (s2);
+\draw (s6) to (s4);
+\draw (s10) to (s8);
+
+\end{tikzpicture}

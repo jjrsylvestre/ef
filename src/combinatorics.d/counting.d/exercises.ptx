@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-counting">
+<title>Exercises</title>
+
+<exercise><p>
+	You are trying to decide how to top your ice-cream sundae.
+	You have five choices of sprinkles, four choices of cookie crumbs, five choices of fruit, and three choices of chocolate chunks.
+	For each category of topping, you may choose only one of the available options, or you may choose to skip that category altogether.
+	How many different sundaes could you create out of these choices?
+</p></exercise>
+
+<exercise><p>
+	You turn eighteen and your trust fund finally starts paying out.
+	You decide to buy a vehicle, and eventually narrow things down to a choice between five SUVs, four sports cars, and two motorcycles.
+	How many ways are there to choose a vehicle?
+	How many ways are there to choose one vehicle of each type?
+</p></exercise>
+
+<exercise xml:id="exercise-counting-num-truth-tables">
+<!-- \label{EXERCISE::counting::num.truth.tables} -->
+	<task><p>
+		Use the <xref ref="theorem-counting-mult-rule" text="title" />
+		to demonstrate that the truth table of a logical statement with <m>n</m> statement variables requires <m>2^n</m> rows.
+		That is, demonstrate that there are <m>2^n</m> different possible combinations of input truth values for <m>n</m> statement variables.
+	</p></task>
+	<task><p> How many different truth tables involving <m>n</m> statement variables exist? </p></task>
+</exercise>
+
+<exercise><p>
+	Recall that if <m>A</m> is a finite set with <m>\card{A} = n</m>,
+	then <m>\card{\powset{A}} = 2^n</m>.
+	Use the <xref ref="theorem-counting-mult-rule" text="title" />
+	to verify this formula by considering the construction of an arbitrary subset of <m>A</m> as a process of making <m>n</m> <q>either-or</q> decisions.
+</p></exercise>
+
+<exercise>
+	<introduction>
+		<p>
+		It is the year 2030, and Alberta has succeeded in seceding from Canada and has become the landlocked Kingdom of Albertania.
+		The King decrees that the kingdom's citizens will all be assigned a hexadecimal ID.
+		That is, using alphabet
+		<me> \Sigma = \{ 0,1,2,3,4,5,6,7,8,9,\mathrm{a},\mathrm{b},\mathrm{c},\mathrm{d},\mathrm{e},\mathrm{f} \}, </me>
+		IDs will be words from <m>\words{\Sigma}</m>.
+		However, the king is vain and doesn't want any such ID to contain his initials, <m>\mathrm{jk}</m>.
+		</p>
+		<p> For each <m>n \ge 1</m>, let <m>s_n</m> represent number of allowable IDs of length <m>n</m>. </p>
+	</introduction>
+	<task><p> Compute <m>s_1</m>, <m>s_2</m>, and <m>s_3</m>. </p></task>
+	<task>
+		<statement><p> Determine a recurrence relation for <m>s_n</m> which is valid (at least) for <m>n \ge 3</m>. </p></statement>
+		<hint><p>
+			For each allowable word of length <m>n - 1</m> you can create a word of length <m>n</m> by adding a new letter onto the end.
+			But you want your new word to also be allowable, so be careful about what you add onto the end!
+		</p></hint>
+	</task>
+</exercise>
+
+</exercises>

@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<chapter xml:id="chapter-symb-lang" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Symbolic language</title>
+
+
+<section xml:id="section-symb-lang-statements">
+<title>Statements</title>
+
+<p><dl><li>
+	<title>statement</title>
+	<idx>statement(s) (in logic)</idx>
+	<idx><h>logical</h><h>statement(s)</h></idx>
+	<p>a sentence that is either true or false</p>
+</li></dl></p>
+
+<example xml:id="example-symb-lang-basic-statements">
+	<title>Logical statements</title>
+	<p><ol>
+		<li xml:id="example-symb-lang-basic-statements-simple">
+		<!-- old label EXAMPLE::basic.simple.statement.eg -->
+			All prime numbers are odd.
+		</li>
+		<li xml:id="example-symb-lang-basic-statements-compound">
+		<!-- old label EXAMPLE::basic.compound.statement.eg -->
+			Some trees have leaves and some trees have needles.
+		</li>
+		<li xml:id="example-symb-lang-basic-statements-conditional">
+		<!-- old label EXAMPLE::basic.conditional.statement.eg -->
+			If you pay attention in class and work through all the homework problems,
+			then you will do well in this course.
+		</li>
+	</ol>
+</p></example>
+
+<p><dl><li>
+	<title>substatement</title>
+	<idx><h>statement (in logic)</h><h>sub-</h></idx>
+	<idx><h>logical</h><h>substatement</h></idx>
+	<idx>substatement</idx>
+	<p>	part of a logical statement that could be considered a statement on its own </p>
+</li></dl></p>
+
+<example>
+	<title>Substatements</title>
+	<p>
+	<q>Some trees have leaves</q> is a substatement of
+	<xref ref="example-symb-lang-basic-statements-compound">statement</xref>
+	in
+	<xref ref="example-symb-lang-basic-statements" />.
+</p></example>
+
+<p><dl>
+	<li>
+		<title>simple statement</title>
+		<idx><h>simple</h><h>statement</h></idx>
+		<idx><h>statement (in logic)</h><h>simple</h></idx>
+		<p>	does not contain any proper substatements </p>
+	</li>
+	<li>
+		<title>compound statement</title>
+		<idx><h>compound</h><h>statement</h></idx> <!-- TODO will there be any other compound entries in the index? -->
+		<idx><h>statement (in logic)</h><h>compound</h></idx>
+		<p>	contains two or more substatements </p>
+	</li>
+	<li>
+		<title>connective</title>
+		<idx>connective(s)</idx>
+		<idx><h>statement (in logic)</h><h>connective</h></idx>
+		<p>	a connecting word between substatements in a compound statement </p>
+	</li>
+</dl></p>
+
+<example>
+	<title>Simple and compound statements</title>
+	<p>
+	Reconsidering the statements in <xref ref="example-symb-lang-basic-statements" />:
+	<ol>
+		<li>
+			<xref ref="example-symb-lang-basic-statements-simple">statement</xref>
+			is simple;
+		</li>
+		<li>
+			<xref ref="example-symb-lang-basic-statements-compound">statement</xref>
+			is a compound statement made up of two (simple) substatements linked by the connective <q>and</q>;
+			and
+		</li>
+		<li>
+			<xref ref="example-symb-lang-basic-statements-conditional">statement</xref>
+			is a compound statement made up of two substatements linked by the connective <q>if <ellipsis /> then <ellipsis /></q>,
+			where the substatement that constitutes the <q>if</q> part is itself a compound statement.
+		</li>
+	</ol>
+	</p>
+</example>
+
+<p> The substatements in a compound statement can be related to each other by <term>connectives</term> in various ways.</p>
+
+<definition xml:id="definition-symb-lang-connectives">
+	<title>Five basic connectives</title>
+	<idx>connective(s)</idx>
+	<idx><h>logical</h><h>connectives</h></idx>
+	<statement>
+		<p><dl>
+			<li>
+				<title>negation</title>
+				<idx>negation</idx>
+				<idx>not (logical connective)</idx>
+				<idx><h>logical</h><h>negation</h></idx>
+				<p> <q>not</q> </p>
+			</li>
+			<li>
+				<title>conjuction</title>
+				<idx>conjuction</idx>
+				<idx>and (logical connective)</idx>
+				<idx><h>logical</h><h>conjuction</h></idx>
+				<p> <q>and</q> </p>
+			</li>
+			<li>
+				<title>disjunction</title>
+				<idx>disjunction</idx>
+				<idx>or (logical connective)</idx>
+				<idx><h>logical</h><h>disjunction</h></idx>
+				<p> <q>or</q> </p>
+			</li>
+			<li>
+				<title>conditional</title>
+				<idx>conditional</idx>
+				<idx>if <ellipsis /> then <ellipsis /> (logical connective)</idx>
+				<idx><h>logical</h><h>conditional</h></idx>
+				<p> <q>if <ellipsis /> then <ellipsis /></q> </p>
+			</li>
+			<li>
+				<title>biconditional</title>
+				<idx>biconditional</idx>
+				<idx>if and only if (logical connective)</idx>
+				<idx><h>logical</h><h>biconditional</h></idx>
+				<p> <q>if and only if</q> </p>
+			</li>
+		</dl></p>
+		<p>
+		Given statements <m>A</m> and <m>B</m>,
+		we use these connectives to construct new statements:
+		<dl>
+			<li>
+				<title>negation of <m>A</m></title>
+				<p> not <m>A</m> </p>
+			</li>
+			<li>
+				<title>conjuction of <m>A</m> and <m>B</m></title>
+				<p> <m>A</m> and <m>B</m> </p>
+			</li>
+			<li>
+				<title>disjunction of <m>A</m> and <m>B</m></title>
+				<p> <m>A</m> or <m>B</m> </p>
+			</li>
+			<li>
+				<title>conditional where <m>A</m> implies <m>B</m></title>
+				<p> if <m>A</m> then <m>B</m> </p>
+			</li>
+			<li>
+				<title>biconditional involving <m>A</m> and <m>B</m></title>
+				<p> <m>A</m> if and only if <m>B</m> </p>
+			</li>
+		</dl>
+		</p>
+	</statement>
+</definition>
+
+<remark xml:id="remark-symb-lang-connectives"><p><ol>
+	<li>
+		All statements we will consider can be constructed starting from a finite number of simple statements and modifying/joining them using connectives as above.
+	</li>
+	<li xml:id="remark-symb-lang-connectives-inclusive-exclusive-or">
+	<!-- old label NOTE::inclusive.exclusive.or -->
+		<em>Always</em> take <q><m>A</m> or <m>B</m></q> to mean <q><m>A</m> or <m>B</m> or both</q>
+		(known as <term>inclusive or</term><idx>inclusive or</idx>).
+		However, in everyday language it may be reasonable to take
+		<q><em>either</em> <m>A</m> or <m>B</m></q>
+		to mean
+		<q>(<m>A</m> or <m>B</m>) and not (<m>A</m> and <m>B</m>)</q>
+		(known as <term>exclusive or</term><idx>exclusive or</idx>).
+	</li>
+	<li>
+		The <term>conditional</term> and <term>biconditional</term> connectives are actually superfluous
+		<mdash /> they can be constructed from the first three.
+		(See
+		<xref ref="wexample-logic-equiv-construct-conditional" />
+		and <xref ref="exercise-logic-equiv-biconditional-constructed" />.)
+		But they occur frequently,
+		and such constructions from other connectives obscure their meaning,
+		so it is more convenient to include these two connectives in our list of of basic connectives.
+	</li>
+</ol></p></remark>
+
+<example>
+	<title>Translating everyday English into logical statements</title>
+	<p>
+	A conversation.
+	<dl>
+		<li><title>Alice</title><p> It is raining. </p> </li>
+		<li><title>Bob</title><p> No, it isn't. </p> </li>
+		<li><title>Alice</title><p> Either it's raining or it isn't. </p> </li>
+		<li><title>Bob</title><p> How can we decide? </p> </li>
+		<li><title>Alice</title><p> If we go outside and we get wet, then it's raining. </p> </li>
+		<li><title>Bob</title><p> We'd get wet outside if the sprinklers are on, too. </p> </li>
+		<li><title>Alice</title><p> Don't be silly! </p> </li>
+		<li><title>Alice (continuing<ellipsis />)</title><p> We'll get wet if it's raining, and this is the only way we'll get wet. </p> </li>
+	</dl>
+	</p>
+	<p>
+	Let us rewrite the above conversation to clearly identify the substatements and connectives.
+	<dl>
+		<li><title>Alice</title><p> it is raining </p> </li>
+		<li><title>Bob</title><p> not (it is raining) </p> </li>
+		<li><title>Alice</title><p> (it is raining) or (not (it is raining)) </p> </li>
+		<li><title>Bob</title><p> <em>[not a statement!]</em> </p> </li>
+		<li><title>Alice</title><p> if ((we are outside) and (we get wet)) then (it is raining) </p> </li>
+		<li><title>Bob</title><p> if ((we are outside) and (the sprinklers are on)) then (we get wet) </p> </li>
+		<li><title>Alice</title><p> <em>[not a statement!]</em> </p> </li>
+		<li><title>Alice</title><p> if (we are outside) then ((we get wet) if and only if (it is raining)) </p> </li>
+	</dl>
+	</p>
+</example>
+
+<claim> <!-- claim has been hijacked to Test -->
+	<title>Checking whether a sentence is a logical statement</title>
+	<idx><h>Test</h><h>statement</h></idx>
+	<idx><h>statement(s) (in logic)</h><h>Test</h></idx>
+	<idx><h>logical</h><h>statement(s)</h><h>Test</h></idx>
+	<statement><p>
+		If <m>S</m> is an English language sentence and the phrase <q>It is true that <m>S</m></q> makes sense as an English language sentence,
+		then <m>S</m> is a logical statement.
+	</p></statement>
+</claim>
+
+<p>
+Strictly speaking,
+many mathematical statements are not logical statements,
+for a different reason then the one used in the test above.
+</p>
+
+<example xml:id="example-symb-lang-free-variable-not-a-statement">
+	<!-- old label EXAMPLE::free.variable.not.a.statement -->
+	<title>An ambiguous mathematical statement</title>
+	<p>
+	The phrase <q><m>f</m> is a differentiable function</q> is not a logical statement,
+	since whether it is true or false depends on the <term>free variable</term> <m>f</m>.
+	For example,
+	if we substitute the function <m>f(x) = x</m> into this statement,
+	the statement becomes true.
+	However,
+	if we substitute the function <m>f(x) = \abs{x}</m>,
+	the statement becomes false.
+	We will deal with this issue in <xref ref="chapter-pred-logic" />.
+	</p>
+</example>
+
+</section>
+
+<section xml:id="section-symb-lang-symb-lang">
+<title>Converting language to symbols</title>
+
+<p>
+As we have already begun to do,
+we will use letters to represent (possibly variable) logical statements and substatements.
+To complete the conversion from verbose language to compact symbolism,
+we will introduce symbols to represent the <term><xref ref="definition-symb-lang-connectives" text="title" /></term>.
+<dl>
+	<li>
+		<title>negation of <m>A</m></title>
+		<idx><h>negation</h><h>notation for</h></idx>
+		<idx><h>not (logical connective)</h><h>notation for</h></idx>
+		<idx><h>logical</h><h>negation</h><h>notation for</h></idx>
+		<notation>
+			<usage><m>\lgcnot A</m></usage>
+			<description>logical negation of statement <m>A</m></description>
+		</notation>
+		<p> <m>\lgcnot A</m> </p>
+	</li>
+	<li>
+		<title>conjuction of <m>A</m> and <m>B</m></title>
+		<idx><h>conjuction</h><h>notation for</h></idx>
+		<idx><h>and (logical connective)</h><h>notation for</h></idx>
+		<idx><h>logical</h><h>conjuction</h><h>notation for</h></idx>
+		<notation>
+			<usage><m>A \lgcand B</m></usage>
+			<description>logical conjunction of statements <m>A</m> and <m>B</m></description>
+		</notation>
+		<p> <m>A \lgcand B</m> </p>
+	</li>
+	<li>
+		<title>disjunction of <m>A</m> and <m>B</m></title>
+		<idx><h>disjunction</h><h>notation for</h></idx>
+		<idx><h>or (logical connective)</h><h>notation for</h></idx>
+		<idx><h>logical</h><h>disjunction</h><h>notation for</h></idx>
+		<notation>
+			<usage><m>A \lgcor B</m></usage>
+			<description>logical disjunction of statements <m>A</m> and <m>B</m></description>
+		</notation>
+		<p> <m>A \lgcor B</m> </p>
+	</li>
+	<li>
+		<title>conditional where <m>A</m> implies <m>B</m></title>
+		<idx><h>conditional</h><h>notation for</h></idx>
+		<idx><h>if <ellipsis /> then <ellipsis /> (logical connective)</h><h>notation for</h></idx>
+		<idx><h>logical</h><h>conditional</h><h>notation for</h></idx>
+		<notation>
+			<usage><m>A \lgccond B</m></usage>
+			<description>logical conditional where statement <m>A</m> implies statement <m>B</m></description>
+		</notation>
+		<p> <m>A \lgccond B</m> </p>
+	</li>
+	<li>
+		<title>biconditional involving <m>A</m> and <m>B</m></title>
+		<idx><h>biconditional</h><h>notation for</h></idx>
+		<idx><h>if and only if (logical connective)</h><h>notation for</h></idx>
+		<idx><h>logical</h><h>biconditional</h><h>notation for</h></idx>
+		<notation>
+			<usage><m>A \lgcbicond B</m></usage>
+			<description>
+				logical biconditional where each of statements <m>A</m> and <m>B</m> implies the other
+			</description>
+		</notation>
+		<p> <m>A \lgcbicond B</m> </p>
+	</li>
+</dl>
+</p>
+
+<p>
+Using variables to represent statements and the above symbols to represent connectives allows us to isolate the task of analyzing logical structure,
+without being distracted or influenced by the content of the statements.
+</p>
+
+<warning><p>
+	In mathematics, the symbol <m>\to</m> is also used in function notation;
+	<!-- (see TODO-XREF); \S\zref{CHAPTER::funcs} -->
+	you will need to determine from the context which role this symbol is playing.
+</p></warning>
+
+<example>
+	<title>Translating English language into symbolic language</title>
+	<p>
+	Consider the statement <q>if we are outside and we get wet then it is raining.</q>
+	Assign statement variables:
+	<!-- TODO these are actual unicode quote symbols in there, works OK for HTML but what about latex ? -->
+	<md><mrow>
+		A \amp = \text{ “we are outside,”} \amp
+		B \amp = \text{ “we get wet,”} \amp
+		C \amp = \text{ “it is raining.”}
+	</mrow></md>
+	Then symbolically, the statement can be written <me>A \lgcand B \lgccond C</me>.
+	</p>
+</example>
+
+<remark><p>
+	Using <em>substatement</em> variables is not the same as using <em>free</em> variables.
+	You should think of substatement variables as placeholders for specific logical statements which,
+	by definition,
+	can each be determined to be either true or false.
+</p></remark>
+
+</section>
+
+<section xml:id="section-symb-lang-logic-analysis">
+<title>Logical analysis</title>
+
+<p>
+We will now leave the English language behind and concentrate on logical statements consisting only of variables and connectives.
+Keep in mind that variables are not limited to representing simple statements;
+they can represent compound statements as well.
+</p>
+
+<p><dl>
+	<li>
+		<title>truth value</title>
+		<idx><h>truth</h><h>value</h></idx>
+		<p> the property of being true or false </p>
+	</li>
+</dl></p>
+
+<p>
+Given a logical statement,
+view the variables as <em>inputs</em> and the truth value of the entire statement as an <em>output</em>.
+We would like a systematic way to determine how the truth value of the output changes as we vary the truth values of the inputs.
+</p>
+
+<p><dl>
+	<li>
+		<title>logical analysis</title>
+		<idx><h>logical</h><h>analysis</h></idx>
+		<p> the process of determining the truth value of a statement based on the truth values of its variable substatements </p>
+	</li>
+	<li>
+		<title>truth table</title>
+		<idx><h>truth</h><h>table</h></idx>
+		<p> tabular method of carrying out logical analysis </p>
+	</li>
+</dl></p>
+
+<p>
+If a statement involves a finite number of variables,
+then since each variable can have one of only two possible truth values,
+there are a finite number of different combinations of input truth values for the statement.
+So we can test each combination one after the other to determine all possible outputs.
+Arrange this analysis in a table with all possibilities for the input variables on the left and the resulting outputs on the right.
+</p>
+
+<note xml:id="note-symb-lang-num-rows-truth-table"><p>
+<!-- \label{NOTE::num.rows.truth.table} -->
+	In fact,
+	if there are <m>n</m> variables,
+	then there are exactly <m>2^n</m> different combinations of truth values for the variables.
+	<!--
+	(see TODO-XREF).
+		Exercise \ref{EXERCISE::counting::num.truth.tables} of \S\zref{CHAPTER::counting}
+		BUT there are also activities using induction for this ... ?
+	-->
+</p></note>
+
+<p>
+First, let's establish the truth tables of the basic connectives
+(that is, of statements containing exactly one connective).
+</p>
+
+<figure xml:id="figure-symb-lang-connectives-truth-tables">
+<!-- \label{TABLE::basic.connectives} -->
+	<caption>The truth tables of the <term><xref ref="definition-symb-lang-connectives" text="title" /></term>.</caption>
+	<idx><h>connective(s)</h><h>truth tables for</h></idx>
+	<idx><h>statement (in logic)</h><h>connective</h><h>truth tables for</h></idx>
+	<idx><h>truth</h><h>table</h><h>for each of the connectives</h></idx>
+	<idx><h>negation</h><h>truth table for</h></idx>
+	<idx><h>not (logical connective)</h><h>truth table for</h></idx>
+	<idx><h>conjuction</h><h>truth table for</h></idx>
+	<idx><h>and (logical connective)</h><h>truth table for</h></idx>
+	<idx><h>disjunction</h><h>truth table for</h></idx>
+	<idx><h>or (logical connective)</h><h>truth table for</h></idx>
+	<idx><h>conditional</h><h>truth table for</h></idx>
+	<idx><h>if <ellipsis /> then <ellipsis /> (logical connective)</h><h>truth table for</h></idx>
+	<idx><h>biconditional</h><h>truth table for</h></idx>
+	<idx><h>if and only if (logical connective)</h><h>truth table for</h></idx>
+
+	<sidebyside valign="middle">
+
+		<tabular halign="center">
+			<col right="minor" /><col />
+			<row bottom="medium">
+				<cell colspan="2" halign="center"><term>Negation</term></cell>
+			</row>
+			<row><cell colspan="2" /></row>
+			<row bottom="minor">
+				<cell><m>p</m></cell>
+				<cell><m>\lgcnot p</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row>
+		</tabular>
+
+		<tabular halign="center">
+			<col /><col right="minor" /><col />
+			<row bottom="medium">
+				<cell colspan="3" halign="center"><term>Conjunction</term></cell>
+			</row>
+			<row><cell colspan="3" /></row>
+			<row bottom="minor">
+				<cell><m>p</m></cell>
+				<cell><m>q</m></cell>
+				<cell><m>p \lgcand q</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row>
+		</tabular>
+
+		<tabular halign="center">
+			<col /><col right="minor" /><col />
+			<row bottom="medium">
+				<cell colspan="3" halign="center"><term>Disjunction</term></cell>
+			</row>
+			<row><cell colspan="3" /></row>
+			<row bottom="minor">
+				<cell><m>p</m></cell>
+				<cell><m>q</m></cell>
+				<cell><m>p \lgcor q</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row>
+		</tabular>
+
+		<tabular halign="center">
+			<col /><col right="minor" /><col />
+			<row bottom="medium">
+				<cell colspan="3" halign="center"><term>Conditional</term></cell>
+			</row>
+			<row><cell colspan="3" /></row>
+			<row bottom="minor">
+				<cell><m>p</m></cell>
+				<cell><m>q</m></cell>
+				<cell><m>p \lgccond q</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row>
+		</tabular>
+
+		<tabular halign="center">
+			<col /><col right="minor" /><col />
+			<row bottom="medium">
+				<cell colspan="3" halign="center"><term>Biconditional</term></cell>
+			</row>
+			<row><cell colspan="3" /></row>
+			<row bottom="minor">
+				<cell><m>p</m></cell>
+				<cell><m>q</m></cell>
+				<cell><m>p \lgcbicond q</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row><row>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+			</row><row>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgcfalse</m></cell>
+				<cell><m>\lgctrue</m></cell>
+			</row>
+		</tabular>
+
+	</sidebyside>
+
+</figure>
+
+<note><p><ol>
+	<li> Conjunction <m>p \lgcand q</m> is true <em>only</em> when <em>both</em> <m>p</m> and <m>q</m> are true. </li>
+	<li>
+		<p> Disjunction <m>p \lgcor q</m> is true when <em>at least one</em> of <m>p</m> and <m>q</m> is true. </p>
+		<!-- <aside><title>See</title><p>
+			<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or" text="type-local">Statement</xref>
+			of <xref ref="remark-symb-lang-connectives" />
+			regarding inclusive versus exclusive or.
+		</p></aside> -->
+		<aside><title>See</title><p>
+			<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or">Statement</xref>
+			of <xref ref="remark-symb-lang-connectives" /> for the difference between <term>inclusive or</term> and <term>exclusive or</term>.
+		</p></aside>
+	</li>
+	<li>
+		The first two rows of the truth table for <m>p \lgccond q</m> are consistent with the reading <q>if <m>p</m> is true then <m>q</m> is also true.</q>
+		Really, this reading of the conditional says <em>nothing</em> in the case that <m>p</m> is actually false,
+		but we cannot leave the <q>output</q> column of the truth table blank for the corresponding rows where <m>p = \lgcfalse</m>.
+		Instead, the outputs in the last two rows of the truth table for <m>p \lgccond q</m> are <q>default</q> values chosen to avoid inconsistencies.
+		(See <xref ref="exercise-symb-lang-choices-for-implies" />.)
+	</li>
+	<li>
+		Looking at all four rows of the truth table for <m>p \lgccond q</m>,
+		we can succinctly say that <m>p \lgccond q</m> is true <em>except</em> when <m>p</m> is true but <m>q</m> is false.
+	</li>
+	<li>
+		Biconditional <m>p \lgcbicond q</m> reads <q><m>p</m> is true when <m>q</m> is true, and <em>only</em> when <m>q</m> is true.</q>
+		But this means that when <m>q</m> is false,
+		<m>p</m> cannot be true, hence must by false,
+		which explains the fourth row of the truth table.
+	</li>
+	<li>
+		Looking at all four rows of the truth table for <m>p \lgcbicond q</m>,
+		we can succinctly say that <m>p \lgcbicond q</m> is true when <m>p</m> and <m>q</m> have the <em>same truth value</em>.
+	</li>
+</ol></p></note>
+
+<p>
+We can now use the truth tables of the basic connectives to analyze more complicated statements.
+Liberal use of extra <q>intermediate</q> columns to analyze substatements separately is highly recommended.
+</p>
+
+<problem xml:id="wexample-symb-lang-neg-bicond"> <!-- worked example -->
+	<statement><p> Analyze <m>\lgcnot (p \lgcbicond q)</m>. </p></statement>
+	<solution><tabular halign="center">
+		<col /><col right="minor" /><col right="minor" /><col />
+		<row bottom="minor">
+			<cell><m>p</m></cell>
+			<cell><m>q</m></cell>
+			<cell><m>p \lgcbicond q</m></cell>
+			<cell><m>\lgcnot (p \lgcbicond q)</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+		</row>
+	</tabular></solution>
+</problem>
+
+<note><p>
+	The logical statement <m>\lgcnot (p \lgcbicond q)</m> analyzed in <xref ref="wexample-symb-lang-neg-bicond" /> is one way to realize <em>exclusive or</em>:
+	<m>p</m> or <m>q</m> but not both.
+</p></note>
+
+<problem>
+	<statement><p> Analyze <m>(p \lgcand q) \lgccond (p \lgcbicond r)</m>. </p></statement>
+	<solution><tabular halign="center">
+		<col /><col /><col right="minor" /><col /><col right="minor" /><col />
+		<row bottom="minor">
+			<cell><m>p</m></cell>
+			<cell><m>q</m></cell>
+			<cell><m>r</m></cell>
+			<cell><m>p \lgcand q</m></cell>
+			<cell><m>p \lgcbicond r</m></cell>
+			<cell><m>(p \lgcand q) \lgccond (p \lgcbicond r)</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row>
+	</tabular></solution>
+</problem>
+
+<problem>
+	<statement><p> Analyze <m>\bbrac{(p\lgccond q) \lgccond r} \lgcbicond \bbrac{p \lgccond (q \lgccond r)}</m>. </p></statement>
+	<solution><tabular halign="center">
+		<col /><col /><col right="minor" /><col /><col right="minor" /><col /><col right="minor" /><col />
+		<row bottom="minor">
+			<cell><m>p</m></cell>
+			<cell><m>q</m></cell>
+			<cell><m>r</m></cell>
+			<cell><m>p \lgccond q</m></cell>
+			<cell><m>q \lgccond r</m></cell>
+			<cell><m>A</m></cell>
+			<cell><m>B</m></cell>
+			<cell><m>A \lgcbicond B</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+		</row><row>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+			<cell><m>\lgctrue</m></cell>
+			<cell><m>\lgcfalse</m></cell>
+		</row>
+	</tabular></solution>
+</problem>
+
+</section>
+
+<section xml:id="section-symb-lang-taut-contra">
+<title>Tautologies and contradictions</title>
+
+<p><dl>
+	<li>
+		<title>tautology</title>
+		<idx>tautology</idx>
+		<p> a logical statement that is always true for all possible truth values of its variable substatements </p>
+	</li><li>
+		<title>logically true statement</title>
+		<idx><h>logically</h><h>true</h><see>tautology</see></idx>
+		<p> synonym for <term>tautology</term> </p>
+	</li>
+</dl></p>
+
+<example xml:id="example-symb-lang-basic-tauts">
+	<title>Basic tautologies</title>
+	<p><ol>
+		<li> <m>p \lgccond p</m>. </li>
+		<li> <m>p \lgcbicond p</m>. </li>
+		<li xml:id="example-symb-lang-basic-tauts-law-excl-mid">
+			<p>
+			<!-- \label{EXAMPLE::law.excl.mid} -->
+			<term>Law of the Excluded Middle</term>: <!-- TODO check this output to see what colon does -->
+			<idx><h>Law</h><h>of the Excluded Middle</h></idx>
+			<idx>Excluded Middle, Law of the</idx>
+			<m> p \lgcor \lgcnot p </m>.
+			</p>
+			<p> Verification: </p>
+			<tabular halign="center">
+				<col right="minor" /><col right="minor" /><col />
+				<row bottom="minor">
+					<cell><m>p</m></cell>
+					<cell><m>\lgcnot p</m></cell>
+					<cell><m>p \lgcor \lgcnot p</m></cell>
+				</row><row>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+				</row><row>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgctrue</m></cell>
+				</row>
+			</tabular>
+			<p> The table verifies that the statement is a tautology as the last column consists only of <m>\lgctrue</m> values. </p>
+		</li>
+		<li xml:id="example-symb-lang-basic-tauts-law-contra">
+			<!-- \label{EXAMPLE::law.contra} -->
+			<p>
+			<term>Law of Contradiction</term>:
+			<idx><h>Law</h><h>of Contradiction</h></idx>
+			<idx>Contradiction, Law of</idx>
+			<m>\lgcnot \bbrac{p \lgcand \lgcnot p}</m>.
+			</p>
+			<p>Verification:</p>
+			<tabular halign="center">
+				<col right="minor" /><col right="minor" /><col right="minor" /><col />
+				<row bottom="minor">
+					<cell><m>p</m></cell>
+					<cell><m>\lgcnot p</m></cell>
+					<cell><m>p \lgcand \lgcnot p</m></cell>
+					<cell><m>\lgcnot \bbrac{p \lgcand \lgcnot p}</m></cell>
+				</row><row>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+				</row><row>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+				</row>
+			</tabular>
+			<p> The table verifies that the statement is a tautology as the last column consists only of <m>\lgctrue</m> values. </p>
+		</li>
+	</ol></p>
+</example>
+
+<example>
+	<title>Not a tautology</title>
+	<p>
+	Is <m>p \lgcor p</m> a tautology?
+	No, since it is false when <m>p</m> is false.
+	</p>
+</example>
+
+<p><dl>
+	<li>
+		<title>contradiction</title>
+		<idx>contradiction</idx>
+		<p> a statement that must always be false, regardless of the truth values of its variable substatements </p>
+	</li><li>
+		<title>logically false statement</title>
+		<idx><h>logically</h><h>false</h><see>contradiction</see></idx>
+		<p> synonym for <term>contradiction</term> </p>
+	</li>
+</dl></p>
+
+<example>
+	<title>Contradictions</title>
+	<p><ol>
+		<li> Negation of a tautology is always a contradiction (and negation of a contradiction is always a tautology). </li>
+		<li>
+			<p>Statement <m>(p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q)</m> is a contradiction: </p>
+			<tabular halign="center">
+				<col /><col right="minor" /><col /><col right="minor" /><col /><col right="minor" /><col />
+				<row bottom="minor">
+					<cell><m>p</m></cell>
+					<cell><m>q</m></cell>
+					<cell><m>\lgcnot p</m></cell>
+					<cell><m>\lgcnot q</m></cell>
+					<cell><m>p \lgcor \lgcnot p</m></cell>
+					<cell><m>q \lgcand \lgcnot q</m></cell>
+					<cell><m>(p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q)</m></cell>
+				</row><row>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+				</row><row>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+				</row><row>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+				</row><row>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgctrue</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+					<cell><m>\lgcfalse</m></cell>
+				</row>
+			</tabular>
+			<p> The table verifies that the statement is a contradiction as the last column consists only of <m>\lgcfalse</m> values. </p>
+		</li>
+	</ol></p>
+</example>
+
+<example>
+	<title>Conditional versus contradiction</title>
+	<p> Implication <m>A\lgccond B</m> can <em>only</em> be a contradiction if <m>A</m> is a tautology and <m>B</m> is a contradiction. </p>
+</example>
+
+<!-- TODO should I just call this a "fact" instead ? -->
+<theorem xml:id="theorem-symb-lang-subst-in-tauts-contras">
+	<title>Substitution Rule</title> <!-- [into a tautology or contradiction] -->
+	<idx><h>Rule(s)</h><h>Substitution</h><h>into a tautology or contradiction</h></idx>
+	<idx><h>Substitution Rule</h><h>into a tautology or contradiction</h></idx>
+	<statement>
+		Suppose <m>A</m> is a logical statement involving substatement variables <m>p_1, p_2, \dotsc, p_m</m>.
+		If <m>A</m> is logically true or logically false,
+		then so is every statement obtained from <m>A</m> by replacing each statement variable <m>p_i</m> by some logical statement <m>B_i</m>,
+		for every possible collection of logical statements <m>B_1, B_2, \dotsc, B_m</m>.
+	</statement>
+</theorem>
+
+<example>
+	<title>Using the <xref ref="theorem-symb-lang-subst-in-tauts-contras" text="title" /></title>
+	<p><ol>
+		<li>
+			We know <m>p \lgcor \lgcnot p</m> is a tautology, therefore so is
+			<me>
+				\bbrac{q \lgccond (r \lgcand \lgcnot s)} \lgcor
+				\lgcnot \bbrac{q \lgccond (r \lgcand \lgcnot s)}
+			</me>
+			using substitution <m>p = \bbrac{q \lgccond (r \lgcand \lgcnot s)}</m>.
+		</li><li>
+			We know <m>(p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q)</m> is a contradiction,
+			therefore so are
+			<md>
+				<mrow>
+					(p \lgcor \lgcnot p) \lgccond (p \lgcand \lgcnot p)
+					\qquad \text{(by } p = p \text{, } q = p \text{),}
+				</mrow><mrow>
+					\bbrac{(r \lgcor s) \lgcor \lgcnot (r \lgcor s)} \lgccond \bbrac{q \lgcand \lgcnot q}
+					\qquad \text{(by } p = r \lgcor s \text{, } q = q \text{),}
+				</mrow><mrow>
+					\bbrac{r \lgcand (s \lgcbicond t)} \lgcor \lgcnot \bbrac{r \lgcand (s \lgcbicond t)}
+					\lgccond
+					\Bbrac{t \lgcand \lgcnot t}
+					\qquad \text{(by } p = r \lgcand (s \lgcbicond t) \text{, } q = t \text{).}
+				</mrow>
+			</md>
+		</li>
+	</ol></p>
+</example>
+
+<p>
+In mathematics, we often wish to prove that a condition <m>A \lgccond B</m> is actually a tautology.
+(See <xref ref="chapter-proof-methods" />.)
+</p>
+
+<p><dl>
+	<li xml:id="definition-symb-lang-logically-implies">
+		<title>logically implies</title>
+		<idx><h>logically</h><h>implies</h></idx>
+		<p> if the conditional <m>A \lgccond B</m> is a tautology, we say that <m>A</m> <term>logically implies</term> <m>B</m> </p>
+	</li>
+	<li>
+		<title><m>A \lgcimplies B</m></title>
+		<notation>
+			<usage><m>A \lgcimplies B</m></usage>
+			<description>statement <m>A</m> logically implies statement <m>B</m>, so that conditional <m>A \lgccond B</m> is a tautology</description>
+		</notation>
+		<p> notation for logical implication </p>
+	</li>
+</dl></p>
+
+<example>
+	<title>Logical implication</title>
+	<p><ol>
+		<li> If <m>A = p</m> and <m>B = p \lgcor q</m>, then <m>A \lgcimplies B</m>. </li>
+		<li> If <m>A = p \lgcand q</m> and <m>B = p</m>, then <m>A \lgcimplies B</m>. </li>
+	</ol></p>
+</example>
+
+<remark><p>
+	As we will see in <xref ref="chapter-proof-methods" />,
+	verifying logical implications in mathematical contexts is one of the main tasks of mathematical proof.
+	And to verify a logical implication <m>A \lgcimplies B</m>,
+	we want to focus on the idea of conditional as expressing
+	<q>If <m>A</m> is true then <m>B</m> is true,</q>
+	and we really don't want to concern ourselves with what happens in the case that <m>A</m> is false.
+	Here is where our <q>default</q> values in the rows of the truth table for the conditional <m>A \lgccond B</m> where <m>A</m> is false help out <mdash />
+	as the conditional <m>A \lgccond B</m> is automatically true when <m>A</m> is false, regardless of the truth value of <m>B</m>, we really only need to consider what happens when <m>A</m> is true to verify <m>A \lgcimplies B</m>.
+</p></remark>
+
+</section>
+
+<xi:include href="./symb-lang.d/activities.ptx" />
+<xi:include href="./symb-lang.d/exercises.ptx" />
+
+</chapter>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+
+<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<author-biographies length="short" />
+
+	<brandlogo url="http://www.ualberta.ca/augustana/" source="images/AUG-Colour.png" />
+
+	<!-- Prefix to enhance Sage notebook contents -->
+	<initialism>EF</initialism>
+
+	<!-- this is the default, but supresses a warning -->
+	<cross-references text="type-global" />
+
+	<latex-preamble>
+		<package>cancel</package>
+	</latex-preamble>
+
+	<macros> <xi:include href="./latex-macros.tex" parse="text" /> </macros>
+
+	<!-- tikz package and libraries for images -->
+	<latex-image-preamble>
+		\usepackage{cancel}
+		\usepackage{tikz}
+		\usepackage{tikz-3dplot}
+		\usepackage{tikz-cd}
+		\usetikzlibrary{matrix}
+		\usetikzlibrary{positioning}
+		\usetikzlibrary{fit}
+		\usetikzlibrary{decorations.pathreplacing}
+	</latex-image-preamble>
+
+	<!-- part="structural" resets chapter numbering at beginning of new part -->
+<!--
+	<numbering>
+		<division part="decorative" />
+	</numbering>
+-->
+
+	<!-- renamings -->
+	<rename element="problem">Worked Example</rename>
+	<rename element="identity">Procedure</rename>
+	<rename element="claim">Test</rename>
+	<rename element="worksheet">Activities</rename>
+	<rename element="insight">Question</rename> <!-- <insight> is RemarkLike, <question> is ExampleLike -->
+	<rename element="hypothesis">Idea</rename>
+	<!-- <rename element="heuristic">Goal</rename>
+	<rename element="convention">Pattern</rename>   BEFORE USING: check whether I have actually used the convention tag for its original intended purpose
+	<rename element="activity">Discovery</rename> -->
+
+</docinfo>

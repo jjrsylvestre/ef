@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<chapter xml:id="chapter-countable" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Countable and uncountable sets</title>
+
+<section xml:id="section-countable-basics">
+<title>Basics and examples</title>
+
+<p>
+If <m>A</m> is a set that has the same size as <m>\N</m>,
+then we can think of a bijection <m>\N \to A</m> as <q>counting</q> the elements of <m>A</m>
+(even though there are an infinite number of elements to count),
+in exactly the same way that we use our counting sets <m>\natnumlt{m}</m> to count finite sets.
+</p>
+
+<p><dl>
+
+	<li>
+		<title>countable</title>
+		<idx>countable</idx>
+		<idx><h>set(s)</h><h>countable</h></idx>
+		<p> a set that is finite or has the same size as <m>\N</m> </p>
+	</li>
+
+	<li xml:id="definition-countable-countably-infinite">
+		<title>countably infinite</title>
+		<idx>countably infinite</idx>
+		<idx><h>set(s)</h><h>countably infinite</h></idx>
+		<p> a countable set which has the same size as <m>\N</m> </p>
+	</li>
+
+	<li>
+		<title>uncountable</title>
+		<idx>uncountable</idx>
+		<idx><h>set(s)</h><h>uncountable</h></idx>
+		<p> a set that is not countable </p>
+	</li>
+
+</dl></p>
+
+<note xml:id="note-countable-defs"><p><ol>
+	<li> An uncountable set is necessarily infinite. </li>
+	<li xml:id="note-countable-defs-same-size-countable-uncountable">
+	<!-- \label{NOTE::same.size.countable.uncountable} -->
+		Two sets which have the same size (<ie /> there exists a bijection between them) are either both countable or both uncountable.
+	</li>
+</ol></p></note>
+
+<fact xml:id="fact-countable-infinite-iff-seq">
+	<title>Characterization of countable sets using sequences</title>
+	<statement><p>
+		A nonempty set <m>A</m> is countable if and only if there exists a sequence of elements from <m>A</m> in which each element of <m>A</m> appears exactly once.
+	</p></statement>
+	<proof><title>Proof idea</title><p>
+		In case <m>A</m> is finite, the statement is precisely that of
+		<xref ref="fact-cardinality-finite-set-finite-sequence" />.
+		So assume <m>A</m> is infinite, in which case a sequence of the type described in the statement must also be infinite.
+		Technically, an infinite sequence from <m>A</m> is a function <m>\N \to A</m>.
+		The <q>each element of <m>A</m></q> property is the same as saying the function is surjective,
+		and the <q>exactly once</q> property is the same as saying the function is injective.
+		So a sequence of the described kind is exactly the same as <em>bijection</em> <m>\N \to A</m>,
+		which is what is required for <m>A</m> to be the same size as <m>\N</m> (<ie /> countably infinite).
+	</p></proof>
+</fact>
+
+<remark><p> Compare this fact with <xref ref="fact-cardinality-finite-set-finite-sequence" />. </p></remark>
+
+<theorem xml:id="theorem-countable-integers-rationals">
+	<title>Countability of integers and rationals</title>
+	<statement><p> Sets <m>\Z</m> and <m>\Q</m> are both countable. </p></statement>
+	<proof>
+		<title>Proof idea</title>
+		<p>
+		We have already constructed a bijection <m>\N \to \Z</m> in
+		<xref ref="example-cardinality-integers-same-size-nat-nums" />,
+		which shows that <m>\Z</m> is countable.
+		</p><p>
+		To show that <m>\Q</m> is countable, we will use <xref ref="fact-countable-infinite-iff-seq" /> and construct an infinite sequence which contains each element of <m>\Q</m> exactly once.
+		First, construct an infinite grid which contains <em>all positive</em> rational numbers.
+		By zig-zagging through the grid, we obtain an infinite sequence which contains each positive element of <m>\Q</m> <em>at least</em> once,
+		though there are duplicates because an element of <m>\Q</m> can have many different representations as a fraction.
+		</p>
+		<sidebyside>
+			<figure>
+				<caption>A grid containing all positive rational numbers.</caption>
+				<image>
+					<description>A grid containing all positive rational numbers.</description>
+					<latex-image><xi:include href="countable.d/rational-grid.tex" parse="text" /></latex-image>
+				</image>
+			</figure>
+			<figure>
+				<caption>A path through the positive rational numbers.</caption>
+				<image>
+					<description>A path through the grid containing all positive rational numbers.</description>
+					<latex-image><xi:include href="countable.d/rational-grid-path.tex" parse="text" /></latex-image>
+				</image>
+			</figure>
+		</sidebyside>
+		<p>
+		The path through the grid creates the following sequence of positive rational numbers.
+		By crossing out duplicates, we obtain an infinite sequence which contains each positive rational number exactly once.
+		<md alignment="gather">
+			<mrow>
+				1, \;\;\;
+				\frac{1}{2}, \;\;\;
+				2, \;\;\;
+				3, \;\;\;
+				\xcancel{1,} \;\;\;
+				\frac{1}{3}, \;\;\;
+				\frac{1}{4}, \;\;\;
+				\frac{2}{3}, \;\;\;
+				\frac{3}{2}, \;\;\;
+				4, \;\;\;
+				5,
+			</mrow><mrow>
+				\xcancel{2,} \;\;\;
+				\xcancel{1,} \;\;\;
+				\xcancel{\frac{1}{2},} \;\;\;
+				\frac{1}{5}, \;\;\;
+				\frac{1}{6}, \;\;\;
+				\frac{2}{5}, \;\;\;
+				\frac{3}{4}, \;\;\;
+				\frac{4}{3}, \;\;\;
+				\frac{5}{2}, \;\;\;
+				\dotsc
+			</mrow>
+		</md>
+		Finally, interleave the negative rational numbers into the above sequence, and insert <m>0</m> at the beginning.
+		<md alignment="gather">
+			<mrow>
+				0, \;\;\;
+				1, \;\;\;
+				-1, \;\;\;
+				\frac{1}{2}, \;\;\;
+				-\frac{1}{2}, \;\;\;
+				2, \;\;\;
+				-2, \;\;\;
+				3, \;\;\;
+				-3, \;\;\;
+				\frac{1}{3}, \;\;\;
+				-\frac{1}{3}, \;\;\;
+			</mrow><mrow>
+				\frac{1}{4}, \;\;\;
+				-\frac{1}{4}, \;\;\;
+				\frac{2}{3}, \;\;\;
+				-\frac{2}{3}, \;\;\;
+				\frac{3}{2}, \;\;\;
+				-\frac{3}{2}, \;\;\;
+				4, \;\;\;
+				-4, \;\;\;
+				5, \;\;\;
+				-5, \;\;\;
+				\dotsc
+			</mrow>
+		</md>
+	</p></proof>
+</theorem>
+
+<p>
+Here is an example of an uncountable set.
+The argument to prove the set is uncountable is a famous one,
+so we encapsulate it as the proof of a Lemma, rather than just a plain Example.
+</p>
+
+<lemma xml:id="lemma-countable-uncountable-subset-of-reals">
+	<!-- \label{LEMMA::uncountable.subset.of.reals} -->
+	<title>An uncountable set of real numbers</title>
+	<statement>
+			<p> Let <m>\scr{C}</m> represent the set of all real numbers between <m>0</m> and <m>0.2</m> (including <m>0</m>) whose decimal expansions involve only the digits <m>0</m> and <m>1</m>. </p>
+			<p> Set <m>\scr{C}</m> is uncountable. </p>
+	</statement>
+	<proof xml:id="proof-countable-uncountable-subset-of-reals">
+		<aside><p>
+			The argument in this proof is called
+			<term>Cantor's diagonal argument</term>.
+			<idx><h>Cantor's</h><h>diagonal argument</h></idx>
+		</p></aside>
+		<p> We will show that no sequence of numbers from <m>\scr{C}</m> can contain <em>every</em> element of <m>\scr{C}</m>. </p>
+		<p>
+		Suppose <m>\{a_k\}</m> is an infinite sequence of elements of <m>\scr{C}</m>.
+		We can create an element <m>r \in \scr{C}</m> which is not in the sequence as follows.
+		Set <me>r = 0.r_1 r_2 r_3 r_4 \dotsm</me>, where <m>r_k</m> is the digit in the <m>\nth[k]</m> decimal place of <m>r</m>,
+		according to the following rules.
+		<ul>
+			<li> If the <m>\nth[k]</m> decimal place of <m>a_{k-1}</m> is <m>0</m>, set <m>r_k = 1</m>. </li>
+			<li> If the <m>\nth[k]</m> decimal place of <m>a_{k-1}</m> is <m>1</m>, set <m>r_k = 0</m>. </li>
+		</ul>
+		Clearly every digit of <m>r</m> will be either a <m>0</m> or <m>1</m>, and <m>0 \le r \lt 0.2</m>, so <m>r \in \scr{C}</m>.
+		(The reason we use <m>a_{k-1}</m> instead of <m>a_k</m> in the rules to create <m>r</m> is to make sure we consider sequence element <m>a_0</m> somewhere in there.)
+		</p><p>
+		Now we have <m>a_k \ne r</m> for every <m>k \in \N</m>, since <m>r</m> and <m>a_k</m> differ in the <m>\nth[(k+1)]</m> decimal place.
+		Furthermore, <m>r \in \scr{C}</m> because it is between <m>0</m> and <m>0.2</m> and its decimal expansion involves only digits <m>0</m> and <m>1</m>.
+		Therefore, sequence <m>\{a_k\}</m> does not contain every element of <m>\scr{C}</m> because it does not contain <m>r</m>.
+		</p>
+	</proof>
+</lemma>
+
+<remark><p><ol>
+	<li>
+		The <q>diagonal</q> part of the name <term>Cantor's diagonal argument</term> refers to the following.
+		If the decimal expansions of the real numbers in the sequence <m>\{a_k\}</m> are written out in a grid so that each row is one of the numbers <m>a_k</m> and each column represents a specific decimal place in the sequence numbers,
+		then the rules to create <m>r</m> can be thought of as <q>flipping</q> the digits that occur in the diagonal positions of this grid.
+		(Draw the grid for yourself to see the pattern!)
+	</li>
+	<li>
+		Later in this chapter we will use <xref ref="lemma-countable-uncountable-subset-of-reals" /> to prove that <m>\R</m> itself is uncountable.
+		(See <xref ref="theorem-countable-R-uncountable" />.)
+	</li>
+</ol></p></remark>
+
+</section>
+
+<section xml:id="section-countable-properties">
+<title>Properties</title>
+
+<p>
+The following facts outline some relationships countability and the set operations.
+They can be used to more easily prove that a set is countable or uncountable using the already-known countability or uncountability of a related set.
+</p>
+
+<proposition xml:id="proposition-countable-properties">
+	<title>Countability properties</title>
+	<statement><p><ol>
+    	<li xml:id="proposition-countable-properties-nat-num">
+		<!-- \label{PROPOSITION::nat.num.subset.countable} -->
+			Every subset of <m>\N</m> is countable.
+		</li>
+		<li xml:id="proposition-countable-properties-injection">
+		<!-- \label{PROPOSITION::injection.countable} -->
+			If there exists an injection <m>A \ifuncto \N</m>, then the set <m>A</m> is countable.
+		</li>
+		<li xml:id="proposition-countable-properties-subset">
+		<!-- \label{PROPOSITION::countable.subset} -->
+			Suppose <m>A \subseteq B</m>.
+			If <m>B</m> is countable, then so is <m>A</m>.
+		</li>
+		<li xml:id="proposition-countable-properties-uncountable-subset">
+		<!-- \label{PROPOSITION::uncountable.subset} -->
+			Suppose <m>A \subseteq B</m>.
+			If <m>A</m> is <em>un</em>countable, then so is <m>B</m>.
+		</li>
+		<li xml:id="proposition-countable-properties-union-intersection">
+		<!-- \label{PROPOSITION::countable.union} -->
+			If <m>A</m> and <m>B</m> are countable, then <m>A\cup B</m> and <m>A\cap B</m> are both countable.
+		</li>
+	</ol></p></statement>
+	<proof><title>Proof outline</title><p><ol>
+		<li>
+			Assume <m>A \subseteq \N</m>.
+			If <m>A</m> is finite, then it is countable by definition.
+			So assume that <m>\card{A} = \infty</m>.
+			We can construct a sequence <m>\{a_k\}</m> that contains each element of <m>A</m> exactly once as follows.
+			<md>
+				<mrow> a_0 \amp = \text{ smallest number in } A, </mrow>
+				<mrow> a_1 \amp = \text{ next smallest number in } A, </mrow>
+				<mrow> a_2 \amp = \text{ next smallest number in } A, </mrow>
+				<mrow> \amp \phantom{=} \; \vdots </mrow>
+			</md>
+			Therefore, <m>A</m> is countable.
+		</li>
+		<li>
+			If <m>\ifuncdef{f}{A}{\N}</m> is injective, then <m>\funcdef{f}{A}{f(A)}</m> is a bijection, so that <m>A</m> and its image <m>f(A)</m> have the same size.
+			But <m>f(A)</m> is countable by <xref ref="proposition-countable-properties-nat-num" text="local">Statement</xref>,
+			so using the definition of countable along with <xref ref="fact-cardinality-same-size-transitivity" />,
+			conclude that <m>A</m> is countable.
+		</li>
+		<li>
+			If <m>B</m> is countable, then by definition there exists a bijection <m>\funcdef{f}{B}{\N}</m>.
+			Then <m>\funcdef{\funcres{f}{A}}{A}{\N}</m> is an injection.
+			Apply <xref ref="proposition-countable-properties-injection" text="local">Statement</xref>.
+		</li>
+		<li>
+			This is the contrapositive of
+			<xref ref="proposition-countable-properties-subset" text="local">Statement</xref>,
+			under the common assumption <m>A \subseteq B</m>.
+		</li>
+		<li>
+			<p> For <m>A \cap B</m>, consider <m>A \cap B \subseteq A</m> and apply <xref ref="proposition-countable-properties-subset" text="local">Statement</xref>. </p>
+			<p>
+			Now consider <m>A \cup B</m>.
+			For simplicity, we will assume <m>A \cap B = \emptyset</m>, so that <m>A \cup B = A \sqcup B</m>.
+			Since <m>A</m> and <m>B</m> are countable, we can write their elements as sequences:
+			<md><mrow> A \amp = \{ \, a_0, \, a_1, \, a_2, \, \dotsc \, \}, \amp B \amp = \{ \, b_0, \, b_1, \, b_2, \, \dotsc \, \} </mrow></md>.
+			We can then write the elements of <m>A \sqcup B</m> in a sequence by interleaving these two sequences:
+			<me> A \sqcup B = \{ \, a_0, \, b_0, \, a_1, \, b_1, \, a_2, \, b_2, \, \dotsc \, \} </me>.
+			</p>
+		</li>
+	</ol></p></proof>
+</proposition>
+
+<exercise>
+	<statement><p> Prove <m>A \cup B</m> is countable even in the case <m>A \cap B \ne \emptyset</m>. </p></statement>
+	<hint><p>Consider the sets
+		<md><mrow>
+		A' \amp = A \smallsetminus (A\cap B), \amp
+		B' \amp = B \smallsetminus (A\cap B), \amp
+		C \amp = A' \sqcup B'.
+		</mrow></md>
+		Then <m>A\cup B</m> is the disjoint union of <m>C</m> and <m>A\cap B</m>.
+	</p></hint>
+</exercise>
+
+<example><title>Primes are countable</title><p> The set of prime numbers is countable, since it is a subset of <m>\N</m>. </p></example>
+
+<example><title>Unit interval is uncountable</title><p>
+	The unit interval <m>(0,1)</m> on the real number line is uncountable because it contains the uncountable subset <m>\scr{C}</m> from
+	<xref ref="lemma-countable-uncountable-subset-of-reals" />.
+</p></example>
+
+<theorem xml:id="theorem-countable-R-uncountable">
+	<!-- \label{THEOREM::R.uncountable} -->
+	<statement><p> Set <m>\R</m> is uncountable. </p></statement>
+	<proof><p>
+		This follows from
+		<xref ref="lemma-countable-uncountable-subset-of-reals" />
+		and
+		<xref ref="proposition-countable-properties-uncountable-subset" text="local">Statement</xref>
+		of <xref ref="proposition-countable-properties" />.
+	</p></proof>
+</theorem>
+
+<example><p>
+	The Cartesian product set <m>\R^2 = \R \times \R</m> is uncountable because it has an uncountable subset:
+	the <m>x</m>-axis has the same size as <m>\R</m>.
+</p></example>
+
+</section>
+
+<section xml:id="section-countable-relative-sizes">
+<title>More about relative sizes of sets</title>
+
+<question><p> What is the <q>size</q> of <m>\R</m>? </p></question>
+
+<p>
+We know <m>\N</m>, <m>\Z</m>, and <m>\Q</m> all have the same size (countably infinite).
+But <m>\R</m> is so large that it is <em>un</em>countable, so it seems like <m>\R</m> should be <q>larger</q> than <m>\N</m>, <m>\Z</m>, and <m>\Q</m>.
+</p>
+
+<p><dl>
+	<li xml:id="definition-countable-larger-set">
+	<!-- \label{DEFN::larger.set} -->
+		<title>larger set</title>
+		<idx><h>set(s)</h><h>larger</h></idx>
+		<p>
+		set <m>B</m> is <term>larger</term> than set <m>A</m> if
+		<ol label="(i)">
+			<li> <m>B</m> has a subset the same size as <m>A</m>, and </li>
+			<li> every subset of <m>B</m> which is the same size as <m>A</m> is proper </li>
+		</ol>
+		</p>
+	</li>
+	<li xml:id="definition-countable-smaller-set">
+	<!-- \label{DEFN::smaller.set} -->
+		<title>smaller set</title>
+		<idx><h>set(s)</h><h>smaller</h></idx>
+		<p> if <m>B</m> is larger than <m>A</m>, then <m>A</m> is <term>smaller</term> than <m>B</m> </p>
+	</li>
+</dl></p>
+
+<claim xml:id="test-countable-larger-set">
+	<title>To show set <m>B</m> is larger than set <m>A</m></title>
+	<idx><h>set(s)</h><h>smaller</h><h>Test</h></idx>
+	<idx><h>set(s)</h><h>larger</h><h>Test</h></idx>
+	<idx><h>Test</h><h>larger/smaller set</h></idx>
+	<statement>
+		<p><ol label="(i)">
+			<li> Show there exists an injection <m>A \ifuncto B</m>. </li>
+			<li>
+				Show that <em>every</em> injection <m>A \ifuncto B</m> cannot also be a surjection.
+			</li>
+		</ol></p>
+		<p>
+		However, if one or both of <m>A,B</m> are finite,
+		one can instead just verify that <m>\card{B} > \card{A}</m>.
+		</p>
+	</statement>
+</claim>
+
+<remark xml:id="remark-countable-larger-set-test"><p><ol>
+	<li><p>
+		Matching up the parts of the Test with the parts of the definition of <term>larger set</term>:
+		<ol label="(i)">
+			<li>
+				The existence of an injection <m>\ifuncdef{f}{A}{B}</m> demonstrates that <m>B</m> has a subset that is the same size as <m>A</m>, as restricting the codomain to <m>\funcdef{f}{A}{f(A)}</m> creates a bijection.
+			</li>
+			<li>
+				By definition, a subset <m>C \subseteq B</m> has the same size as <m>A</m> when there exists a bijection <m>A \to C</m>.
+				Enlarging the codomain, such a bijection can be thought of as an injection <m>A \ifuncto B</m> whose image is <m>C \subseteq B</m>.
+				If no such injection can also be surjective, then <m>C \subsetneqq B</m>,
+				<ie /> <m>C</m> is a proper subset of <m>B</m>.
+			</li>
+		</ol>
+	</p></li>
+	<li xml:id="remark-countable-larger-set-test-inj-or-not">
+		In the second part of the test,
+		one can simply show that every <em>function</em> <m>A \to B</m> cannot be a surjection,
+		in which case surely every injection <m>A \ifuncto B</m> cannot be a surjection.
+		It may seem like it should be more difficult to prove this more general statement,
+		but if you will find that your argument that every injection cannot be a surjection does not actually rely on the injective assumption,
+		then there is no need for that assumption.
+	</li>
+</ol></p></remark>
+
+<example><p> Set <m>\R</m> is larger than each of the sets <m>\N</m>, <m>\Z</m>, and <m>\Q</m>. </p></example>
+
+<p> Here follows an important comparison of set sizes. </p>
+
+<theorem>
+	<creator>Cantor</creator>
+	<idx><h>Cantor's</h><h>Theorem</h></idx>
+	<idx><h>Theorem</h><h>Cantor's</h></idx>
+	<statement><p> Every set is smaller than its own power set. </p></statement>
+	<proof><p>
+		Let <m>A</m> represent an arbitrary set.
+		We will apply the
+		<xref ref="test-countable-larger-set" text="custom">Larger Set Test</xref>
+		to demonstrate that <m>\powset{A}</m> is larger than <m>A</m>.
+		<ol label="(i)">
+			<li>
+				There exists a natural injection
+				<md>
+					<mrow> A \amp \ifuncto \powset{A}, </mrow>
+					<mrow> x \amp \mapsto \{x\}. </mrow>
+				</md>
+				(If <m>A</m> is empty, then this is just the
+				<term><xref ref="definition-cardinality-empty-function" text="title" /></term>,
+				which is always injective by
+				<xref ref="proposition-cardinality-empty-functions-inj" text="local">Statement</xref>
+				of <xref ref="proposition-cardinality-empty-functions" />.)
+			</li>
+			<li>
+				<p>
+				Suppose <m>\funcdef{f}{A}{\powset{A}}</m> is an arbitrary function.
+				Using the <xref ref="test-funcs-surj" text="custom">Surjective Function Test</xref>,
+				we will demonstrate that it cannot be surjective by exhibiting an element <m>X \in \powset{A}</m> for which <em>no</em> element <m>a \in A</m> satisfies <m>f(a) = X</m>.
+				(We will not need to make the assumption that <m>f</m> is injective <mdash />
+				see <xref ref="remark-countable-larger-set-test-inj-or-not" text="local">Statement</xref>
+				of <xref ref="remark-countable-larger-set-test" />.)
+				</p><p>
+				Note that for each <m>a \in A</m>, the image element <m>f(a) \in \powset{A}</m>,
+				being a power set element, is a <em>subset</em> of <m>A</m>.
+				So for each <m>a \in A</m> we can ask whether <m>a</m> is contained in the subset <m>f(a)</m> or not.
+				Collecting together the <q>or not</q> answers, set
+				<me> X = \setdef{a \in A}{a \notin f(a)}. </me>
+				Note that <m>X</m> is a subset of <m>A</m>,
+				so again this means that it is also an <em>element</em> of <m>\powset{A}</m>.
+				</p><p>
+				Could <m>f(a) = X</m> be possible for some <m>a \in A</m>?
+				Since <m>X \subseteq A</m>, for each <m>a \in A</m> we have either <m>a \in X</m> or <m>a \notin X</m>.
+				</p>
+				<case><title>Case <m>a \in X</m></title><p>
+					Then by definition of <m>X</m> above, we have <m>a \notin f(a)</m>.
+					Since <m>X</m> contains element <m>a</m> but <m>f(a)</m> does not,
+					sets <m>X</m> and <m>f(a)</m> cannot be equal.
+				</p></case>
+				<case><title>Case <m>a \notin X</m></title><p>
+					Then by definition of <m>X</m> above, we must have <m>a \in f(a)</m>,
+					since otherwise <m>a</m> would satisfy the condition to be in <m>X</m>.
+					But now <m>f(a)</m> contains element <m>a</m> but <m>X</m> does not,
+					so again sets <m>X</m> and <m>f(a)</m> cannot be equal.
+				</p></case>
+				<p>
+				Since <m>f(a) = X</m> is <em>not</em> possible in all cases,
+				we have found an element in <m>\powset{A}</m> that is not in the image <m>f(A)</m>,
+				as required to demonstrate that <m>f</m> is not surjective.
+				</p>
+			</li>
+		</ol>
+	</p></proof>
+</theorem>
+
+<remark><p>
+	Cantor's Theorem implies that there are an infinite number of <q>levels</q> of infinity!
+	For, if <m>A</m> is an infinite set, then <m>\powset{A}</m> is a <em>larger</em> infinite set,
+	and <m>\powset{\powset{A}}</m> is a <em>still larger</em> infinite set, and
+	<m>\powset{\powset{\powset{A}}}</m> is a <em>still larger</em> infinite set,
+	<ellipsis />.
+</p></remark>
+
+<p>
+The size of the set of natural numbers <m>\N</m> seems like the lowest possible level of infinity,
+since every subset of <m>\N</m> is either finite or has the same size as <m>\N</m>.
+(See <xref ref="proposition-countable-properties-nat-num" text="local">Statement</xref>
+of <xref ref="proposition-countable-properties" />.)
+The set of real numbers <m>\R</m> is larger than <m>\N</m>, since it contains <m>\N</m> as a proper subset
+but is not itself the same size as <m>\N</m>.
+So writing <m>\card{\N} = \infty</m> is not the same as writing <m>\card{\R} = \infty</m>,
+as they are evidently different levels of infinity.
+Is there any level of infinity between these two?
+</p>
+
+<conjecture>
+	<title>Continuum Hypothesis</title>
+	<statement><p> There does <em>not</em> exist a set larger than <m>\N</m> but smaller than <m>\R</m>. </p></statement>
+</conjecture>
+
+<remark><p>
+	It is not known whether the Continuum Hypothesis is true!
+	In fact, it has been proved that the Continuum Hypothesis can be neither proved nor disproved in certain common axiomatic systems for set theory!
+</p></remark>
+
+<p>
+We have seen that funny things can happen with sizes of infinite sets <mdash />
+for example, <m>\N</m> is an proper subset of <m>\Z</m>, but the two have the same size!
+This is not a defect in our definitions,
+it just demonstrates that for infinite sets,
+the subset relation is not a good measure of size.
+But it also demonstrates that we should be vigilant about other possible unintuitive consequences of our definitions,
+because they <em>might</em> reveal defects in our definitions.
+For example, from our definitions of <term>smaller</term> and <term>larger</term> sets,
+there is no obvious reason why there could not be some weird example of a pair of sets <m>A</m> and <m>B</m> with both <m>B</m> larger than <m>A</m> <em>and</em> <m>A</m> larger than <m>B</m>.
+Luckily, that cannot happen thanks to the following theorem.
+</p>
+
+<theorem>
+	<creator>Cantor, Bernstein</creator>
+	<idx><h>Theorem</h><h>Cantor-Bernstein</h></idx>
+	<statement><p>
+		Suppose <m>A</m> and <m>B</m> are infinite sets.
+		If there exists both an injection <m>A \ifuncto B</m> and an injection <m>B \ifuncto A</m>,
+		then <m>A</m> and <m>B</m> have the same size.
+	</p></statement>
+	<proof>
+		<title>Proof idea</title>
+		<p>
+		Suppose <m>\ifuncdef{f}{A}{B}</m> and <m>\ifuncdef{g}{B}{A}</m> are injections.
+		We need to exhibit a bijection from <m>A</m> to <m>B</m>
+		(or vice versa, but we will construct one from <m>A</m> to <m>B</m>).
+		</p><p>
+		For every element <m>a \in A</m>, we can construct a chain of alternating elements from <m>A</m> and <m>B</m> as follows.
+		Working forwards from <m>a</m>, the injection <m>f</m> maps <m>a</m> to some element of <m>B</m>,
+		and the injection <m>g</m> maps that element of <m>B</m> to some element of <m>A</m>, which is mapped by <m>f</m> to some element of <m>B</m>, and so on.
+		<md>
+			<mrow> a_0 \amp = a, </mrow>
+			<mrow> b_0 \amp = f(a_0), </mrow>
+			<mrow> a_1 \amp = g(b_0), </mrow>
+			<mrow> b_1 \amp = f(a_1), </mrow>
+			<mrow> a_2 \amp = g(b_1), </mrow>
+			<mrow> \amp \phantom{=} \vdots </mrow>
+		</md>
+		The chain will go on infinitely because the functions <m>f</m> and <m>g</m> always provide a next element.
+		</p><p>
+		We can also try to trace the chain backwards:
+		starting at our original element <m>a \in A</m>,
+		we can look for some element of <m>B</m> that <m>g</m> maps to <m>a</m>,
+		though at first consideration it's possible that none exists.
+		If we do find such an element of <m>B</m>, we can then look for some element of <m>A</m> that <m>f</m> maps to it, and so on. While the chain extends infinitely in the forward direction, we cannot be sure at this point that it will extend infinitely in the backward direction.
+		</p><p>
+		Now, every element of <m>A</m> can be placed into such a chain, and because <m>f</m> and <m>g</m> are injective the chain in which we find an element <m>a</m> is always the same: the next element in the chain is always <m>f(a)</m>, and the element before <m>a</m> is always the unique <m>b</m> in <m>B</m> so that <m>g(b) = a</m> (if such an element exists).
+		And the elements after <m>f(a)</m> and before <m>b</m> are also uniquely determined by the injectiveness of <m>f</m> and <m>g</m>. And so on.
+		</p><p>
+		So we end up finding every element of <m>A</m> in a unique alternating chain,
+		and each chain has one of four patterns:
+		<ul>
+			<li>
+				a chain with some element repeated, in which case we could force the chain to loop back on itself at the repetition to form a finite, circular chain;
+			</li>
+			<li> a chain with no repetition and no end or start; </li>
+			<li>
+				a chain with no repetition and no end,
+				but the process to trace it backward failed at some point,
+				and the last element in the <q>backward</q> direction
+				(which we could view as the first element in the whole chain)
+				is an element of <m>A</m>; and
+			</li>
+			<li> a chain with no repetition and no end, but starts with an element of <m>B</m>. </li>
+		</ul>
+		Now that we have cut out possible repetition by creating circular chains,
+		every element of <m>A</m> appears <em>exactly once</em> in a unique chain,
+		and by symmetry the same can be said about <m>B</m>.
+		We can then create a bijection from <m>A</m> to <m>B</m> by mapping every element of <m>A</m> to the element of <m>B</m> that follows it in the chain it appears in.
+		<em>Except</em> for elements of <m>A</m> that appear in a chain that has a beginning with a starting element from <m>B</m> <mdash />
+		instead each of those elements of <m>A</m> should be mapped to the element of <m>B</m> that <em>precedes</em> it in its chain.
+		This will create a bijective correspondence between the elements of <m>A</m> and <m>B</m>.
+	</p></proof>
+</theorem>
+
+<!-- TODO is it possible for the size of two sets to not be comparable? -->
+
+</section>
+
+<xi:include href="./countable.d/activities.ptx" />
+<!-- <xi:include href="./countable.d/exercises.ptx" /> -->  <!-- TODO ? -->
+
+</chapter>

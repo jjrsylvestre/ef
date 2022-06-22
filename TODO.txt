@@ -1,0 +1,167 @@
+* Really need a "general proof template" in the proof methods chapter:
+  . State assumptions. State goal.
+    "Assume ....  We would to prove ...."
+  . Unpack assumptions.
+    "From our assumptions we see that the following are true."
+  . Advance the argument --- this might mean more unpacking, or finding connections between the assumptions.
+  . Eventually arrive at the desired goal.
+
+* Remove the word "connected" from graphs intro chapter, it's confusing with the later technical definition of the word "connected."
+
+* Add discussion of visualizing Cartesian product as a grid or relative to a set of axes,
+  and then also can visualize a graph of a function as a subset of this grid.
+  --> See email to Faizan Ali on Wed 20 Oct 2021 under the AUMAT 250 label.
+
+
+* URGENT:
+--- fix deprecations about Notation
+--- add titles and fix xrefs for all exercisegroup elements
+    (see first exercise group in src/graph-theory.d/trees.d/exercises.ptx)
+----> I think these are done?
+
+* Add an activity about A∪C = B∪C versus A = B
+  --> related: (A ∪ B) ∖ B is not always equal to A.
+* Add a "negating the conditional" to chapter 2 somewhere.
+
+
+* Go through eClass and give all assigned activities an xml:id.
+* "arbitrary example" explanation of proving a "for every"
+* Fix tabular borders, <tabular bottom="medium"> doesn't do what I thought it does.
+  (I *thought* it put a border only on the bottom of the whole table,
+  but it seems it is a uniform border for all rows....)
+* Go through and try to add little Comp.Sci points of view? (Like power set = container class, etc.)
+* Should I add in "irreflexive" into relations.ptx so that I can talk about strict orders?
+* old partial orders chapter contained "chains" ....
+* Search for instances of \abs that should be replaced by an appropriate macro.
+* Activities in Paths and Connectedness involving removing an edge from a cycle:
+  would be more succinct to say "Prove that no edge in the cycle is a bridge."
+* Sections that are just examples (such as "Important examples" sections)
+  should maybe not use <example> at all, and instead split things up into
+  <subsections> or <paragraphs>.
+* A <case> can take an attribute of
+    direction="forward"
+  or
+    direction="backward"
+  in bidirectional proofs.
+* Convert
+  <sidebyside>
+    <figure>...</figure>
+	<figure>...</figure>
+  </sidebyside>
+  to
+  <figure>
+    <sidebyside>
+      <figure>...</figure>
+	  <figure>...</figure>
+    </sidebyside>
+  </figure>
+* add "cardinal number" definition as synonym for cardinality.
+* Search for ref="test-*" and make text uniform.
+* Add "Why do we need mathematical induction?" discussion.
+* Sets exercises has several too-wide math displays.
+* Need a Venn diagram for inverse function.
+* Extra brackets in dl defining inverse function.
+* The "Breaking students into groups is an example of ____"
+  activity in the set theory chapter needs more direction.
+* Restricting the domain tikz image:
+  grey out X\A.
+  --> ditto for restricting the codomain: grey out Y\B.
+* Restricting the codomain:
+  add an example of squaring for ℤ→ℤ,
+  where we can restrict codomain to ℤ>=0 but the image is still smaller.
+* Go through and make more use of <see> in index.
+  In particular, should use <see> to avoid having multiple "versions" of an index entry have the same repeat subentries.
+* Arguments chapter: text arguments do not fit well on narrow screen.
+* In discussion about nested quantifiers
+  (currently Worked Ex 4.1.8, Warning 4.1.9, and surrounding discussion),
+  maybe describe it as
+  (∀m)(∃n)B(m,n) = (∀m)A(m) where A(m) = (∃n)B(m,n),
+  and etc...
+* Go back through exercises and make more use of exercisegroup.
+* convert to macros:
+  \cup --> \union
+  \cap --> \intersection
+  \smallsetminus --> \relcmplmnt
+  \sqcup --> \disjunion
+  \times --> \cartproduct (can't just do find-replace though...)
+* Consider changing chunk level to chapters.
+* Title <example> and <problem> where possible.
+* Do I want ideas to be numbered and set off by Greg's L?
+  Could just replace all <hypothesis> with <paragraphs><title>Idea</title>
+* Need to look through for <dl>'s not contained in a <p>...
+* Change "Check your understanding" to <exercise> (then it will be called "Checkpoint").
+  --> ALSO see what a <rename> will do on exercise --- will xrefs to end-of-chapter exercises also get renamed?
+  --> ALSO checkpoints are knowl-ized. Can this be undone by stringparam (or rather, by publisher.xml)?
+* title-xrefs to dl's ? (especially things like modus ponens, law of syllogism, etc.)
+  --> keep an eye on Alex's request for stealth knowls
+* what is publisher switch to un-knowl solution of example? --> there is none, make a pull request
+* index Boolean algebra chapter better
+* Boolean algebra exercises
+* bookinfo.xml: docinfo/latex-preamble, docinfo/latex-image-preamble
+* preface
+* backmatter: references, etc
+* make sure logic symbols are replaced by macros
+* non-figure images do not need to be inside sidebysides anymore?
+* soon tabulars will not need to be in sidebysides
+* make sure exercises that are duplicates of activities are removed
+  --> but do side-by-side comparison of text of exercise vs activity before removing one...
+* https://github.com/rbeezer/mathbook/issues/1100
+* vet exercises for copyright issues
+* old how-to-read stuff?
+* old TODOs from latex source
+* github
+* book cover ?
+* remove Augustana/AUMAT250 specific references...
+* index entries for each chapter/section
+* in index, make more use of "see" to avoid repeating subheadings in too many places
+
+PRETEXT QUESTIONS:
+* alignment in <dl> items is off?
+* text in theorems is no longer italicized? NOW FIXED?
+* text in theorems seems to be smaller font and/or interline spacing is squished...?  NOW FIXED?
+* why is text for subheadings in index smaller?
+* why does index get its own division but notation list does not?
+* BUG: a title-xref to an li of a dl has an extra space in the link when the title has extra white space in source
+  --> Most notably, when you structure source as dl/li/title/term/idx and use good source-formatting line breaks.
+  --> TODO test whether same still happens for dl/li/title/idx before reporting...
+  --> I don't think this is happening any more.
+  --> Also see Alex's email to pretext-dev of 03 Oct.
+  --> YES this is happening again, see ref to *restricting the codomain* in the Grumpy Cat activity, funcs.d/activities.ptx.
+  --> BUT it doesn't always happen, see ref to *connected graph* in the final Trees activity.
+  --> FIGURED IT OUT: occurs using <xref ref="definition-..." text="title">replacement title</xref>,
+      sent msg to pretext-dev in reply to Alex's email.
+* underlining of knowl links sometimes doesn't extend all the way to the end?
+  --> see links in example in logic-equiv.ptx that starts with "One of DeMorgan's Laws"
+  --> DO NOT REPORT: this occurs when accidentally missing an enclosing <p>...</p> pair
+* Why don't multiple solutions in an example behave more like multiple proofs in a theorem?
+  (Ie. why numbered in one situation and not numbered in another...)
+* MBX:FATAL: theorem numbering level cannot exceed sectioning level
+  --> see style.xsl
+* In schema, case can only go in proof, not in solution? In fact, why can't case go anywhere a BlockStatement can go?
+  --> Also suggest that case inside case should produce some indentation.
+* Idea: let titles start lower case, then fix for xrefs?
+* A proof title should default to "Proof".
+  --> Don't remember what this refers to.... xrefs maybe?
+* Doing
+  <solution><title>Solution idea</title>...</solution>
+  results in "Solution Solution idea" which is inconsistent with Proof title behaviour.
+* Suggest new element: <imperative>.
+  Example <exercise><p><imperative>Prove</imperative> Some statement.</p></exercise>
+* A <problem> statement that ends in an aside causes an extra line break before <solution> display.
+  (For example, see the last Worked Example in "section-induction-principle".)
+* HTML styling of case titles should not be as large as other titles.
+* MetaDataTitleCreatorOptional only allows one creator field?
+* Why can't a ProjectLike that has structure (Intro, Task+ Conc) have an "overall hint" that isn't
+  tied to any one task?  For that matter, why can't hint, solution, etc go anywhere, instead of just tied to whatever...?  (Proof can go anywhere...)
+* An aside as the first block in a "division" creates extra vertical space.
+  (For example, the aside in the proof in coutable.ptx using Cantor's diagonal argument.)
+  RELATED: an <aside> as the last block in a <statement> of a <problem> creates extra vertical space
+  before the <solution>.
+  (NOTE: aside is allowed by schema in a BlockStatement.)
+* IDEA: allow ol to have a continue="xml:id" attribute to continue numbering from a previous list.
+* IDEA: allow <cases direction="next"> for TFAE style proofs
+* why can't I put a warning inside an exercise or activity?
+* Depth-first and breadth-first spanning tree examples just won't display any larger?
+  Which is weird, because same sbsgroup structure for two different depth-first search implementations
+  in previous section works just fine.
+* Zoom-in window for images should have some small margins.

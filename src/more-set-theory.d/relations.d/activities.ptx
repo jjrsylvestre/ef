@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<worksheet xml:id="activities-relations">
+
+<activity xml:id="activity-relations-operation-examples">
+	<introduction>
+		<p>
+		In each of the following, describe the requested combination of relations in words
+		(<ie /> in the form <q>a is related to b if <ellipsis /></q>).
+		Try to <q>simplify</q> your description, if possible.
+		</p><p>
+		In <xref ref="activity-relations-operation-examples-mod5-intersect-mod7" text="type-local" />
+		and <xref ref="activity-relations-operation-examples-mod2-intersect-mod4" text="type-local" />,
+		the symbol <m>\mathord{\equiv}_k</m> represents a relation on <m>\Z</m>,
+		where <m>m \equiv_k n</m> means that <m>m</m> and <m>n</m> have the same remainder when divided by <m>k</m>.
+		(It may help to know that this is equivalent to <m>k</m> dividing the difference <m>m - n</m>.)
+		</p>
+	</introduction>
+	<task><p> <m>\mathord{\lt} \cup \mathord{\gt}</m> on <m>\R</m>. </p></task>
+	<task><p> Union of <q>longer than</q> and <q>shorter than</q> on <m>\words{\Sigma}</m> for some alphabet <m>\Sigma</m>. </p></task>
+	<task><p> Union of <q>longer than</q>, <q>shorter than</q>, and <q>same length as</q> on <m>\words{\Sigma}</m> for some alphabet <m>\Sigma</m>. </p></task>
+	<task><p> Intersection of <q>longer than</q> and <q>shorter than</q> on <m>\words{\Sigma}</m> for some alphabet <m>\Sigma</m>. </p></task>
+	<task><p> The complement of <m>\mathord{\le}</m> on <m>\R</m>. </p></task>
+	<task><p> The inverse of <m>\mathord{\le}</m> on <m>\R</m>. </p></task>
+	<task><p> The inverse of <q><m>x \mathrel{R} y</m> if <m>2 x + 3 y = 0</m></q> on <m>\R</m>. </p></task>
+	<task xml:id="activity-relations-operation-examples-mod5-intersect-mod7"><p>
+		The intersection of <m>\mathord{\equiv_5}</m> and <m>\mathord{\equiv_7}</m> on <m>\Z</m>.
+		</p>
+	</task>
+	<task xml:id="activity-relations-operation-examples-mod2-intersect-mod4"><p>
+		The intersection of <m>\mathord{\equiv_2}</m> and <m>\mathord{\equiv_4}</m> on <m>\Z</m>.
+	</p></task>
+</activity>
+
+<activity>
+	<introduction><p>
+		In each of the following, you are given a set <m>A</m> and a relation <m>R</m> on <m>A</m>.
+		Determine which of the properties
+		<term><xref ref="definition-relations-reflexive" text="title" /></term>,
+		<term><xref ref="definition-relations-symmetric" text="title" /></term>,
+		<term><xref ref="definition-relations-antisymmetric" text="title" /></term>, and
+		<term><xref ref="definition-relations-transitive" text="title" /></term>
+		<m>R</m> possesses.
+	</p></introduction>
+	<task><p>
+		<m>A = \R</m>,
+		<m>R</m> is <m>\mathord{\lt}</m>.
+	</p></task>
+	<task><p>
+		<m>A</m> is the set of all straight lines in the plane,
+		<m>R</m> means <q>is parallel to.</q>
+	</p></task>
+	<task><p>
+		<m>A</m> is the set of all straight lines in the plane,
+		<m>R</m> means <q>is perpendicular to.</q>
+	</p></task>
+	<task><p>
+		<m>A = \words{\Sigma}</m> for some alphabet <m>\Sigma</m>,
+		<m>R</m> means <q>is the same length as.</q>
+	</p></task>
+	<task><p>
+		<m>A = \words{\Sigma}</m> for some alphabet <m>\Sigma</m>,
+		<m>R</m> means <q>is shorter than.</q>
+	</p></task>
+	<task><p>
+		<m>A = \words{\Sigma}</m> for some alphabet <m>\Sigma</m>,
+		<m>x</m> is some fixed choice of letter in <m>\Sigma</m>,
+		<m>R</m> means <q>contains the same number of occurrences of <m>x</m> as.</q>
+	</p></task>
+	<task><p>
+		<m>A</m> is an arbitrary set,
+		<m>R</m> is the <term><xref ref="definition-relations-empty" text="title" /></term>.
+	</p></task>
+	<task><p>
+		<m>A</m> is an arbitrary set,
+		<m>R</m> is the <term><xref ref="definition-relations-universal" text="title" /></term>.
+	</p></task>
+</activity>
+
+<activity>
+	<task><p>
+		Suppose <m>R</m> is a relation on a set <m>A</m>.
+		Convince yourself that <m>R \union \inv{R}</m> is symmetric.
+		(See the <xref ref="test-relations-symmetric" text="custom">Symmetric Relation Test</xref>.)
+	</p></task>
+	<task><p>
+		Recall that <m>\mathord{\mid}</m> represents the relation <q>divides</q> on sets of integers.
+		Draw the directed graph for <m>\mathord{\mid}</m> on the set <m>A = \{2,4,6,8,10,12,14,16\}</m>.
+		Then describe how to obtain the graph for the symmetric relation <m>\mathord{\mid} \cup \inv{\mathord{\mid}}</m> as an undirected graph from the graph of <m>R</m> using only an eraser.
+	</p></task>
+</activity>
+
+<activity xml:id="activity-relations-propogation-of-properties">
+	<p>
+	For each of the properties
+	<term><xref ref="definition-relations-reflexive" text="title" /></term>,
+	<term><xref ref="definition-relations-symmetric" text="title" /></term>,
+	<term><xref ref="definition-relations-antisymmetric" text="title" /></term>, and
+	<term><xref ref="definition-relations-transitive" text="title" /></term>,
+	carry out the following.
+	</p><p>
+	Assume that <m>R</m> and <m>S</m> are nonempty relations on a set <m>A</m> that both have the property.
+	For each of <m>\cmplmnt{R}</m>, <m>R \union S</m>, <m>R \intersection S</m>, and <m>\inv{R}</m>,
+	determine whether the new relation
+	<ol label="(i)">
+		<li xml:id="activity-relations-propogation-of-properties-must"> must also have that property; </li>
+		<li xml:id="activity-relations-propogation-of-properties-might"> might have that property, but might not; or </li>
+		<li xml:id="activity-relations-propogation-of-properties-cannot"> cannot have that property. </li>
+	</ol>
+	Any time you answer
+	<xref ref="activity-relations-propogation-of-properties-must" text="local">Statement</xref> or
+	<xref ref="activity-relations-propogation-of-properties-cannot" text="local">Statement</xref>,
+	outline a proof.
+	Any time you answer
+	<xref ref="activity-relations-propogation-of-properties-might" text="local">Statement</xref>,
+	provide two examples: one where the new relation has the property, and one where the new relation does not.
+	(You may use graphs to describe your examples.)
+	</p>
+</activity>
+
+</worksheet>

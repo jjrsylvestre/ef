@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-trees" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Exercises</title>
+
+<exercise><p> Prove that if a graph contains a closed trail then it also contains a proper cycle. </p></exercise>
+
+<exercisegroup xml:id="exercisegroup-trees-spanning-by-inspection">
+	<title>Spanning trees</title>
+	<introduction><p>
+		For each of the graphs in
+		<xref ref="exercisegroup-trees-spanning-by-inspection" text="type-local">Exercises</xref>,
+		draw a spanning tree by inspection.
+	</p></introduction>
+	<exercise xml:id="exercise-trees-spanning-by-inspection-1"><image width="23%">
+		<description>An example graph for a spanning tree exercise.</description>
+		<latex-image><xi:include href="exercises.d/spanning-by-inspection-1.tex" parse="text" /></latex-image>
+	</image></exercise>
+	<exercise xml:id="exercise-trees-spanning-by-inspection-2"><image width="40%">
+		<description>An example graph for a spanning tree exercise.</description>
+		<latex-image><xi:include href="exercises.d/spanning-by-inspection-2.tex" parse="text" /></latex-image>
+	</image></exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercisegroup-trees-spanning-by-removal">
+	<title>Reducing to a spanning tree</title>
+	<introduction><p>
+		For each of the graphs in
+		<xref ref="exercisegroup-trees-spanning-by-removal" text="type-local">Exercises</xref>,
+		use the following algorithm to obtain a spanning tree.
+		<ul>
+			<li> If the graph contains a proper cycle, remove one edge of that cycle. </li>
+			<li> If the resulting subgraph contains a proper cycle, remove one edge of that cycle. </li>
+			<li> If the resulting subgraph contains a proper cycle, remove one edge of that cycle. </li>
+			<li> <etc />. </li>
+			<li> Continue until there are no proper cycles left. </li>
+		</ul>
+	</p></introduction>
+	<exercise><image width="30%">
+		<description>An example graph for a spanning tree exercise.</description>
+		<latex-image><xi:include href="exercises.d/spanning-by-removal-1.tex" parse="text" /></latex-image>
+	</image></exercise>
+	<exercise><image width="85%">
+		<description>An example graph for a spanning tree exercise.</description>
+		<latex-image><xi:include href="exercises.d/spanning-by-removal-2.tex" parse="text" /></latex-image>
+	</image></exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercisegroup-trees-spanning-by-depth-breadth">
+	<title>Depth-first and breadth-first spanning trees</title>
+	<introduction><p>
+		For each of the graphs in
+		<xref ref="exercisegroup-trees-spanning-by-depth-breadth" text="type-local">Exercises</xref>,
+		determine both a depth-first and breadth-first spanning tree.
+		Use any vertex you like as the starting node.
+	</p></introduction>
+	<exercise><image width="55%">
+		<description>An example graph for a spanning tree exercise.</description>
+		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-1.tex" parse="text" /></latex-image>
+	</image></exercise>
+	<exercise><image width="55%">
+		<description>An example graph for a spanning tree exercise.</description>
+		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-2.tex" parse="text" /></latex-image>
+	</image></exercise>
+	<exercise><image width="50%">
+		<description>An example graph for a spanning tree exercise.</description>
+		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-3.tex" parse="text" /></latex-image>
+	</image></exercise>
+</exercisegroup>
+
+</exercises>

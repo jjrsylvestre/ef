@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<worksheet xml:id="activities-proof-methods">
+
+<activity xml:id="activity-proof-method-define-car">
+	<task xml:id="activity-proof-method-define-car-def"><p>
+		Write a technical definition for the word <term>car</term>.
+	</p></task>
+	<task>
+		<p>
+		<em>Using only your technical definition</em>
+		(<ie /> ignoring your common sense notions of the word <em>car</em>),
+		decide whether a transport truck should be called a car.
+		Then do the same for a train.
+		</p>
+		<paragraphs><title>Note</title><p>
+			Do not go back and modify your definition of <term>car</term>;
+			test the objects <term>transport truck</term> and <term>train</term> against whatever definition you initially came up with in <xref ref="activity-proof-method-define-car-def" text="type-local" />.
+		</p></paragraphs>
+	</task>
+	<task><p> What is the point of this activity? </p></task>
+</activity>
+
+<!-- TODO this is an exercise repeat -->
+<activity xml:id="activity-proof-methods-square-numbers-1">
+	<introduction><p>
+		A <term>square number</term> is an integer which is equal to the square of some integer.
+		An integer is <term>square free</term> if it is not divisible by any square number other than <m>1</m>.
+	</p></introduction>
+	<task><p> Is <m>0</m> a square number? Is it square free? </p></task>
+	<task><p> Does there exist a negative square number? </p></task>
+	<task><p> Is every negative number square free? </p></task>
+	<task><p> Is every prime number square free? </p></task>
+	<task><p> Is every square free number prime? </p></task>
+	<task><p> Does there exist an integer which is both a square number and square free? </p></task>
+</activity>
+
+<activity>
+	<p> The following statement is a basic (and very useful) fact about real numbers. </p>
+	<blockquote><p>
+		<term>Triangle Inequality</term>:
+		For every pair of real numbers <m>x</m> and <m>y</m>, <m>\abs{x+y} \le \abs{x} + \abs{y}</m>.
+	</p></blockquote>
+	<p>
+	<em>Use the above statement to directly prove</em> the following extended version of the inequality,
+	<em>without</em> resorting to considering cases of positive/negative for any of the variables.
+	</p>
+	<blockquote><p>
+		For every triple of real numbers <m>x</m>, <m>y</m>, and <m>z</m>, <m>\abs{x+y+z} \le \abs{x} + \abs{y} + \abs{z}</m>.
+	</p></blockquote>
+	<paragraphs><title>Remark</title><p>
+		Using the two-number version of the inequality to prove the three-number version is an example of <em>inductive reasoning</em>, something that we will soon investigate further.
+	</p></paragraphs>
+</activity>
+
+<activity xml:id="activity-proof-methods-disjunctive-wizards">
+	<p>
+	Suppose you are analyzing the rules for a complicated table-top game, and you have come to the following realization.
+	</p>
+	<blockquote><p>
+		Given any trio of distinct wizards where the first is zapping the second,
+		at least one of the following must also occur:
+		the first is zapping the third or the third is zapping the second.
+	</p></blockquote>
+	<p>
+	If you were to approach proving this statement using the advice you read on how to handle
+	statements involving disjunction in <xref ref="procedure-proof-methods-prove-disjunction" />,
+	the first sentence of your proof would be
+	</p>
+	<blockquote><p> Assume <fillin characters="10" />. </p></blockquote>
+	and the last sentence of your proof would be
+	<blockquote><p> Therefore <fillin characters="10" />. </p></blockquote>
+</activity>
+
+<activity><p>
+	What is the difference between <term>proving the contrapositive</term> and <term>proof by contradiction</term> ?
+</p></activity>
+
+<activity>
+	<task>
+		<p> A positive integer that is greater than <m>1</m> and <em>not</em> prime is called <term>composite</term>. </p>
+		<p>
+			Write a technical definition for the concept of <term>composite number</term> with a similar level of detail as in the <q>more complete</q> definition of <term>prime number</term> given in <xref ref="example-proof-methods-define-prime" />.
+		</p>
+		<paragraphs><title>Note</title><p>
+			Don't just define it as <q>not prime.</q>
+			And make sure that the equality <m>7 = 1 \times 7</m> can't be used to justify the statement <q><m>7</m> is composite</q> by your definition
+			(because prime <m>7</m> is most definitely <em>not</em> composite).
+		</p></paragraphs>
+	</task>
+	<task>
+		<statement><p>
+			<em>Prove by proving the contrapositive:</em>
+			If <m>2^n - 1</m> is prime, then <m>n</m> is prime.
+		</p></statement>
+		<hint><p>
+			You may find the following <q>difference of powers</q> factorization formula useful:
+			<me> a^m - b^m = (a-b)(a^{m-1} + a^{m-2}b + a^{m-3}b^2 + \dotsb + a^2b^{m-3} + ab^{m-2} + b^{m-1}) </me>.
+		</p></hint>
+	</task>
+</activity>
+
+<activity>
+	<task><p> Write down a technical definition of the term <term>rational number</term>. </p></task>
+	<task><p> <em>Prove directly:</em> The sum of two rational numbers is a rational number. </p></task>
+	<task><p> <em>Prove by contradiction:</em> The sum of a rational number and an irrational number is irrational. </p></task>
+	<task><p> <em>Disprove by counterexample:</em> The sum of two irrational numbers is irrational. </p></task>
+</activity>
+
+<!-- TODO this is an exercise repeat -->
+<activity>
+	<introduction><p> Refer to <xref ref="activity-proof-methods-square-numbers-1" />. </p></introduction>
+	<task><p>
+		Prove that a positive number <m>n</m> is square free if and only if for every factorization <m>n = ab</m>, the integers <m>a</m> and <m>b</m> do not share a common factor other than <m>1</m>.
+	</p></task>
+	<task><p> Prove that a positive number is square free if and only if it is not divisible by the square of a prime number. </p></task>
+</activity>
+
+<!-- TODO add link to a table of small primes ? -->
+<!-- TODO this is an exercise repeat -->
+<activity>
+	<introduction><p>
+		A pair of prime numbers <m>p_1,p_2</m> is called a <term>twin prime pair</term> if <m>p_2 = p_1 + 2</m>.
+		A prime number is called an <term>isolated prime</term><idx><h>isolated</h><h>prime</h></idx>
+		if it is not part of a twin prime pair.
+	</p></introduction>
+	<task><p> Determine the first (<ie /> smallest) four twin prime pairs. </p></task>
+	<task><p> Determine the first (<ie /> smallest) two isolated primes. </p></task>
+	<task><p> Prove that if <m>p, p+2</m> is a twin prime pair with <m>p \ge 5</m>, then <m>p+1</m> is divisible by <m>6</m>. </p></task>
+	<task><p> Prove that if <m>p, p+2</m> is a twin prime pair, then <m>p-2,p</m> and <m>p+2,p+4</m> <em>cannot</em> be twin prime pairs. </p></task>
+</activity>
+
+</worksheet>

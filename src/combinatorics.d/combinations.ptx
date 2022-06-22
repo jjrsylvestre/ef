@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<chapter xml:id="chapter-combinations" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Combinations</title>
+
+
+<section xml:id="section-combinations-motivation">
+<title>Motivation</title>
+
+<problem xml:id="wexample-combinations-motivation"> <!-- worked example -->
+	<statement><p> How many different <m>four</m>-member study groups could be formed from a class of twenty students? </p></statement>
+	<solution>
+		<p>
+		We will use the <xref ref="theorem-counting-div-rule" text="title" />,
+		first imposing additional structure on each possible study group.
+		Within a study group, create positions of President, Vice-President, Secretary, and Janitor (cards, anyone?).
+		Then there are <m>\permutation{20}{4}</m> such structured groups.
+		</p><p>
+		But a real study group doesn't have this structure, so we'll consider two structured groups to be <term>equivalent</term> when they have the same membership, regardless of positions.
+		How many equivalent structured groups with a given membership are there?
+		Within a group of four, the additional structure is just an ordering,
+		and the number of orderings of a given group is <m>4!</m>
+		So
+		<md>
+			<mrow>
+				\ncardop \{ \text{study groups} \}
+				\amp = \frac{\ncardop \{ \text{structured groups} \}}
+				       {\ncardop \{ \text{equivalent groups with a given membership} \}}
+			</mrow>
+			<mrow> \amp = \frac{\permutation{20}{4}}{4!} </mrow>
+			<mrow> \amp = \choosefuncformula{20}{4}{(20 - 4)} </mrow>
+		</md>.
+		</p>
+	</solution>
+</problem>
+
+<note><p> What we have counted in <xref ref="wexample-combinations-motivation" /> is the number of subsets of size <m>4</m> in the set of students enrolled in the hypothetical class. </p></note>
+
+</section>
+
+<section xml:id="section-combinations-basics">
+<title>Basics</title>
+
+<p><dl>
+	<li>
+		<title>combination</title>
+		<idx>combination</idx>
+		<idx><h>set(s)</h><h>combination</h></idx>
+		<p> a finite subset of a given set </p>
+	</li>
+	<li>
+		<title><m>\combination{n}{k}</m></title>
+		<notation>
+			<usage><m>\combination{n}{k}</m></usage>
+			<description>the number of combination of size <m>k</m> taken from a set of size <m>n</m></description>
+		</notation>
+		<p> the number of combinations of size <m>k</m> taken from a set of size <m>n</m> </p>
+	</li>
+	<li>
+		<title> <m>\combinationalt{n}{k}</m>, <m>\combinationaltalt{n}{k}</m></title>
+		<notation>
+			<usage><m>\combinationalt{n}{k}</m></usage>
+			<description>alternative notation for <m>\combination{n}{k}</m></description>
+		</notation>
+		<notation>
+			<usage><m>\combinationaltalt{n}{k}</m></usage>
+			<description>alternative notation for <m>\combination{n}{k}</m></description>
+		</notation>
+		<p>alternative notation choices for <m>\combination{n}{k}</m></p>
+	</li>
+	<li>
+		<title>choose function</title>
+		<idx>choose function</idx>
+		<idx><h>function</h><h>choose</h></idx>
+		<p> the function <m>(n,k) \mapsto \combination{n}{k}</m> </p>
+	</li>
+</dl></p>
+
+<exercise><p> What are the domain and codomain of the choose function? </p></exercise>
+
+<warning><p>
+	<alert>Permutations and combinations are different.</alert>
+	A permutation is a bijection from a set to itself.
+	Given a fixed chosen ordering of the set elements in a list (considered as inputs),
+	a permutation is essentially an re-ordering of the set elements into a second list, to line up outputs with inputs.
+	So <alert>order matters in a permutation</alert>.
+	On the other hand, a combination is just a set, and order does not matter in a set, only membership matters.
+	That is, two listings of some of the elements from a set are the same combination if all the same elements are listed, regardless of the order of the elements in the two lists.
+	So <alert>order does not matter in a combination</alert>.
+</p></warning>
+
+<theorem xml:id="theorem-combinations-size-k-formula">
+	<title>Computing <m>\combination{n}{k}</m></title>
+	<statement><p> We have <me> \combination{n}{k} = \frac{\permutation{n}{k}}{k!} = \choosefuncformula{n}{k}{(n-k)} </me>. </p></statement>
+	<proof><p>
+		Suppose <m>\card{A} = n</m>.
+		Using the solution to <xref ref="wexample-combinations-motivation" /> as a model for our proof,
+		we note that each ordered list of <m>k</m> elements taken from <m>A</m> defines a combination from <m>A</m>,
+		but different orderings of the same <m>k</m> elements yield the same combination.
+		Define two permutations to be <q>equivalent</q> if they are orderings of the same elements,
+		so that equivalent permutations are associated to the same combination.
+		Since there are <m>k!</m> elements in each equivalence class of permutations,
+		we may apply the <xref ref="theorem-counting-div-rule" text="title" /> to obtain
+		<md>
+			<mrow> \combination{n}{k} \amp = \ncardop \{ \text{combinations} \} </mrow>
+			<mrow> \amp = \frac{\ncardop \{ \text{permutations} \}}{\ncardop \{ \text{equivalent permutations in each class} \}} </mrow>
+			<mrow> \amp = \frac{\permutation{n}{k}}{k!} </mrow>
+		</md>.
+		Finally, to obtain the rightmost formula in the statement of the theorem,
+		we just need to combine the above formula relating <m>\combination{n}{k}</m> and <m>\permutation{n}{k}</m> with the formula for <m>\permutation{n}{k}</m> from
+		<xref ref="theorem-permutations-size-k-formula" />.
+	</p></proof>
+</theorem>
+
+<corollary xml:id="corollary-combinations-size-k-formula">
+	<statement><p> We also have <m>\combination{n}{n-k} = \combination{n}{k}</m>. </p></statement>
+	<proof><p>
+		Calculate
+		<me>
+			\combination{n}{n-k}
+			= \choosefuncformula{n}{(n-k)}{\bbrac{n-(n-k)}}
+			= \choosefuncformula{n}{(n-k)}{k}
+			= \combination{n}{k}
+		</me>.
+	</p></proof>
+</corollary>
+
+<remark xml:id="remark-combinations-size-k-formula">
+	<title>Choosing is equivalent to rejecting</title>
+	<p>
+	Interpret this last corollary as follows:
+	from a set of <m>n</m> objects,
+	choosing to include <m>k</m> elements in a combination is equivalent to choosing <m>n-k</m> objects to reject.
+	</p>
+</remark>
+
+<problem>  <!-- worked example -->
+	<title>Choosing ice cream</title>
+	<statement><p>
+		How many double-scoop ice cream combinations are possible if the local ice cream shop features thirty-one different flavours?
+		(<em>Note:</em> Only flavour combinations are relevant, not which flavour goes on the cone first.)
+	</p></statement>
+	<solution><p>
+		From thirty-one flavours, there are
+		<me> \combination{31}{2} = \choosefuncformula{31}{2}{29} = \frac{31 \cdot 30}{2} = 31 \cdot 15 = 465 </me>
+		possibilities for double-scoop cones with <em>two distinct</em> flavours.
+		However, there are an additional <m>31</m> possibilities for double-scoop cones with two scoops the same flavour.
+		So the answer is <me> 465 + 31 = 496 </me>.
+	</p></solution>
+</problem>
+
+<problem xml:id="wexample-combinations-bottle-colour-patterns">  <!-- worked example -->
+<!-- \label{WEXAMPLE::bottle.colour.patterns.2} -->
+	<title>Counting colour patterns (revisited)</title>
+	<statement><p>
+		How many different colour patterns can we achieve by placing three red bottles and five blue bottles on a shelf?
+		(Assume the bottles are indistinguishable except by colour.)
+	</p></statement>
+	<solution><p>
+		There are <m>8</m> possible positions in which to place a bottle.
+		To create an arbitrary colour pattern, we can choose <m>3</m> of the positions to be filled by red bottles, then place blue in the remaining positions.
+		So the answer is
+		<me> \combination{8}{3} = \choosefuncformula{8}{3}{5} = 56 </me>.
+	</p></solution>
+</problem>
+
+<remark><p>
+	Compare the above solution for <xref ref="wexample-combinations-bottle-colour-patterns" />
+	with the solution for the identical problem in <xref ref="wexample-permutations-bottle-colour-patterns" />.
+</p></remark>
+
+<!--  KILLED: \label{WEXAMPLE::counting.injections.and.bijections.with.combinations} -->
+
+<problem>  <!-- worked example -->
+	<title>Choosing with constraints</title>
+	<statement><p> How many ways are there to choose a team of five people from a pool of six first-year students and four senior students if the team must have three first-years and two seniors? </p></statement>
+	<solution><p>
+		Choose the seniors for team, then the first-years (or vice-versa).
+		Applying the <xref ref="theorem-counting-mult-rule" text="title" /> to these independent, consecutive tasks yields answer
+		<me>
+			\combination{4}{2} \cdot \combination{6}{3}
+			= \left( \choosefuncformula{4}{2}{2} \right) \left( \choosefuncformula{6}{3}{3} \right)
+			= 120
+		</me>.
+	</p></solution>
+</problem>
+
+<problem>
+	<title>Creating several non-overlapping combinations</title>
+	<statement><p>
+		How many ways are there to choose three teams of four members each from a pool of twenty people,
+		where no person can be on more than one team?
+	</p></statement>
+	<solution><p>
+		Choose the first team (<m>\combination{20}{4}</m> ways),
+		then the second team (<m>\combination{16}{4}</m> ways),
+		then the third team (<m>\combination{12}{4}</m> ways).
+		Applying the <xref ref="theorem-counting-mult-rule" text="title" />
+		yields a total of
+		<me>
+			\combination{20}{4} \cdot \combination{16}{4} \cdot \combination{12}{4}
+			= \left( \frac{20!}{4! \, \cancel{16!}} \right)
+			  \left( \frac{\cancel{16!}}{4! \, \bcancel{12!}} \right)
+			  \left( \frac{\bcancel{12!}}{4! \, 8!} \right)
+			= \frac{20!}{8! \, (4!)^3}.
+		</me>
+		possible teams.
+		However, the way in which we have constructed our teams has imposed an order on the collection of teams (first, second, and third team),
+		when there is no reason to assume such structure.
+		Given a collection of teams, re-ordering the teams themselves (not the people within each team) produces an equivalent collection of teams by membership.
+		As there are <m>3!</m> ways to reorder the three teams,
+		applying the <xref ref="theorem-counting-div-rule" text="title" /> gives us a final answer of
+		<me> \frac{20!}{3! \, 8! \, (4!)^3} </me>.
+	</p></solution>
+	<solution><p>
+		Initially choose the twelve people who will make up the three teams, but without yet assigning anyone to a particular team (<m>\combination{20}{12}</m> ways).
+		Then, from this reduced pool of candidates, choose the first team (<m>\combination{12}{4}</m> ways) and the second team (<m>\combination{8}{4}</m> ways).
+		The third team will now consist of the remaining four people from the twelve initially chosen.
+		The <xref ref="theorem-counting-mult-rule" text="title" /> gives a preliminary total of
+		<me>
+			\combination{20}{12} \cdot \combination{12}{4} \cdot \combination{8}{4}
+			= \left( \frac{20!}{\cancel{12!} \, 8!} \right)
+				\left( \frac{\cancel{12!}}{4! \, \bcancel{8!}} \right)
+				\left( \frac{\bcancel{8!}}{4! \, 4!} \right)
+			= \frac{20!}{8! \, (4!)^3}.
+		</me>
+		But as in the first solution above, we need to account for the fact that we have artificially ranked teams as first, second, and third.
+		Applying the <xref ref="theorem-counting-div-rule" text="title" /> gives us a final answer of
+		<me> \frac{20!}{3! \, 8! \, (4!)^3}. </me>
+	</p></solution>
+</problem>
+
+</section>
+
+<section xml:id="section-combinations-applications">
+<title>Applications</title>
+
+<subsection>
+<title>Distributing/choosing indistinguishable objects</title>
+
+<problem xml:id="wexample-combinations-coins-children-hickory-sticks"> <!-- worked example -->
+<!-- \label{WEXAMPLE::coins.childern.hickory.sticks} -->
+	<statement><p>
+		How many ways are there to distribute seven coins amongst three children?
+		(Assume the coins are indistinguishable. But children are obviously distinguishable.)
+	</p></statement>
+	<solution>
+		<p>
+		Here is one scheme by which we can decide how many coins each child will get.
+		Line the children up in some order.
+		(There is no need to count the number of ways to do this <mdash /> see the end of the solution.)
+		Also lay out the coins in a line:
+		<me> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} </me>.
+		Now grab two Hickory Sticks<trademark /> from the snack table to act as dividers to split the coins up into three groups.
+		For example,
+		<me> \mathord{\circ} \mathord{\mid} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\circ} \mathord{\circ} </me>
+		means that the first child will receive one coin, the second will receive four, and the third child will receive two,
+		whereas
+		<me> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\mid} </me>
+		means that the first child gets all seven coins.
+		</p><p>
+		We are now back to the red bottle, blue bottle problem
+		(see <xref ref="wexample-permutations-bottle-colour-patterns" /> and <xref ref="wexample-combinations-bottle-colour-patterns" />):
+		how many different symbol patterns can we obtain by arranging two indistinguishable <m>\mathord{\mid}</m> symbols and seven indistinguishable <m>\mathord{\circ}</m> symbols?
+		Just choose two of the nine available positions in the pattern to place the <m>\mathord{\mid}</m> symbols.
+		And so we have arrived at the answer <m>\combination{9}{2} = 36</m>.
+		</p><p>
+		Now, why do we not have to take into account the ordering of the children at the beginning?
+		Let <m>c_1, c_2, c_3</m> represent the three children.
+		Relative to that ordering of children,
+		the symbol pattern
+		<me> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\mid} </me>
+		means that the child <m>c_1</m> gets all seven coins, as above.
+		But relative to the ordering <m>c_3,c_2,c_1</m>,
+		the different symbol pattern
+		<me> \mathord{\mid} \mathord{\mid} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} </me>
+		<em>also</em> means that child <m>c_1</m> gets all seven coins, which is the same result.
+		So if we allow both symbol patterns and orderings of children to vary,
+		we will end up over-counting.
+		</p>
+	</solution>
+</problem>
+
+<theorem xml:id="theorem-combinations-distribute-indistinguishable">
+	<statement><p> There are <m>\combination{n+k-1}{k-1}</m> ways to distribute <m>n</m> indistinguishable objects amongst <m>k</m> distinguishable containers. </p></statement>
+	<proof><p>
+		Just as in the last example, use <m>n</m> <m>\mathord{\circ}</m> symbols to represent the indistinguishable objects and <m>k-1</m> indistinguishable <m>\mathord{\mid}</m> symbols to represent the division into <m>k</m> containers.
+		So each word from the alphabet <m>\Sigma=\{\mathord{\circ},\mathord{\mid}\}</m> that contains exactly <m>n</m> <m>\mathord{\circ}</m> symbols and <m>k-1</m> <m>\mathord{\mid}</m> symbols represents a unique way to divide the objects into the containers.
+		The length of such a word is <m>n+k-1</m>, and every such word can be constructed by choosing <m>k-1</m> positions for the <m>\mathord{\mid}</m> symbols from the <m>n+k-1</m> available letter positions.
+	</p></proof>
+</theorem>
+
+<problem xml:id="wexample-combinations-choose-by-type"> <!-- worked example -->
+	<statement><p>
+		Your professor throws a discrete math party,
+		but only nine students show up (sad face).
+		The professor sends one of the students to the corner store to get cans of soda pop for everyone.
+		The student decides to get a mix of four different varieties.
+		How many possible mixes of soda varieties can the student come back with?
+		(Assume that the cans are indistinguishable except by variety, and that the store has more than ten cans of each variety available.)
+	</p></statement>
+	<solution><p>
+		Here is one scheme by which the student can decide how to choose ten cans in some combination of soda varieties.
+		Make four boxes labelled by soda variety.
+		Have the student choose the soda cans while blindfolded,
+		but has the store clerk place each can in the appropriate box as the cans are chosen (a permissible assumption, since it has no bearing on the outcome).
+		In this way, we may assume that the cans are initially indistinguishable and remain so <em>until</em> they are placed in the appropriate box,
+		at which time they magically become the variety specified by the box's label.
+		The previous theorem now tells us that there are
+		<me> \combination{10+4-1}{4-1} = \combination{13}{3} = 286 </me>
+		ways to do this.
+	</p></solution>
+</problem>
+
+<corollary xml:id="corollary-combinations-choose-by-type">
+	<statement><p>
+		There are <m>\combination{n+k-1}{k-1}</m> ways to choose <m>n</m> objects from amongst <m>k</m> types of object,
+		where objects are indistinguishable except by type,
+		and there are at least <m>n</m> objects of each type available.
+	</p></statement>
+	<proof><title>Proof idea</title><p> Appeal to <xref ref="theorem-combinations-distribute-indistinguishable" /> exactly as in <xref ref="wexample-combinations-choose-by-type" />. </p></proof>
+</corollary>
+
+</subsection>
+
+<subsection>
+<title>Counting edges in connected graphs</title>
+
+<proposition xml:id="proposition-combinations-num-edges-complete-graph">
+	<title>Edges in a complete graph</title>
+	<statement><p>
+		For <m>n \ge 2</m>, the <term><xref ref="definition-graphs-complete" text="title" /></term>
+		with <m>n</m> vertices has <m>\combination{n}{2}</m> edges.
+	</p></statement>
+	<proof><p>
+		A complete graph has no loops and exactly one edge between each pair of vertices.
+		So to count the edges we can just count the number of <em>pairs</em> of vertices,
+		which is <m>\combination{n}{2}</m> for <m>n \ge 2</m>.
+	</p></proof>
+</proposition>
+
+<p>
+Let's summarize what we know about the number of edges in an arbitrary <em>connected</em> graph.
+<ol>
+	<li>
+		A connected graph with <m>n</m> vertices has <em>at least</em> <m>n - 1</m> edges
+		(<xref ref="theorem-paths-min-edges-connected-graph" />).
+	</li>
+	<li>
+		A connected graph with <m>n</m> vertices is a tree if and only if it has <em>exactly</em> <m>n - 1</m> edges
+		(<xref ref="theorem-trees-characterizations" />).
+	</li>
+	<li>
+		A simple graph with <m>n \ge 2</m> vertices is complete if and only if it has exactly <m>\combination{n}{2}</m> edges
+		(<xref ref="proposition-combinations-num-edges-complete-graph" /> in the forward direction,
+		<xref ref="proposition-graphs-complete-simple-subgraph" text="local">Statement</xref>
+		of <xref ref="proposition-graphs-complete" /> in the reverse direction).
+	</li>
+</ol>
+The first fact tells us the <em>minimum</em> number of edges a connected graph must have,
+but it does not guarantee that a graph with that many edges must be connected,
+even if the graph is simple.
+The following is something of a converse to this fact, as it does provide such a guarantee:
+it tells use how many edges a (simple) graph must have before we can be <em>certain</em> that it is connected.
+</p>
+
+<theorem xml:id="theorem-combinations-num-edges-implies-connected-graph">
+	<statement><p>
+		If <m>G = (V,E)</m> is a simple graph such that <m>\card{V} = n</m>
+		and <m>\card{E} \gt \combination{n-1}{2}</m>,
+		then <m>G</m> is connected.
+	</p></statement>
+	<proof><title>Proof idea</title><p>
+		Considering the contrapositive,
+		assume that <m>G</m> is simple but <em>not</em> connected.
+		In <xref ref="activity-paths-maximal-simple-nonconnected" />,
+		we discovered that such a <m>G</m> will be maximal when it has exactly two connected components,
+		each of which is a complete graph.
+		Among graphs with those two characteristics (and still <m>n</m> vertices),
+		the largest possible value for <m>\card{E}</m> occurs when the connected components of <m>G</m> are an isolated vertex <m>v</m> and the complete graph <m>K_{n-1}</m>,
+		in which case the number of edges is <m>\combination{n-1}{2}</m>
+		(<xref ref="proposition-combinations-num-edges-complete-graph" /> for <m>K_{n-1}</m>).
+		All other nonconnected, simple graphs will then have <m>\card{E} \le \combination{n-1}{2}</m>,
+		as required to complete the proof by contrapositive.
+	</p></proof>
+</theorem>
+
+</subsection>
+
+</section>
+
+<section xml:id="section-combinations-properties">
+<title>Properties</title>
+
+<p><em>Note:</em> In this section we will use the alternative notation <m>\combinationalt{n}{k}</m> in place of <m>\combination{n}{k}. </m></p>
+
+<p>
+The combination values <m>\combinationalt{n}{k}</m> as we vary <m>n</m> and <m>k</m> exhibit some patterns <mdash />
+see <xref ref="figure-combinations-pascal" /> below.
+</p>
+
+<figure xml:id="figure-combinations-pascal">
+	<idx>Pascal's triangle</idx>
+	<caption>Pascal's triangle.</caption>
+	<sidebyside valign="middle" widths="47% 6% 47%">
+		<p><md alignment="gather">
+			<mrow> \combinationalt{0}{0} </mrow>
+			<mrow> \combinationalt{1}{0} \quad \combinationalt{1}{1} </mrow>
+			<mrow> \combinationalt{2}{0} \quad \combinationalt{2}{1} \quad \combinationalt{2}{2} </mrow>
+			<mrow> \combinationalt{3}{0} \quad \combinationalt{3}{1} \quad \combinationalt{3}{2} \quad \combinationalt{3}{3} </mrow>
+			<mrow>
+				\combinationalt{4}{0} \quad \combinationalt{4}{1} \quad \combinationalt{4}{2} \quad
+				\combinationalt{4}{3} \quad \combinationalt{4}{4}
+			</mrow><mrow>
+				\combinationalt{5}{0} \quad \combinationalt{5}{1} \quad \combinationalt{5}{2} \quad
+				\combinationalt{5}{3} \quad \combinationalt{5}{4} \quad \combinationalt{5}{5}
+			</mrow><mrow>
+				\combinationalt{6}{0} \quad \combinationalt{6}{1} \quad \combinationalt{6}{2} \quad
+				\combinationalt{6}{3} \quad \combinationalt{6}{4} \quad \combinationalt{6}{5} \quad
+				\combinationalt{6}{6}
+			</mrow>
+			<mrow> \vdots </mrow>
+		</md></p>
+		<p><me>\longrightarrow</me></p>
+		<p><md alignment="gather">
+			<mrow> 1^{\phantom{0}}_{\phantom{0}} </mrow>
+			<mrow> 1^{\phantom{1}}_{\phantom{0}} \quad 1^{\phantom{1}}_{\phantom{1}} </mrow>
+			<mrow> 1^{\phantom{2}}_{\phantom{0}} \quad 2^{\phantom{2}}_{\phantom{1}} \quad 1^{\phantom{2}}_{\phantom{2}} </mrow>
+			<mrow>
+				1^{\phantom{3}}_{\phantom{0}} \quad 3^{\phantom{3}}_{\phantom{1}} \quad 3^{\phantom{3}}_{\phantom{2}} \quad
+				1^{\phantom{3}}_{\phantom{3}}
+			</mrow>
+			<mrow>
+				1^{\phantom{4}}_{\phantom{0}} \quad 4^{\phantom{4}}_{\phantom{1}} \quad 6^{\phantom{4}}_{\phantom{2}} \quad
+				4^{\phantom{4}}_{\phantom{3}} \quad 1^{\phantom{4}}_{\phantom{4}}
+			</mrow>
+			<mrow>
+				1^{\phantom{5}}_{\phantom{0}} \quad 5^{\phantom{5}}_{\phantom{1}} \quad {10}^{\phantom{5}}_{\phantom{2}} \quad
+				{10}^{\phantom{5}}_{\phantom{0}} \quad 5^{\phantom{5}}_{\phantom{4}} \quad 1^{\phantom{5}}_{\phantom{5}}
+			</mrow>
+			<mrow>
+				1^{\phantom{6}}_{\phantom{0}} \quad 6^{\phantom{6}}_{\phantom{1}} \quad {15}^{\phantom{6}}_{\phantom{2}} \quad
+				{20}^{\phantom{6}}_{\phantom{3}} \quad {15}^{\phantom{6}}_{\phantom{4}} \quad 6^{\phantom{6}}_{\phantom{5}} \quad
+				1^{\phantom{6}}_{\phantom{6}}
+			</mrow>
+			<mrow> \vdots </mrow>
+		</md></p>
+	</sidebyside>
+</figure>
+
+<p>
+Studying the version of Pascal's triangle involving the actual combination values,
+here are some of the patterns we observe.
+<ul>
+	<li> The values are symmetric about a vertical line through the centre of the triangle. </li>
+	<li> It appears that every entry is the sum of the two entries immediately above. </li>
+	<li> It appears that each row sums to a power of <m>2</m>. </li>
+</ul>
+We have already observed the first pattern as arising from the equivalence of choosing versus rejecting elements to form a subset
+(see <xref ref="corollary-combinations-size-k-formula" />
+and <xref ref="remark-combinations-size-k-formula" />).
+</p><p>
+The next two propositions confirm that the other two observed patterns continue throughout the triangle.
+</p>
+
+<proposition>
+	<statement><p>
+		For <m>n \ge 2</m> and <m>1\le k \le n-1</m>,
+		we have <m> \combinationalt{n}{k} = \combinationalt{n-1}{k-1} + \combinationalt{n-1}{k} </m>.
+	</p></statement>
+	<proof>
+		<p>
+		We could prove this equality just by comparing the factorial formulas involved on the left-hand and right-hand sides.
+		But instead we will consider each of these combination values as representing the number of subsets of a certain size.
+		</p><p>
+		Write <me> A = \natnumlt{n} = \{0,1,2,\dotsc,n - 1\} </me>
+		so that <m>\card{A} = n</m>.
+		Then the left-hand side of the equality in the statement of the proposition represents the number of subsets of <m>A</m> of size <m>k</m>.
+		Let's break that collection of subsets into two subcollections.
+		</p>
+		<case><title>Subsets of <m>A</m> of size <m>k</m> that contain <m>0</m></title><p>
+			Each of these subsets will consist of <m>0</m> along with <m>k - 1</m> nonzero elements.
+			As <m>A</m> contains <m>n - 1</m> nonzero elements from which to choose,
+			there are <m>\combinationalt{n - 1}{k - 1}</m> ways to select those additional subset elements from <m>A</m>.
+		</p></case>
+		<case><title>Subsets of <m>A</m> of size <m>k</m> that do not contain <m>0</m></title><p>
+			Each of these subsets must consist of <m>k</m> nonzero elements.
+			As <m>A</m> contains <m>n - 1</m> nonzero elements from which to choose,
+			there are <m>\combinationalt{n - 1}{k}</m> ways to select those subset elements from <m>A</m>.
+		</p></case>
+		<p>
+		Adding these two disjoint cases together using the
+		<xref ref="theorem-counting-add-rule" text="title" />
+		yields the right-hand side of the equality.
+		</p>
+	</proof>
+</proposition>
+
+<proposition xml:id="proposition-combinations-sum-pascal-rows">
+	<statement><p> For <m>n\ge 0</m>, we have <m>\displaystyle \sum_{k=0}^n \combinationalt{n}{k} = 2^n</m>. </p></statement>
+	<proof>
+		<p>
+		First, recall that the notation on the left-hand side is <term>summation notation</term>:
+		<me> \sum_{k=0}^n \combinationalt{n}{k} = \combinationalt{n}{0} + \combinationalt{n}{1} + \dotsb + \combinationalt{n}{n} </me>.
+		</p><p>
+		Let <m>A = \natnumlt{n}</m>, so that <m>\card{A} = n</m>.
+		Then <m>\card{\powset{A}} = 2^n</m> (<xref ref="theorem-cardinality-power-set" />).
+		So the right-hand side of the equality represents the number of possible subsets of <m>A</m>.
+		</p><p>
+		On the other hand, for each index <m>k</m> in the sum on the left-hand side,
+		the term <m>\combinationalt{n}{k}</m> is the number of subsets of <m>A</m> of size <m>k</m>.
+		Using the <xref ref="theorem-counting-add-rule" text="title" />,
+		the sum of these terms must also be the total number of possible subsets of <m>A</m>.
+		</p>
+	</proof>
+</proposition>
+
+<p> Here is one further property of the choose function. </p>
+
+<proposition xml:id="proposition-combinations-extram-comb-formula">
+<!-- \label{THEOREM::extra.binom.formula} -->
+	<statement><p>
+		For <m>0 \le m \le n</m>,
+		we have <me> \combinationalt{n+1}{m+1} = \sum_{k=m}^n \combinationalt{k}{m} </me>.
+	</p></statement>
+	<proof>
+		<p>
+		Suppose <m>A</m> is a finite set with <m>\card{A} = n + 1</m>.
+		(For example, we could use <m>A = \natnumlt{n+1}</m>,
+		but that might get confusing between numbers as elements of <m>A</m> and numbers as cardinalities of subsets of <m>A</m>.)
+		Then the left-hand side of the equality is the number of subsets of <m>A</m> of size <m>m + 1</m>.
+		Here is a systematic way we could create that those subsets.
+		</p><p>
+		Choose an ordering of the elements of <m>A</m>, so that <me> A = \{a_1,a_2,\dotsc,a_{n+1}\} </me>,
+		though we will not count this choice of ordering.
+		Then, proceed as follows.
+		<ol>
+			<li><p>
+				Write <me>B_1 = \{a_1,a_2,\dotsc,a_{m+1}\}</me>,
+				so that <m>B_1 \subseteq A</m> with <m>\card{B_1} = m + 1</m>.
+				Then there is exactly <m>1 = \combinationalt{m+1}{m+1}</m> subset of <m>B_1</m> of size <m>m + 1</m>,
+				which is <m>B_1</m> itself.
+				And this subset of <m>B_1</m> is also a subset of <m>A</m>.
+			</p></li>
+			<li><p>
+				Write <me>B_2 = \{a_1,a_2,\dotsc,a_{m+1},a_{m+2}\}</me>,
+				so that <m>B_1 \subseteq B_2 \subseteq A</m> with <m>\card{B_2} = m + 2</m>.
+				Using only the elements of <m>B_2</m>,
+				to create a new subset <m>X \subseteq A</m> of size <m>m + 1</m> that we have not already counted we must include the new element <m>a_{m+2}</m>,
+				with the remaining <m>m</m> elements to make up <m>X</m> chosen from <m>B_1</m>.
+				So we get <m>\combinationalt{m+1}{m}</m> new subsets of <m>A</m> of size <m>m+1</m> from <m>B_2</m>.
+			</p></li>
+			<li><p>
+				Write <me>B_3 = \{a_1,a_2,\dotsc,a_{m+1},a_{m+2},a_{m+3}\}</me>,
+				so that <m>B_2 \subseteq B_3 \subseteq A</m> with <m>\card{B_3} = m + 3</m>.
+				Using only the elements of <m>B_3</m>,
+				to create a new subset of <m>X \subseteq A</m> of size <m>m + 1</m> that we have not already counted we must include the new element <m>a_{m+3}</m>,
+				with the remaining <m>m</m> elements to make up <m>X</m> chosen from <m>B_2</m>.
+				So we get <m>\combinationalt{m+2}{m}</m> new subsets of <m>A</m> of size <m>m+1</m> from <m>B_3</m>.
+			</p></li>
+		</ol>
+		And so on.
+		The last step in this process is when we create new subsets of size <m>m+1</m> by first choosing to include <m>a_{n+1}</m>,
+		and then choosing the remaining <m>m</m> elements from <m>A \smallsetminus \{a_{n+1}\}</m>,
+		giving us <m>\combinationalt{n}{m}</m> new subsets.
+		</p><p>
+		Every subset <m>X \subseteq A</m> of size <m>m + 1</m> is accounted for in the above process,
+		since every such subset must contain at least one element with index <m>m + 1</m> or larger.
+		If <m>a_N</m> is the element in <m>X</m> with the largest index,
+		then <m>X</m> is one of the subsets considered in step <m>\ell</m>, where <m>N = m + \ell</m>.
+		</p><p>
+		So adding up each of these disjoint cases using the <xref ref="theorem-counting-add-rule" text="title" /> must yield the total number of subsets of <m>A</m> of size <m>m + 1</m>.
+		Replacing the <m>\combinationalt{m+1}{m+1}</m> total from the first step with <m>\combinationalt{m}{m}</m>
+		(since both are equal to <m>1</m>)
+		to match the pattern of the subsequent steps,
+		we obtain
+		<me> \combinationalt{n+1}{m+1} = \combinationalt{m}{m} + \combinationalt{m+1}{m} + \dotsb + \combinationalt{n}{m} </me>,
+		as desired.
+		</p>
+	</proof>
+</proposition>
+
+</section>
+
+<xi:include href="./combinations.d/activities.ptx" />
+<xi:include href="./combinations.d/exercises.ptx" />
+
+</chapter>

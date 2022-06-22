@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<chapter xml:id="chapter-pred-logic" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Predicate logic</title>
+
+<section xml:id="section-pred-logic-preds-quants">
+<title>Predicates and quantifiers</title>
+
+<p>
+We often let variables represent arbitrary mathematical objects.
+However, as we have seen, object variables or <term>free variables</term>
+(as opposed to <term>statement variables</term>) lead to problems in logic.
+For example, the phrase <q><m>f</m> is a differentiable function</q> can only be determined to be true or false when <m>f</m> represents a specific function.
+</p><p>
+In this section, we  deal with these problems by <term>quantifying</term> such free variables:
+restricting ourselves to discussing whether <q>statements</q> involving one or more free variables are always/sometimes/never true for objects of the type represented by the free variables.
+</p>
+
+<p><dl>
+	<li>
+		<title>predicate</title>
+		<idx>predicate</idx>
+		<p> a statement whose truth value depends on one or more free variables </p>
+	</li>
+	<li>
+		<title><m>A(x)</m></title>
+		<notation>
+			<usage><m>A(x)</m></usage>
+			<description>a predicate statement <m>A</m> whose truth value depends on the free variable <m>x</m></description>
+		</notation>
+		<p> a predicate statement <m>A</m> whose truth value depends on the free variable <m>x</m> </p>
+	</li>
+	<li>
+		<title><m>A(x,y)</m></title>
+		<notation>
+			<usage><m>A(x,y)</m></usage>
+			<description>a predicate statement <m>A</m> whose truth value depends on the free variables <m>x</m> and <m>y</m></description>
+		</notation>
+		<p> a predicate statement <m>A</m> whose truth value depends on the free variables <m>x</m> and <m>y</m> </p>
+	</li>
+</dl></p>
+
+<example xml:id="example-pred-logic-predicates"><p><ol>
+	<li>
+		Let <m>A(f)</m> represent the phrase <q><m>f</m> is differentiable</q>,
+		a predicate statement in one free variable <m>f</m>.
+	</li>
+	<li>
+		Let <m>B(m,n)</m> represent the phrase <q><m>m</m> is greater than <m>n</m></q>,
+		a predicate statement in two free variables <m>m</m> and <m>n</m>.
+	</li>
+</ol></p></example>
+
+<note><p>
+	A predicate is not a logical statement unless all of its variables represent specific objects.
+</p></note>
+
+<p><dl><li>
+	<title>domain</title>
+	<idx><h>domain</h><h>of a variable in a predicate statement</h></idx>
+	<p> the type of object that a variable in a predicate represents </p>
+</li></dl></p>
+
+<example><p>
+	In <xref ref="example-pred-logic-predicates" />,
+	the domain of the variable <m>f</m> could be <q>functions of a single real variable</q>,
+	and the domains of the variables <m>m</m> and <m>n</m> could both be <q>natural numbers</q> (<ie /> whole, nonnegative numbers).
+</p></example>
+
+<note><p>
+	Usually the domain of a variable in a predicate is implicit and can be determined from the context of the statement.
+	However, if we want to make the domain explicit we can prefix it to the variable.
+	For example,
+	<!-- TODO these are actual unicode quote symbols in there, works OK for HTML but what about latex ? -->
+	<md>
+		<mrow> A(f) = \text{ “function } f \text{ is differentiable”,} </mrow>
+		<mrow> B(m,n) = \text{ “integer } m \text{ is greater than integer } n \text{”.} </mrow>
+	</md>
+</p></note>
+
+<p>
+We can turn a predicate into a logical statement by being more specific about which objects in their domains the variables represent.
+However, we often do not want to be <em>too</em> specific (or else we would usually not need variables).
+</p>
+
+<example><p>
+	The following sentences are logical statements, because their truth value can be determined.
+	<ul>
+		<li> <q>Every function <m>f</m> is differentiable.</q> </li>
+		<li> <q>There exists an integer <m>m</m> that <m>2</m> divides.</q> </li>
+	</ul>
+	The first statement is false;
+	for example, the function <m>f(x) = \abs{x}</m> is not differentiable at <m>x=0</m>.
+	The second statement is true; this statement basically says that even integers exist.
+</p></example>
+
+<p><dl>
+	<li>
+		<title>quantifier</title>
+		<idx>quantifier</idx>
+		<p>
+		the sentence fragments <q>for every</q> and <q>there exists</q> <term>quantify</term> whether a predicate should apply to <em>all</em> or only <em>some</em> of the objects in the domain of one of its variables.
+		</p>
+	</li>
+	<li>
+		<title>universal quantifier</title>
+		<idx><h>universal</h><h>quantifier</h></idx>
+		<idx><h>quantifier</h><h>universal</h></idx>
+		<p> the quantifier <q>for every</q> </p>
+	</li>
+	<li>
+		<title><m>\forall</m></title>
+		<notation>
+			<usage><m>\forall x</m></usage>
+			<description>the universal quantifier applied to the free variable <m>x</m></description>
+		</notation>
+		<p> symbol for the universal quantifier </p>
+	</li>
+	<li>
+		<title>existential quantifier</title>
+		<idx><h>existential</h><h>quantifier</h></idx>
+		<idx><h>quantifier</h><h>existential</h></idx>
+		<p> the quantifier <q>there exists</q> </p>
+	</li>
+	<li>
+		<title><m>\exists</m></title>
+		<notation>
+			<usage><m>\exists x</m></usage>
+			<description>the existential quantifier applied to the free variable <m>x</m></description>
+		</notation>
+		<p> symbol for the existential quantifier </p>
+	</li>
+</dl></p>
+
+<example><p>
+	As before, let <m>A(f)</m> represent the predicate <q><m>f</m> is differentiable.</q>
+	Then the statement <m>(\forall f ) A(f)</m> is false, because not every function is differentiable.
+	However, the statement <m>(\exists f) A(f)</m> is true <mdash /> for example, polynomials are differentiable.
+</p></example>
+
+<warning><p>
+	For an existentially quantified statement to be true,
+	it is not necessary for there to be <em>one and only one</em> object in the implied domain that satisfies the conditions of the predicate <mdash />
+	there could be many such objects.
+	So, just as you should always read a disjunction <m>p \lgcor q</m> as <q>p or q <em>or both</em>,</q>
+	you should always read an existentially quantified statement <m>(\exists x) A(x)</m> as <q>there exists <em>at least one</em> <m>x</m> such that <m>A(x)</m> is true.</q>
+</p></warning>
+
+<p> Mathematical statements often involve several quantified variables. </p>
+
+<problem xml:id="wexample-pred-logic-multiple-quants"> <!-- worked example -->
+	<title>Working with quantified statements of several variables</title>
+	<statement><p>
+		Let <m>B(m,n)</m> represent <q><m>m</m> divides <m>n</m></q>, where <m>m</m> and <m>n</m> are positive whole numbers.
+		Which of the following statements are true?
+		<ol>
+			<li xml:id="wexample-pred-logic-multiple-quants-all-m-all-n"> <m> (\forall m)(\forall n)B(m,n) </m> </li>
+			<li xml:id="wexample-pred-logic-multiple-quants-ex-m-ex-n"> <m> (\exists m)(\exists n)B(m,n) </m> </li>
+			<li xml:id="wexample-pred-logic-multiple-quants-all-m-ex-n"> <m> (\forall m)(\exists n)B(m,n) </m> </li>
+			<li xml:id="wexample-pred-logic-multiple-quants-ex-m-all-n"> <m> (\exists m)(\forall n)B(m,n) </m> </li>
+			<li xml:id="wexample-pred-logic-multiple-quants-all-n-ex-m"> <m> (\forall n)(\exists m)B(m,n) </m> </li>
+			<li xml:id="wexample-pred-logic-multiple-quants-ex-n-all-m"> <m> (\exists n)(\forall m)B(m,n) </m> </li>
+		</ol>
+	</p></statement>
+	<solution><p><ol>
+		<li>
+			<title>False</title>
+			<p>
+			This statement says
+			<q>for every <m>m</m> and for every <m>n</m>,
+			<m>m</m> divides <m>n</m>.</q>
+			One example of values for <m>m</m> and <m>n</m> with <m>m</m> <em>not</em> dividing <m>n</m>
+			(such as <m>m=3</m> and <m>n=2</m>) suffices to show that it is not <em>always</em> true that one number <m>m</m> divides another number <m>n</m>.
+			</p>
+		</li>
+		<li>
+			<title>True</title>
+			<p>
+			This statement says <q>there exists <m>m</m> such that there exists <m>n</m> such that <m>m</m> divides <m>n</m>.</q>
+			To demonstrate that this statement is true, we have to explicitly show that at least one pair of values for <m>m</m> and <m>n</m> exists by giving an example (such as <m>m = n = 2</m>).
+			</p>
+		</li>
+		<li>
+			<title>True</title>
+			<p>
+			This statement says <q>for every <m>m</m> there exists an <m>n</m> such that <m>m</m> divides <m>n</m>.</q>
+			To show that this statement is true, we have to provide, for every possible value of <m>m</m>, a value of <m>n</m> that works.
+			When <m>m=1</m>, we have example <m>n=1</m>.
+			When <m>m=2</m>, we have example <m>n=2</m>.
+			When <m>m=3</m>, we have example <m>n=3</m>.
+			Similarly, for each value of <m>m</m>, we can choose <m>n</m> to be the same value as <m>m</m> as an example.
+			</p>
+			<aside><title>Note</title><p>
+				If the domain for <m>m</m> and <m>n</m> included <m>0</m>,
+				then this third statement would actually be false, as demonstrated by the example <m>m = 0</m>.
+			</p></aside>
+		</li>
+		<li>
+			<title>True</title>
+			<p>
+			This statement says <q>there exists <m>m</m> such that for every <m>n</m> we have <m>m</m> divides <m>n</m>.</q>
+			This is true, as the example <m>m = 1</m>, which divides every number <m>n</m>, demonstrates existence of this special <m>m</m>
+			(though it is the only example possible).
+			</p>
+		</li>
+		<li>
+			<title>True</title>
+			<p>
+			This statement says <q>for every <m>n</m> there exists an <m>m</m> so that <m>m</m> divides <m>n</m>.</q>
+			Similarly to the justification for <xref ref="wexample-pred-logic-multiple-quants-all-m-ex-n">Statement</xref>,
+			for every possible value of <m>n</m> we need to provide an example <m>m</m> so that <m>m</m> divides <m>n</m>,
+			but this time it is the <m>n</m> that is arbitrary and the <m>m</m> that is to be the example.
+			But again, every positive number divides itself, so we could always take <m>m</m> to be the same value as <m>n</m> as our example to demonstrate that such an <m>m</m> exists.
+			(Or, actually we could always choose <m>m=1</m> as the example for each different value of <m>n</m>.)
+			</p>
+		</li>
+		<li>
+			<title>False</title>
+			<p>
+			This statement says <q>there exists <m>n</m> such that for every <m>m</m> we have <m>m</m> divides <m>n</m>.</q>
+			However, there is no positive number that is divisible by every other positive number.
+			</p>
+		</li>
+	</ol></p></solution>
+</problem>
+
+<warning><p>
+	While the order of two quantifiers of the same type does not matter
+	(which is why we didn't consider the statements with quantifiers in the order <m>(\forall n)(\forall m)</m> and <m>(\exists n)(\exists m)</m> in <xref ref="wexample-pred-logic-multiple-quants" />  above),
+	<alert>the order of a <q>mixed</q> pair of quantifiers matters</alert>!
+	This is demonstrated by
+	<xref ref="wexample-pred-logic-multiple-quants-all-m-ex-n">Statement</xref>
+	and
+	<xref ref="wexample-pred-logic-multiple-quants-ex-n-all-m">Statement</xref>
+	in <xref ref="wexample-pred-logic-multiple-quants" /> <mdash />
+	both of these statements involve a <m>\forall m</m> and a <m>\exists n</m>,
+	but in opposite orders.
+	Since one of these two statements is true and one is false,
+	they obviously cannot be the same statement.
+</p></warning>
+
+<p>
+Even more, the order of a <q>mixed</q> pair of quantifiers implies a dependence of the second quantified variable on the first.
+<ol>
+	<li>
+		If the statement <m>(\forall x)(\exists y) A(x,y)</m> is true,
+		it means that, corresponding to <em>each and every</em> object <m>x</m> in the appropriate domain,
+		there will exist at least one example of an object <m>y</m> in the appropriate domain so that <m>A(x,y)</m> is true.
+		But the corresponding example <m>y</m> could be different for different examples of the object <m>x</m>.
+	</li>
+	<li>
+		If the statement <m>(\exists y)(\forall x) A(x,y)</m> is true,
+		it means that there is at least one <q>special</q> example object <m>y</m> that enjoys the property that <m>A(x,y)</m> will be true for <em>each and every</em> object <m>x</m> in the appropriate domain.
+	</li>
+</ol>
+</p>
+
+<example>
+	<p>
+	Suppose <m>A(x,y)</m> is a predicate statement,
+	where <m>x</m> and <m>y</m> are variables that can only take on the values <m>0</m>, <m>1</m>, or <m>2</m>.
+	Further suppose that it is known that <m>A(x,y)</m> is true in the specific instances
+	<me> A(0,1), A(1,0), A(1,1), A(1,2), A(2,2) </me>.
+	<ol>
+		<li><p>
+			Statement <m>(\forall x)(\exists y) A(x,y)</m> is true because for each value of <m>x</m> we can exhibit at least one value <m>y</m> for which <m>A(x,y)</m> is true:
+			<ul>
+				<li> when <m>x=0</m>, we know <m>A(0,y)</m> is true for at least one <m>y</m> (for example, <m>y = 1</m>); </li>
+				<li> when <m>x=1</m>, we know <m>A(1,y)</m> is true for at least one <m>y</m> (for example, <m>y = 1</m>); and </li>
+				<li> when <m>x=2</m>, we know <m>A(2,y)</m> is true for at least one <m>y</m> (for example, <m>y = 2</m>). </li>
+			</ul>
+		</p></li>
+		<li><p>
+			Statement <m>(\exists x)(\forall y) A(x,y)</m> is true because we can exhibit at least one <q>special</q> value of <m>x</m> for which <m>A(x,y)</m> is true for each and every value of <m>y</m>.
+			In particular, we see that for <m>x=1</m> we have <m>A(1,y)</m> true for each of <m>y = 0,1,2</m>.
+		</p></li>
+	</ol>
+</p></example>
+
+<remark><p>
+	Depending on grammar requirements or personal style, the quantifier <q>for every</q> might be expressed as <q>for all</q> or just <q>every</q> or <q>all</q>.
+	The quantifier <q>there exists</q> can also be expressed as <q>some</q> or <q>there is at least one</q>, but remember that the reality of the situation <em>could</em> be <q>more than one.</q>
+</p></remark>
+
+<warning><p> Mathematicians are fond of using <q>any</q> or <q>for any</q> in place of <q>every</q> or <q>for every</q>. </p></warning>
+
+<problem> <!-- worked example -->
+	<statement><p> Prove that <m>n+1</m> is an odd number for any even number <m>n</m>. </p></statement>
+	<solution><title>(Incorrect)</title><p>
+		It says to prove <m>n+1</m> is odd for <em>any</em> even number <m>n</m>,
+		so I will choose my favourite even number <m>n = 8</m>.
+		Then <m>8+1 = 9</m> is obviously odd.
+	</p></solution>
+	<solution><title>(Correct)</title><p>
+		The problem statement is really asking to prove that <em>every</em> even number has the property that the subsequent number is odd.
+		So let <m>n</m> represent an <em>arbitrary but unspecified</em> even number.
+		Then <m>n</m> is divisible by <m>2</m>, so there is some number <m>m</m> such that <m>n = 2m</m>.
+		Now, <m>n+1 = 2m+1</m> is not divisible by <m>2</m>, since <m>(2m+1)/2 = m + \frac{1}{2} </m>
+		is not a whole number.
+		Therefore, <m>n+1</m> must be odd.
+	</p></solution>
+</problem>
+
+<note><p>
+	We will practice proving statements involving universally quantified predicates in
+	<xref ref="chapter-proof-methods" />.
+</p></note>
+
+</section>
+
+
+<section xml:id="section-pred-logic-manip-quant-statements">
+<title>Manipulating quantified statements</title>
+
+<subsection xml:id="subsection-pred-logic-manip-quant-statements-negation">
+<title>Negation of quantified statements</title>
+
+<p>
+Negating quantified statements in English can be tricky,
+but we will establish rules that make it easy in symbolic logic.
+</p>
+
+<warning><p>
+	The negation of the statement <q>all X are Y</q> is <em>not</em> <q>no X are Y</q> <em>nor</em> <q>all X are not Y</q>.
+</p></warning>
+
+<example xml:id="example-pred-logic-cows-eat-grass">
+	<p>
+	What is the negation of the statement <q>all cows eat grass</q>?
+	To avoid making the mistake in the preceding warning,
+	consider the following question: what is the minimum number of cows that do not eat grass that can be used as evidence to demonstrate that the statement <q>all cows eat grass</q> is false?
+	</p>
+	<!-- TODO adjust sizes of the circles in the second two diagrams so that text comes out approximately equal -->
+	<sidebyside widths="30% 30% 30%">
+		<stack>
+			<image>
+				<description>A Venn diagram with the collection of cows completely inside the collection of things that eat grass.</description>
+				<latex-image><xi:include href="pred-logic.d/all-cows-eat-grass.tex" parse="text" /></latex-image>
+			</image>
+			<p>In this case, both <q>all cows eat grass</q> and <q>some cows eat grass</q> are true.</p>
+		</stack><stack>
+			<image>
+				<description>A Venn diagram with the collection of cows only partially overlapping with the collection of things that eat grass.</description>
+				<latex-image><xi:include href="pred-logic.d/some-cows-eat-grass.tex" parse="text" /></latex-image>
+			</image>
+			<p>In this case, both <q>some cows eat grass</q> and <q>some cows do not eat grass</q> are true.</p>
+		</stack><stack>
+			<image>
+				<description>A Venn diagram with the collection of cows not overlapping at all with the collection of things that eat grass.</description>
+				<latex-image><xi:include href="pred-logic.d/no-cows-eat-grass.tex" parse="text" /></latex-image>
+			</image>
+			<p>
+			In this case, each of <q>no cows eat grass</q>, <q>all cows do not eat grass</q>, and <q>some cows do not eat grass</q> are true.
+			</p>
+		</stack>
+	</sidebyside>
+	<p>
+	It takes just <em>one</em> lasagna-eating cow to make <q>all cows eat grass</q> false,
+	so the negation of <q>all cows eat grass</q> is <q>some cows do not eat grass</q> or <q>at least one cow does not eat grass</q>.
+	</p>
+</example>
+
+<warning><p>
+	We have indicated that the statement <q>some cows eat grass</q> is technically true in the first diagram in <xref ref="example-pred-logic-cows-eat-grass" />,
+	even though it is more precise to say <q>all cows eat grass</q> in that situation.
+	Similarly, we have indicated that the statement <q>some cows do not eat grass</q> is technically true in the third diagram.
+	Remember that truth and falsity are usually all that matter in logic, not necessarily making the most precise statement possible.
+</p></warning>
+
+<proposition><title>Rules for negation of quantifiers</title>
+	<idx><h>Rule(s)</h><h>of Predicate Calculus</h><h>negation of quantifiers</h></idx>
+	<idx><h>quantifier</h><h>negation of</h></idx>
+	<p>
+	Let <m>A(x)</m> represent a predicate in the variable <m>x</m>.
+	<ol>
+		<li>
+			<title>Universal negation</title>
+			<p> The negation of <m>(\forall x)A(x)</m> is <m>(\exists x)(\lgcnot A(x))</m>. </p>
+		</li>
+		<li>
+			<title>Existential negation</title>
+			<p> The negation of <m>(\exists x)A(x)</m> is <m>(\forall x)(\lgcnot A(x))</m>. </p>
+		</li>
+	</ol>
+	</p>
+</proposition>
+
+<paragraphs><title>Check your understanding</title><p>
+	Use the <q>cows eat grass</q> diagrams in <xref ref="example-pred-logic-cows-eat-grass" /> to convince yourself that these negation rules are correct.
+</p></paragraphs>
+
+<problem> <!-- worked example -->
+	<title>Negating a quantified statement</title>
+	<statement>
+		<p>
+		Determine and <q>simplify</q> the negation of
+		<me>
+			(\forall x)\left(
+				A(x) \lgccond \Bbrac{
+					(\exists y)(\forall z)\bbrac{
+						B(y)\lgcand \lgcnot C(z)
+					}
+				}
+			\right)
+		</me>.
+		</p>
+	</statement>
+	<solution><p>
+		Using the rules of quantifier negation and known logical equivalences,
+		we can perform the following manipulations:
+		<md>
+			<mrow>
+				\amp
+				\lgcnot (\forall x) \Bbrac{
+					A(x) \lgccond (\exists y)(\forall z)\bbrac{ B(y)\lgcand \lgcnot C(z) }
+				}
+			</mrow><mrow>
+				\amp\lgcequiv
+				(\exists x) \lgcnot \Bbrac{
+					A(x) \lgccond (\exists y)(\forall z)\bbrac{ B(y)\lgcand \lgcnot C(z) }
+				}
+				\amp \amp \text{(i)}
+			</mrow><mrow>
+				\amp\lgcequiv
+				(\exists x) \lgcnot \Bbrac{
+					\lgcnot A(x) \lgcor (\exists y)(\forall z)\bbrac{ B(y)\lgcand \lgcnot C(z) }
+				}
+				\amp \amp \text{(ii)}
+			</mrow><mrow>
+				\amp\lgcequiv
+				(\exists x) \Bbrac{
+					A(x) \lgcand \lgcnot (\exists y)(\forall z)\bbrac{ B(y)\lgcand \lgcnot C(z) }
+				}
+				\amp \amp \text{(iii)}
+			</mrow><mrow>
+				\amp\lgcequiv
+				(\exists x) \Bbrac{
+					A(x) \lgcand (\forall y)\lgcnot(\forall z)\bbrac{ B(y)\lgcand \lgcnot C(z) }
+				}
+				\amp \amp \text{(iv)}
+			</mrow><mrow>
+				\amp\lgcequiv
+				(\exists x) \Bbrac{
+					A(x) \lgcand (\forall y)(\exists z) \lgcnot \bbrac{ B(y)\lgcand \lgcnot C(z) }
+				}
+				\amp \amp \text{(v)}
+			</mrow><mrow>
+				\amp\lgcequiv
+				(\exists x) \Bbrac{
+					A(x) \lgcand (\forall y)(\exists z)\bbrac{ \lgcnot B(y)\lgcor C(z) }
+				}
+				\amp \amp \text{(vi)}
+			</mrow>
+		</md>
+		with justifications
+		<ol label="(i)">
+			<li> quantifier negation; </li>
+			<li> known equivalence <m>p\lgccond q \lgcequiv \lgcnot p \lgcor q</m>; </li>
+			<li> DeMorgan, double negation; </li>
+			<li> quantifier negation; </li>
+			<li> quantifier negation; and </li>
+			<li> DeMorgan, double negation. </li>
+		</ol>
+	</p></solution>
+</problem>
+
+</subsection>
+
+<subsection xml:id="subsection-pred-logic-manip-quant-statements-distributing">
+<title>Distributing quantifiers</title>
+
+<proposition xml:id="proposition-pred-logic-distrib-quants">
+	<title>Rules for distributing quantifiers</title>
+	<idx><h>Rule(s)</h><h>of Predicate Calculus</h><h>distribution of quantifiers</h></idx>
+	<idx><h>quantifier</h><h>distribution of</h></idx>
+	<p>
+	Let <m>A(x),B(x)</m> represent predicates in the variable <m>x</m>.
+	<ol>
+		<li>
+			<title>Universal distributes across conjunction</title>
+			<p> <m>(\forall x)\bbrac{A(x) \lgcand B(x)} \lgcequiv (\forall x)A(x) \lgcand (\forall x)B(x)</m> </p>
+		</li>
+		<li>
+			<title>Existential distributes across disjunction</title>
+			<p> <m>(\exists x)\bbrac{A(x) \lgcor B(x)} \lgcequiv (\exists x)A(x) \lgcor (\exists x)B(x)</m> </p>
+		</li>
+	</ol>
+	</p>
+</proposition>
+
+<example><p><ul>
+	<li> The statement <q>every vegetable is delicious and nutritious</q> is the same as saying <q>every vegetable is delicious and every vegetable is nutritious</q>. </li>
+	<li> The statement <q>at least one vegetable in the garden is rotten or nibbled by squirrels</q> is the same as saying <q>at least one vegetable in the garden is rotten or at least one vegetable in the garden is nibbled by squirrels</q>. </li>
+</ul></p></example>
+
+<warning><p><ul>
+	<li> The universal quantifier <m>\forall</m> does <em>not</em> distribute over disjunction <m>\lgcor</m>. </li>
+	<li> The existential quantifier <m>\exists</m> does <em>not</em> distribute over conjunction <m>\lgcand</m>. </li>
+</ul></p></warning>
+
+<paragraphs><title>Check your understanding</title><p><ol>
+	<li>
+		Create an example of predicates <m>A(x)</m> and <m>B(x)</m> such that, of the statements
+		<md><mrow>
+			(\forall x) \amp \bbrac{A(x) \lgcor B(x)} \text{,} \amp
+			(\forall x) A(x) \amp \lgcor (\forall x)B(x) \text{,}
+		</mrow></md>
+		the first is true but the second is false.
+	</li>
+	<li>
+		Create an example of predicates <m>A(x)</m> and <m>B(x)</m> such that, of the statements
+		<md><mrow>
+			(\exists x) \amp \bbrac{A(x) \lgcand B(x)} \text{,} \amp
+			(\exists x) A(x) \amp \lgcand (\exists x)B(x) \text{,}
+		</mrow></md>
+		the first is false but the second is true.
+	</li>
+</ol></p></paragraphs>
+
+</subsection>
+
+</section>
+
+<section xml:id="section-pred-logic-vacuous">
+<title>Vacuously true statements</title>
+
+<p>
+We have to be careful with quantified predicates because it is (seemingly) possible to violate the
+<term>Law of Contradiction</term>
+(see <xref ref="example-symb-lang-basic-tauts-law-contra">Basic Tautology</xref>
+in <xref ref="example-symb-lang-basic-tauts" />).
+</p>
+
+<example><p>
+	Let <m>x</m> be a variable in the domain of all living humans.
+	Define predicates
+	<!-- TODO these are actual unicode quote symbols in there, works OK for HTML but what about latex ? -->
+	<md>
+		<mrow> A(x) \amp = \text{ “} x \text{ is an Augustana student,”} </mrow>
+		<mrow> B(x) \amp = \text{ “} x \text{ is three hundred years old,”} </mrow>
+		<mrow> C(x) \amp = \text{ “} x \text{ is tall,”} </mrow>
+	</md>
+	and consider the statement
+	<me> (\forall x)\Bbrac{\bbrac{A(x) \lgcand B(x)} \lgccond C(x)}, </me>
+	which says <q>every three-hundred-year-old Augustana student is tall</q>.
+	This statement is true, since a conditional <m>p \lgccond q</m> is true when <m>p</m> is false,
+	and <m>A(x) \lgcand B(x)</m> is false for each and every <m>x</m>:
+	there is no living human who is both three hundred years old and is an Augustana student
+	(issues concerning the existence of vampires notwithstanding).
+	But by the same reasoning, the statement <q>every three-hundred-year-old Augustana student is <em>not</em> tall</q> is true.
+	This seems to be a contradiction: how can every three-hundred-year-old Augustana student be both tall and not tall?
+	The answer is that you can say anything you like about things that <em>do not exist</em> and your statement will be true.
+	So you should avoid altogether making claims about things that do not exist.
+</p></example>
+
+<p><dl><li xml:id="definition-pred-logic-vac-true">
+	<!-- \label{DEFN::vac.true} -->
+	<title>vacuously true</title>
+	<idx>vacuously true</idx>
+	<p>
+	a statement of the form <m>(\forall x)\bbrac{P(x) \lgccond Q(x)}</m> where <m>P(x)</m> is false for every <m>x</m> in its domain
+	</p>
+</li></dl></p>
+
+<paragraphs><title>Check your understanding</title><p>
+	Determine the negation of <m>(\forall x)\bbrac{P(x) \lgccond Q(x)}</m>.
+	Is the negation of a vacuously true statement true or false?
+</p></paragraphs>
+
+</section>
+
+<xi:include href="./pred-logic.d/activities.ptx" />
+<xi:include href="./pred-logic.d/exercises.ptx" />
+
+</chapter>

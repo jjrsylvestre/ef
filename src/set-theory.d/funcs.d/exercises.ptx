@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<exercises xml:id="exercises-funcs">
+<title>Exercises</title>
+
+<exercise xml:id="exercise-funcs-properties-in-predicate-logic"><p> <!-- TODO \refAdapt{hunter+discrete}{2.3}{2} -->
+	Use predicate logic to write formal definitions of <term>surjective function</term>, <term>injective function</term>, and <term>bijective function</term>.
+	Be sure to state the domains of your free variables.
+</p></exercise>
+
+<exercise><p> <!-- TODO \refAdapt{hunter+discrete}{2.3}{5} -->
+	Let <m>A</m> represent the set of all university students and let <m>C</m> be the set of all university courses.
+	Does the rule <m>\funcdef{f}{A}{C}</m> given by
+	<me> f(a) = c \text{ if student <m>a</m> is registered in course <m>c</m>} </me>
+	define a function?
+	Justify your answer.
+</p></exercise>
+
+<exercisegroup xml:id="exercisegroup-funcs-check-biject">
+	<title>Testing bijectivity and determining inverses</title>
+	<introduction><p>
+		In each of
+		<xref ref="exercisegroup-funcs-check-biject" text="type-local">Exercises</xref>,
+		determine whether or not the described function is a bijection.
+		For those functions that are bijective, describe the inverse function;
+		that is,
+		specify the inverse function's
+		<ol label="(i)">
+			<li> <xref ref="definition-funcs-domain" text="title" />, </li>
+			<li> <xref ref="definition-funcs-codomain" text="title" />, and </li>
+			<li> <xref ref="definition-funcs-rule" text="title" />. </li>
+		</ol>
+	</p></introduction>
+	<exercise><p>
+		<m>\Lambda = \{\lgctrue, \, \lgcfalse\}</m>,
+		<m>\funcdef{n}{\Lambda}{\Lambda}</m> is the logical negation function <m>n(p) = \lgcnot p</m>.
+	</p></exercise>
+	<exercise>
+		<p>
+		<m>\scr{L}</m> represents the set of all possible logical statements,
+		<m>\funcdef{N}{\scr{L}}{\scr{L}}</m> is the logical negation function <m>N(A) = \lgcnot A</m> for <m>A</m> a logical statement.
+		</p>
+		<p> (<em>Note:</em> You may treat equivalent statements as being the same statement.) </p>
+	</exercise>
+	<exercise><p>
+		<m>\funcdef{\scr{N}}{\Z}{\Z}</m> is the numerical negation function <m>\scr{N}(n) = -n</m>.
+	</p></exercise>
+	<exercise><p>
+		<m>\Sigma = \{0,1\}</m>,
+		<m>\words{\Sigma}</m> represents the set of all binary words,
+		<m>\funcdef{c}{\words{\Sigma}}{\words{\Sigma}}</m> is the <em>bitwise complement</em> function defined by:
+		if <m>w</m> is a binary word, let <m>c(w)</m> be a binary word of the same length but with a <m>0</m> at every position that <m>w</m> has a <m>1</m>, and a <m>1</m> at every position that <m>w</m> has a <m>0</m>.
+		For example, <m>c(010) = 101</m> and <m>c(0000) = 1111</m>.
+	</p></exercise>
+	<exercise><p>
+		<m>U</m> represents a universal set,
+		<m>\funcdef{C}{\powset{U}}{\powset{U}}</m> is the complement function <m>C(A) = \cmplmnt{A}</m>,
+		for <m>A \subseteq U</m>.
+	</p></exercise>
+</exercisegroup>
+
+<exercise>
+	<introduction><p>
+		Let <m>E \subseteq \Z</m> represent the set of even integers,
+		and consider the function <m>\funcdef{f}{\Z}{E}</m>, <m>f(n) = 2n</m>.
+	</p></introduction>
+	<task><p> Prove that <m>f</m> is a bijection. </p></task>
+	<task><p>
+		Describe the inverse function <m>\funcdef{\inv{f}}{E}{\Z}</m>.
+		That is, describe the rule to determine <m>\inv{f}(n)</m>, given even number <m>n</m>.
+	</p></task>
+</exercise>
+
+<exercise>
+	<introduction>
+		<p>
+		As usual, <m>\R^m = \R \times \R \times \dotsb \times \R</m> represents the Cartesian product of <m>m</m> copies of <m>\R</m>,
+		where <m>m</m> is a positive integer.
+		Consider the function <m>\funcdef{D}{\R}{\R^m}</m> defined by <m>D(x) = (x,x,\dotsc,x)</m>.
+		</p>
+		<aside><title>Terminology</title><p>
+			The function <m>D</m> in this exercise is called a <term>diagonal embedding</term><idx>diagonal embedding</idx>.
+			We can define a similar diagonal embedding <m>\ifuncdef{D}{A}{A^m}</m> for every nonempty set <m>A</m>.
+		</p></aside>
+	</introduction>
+	<task><p> Prove that <m>D</m> embeds <m>\R</m> into <m>\R^m</m>. </p></task>
+	<task><p>
+		Fill in the right-hand side of the
+		set definition in <xref ref="subsection-sets-defining-candidate-condition" text="title" />
+		for the image of <m>D</m> below.
+		<me>
+			D(\R)
+			= \setdef{(x_1,x_2,\dotsc,x_m) \in \R^m}{<fillin characters="10" />}
+		</me>
+	</p></task>
+	<task><p>
+		Provide a set definition for the graph <m>\funcgraph{D}</m>
+		in <xref ref="subsection-sets-defining-form-parameter" text="title" />.
+		Of what set is <m>\funcgraph{D}</m> a subset?
+	</p></task>
+	<task><p> Can you come up with other <q>natural</q> embeddings <m>\R \ifuncto \R^m</m>? </p></task>
+</exercise>
+
+<exercise>  <!-- TODO \refAdapt{hunter+discrete}{2.3}{18} -->
+	<p>
+	Let <m>A = \{0,1,2,3,4,5,6,7,8,9\}</m> and let <m>P \subseteq \powset{A}</m> represent the set of all subsets of <m>A</m> which contain an odd number of elements.
+	Define <m>\funcdef{\nu}{P}{A}</m> by setting <m>\nu(X)</m> to be the <q>middle</q> element of <m>X</m> when the elements of <m>X</m> are listed in order by size.
+	For example, <m>\nu(\{0,8,9\}) = 8</m>.
+	</p>
+	<p> Is <m>\nu</m> injective? Surjective? Bijective? </p>
+</exercise>
+
+<exercise>
+	<p>
+	Let <m>\Sigma = \{0,1\}</m>.
+	Recall that for <m>n \in \N</m>, <m>\words{\Sigma}_n</m> is the subset of <m>\words{\Sigma}</m> consisting of all binary words of length <m>n</m>.
+	</p><p>
+	Suppose <m>A = \{ a_1, a_2, \dotsc, a_n \}</m> is a set with <m>n</m> (distinct) elements.
+	Construct a bijection <m>\powset{A} \to \words{\Sigma}_n</m>.
+	</p>
+</exercise>
+
+<exercise xml:id="exercise-funcs-empty-functions">
+	<introduction><p> Call a function with domain <m>\emptyset</m> an <term>empty function</term>. </p></introduction>
+	<task xml:id="exercise-funcs-empty-functions-injective">
+		<statement><p> Verify that every empty function is injective. </p></statement>
+		<hint><p>
+			Use your formal expression of <term>injective</term> from
+			<xref ref="exercise-funcs-properties-in-predicate-logic" />,
+			along with what you learned in <xref ref="section-pred-logic-vacuous" />.
+		</p></hint>
+	</task>
+	<task>
+		<statement><p> Verify that an empty function with empty codomain is bijective. </p></statement>
+		<hint><p>
+			You have already verified injectivity of an empty function more generally in
+			<xref ref="exercise-funcs-empty-functions-injective" text="type-local" />.
+			For surjectivity in this more specific setting,
+			use your formal expression of <term>surjective</term> from
+			<xref ref="exercise-funcs-properties-in-predicate-logic" />,
+			along with what you learned in <xref ref="section-pred-logic-vacuous" />.
+		</p></hint>
+	</task>
+</exercise>
+
+<exercise xml:id="exercise-funcs-props-of-composition">
+<!-- \label{EXERCISE::funcs::props.of.composition} -->
+	<statement><p> Let <m>\funcdef{f}{A}{B}</m> and <m>\funcdef{g}{B}{C}</m> be functions. </p></statement>
+	<task xml:id="exercise-funcs-props-of-composition-surjective"><p>
+		Prove that if <m>f</m> and <m>g</m> are both surjective, then <m>g \funccomp f</m> is surjective.
+	</p></task>
+	<task><p>
+		If <m>g \funccomp f</m> is surjective, must either or both of <m>f,g</m> necessarily be surjective?
+		Justify your answers.
+	</p></task>
+	<task xml:id="exercise-funcs-props-of-composition-injective"><p>
+		Prove that if <m>f</m> and <m>g</m> are both injective, then <m>g \funccomp f</m> is injective.
+	</p></task>
+	<task><p>
+		If <m>g \funccomp f</m> is injective, must either or both of <m>f,g</m> necessarily be injective?
+		Justify your answers.
+	</p></task>
+	<task>
+		<p>
+		<xref ref="exercise-funcs-props-of-composition-surjective" text="type-local" />
+		and <xref ref="exercise-funcs-props-of-composition-injective" text="type-local" />
+		together prove that if <m>f</m> and <m>g</m> are both bijective, then <m>g \funccomp f</m> is bijective.
+		</p><p>
+		Prove that <m>\inv{(g \funccomp f)} = \inv{f} \funccomp \inv{g}</m>.
+		(See the definition of <term><xref ref="definition-funcs-equality" text="title" /></term>.)
+		</p>
+	</task>
+</exercise>
+
+<exercise>
+	<statement><p>
+		Let <m>\funcdef{f}{A}{B}</m> be a function.
+		Suppose there exists a function <m>\funcdef{g}{B}{A}</m> such that <m>g \funccomp f = \id_A</m> and <m>f \funccomp g = \id_B</m>.
+	</p></statement>
+	<task><p> Prove that <m>f</m> is a bijection. </p></task>
+	<task><p> Prove that <m>g = \inv{f}</m>. </p></task>
+</exercise>
+
+<exercisegroup xml:id="exercisegroup-funcs-subset-transfer">
+	<title>Function image sets and inverse image sets</title>
+	<introduction><p>
+		In each of
+		<xref ref="exercisegroup-funcs-subset-transfer" text="type-local">Exercises</xref>,
+		consider abstract function <m>\funcdef{f}{A}{B}</m>
+		and subsets <m>A_1, A_2 \subseteq A</m>, <m>B_1, B_2 \subseteq B</m>.
+	</p></introduction>
+	<exercise>
+		<task>
+			<p> Draw a Venn diagram illustrating that <m>A_1 \subseteq \inv{f}\bbrac{f(A_1)}</m>. </p>
+			<p>
+			Include all of the sets
+			<me> A, \;\; B, \;\; A_1, \;\; f(A_1), \text{ and } \;\; \inv{f}\bbrac{f(A_1)} </me>
+			in your diagram.
+			</p>
+		</task>
+		<task><p>
+			Formally prove that <m>A_1 \subseteq \inv{f}\bbrac{f(A_1)}</m>,
+			using the <xref ref="test-sets-subset" text="custom">Subset Test</xref>.
+		</p></task>
+		<task><p> Devise an explicit example where <m>A_1 \subsetneqq \inv{f}\bbrac{f(A_1)}</m>. </p></task>
+	</exercise>
+	<exercise>
+		<task>
+			<p> Draw a diagram illustrating that <m>f\bbrac{\inv{f}(B_1)} \subseteq B_1</m>. </p>
+			<p>
+			Include all of the sets
+			<me>
+				A, \;\; B, \;\; B_1, \;\; \inv{f}(B_1),
+				\;\; \text{ and } \;\; f\bbrac{\inv{f}(B_1)}
+			</me>
+			in your diagram.
+			</p>
+		</task>
+		<task><p>
+			Formally prove that <m>f\bbrac{\inv{f}(B_1)} \subseteq B_1</m>,
+			using the <xref ref="test-sets-subset" text="custom">Subset Test</xref>.
+		</p></task>
+		<task><p> Devise an explicit example where <m>f\bbrac{\inv{f}(B_1)} \subsetneqq B_1</m>. </p></task>
+	</exercise>
+	<exercise>
+		<task>
+			<p> Draw a diagram illustrating that <m>f(A_1 \intersection A_2) \subseteq f(A_1) \intersection f(A_2)</m>. </p>
+			<p>
+			Include all of the sets
+			<md alignment="gather">
+				<mrow> A, \;\; B, \;\; A_1, \;\; A_2, \;\; A_1 \intersection A_2, \;\; f(A_1), \;\; f(A_2), </mrow>
+				<mrow> f(A_1) \intersection f(A_2), \;\; \text{ and } \;\; f(A_1 \intersection A_2) </mrow>
+			</md>
+			in your diagram.
+			</p>
+		</task>
+		<task><p>
+			Formally prove that <m>f(A_1 \intersection A_2) \subseteq f(A_1) \intersection f(A_2)</m>,
+			using the <xref ref="test-sets-subset" text="custom">Subset Test</xref>.
+		</p></task>
+		<task><p> Devise an explicit example where <m>f(A_1 \intersection A_2) \subsetneqq f(A_1) \intersection f(A_2)</m>. </p></task>
+	</exercise>
+	<exercise>
+		<task>
+			<p>
+			Draw a diagram illustrating that
+			<me> \funcinvimg{f}{B_1 \intersection B_2} = \funcinvimg{f}{B_1} \intersection \funcinvimg{f}{B_2} </me>.
+			</p>
+			<p>
+			Include all of the sets
+			<md alignment="gather">
+				<mrow>
+					A, \;\; B, \;\; B_1, \;\; B_2, \;\;
+					B_1 \intersection B_2, \;\; \funcinvimg{f}{B_1}, \;\;
+					\funcinvimg{f}{B_2},
+				</mrow><mrow>
+					\funcinvimg{f}{B_1} \intersection \funcinvimg{f}{B_2}, \;\;
+					\text{ and } \;\; \funcinvimg{f}{B_1 \intersection B_2}
+				</mrow>
+			</md>
+			in your diagram.
+			</p>
+		</task>
+		<task><p>
+			Formally prove that <m>\funcinvimg{f}{B_1 \intersection B_2} = \funcinvimg{f}{B_1} \intersection \funcinvimg{f}{B_2}</m>,
+			using the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref>.
+		</p></task>
+	</exercise>
+</exercisegroup>
+
+<exercise xml:id="exercise-funcs-set-bijection-induces-power-set-bijection">
+<!-- \label{EXERCISE::funcs::set.bijection.induces.power.set.bijection} -->
+	<p>
+	Suppose <m>\funcdef{f}{A}{B}</m> is an injection.
+	Use <m>f</m> to devise an injection <m>\ifuncdef{F}{\powset{A}}{\powset{B}}</m>.
+	Be sure to verify that your proposed function <m>F</m> is injective.
+	If <m>f</m> is bijective, will <m>F</m> also be bijective?
+	</p>
+</exercise>
+
+</exercises>

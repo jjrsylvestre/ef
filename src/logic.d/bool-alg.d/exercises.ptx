@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<!-- TODO check these against Roman -->
+
+<exercises xml:id="exercises-bool-alg">
+<title>Exercises</title>
+
+<exercisegroup xml:id="exercisegroup-bool-alg-poly-to-table" cols="2">
+	<title>Creating truth tables</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-bool-alg-poly-to-table" text="type-local">Exercises</xref>,
+		write out the truth table for the given boolean polynomial.
+	</p></introduction>
+	<exercise><p><m> p(x,y) = (x \lgcand y)' \lgcand x' </m>.</p></exercise>
+	<exercise><p><m> q(x,y,z) = (x \lgcor y)' \lgcand (z \lgcor x) \lgcand y </m>.</p></exercise>
+</exercisegroup>
+
+<exercise><p>
+	Explain why the boolean polynomial <m>p(x,y) = x \lgcor y \lgcor y'</m> is <em>not</em> in disjunctive form.
+</p></exercise>
+
+<exercisegroup xml:id="exercisegroup-bool-alg-table-to-poly" cols="2">
+	<title>Disjunctive normal form from a truth table</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-bool-alg-table-to-poly" text="type-local">Exercises</xref>,
+		write out a boolean polynomial in disjunctive normal form that has the given truth table.
+	</p></introduction>
+	<exercise><tabular halign="center">
+		<col /><col right="minor" /><col />
+		<row bottom="minor">
+			<cell><m>x</m></cell>
+			<cell><m>y</m></cell>
+			<cell><m>p(x,y)</m></cell>
+		</row><row>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+		</row><row>
+			<cell><m>1</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>1</m></cell>
+		</row><row>
+			<cell><m>0</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+		</row><row>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+		</row>
+	</tabular></exercise>
+	<exercise><tabular halign="center">
+		<col /><col right="minor" /><col />
+		<row bottom="minor">
+			<cell><m>x</m></cell>
+			<cell><m>y</m></cell>
+			<cell><m>p(x,y)</m></cell>
+		</row><row>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+		</row><row>
+			<cell><m>1</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+		</row><row>
+			<cell><m>0</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+		</row><row>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+		</row>
+	</tabular></exercise>
+	<exercise><tabular halign="center">
+		<col /><col /><col right="minor" /><col />
+		<row bottom="minor">
+			<cell><m>x</m></cell>
+			<cell><m>y</m></cell>
+			<cell><m>z</m></cell>
+			<cell><m>p(x,y,z)</m></cell>
+		</row><row>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+		</row><row>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+		</row><row>
+			<cell><m>1</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>0</m></cell>
+		</row><row>
+			<cell><m>1</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+		</row><row>
+			<cell><m>0</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>1</m></cell>
+		</row><row>
+			<cell><m>0</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+		</row><row>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>1</m></cell>
+			<cell><m>0</m></cell>
+		</row><row>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+			<cell><m>0</m></cell>
+		</row>
+		</tabular></exercise>
+</exercisegroup>
+
+<exercisegroup xml:id="exercisegroup-bool-alg-poly-to-poly">
+	<title>Disjunctive normal form from a boolean polynomial</title>
+	<introduction><p>
+		In each of <xref ref="exercisegroup-bool-alg-poly-to-poly" text="type-local">Exercises</xref>,
+		write out a boolean polynomial in disjunctive normal form that is equivalent to the given boolean polynomial.
+	</p></introduction>
+	<exercise><p>
+		<m> p(x,y,z) = (x \lgcor y) \lgcand z </m>.
+	</p></exercise>
+	<exercise><p>
+		<m> q(x,y,z) = \bigl[(x \lgcand y') \lgcor (x \lgcand z)\bigr]' \lgcor x' </m>.
+	</p></exercise>
+	<exercise><p>
+		<m> r(x,y,z) = (x \lgcand y') \lgcor (x \lgcand z) \lgcor (x \lgcand y) </m>.
+	</p></exercise>
+</exercisegroup>
+
+
+</exercises>

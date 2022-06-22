@@ -1,0 +1,122 @@
+% *********************************************************************
+% © 2010–2021 Jeremy Sylvestre
+%
+% Permission is granted to copy, distribute and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.3 or
+% any later version published by the Free Software Foundation; with no
+% Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+% copy of the license is included in the appendix entitled “GNU Free
+% Documentation License” that appears in the output document of this
+% PreTeXt source code. All trademarks™ are the registered® marks of
+% their respective owners.
+%
+% *********************************************************************
+
+% general constructs
+\newcommand{\nth}[1][n]{{#1}^{\mathrm{th}}}% nth
+\newcommand{\bbrac}[1]{\bigl(#1\bigr)}% slightly larger enclosing brackets
+\newcommand{\Bbrac}[1]{\Bigl(#1\Bigr)}% even larger enclosing brackets
+\newcommand{\correct}{\boldsymbol{\checkmark}}% "correct" symbol in math mode
+\newcommand{\incorrect}{\boldsymbol{\times}}% "incorrect" symbol in math mode
+\newcommand{\inv}[2][1]{{#2}^{-{#1}}}% inverse
+\newcommand{\leftsub}[3][1]{\mathord{{}_{#2\mkern-#1mu}#3}}% left subscript
+
+% number systems
+\newcommand{\N}{\mathbb{N}}% natural numbers
+\newcommand{\Z}{\mathbb{Z}}% integers
+\newcommand{\Q}{\mathbb{Q}}% rational numbers
+\newcommand{\R}{\mathbb{R}}% real numbers
+\newcommand{\I}{\mathbb{I}}% irrational numbers
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}% absolute value
+\DeclareMathOperator{\sqrtop}{sqrt}% sqrt operator
+
+% logic
+\newcommand{\lgcnot}{\neg}% logical negation
+\newcommand{\lgcand}{\wedge}% logical conjunction
+\newcommand{\lgcor}{\vee}% logical disjunction
+\newcommand{\lgccond}{\rightarrow}% logical conditional
+\newcommand{\lgcbicond}{\leftrightarrow}% logical biconditional
+\newcommand{\lgcimplies}{\Rightarrow}% logical implication of statements
+\newcommand{\lgcequiv}{\Leftrightarrow}% logical equivalence of statements
+\newcommand{\lgctrue}{\mathrm{T}}% logical truth value true
+\newcommand{\lgcfalse}{\mathrm{F}}% logical truth value false
+
+% Boolean algebra
+\newcommand{\boolnot}[1]{{#1}'}% Boolean negation
+\newcommand{\boolzero}{\mathbf{0}}% the zero Boolean polynomial
+\newcommand{\boolone}{\mathbf{1}}% the unit Boolean polynomial
+
+% set theory
+\newcommand{\setdef}[2]{\left\{\mathrel{}#1\mathrel{}\middle|\mathrel{}#2\mathrel{}\right\}}% set definition
+\newcommand{\inlinesetdef}[2]{\{\mathrel{}#1\mathrel{}\mid\mathrel{}#2\mathrel{}\}}% set definition without left/right
+\let\emptyword\emptyset% empty word
+\renewcommand{\emptyset}{\varnothing}% empty set
+\newcommand{\relcmplmnt}{\smallsetminus}% relative set complement
+\newcommand{\union}{\cup}% set union
+\newcommand{\intersection}{\cap}% set intersection
+\newcommand{\cmplmnt}[1]{{#1}^{\mathrm{c}}}% set complement
+\newcommand{\disjunion}{\sqcup}% disjoint set union
+\newcommand{\cartprod}{\times}% cartesian product symbol
+\newcommand{\words}[1]{{#1}^\ast}% free set on a set, words notation
+\newcommand{\length}[1]{\abs{#1}}% length of a word (over an alphabet)
+\newcommand{\powsetbare}{\mathscr{P}}% power set symbol
+\newcommand{\powset}[1]{\powsetbare(#1)}% power set
+\newcommand{\funcdef}[4][\to]{#2\colon #3 #1 #4}% function defintion --> renamed from fdef
+\newcommand{\ifuncto}{\hookrightarrow}
+\newcommand{\ifuncdef}[3]{\funcdef[\ifuncto]{#1}{#2}{#3}}% injective function defintion
+\newcommand{\sfuncto}{\twoheadrightarrow}
+\newcommand{\sfuncdef}[3]{\funcdef[\sfuncto]{#1}{#2}{#3}}% surjective function defintion
+\newcommand{\funcgraphbare}{\Delta}% function graph symbol
+\newcommand{\funcgraph}[1]{\funcgraphbare(#1)}% graph of a function
+\newcommand{\relset}[3]{#1_{{} #2 #3}}% subset defined via fixed relation to fixed element  (ie. #2 is assumed to be \mathrel)
+\newcommand{\gtset}[2]{\relset{#1}{\gt}{#2}}% set of elements gt some fixed element
+\newcommand{\posset}[1]{\gtset{#1}{0}}% positive numbers/elements
+\newcommand{\geset}[2]{\relset{#1}{\ge}{#2}}% set of elements ge some fixed element
+\newcommand{\nnegset}[1]{\geset{#1}{0}}% nonnegative numbers/elements
+\newcommand{\neqset}[2]{\relset{#1}{\neq}{#2}}% set of elements neq some fixed element
+\newcommand{\nzeroset}[1]{\neqset{#1}{0}}% nonzero numbers/elements
+\newcommand{\ltset}[2]{\relset{#1}{\lt}{#2}}% set of elements lt some fixed element
+\newcommand{\leset}[2]{\relset{#1}{\le}{#2}}% set of elements le some fixed element
+\newcommand{\natnumlt}[1]{\ltset{\N}{#1}} % counting numbers
+\DeclareMathOperator{\id}{id}% identity function
+\newcommand{\inclfunc}[2]{\iota_{#1}^{#2}}% inclusion function
+\newcommand{\projfunc}[1]{\rho_{#1}}% projection function
+\DeclareMathOperator{\proj}{proj}% projection function alternative
+\newcommand{\funcres}[2]{\left.{#1}\right\rvert_{#2}}% function restricted to (or evaluated at)
+\newcommand{\altfuncres}[2]{\left.{#1}\right\rvert{#2}}% function restricted to (or evaluated at)
+\DeclareMathOperator{\res}{res}% restriction
+\DeclareMathOperator{\flr}{flr}% floor function operator
+\newcommand{\floor}[1]{\lfloor {#1} \rfloor}% floor function notation
+\newcommand{\funccomp}{\circ}% function composition binary operator
+\newcommand{\funcinvimg}[2]{\inv{#1}\left({#2}\right)}% inverse image
+\newcommand{\card}[1]{\left\lvert #1 \right\rvert}% cardinality
+\DeclareMathOperator{\cardop}{card}% cardinality operator
+\DeclareMathOperator{\ncardop}{\#}% cardinality operator
+\newcommand{\EngAlphabet}{\{ \mathrm{a}, \, \mathrm{b}, \, \mathrm{c}, \, \dotsc, \, \mathrm{y}, \, \mathrm{z} \}}% english language alphabet
+\newcommand{\ShortEngAlphabet}{\{ \mathrm{a}, \, \mathrm{b}, \, \dotsc, \, \mathrm{z} \}}% shorter english language alphabet
+\newcommand{\eqclass}[1]{\left[#1\right]}% equivalence class
+\newcommand{\partorder}{\preceq}% partial order symbol
+\newcommand{\partorderstrict}{\prec}% strict partial order relationship symbol
+\newcommand{\npartorder}{\npreceq}% symbol for elements not related by partial order
+
+% graphs
+\newcommand{\subgraph}{\preceq}% subgraph relation symbol
+\newcommand{\subgraphset}[1]{\mathcal{S}(#1)}% set of subgraphs of
+\newcommand{\connectedsubgraphset}[1]{\mathcal{C}(#1)}% set of connected subgraphs of
+
+% combinatorics
+\newcommand{\permcomb}[3]{{#1}(#2,#3)}% consistent notation for number of permutations/combinations
+\newcommand{\permcombalt}[3]{{#1}^{#2}_{#3}}% alternative notation choice for permutation/combinations
+\newcommand{\permcombaltalt}[3]{{\leftsub{#2}{#1}}_{#3}}% alternative notation choice for permutations/combinations
+\newcommand{\permutation}[2]{\permcomb{P}{#1}{#2}}% number of permutations of size #2 from set of size #1
+\newcommand{\permutationalt}[2]{\permcombalt{P}{#1}{#2}}% alternative notation: number of permutations of size #2 from set of size #1
+\newcommand{\permutationaltalt}[2]{{\permcombaltalt{P}{#1}{#2}}}% alternative notation: number of permutations of size #2 from set of size #1
+\newcommand{\combination}[2]{\permcomb{C}{#1}{#2}}% number of combinations of size #2 from set of size #1
+\newcommand{\combinationalt}[2]{\permcombalt{C}{#1}{#2}}% alternative notation: number of combinations of size #2 from set of size #1
+\newcommand{\combinationaltalt}[2]{{\permcombaltalt{C}{#1}{#2}}}% alternative notation: number of combinations of size #2 from set of size #1
+\newcommand{\choosefuncformula}[3]{\frac{#1 !}{#2 ! \, #3 !}}% choose function formula
+
+% miscellaneous math
+\DeclareMathOperator{\matrixring}{M}% $m\times n$ matrices
+\newcommand{\uvec}[1]{\mathbf{#1}}% undergrad boldface vector
+\newcommand{\zerovec}{\uvec{0}}% zero vector

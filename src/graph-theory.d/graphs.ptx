@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+© 2010–2021 Jeremy Sylvestre
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the appendix entitled “GNU Free
+Documentation License” that appears in the output document of this
+PreTeXt source code. All trademarks™ are the registered® marks of their
+respective owners.
+*********************************************************************-->
+
+<chapter xml:id="chapter-graphs" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Graphs</title>
+
+<section xml:id="section-graphs-basics">
+<title>Basics and examples</title>
+
+<p><dl><li>
+	<title>graph (working definition)</title>
+	<idx><h>graph</h><h>working definition</h></idx>
+	<p> a diagram consisting of a finite collection of points connected by line segments or arcs </p>
+</li></dl></p>
+
+<problem> <!-- worked example -->
+	<statement><p>
+		Suppose we have jugs <m>A,B,C</m> with capacities <m>8,5,3</m> litres, respectively.
+		Jug <m>A</m> is full of water and jugs <m>B,C</m> are empty.
+		Can we divide the water into two <em>exactly</em> equal parts?
+		If so, find the most efficient pouring sequence.
+	</p></statement>
+	<solution>
+		<p>
+		Construct a graph with points labelled by elements <m>(a,b,c) \in \N \times \N \times \N</m>, where <m>a,b,c</m> are the volumes of water in jugs <m>A,B,C</m>, respectively.
+		Join two points with a line segment if we can obtain one set of volumes from the other in a single pour.
+		We will ignore pours that return us to a configuration previously achievable by fewer pours.
+		</p>
+		<figure>
+			<caption>Graph to track possible jug fill states.</caption>
+			<image width="70%">
+				<description>
+					A graph where nodes are jug fill states and edges represent being able to obtain one state from another by a single pour.
+				</description>
+				<latex-image><xi:include href="graphs.d/jugs.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+		<p> Following the left leg of the graph gets us to the desired configuration in <m>7</m> pours. </p>
+	</solution>
+</problem>
+
+<p><dl>
+
+	<li xml:id="definition-graphs-formal">
+		<title>graph (formal definition)</title>
+		<idx><h>graph</h><h>formal definition</h></idx>
+		<p>
+		an ordered pair <m>(V,E)</m>, where <m>V</m> is a finite set and <m>E</m> is a finite, unordered list of <em>subsets</em> of <m>V</m>, each of which has exactly <m>1</m> or <m>2</m> elements
+		</p>
+	</li>
+
+	<li>
+		<title>vertex</title>
+		<idx>vertex</idx>
+		<idx><h>vertices</h><see>vertex</see></idx>
+		<idx><h>graph</h><h>vertex</h></idx>
+		<p> a point in a graph (<ie /> an element of <m>V</m>) </p>
+	</li>
+
+	<li>
+		<title>node</title>
+		<idx>node</idx>
+		<idx><h>graph</h><h>node</h></idx>
+		<p> synonym for vertex </p>
+	</li>
+
+	<li>
+		<title>edge</title>
+		<idx>edge</idx>
+		<idx><h>graph</h><h>edge</h></idx>
+		<p> a connecting line or arc between two vertices (<ie /> an element of <m>E</m>) </p>
+	</li>
+
+	<li>
+		<title>empty graph</title>
+		<idx><h>empty</h><h>graph</h></idx>
+		<idx><h>graph</h><h>empty</h></idx>
+		<p> the graph <m>(\emptyset,\emptyset)</m>, with no vertices and no edges </p>
+	</li>
+
+</dl></p>
+
+<warning><p>
+	The list <m>E</m> is not a set, since duplicate entries in this list have a graphical meaning; see below.
+</p></warning>
+
+<p>
+An element <m>e \in E</m> represents an edge as follows.
+If <m>e</m> consists of exactly two elements of <m>V</m>, draw a line between these two vertices.
+If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this vertex to itself.
+</p>
+
+<example xml:id="example-graphs-basic-graph-1">
+<!-- \label{EXAMPLE::basic.graph.1} -->
+	<title>A very basic graph</title>
+	<p>
+	The graph <m>G = (V,E)</m>, where
+	<md><mrow>
+		V \amp = \{ v_1, v_2, v_3 \}, \amp
+		E \amp = \bigl\{ \{v_1,v_2\}, \{v_1,v_3\}, \{v_2,v_3\} \bigr\},
+	</mrow></md>
+	has three vertices and three edges.
+	</p>
+	<figure>
+		<caption>Diagram of the graph <m>G = (V,E)</m>.</caption>
+		<image width="25%">
+			<description>Diagram illustrating a basic example graph.</description>
+			<latex-image><xi:include href="graphs.d/basic-example.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
+</example>
+
+<example xml:id="example-graphs-basic-graph-2">
+<!-- \label{EXAMPLE::basic.graph.2} -->
+	<title>A slightly more complicated example graph</title>
+	<p>
+	The graph <m>G = (V,E)</m>, where
+	<md><mrow>
+		V \amp = \{ v_1, v_2, v_3, v_4 \}, \amp
+		E \amp = \bigl\{ \{v_1, v_2\}, \{v_1, v_2\}, \{v_1, v_2\}, \{ v_3 \}, \{ v_3 \} \bigr\},
+	</mrow></md>
+	has four vertices and five edges.
+	</p>
+	<figure>
+		<caption>Diagram of the graph <m>G = (V,E)</m>.</caption>
+		<image width="33%">
+			<description>Diagram illustrating a slightly more complicated example graph.</description>
+			<latex-image><xi:include href="graphs.d/basic-complicated-example.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
+</example>
+
+</section>
+
+<section xml:id="section-graphs-properties">
+<title>Properties of graphs</title>
+
+<subsection>
+<title>Properties of vertices and edges</title>
+
+<p><dl>
+
+	<li>
+		<title>loop</title>
+		<idx>loop</idx>
+		<idx><h>edge</h><h>loop</h></idx>
+		<idx><h>graph</h><h>edge</h><h>loop</h></idx>
+		<p> an edge which connects a vertex to itself </p>
+	</li>
+
+	<li>
+		<title>parallel edges</title>
+		<idx>parallel edges</idx>
+		<idx><h>edge</h><h>parallel</h></idx>
+		<idx><h>graph</h><h>edge</h><h>parallel</h></idx>
+		<p> edges which connect the same vertices </p>
+	</li>
+
+	<li xml:id="definition-graphs-simple">
+	<!-- \label{DEFN::simple.graph} -->
+		<title>simple graph</title>
+		<idx><h>simple</h><h>graph</h></idx>
+		<idx><h>graph</h><h>simple</h></idx>
+		<p> no loops or parallel edges </p>
+	</li>
+
+	<li>
+		<title>adjacent vertices</title>
+		<idx><h>adjacent</h><h>vertices</h></idx>
+		<idx><h>vertex</h><h>adjacent</h></idx>
+		<idx><h>graph</h><h>vertex</h><h>adjacent</h></idx>
+		<p> connected by an edge </p>
+	</li>
+
+	<li>
+		<title>adjacent edges</title>
+		<idx><h>adjacent</h><h>edges</h></idx>
+		<idx><h>edge</h><h>adjacent</h></idx>
+		<idx><h>graph</h><h>edge</h><h>adjacent</h></idx>
+		<p> share a common vertex </p>
+	</li>
+
+	<li>
+		<title>incident</title>
+		<idx>incident edge/vertex</idx>
+		<idx><h>graph</h><h>incident edge/vertex</h></idx>
+		<idx><h>vertex</h><h>incident edge</h></idx>
+		<idx><h>edge</h><h>incident vertex</h></idx>
+		<idx><h>graph</h><h>vertex</h><h>incident edge</h></idx>
+		<idx><h>graph</h><h>edge</h><h>incident vertex</h></idx>
+		<p>
+		a pair of a vertex and edge where the edge connects the vertex either to itself or another vertex of the graph
+		</p>
+	</li>
+
+	<li>
+		<title>isolated vertex</title>
+		<idx><h>isolated</h><h>vertex</h></idx>
+		<idx><h>vertex</h><h>isolated</h></idx>
+		<idx><h>graph</h><h>vertex</h><h>isolated</h></idx>
+		<p> a vertex that is incident with <em>no</em> edges </p>
+	</li>
+
+	<li>
+		<title>degree (of a vertex)</title>
+		<idx>degree (of a vertex)</idx>
+		<idx><h>vertex</h><h>degree</h></idx>
+		<idx><h>graph</h><h>vertex</h><h>degree</h></idx>
+		<p> the number of times that the vertex is incident with an edge of the graph </p>
+	</li>
+
+	<li>
+		<title><m>\deg v</m></title>
+		<notation>
+			<usage><m>\deg v</m></usage>
+			<description>degree of vertex <m>v</m></description>
+		</notation>
+		<p> degree of vertex <m>v</m> </p>
+	</li>
+
+</dl></p>
+
+<note><p>
+	In a <em>simple</em> graph, the degree of each vertex is equal to the number of incident edges.
+	However, in a <em>non</em>-simple graph, a loop is incident to its vertex <em>twice</em>,
+	and we count that in the degree:
+	<me>
+		\deg v
+		= \ncardop \{\text{ edges that are incident to } v \text{ but not loops at } v\}
+		+ 2 \cdot \ncardop \{\text{ loops at } v\}.
+	</me>
+</p></note>
+
+<example>
+	<title>Properties of our very basic example graph</title>
+	<p>
+	The graph of <xref ref="example-graphs-basic-graph-1" /> has the following properties.
+	<ul>
+		<li> It is a simple graph. </li>
+		<li> Each pair of vertices is adjacent. </li>
+		<li> Each pair of edges is adjacent but not parallel. </li>
+		<li> There are no loops. </li>
+		<li> Each vertex is incident to two non-loop edges, so each vertex has degree <m>2</m>. </li>
+	</ul>
+	</p>
+</example>
+
+<example>
+	<title>Properties of our slightly more complicated example graph</title>
+	<p>
+	The graph of <xref ref="example-graphs-basic-graph-2" /> has the following properties.
+	<ul>
+		<li> It is not a simple graph. </li>
+		<li> There are three parallel edges connecting <m>v_1</m> and <m>v_2</m>. </li>
+		<li> There are two loops at vertex <m>v_3</m> (and these are also parallel edges). </li>
+		<li> The parallel edges between <m>v_1</m> and <m>v_2</m> are adjacent, as are the two loops at <m>v_3</m>. </li>
+		<li> Vertices <m>v_1</m> and <m>v_2</m> are adjacent, and vertex <m>v_3</m> is adjacent to itself. </li>
+		<li> Vertices <m>v_1</m> and <m>v_2</m> are incident to the three edges running between them, and vertex <m>v_3</m> is incident to its two loops. </li>
+		<li> Vertex <m>v_4</m> is isolated </li>
+		<li>
+			For degrees we have
+			<md><mrow>
+				\deg v_1 \amp = \deg v_2 = 3, \amp
+				\deg v_3 \amp = 4, \amp
+				\deg v_4 \amp = 0
+			</mrow></md>.
+		</li>
+	</ul>
+	</p>
+</example>
+
+<p>
+The number of edges in a graph is an important measure both of how <q>connected</q> the graph is,
+as well as how much <q>redundancy</q> the graph contains.
+<dl><li>
+	<title><m>\card{E}</m></title>
+	<notation>
+		<usage><m>\card{E}</m></usage>
+		<description>the number of edges in the graph <m>G = (V,E)</m></description>
+	</notation>
+	<p> the number of edges in the graph <m>G = (V,E)</m> </p>
+</li></dl>
+</p>
+
+<theorem xml:id="theorem-graphs-sum-of-degrees">
+<!-- \label{THEOREM::sum.of.degrees.in.graph} -->
+	<title>Sum of degrees is twice the number of edges</title>
+	<statement><p>
+		Suppose <m>G = (V,E)</m> is a graph with vertex set <m>V = \{ v_1, v_2, \dotsc, v_n \}</m>.
+		Then,
+		<me> \deg v_1 + \deg v_2 + \dotsc \deg v_n = 2\card{E}. </me>
+	</p></statement>
+	<proof><title>Proof idea</title><p>
+		If an edge <m>e</m> is a loop at vertex <m>v_i</m>, then it contributes <m>2</m> to <m>\deg v_i</m>.
+		Otherwise, if edge <m>e</m> connects vertices <m>v_i</m> and <m>v_j</m> (<m>v_i \neq v_j</m>),
+		then it contributes <m>1</m> to each of <m>\deg v_i</m>  and <m>\deg v_j</m>.
+		In every case, each edge contributes exactly <m>2</m> to the sum of the vertex degrees.
+	</p></proof>
+</theorem>
+
+<corollary>
+	<title>Odd degrees are even</title>
+	<statement><p> In every graph, the number of vertices of odd degree is even. </p></statement>
+	<proof><title>Proof idea</title><p> Otherwise, the sum of the degrees of all vertices would be odd, which contradicts the theorem above. </p></proof>
+</corollary>
+
+<problem> <!-- worked example -->
+	<statement><p>
+		An odd fellow throws an odd party and invites an even number of other equally-odd people.
+		Each odd person at the party is friends with an odd number of other odd people at the party.
+		Is this odd party even possible?
+	</p></statement>
+	<solution><p>
+		Create a simple graph with the people at the party as vertices,
+		where two vertices are connected by a single edge if and only if the two people are friends.
+		As each person has an odd number of friends at the party,
+		the degree of each vertex is odd.
+		But the number of party attendees is also odd,
+		since there are an even number of invitees, plus the host himself.
+		So we have an odd number of vertices each with odd degree,
+		which the corollary above says is not possible.
+	</p></solution>
+</problem>
+
+</subsection>
+
+<subsection>
+<title>Subgraphs</title>
+
+<p><dl>
+
+	<li>
+		<title>subgraph</title>
+		<idx>subgraph</idx>
+		<idx><h>graph</h><h>sub-</h></idx>
+		<p> a graph that is a part of a larger graph </p>
+	</li>
+
+	<li xml:id="notationdef-graphs-subgraph">
+		<title><m>G' \subgraph G</m></title>
+		<notation>
+			<usage><m>G' \subgraph G</m></usage>
+			<description>graph <m>G'</m> is a subgraph of graph <m>G</m></description>
+		</notation>
+		<p> graph <m>G'</m> is a subgraph of graph <m>G</m> </p>
+	</li>
+
+</dl></p>
+
+<remark><p>
+	Without a diagram, how can we tell if a graph <m>G' = (V',E')</m> is a subgraph of another graph <m>G = (V,E)</m>?
+	First, each vertex of <m>G'</m> should also be a vertex of <m>G</m>, so that <m>V' \subseteq V</m>.
+	And also, each edge of <m>G'</m> should also appear as an edge in <m>G</m>.
+	(Though we shouldn't just write <m>E' \subseteq E</m>, and not only because <m>E'</m> and <m>E</m> are actually sets <mdash />
+	see <xref ref="activity-graphs-subgraphs-by-arbitrary-subsets" />.)
+</p></remark>
+
+<note><p>
+	Just as <m>\emptyset \subseteq A</m> and <m>A \subseteq A</m> for every set <m>A</m>,
+	we consider <m>(\emptyset,\emptyset) \subgraph G</m> and <m>G \subgraph G</m> for every graph <m>G</m>.
+</p></note>
+
+<problem> <!-- worked example -->
+	<statement><p>
+		Determine all possible subgraphs of the graph in
+		<xref ref="example-graphs-basic-graph-1" />.
+	</p></statement>
+	<solution>
+		<p>
+		First, every graph contains the empty graph as a subgraph.
+		Next, a nonempty subgraph of this particular graph can contain one, two, or all three vertices.
+		We can write out all nonempty possibilities in a general way based on the number of vertices in the subgraph.
+		In each graph below we require the vertex indices <m>i, j, k</m> to all be distinct and to satisfy <m>1 \le i,j,k \le 3</m>.
+		</p>
+		<figure xml:id="figure-graphs-basic-subgraphs">
+			<caption>All possible subgraphs of our basic example graph from <xref ref="example-graphs-basic-graph-1" />.</caption>
+			<image>
+				<description>All possible subgraphs of our basic example graph.</description>
+				<latex-image><xi:include href="graphs.d/basic-subgraphs.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+		<p>
+		There are <m>3</m> subgraphs of each of the first three types in <xref ref="figure-graphs-basic-subgraphs" />.
+		There are also <m>3</m> subgraphs of the fourth and fifth types.
+		Therefore, including the empty graph, there are <m>18</m> subgraphs of this example graph.
+		</p>
+	</solution>
+</problem>
+
+</subsection>
+
+<subsection>
+<title>Complete graphs</title>
+
+<p><dl>
+	<li xml:id="definition-graphs-complete">
+	<!-- \label{DEFN::complete.graph} -->
+		<title>complete graph</title>
+		<idx>complete graph</idx>
+		<idx><h>graph</h><h>complete</h></idx>
+		<p>  a graph in which every pair of distinct vertices is connected by exactly one edge </p>
+	</li>
+</dl></p>
+
+<proposition xml:id="proposition-graphs-complete">
+	<title>Properties of complete graphs</title>
+	<p><ol>
+
+		<li> Complete graphs are simple. </li>
+
+		<li>
+		<!-- \label{EXAMPLE::complete.graphs}   huh? -->
+			<p>
+			For each <m>n \ge 0</m>,
+			there is a <em>unique</em> complete graph
+			<m>K_n = (V,E)</m> with <m>\card{V} = n</m>.
+			<idx>complete graph</idx>
+			<idx><h>graph</h><h>complete</h></idx>
+			<notation>
+				<usage><m>K_n</m></usage>
+				<description>the unique complete graph with <m>n</m> vertices</description>
+			</notation>
+			</p>
+		</li>
+
+		<li> If <m>n \ge 1</m>, then every vertex in <m>K_n</m> has degree <m>n-1</m>. </li>
+
+		<li xml:id="proposition-graphs-complete-simple-subgraph">
+		<!-- \label{FACT::simple.subgraph.of.complete} -->
+			Every simple graph with <m>n</m> or fewer vertices is a subgraph of <m>K_n</m>.
+		</li>
+
+	</ol></p>
+</proposition>
+
+<!-- TODO These diagrams used to be inside the proposition. Are they better here? -->
+<figure xml:id="figure-graphs-complete-diagrams">
+	<caption>Complete graphs with <m>1</m>, <m>2</m>, <m>3</m>, and <m>6</m> vertices.</caption>
+	<sbsgroup>
+		<sidebyside>  <!-- all three images are fudged to have same dimensions -->
+			<figure>
+				<caption><m>K_1</m>.</caption>
+				<image>
+					<description>Complete graph with one vertex</description>
+					<latex-image><xi:include href="graphs.d/K1.tex" parse="text" /></latex-image>
+				</image>
+			</figure>
+			<figure>
+				<caption><m>K_2</m>.</caption>
+				<image>
+					<description>Complete graph with two vertices</description>
+					<latex-image><xi:include href="graphs.d/K2.tex" parse="text" /></latex-image>
+				</image>
+			</figure>
+			<figure>
+				<caption><m>K_3</m>.</caption>
+				<image>
+					<description>Complete graph with three vertices</description>
+					<latex-image><xi:include href="graphs.d/K3.tex" parse="text" /></latex-image>
+				</image>
+			</figure>
+		</sidebyside>
+		<sidebyside>
+			<figure>
+				<caption><m>K_6</m>.</caption>
+				<image>
+					<description>Complete graph with six vertices</description>
+					<latex-image><xi:include href="graphs.d/K6.tex" parse="text" /></latex-image>
+				</image>
+			</figure>
+		</sidebyside>
+	</sbsgroup>
+</figure>
+
+<exercise><p> Draw the complete graphs <m>K_4</m> and <m>K_5</m>. </p></exercise>
+<exercise><p> Is there a complete graph <m>K_0</m>? </p></exercise>
+
+</subsection>
+
+</section>
+
+<section xml:id="section-graphs-adding-info">
+<title>Adding information to graphs</title>
+
+<p><dl width="narrow">
+
+	<li>
+		<title>weighted graph (working definition)</title>
+		<idx><h>weighted graph</h><h>working definition</h></idx>
+		<idx><h>graph</h><h>weighted</h><h>working definition</h></idx>
+		<p>
+		a graph in which each edge is assigned a <em>weight</em> or <em>cost</em>,
+		usually a numerical value
+		</p>
+	</li>
+
+	<li xml:id="definition-graphs-weighted-formal">
+		<title>weighted graph (formal definition)</title>
+		<idx><h>weighted graph</h><h>formal definition</h></idx>
+		<idx><h>graph</h><h>weighted</h><h>formal definition</h></idx>
+		<p>
+		an ordered triple <m>(V,E,w)</m>,
+		where <m>(V,E)</m> is an ordinary graph and <m>\funcdef{w}{E}{W}</m> is a function with some set <m>W</m> as codomain
+		</p>
+	</li>
+
+	<li>
+		<title>weights</title>
+		<p> elements of the image <m>w(E) \subseteq W</m> </p>
+	</li>
+
+</dl></p>
+
+<p> We usually label each edge with its weight on diagrams for the graph. </p>
+
+<example xml:id="example-graphs-camrose-road-map">
+	<title>A road map weighted by distances</title>
+	<p>
+	A road map with distances as weights is a weighted graph.
+	Below is a simplified road map of the area around Camrose, Alberta.
+	The vertex set is the set of cities, and the edge set is the set of highways.
+	For example, the two-city set {Camrose, Edmonton} represents the edge on the graph between Camrose and Edmonton, and corresponds to Highway 21.
+	</p>
+	<sidebyside>
+		<figure>
+			<caption>Road map of the area around Camrose, Alberta.</caption>
+			<image>
+				<description>Road map of the area around Camrose, Alberta.</description>
+				<latex-image><xi:include href="graphs.d/camrose-highways.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+		<figure>
+			<caption>Table of values for distance weight function.</caption>
+			<tabular>
+				<col right="minor" /><col />
+				<row bottom="minor"><cell><m>e</m></cell><cell><m>w(e)</m></cell></row>
+				<row><cell>{Camrose, Edmonton}</cell><cell><m>94</m></cell></row>
+				<row><cell>{Edmonton, Leduc}</cell><cell><m>35</m></cell></row>
+				<row><cell>{Leduc, Wetaskiwin}</cell><cell><m>35</m></cell></row>
+				<row><cell>{Wetaskiwin, Camrose}</cell><cell><m>40</m></cell></row>
+			</tabular>
+		</figure>
+	</sidebyside>
+	<p>
+	The edges in the graph are weighted by the (rounded) highway distances between cities.
+	Formally, this is a function <m>w</m> from the edge set to the natural numbers.
+	The input-output relationship defining this function is tabulated above right.
+	</p>
+</example>
+
+<example><p>
+	Variations on <xref ref="example-graphs-camrose-road-map" />
+	include any kind of transportation or communication network with transportation/communication lines as edges.
+	Possible weights assigned to an edge include:
+	length of the line;
+	amount of time it takes a vehicle/message to travel along the line from one node to the next;
+	capacity of the line in vehicles/passengers/messages/data per unit time;
+	<etc />.
+</p></example>
+
+<p><dl width="narrow">
+	<li>
+		<title>directed graph (working definition)</title>
+		<idx><h>directed graph</h><h>working definition</h></idx>
+		<idx><h>graph</h><h>directed</h><h>working definition</h></idx>
+		<p> a graph in which each edge can be given a direction, <q>pointing</q> to one of its incident vertices </p>
+	</li>
+	<li xml:id="definition-graphs-directed-formal">
+		<title>directed graph (formal definition)</title>
+		<idx><h>directed graph</h><h>formal definition</h></idx>
+		<idx><h>graph</h><h>directed</h><h>formal definition</h></idx>
+		<p>
+		an ordered pair <m>(V,E)</m>,
+		where <m>V</m> is a finite set and <m>E</m> is an unordered, possibly empty list of elements of <m>V \times V</m>
+		</p>
+	</li>
+</dl></p>
+
+<p>
+Again, elements of <m>V</m> are the vertices and elements of <m>E</m> are the edges of the graph.
+For an ordinary graph, edges were represented by subsets of <m>V</m> because when specifying an edge, the order of the vertices which are to be incident to the edge is irrelevant.
+For a directed graph, the order of the vertices incident to an edge now matters, so we use ordered pairs of vertices to specify an edge.
+If <m>e = (v,v') \in E</m> for some <m>v,v' \in V</m>,
+consider the direction of <m>e</m> to be <m>v \to v'</m>.
+</p>
+
+<example>
+	<title>A basic directed graph</title>
+	<p>
+	Consider
+	<md alignment="gather">
+		<mrow> V = \{ v_1, v_2, v_3, v_4 \}, </mrow>
+		<mrow> E = \{ (v_1,v_2), (v_1,v_2), (v_2,v_3), (v_3,v_2), (v_4,v_3), (v_4,v_4) \}. </mrow>
+	</md>
+	We draw the graph <m>G = (V,E)</m> with arrows to indicate the direction of edges.
+	</p>
+	<figure>
+		<caption>Diagram of the directed graph <m>G = (V,E)</m>.</caption>
+		<image width="50%">
+			<description>Diagram for a basic directed graph.</description>
+			<latex-image><xi:include href="graphs.d/basic-directed.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
+</example>
+
+<exercise><p>
+	Invent a formal definition for <term>directed, weighted graph</term>.
+</p></exercise>
+
+</section>
+
+<section xml:id="section-graphs-important-examples">
+<title>Important examples</title>
+
+<example xml:id="example-graphs-pow-set">
+<!-- \label{EXAMPLE::pow.set.graph} -->
+	<title>A power set graph</title>
+	<p>
+	We can use a graph to visualize the power set of a finite set <m>A</m>:
+	let <m>(\powset{A},E)</m> be the directed graph where, for vertices <m>B,C \in \powset{A}</m>
+	(that is, subsets <m>B,C \subseteq A</m>),
+	the ordered pair <m>(B,C)</m> is an edge in <m>E</m> if the following two conditions are satisfied:
+	<ol label="(i)">
+		<li> <m>B \subsetneqq C</m>; and </li>
+		<li> there <em>does not</em> exist a subset <m>D \subseteq A</m> such that <m>B \subsetneqq D \subsetneqq C</m>. </li>
+	</ol>
+	<em>Note:</em> The second condition is to avoid cluttering the graph with extra edges that do not add any extra information.
+	</p><p>
+	For example, consider <m>A = \{a,b,c\}</m> and
+	<me>
+		\powset{A} = \left\{
+			\, \emptyset, \, \{a\}, \, \{b\}, \, \{c\},\,
+			\{a,b\},\, \{a,c\},\, \{b,c\},\, \{a,b,c\} \,
+		\right\}.
+	</me>
+	So we can draw a graph to represent the subset relationships of <m>\powset{A}</m>,
+	with arrows to point from subset to superset.
+	</p>
+	<figure xml:id="figure-graphs-pow-set">
+		<caption>Directed graph to represent the subset relationships between elements of <m>\powset{A}</m>.</caption>
+		<image width="55%">
+			<description>Directed graph representing subset relationships in a power set.</description>
+			<latex-image><xi:include href="graphs.d/powset.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
+	<p>
+	It is somewhat natural to draw the graph with the largest subsets of <m>A</m> at the top (or at the bottom).
+	If we decide that arrows will always point <em>upwards</em>,
+	we can unclutter our graph by just drawing lines instead of arrows for edges.
+	</p>
+<!-- % 	\begin{jsgraph}
+% 		\lvertex{0,0}{e}{below:$\scriptstyle \emptyset$}
+% 		\lvertexlinefrom{-2,1}{a}{below left:{$\scriptstyle \{a\}$}}{e}
+% 		\lvertexlinefrom{0,1}{b}{below left:{$\scriptstyle \{b\}$}}{e}
+% 		\lvertexlinefrom{2,1}{c}{below right:{$\scriptstyle \{c\}$}}{e}
+% 		\lvertexlinefrom{-2,2}{ab}{above left:{$\scriptstyle \{a,b\}$}}{a,b}
+% 		\lvertexlinefrom{0,2}{ac}{above left:{$\scriptstyle \{a,c\}$}}{a,c}
+% 		\lvertexlinefrom{2,2}{bc}{above right:{$\scriptstyle \{b,c\}$}}{b,c}
+% 		\lvertexlinefrom{0,3}{abc}{above:{$\scriptstyle \{a,b,c\}$}}{ab,ac,bc}
+% 	\end{jsgraph} -->
+</example>
+
+<p> We can use graphs to visualize other kinds of mathematical relationships. </p>
+
+<example xml:id="example-graphs-divides">
+<!-- \label{EXAMPLE::divides.graph} -->
+	<title>A division graph</title>
+	<p>
+	For integers <m>m,n</m>, write <m>m \mid n</m> if <m>m</m> divides <m>n</m>;
+	that is, if <m>n/m</m> is also an integer.
+	In this case, we say that <m>m</m> <term>divides</term> <m>n</m>.
+	</p><p>
+	Set <me> V = \{2,3,4,5,6,7,8,9,10,11,12,13,14\} </me>.
+	Let <m>G = (V,E)</m> be the directed graph where, for integers <m>m,n \in V</m> with <m>m \lt n</m>,
+	the ordered pair <m>(m,n)</m> is an edge in <m>E</m> if the following two conditions are satisfied:
+	<ol label="(i)">
+		<li> <m>m \mid n</m>; </li>
+		<li>
+			there <em>does not</em> exist an integer <m>\ell \in V</m> such that <m>m \mid \ell</m> and <m>\ell \mid n</m>,
+			but <m>\ell \ne m,n</m>.
+		</li>
+	</ol>
+	We can use this directed graph to visualize the set <m>V</m> with respect to the <term>divides</term> relationship.
+	Again, we agree that arrows will always point <em>up</em>,
+	but do not actually draw them. Note that the prime numbers all appear at the bottom.
+	</p>
+	<figure xml:id="figure-graphs-divides">
+		<caption>Directed graph to represent the relationship of division between elements of <m>V</m>.</caption>
+		<image width="50%">
+			<description>Directed graph representing division relationships in a set of integers.</description>
+			<latex-image><xi:include href="graphs.d/divides.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
+</example>
+
+<example>
+	<title>Travelling salesman problem</title>
+	<p>
+	You get a summer job with the Prospective Student Office at the University of Alberta's Augustana Campus in Camrose, Alberta.
+	In May and June, your job is to visit Alberta high schools and meet with students who are thinking of applying to Augustana.
+	Below is a map of the cities and towns you must visit, given as a weighted graph with distances in kilometres as weights.
+	To save on gas, you would like to visit each city and town <em>exactly</em> once,
+	and do so while travelling the shortest distance possible.
+	</p>
+	<figure>
+		<caption>Road map of major centres in Alberta as a weighted graph.</caption>
+		<image>
+			<description>Road map of major centres in Alberta as a weighted graph.</description>
+			<latex-image><xi:include href="graphs.d/travelling.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
+	<p> This is a difficult problem, and gets more difficult as the number of cities and roads increases. </p>
+</example>
+
+</section>
+
+<xi:include href="./graphs.d/activities.ptx" />
+<xi:include href="./graphs.d/exercises.ptx" />
+
+</chapter>
