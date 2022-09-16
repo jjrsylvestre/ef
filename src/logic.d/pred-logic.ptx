@@ -466,7 +466,7 @@ but we will establish rules that make it easy in symbolic logic.
 			</mrow>
 		</md>
 		with justifications
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> quantifier negation; </li>
 			<li> known equivalence <m>p\lgccond q \lgcequiv \lgcnot p \lgcor q</m>; </li>
 			<li> DeMorgan, double negation; </li>

@@ -356,7 +356,7 @@ But <m>\R</m> is so large that it is <em>un</em>countable, so it seems like <m>\
 		<idx><h>set(s)</h><h>larger</h></idx>
 		<p>
 		set <m>B</m> is <term>larger</term> than set <m>A</m> if
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> <m>B</m> has a subset the same size as <m>A</m>, and </li>
 			<li> every subset of <m>B</m> which is the same size as <m>A</m> is proper </li>
 		</ol>
@@ -376,7 +376,7 @@ But <m>\R</m> is so large that it is <em>un</em>countable, so it seems like <m>\
 	<idx><h>set(s)</h><h>larger</h><h>Test</h></idx>
 	<idx><h>Test</h><h>larger/smaller set</h></idx>
 	<statement>
-		<p><ol label="(i)">
+		<p><ol marker="(i)">
 			<li> Show there exists an injection <m>A \ifuncto B</m>. </li>
 			<li>
 				Show that <em>every</em> injection <m>A \ifuncto B</m> cannot also be a surjection.
@@ -392,7 +392,7 @@ But <m>\R</m> is so large that it is <em>un</em>countable, so it seems like <m>\
 <remark xml:id="remark-countable-larger-set-test"><p><ol>
 	<li><p>
 		Matching up the parts of the Test with the parts of the definition of <term>larger set</term>:
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li>
 				The existence of an injection <m>\ifuncdef{f}{A}{B}</m> demonstrates that <m>B</m> has a subset that is the same size as <m>A</m>, as restricting the codomain to <m>\funcdef{f}{A}{f(A)}</m> creates a bijection.
 			</li>
@@ -428,7 +428,7 @@ But <m>\R</m> is so large that it is <em>un</em>countable, so it seems like <m>\
 		We will apply the
 		<xref ref="test-countable-larger-set" text="custom">Larger Set Test</xref>
 		to demonstrate that <m>\powset{A}</m> is larger than <m>A</m>.
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li>
 				There exists a natural injection
 				<md>

@@ -101,7 +101,7 @@ respective owners.
 <exercise>
 	<p> The set <m>\scr{C}</m> of <em>constructible numbers</em> can be defined inductively as follows. </p>
 	<case><title>Base clause</title><p> Assume <m>1 \in \scr{C}</m>. </p></case>
-	<case><title>Inductive clauses</title><p><ol label="(i)">
+	<case><title>Inductive clauses</title><p><ol marker="(i)">
 		<li>
 			Whenever <m>a,b \in \scr{C}</m>,
 			then so are
@@ -123,7 +123,7 @@ respective owners.
 	<statement>
 		<p> Consider the following inductively defined set <m>A \subseteq \N</m>. </p>
 		<case><title>Base clause</title><p> Assume <m>32879 \in A</m>. </p></case>
-		<case><title>Inductive clauses</title><p><ol label="(i)">
+		<case><title>Inductive clauses</title><p><ol marker="(i)">
 			<li>
 				When <m>a</m> is an element of <m>A</m>,
 				then each of the prime factors of <m>a</m> is also an element of <m>A</m>.

@@ -27,7 +27,7 @@ respective owners.
 	<p>
 	Suppose <m>P(n)</m> is a predicate where the variable <m>n</m> has domain the positive, whole numbers.
 	If
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li> <m>P(1)</m> is true, and </li>
 		<li> <m>(\forall k)\bbrac{P(k) \lgccond P(k+1)}</m> is true, </li>
 	</ol>
@@ -324,7 +324,7 @@ Now, here is some specific terminology associated to proofs by induction.
 	<p>
 	Suppose <m>P(n)</m> is a predicate where the variable <m>n</m> has domain the positive, whole numbers.
 	If
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li> <m>P(1)</m> is true, and </li>
 		<li> <m>(\forall k)\Bbrac{ \bbrac{ P(1) \lgcand P(2) \lgcand \dotsb \lgcand P(k) } \lgccond P(k+1)}</m> is true, </li>
 	</ol>

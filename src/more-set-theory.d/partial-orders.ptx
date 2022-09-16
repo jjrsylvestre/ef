@@ -211,7 +211,7 @@ Make sure to keep this straight!
 		<li><p>
 			for letters <m>a_1, a_2 \in \Sigma</m> and words <m>w_1, w_2 \in \words{\Sigma}</m>,
 			take <m>a_1 w_1 \words{\partorder} a_2 w_2</m> to mean that either
-			<ol label="(i)">
+			<ol marker="(i)">
 				<li> <m>a_1 \ne a_2</m> and <m>a_1 \partorder a_2</m>, or </li>
 				<li> <m>a_1 = a_2</m> and <m>w_1 \words{\partorder} w_2</m>. </li>
 			</ol>
@@ -230,7 +230,7 @@ Make sure to keep this straight!
 	If <m>\mathord{\partorder_A}, \mathord{\partorder_B}</m> are partial orders on sets <m>A,B</m>, respectively,
 	we can define a partial order <m>\mathord{\partorder}</m> on <m>A \cartprod B</m> by
 	allowing <m>(a_1, b_1) \partorder (a_2, b_2)</m> to mean that either
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li> <m>a_1 \ne a_2</m> and <m>a_1 \partorder_A a_2</m>, or </li>
 		<li> <m>a_1 = a_2</m> and <m>b_1 \partorder_B b_2</m>. </li>
 	</ol>
@@ -266,7 +266,7 @@ Make sure to keep this straight!
 	<title>Transferring <m>\le</m> on <m>\N</m> to a power set</title>
 	<p> Let <m>A = \{a,b,c,d\}</m>, and let us <q>encode</q> each element of <m>\powset{A}</m> by the following algorithm. </p>
 	<p> Given input element <m>X \in \powset{A}</m> (that is, given input <m>X</m> that is a subset of <m>A</m>):
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li> Initialize encoded value <m>r = 0</m>. </li>
 		<li> If <m>X</m> contains <m>a</m>, add <m>1</m> to <m>r</m>. </li>
 		<li> If <m>X</m> contains <m>b</m>, add <m>2</m> to <m>r</m>. </li>

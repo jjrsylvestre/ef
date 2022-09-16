@@ -111,7 +111,7 @@ respective owners.
 <p>
 Defining a function is a <alert>two-step process</alert>,
 in which we need to specify <alert>three pieces of information</alert>:
-<ol label="(i)">
+<ol marker="(i)">
 	<li> the <term><xref ref="definition-funcs-domain" text="title" /></term>, </li>
 	<li> the <term><xref ref="definition-funcs-codomain" text="title" /></term>, and </li>
 	<li> the <term><xref ref="definition-funcs-rule" text="title" /></term>. </li>

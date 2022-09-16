@@ -515,7 +515,7 @@ But that is always precisely the case.
 	<title>Determining a quotient</title>
 	<statement><p>
 		Let <m>\mathord{\equiv}</m> represent the equivalence relation on <m>\Z</m> defined by
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> <m>0 \equiv 0</m>, and </li>
 			<li>
 				for non-zero <m>m,n \in \Z</m>,

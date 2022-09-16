@@ -212,7 +212,7 @@ respective owners.
 			and prove that this implies that <xref ref="theorem-trees-characterizations-new-edge" text="local">Statement</xref> must also be false.
 			</p><p>
 			For <xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref> to be false, one of the following must be true.
-			<ol label="(i)">
+			<ol marker="(i)">
 				<li> Loops exist in <m>G</m>. </li>
 				<li> Some pair of distinct vertices in <m>G</m> is not connected. </li>
 				<li> Some pair of distinct vertices in <m>G</m> is connected by more than one path. </li>
@@ -238,7 +238,7 @@ respective owners.
 			and proving that <xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref> is also false.
 			</p><p>
 			For <xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref> to be false, one of the following is true.
-			<ol label="(i)">
+			<ol marker="(i)">
 				<li> Graph <m>G</m> is not connected. </li>
 				<li> Some edge in <m>G</m> is not a bridge. </li>
 			</ol>

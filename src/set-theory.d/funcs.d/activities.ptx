@@ -38,7 +38,7 @@ respective owners.
 <activity>
 	<introduction><p>
 		For each function <m>\funcdef{f}{A}{B}</m> defined below, carry out the following.
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li>
 				Decide whether the function is injective.
 				Use the <xref ref="test-funcs-inj" text="custom">Injective Function Test</xref>
@@ -99,7 +99,7 @@ respective owners.
 		<xref ref="activity-funcs-bij-from-restricted-codomain-restrict" text="type-local" />
 		has an inverse <m>\inv{f}</m>.
 		Describe this inverse by specifying its
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> <xref ref="definition-funcs-domain" text="title" />, </li>
 			<li> <xref ref="definition-funcs-codomain" text="title" />, and </li>
 			<li> <xref ref="definition-funcs-rule" text="title" />. </li>

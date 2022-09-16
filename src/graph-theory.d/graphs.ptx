@@ -632,7 +632,7 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 	let <m>(\powset{A},E)</m> be the directed graph where, for vertices <m>B,C \in \powset{A}</m>
 	(that is, subsets <m>B,C \subseteq A</m>),
 	the ordered pair <m>(B,C)</m> is an edge in <m>E</m> if the following two conditions are satisfied:
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li> <m>B \subsetneqq C</m>; and </li>
 		<li> there <em>does not</em> exist a subset <m>D \subseteq A</m> such that <m>B \subsetneqq D \subsetneqq C</m>. </li>
 	</ol>
@@ -685,7 +685,7 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 	Set <me> V = \{2,3,4,5,6,7,8,9,10,11,12,13,14\} </me>.
 	Let <m>G = (V,E)</m> be the directed graph where, for integers <m>m,n \in V</m> with <m>m \lt n</m>,
 	the ordered pair <m>(m,n)</m> is an edge in <m>E</m> if the following two conditions are satisfied:
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li> <m>m \mid n</m>; </li>
 		<li>
 			there <em>does not</em> exist an integer <m>\ell \in V</m> such that <m>m \mid \ell</m> and <m>\ell \mid n</m>,

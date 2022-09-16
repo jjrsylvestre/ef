@@ -469,7 +469,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<p> To demonstrate <m>A = B</m>, check that both <m>A \subseteq B</m> and <m>B \subseteq A</m>. </p>
 		<p>
 		This requires two applications of the <xref ref="test-sets-subset" text="custom">Subset Test</xref>:
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> begin with the assumption <m>x \in A</m> and proceed to the conclusion <m>x \in B</m>; </li>
 			<li> begin with the assumption <m>x \in B</m> and proceed to the conclusion <m>x \in A</m>. </li>
 		</ol>

@@ -48,7 +48,7 @@ respective owners.
 <activity><p>
 	You and your five housemates pick names out of a hat each week to determine who is going to clean the toilet.
 	Over a three-week period, how many different sequences of toilet bowl cleaners could be determined in this fashion
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li> if names are placed back in the hat after each draw? </li>
 		<li> if names are <em>not</em> placed back in the hat after each draw? </li>
 	</ol>

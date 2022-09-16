@@ -38,7 +38,7 @@ respective owners.
 		For those functions that are bijective, describe the inverse function;
 		that is,
 		specify the inverse function's
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> <xref ref="definition-funcs-domain" text="title" />, </li>
 			<li> <xref ref="definition-funcs-codomain" text="title" />, and </li>
 			<li> <xref ref="definition-funcs-rule" text="title" />. </li>

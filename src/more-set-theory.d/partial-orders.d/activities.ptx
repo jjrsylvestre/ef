@@ -55,7 +55,7 @@ respective owners.
 	<introduction><p>
 		Let <m>A = \{a,b,c,d,e\}</m>.
 		Carry out the following steps for each of the scenarios below.
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> Draw the Hasse diagram for a partial order on <m>A</m> with the requested features. </li>
 			<li> In your diagram, identify all maximal/minimal elements. </li>
 			<li> Identify all pairs of incomparable elements. </li>

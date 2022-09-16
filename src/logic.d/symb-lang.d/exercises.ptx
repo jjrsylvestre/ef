@@ -19,7 +19,7 @@ respective owners.
 <!-- TODO fill out exercises -->
 	<!-- % THIS IS FROM ROMAN
 % 	<li> Determine which of the following sentences are logical statements. For each sentence that is a statement, determine whether it is a simple statement or a nonsimple compound statement.
-% 	<ol label="alph">
+% 	<ol marker="alph">
 % 		<li> All math classes are super fun.
 % 		<li> Go team!
 % 		<li> A long time ago.
@@ -31,28 +31,28 @@ respective owners.
 % 	</ol>
 
 % 	<li> Write an English language sentence that expresses the negation of each the following.
-% 	<ol label="alph">
+% 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol>
 
 % 	<li> Let <m>p</m> represent the statement <q>TODO</q> and <m>q</m> represent the statement <q>TODO</q>. Translate the following English language statements into symbolic language.
-% 	<ol label="alph">
+% 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol>
 
 % 	<li> Let <m>p</m> represent the statement <q>TODO</q> and <m>q</m> represent the statement <q>TODO</q>. Translate the following symbolic language statements into proper English sentences.
-% 	<ol label="alph">
+% 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol>
 
 % 	<li> Assign variables to the <em>simple} substatements of the following English language statements. Then translate the statements into symbolic language.
-% 	<ol label="alph">
+% 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol>
 
 % 	<li> \label{EXERCISE::symb.lang::truth.tables}
 % 	Construct a truth table for each of the following.
-% 	<ol label="alph">
+% 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol> -->
 
@@ -262,12 +262,12 @@ respective owners.
 <!-- % 	<li> For each statement in Exercise \ref{EXERCISE::symb.lang::truth.tables}, use a truth table to determine whether it is a tautology, contradiction, or neither.
 
 % 	<li> For each of the following, use the Substitution Rule to show that it is a tautology.
-% 	<ol label="alph">
+% 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol>
 
 % 	<li> For each of the following, use the Substitution Rule to show that it is a contradiction.
-% 	<ol label="alph">
+% 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol> -->
 

@@ -33,7 +33,7 @@ Be careful with definitions: as stated by mathematicians, they often contain imp
 	<p> This definition has some hidden parts: a more complete definition would be as follows. </p>
 	<p>
 	A number is called <term>prime</term> if
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li> it is an integer, </li>
 		<li> it is strictly greater than <m>1</m>, and </li>
 		<li> there does not exist any <em>other</em> number greater than <m>1</m> which divides it. </li>
@@ -52,7 +52,7 @@ You should view a definition as a <em>technical test</em> or <em>collection of t
 	</p></statement>
 	<solution><p>
 		Let us test <m>17</m>.
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> Yes, <m>17</m> is an integer. </li>
 			<li> Yes, <m>17 \gt 1</m>. </li>
 			<li>
@@ -68,7 +68,7 @@ You should view a definition as a <em>technical test</em> or <em>collection of t
 		So <m>17</m> is prime since it passes the technical tests that define the concept of <term>prime</term>.
 		</p><p>
 		Now let us test <m>21</m>.
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> Yes, <m>21</m> is an integer. </li>
 			<li> Yes, <m>21 \gt 1</m>. </li>
 			<li> However, clearly <m>21/3 = 7</m> is an integer, so <m>3</m> divides <m>21</m>. </li>

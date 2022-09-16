@@ -102,7 +102,7 @@ respective owners.
 			<li> <term>wizard</term> (noun), </li>
 			<li> <term>zaps</term> (verb). </li>
 		</ul></p></paragraphs>
-		<paragraphs><title>Axioms</title><p><ol label="1.">
+		<paragraphs><title>Axioms</title><p><ol marker="1.">
 			<li xml:id="exercise-axioms-wizards-axiom-three-wizards">
 				<!-- \label{AXIOM::three.wizards} -->
 				There are at least three distinct wizards.

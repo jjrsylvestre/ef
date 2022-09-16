@@ -150,7 +150,7 @@ respective owners.
 			<p> Let <m>x</m> represent a free variable from the domain of all living humans. </p>
 			<p>
 			Translate the following two statements into properly quantified predicate statements in the variable <m>x</m>.
-			<ol label="(i)">
+			<ol marker="(i)">
 				<li> All university students study diligently. </li>
 				<li> Some university students study diligently. </li>
 			</ol>
@@ -163,7 +163,7 @@ respective owners.
 		<blockquote><p>
 			Let <m>U(x)</m> mean <q><m>x</m> is a university student</q>.
 			Let <m>S(x)</m> mean <q><m>x</m> studies diligently</q>.
-			<ol label="(i)">
+			<ol marker="(i)">
 				<li> <m>(\forall x)\bigl[ U(x) \lgccond S(x) \bigr]</m>. </li>
 				<li> <m>(\exists x)\bigl[ U(x) \lgccond S(x) \bigr]</m>. </li>
 			</ol>

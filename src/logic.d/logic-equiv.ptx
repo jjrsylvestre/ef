@@ -437,7 +437,7 @@ to manipulate an expression involving a conditional.
 		</mrow>
 	</md>
 	with justifications
-	<ol label="(i)">
+	<ol marker="(i)">
 		<li>
 			<xref ref="theorem-logic-equiv-subst-equiv-into-variables">Rule</xref>
 			of our new <xref ref="theorem-logic-equiv-subst-equiv" text="title" />,

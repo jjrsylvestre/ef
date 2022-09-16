@@ -103,7 +103,7 @@ respective owners.
 			Construct a bijection from the power set of <m>A</m> to the set of words in the alphabet <m>\Sigma = \{T,F\}</m> of length <m>n</m>.
 			</p><p>
 			Note that there are two tasks required here.
-			<ol label="(i)">
+			<ol marker="(i)">
 				<li>
 					Explicitly describe a function <m>\funcdef{f}{\powset{A}}{\words{\Sigma}_n}</m> by describing the <xref ref="definition-funcs-rule" text="title" />:
 					give a detailed description of how, given a subset <m>B \subseteq A</m>,

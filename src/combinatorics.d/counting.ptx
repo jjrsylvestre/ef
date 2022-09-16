@@ -436,7 +436,7 @@ where the collection we actually want to count corresponds to equivalence classe
 		we have
 		<me> \card{\Lambda'} = 4 \cdot 3 \cdot 2 \cdot 1 = 24 </me>.
 		For each pair of these words, write <m>w_1 \equiv w_2</m> if the following two conditions hold.
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li>
 				At whatever position <m>w_1</m> contains <m>\alpha_1</m>,
 				<m>w_2</m> contains either <m>\alpha_1</m> or <m>\alpha_2</m> at that same position.

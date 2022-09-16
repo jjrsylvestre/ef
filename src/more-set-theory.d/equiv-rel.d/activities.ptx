@@ -19,7 +19,7 @@ respective owners.
 	<introduction><p>
 		For each of the relations provided,
 		carry out the following steps.
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> Verify that the relation is an equivalence relation on the set <m>A</m>. </li>
 			<li>
 				Consider a few example equivalence classes, for the specific example representative elements provided (if applicable).

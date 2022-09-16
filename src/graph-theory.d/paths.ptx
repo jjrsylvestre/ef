@@ -325,7 +325,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 		<idx><h>graph</h><h>connected</h><h>component (formal definition)</h></idx>
 		<p>
 		a subgraph <m>G'</m> of a graph <m>G</m> that satisfies the following:
-		<ol label="(i)">
+		<ol marker="(i)">
 			<li> <m>G'</m> is connected; </li>
 			<li> if <m>G''</m> is a subgraph of <m>G</m> such that <m>G''</m> is connected and <m>G' \preceq G''</m>, then <m>G'' = G'</m> </li>
 		</ol>
