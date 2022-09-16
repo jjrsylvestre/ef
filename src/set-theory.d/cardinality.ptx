@@ -680,7 +680,7 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 	</p>
 	<figure>
 		<caption>An interval on the real number line.</caption>
-		<image>
+		<image width="70%">
 			<description>An interval on the real number line.</description>
 			<latex-image><xi:include href="cardinality.d/interval.tex" parse="text" /></latex-image>
 		</image>

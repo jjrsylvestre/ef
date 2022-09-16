@@ -1,3 +1,5 @@
+* Shading in Venn diagrams
+
 * Really need a "general proof template" in the proof methods chapter:
   . State assumptions. State goal.
     "Assume ....  We would to prove ...."
@@ -14,7 +16,6 @@
 
 
 * URGENT:
---- fix deprecations about Notation
 --- add titles and fix xrefs for all exercisegroup elements
     (see first exercise group in src/graph-theory.d/trees.d/exercises.ptx)
 ----> I think these are done?

@@ -353,7 +353,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 </p>
 <figure>
 	<caption>A Venn diagram demonstrating a subset relationship.</caption>
-	<image width="33%">
+	<image width="25%">
 		<description>A Venn diagram demonstrating a subset relationship</description>
 		<latex-image><xi:include href="sets.d/subset.tex" parse="text" /></latex-image>
 	</image>
