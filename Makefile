@@ -87,7 +87,7 @@ ${BUILDDIR}/html/.sentinal: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "...copying css style customizations"
 	@cp css/ef.css ${BUILDDIR}/html/
-	@sed -i -e 's/scale: [0-9]*,/scale: 100,/' ${BUILDDIR}/html/*.html
+	@sed -i -e 's/scale: 0\.[0-9]*,/scale: 1.00,/' ${BUILDDIR}/html/*.html
 	@touch ${BUILDDIR}/html/.sentinal
 	@echo "...DONE"
 	@echo "Now call:"
