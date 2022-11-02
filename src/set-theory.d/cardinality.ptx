@@ -154,7 +154,7 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 		<p> a function with domain <m>\emptyset</m> </p>
 	</li></dl></p>
 	<p>
-		If we accept the existence of <term>empty functions</term> <m>\emptyset \to X</m> for every set <m>X</m>,
+		If we accept the existence of an <term>empty function</term> <m>\emptyset \to X</m> for every set <m>X</m>,
 		then the properties of such functions that we need in order to establish <m>\card{\emptyset} = 0</m> will be vacuously true.
 	</p>
 	<proposition xml:id="proposition-cardinality-empty-functions">
