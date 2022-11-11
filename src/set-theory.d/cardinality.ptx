@@ -68,7 +68,7 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 		<title>cardinality (of a finite set <m>A</m>)</title>
 		<idx>cardinality</idx>
 		<idx><h>set(s)</h><h>cardinality</h></idx>
-		<p> the unique natural number <m>m</m> for with a bijection <m>\natnumlt{m} \to A</m> exists </p>
+		<p> the unique natural number <m>m</m> for which a bijection <m>\natnumlt{m} \to A</m> exists </p>
 	</li>
 	<li>
 		<title><m>\card{A}</m></title>
