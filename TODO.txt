@@ -1,3 +1,13 @@
+* Add *simple* to the definition of *complete graph* and then remove that property from the following proposition.
+
+* Add some sort of boxed "how to prove *there exists*"
+--- exhibiting an example or describing how to "constructing" an example
+
+* title of section 19.2 should really be "Definition and examples"
+
+* Example 17.4.1: Graph of the division relation on a finite set of natural numbers
+--- graph needs an edge from 2 to 8
+
 * Shading in Venn diagrams
 
 * Really need a "general proof template" in the proof methods chapter:
