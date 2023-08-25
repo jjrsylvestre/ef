@@ -11,11 +11,6 @@
   . Advance the argument --- this might mean more unpacking, or finding connections between the assumptions.
   . Eventually arrive at the desired goal.
 
-* Add discussion of visualizing Cartesian product as a grid or relative to a set of axes,
-  and then also can visualize a graph of a function as a subset of this grid.
-  --> See email to Faizan Ali on Wed 20 Oct 2021 under the AUMAT 250 label.
-
-
 * URGENT:
 --- add titles and fix xrefs for all exercisegroup elements
     (see first exercise group in src/graph-theory.d/trees.d/exercises.ptx)
@@ -23,8 +18,8 @@
 
 * Add an activity about A∪C = B∪C versus A = B
   --> related: (A ∪ B) ∖ B is not always equal to A.
-* Add a "negating the conditional" to chapter 2 somewhere.
 
+* Add a "negating the conditional" to chapter 2 somewhere.
 
 * Go through eClass and give all assigned activities an xml:id.
 * "arbitrary example" explanation of proving a "for every"

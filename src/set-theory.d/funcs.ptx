@@ -286,6 +286,39 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 			<cell><m>d</m></cell>
 		</row>
 	</tabular>
+	<p>
+	Similarly to <xref ref="example-sets-visualize-cartesian-prod" />,
+	we can also visualize this graph as a set of <q>points</q> relative to a set of perpendicular <q>axes,</q>
+	where the horizontal axis represents the domain set and the vertical axis represents the codomain set.
+	</p>
+	<tabular halign="center">
+		<row><cell><m>\scr{A}</m></cell></row>
+		<row>
+			<cell right="medium"><m>d</m></cell>
+			<cell><m>\bullet</m></cell>
+			<cell />
+			<cell><m>\bullet</m></cell>
+		</row>
+		<row><cell right="medium"><m>c</m></cell></row>
+		<row><cell right="medium"><m>b</m></cell></row>
+		<row bottom="medium">
+			<cell right="medium"><m>a</m></cell>
+			<cell />
+			<cell><m>\bullet</m></cell>
+			<cell />
+		</row>
+		<row>
+			<cell right="medium" />
+			<cell><m>1</m></cell>
+			<cell><m>2</m></cell>
+			<cell><m>3</m></cell>
+			<cell><m>\scr{N}</m></cell>
+		</row>
+	</tabular>
+	<p>
+	Notice that we have not joined the points in the above visualization with lines or a curve,
+	since the three points pictured are the <em>only</em> points on the graph.
+	</p>
 </example>
 
 <example>

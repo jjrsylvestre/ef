@@ -942,6 +942,9 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 <section xml:id="section-sets-cartesian-product">
 <title>Cartesian Product</title>
 
+<subsection xml:id="subsection-sets-cartesian-product-def-exmps">
+<title>Definition and examples</title>
+
 <p><dl>
 
 	<li>
@@ -1045,6 +1048,105 @@ we can list the elements of the Cartesian product by listing all ways of combini
 		used to represent <m>2</m>-, <m>3</m>-, and higher-dimensional (real) vector spaces.
 	</p></example>
 </paragraphs>
+
+</subsection>
+
+<subsection xml:id="subsection-sets-cartesian-product-visualizing">
+<title>Visualizing Cartesian products</title>
+
+<p>
+Cartesian products do not really lend themselves to visualization with Venn diagrams.
+So how should we visualize them?
+</p>
+
+<p>
+The example we are probably most familiar with is that of the <term>Cartesian plane</term>,
+<m>\R^2 = \R \cartprod \R</m>,
+where each element <m>(x,y)</m> is visualized as a point in a two-dimensional diagram,
+plotted according to the <m>x</m>- and <m>y</m>-coordinates of the element relative to a central set of <m>xy</m>-axes.
+</p>
+
+<figure>
+	<caption>Visualizing elements of <m>\R \cartprod \R</m> as points in a plane relative to a set of perpendicular axes.</caption>
+	<image width="40%">
+		<description>A point in the Cartesian plane as a set of <m>xy</m>-coordinates.</description>
+		<latex-image><xi:include href="sets.d/cartesian-R-squared.tex" parse="text" /></latex-image>
+	</image>
+</figure>
+
+<p>
+To produce this visualization,
+we imagine the elements of the <q>first</q> <m>\R</m> arrayed along the <m>x</m>-axis,
+and the elements of the <q>second</q> <m>\R</m> as arrayed along the <m>y</m>-axis,
+and then imagine each element of the Cartesian product <m>\R \cartprod \R</m> as a point located at a position that <q>lines up</q> with the corresponding positions on the <m>x</m>- and <m>y</m>-axes of the element's coordinates.
+This is possible because the concepts of <q>less than</q> and <q>greater than</q> allow us to think of elements of <m>\R</m> as <q>progressing</q> from left to right along the <m>x</m>-axis and from bottom to top along the <m>y</m>-axis.
+</p>
+
+<p>
+Even though other types of sets may not have readily available notions of <q>less than</q> and <q>greater than</q>,
+we may still visualize a Cartesian product <m>A \cartprod B</m> as <q>points</q> in a <q>plane</q> plotted relative to a central set of <m>AB</m>-axes.
+In the particular case that <m>A</m> and <m>B</m> are finite,
+it doesn't really matter in what <q>order</q> we place the elements of <m>A</m> along the <m>A</m>-axis or the elements of <m>B</m> along the <m>B</m>-axis.
+</p>
+
+<aside>
+	<title>A look ahead</title>
+	<p>We will study abstract notions of <q>less than</q> and <q>greater than</q> in <xref ref="chapter-partial-orders" />.</p>
+</aside>
+
+<example xml:id="example-sets-visualize-cartesian-prod">
+	<title>Visualizing a Cartesian product between finite sets</title>
+	<p>
+	Consider the sets <m>A = \{a, \alpha, \phi, z\}</m> and <m>B = \{1,2,3\}</m>.
+	Instead of listing the elements of <m>A \cartprod B</m>,
+	we will place them in a grid.
+	In <xref ref="figure-sets-visualize-cartesian-prod" />,
+	you might imagine that the elements of <m>A</m> listed along the bottom row make up a horizontal axis and the elements of <m>B</m> along the leftmost column make up a vertical axis.
+	But take care that these <q>axes</q> are not a continuum of values <mdash />
+	there are no other <q>values</q> between these <q>coordinate values</q> along the <q>axes</q>.
+	For example, there is no <m>1.5</m> along the <q>horizontal axis.</q>
+	Similarly, there are no other <q>points</q> between the elements of <m>A \cartprod B</m>.
+	</p>
+	<figure xml:id="figure-sets-visualize-cartesian-prod">
+		<caption>Visualizing elements of <m>A \cartprod B</m> as <q>points</q> in a grid relative to a set of perpendicular <q>axes.</q></caption>
+		<sidebyside>
+			<tabular halign="center">
+				<row><cell><m>B</m></cell></row>
+				<row>
+					<cell right="medium"><m>3</m></cell>
+					<cell><m>(a,3)</m></cell>
+					<cell><m>(\alpha,3)</m></cell>
+					<cell><m>(\phi,3)</m></cell>
+					<cell><m>(z,3)</m></cell>
+				</row>
+				<row>
+					<cell right="medium"><m>2</m></cell>
+					<cell><m>(a,2)</m></cell>
+					<cell><m>(\alpha,2)</m></cell>
+					<cell><m>(\phi,2)</m></cell>
+					<cell><m>(z,2)</m></cell>
+				</row>
+				<row bottom="medium">
+					<cell right="medium"><m>1</m></cell>
+					<cell><m>(a,1)</m></cell>
+					<cell><m>(\alpha,1)</m></cell>
+					<cell><m>(\phi,1)</m></cell>
+					<cell><m>(z,1)</m></cell>
+				</row>
+				<row>
+					<cell right="medium" />
+					<cell><m>a</m></cell>
+					<cell><m>\alpha</m></cell>
+					<cell><m>\phi</m></cell>
+					<cell><m>z</m></cell>
+					<cell><m>A</m></cell>
+				</row>
+			</tabular>
+		</sidebyside>
+	</figure>
+</example>
+
+</subsection>
 
 </section>
 
