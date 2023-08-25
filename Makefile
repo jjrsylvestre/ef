@@ -112,23 +112,20 @@ ${BUILDDIR}/html/images/.sentinal: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "...DONE"
 
 html-fonts: \
-  ${BUILDDIR}/html/STIX2Text-Regular.woff \
-  ${BUILDDIR}/html/STIX2Text-Bold.woff \
-  ${BUILDDIR}/html/STIX2Text-Italic.woff \
-  ${BUILDDIR}/html/STIX2Text-BoldItalic.woff \
-  ${BUILDDIR}/html/STIX2Math.woff \
-  ${BUILDDIR}/html/STIX2Text-Regular.woff2 \
-  ${BUILDDIR}/html/STIX2Text-Bold.woff2 \
-  ${BUILDDIR}/html/STIX2Text-Italic.woff2 \
-  ${BUILDDIR}/html/STIX2Text-BoldItalic.woff2 \
-  ${BUILDDIR}/html/STIX2Math.woff2
+  ${BUILDDIR}/html/fonts/STIXTwoText-Bold.woff2 \
+  ${BUILDDIR}/html/fonts/STIXTwoText-BoldItalic.woff2 \
+  ${BUILDDIR}/html/fonts/STIXTwoText-Italic.woff2 \
+  ${BUILDDIR}/html/fonts/STIXTwoText-Medium.woff2 \
+  ${BUILDDIR}/html/fonts/STIXTwoText-MediumItalic.woff2 \
+  ${BUILDDIR}/html/fonts/STIXTwoText-Regular.woff2 \
+  ${BUILDDIR}/html/fonts/STIXTwoText-SemiBold.woff2 \
+  ${BUILDDIR}/html/fonts/STIXTwoText-SemiBoldItalic.woff2
+#   ${BUILDDIR}/html/fonts/STIXTwoMath-Regular.woff2
 
-${BUILDDIR}/html/%.woff: stixfonts/WOFF/%.woff
-	@mkdir -p ${BUILDDIR}/html
-	-cp $< ${BUILDDIR}/html/
-${BUILDDIR}/html/%.woff2: stixfonts/WOFF2/%.woff2
-	@mkdir -p ${BUILDDIR}/html
-	-cp $< ${BUILDDIR}/html/
+
+${BUILDDIR}/html/fonts/%.woff2: stixfonts/fonts/static_otf_woff2/%.woff2
+	@mkdir -p ${BUILDDIR}/html/fonts
+	-cp $< ${BUILDDIR}/html/fonts/
 
 ${BUILDDIR}/latex/book-%.tex: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "Converting PTX to LATEX for version: ${*}..."
