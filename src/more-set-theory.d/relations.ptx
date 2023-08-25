@@ -574,7 +574,6 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 </p>
 
 <example xml:id="example-relations-graph-divides-small-set">
-<!-- \label{EXAMPLE::basic.relation.graph.ex} -->
 	<title>Graph of the division relation on a finite set of natural numbers</title>
 	<p>
 	Recall that for natural numbers <m>m</m> and <m>n</m>, <m>m \mid n</m> means <q><m>m</m> divides <m>n</m></q>.
