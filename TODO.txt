@@ -1,5 +1,3 @@
-* Add *simple* to the definition of *complete graph* and then remove that property from the following proposition.
-
 * Add some sort of boxed "how to prove *there exists*"
 --- exhibiting an example or describing how to "constructing" an example
 
@@ -17,8 +15,6 @@
     "From our assumptions we see that the following are true."
   . Advance the argument --- this might mean more unpacking, or finding connections between the assumptions.
   . Eventually arrive at the desired goal.
-
-* Remove the word "connected" from graphs intro chapter, it's confusing with the later technical definition of the word "connected."
 
 * Add discussion of visualizing Cartesian product as a grid or relative to a set of axes,
   and then also can visualize a graph of a function as a subset of this grid.

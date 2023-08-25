@@ -22,7 +22,7 @@ respective owners.
 <p><dl><li>
 	<title>graph (working definition)</title>
 	<idx><h>graph</h><h>working definition</h></idx>
-	<p> a diagram consisting of a finite collection of points connected by line segments or arcs </p>
+	<p> a diagram consisting of a finite collection of points linked by line segments or arcs </p>
 </li></dl></p>
 
 <problem> <!-- worked example -->
@@ -80,7 +80,7 @@ respective owners.
 		<title>edge</title>
 		<idx>edge</idx>
 		<idx><h>graph</h><h>edge</h></idx>
-		<p> a connecting line or arc between two vertices (<ie /> an element of <m>E</m>) </p>
+		<p> a line or arc linking two vertices (<ie /> an element of <m>E</m>) </p>
 	</li>
 
 	<li>
@@ -153,35 +153,11 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 <p><dl>
 
 	<li>
-		<title>loop</title>
-		<idx>loop</idx>
-		<idx><h>edge</h><h>loop</h></idx>
-		<idx><h>graph</h><h>edge</h><h>loop</h></idx>
-		<p> an edge which connects a vertex to itself </p>
-	</li>
-
-	<li>
-		<title>parallel edges</title>
-		<idx>parallel edges</idx>
-		<idx><h>edge</h><h>parallel</h></idx>
-		<idx><h>graph</h><h>edge</h><h>parallel</h></idx>
-		<p> edges which connect the same vertices </p>
-	</li>
-
-	<li xml:id="definition-graphs-simple">
-	<!-- \label{DEFN::simple.graph} -->
-		<title>simple graph</title>
-		<idx><h>simple</h><h>graph</h></idx>
-		<idx><h>graph</h><h>simple</h></idx>
-		<p> no loops or parallel edges </p>
-	</li>
-
-	<li>
 		<title>adjacent vertices</title>
 		<idx><h>adjacent</h><h>vertices</h></idx>
 		<idx><h>vertex</h><h>adjacent</h></idx>
 		<idx><h>graph</h><h>vertex</h><h>adjacent</h></idx>
-		<p> connected by an edge </p>
+		<p> linked by an edge </p>
 	</li>
 
 	<li>
@@ -201,8 +177,32 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 		<idx><h>graph</h><h>vertex</h><h>incident edge</h></idx>
 		<idx><h>graph</h><h>edge</h><h>incident vertex</h></idx>
 		<p>
-		a pair of a vertex and edge where the edge connects the vertex either to itself or another vertex of the graph
+		a pair of a vertex and edge where the edge links that vertex either to itself or another vertex of the graph
 		</p>
+	</li>
+
+	<li>
+		<title>loop</title>
+		<idx>loop</idx>
+		<idx><h>edge</h><h>loop</h></idx>
+		<idx><h>graph</h><h>edge</h><h>loop</h></idx>
+		<p> an edge which links a vertex to itself </p>
+	</li>
+
+	<li>
+		<title>parallel edges</title>
+		<idx>parallel edges</idx>
+		<idx><h>edge</h><h>parallel</h></idx>
+		<idx><h>graph</h><h>edge</h><h>parallel</h></idx>
+		<p> edges which link the same vertices </p>
+	</li>
+
+	<li xml:id="definition-graphs-simple">
+	<!-- \label{DEFN::simple.graph} -->
+		<title>simple graph</title>
+		<idx><h>simple</h><h>graph</h></idx>
+		<idx><h>graph</h><h>simple</h></idx>
+		<p> no loops or parallel edges </p>
 	</li>
 
 	<li>
@@ -263,7 +263,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 	The graph of <xref ref="example-graphs-basic-graph-2" /> has the following properties.
 	<ul>
 		<li> It is not a simple graph. </li>
-		<li> There are three parallel edges connecting <m>v_1</m> and <m>v_2</m>. </li>
+		<li> There are three parallel edges linking <m>v_1</m> and <m>v_2</m>. </li>
 		<li> There are two loops at vertex <m>v_3</m> (and these are also parallel edges). </li>
 		<li> The parallel edges between <m>v_1</m> and <m>v_2</m> are adjacent, as are the two loops at <m>v_3</m>. </li>
 		<li> Vertices <m>v_1</m> and <m>v_2</m> are adjacent, and vertex <m>v_3</m> is adjacent to itself. </li>
@@ -304,7 +304,7 @@ as well as how much <q>redundancy</q> the graph contains.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
 		If an edge <m>e</m> is a loop at vertex <m>v_i</m>, then it contributes <m>2</m> to <m>\deg v_i</m>.
-		Otherwise, if edge <m>e</m> connects vertices <m>v_i</m> and <m>v_j</m> (<m>v_i \neq v_j</m>),
+		Otherwise, if edge <m>e</m> links vertices <m>v_i</m> and <m>v_j</m> (<m>v_i \neq v_j</m>),
 		then it contributes <m>1</m> to each of <m>\deg v_i</m>  and <m>\deg v_j</m>.
 		In every case, each edge contributes exactly <m>2</m> to the sum of the vertex degrees.
 	</p></proof>
@@ -324,7 +324,7 @@ as well as how much <q>redundancy</q> the graph contains.
 	</p></statement>
 	<solution><p>
 		Create a simple graph with the people at the party as vertices,
-		where two vertices are connected by a single edge if and only if the two people are friends.
+		where two vertices are linked by a single edge if and only if the two people are friends.
 		As each person has an odd number of friends at the party,
 		the degree of each vertex is odd.
 		But the number of party attendees is also odd,
@@ -410,7 +410,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		<title>complete graph</title>
 		<idx>complete graph</idx>
 		<idx><h>graph</h><h>complete</h></idx>
-		<p>  a graph in which every pair of distinct vertices is connected by exactly one edge </p>
+		<p>  a simple graph in which every pair of distinct vertices is adjacent </p>
 	</li>
 </dl></p>
 
@@ -418,10 +418,9 @@ as well as how much <q>redundancy</q> the graph contains.
 	<title>Properties of complete graphs</title>
 	<p><ol>
 
-		<li> Complete graphs are simple. </li>
+		<!-- <li> Complete graphs are simple. </li> -->
 
 		<li>
-		<!-- \label{EXAMPLE::complete.graphs}   huh? -->
 			<p>
 			For each <m>n \ge 0</m>,
 			there is a <em>unique</em> complete graph
@@ -438,7 +437,6 @@ as well as how much <q>redundancy</q> the graph contains.
 		<li> If <m>n \ge 1</m>, then every vertex in <m>K_n</m> has degree <m>n-1</m>. </li>
 
 		<li xml:id="proposition-graphs-complete-simple-subgraph">
-		<!-- \label{FACT::simple.subgraph.of.complete} -->
 			Every simple graph with <m>n</m> or fewer vertices is a subgraph of <m>K_n</m>.
 		</li>
 
