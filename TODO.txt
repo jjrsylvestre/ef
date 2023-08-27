@@ -1,3 +1,5 @@
+* Look for activities/exercises that use ol and convert to tasks.
+
 * Add some sort of boxed "how to prove *there exists*"
 --- exhibiting an example or describing how to "constructing" an example
 
@@ -15,9 +17,6 @@
 --- add titles and fix xrefs for all exercisegroup elements
     (see first exercise group in src/graph-theory.d/trees.d/exercises.ptx)
 ----> I think these are done?
-
-* Add an activity about A∪C = B∪C versus A = B
-  --> related: (A ∪ B) ∖ B is not always equal to A.
 
 * Add a "negating the conditional" to chapter 2 somewhere.
 

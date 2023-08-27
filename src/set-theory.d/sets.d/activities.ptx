@@ -25,6 +25,16 @@ respective owners.
 <activity><p> Is it possible to have two sets <m>A</m> and <m>B</m> with <m>A \union B = A \intersection B</m>? </p></activity>
 
 <activity>
+	<title>Cancellation is not always valid</title>
+	<task><p>
+		Demonstrate using an example that <m>(A \union B) \relcmplmnt B = A</m> is <em>not</em> a valid simplification in set theory.
+	</p></task>
+	<task><p>
+		Demonstrate using an example that <m>A \union B = A \union C \lgcimplies A = B</m> is <em>not</em> a valid simplification in set theory.
+	</p></task>
+</activity>
+
+<activity>
 	<p> Fill in the blank with a concept from the reading. </p>
 	<blockquote><p> Breaking the students in a class into groups is an example of <fillin characters="15" />. </p></blockquote>
 </activity>
