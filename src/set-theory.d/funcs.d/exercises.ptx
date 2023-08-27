@@ -50,13 +50,13 @@ respective owners.
 	</p></exercise>
 	<exercise>
 		<p>
-		<m>\scr{L}</m> represents the set of all possible logical statements,
-		<m>\funcdef{N}{\scr{L}}{\scr{L}}</m> is the logical negation function <m>N(A) = \lgcnot A</m> for <m>A</m> a logical statement.
+		<m>\mathscr{L}</m> represents the set of all possible logical statements,
+		<m>\funcdef{N}{\mathscr{L}}{\mathscr{L}}</m> is the logical negation function <m>N(A) = \lgcnot A</m> for <m>A</m> a logical statement.
 		</p>
 		<p> (<em>Note:</em> You may treat equivalent statements as being the same statement.) </p>
 	</exercise>
 	<exercise><p>
-		<m>\funcdef{\scr{N}}{\Z}{\Z}</m> is the numerical negation function <m>\scr{N}(n) = -n</m>.
+		<m>\funcdef{\mathscr{N}}{\Z}{\Z}</m> is the numerical negation function <m>\mathscr{N}(n) = -n</m>.
 	</p></exercise>
 	<exercise><p>
 		<m>\Sigma = \{0,1\}</m>,

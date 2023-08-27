@@ -296,11 +296,11 @@ every relation can be reversed by simply stating the relationship in the reverse
 <example>
 	<title>Inverse of logical equivalence</title>
 	<p>
-	Let <m>\scr{L}</m> represent the set of all possible logical statements.
-	We have a relation <m>\equiv</m> on <m>\scr{L}</m>,
+	Let <m>\mathscr{L}</m> represent the set of all possible logical statements.
+	We have a relation <m>\equiv</m> on <m>\mathscr{L}</m>,
 	where <m>A \equiv B</m> means that logical statement <m>A</m> involves the same statement variables and has the same truth table as logical statement <m>B</m>.
 	Since <m>A \equiv B</m> if and only if <m>B \equiv A</m>,
-	we conclude that the logical equivalence relation on <m>\scr{L}</m> is its own inverse.
+	we conclude that the logical equivalence relation on <m>\mathscr{L}</m> is its own inverse.
 	</p>
 </example>
 

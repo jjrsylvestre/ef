@@ -366,23 +366,23 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 
 <example xml:id="example-recur-induct-construct-logical-statements">
 	<title>Set of all possible logical statements</title>
-	<p> Let us define a set <m>\scr{L}</m> with the following inductive definition. </p>
-	<case><title>Base clause</title><p> For every <m>m \in \N</m>, the statement variable <m>p_m</m> belongs to <m>\scr{L}</m>. </p></case>
+	<p> Let us define a set <m>\mathscr{L}</m> with the following inductive definition. </p>
+	<case><title>Base clause</title><p> For every <m>m \in \N</m>, the statement variable <m>p_m</m> belongs to <m>\mathscr{L}</m>. </p></case>
 	<case><title>Inductive clause</title><p>
-		Given statements <m>A,B \in \scr{L}</m>,
+		Given statements <m>A,B \in \mathscr{L}</m>,
 		the statements
 		<me> \lgcnot A, \quad A \lgcand B, \quad A \lgcor B, \quad A \lgccond B, \quad A \lgcbicond B </me>
-		are also elements of <m>\scr{L}</m>.
+		are also elements of <m>\mathscr{L}</m>.
 	</p></case>
 	<case><title>Limiting clause</title><p>
-		The set <m>\scr{L}</m> does not contain any elements except those that can be obtained from a finite number of applications of the base and inductive clauses.
+		The set <m>\mathscr{L}</m> does not contain any elements except those that can be obtained from a finite number of applications of the base and inductive clauses.
 	</p></case>
 	<p>
-	For example, the logical statement <m>\lgcnot p_2 \lgcand (p_1 \lgccond p_2)</m> is in <m>\scr{L}</m> by the following construction.
+	For example, the logical statement <m>\lgcnot p_2 \lgcand (p_1 \lgccond p_2)</m> is in <m>\mathscr{L}</m> by the following construction.
 	<me>
-		p_1, p_2 \in \scr{L}
-		\quad \lgcimplies \quad \lgcnot p_2 \in \scr{L}, \;\; p_1 \lgccond p_2 \in \scr{L}
-		\quad \lgcimplies \quad \lgcnot p_2 \lgcand (p_1 \lgccond p_2) \in \scr{L}
+		p_1, p_2 \in \mathscr{L}
+		\quad \lgcimplies \quad \lgcnot p_2 \in \mathscr{L}, \;\; p_1 \lgccond p_2 \in \mathscr{L}
+		\quad \lgcimplies \quad \lgcnot p_2 \lgcand (p_1 \lgccond p_2) \in \mathscr{L}
 	</me>
 	</p>
 </example>

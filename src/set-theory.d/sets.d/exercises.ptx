@@ -119,10 +119,10 @@ respective owners.
 	<exercise><p>
 		Sets:
 		<md>
-			<mrow> \scr{F} \amp = \text{ the set of all functions in a single real variable, } </mrow>
-			<mrow> \scr{C} \amp = \text{ the set of continuous functions, } </mrow>
-			<mrow> \scr{D} \amp = \text{ the set of differentiable functions, } </mrow>
-			<mrow> \scr{P} \amp = \text{ nonnegative functions } </mrow>
+			<mrow> \mathscr{F} \amp = \text{ the set of all functions in a single real variable, } </mrow>
+			<mrow> \mathscr{C} \amp = \text{ the set of continuous functions, } </mrow>
+			<mrow> \mathscr{D} \amp = \text{ the set of differentiable functions, } </mrow>
+			<mrow> \mathscr{P} \amp = \text{ nonnegative functions } </mrow>
 			<mrow> \amp = \setdef{f(x)}{ f(x) \ge 0 \text{ for all } x \text{ in the domain of } f }\text{.} </mrow>
 		</md>
 		Elements:
@@ -133,14 +133,14 @@ respective owners.
 		</mrow></md>
 		Symbols:
 		<me>
-			\scr{F}, \;\;\;
-			\scr{C}, \;\;\;
-			\scr{D}, \;\;\;
-			\scr{P}, \;\;\;
-			\cmplmnt{\scr{F}}, \;\;\;
-			\cmplmnt{\scr{C}}, \;\;\;
-			\cmplmnt{\scr{D}}, \;\;\;
-			\cmplmnt{\scr{P}}, \;\;\;
+			\mathscr{F}, \;\;\;
+			\mathscr{C}, \;\;\;
+			\mathscr{D}, \;\;\;
+			\mathscr{P}, \;\;\;
+			\cmplmnt{\mathscr{F}}, \;\;\;
+			\cmplmnt{\mathscr{C}}, \;\;\;
+			\cmplmnt{\mathscr{D}}, \;\;\;
+			\cmplmnt{\mathscr{P}}, \;\;\;
 			f_1(x), \;\;\;
 			f_2(x), \;\;\;
 			f_3(x), \;\;\;

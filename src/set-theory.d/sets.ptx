@@ -738,19 +738,19 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 <example xml:id="example-sets-union-intersection-number-sets"><p>
 	Consider the following subsets of <m>\N</m>.
 	<md><mrow>
-		\scr{E} \amp = \setdef{n\in\N}{n\text{ even}} \amp
-		\scr{P} \amp = \setdef{n\in\N}{n\text{ prime, } n\ne 0} \\
-		\scr{O} \amp = \setdef{n\in\N}{n\text{ odd}} \amp
-		\scr{T} \amp = \setdef{3n}{n\in\N} = \{ 0,\, 3,\, 6,\, 9,\, \dotsc \}
+		\mathscr{E} \amp = \setdef{n\in\N}{n\text{ even}} \amp
+		\mathscr{P} \amp = \setdef{n\in\N}{n\text{ prime, } n\ne 0} \\
+		\mathscr{O} \amp = \setdef{n\in\N}{n\text{ odd}} \amp
+		\mathscr{T} \amp = \setdef{3n}{n\in\N} = \{ 0,\, 3,\, 6,\, 9,\, \dotsc \}
 	</mrow></md>
 	Then,
 	<md><mrow>
-		\scr{E} \union\scr{O} \amp = \N, \amp
-		\scr{E} \intersection \scr{P} \amp = \{2\}, \amp
-		\scr{E} \intersection \scr{T} \amp = \setdef{6n}{n\in\N}, \\
-		\scr{E} \intersection \scr{O} \amp = \emptyset, \amp
-		\scr{O} \intersection \scr{P} \amp = \scr{P} \relcmplmnt \{2\}, \amp
-		\scr{O} \intersection \scr{T} \amp = \setdef{6n+3}{n\in\N}.
+		\mathscr{E} \union\mathscr{O} \amp = \N, \amp
+		\mathscr{E} \intersection \mathscr{P} \amp = \{2\}, \amp
+		\mathscr{E} \intersection \mathscr{T} \amp = \setdef{6n}{n\in\N}, \\
+		\mathscr{E} \intersection \mathscr{O} \amp = \emptyset, \amp
+		\mathscr{O} \intersection \mathscr{P} \amp = \mathscr{P} \relcmplmnt \{2\}, \amp
+		\mathscr{O} \intersection \mathscr{T} \amp = \setdef{6n+3}{n\in\N}.
 	</mrow></md>
 </p></example>
 
@@ -787,8 +787,8 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 </figure>
 
 <example><p>
-	Sets <m>\scr{E},\scr{O}</m> from <xref ref="example-sets-union-intersection-number-sets" /> are disjoint,
-	and <m>\N = \scr{E} \disjunion \scr{O}</m>.
+	Sets <m>\mathscr{E},\mathscr{O}</m> from <xref ref="example-sets-union-intersection-number-sets" /> are disjoint,
+	and <m>\N = \mathscr{E} \disjunion \mathscr{O}</m>.
 </p></example>
 
 <remark><p>
@@ -1301,14 +1301,14 @@ The concept of <term>length</term> allows us to identify some special subsets an
 <example xml:id="example-sets-of-sets"><p>
 	Consider
 	<md><mrow>
-		\scr{T} \amp = \setdef{3n}{n\in\N} \text{,} \amp
-		X \amp = \setdef{A\subset \N}{A\intersection\scr{T} = \emptyset} \text{,} \amp
-		Y \amp = X \union \scr{T} \text{.}
+		\mathscr{T} \amp = \setdef{3n}{n\in\N} \text{,} \amp
+		X \amp = \setdef{A\subset \N}{A\intersection\mathscr{T} = \emptyset} \text{,} \amp
+		Y \amp = X \union \mathscr{T} \text{.}
 	</mrow></md>
-	Elements of <m>\scr{T}</m> are numbers.
+	Elements of <m>\mathscr{T}</m> are numbers.
 	Elements of <m>X</m> are <em>subsets</em> of <m>\N</m> <mdash />
 	that is, <m>X</m> is a set of subsets of <m>\N</m>, but <em>is not</em> itself a subset of <m>\N</m>.
-	Elements of <m>Y</m> are either from <m>X</m> or from <m>\scr{T}</m>, so some elements of <m>Y</m> are numbers, and some elements of <m>Y</m> are sets of numbers.
+	Elements of <m>Y</m> are either from <m>X</m> or from <m>\mathscr{T}</m>, so some elements of <m>Y</m> are numbers, and some elements of <m>Y</m> are sets of numbers.
 </p></example>
 
 <p><dl>

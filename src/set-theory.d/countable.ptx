@@ -179,8 +179,8 @@ so we encapsulate it as the proof of a Lemma, rather than just a plain Example.
 	<!-- \label{LEMMA::uncountable.subset.of.reals} -->
 	<title>An uncountable set of real numbers</title>
 	<statement>
-			<p> Let <m>\scr{C}</m> represent the set of all real numbers between <m>0</m> and <m>0.2</m> (including <m>0</m>) whose decimal expansions involve only the digits <m>0</m> and <m>1</m>. </p>
-			<p> Set <m>\scr{C}</m> is uncountable. </p>
+			<p> Let <m>\mathscr{C}</m> represent the set of all real numbers between <m>0</m> and <m>0.2</m> (including <m>0</m>) whose decimal expansions involve only the digits <m>0</m> and <m>1</m>. </p>
+			<p> Set <m>\mathscr{C}</m> is uncountable. </p>
 	</statement>
 	<proof xml:id="proof-countable-uncountable-subset-of-reals">
 		<aside><p>
@@ -188,22 +188,22 @@ so we encapsulate it as the proof of a Lemma, rather than just a plain Example.
 			<term>Cantor's diagonal argument</term>.
 			<idx><h>Cantor's</h><h>diagonal argument</h></idx>
 		</p></aside>
-		<p> We will show that no sequence of numbers from <m>\scr{C}</m> can contain <em>every</em> element of <m>\scr{C}</m>. </p>
+		<p> We will show that no sequence of numbers from <m>\mathscr{C}</m> can contain <em>every</em> element of <m>\mathscr{C}</m>. </p>
 		<p>
-		Suppose <m>\{a_k\}</m> is an infinite sequence of elements of <m>\scr{C}</m>.
-		We can create an element <m>r \in \scr{C}</m> which is not in the sequence as follows.
+		Suppose <m>\{a_k\}</m> is an infinite sequence of elements of <m>\mathscr{C}</m>.
+		We can create an element <m>r \in \mathscr{C}</m> which is not in the sequence as follows.
 		Set <me>r = 0.r_1 r_2 r_3 r_4 \dotsm</me>, where <m>r_k</m> is the digit in the <m>\nth[k]</m> decimal place of <m>r</m>,
 		according to the following rules.
 		<ul>
 			<li> If the <m>\nth[k]</m> decimal place of <m>a_{k-1}</m> is <m>0</m>, set <m>r_k = 1</m>. </li>
 			<li> If the <m>\nth[k]</m> decimal place of <m>a_{k-1}</m> is <m>1</m>, set <m>r_k = 0</m>. </li>
 		</ul>
-		Clearly every digit of <m>r</m> will be either a <m>0</m> or <m>1</m>, and <m>0 \le r \lt 0.2</m>, so <m>r \in \scr{C}</m>.
+		Clearly every digit of <m>r</m> will be either a <m>0</m> or <m>1</m>, and <m>0 \le r \lt 0.2</m>, so <m>r \in \mathscr{C}</m>.
 		(The reason we use <m>a_{k-1}</m> instead of <m>a_k</m> in the rules to create <m>r</m> is to make sure we consider sequence element <m>a_0</m> somewhere in there.)
 		</p><p>
 		Now we have <m>a_k \ne r</m> for every <m>k \in \N</m>, since <m>r</m> and <m>a_k</m> differ in the <m>\nth[(k+1)]</m> decimal place.
-		Furthermore, <m>r \in \scr{C}</m> because it is between <m>0</m> and <m>0.2</m> and its decimal expansion involves only digits <m>0</m> and <m>1</m>.
-		Therefore, sequence <m>\{a_k\}</m> does not contain every element of <m>\scr{C}</m> because it does not contain <m>r</m>.
+		Furthermore, <m>r \in \mathscr{C}</m> because it is between <m>0</m> and <m>0.2</m> and its decimal expansion involves only digits <m>0</m> and <m>1</m>.
+		Therefore, sequence <m>\{a_k\}</m> does not contain every element of <m>\mathscr{C}</m> because it does not contain <m>r</m>.
 		</p>
 	</proof>
 </lemma>
@@ -316,7 +316,7 @@ They can be used to more easily prove that a set is countable or uncountable usi
 <example><title>Primes are countable</title><p> The set of prime numbers is countable, since it is a subset of <m>\N</m>. </p></example>
 
 <example><title>Unit interval is uncountable</title><p>
-	The unit interval <m>(0,1)</m> on the real number line is uncountable because it contains the uncountable subset <m>\scr{C}</m> from
+	The unit interval <m>(0,1)</m> on the real number line is uncountable because it contains the uncountable subset <m>\mathscr{C}</m> from
 	<xref ref="lemma-countable-uncountable-subset-of-reals" />.
 </p></example>
 

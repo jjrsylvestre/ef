@@ -190,8 +190,8 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 	<!-- \label{EXAMPLES::basic.func.exmps::finite.sets} -->
 	<title>Defining a function by listing input-ouput pairs</title>
 	<p>
-	For <m>\scr{N} = \{1,2,3\}</m> and <m>\scr{A} = \{a,b,c,d\}</m>,
-	one way to define a function <m>\funcdef{f}{\scr{N}}{\scr{A}}</m> is
+	For <m>\mathscr{N} = \{1,2,3\}</m> and <m>\mathscr{A} = \{a,b,c,d\}</m>,
+	one way to define a function <m>\funcdef{f}{\mathscr{N}}{\mathscr{A}}</m> is
 	<md><mrow> f(1) \amp = d, \amp f(2) \amp = a, \amp f(3) \amp = d. </mrow></md>
 	</p>
 </example>
@@ -265,7 +265,7 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 <example>
 	<title>Graph of a function defined by a list</title>
 	<p>
-	To describe the graph of the function <m>\funcdef{f}{\scr{N}}{\scr{A}}</m> defined in
+	To describe the graph of the function <m>\funcdef{f}{\mathscr{N}}{\mathscr{A}}</m> defined in
 	<xref ref="example-funcs-define-by-listing" />,
 	we just need to collect the defined input-output pairs into Cartesian product elements:
 	<me> \funcgraph{f} = \{ (1,d), (2,a), (3,d) \} </me>.
@@ -313,7 +313,7 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 			<cell><m>1</m></cell>
 			<cell><m>2</m></cell>
 			<cell><m>3</m></cell>
-			<cell><m>\scr{N}</m></cell>
+			<cell><m>\mathscr{N}</m></cell>
 		</row>
 	</tabular>
 	<p>
@@ -448,20 +448,20 @@ sometimes what we think is a function turns out to not be a function.
 	<title>A function must be defined on the whole domain</title>
 	<idx><h>function</h><h>undefined on domain element</h></idx>
 	<p>
-	Again write  <m>\scr{N} = \{1,2,3\}</m> and <m>\scr{A} = \{a,b,c,d\}</m>,
+	Again write  <m>\mathscr{N} = \{1,2,3\}</m> and <m>\mathscr{A} = \{a,b,c,d\}</m>,
 	and consider
-	<me> F = \{ (1,a), (3,d) \} \subseteq \scr{N} \cartprod \scr{A} </me>.
-	Does this subset define a function with domain <m>\scr{N}</m> and codomain <m>\scr{A}</m>?
-	That is, does there exist a function <m>\funcdef{f}{\scr{N}}{\scr{A}}</m> such that <m>F = \funcgraph{f}</m>?
+	<me> F = \{ (1,a), (3,d) \} \subseteq \mathscr{N} \cartprod \mathscr{A} </me>.
+	Does this subset define a function with domain <m>\mathscr{N}</m> and codomain <m>\mathscr{A}</m>?
+	That is, does there exist a function <m>\funcdef{f}{\mathscr{N}}{\mathscr{A}}</m> such that <m>F = \funcgraph{f}</m>?
 	The answer is <alert>no</alert>, because there is no input-output pair in <m>F</m> with domain element <m>2</m>.
 	If we attempt to consider a function <m>f</m> with graph <m>\funcgraph{f} = F</m>,
 	we have no way to tell what result <m>f(2)</m> should return.
 	In other words, such an <m>f</m> will have been left
 	<term>undefined</term> on element <m>2</m>, which is supposed to be part of the domain.
 	</p><p>
-	The set <m>F</m> <em>does</em> define a function, just not one with domain <m>\scr{N}</m>.
-	If we consider the smaller set <m>\scr{N}' = \{1,3\}</m>,
-	then there <em>is</em> a function <m>\funcdef{f}{\scr{N}'}{\scr{A}}</m> with <m>F = \funcgraph{f}</m>.
+	The set <m>F</m> <em>does</em> define a function, just not one with domain <m>\mathscr{N}</m>.
+	If we consider the smaller set <m>\mathscr{N}' = \{1,3\}</m>,
+	then there <em>is</em> a function <m>\funcdef{f}{\mathscr{N}'}{\mathscr{A}}</m> with <m>F = \funcgraph{f}</m>.
 	</p>
 </example>
 
@@ -469,11 +469,11 @@ sometimes what we think is a function turns out to not be a function.
 	<title>A function must be <term>well-defined</term></title>
 	<idx><h>function</h><h>well-defined</h></idx>
 	<p>
-	Again write  <m>\scr{N} = \{1,2,3\}</m> and <m>\scr{A} = \{a,b,c,d\}</m>,
+	Again write  <m>\mathscr{N} = \{1,2,3\}</m> and <m>\mathscr{A} = \{a,b,c,d\}</m>,
 	and consider
-	<me> F = \{ (1,a), (3,a), (3,d) \} \subseteq \scr{N} \cartprod \scr{A} </me>.
-	Does this subset define a function with domain <m>\scr{N}</m> and codomain <m>\scr{A}</m>?
-	That is, does there exist a function <m>\funcdef{f}{\scr{N}}{\scr{A}}</m> such that <m>F = \funcgraph{f}</m>?
+	<me> F = \{ (1,a), (3,a), (3,d) \} \subseteq \mathscr{N} \cartprod \mathscr{A} </me>.
+	Does this subset define a function with domain <m>\mathscr{N}</m> and codomain <m>\mathscr{A}</m>?
+	That is, does there exist a function <m>\funcdef{f}{\mathscr{N}}{\mathscr{A}}</m> such that <m>F = \funcgraph{f}</m>?
 	The answer is <alert>no</alert>, because there are <em>more than one</em> input-output pairs with domain element <m>3</m>.
 	In other words, a function <m>f</m> with graph <m>\funcgraph{f} = F</m> is not <term>well-defined</term>,
 	because we have no way to tell whether <m>f(3)</m> should be <m>a</m> or <m>d</m>.

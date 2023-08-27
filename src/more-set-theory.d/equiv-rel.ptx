@@ -83,10 +83,10 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 
 <problem> <!-- worked example -->
 	<statement><p>
-		Let <m>\scr{L}</m> be the set of all possible logical statements built out of the statement variables <m>p_1, p_2, p_3, \dotsc</m>.
+		Let <m>\mathscr{L}</m> be the set of all possible logical statements built out of the statement variables <m>p_1, p_2, p_3, \dotsc</m>.
 		Show that
 		<xref ref="definition-logic-equiv-equiv-statements" text="custom">logical equivalence of statements</xref>
-		is an equivalence relation on <m>\scr{L}</m>.
+		is an equivalence relation on <m>\mathscr{L}</m>.
 	</p></statement>
 	<solution>
 		<case><title>Reflexive</title><p>
@@ -414,9 +414,9 @@ But that is always precisely the case.
 </example>
 
 <example><p>
-	Let <m>\scr{L}</m> be the set of all lines in the plane,
+	Let <m>\mathscr{L}</m> be the set of all lines in the plane,
 	and consider <m>\ell_1 \equiv \ell_2</m> if <m>\ell_1, \ell_2</m> are parallel.
-	Then <m>\mathord{\equiv}</m> partitions <m>\scr{L}</m> into sets of parallel lines.
+	Then <m>\mathord{\equiv}</m> partitions <m>\mathscr{L}</m> into sets of parallel lines.
 </p></example>
 
 <example>

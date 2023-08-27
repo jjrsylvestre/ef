@@ -89,7 +89,7 @@ respective owners.
 
 
 <exercise><p>
-	Explicitly describe how to construct the following logical statement in a finite number of steps using the inductive definition for <m>\scr{L}</m>,
+	Explicitly describe how to construct the following logical statement in a finite number of steps using the inductive definition for <m>\mathscr{L}</m>,
 	the set of all possible logical statements,
 	given in <xref ref="example-recur-induct-construct-logical-statements" />.
 	<me>
@@ -99,18 +99,18 @@ respective owners.
 </p></exercise>
 
 <exercise>
-	<p> The set <m>\scr{C}</m> of <em>constructible numbers</em> can be defined inductively as follows. </p>
-	<case><title>Base clause</title><p> Assume <m>1 \in \scr{C}</m>. </p></case>
+	<p> The set <m>\mathscr{C}</m> of <em>constructible numbers</em> can be defined inductively as follows. </p>
+	<case><title>Base clause</title><p> Assume <m>1 \in \mathscr{C}</m>. </p></case>
 	<case><title>Inductive clauses</title><p><ol marker="(i)">
 		<li>
-			Whenever <m>a,b \in \scr{C}</m>,
+			Whenever <m>a,b \in \mathscr{C}</m>,
 			then so are
 			<me> a+b, \quad ab, \quad a/b, \quad \sqrt{a} </me>.
 		</li>
-		<li> Whenever <m>a,b \in \scr{C}</m> with <m>a>b</m>, then <m>a-b</m> is also in <m>\scr{C}</m>. </li>
+		<li> Whenever <m>a,b \in \mathscr{C}</m> with <m>a>b</m>, then <m>a-b</m> is also in <m>\mathscr{C}</m>. </li>
 	</ol></p></case>
 	<case><title>Limiting clause</title><p>
-		The set <m>\scr{C}</m> contains no elements other than those that can be obtained through a finite number of applications of the base and/or inductive clauses.
+		The set <m>\mathscr{C}</m> contains no elements other than those that can be obtained through a finite number of applications of the base and/or inductive clauses.
 	</p></case>
 	<p>
 	Explicitly verify,
