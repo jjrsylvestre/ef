@@ -9,8 +9,8 @@ BRANDLOGO=AUG-Colour.png
 ROOTDOCNAME=book
 SERVEPORT=8081
 BUILDDIR=${XDG_RUNTIME_DIR}/pretext/EF
-PRETEXT=/opt/pretext/pretext/pretext
-#PRETEXT=./pretext/pretext/pretext
+#PRETEXT=/opt/pretext/pretext/pretext
+PRETEXT=./pretext/pretext/pretext
 
 .PHONY: ptx validate-xml \
   html html-images html-fonts html-all html-serve \
@@ -127,18 +127,19 @@ ${BUILDDIR}/html/fonts/%.woff2: stixfonts/fonts/static_otf_woff2/%.woff2
 	@mkdir -p ${BUILDDIR}/html/fonts
 	-cp $< ${BUILDDIR}/html/fonts/
 
-${BUILDDIR}/latex/book-%.tex: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
-	@echo "Converting PTX to LATEX for version: ${*}..."
+${BUILDDIR}/latex/${ROOTDOCNAME}.tex: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
+	@echo "Converting PTX to LATEX..."
 	@mkdir -p ${BUILDDIR}/latex
 	@echo "...calling pretext to compile PreTeXt document"
 	@${PRETEXT} \
+	  --XSL style-latex.xsl \
 	  --component all \
-	  --config pretext.cfg \
 	  --format latex \
-	  --parameters \
-	    numbering.projects.level 2 \
+	  --publisher latex-out-print.xml \
 	  --directory ${BUILDDIR}/latex \
 	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
+	@echo "...applying adjustments from ./make.d/latex/"
+	@./make.d/latex/fourier-font.sh ${BUILDDIR}/latex/${ROOTDOCNAME}.tex
 	@echo "...DONE"
 
 html-serve:

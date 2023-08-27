@@ -292,7 +292,8 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 	where the horizontal axis represents the domain set and the vertical axis represents the codomain set.
 	</p>
 	<tabular halign="center">
-		<row><cell><m>\scr{A}</m></cell></row>
+		<col /><col /><col /><col /><col />
+		<row><cell><m>\mathscr{A}</m></cell></row>
 		<row>
 			<cell right="medium"><m>d</m></cell>
 			<cell><m>\bullet</m></cell>

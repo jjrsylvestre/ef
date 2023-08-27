@@ -1,3 +1,6 @@
+* BUG: latex output doesn't correctly determine the number of columns
+  when <col /> aren't provided and first row has fewer <cell /> than subsequent rows
+
 * Look for activities/exercises that use ol and convert to tasks.
 
 * Add some sort of boxed "how to prove *there exists*"

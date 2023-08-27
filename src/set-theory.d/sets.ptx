@@ -1111,6 +1111,7 @@ it doesn't really matter in what <q>order</q> we place the elements of <m>A</m> 
 		<caption>Visualizing elements of <m>A \cartprod B</m> as <q>points</q> in a grid relative to a set of perpendicular <q>axes.</q></caption>
 		<sidebyside>
 			<tabular halign="center">
+				<col /><col /><col /><col /><col /><col />
 				<row><cell><m>B</m></cell></row>
 				<row>
 					<cell right="medium"><m>3</m></cell>

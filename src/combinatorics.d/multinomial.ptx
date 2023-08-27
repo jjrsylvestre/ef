@@ -96,25 +96,25 @@ let's extract the binomial coefficients from those expressions.
 		</md></p>
 		<p><me>\longrightarrow</me></p>
 		<p><md alignment="gather">
-			<mrow> \phantom{(}1\phantom{)} </mrow>
-			<mrow> \phantom{(}1\phantom{)} \quad \phantom{(}1\phantom{)} </mrow>
-			<mrow> \phantom{(}1\phantom{)} \quad \phantom{(}2\phantom{)} \quad \phantom{(}1\phantom{)} </mrow>
+			<mrow> \;1\; </mrow>
+			<mrow> \;1\; \quad \;1\; </mrow>
+			<mrow> \;1\; \quad \;2\; \quad \;1\; </mrow>
 			<mrow>
-				\phantom{(}1\phantom{)} \quad \phantom{(}3\phantom{)} \quad \phantom{(}3\phantom{)} \quad
-				\phantom{(}1\phantom{)}
+				\;1\; \quad \;3\; \quad \;3\; \quad
+				\;1\;
 			</mrow>
 			<mrow>
-				\phantom{(}1\phantom{)} \quad \phantom{(}4\phantom{)} \quad \phantom{(}6\phantom{)} \quad
-				\phantom{(}4\phantom{)} \quad \phantom{(}1\phantom{)}
+				\;1\; \quad \;4\; \quad \;6\; \quad
+				\;4\; \quad \;1\;
 			</mrow>
 			<mrow>
-				\phantom{(}1\phantom{)} \quad \phantom{(}5\phantom{)} \quad \phantom{(}10\phantom{)} \quad
-				10\phantom{)} \quad \phantom{(}5\phantom{)} \quad \phantom{(}1\phantom{)}
+				\;1\; \quad \;5\; \quad \;10\; \quad
+				10\; \quad \;5\; \quad \;1\;
 			</mrow>
 			<mrow>
-				\phantom{(}1\phantom{)} \quad \phantom{(}6\phantom{)} \quad \phantom{(}15\phantom{)} \quad
-				20 \quad \phantom{(}15\phantom{)} \quad \phantom{(}6\phantom{)} \quad
-				\phantom{(}1^\phantom{)}
+				\;1\; \quad \;6\; \quad \;15\; \quad
+				20 \quad \;15\; \quad \;6\; \quad
+				\;1\;
 			</mrow>
 			<mrow> \vdots </mrow>
 		</md></p>
