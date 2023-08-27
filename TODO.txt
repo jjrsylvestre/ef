@@ -18,8 +18,6 @@
     (see first exercise group in src/graph-theory.d/trees.d/exercises.ptx)
 ----> I think these are done?
 
-* Add a "negating the conditional" to chapter 2 somewhere.
-
 * Go through eClass and give all assigned activities an xml:id.
 * "arbitrary example" explanation of proving a "for every"
 * Fix tabular borders, <tabular bottom="medium"> doesn't do what I thought it does.

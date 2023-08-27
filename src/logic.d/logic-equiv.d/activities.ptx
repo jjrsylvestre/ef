@@ -31,6 +31,12 @@ respective owners.
 	Use propositional calculus to justify your answer.
 </p></activity>
 
+<activity><p>
+	Use <xref ref="proposition-logic-equiv-rules-prop-calculus" /> to simplify
+	<m> \lgcnot (p \lgccond q) </m>.
+	(Begin by applying <xref ref="proposition-logic-equiv-rules-prop-calculus-cond-bicond-cond">Rule</xref>.)
+</p></activity>
+
 <activity xml:id="activity-logic-equiv-cartesian-conditionals">
 	<introduction>
 		<p> Recall that a pair of coordinates <m>(x,y)</m> defines a point in the Cartesian plane. </p>
