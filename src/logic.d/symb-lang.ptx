@@ -20,7 +20,7 @@ respective owners.
 <section xml:id="section-symb-lang-statements">
 <title>Statements</title>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>statement</title>
 	<idx>statement(s) (in logic)</idx>
 	<idx><h>logical</h><h>statement(s)</h></idx>
@@ -46,7 +46,7 @@ respective owners.
 	</ol>
 </p></example>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>substatement</title>
 	<idx><h>statement (in logic)</h><h>sub-</h></idx>
 	<idx><h>logical</h><h>substatement</h></idx>
@@ -63,7 +63,7 @@ respective owners.
 	<xref ref="example-symb-lang-basic-statements" />.
 </p></example>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>simple statement</title>
 		<idx><h>simple</h><h>statement</h></idx>
@@ -114,7 +114,7 @@ respective owners.
 	<idx>connective(s)</idx>
 	<idx><h>logical</h><h>connectives</h></idx>
 	<statement>
-		<p><dl>
+		<p><dl width="narrow">
 			<li>
 				<title>negation</title>
 				<idx>negation</idx>
@@ -154,7 +154,7 @@ respective owners.
 		<p>
 		Given statements <m>A</m> and <m>B</m>,
 		we use these connectives to construct new statements:
-		<dl>
+		<dl width="narrow">
 			<li>
 				<title>negation of <m>A</m></title>
 				<p> not <m>A</m> </p>
@@ -210,7 +210,7 @@ respective owners.
 	<title>Translating everyday English into logical statements</title>
 	<p>
 	A conversation.
-	<dl>
+	<dl width="narrow">
 		<li><title>Alice</title><p> It is raining. </p> </li>
 		<li><title>Bob</title><p> No, it isn't. </p> </li>
 		<li><title>Alice</title><p> Either it's raining or it isn't. </p> </li>
@@ -223,7 +223,7 @@ respective owners.
 	</p>
 	<p>
 	Let us rewrite the above conversation to clearly identify the substatements and connectives.
-	<dl>
+	<dl width="narrow">
 		<li><title>Alice</title><p> it is raining </p> </li>
 		<li><title>Bob</title><p> not (it is raining) </p> </li>
 		<li><title>Alice</title><p> (it is raining) or (not (it is raining)) </p> </li>
@@ -279,7 +279,7 @@ As we have already begun to do,
 we will use letters to represent (possibly variable) logical statements and substatements.
 To complete the conversion from verbose language to compact symbolism,
 we will introduce symbols to represent the <term><xref ref="definition-symb-lang-connectives" text="title" /></term>.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>negation of <m>A</m></title>
 		<idx><h>negation</h><h>notation for</h></idx>
@@ -384,7 +384,7 @@ Keep in mind that variables are not limited to representing simple statements;
 they can represent compound statements as well.
 </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>truth value</title>
 		<idx><h>truth</h><h>value</h></idx>
@@ -398,7 +398,7 @@ view the variables as <em>inputs</em> and the truth value of the entire statemen
 We would like a systematic way to determine how the truth value of the output changes as we vary the truth values of the inputs.
 </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>logical analysis</title>
 		<idx><h>logical</h><h>analysis</h></idx>
@@ -838,7 +838,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 <section xml:id="section-symb-lang-taut-contra">
 <title>Tautologies and contradictions</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>tautology</title>
 		<idx>tautology</idx>
@@ -923,7 +923,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 	</p>
 </example>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>contradiction</title>
 		<idx>contradiction</idx>
@@ -1044,7 +1044,7 @@ In mathematics, we often wish to prove that a condition <m>A \lgccond B</m> is a
 (See <xref ref="chapter-proof-methods" />.)
 </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-symb-lang-logically-implies">
 		<title>logically implies</title>
 		<idx><h>logically</h><h>implies</h></idx>

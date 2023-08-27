@@ -19,7 +19,7 @@ respective owners.
 <section xml:id="section-multinomial-binomial">
 <title>Binomial coefficients</title>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>binomial</title>
 	<idx>binomial</idx>
 	<p>
@@ -47,7 +47,7 @@ respective owners.
 	</p>
 </example>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>binomial coefficient</title>
 		<idx><h>binomial</h><h>coefficient</h></idx>
@@ -395,7 +395,7 @@ continues.
 	</p></solution>
 </problem>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>multinomial coefficient</title>
 		<idx><h>multinomial</h><h>coefficient</h></idx>

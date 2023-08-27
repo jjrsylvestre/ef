@@ -22,7 +22,7 @@ respective owners.
 <subsection>
 <title>Terminology and basic concepts</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-funcs-working">
 		<title>function (working definition)</title>
 		<!-- \label{DEFN::function.working.defn} -->
@@ -241,7 +241,7 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 <subsection>
 <title>Graph of a function</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>graph (of a function)</title>
 		<idx><h>graph</h><h>of a function</h></idx>
@@ -404,7 +404,7 @@ what is a <q>rule</q>?
 Rather than chasing some circle of definitions, we can come up with a better definition by noticing that the graph of a function contains all the necessary information about the function.
 </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-funcs-formal">
 		<title>function (formal definition)</title>
 		<!-- \label{DEFN::function.formal.defn} -->
@@ -502,7 +502,7 @@ sometimes what we think is a function turns out to not be a function.
 <subsection>
 <title>Equality of functions</title>
 
-<p><dl><li xml:id="definition-funcs-equality">
+<p><dl width="narrow"><li xml:id="definition-funcs-equality">
 	<title>equality of functions</title>
 	<!-- \label{DEFN::func.equality} -->
 	<idx><h>equality</h><h>of functions</h></idx>
@@ -525,7 +525,7 @@ sometimes what we think is a function turns out to not be a function.
 <subsection>
 <title>Image of a function</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>image of a function</title>
 		<!-- \label{DEFN::image} -->
@@ -603,7 +603,7 @@ sometimes what we think is a function turns out to not be a function.
 	</solution>
 </problem>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-funcs-image-on-subset">
 		<title>image of a function on a subset</title>
 		<idx><h>image</h><h>of a function on a subset</h></idx>
@@ -638,7 +638,7 @@ sometimes what we think is a function turns out to not be a function.
 <section xml:id="section-funcs-properties">
 <title>Properties of functions</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>surjective function</title>
 		<idx><h>function</h><h>surjective</h></idx>
@@ -711,7 +711,7 @@ Since we have <m>f(A) \subseteq B</m> by definition of image, to show that a fun
 	</solution>
 </problem>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>injective function</title>
 		<idx><h>function</h><h>injective</h></idx>
@@ -821,7 +821,7 @@ by considering <m>f(A) \subseteq B</m>.
 	<p> Then <m>f</m> <term>embeds</term> <m>\Sigma</m> into <m>\N</m> in a familiar way, and lets us think of letters as numbers. </p>
 </example>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-funcs-bijective">
 		<title>bijective function</title>
 		<idx><h>function</h><h>bijective</h></idx>
@@ -914,7 +914,7 @@ by considering <m>f(A) \subseteq B</m>.
 	Etc.
 -->
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>identity function (on a set <m>A</m>)</title>
 		<idx><h>function</h><h>identity</h></idx>
@@ -933,7 +933,7 @@ by considering <m>f(A) \subseteq B</m>.
 
 <note><p> An identity function is always a bijection. </p></note>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>inclusion function (on subset <m>A \subseteq X</m>)</title>
 		<idx><h>function</h><h>inclusion</h></idx>
@@ -944,7 +944,7 @@ by considering <m>f(A) \subseteq B</m>.
 <aside><title>Check your understanding</title><p>
 	Do you understand the difference between the definitions of <term>identity function</term> and <term>inclusion function</term>?
 </p></aside>
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title><m>\funcdef{\inclfunc{A}{X}}{A}{X}</m></title>
 		<notation>
@@ -957,7 +957,7 @@ by considering <m>f(A) \subseteq B</m>.
 
 <note><p> An inclusion function is always an injection. </p></note>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>projection functions (on a Cartesian product <m>A \cartprod B</m>)</title>
 		<idx><h>function</h><h>projection</h></idx>
@@ -1010,7 +1010,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 </p></note>
 
 <!-- \label{EXAMPLE::restrict.domain} -->
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-funcs-restricting-domain">
 		<title>restricting the domain</title>
 		<idx><h>restriction</h><h sortby="domain of a function">of the domain of a function</h></idx>
@@ -1074,7 +1074,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 	the image of <m>f</m> on <m>A</m> is the same as the image of the restriction <m>\funcres{f}{A}</m>.
 </p></remark>
 
-<p><dl><li xml:id="definition-funcs-restrict-codomain">
+<p><dl width="narrow"><li xml:id="definition-funcs-restrict-codomain">
 	<title>restricting the codomain</title>
 	<idx><h>restriction</h><h sortby="codomain of a function">of the codomain of a function</h></idx>
 	<idx><h>function</h><h>restricting the codomain</h></idx>
@@ -1105,7 +1105,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 	In particular, if <m>\ifuncdef{f}{X}{Y}</m> is injective, then by restricting the codomain we can obtain a <em>bijection</em> <m>\funcdef{f}{X}{f(X)}</m>.
 </p></note>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>extension of a function</title>
 	<idx>extension (of a function)</idx>
 	<idx><h>function</h><h>extension</h></idx>
@@ -1141,7 +1141,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 One of the most common ways to extend a function to a larger domain is to pick an appropriate constant value in the codomain to assign to all <q>new</q> inputs in the enlarged domain.
 </p>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>extenstion by zero</title>
 	<idx><h>extension (of a function)</h><h>by zero</h></idx>
 	<idx><h>function</h><h>extension</h><h>by zero</h></idx>
@@ -1184,7 +1184,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 <section xml:id="section-funcs-composition">
 <title>Composition of functions</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>composition function</title>
 		<idx>composition (of functions)</idx>
@@ -1324,7 +1324,7 @@ Suppose <m>\funcdef{f}{A}{B}</m> is a function.
 By definition, <m>f</m> associates an element of <m>B</m> to each element of <m>A</m>.
 Sometimes we want to reverse this process: given an element <m>b \in B</m>, can we determine an element <m>a \in A</m> such that <m>f(a) = b</m>?
 We'll begin to answer this question by first finding all possible <q>reverse results</q> from elements in subsets of <m>B</m>.
-<dl>
+<dl width="narrow">
 	<li xml:id="definition-funcs-inverse-set-image">
 		<title>inverse image (of a subset <m>C</m> of the codomain <m>B</m>)</title>
 		<idx><h>inverse</h><h>image</h><h>of a set</h></idx>
@@ -1377,7 +1377,7 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 <p>
 Now let's return to the question of trying to reverse an input-output relationship <m>f(a) = b</m>:
 the set <m>\inv{f}\bbrac{\{b\}}</m> collects together all possible candidates for the inverse image of <m>b</m>.
-<dl>
+<dl width="narrow">
 	<li xml:id="definition-funcs-inverse-element-image">
 		<title>inverse image (of an element <m>b</m> of the codomain <m>B</m>)</title>
 		<idx><h>inverse</h><h>image</h><h>of an element</h></idx>
@@ -1418,7 +1418,7 @@ There are two possible ways that this will fail to give us a function.
 So it seems we will need a function to be <em>bijective</em> in order to be able to reverse the input-output rule to obtain an inverse function.
 </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>inverse function</title>
 		<idx><h>function</h><h>inverse</h></idx>

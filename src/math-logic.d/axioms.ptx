@@ -24,7 +24,7 @@ Any mathematical system must have a starting point; we cannot create something o
 The starting point of a mathematical system (or any logical system, for that matter) is a collection of basic terminology accompanied by a collection of assumed facts about the things the terminology describes.
 </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>primitive term</title>
 		<idx>primitive term</idx>
@@ -117,7 +117,7 @@ but we can actually prove things from it.
 
 <p> It is often useful to give names to important properties of objects. </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>defined term</title>
 		<idx>defined term</idx>
@@ -133,7 +133,7 @@ but we can actually prove things from it.
 
 <example xml:id="example-axioms-making-a-definition"><title>Making a definition</title><p>
 	Here is a definition relative to the axiomatic system of <xref ref="example-axioms-woozles-dorples" />.
-	<dl><li xml:id="example-axioms-making-a-definition-snarf-buddies">
+	<dl width="narrow"><li xml:id="example-axioms-making-a-definition-snarf-buddies">
 		<title>snarf buddies</title>
 		<p> two distinct dorples that snarf a common woozle </p>
 	</li></dl>
@@ -190,7 +190,7 @@ nonsense <mdash />
 and not much use unless there are actual examples to which the developed theory can be applied.
 </p>
 
-<dl><li>
+<dl width="narrow"><li>
 	<title>model</title>
 	<idx>model (for an axiomatic system)</idx>
 	<p>

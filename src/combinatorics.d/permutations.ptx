@@ -21,7 +21,7 @@ respective owners.
 
 <p>
 In counting, factorials come up a lot.
-<dl>
+<dl width="narrow">
 	<li>
 		<title><m>n!</m></title>
 		<idx>factorial</idx>
@@ -74,7 +74,7 @@ In counting, factorials come up a lot.
 
 <p> We often want to count how many ways we can <q>mix up</q> the objects in a collection. </p>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>permutation</title>
 	<idx>permutation</idx>
 	<idx><h>function</h><h>permutation</h></idx>
@@ -481,7 +481,7 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 
 <p>
 Sometimes we want to create an ordered list of a certain length from a larger pool of candidates.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>permutation of size <m>k</m></title>
 		<idx><h>permutation</h><h>of size <m>k</m></h></idx>

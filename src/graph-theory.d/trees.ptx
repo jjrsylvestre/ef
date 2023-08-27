@@ -70,7 +70,7 @@ respective owners.
 <section xml:id="section-trees-basics">
 <title>Basics</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>trivial path</title>
 		<idx><h>path</h><h>trivial</h></idx>
@@ -97,7 +97,7 @@ respective owners.
 	then <m>v,e,v',e,v</m> is a nontrivial cycle which is not proper.
 </p></note>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>acyclic graph</title>
 		<idx>acyclic graph</idx>
@@ -552,7 +552,7 @@ The following algorithm will.
 <section xml:id="section-trees-spanning">
 <title>Spanning trees</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>spanning subgraph</title>
 		<idx><h>spanning</h><h>subgraph</h></idx>
@@ -584,7 +584,7 @@ The following algorithm will.
 <p>
 If we carry out either of the depth-first or breadth-first search algorithms,
 but aren't looking for a path between specific vertices, the end result will be a spanning tree for the original graph.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>depth-first spanning tree</title>
 		<idx><h>depth-first</h><h>spanning tree</h></idx>
@@ -641,7 +641,7 @@ but aren't looking for a path between specific vertices, the end result will be 
 <section xml:id="section-trees-binary-search">
 <title>Binary searches</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>binary search tree</title>
 		<idx><h>tree</h><h>binary search</h></idx>

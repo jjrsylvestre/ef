@@ -19,7 +19,7 @@ respective owners.
 <section xml:id="section-graphs-basics">
 <title>Basics and examples</title>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>graph (working definition)</title>
 	<idx><h>graph</h><h>working definition</h></idx>
 	<p> a diagram consisting of a finite collection of points linked by line segments or arcs </p>
@@ -51,7 +51,7 @@ respective owners.
 	</solution>
 </problem>
 
-<p><dl>
+<p><dl width="narrow">
 
 	<li xml:id="definition-graphs-formal">
 		<title>graph (formal definition)</title>
@@ -150,7 +150,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 <subsection>
 <title>Properties of vertices and edges</title>
 
-<p><dl>
+<p><dl width="narrow">
 
 	<li>
 		<title>adjacent vertices</title>
@@ -284,7 +284,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 <p>
 The number of edges in a graph is an important measure both of how <q>connected</q> the graph is,
 as well as how much <q>redundancy</q> the graph contains.
-<dl><li>
+<dl width="narrow"><li>
 	<title><m>\card{E}</m></title>
 	<notation>
 		<usage><m>\card{E}</m></usage>
@@ -339,7 +339,7 @@ as well as how much <q>redundancy</q> the graph contains.
 <subsection>
 <title>Subgraphs</title>
 
-<p><dl>
+<p><dl width="narrow">
 
 	<li>
 		<title>subgraph</title>
@@ -404,7 +404,7 @@ as well as how much <q>redundancy</q> the graph contains.
 <subsection>
 <title>Complete graphs</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-graphs-complete">
 	<!-- \label{DEFN::complete.graph} -->
 		<title>complete graph</title>

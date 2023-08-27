@@ -76,7 +76,7 @@ However, this outline does not constitute a proof since it technically uses math
 	So if we make the two assumptions stated in the principles
 	(<ie /> that <m>P(1)</m> is true and that <m>P(k) \lgccond P(k+1)</m> is always true)
 	we can trace the flow of truth from premises to conclusion in each argument in turn:
-	<dl>
+	<dl width="narrow">
 		<li><title>First argument</title> <p> Premises true so conclusion is true. </p></li>
 		<li><title>Second argument</title> <p> Premises true (using conclusion of the first argument) so conclusion is true. </p></li>
 		<li><title>Third argument</title> <p><ellipsis /></p> </li>
@@ -91,7 +91,7 @@ However, this outline does not constitute a proof since it technically uses math
 
 <p>
 Now, here is some specific terminology associated to proofs by induction.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>base case</title>
 		<idx><h>base</h><h>case (in mathematical induction)</h></idx>

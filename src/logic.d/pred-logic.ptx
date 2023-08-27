@@ -29,7 +29,7 @@ In this section, we  deal with these problems by <term>quantifying</term> such f
 restricting ourselves to discussing whether <q>statements</q> involving one or more free variables are always/sometimes/never true for objects of the type represented by the free variables.
 </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>predicate</title>
 		<idx>predicate</idx>
@@ -68,7 +68,7 @@ restricting ourselves to discussing whether <q>statements</q> involving one or m
 	A predicate is not a logical statement unless all of its variables represent specific objects.
 </p></note>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>domain</title>
 	<idx><h>domain</h><h>of a variable in a predicate statement</h></idx>
 	<p> the type of object that a variable in a predicate represents </p>
@@ -107,7 +107,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 	The second statement is true; this statement basically says that even integers exist.
 </p></example>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>quantifier</title>
 		<idx>quantifier</idx>
@@ -566,7 +566,7 @@ in <xref ref="example-symb-lang-basic-tauts" />).
 	So you should avoid altogether making claims about things that do not exist.
 </p></example>
 
-<p><dl><li xml:id="definition-pred-logic-vac-true">
+<p><dl width="narrow"><li xml:id="definition-pred-logic-vac-true">
 	<!-- \label{DEFN::vac.true} -->
 	<title>vacuously true</title>
 	<idx>vacuously true</idx>

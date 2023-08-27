@@ -133,7 +133,7 @@ A relation between pairs of objects, such as the ones we have considered so far,
 <idx><h>binary</h><h>relation</h></idx>
 <idx><h>relation(s)</h><h>binary</h></idx>
 But we can consider relationships between collections of more than two objects.
-<dl><li>
+<dl width="narrow"><li>
 	<title>ternary relation</title>
 	<idx>ternary relation</idx>
 	<idx><h>relation(s)</h><h>ternary</h></idx>
@@ -306,7 +306,7 @@ every relation can be reversed by simply stating the relationship in the reverse
 
 <p>
 There are two more set-theoretic ideas we can reinterpret as relations.
-<dl>
+<dl width="narrow">
 	<li xml:id="definition-relations-empty">
 		<title>empty relation</title>
 		<idx><h>empty</h><h>relation</h></idx>
@@ -345,7 +345,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 <subsection>
 <title>Reflexivity</title>
 
-<p><dl><li xml:id="definition-relations-reflexive">
+<p><dl width="narrow"><li xml:id="definition-relations-reflexive">
 	<title>reflexive</title>
 	<idx>reflexive relation</idx>
 	<idx><h>relation(s)</h><h>reflexive</h></idx>
@@ -372,7 +372,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 <subsection>
 <title>Symmetry and antisymmetry</title>
 
-<p><dl><li xml:id="definition-relations-symmetric">
+<p><dl width="narrow"><li xml:id="definition-relations-symmetric">
 	<title>symmetric</title>
 	<idx>symmetric relation</idx>
 	<idx><h>relation(s)</h><h>symmetric</h></idx>
@@ -404,7 +404,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 	</p></statement>
 </claim>
 
-<p><dl><li xml:id="definition-relations-antisymmetric">
+<p><dl width="narrow"><li xml:id="definition-relations-antisymmetric">
 	<title>antisymmetric</title>
 	<idx>antisymmetric relation</idx>
 	<idx><h>relation(s)</h><h>antisymmetric</h></idx>
@@ -521,7 +521,7 @@ However, in practise we usually prove antisymmetry using one of two logically eq
 <subsection>
 <title>Transitivity</title>
 
-<p><dl><li xml:id="definition-relations-transitive">
+<p><dl width="narrow"><li xml:id="definition-relations-transitive">
 	<title>transitive</title>
 	<idx>transitive relation</idx>
 	<idx><h>relation(s)</h><h>transitive</h></idx>

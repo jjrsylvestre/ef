@@ -411,7 +411,7 @@ Apply this fact to one of the statements we are trying to prove.
 		<p>
 		We want to prove the following universally quantified conditional
 		(<q>for all <m>p</m></q> omitted, domain is positive integers).
-		<dl>
+		<dl width="narrow">
 			<li><title>conditional</title><p> if (<m>p</m> is prime and <m>p>2</m>) then <m>p</m> is odd. </p></li>
 			<li><title>contrapositive</title><p> if <m>p</m> is not odd, then not (<m>p</m> is prime and <m>p>2</m>) </p></li>
 			<li><title>DeMorgan substitution</title><p> if <m>p</m> is not odd, then (<m>p</m> is not prime or <m>p \le 2</m>) </p></li>
@@ -452,7 +452,7 @@ Again, this also works in the universal case since <m>\forall</m> distributes ov
 (<xref ref="proposition-pred-logic-distrib-quants" />).
 </p>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>counterexample</title>
 	<idx>counterexample</idx>
 	<p>
@@ -521,7 +521,7 @@ As usual, this also works in the universal case since <m>\forall</m> distributes
 		<p>
 		We want to prove that the following quantified biconditional
 		(<q>for all <m>n</m></q> omitted, domain is nonnegative, whole numbers).
-		<dl>
+		<dl width="narrow">
 			<li><title>biconditional</title><p> <m>n</m> is even if and only if <m>n^2</m> is even. </p></li>
 			<li><title>conditional and converse</title><p> (if <m>n</m> is even then <m>n^2</m> is even) and (if <m>n^2</m> is even then <m>n</m> is even) </p></li>
 			<li><title>contrapositive and converse</title><p> (if <m>n^2</m> is odd then <m>n</m> is odd) and (if <m>n^2</m> is even then <m>n</m> is even) </p></li>

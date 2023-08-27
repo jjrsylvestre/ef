@@ -19,7 +19,7 @@ respective owners.
 <section xml:id="section-sets-basics">
 <title>Basics</title>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>object</title>
 	<idx>object (informal definition)</idx>
 	<p> any distinct entity </p>
@@ -32,7 +32,7 @@ respective owners.
 	<li> A basket of tennis balls. </li>
 </ul></p></example>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>set</title>
 	<idx><h>set(s)</h><h>informal definition</h></idx>
 	<p> a collection of objects </p>
@@ -59,7 +59,7 @@ respective owners.
 
 <p>
 We will not discuss any axiomatic basis for set theory, but instead rely on <term>naive set theory</term>.
-<dl><li>
+<dl width="narrow"><li>
 	<title>naive set theory</title>
 	<idx>naive set theory</idx>
 	<p>
@@ -74,7 +74,7 @@ We will not discuss any axiomatic basis for set theory, but instead rely on <ter
 
 <p>
 We need one more primitive term to make set theory workable.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>membership</title>
 		<idx>membership (in a set)</idx>
@@ -141,7 +141,7 @@ to indicate that the objects in the list are being collected into a set.
 Here are some sets containing familiar collections of numbers.
 Notice how in the first two examples we <q>list</q> the elements by providing a pattern and then using <ellipsis /> to imply that the pattern continues as expected,
 and in the second two examples we merely describe what the elements are in words.
-<dl>
+<dl width="narrow">
 	<li>
 		<title><m>\N</m></title>
 		<idx><h>natural</h><h>numbers, set of</h></idx>
@@ -290,7 +290,7 @@ Usually the <q>form</q> is based on parameter variables that can range over a se
 
 <p>
 There is one special set, the elements of which are very easy to list.
-<dl>
+<dl width="narrow">
 
 	<li>
 		<title>empty set</title>
@@ -331,7 +331,7 @@ There is one special set, the elements of which are very easy to list.
 
 <p>
 Often we want to distinguish a collection of certain <q>special</q> elements within a larger set of elements.
-<dl>
+<dl width="narrow">
 
 	<li>
 		<title>subset</title>
@@ -453,7 +453,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	<xref ref="chapter-relations" />.
 </p></paragraphs>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>set equality</title>
 	<idx><h>equality</h><h>of sets</h></idx>
 	<idx><h>set(s)</h><h>equality</h></idx>
@@ -510,7 +510,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	</solution>
 </problem>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-sets-proper-subset">
 		<title>proper subset</title>
 		<idx><h>proper</h><h>subset</h></idx>
@@ -569,7 +569,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 
 <introduction><p>
 	First, it is often convenient to restrict the scope of the discussion.
-	<dl><li>
+	<dl width="narrow"><li>
 		<title>universal set</title>
 		<idx><h>universal</h><h>set</h></idx>
 		<idx><h>set(s)</h><h>universal</h></idx>
@@ -582,7 +582,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 <subsection>
 <title>Universal and relative complement</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>complement</title>
 		<idx><h>complement</h><h>set</h></idx>
@@ -671,7 +671,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 <subsection>
 <title>Union, intersection, and disjoint sets</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>union</title>
 		<idx><h>union</h><h>of sets</h></idx>
@@ -754,7 +754,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	</mrow></md>
 </p></example>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-sets-disjoint-sets">
 		<title>disjoint sets</title>
 		<idx><h>disjoint</h><h>sets</h></idx>
@@ -945,7 +945,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 <subsection xml:id="subsection-sets-cartesian-product-def-exmps">
 <title>Definition and examples</title>
 
-<p><dl>
+<p><dl width="narrow">
 
 	<li>
 		<title>Cartesian product</title>
@@ -1020,7 +1020,7 @@ we can list the elements of the Cartesian product by listing all ways of combini
 	</p></remark>
 	<p>
 	We use special notation for Cartesian products of a set with itself.
-	<dl>
+	<dl width="narrow">
 		<li><title><m>A^2</m></title><p>notation to mean <m>A \cartprod A</m></p></li>
 		<li><title><m>A^3</m></title><p>notation to mean <m>A \cartprod A \cartprod A</m></p></li>
 		<li>
@@ -1154,7 +1154,7 @@ it doesn't really matter in what <q>order</q> we place the elements of <m>A</m> 
 <section xml:id="section-sets-words">
 <title>Alphabets and words</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>alphabet</title>
 		<idx>alphabet</idx>
@@ -1208,7 +1208,7 @@ it doesn't really matter in what <q>order</q> we place the elements of <m>A</m> 
 
 <p>
 In computing science, a certain set of words is of particular importance.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>binary word</title>
 		<idx><h>binary</h><h>word</h></idx>
@@ -1228,7 +1228,7 @@ In computing science, a certain set of words is of particular importance.
 	the words <m>\mathrm{ab}</m> and <m>\mathrm{ba}</m> are <em>different</em> words in <m>\words{\Sigma}</m>.
 </p></warning>
 
-<p><dl>
+<p><dl width="narrow">
 
 	<li>
 		<title>length (of a word)</title>
@@ -1258,7 +1258,7 @@ In computing science, a certain set of words is of particular importance.
 
 <p>
 The concept of <term>length</term> allows us to identify some special subsets and a special element of <m>\words{\Sigma}</m>.
-<dl>
+<dl width="narrow">
 
 	<li>
 		<!-- \label{DEFN::subset.words.length.n} -->
@@ -1311,7 +1311,7 @@ The concept of <term>length</term> allows us to identify some special subsets an
 	Elements of <m>Y</m> are either from <m>X</m> or from <m>\mathscr{T}</m>, so some elements of <m>Y</m> are numbers, and some elements of <m>Y</m> are sets of numbers.
 </p></example>
 
-<p><dl>
+<p><dl width="narrow">
 
 	<li>
 		<title>power set</title>

@@ -231,7 +231,7 @@ respective owners.
 
 <p>
 For notation, we borrow symbols <m>\lgcand</m> and <m>\lgcor</m> from logic, but add new negation notation.
-<dl>
+<dl width="narrow">
 	<li>
 		<title><m>\boolnot{x}</m></title>
 		<notation>
@@ -250,7 +250,7 @@ we have
 </mrow></md>
 </p>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>Boolean polynomial</title>
 		<idx><h>Boolean</h><h>polynomial</h></idx>
@@ -326,7 +326,7 @@ we have
 	</p>
 </example>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>equivalent polynomials</title>
 		<idx><h>equivalent</h><h>polynomials</h></idx>
@@ -398,7 +398,7 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	then we know we must be either in the input state of the first row <em>or</em> of the fourth row.
 </p></remark>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>disjunctive normal form</title>
 		<idx>disjunctive normal form</idx>
@@ -489,7 +489,7 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	<solution><p>
 		The fourth, fifth, seventh, and eigth rows have outcome <m>1</m>.
 		The corresponding conjunctions are
-		<dl>
+		<dl width="narrow">
 			<li><title>fourth row</title><p><m>x \lgcand y' \lgcand z'</m>;</p></li>
 			<li><title>fifth row</title><p><m>x' \lgcand y \lgcand z</m>;</p></li>
 			<li><title>seventh row</title><p><m>x' \lgcand y' \lgcand z</m>; and</p></li>
@@ -563,7 +563,7 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	<solution><p>
 		Every row <em>except</em> the third has outcome <m>1</m>,
 		so we must form conjunctions for all rows except that one:
-		<dl>
+		<dl width="narrow">
 			<li><title>first row</title><p><m>x \lgcand y \lgcand z</m>;</p></li>
 			<li><title>second row</title><p><m>x \lgcand y \lgcand z'</m>;</p></li>
 			<li><title>fourth row</title><p><m>x \lgcand y' \lgcand z'</m>;</p></li>

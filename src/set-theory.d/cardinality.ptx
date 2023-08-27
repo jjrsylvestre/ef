@@ -41,7 +41,7 @@ if we can match up the elements of <m>A</m> with the elements of <m>\natnumlt{m}
 then <m>A</m> must also contain exactly <m>m</m> elements.
 </p>
 
-<p><dl><li xml:id="definition-cardinality-finite-set">
+<p><dl width="narrow"><li xml:id="definition-cardinality-finite-set">
 	<title>finite set</title>
 	<idx><h>finite</h><h>set</h></idx>
 	<idx><h>set(s)</h><h>finite</h></idx>
@@ -63,7 +63,7 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 
 <exercise><p> Prove <xref ref="fact-cardinality-is-unique" />. </p></exercise>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-cardinality-itself">
 		<title>cardinality (of a finite set <m>A</m>)</title>
 		<idx>cardinality</idx>
@@ -148,7 +148,7 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 		Clearly we should have <m>\card{\emptyset} = 0</m>.
 		But is this consistent with our definition of <xref ref="definition-cardinality-itself" text="custom">cardinality</xref>?
 	</p>
-	<p><dl><li xml:id="definition-cardinality-empty-function">
+	<p><dl width="narrow"><li xml:id="definition-cardinality-empty-function">
 		<title>empty function</title>
 		<idx><h>empty</h><h>function</h></idx>
 		<p> a function with domain <m>\emptyset</m> </p>
@@ -416,7 +416,7 @@ This fact lets us relate finite sets to each other.
 <!-- OLD proof by induction
      TODO do I ask them to do a proof by induction in the exercises?
 % 	By induction.
-% 	<dl>
+% 	<dl width="narrow">
 % 		<li>[base case] When <m>n=0</m>, we must have <m>A = \emptyset</m>, so that <m>\powset{A} = \{ \emptyset \}</m>. Thus, <m>\card{\powset{A}} = 1 = 2^0</m>. \begin{inlinenote}[Careful]If <m>A</m> is empty, then <m>\powset{A}</m> is <em>not} empty; it <em>contains} the empty set as its only element.\end{inlinenote}
 % 		<li>[induction step] Assume the statement is true for <m>n=k</m>, for some <m>k \ge 0</m>, and suppose <m>\card{A} = k+1</m>. Write the elements of <m>A</m> as a finite sequence: <m>A = \{ a_0, a_1, a_2, \dotsc, a_{k+1} \}</m> (see the Fact on page \pageref{FACT::finite.set.finite.sequence}). Let <m>A' = A\smallsetminus \{a_k\} = \{a_0,a_1,\dotsc,a_{k-1}\}</m>. Then <m>\card{A'} = k</m>, so <m>\card{\powset{A'}} = 2^k</m> by the induction hypothesis. Now,
 % 		<md><mrow>
@@ -439,7 +439,7 @@ This fact lets us relate finite sets to each other.
 <subsection>
 <title>Infinite sets</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>infinite set</title>
 		<idx>infinite set</idx>
@@ -571,7 +571,7 @@ And in this case, by defining <m>\card{A} = m</m>, we are declaring that <m>A</m
 Expanding on this idea, we can think of <em>every</em> bijection as using the elements of one set to <q>count</q> the elements of another.
 </p>
 
-<p><dl><li xml:id="definition-cardinality-same-size">
+<p><dl width="narrow"><li xml:id="definition-cardinality-same-size">
 	<title>same size</title>
 	<idx><h>set(s)</h><h>same size</h></idx>
 	<idx>same size (for sets)</idx>

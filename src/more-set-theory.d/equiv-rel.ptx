@@ -52,7 +52,7 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 		So the relation should be <term><xref ref="definition-relations-transitive" text="title" /></term>.
 	</li>
 </ul>
-<dl>
+<dl width="narrow">
 	<li>
 		<title>equivalence relation</title>
 		<idx><h>equivalence</h><h>relation</h></idx>
@@ -108,7 +108,7 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 
 <p>
 Here is an important equivalence relation on <m>\N</m> or on <m>\Z</m>.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>equivalence modulo <m>n</m></title>
 		<idx>modulo</idx>
@@ -286,7 +286,7 @@ an equivalence relation can be used to group equivalent objects together.
 <xref ref="proposition-equiv-rel-properties-equal-classes" text="type-local">Statement</xref>
 of <xref ref="proposition-equiv-rel-properties" />
 tells us that any member of an equivalence class may be used to define the class.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>equivalence class representative</title>
 		<idx><h>equivalence</h><h>class</h><h>representative</h></idx>
@@ -346,7 +346,7 @@ we are deciding to always interchange an element for the chosen representative o
 The definition of <term><xref ref="definition-equiv-rel-complete-rep-set" text="title" /></term>
 implicitly assumes that the equivalence classes <q>fill up</q> the whole set <m>A</m>.
 But that is always precisely the case.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>partition</title>
 		<idx>partition</idx>

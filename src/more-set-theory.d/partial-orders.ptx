@@ -313,7 +313,7 @@ Make sure to keep this straight!
 <section xml:id="section-partial-orders-graph">
 <title>Graph for a partial order</title>
 
-<p><dl><li>
+<p><dl width="narrow"><li>
 	<title>Hasse diagram</title>
 	<idx>Hasse diagram</idx>
 	<p>
@@ -363,7 +363,7 @@ Make sure to keep this straight!
 <section xml:id="section-partial-orders-total">
 <title>Total orders</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li>
 		<title>comparable elements</title>
 		<idx>comparable</idx>
@@ -400,7 +400,7 @@ Make sure to keep this straight!
 	</p>
 </example>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-partial-orders-total">
 	<!-- \label{DEFN::total.order} -->
 		<title>total order</title>
@@ -502,7 +502,7 @@ Make sure to keep this straight!
 
 <p>
 Each of the following definitions are for a subset <m>B</m> of a partially ordered set <m>A</m>.
-<dl>
+<dl width="narrow">
 
 	<li>
 		<title>upper bound</title>
@@ -610,7 +610,7 @@ Each of the following definitions are for a subset <m>B</m> of a partially order
 <p>
 The next two definitions are stated for elements in a partially ordered set,
 but could also be understood for elements in a subset of a partially ordered set, as every subset of a partially ordered set is also a partially ordered set.
-<dl>
+<dl width="narrow">
 	<li xml:id="definition-partial-orders-maximal">
 	<!-- \label{DEFN::maximal} -->
 		<title>maximal element</title>
@@ -800,7 +800,7 @@ because we risk contradicting the required properties of a partial order
 
 <p>
 The following definitions apply to a partial order <m>\mathord{\partorder}</m> on a set <m>A</m>.
-<dl>
+<dl width="narrow">
 	<li xml:id="definition-partial-orders-compatible-total-order">
 		<title>compatible total order</title>
 		<idx><h>total order</h><h>compatible</h></idx>

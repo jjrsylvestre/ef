@@ -20,7 +20,7 @@ respective owners.
 <section xml:id="section-logic-equiv-equiv">
 <title>Equivalence</title>
 
-<p><dl>
+<p><dl width="narrow">
 	<li xml:id="definition-logic-equiv-equiv-statements">
 		<title>equivalent statements</title>
 		<idx><h>equivalent</h><h>logical statements</h></idx>
@@ -485,7 +485,7 @@ to manipulate an expression involving a conditional.
 
 <p>
 Related to the conditional <m>p \lgccond q</m> are three important variations.
-<dl>
+<dl width="narrow">
 	<li>
 		<title>converse</title>
 		<idx>converse</idx>
@@ -580,7 +580,7 @@ Related to the conditional <m>p \lgccond q</m> are three important variations.
 	<p><ol>
 		<li><p>
 			Suppose <m>m</m> is a fixed but unspecified whole number that is greater than <m>2</m>.
-			<dl>
+			<dl width="narrow">
 				<li><title>conditional</title><p> If <m>m</m> is a prime number, then it is an odd number. </p></li>
 				<li><title>contrapositive</title><p> If <m>m</m> is not an odd number, then it is not a prime number. </p></li>
 				<li><title>converse</title><p> If <m>m</m> is an odd number, then it is a prime number. </p></li>
@@ -590,7 +590,7 @@ Related to the conditional <m>p \lgccond q</m> are three important variations.
 		</p></li>
 		<li><p>
 			Suppose <m>f(x)</m> is a fixed but unspecified function.
-			<dl>
+			<dl width="narrow">
 				<li><title>conditional</title><p> If <m>f</m> is continuous, then it is differentiable. </p></li>
 				<li><title>contrapositive</title><p> If <m>f</m> is not differentiable, then it is not continuous. </p></li>
 				<li><title>converse</title><p> If <m>f</m> is differentiable, then it is continuous. </p></li>
