@@ -33,15 +33,9 @@ respective owners.
 
 	<edition>Fall 2022</edition>
 
-	<website>
-		<name>Elementary Foundations</name>
-		<address>https://sites.ualberta.ca/~jsylvest/books/EF/</address>
-	</website>
+	<website><url href="https://sites.ualberta.ca/~jsylvest/books/EF/">Elementary Foundations</url></website>
 
-	<!-- <website>
-		<name>GitHub source code repository</name>
-		<address>https://github.com/jjrsylvestre/dla/</address>
-	</website> -->
+	<!-- <website><url href="https://github.com/jjrsylvestre/dla/">GitHub source code repository</url></website> -->
 
 	<copyright>
 		<year>2010<ndash />2022</year>
