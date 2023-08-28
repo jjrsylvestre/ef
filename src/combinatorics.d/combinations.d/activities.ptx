@@ -47,7 +47,7 @@ respective owners.
 		The filled circles joined by line segments represent <em>one</em> such path.
 		<figure xml:id="figure-combinations-plinko">
 			<caption>A Plinko<trademark />-style pyramid.</caption>
-			<image width="50%">
+			<image xml:id="image-combinations-plinko" width="50%">
 				<description>A pyramid maze.</description>
 				<latex-image><xi:include href="activities.d/plinko.tex" parse="text" /></latex-image>
 			</image>

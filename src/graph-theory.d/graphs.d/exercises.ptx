@@ -19,16 +19,17 @@ respective owners.
 <!-- TODO check this against Roman -->
 <!-- TODO: figure out a way to put Hunter 2.1 #9 in here. Probably just leave it as an assignment question with attribution. -->
 
+<figure xml:id="figure-graphs-basics-exercise">
+	<caption>An example graph.</caption>
+	<image xml:id="image-graphs-basics" width="38.2%">
+		<description>An example graph.</description>
+		<latex-image><xi:include href="exercises.d/basics.tex" parse="text" /></latex-image>
+	</image>
+</figure>
+
 <exercise>
 	<introduction>
 		<p> Consider the graph in <xref ref="figure-graphs-basics-exercise" />. </p>
-		<figure xml:id="figure-graphs-basics-exercise">
-			<caption>An example graph.</caption>
-			<image width="40%">
-				<description>An example graph.</description>
-				<latex-image><xi:include href="exercises.d/basics.tex" parse="text" /></latex-image>
-			</image>
-		</figure>
 	</introduction>
 	<task><p> Are vertices 1 and 2 incident? </p></task>
 	<task><p> Are any vertices adjacent to themselves? </p></task>
@@ -86,7 +87,7 @@ respective owners.
 		<p> Draw the complement of the simple graph in <xref ref="figure-graphs-complement-basic" />. </p>
 		<figure xml:id="figure-graphs-complement-basic">
 			<caption>A simple graph.</caption>
-			<image width="20%">
+			<image xml:id="image-graphs-complement" width="17.3%">
 				<description>A simple graph.</description>
 				<latex-image><xi:include href="exercises.d/complement.tex" parse="text" /></latex-image>
 			</image>

@@ -353,7 +353,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 </p>
 <figure>
 	<caption>A Venn diagram demonstrating a subset relationship.</caption>
-	<image width="25%">
+	<image xml:id="image-sets-subset" width="27%">
 		<description>A Venn diagram demonstrating a subset relationship</description>
 		<latex-image><xi:include href="sets.d/subset.tex" parse="text" /></latex-image>
 	</image>
@@ -624,12 +624,12 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 
 <figure>
 	<caption>Venn diagrams of universal and relative set complements.</caption>
-	<sidebyside widths="40% 40%">
-		<image>
+	<sidebyside widths="45% 45%">
+		<image xml:id="image-sets-complement">
 			<description>A Venn diagram of a (universal) set complement.</description>
 			<latex-image><xi:include href="sets.d/complement.tex" parse="text" /></latex-image>
 		</image>
-		<image>
+		<image xml:id="image-sets-relative-complement">
 			<description>A Venn diagram of a relative set complement.</description>
 			<latex-image><xi:include href="sets.d/relative-complement.tex" parse="text" /></latex-image>
 		</image>
@@ -710,12 +710,12 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 
 <figure>
 	<caption>Venn diagrams of set union and intersection.</caption>
-	<sidebyside widths="40% 40%">
-		<image>
+	<sidebyside widths="45% 45%">
+		<image xml:id="image-sets-union">
 			<description>A Venn diagram of a set union.</description>
 			<latex-image><xi:include href="sets.d/union.tex" parse="text" /></latex-image>
 		</image>
-		<image>
+		<image xml:id="image-sets-intersection">
 			<description>A Venn diagram of a set intersection.</description>
 			<latex-image><xi:include href="sets.d/intersection.tex" parse="text" /></latex-image>
 		</image>
@@ -780,7 +780,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 
 <figure>
 	<caption>A Venn diagram of a disjoint set union.</caption>
-	<image width="40%">
+	<image xml:id="image-sets-disj-union" width="45%">
 		<description>A Venn diagram of a disjoint set union.</description>
 		<latex-image><xi:include href="sets.d/disj-union.tex" parse="text" /></latex-image>
 	</image>
@@ -1068,7 +1068,7 @@ plotted according to the <m>x</m>- and <m>y</m>-coordinates of the element relat
 
 <figure>
 	<caption>Visualizing elements of <m>\R \cartprod \R</m> as points in a plane relative to a set of perpendicular axes.</caption>
-	<image width="40%">
+	<image xml:id="image-sets-cartesian-R-squared" width="33.8%">
 		<description>A point in the Cartesian plane as a set of <m>xy</m>-coordinates.</description>
 		<latex-image><xi:include href="sets.d/cartesian-R-squared.tex" parse="text" /></latex-image>
 	</image>

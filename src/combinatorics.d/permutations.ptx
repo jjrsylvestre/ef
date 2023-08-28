@@ -21,7 +21,7 @@ respective owners.
 
 <p>
 In counting, factorials come up a lot.
-<dl width="narrow">
+<dl>
 	<li>
 		<title><m>n!</m></title>
 		<idx>factorial</idx>
@@ -30,8 +30,8 @@ In counting, factorials come up a lot.
 			<description>factorial <m>n! = n (n - 1) (n - 2) \dotsm 2 \cdot 1</m></description>
 		</notation>
 		<p>
-		notation for the computation formula <me> n (n - 1) (n - 2) \dotsm 2 \cdot 1 </me>,
-		for natural number <m>n</m>
+		for natural number <m>n</m>,
+		notation for the computation formula <me> n (n - 1) (n - 2) \dotsm 2 \cdot 1 </me>
 		</p>
 	</li>
 </dl>
@@ -74,7 +74,7 @@ In counting, factorials come up a lot.
 
 <p> We often want to count how many ways we can <q>mix up</q> the objects in a collection. </p>
 
-<p><dl width="narrow"><li>
+<p><dl><li>
 	<title>permutation</title>
 	<idx>permutation</idx>
 	<idx><h>function</h><h>permutation</h></idx>

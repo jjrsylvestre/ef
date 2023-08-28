@@ -28,13 +28,13 @@ respective owners.
 		Justify your answers.
 	</p></introduction>
 	<exercise>
-		<image width="60%">
+		<image xml:id="image-partial-orders-verify-from-graph-1" width="51.6%">
 			<description>An example graph for verifying the partial order definition.</description>
 			<latex-image><xi:include href="exercises.d/verify-from-graph-1.tex" parse="text" /></latex-image>
 		</image>
 	</exercise>
 	<exercise>
-		<image width="60%">
+		<image xml:id="image-partial-orders-verify-from-graph-2" width="51.6%">
 			<description>An example graph for verifying the partial order definition.</description>
 			<latex-image><xi:include href="exercises.d/verify-from-graph-2.tex" parse="text" /></latex-image>
 		</image>
@@ -122,13 +122,13 @@ respective owners.
 		<xref ref="definition-partial-orders-compatible-total-order" text="title" /> on <m>A</m>.
 	</p></introduction>
 	<exercise>
-		<image width="75%">
+		<image xml:id="image-partial-orders-total-from-hasse-1" width="71.0%">
 			<description>A Hasse diagram for a topological sorting exercise.</description>
 			<latex-image><xi:include href="exercises.d/total-from-hasse-1.tex" parse="text" /></latex-image>
 		</image>
 	</exercise>
 	<exercise>
-		<image width="100%">
+		<image xml:id="image-partial-orders-total-from-hasse-2" width="92.2%">
 			<description>A Hasse diagram for a topological sorting exercise.</description>
 			<latex-image><xi:include href="exercises.d/total-from-hasse-2.tex" parse="text" /></latex-image>
 		</image>

@@ -29,7 +29,7 @@ respective owners.
 	</p>
 	<figure xml:id="figure-paths-driving-routes">
 		<caption>Driving routes between Camrose, Red Deer, and Drumheller.</caption>
-		<image width="35%">
+		<image xml:id="image-paths-driving" width="42%">
 			<description>Graph depicting driving routes between Camrose, Red Deer, and Drumheller.</description>
 			<latex-image><xi:include href="paths.d/driving.tex" parse="text" /></latex-image>
 		</image>
@@ -112,7 +112,7 @@ respective owners.
 	<p> Consider the following graph. </p>
 	<figure xml:id="figure-paths-illustrative-example">
 		<caption>A example graph to illustrate paths and trails.</caption>
-		<image width="33%">
+		<image xml:id="image-paths-paths-and-trails" width="33.8%">
 			<description>A graph to illustrate paths and trails</description>
 			<latex-image><xi:include href="paths.d/paths-and-trails.tex" parse="text" /></latex-image>
 		</image>
@@ -147,6 +147,7 @@ respective owners.
 	</p></statement>
 
 	<solution>
+
 		<p>
 		We can solve this using a graph!
 		The graph in <xref ref="figure-paths-mapping-trails" /> was created by mapping out all possible trails starting at <m>v_3</m> and ending at <m>v_4</m>, moving across one edge at a time.
@@ -154,30 +155,40 @@ respective owners.
 		Each leg in the graph stops when the associated walk being followed reaches <m>v_4</m> and cannot be continued without repeating another edge.
 		To save space in the node labels, we have used <q><ellipsis /></q> to mean the walk from the previous node.
 		</p>
-		<figure xml:id="figure-paths-mapping-trails">
-			<caption>Mapping the trails from <m>v_3</m> to <m>v_4</m> in the graph of <xref ref="figure-paths-illustrative-example" />.</caption>
-			<image>
-				<description>A graph to map the possible trails in another graph.</description>
-				<latex-image><xi:include href="paths.d/mapping-trails.tex" parse="text" /></latex-image>
-			</image>
-		</figure>
+
 		<p>
 		Counting all the nodes in the graph of <xref ref="figure-paths-mapping-trails" /> that are labelled with a walk that ends in <m>v_4</m>,
 		we see that there are ten trails from <m>v_3</m> to <m>v_4</m>.
 		Also, we can easily see that only three of the trails are paths.
-		</p><p>
+		</p>
+
+		<p>
 		We can use the same technique to map out all paths from <m>v_3</m> to <m>v_4</m>,
 		but this time we terminate a leg when we cannot move off a vertex without repeating a vertex that is already visited in that walk.
 		(Note that the walk <m>v_3,e_6,v_3</m> is a path, but if we extend this walk in any way it will no longer be a path.)
 		</p>
+
+		<p>
+		From the result in <xref ref="figure-paths-mapping-paths" />,
+		we see that there are only three paths from <m>v_3</m> to <m>v_4</m>, and each of them is a trail.
+		</p>
+
+		<figure xml:id="figure-paths-mapping-trails">
+			<caption>Mapping the trails from <m>v_3</m> to <m>v_4</m> in the graph of <xref ref="figure-paths-illustrative-example" />.</caption>
+			<image xml:id="image-paths-mapping-trails" width="100%">
+				<description>A graph to map the possible trails in another graph.</description>
+				<latex-image><xi:include href="paths.d/mapping-trails.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+
 		<figure xml:id="figure-paths-mapping-paths">
 			<caption>Mapping the paths from <m>v_3</m> to <m>v_4</m> in the graph of <xref ref="figure-paths-illustrative-example" />.</caption>
-			<image>
+			<image xml:id="image-paths-mapping-paths" width="83.5%">
 				<description>A graph to map the possible paths in another graph.</description>
 				<latex-image><xi:include href="paths.d/mapping-paths.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
-		<p> So there are only three paths from <m>v_3</m> to <m>v_4</m>, and each of them is a trail. </p>
+
 	</solution>
 
 </problem>
@@ -229,12 +240,12 @@ respective owners.
 	</li>
 </dl></p>
 
-<example><title>A connected graph</title><image width="25%">
+<example><title>A connected graph</title><image xml:id="image-paths-connected" width="30.8%">
 	<description>A diagram of an example connected graph.</description>
 	<latex-image><xi:include href="paths.d/connected.tex" parse="text" /></latex-image>
 </image></example>
 
-<example><title>A nonconnected graph</title><image width="30%">
+<example><title>A nonconnected graph</title><image xml:id="image-paths-nonconnected" width="37.3%">
 	<description>A diagram of an example nonconnected graph.</description>
 	<latex-image><xi:include href="paths.d/nonconnected.tex" parse="text" /></latex-image>
 </image></example>
@@ -341,7 +352,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 	</p>
 	<figure xml:id="figure-paths-components">
 		<caption>A nonconnected graph as a collection of connected subgraphs.</caption>
-		<image width="30%">
+		<image xml:id="image-paths-components" width="42.6%">
 			<description>A graph to map the possible paths in another graph.</description>
 			<latex-image><xi:include href="paths.d/components.tex" parse="text" /></latex-image>
 		</image>
@@ -358,16 +369,16 @@ A nonconnected graph can be considered to simply be a collection of connected su
 	<figure xml:id="figure-paths-components-overlap-or-not">
 		<caption>Two different representations of the same nonconnected graph.</caption>
 		<sbsgroup>
-			<sidebyside><figure>
+			<sidebyside width="66%"><figure>
 				<caption>Overlapping connected components.</caption>
-				<image>
+				<image xml:id="image-paths-components-overlap-1">
 					<description>A nonconnected graph drawn with overlapping connected components.</description>
 					<latex-image><xi:include href="paths.d/components-overlap-1.tex" parse="text" /></latex-image>
 				</image>
 			</figure></sidebyside>
-			<sidebyside><figure>
+			<sidebyside width="66%"><figure>
 				<caption>Non-overlapping connected components.</caption>
-				<image>
+				<image xml:id="image-paths-components-overlap-2">
 					<description>A nonconnected graph drawn with non-overlapping connected components.</description>
 					<latex-image><xi:include href="paths.d/components-overlap-2.tex" parse="text" /></latex-image>
 				</image>
@@ -387,7 +398,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 	<p> If a graph is connected, then the entire graph is a largest connected subgraph possible. </p>
 	<figure>
 		<caption>A connected graph with one connected component.</caption>
-		<image width="27%">
+		<image xml:id="image-paths-components-connected-graph" width="33.5%">
 			<description>A connected graph with one connected component.</description>
 			<latex-image><xi:include href="paths.d/components-connected-graph.tex" parse="text" /></latex-image>
 		</image>
@@ -432,17 +443,17 @@ A nonconnected graph can be considered to simply be a collection of connected su
 			</p>
 			<figure>
 				<caption>Removing <q>extra</q> vertex <m>v_0</m>, splitting remaining subgraph into connected components.</caption>
-				<sidebyside widths="26% 26%">
+				<sidebyside widths="30.2% 30.2%">
 					<figure>
 						<caption><q>Extra</q> vertex <m>v_0</m> and the remaining subgraph <m>G'</m>.</caption>
-						<image>
+						<image xml:id="image-paths-remove-v0">
 							<description>A depiction of removing one vertex from a graph.</description>
 							<latex-image><xi:include href="paths.d/remove-v0.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
 					<figure>
 						<caption>Subgraph <m>G'</m> split into connected components.</caption>
-						<image>
+						<image xml:id="image-paths-remove-v0-components">
 							<description>A depiction of removing one vertex from a graph and splitting remaining subgraph into connected components.</description>
 							<latex-image><xi:include href="paths.d/remove-v0-components.tex" parse="text" /></latex-image>
 						</image>
@@ -507,7 +518,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 	</p>
 	<figure xml:id="figure-paths-two-diamonds">
 		<caption>A graph featuring a single, central articulation vertex.</caption>
-		<image width="30%">
+		<image xml:id="image-paths-two-diamonds" width="35.5%">
 			<description>A graph featuring a single, central articulation vertex.</description>
 			<latex-image><xi:include href="paths.d/two-diamonds.tex" parse="text" /></latex-image>
 		</image>
@@ -523,7 +534,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 	</p>
 	<figure xml:id="figure-paths-bridge-two-diamonds">
 		<caption>A graph featuring a bridge between two articulation vertices.</caption>
-		<image width="45%">
+		<image xml:id="image-paths-bridge-two-diamonds" width="52.3%">
 			<description>A graph featuring a bridge between two articulation vertices.</description>
 			<latex-image><xi:include href="paths.d/bridge-two-diamonds.tex" parse="text" /></latex-image>
 		</image>
@@ -604,7 +615,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 		</p>
 		<figure xml:id="figure-paths-comm-network">
 			<caption>TreeFort CommNet.</caption>
-			<image width="45%">
+			<image xml:id="image-paths-treefort-commnet" width="56.4%">
 				<description>A communication network.</description>
 				<latex-image><xi:include href="paths.d/treefort-commnet.tex" parse="text" /></latex-image>
 			</image>

@@ -18,19 +18,19 @@
 	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=4pt }
 ]
 
-\node at (0,0) (zero) [vertex,label=below:{$\scriptstyle \alpha$}] {};
-\node at (-1,1) (one) [vertex,label=below:{$\scriptstyle \beta$}] {};
-\node at (1,1) (two) [vertex,label=below:{$\scriptstyle \gamma$}] {};
+\node at (0,0) (zero) [vertex,label=below:{$\alpha$}] {};
+\node at (-1,1) (one) [vertex,label=below:{$\beta$}] {};
+\node at (1,1) (two) [vertex,label=below:{$\gamma$}] {};
 \foreach \p in {one,two} \draw (zero) to (\p);
 
-\node at (-2,2) (three) [vertex,label=above:{$\scriptstyle \delta$}] {};
-\node at (0,2) (four) [vertex,label=above:{$\scriptstyle \epsilon$}] {};
-\node at (2,2) (five) [vertex,label=above:{$\scriptstyle \zeta$}] {};
+\node at (-2,2) (three) [vertex,label=above:{$\delta$}] {};
+\node at (0,2) (four) [vertex,label=above:{$\epsilon$}] {};
+\node at (2,2) (five) [vertex,label=above:{$\zeta$}] {};
 \foreach \p in {three,four} \draw (one) to (\p);
 \foreach \p in {four,five} \draw (two) to (\p);
 
-\node at (-1,3) (six) [vertex,label=above:{$\scriptstyle \eta$}] {};
-\node at (1,3) (seven) [vertex,label=above:{$\scriptstyle \theta$}] {};
+\node at (-1,3) (six) [vertex,label=above:{$\eta$}] {};
+\node at (1,3) (seven) [vertex,label=above:{$\theta$}] {};
 \foreach \p in {three,four} \draw (\p) to (six);
 \foreach \p in {four,five} \draw (\p) to (seven);
 

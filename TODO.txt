@@ -1,3 +1,15 @@
+* Cover: why the hell won't inkscape export background color?
+
+* Latex version: weird page break a couple pages before 18.4, can't figure out why
+
+* Split up figure-permutations-induction-insert so that it works in latex
+
+* Figures inside exercises/examples cause latex bug --- see the necessary extra line breaks inside page-breaks.sh
+  --> also cause margins bug: see figure-trees-comm-network-reduced in trees.ptx
+
+* In image-cardinality-paths, make the start and end nodes stand out.
+  Maybe a different color, or ringed by a different color....
+
 * BUG: latex output doesn't correctly determine the number of columns
   when <col /> aren't provided and first row has fewer <cell /> than subsequent rows
 

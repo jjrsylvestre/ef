@@ -16,14 +16,14 @@
 	vertex/.style={ circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
 ]
 
-\node at (-1,0) (d2) [vertex,label=below left:{$\scriptstyle d_1 = d_2$}] {};
-\node at (1,0) (d3) [vertex,label=right:{$\scriptstyle d_3$}] {};
+\node at (-1,0) (d2) [vertex,label=below left:{$d_1 = d_2$}] {};
+\node at (1,0) (d3) [vertex,label=right:{$d_3$}] {};
 
-\node at (-1,1) (w1) [vertex,label=above left:{$\scriptstyle w_1$}] {};
+\node at (-1,1) (w1) [vertex,label=above left:{$w_1$}] {};
 \draw[-latex] (w1) to (d2);
 
-\node at (0,1) (w2) [vertex,label=above:{$\scriptstyle w_2$}] {};
-\node at (0,-1) (w3) [vertex,label=below:{$\scriptstyle w_3$}] {};
+\node at (0,1) (w2) [vertex,label=above:{$w_2$}] {};
+\node at (0,-1) (w3) [vertex,label=below:{$w_3$}] {};
 \foreach \p in {d2,d3} {
 	\draw[-latex] (w2) to (\p);
 	\draw[-latex] (w3) to (\p);

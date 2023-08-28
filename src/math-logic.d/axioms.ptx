@@ -99,12 +99,12 @@ but we can actually prove things from it.
 		and there also exists a dorple <m>d_3</m> that <m>w_2</m> and <m>w_3</m> both snarf in common.
 		These snarfing relationships are illustrated in the diagram below.
 		</p>
-		<image>
+		<image xml:id="image-axioms-woozles-snarf-dorples-1" width="35.2%">
 			<description>A diagram of woozles snarfing dorples.</description>
 			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-1.tex" parse="text" /></latex-image>
 		</image>
 		<p> Now, suppose <m>d_1</m> and <m>d_2</m> were actually the same dorple <mdash /> then all three woozles would snarf it in common. </p>
-		<image>
+		<image xml:id="image-axioms-woozles-snarf-dorples-2" width="32.6%">
 			<description>A diagram of woozles snarfing dorples, assuming two of the dorples coincide.</description>
 			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-2.tex" parse="text" /></latex-image>
 		</image>
@@ -217,7 +217,7 @@ then any theorems proved under the abstract system are still valid in the new mo
 	<xref ref="theorem-axioms-exactly-three-dorples" /> now says that there exist exactly three distinct lines in the plane which fit into our axiomatic system;
 	can you find their equations?
 	</p>
-	<image width="25%">
+	<image xml:id="image-axioms-points-lines-model" width="28.2%">
 		<description>A diagram of woozles snarfing dorples.</description>
 		<latex-image><xi:include href="axioms.d/points-lines-model.tex" parse="text" /></latex-image>
 	</image>

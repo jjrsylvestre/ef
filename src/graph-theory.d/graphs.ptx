@@ -19,39 +19,13 @@ respective owners.
 <section xml:id="section-graphs-basics">
 <title>Basics and examples</title>
 
-<p><dl width="narrow"><li>
-	<title>graph (working definition)</title>
-	<idx><h>graph</h><h>working definition</h></idx>
-	<p> a diagram consisting of a finite collection of points linked by line segments or arcs </p>
-</li></dl></p>
-
-<problem> <!-- worked example -->
-	<statement><p>
-		Suppose we have jugs <m>A,B,C</m> with capacities <m>8,5,3</m> litres, respectively.
-		Jug <m>A</m> is full of water and jugs <m>B,C</m> are empty.
-		Can we divide the water into two <em>exactly</em> equal parts?
-		If so, find the most efficient pouring sequence.
-	</p></statement>
-	<solution>
-		<p>
-		Construct a graph with points labelled by elements <m>(a,b,c) \in \N \times \N \times \N</m>, where <m>a,b,c</m> are the volumes of water in jugs <m>A,B,C</m>, respectively.
-		Join two points with a line segment if we can obtain one set of volumes from the other in a single pour.
-		We will ignore pours that return us to a configuration previously achievable by fewer pours.
-		</p>
-		<figure>
-			<caption>Graph to track possible jug fill states.</caption>
-			<image width="70%">
-				<description>
-					A graph where nodes are jug fill states and edges represent being able to obtain one state from another by a single pour.
-				</description>
-				<latex-image><xi:include href="graphs.d/jugs.tex" parse="text" /></latex-image>
-			</image>
-		</figure>
-		<p> Following the left leg of the graph gets us to the desired configuration in <m>7</m> pours. </p>
-	</solution>
-</problem>
-
 <p><dl width="narrow">
+
+	<li>
+		<title>graph (working definition)</title>
+		<idx><h>graph</h><h>working definition</h></idx>
+		<p> a diagram consisting of a finite collection of points linked by line segments or arcs </p>
+	</li>
 
 	<li xml:id="definition-graphs-formal">
 		<title>graph (formal definition)</title>
@@ -115,7 +89,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 	</p>
 	<figure>
 		<caption>Diagram of the graph <m>G = (V,E)</m>.</caption>
-		<image width="25%">
+		<image xml:id="image-graphs-basic-example" width="25.5%">
 			<description>Diagram illustrating a basic example graph.</description>
 			<latex-image><xi:include href="graphs.d/basic-example.tex" parse="text" /></latex-image>
 		</image>
@@ -135,12 +109,40 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 	</p>
 	<figure>
 		<caption>Diagram of the graph <m>G = (V,E)</m>.</caption>
-		<image width="33%">
+		<image xml:id="image-graphs-basic-complicated-example" width="37.9%">
 			<description>Diagram illustrating a slightly more complicated example graph.</description>
 			<latex-image><xi:include href="graphs.d/basic-complicated-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
 </example>
+
+<problem> <!-- worked example -->
+	<title>Using a graph to solve a problem</title>
+	<statement><p>
+		Suppose we have jugs <m>A,B,C</m> with capacities <m>8,5,3</m> litres, respectively.
+		Jug <m>A</m> is full of water and jugs <m>B,C</m> are empty.
+		Can we divide the water into two <em>exactly</em> equal parts?
+		If so, find the most efficient pouring sequence.
+	</p></statement>
+	<solution>
+		<p>
+		Construct a graph with points labelled by elements <m>(a,b,c) \in \N \times \N \times \N</m>, where <m>a,b,c</m> are the volumes of water in jugs <m>A,B,C</m>, respectively.
+		Join two points with a line segment if we can obtain one set of volumes from the other in a single pour.
+		We will ignore pours that return us to a configuration previously achievable by fewer pours.
+		</p>
+		<figure>
+			<caption>Graph to track possible jug fill states.</caption>
+			<image xml:id="image-graphs-jugs" width="54.1%">
+				<description>
+					A graph where nodes are jug fill states and edges represent being able to obtain one state from another by a single pour.
+				</description>
+				<latex-image><xi:include href="graphs.d/jugs.tex" parse="text" /></latex-image>
+			</image>
+		</figure>
+		<p> Following the left leg of the graph gets us to the desired configuration in <m>7</m> pours. </p>
+	</solution>
+</problem>
+
 
 </section>
 
@@ -386,7 +388,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		</p>
 		<figure xml:id="figure-graphs-basic-subgraphs">
 			<caption>All possible subgraphs of our basic example graph from <xref ref="example-graphs-basic-graph-1" />.</caption>
-			<image>
+			<image xml:id="image-graphs-basic-subgrphs" width="96.4%">
 				<description>All possible subgraphs of our basic example graph.</description>
 				<latex-image><xi:include href="graphs.d/basic-subgraphs.tex" parse="text" /></latex-image>
 			</image>
@@ -447,33 +449,33 @@ as well as how much <q>redundancy</q> the graph contains.
 <figure xml:id="figure-graphs-complete-diagrams">
 	<caption>Complete graphs with <m>1</m>, <m>2</m>, <m>3</m>, and <m>6</m> vertices.</caption>
 	<sbsgroup>
-		<sidebyside>  <!-- all three images are fudged to have same dimensions -->
+		<sidebyside widths="17.3% 17.3% 18.8%">  <!-- all three images are fudged to have same dimensions ?? -->
 			<figure>
 				<caption><m>K_1</m>.</caption>
-				<image>
+				<image xml:id="image-graphs-K1">
 					<description>Complete graph with one vertex</description>
 					<latex-image><xi:include href="graphs.d/K1.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
 			<figure>
 				<caption><m>K_2</m>.</caption>
-				<image>
+				<image xml:id="image-graphs-K2">
 					<description>Complete graph with two vertices</description>
 					<latex-image><xi:include href="graphs.d/K2.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
 			<figure>
 				<caption><m>K_3</m>.</caption>
-				<image>
+				<image xml:id="image-graphs-K3">
 					<description>Complete graph with three vertices</description>
 					<latex-image><xi:include href="graphs.d/K3.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
 		</sidebyside>
-		<sidebyside width="66%">
+		<sidebyside width="35.5%">
 			<figure>
 				<caption><m>K_6</m>.</caption>
-				<image>
+				<image xml:id="image-graphs-K6">
 					<description>Complete graph with six vertices</description>
 					<latex-image><xi:include href="graphs.d/K6.tex" parse="text" /></latex-image>
 				</image>
@@ -531,10 +533,10 @@ as well as how much <q>redundancy</q> the graph contains.
 	The vertex set is the set of cities, and the edge set is the set of highways.
 	For example, the two-city set {Camrose, Edmonton} represents the edge on the graph between Camrose and Edmonton, and corresponds to Highway 21.
 	</p>
-	<sidebyside>
+	<sidebyside widths="53.2% 37%">
 		<figure>
 			<caption>Road map of the area around Camrose, Alberta.</caption>
-			<image>
+			<image xml:id="image-graphs-camrose-highways">
 				<description>Road map of the area around Camrose, Alberta.</description>
 				<latex-image><xi:include href="graphs.d/camrose-highways.tex" parse="text" /></latex-image>
 			</image>
@@ -606,7 +608,7 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 	</p>
 	<figure>
 		<caption>Diagram of the directed graph <m>G = (V,E)</m>.</caption>
-		<image width="50%">
+		<image xml:id="image-graphs-basic-directed" width="59.1%">
 			<description>Diagram for a basic directed graph.</description>
 			<latex-image><xi:include href="graphs.d/basic-directed.tex" parse="text" /></latex-image>
 		</image>
@@ -648,7 +650,7 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 	</p>
 	<figure xml:id="figure-graphs-pow-set">
 		<caption>Directed graph to represent the subset relationships between elements of <m>\powset{A}</m>.</caption>
-		<image width="55%">
+		<image xml:id="image-graphs-powset" width="47%">
 			<description>Directed graph representing subset relationships in a power set.</description>
 			<latex-image><xi:include href="graphs.d/powset.tex" parse="text" /></latex-image>
 		</image>
@@ -696,7 +698,7 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 	</p>
 	<figure xml:id="figure-graphs-divides">
 		<caption>Directed graph to represent the relationship of division between elements of <m>V</m>.</caption>
-		<image width="50%">
+		<image xml:id="image-graphs-divides" width="52%">
 			<description>Directed graph representing division relationships in a set of integers.</description>
 			<latex-image><xi:include href="graphs.d/divides.tex" parse="text" /></latex-image>
 		</image>
@@ -714,7 +716,7 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 	</p>
 	<figure>
 		<caption>Road map of major centres in Alberta as a weighted graph.</caption>
-		<image>
+		<image xml:id="image-graphs-travelling" width="100%">
 			<description>Road map of major centres in Alberta as a weighted graph.</description>
 			<latex-image><xi:include href="graphs.d/travelling.tex" parse="text" /></latex-image>
 		</image>

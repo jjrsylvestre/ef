@@ -96,14 +96,14 @@ in exactly the same way that we use our counting sets <m>\natnumlt{m}</m> to cou
 		<sidebyside>
 			<figure>
 				<caption>A grid containing all positive rational numbers.</caption>
-				<image>
+				<image xml:id="image-countable-rational-grid">
 					<description>A grid containing all positive rational numbers.</description>
 					<latex-image><xi:include href="countable.d/rational-grid.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
 			<figure>
 				<caption>A path through the positive rational numbers.</caption>
-				<image>
+				<image xml:id="image-countable-rational-grid-path">
 					<description>A path through the grid containing all positive rational numbers.</description>
 					<latex-image><xi:include href="countable.d/rational-grid-path.tex" parse="text" /></latex-image>
 				</image>

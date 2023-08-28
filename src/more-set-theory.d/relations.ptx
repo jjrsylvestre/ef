@@ -582,7 +582,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 	</p>
 	<figure xml:id="figure-relations-divides-small-set">
 		<caption>Graph of the division relation on a small set of natural numbers.</caption>
-		<image width="60%">
+		<image xml:id="image-relations-divides-example" width="56.7%">
 			<description>Graph of the division relation on a small set of natural numbers.</description>
 			<latex-image><xi:include href="relations.d/divides-example.tex" parse="text" /></latex-image>
 		</image>
@@ -627,7 +627,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 		</p>
 		<figure xml:id="figure-relations-graph-symmetric-1">
 			<caption>The graph of a basic symmetric relation.</caption>
-			<image width="42%">
+			<image xml:id="image-relations-symmetric-example-1" width="35.2%">
 				<description>The graph of a basic symmetric relation.</description>
 				<latex-image><xi:include href="relations.d/symmetric-example-1.tex" parse="text" /></latex-image>
 			</image>
@@ -647,7 +647,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 		</p>
 		<figure xml:id="figure-relations-graph-symmetric-2">
 			<caption>The simplified graph of a basic symmetric relation.</caption>
-			<image width="42%">
+			<image xml:id="image-relations-symmetric-example-2" width="35.2%">
 				<description>The simplified graph of a basic symmetric relation.</description>
 				<latex-image><xi:include href="relations.d/symmetric-example-2.tex" parse="text" /></latex-image>
 			</image>
@@ -671,7 +671,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 		</p>
 		<figure xml:id="figure-relations-graph-antisymmetric">
 			<caption>The graph of a basic antisymmetric relation.</caption>
-			<image width="45%">
+			<image xml:id="image-relations-antisymmetric-example" width="37.6%">
 				<description>The graph of a basic antisymmetric relation.</description>
 				<latex-image><xi:include href="relations.d/antisymmetric-example.tex" parse="text" /></latex-image>
 			</image>
@@ -697,7 +697,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 		</p>
 		<figure xml:id="figure-relations-graph-transitive">
 			<caption>The graph of a basic antisymmetric relation.</caption>
-			<image width="60%">
+			<image xml:id="image-relations-transitive-example" width="48.8%">
 				<description>The graph of a basic transitive relation.</description>
 				<latex-image><xi:include href="relations.d/transitive-example.tex" parse="text" /></latex-image>
 			</image>

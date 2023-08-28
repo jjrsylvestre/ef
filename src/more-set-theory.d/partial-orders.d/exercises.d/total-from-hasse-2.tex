@@ -19,24 +19,24 @@
 	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=4pt }
 ]
 
-\node at (2,0) (zero) [vertex,label=below:{$\scriptstyle \alpha$}] {};
-\node at (-3,1) (one) [vertex,label=below:{$\scriptstyle \beta$}] {};
-\node at (-1,1) (two) [vertex,label=below:{$\scriptstyle \gamma$}] {};
-\node at (1,1) (three) [vertex,label=below:{$\scriptstyle \delta$}] {};
-\node at (3,1) (four) [vertex,label=below:{$\scriptstyle \epsilon$}] {};
+\node at (2,0) (zero) [vertex,label=below:{$\alpha$}] {};
+\node at (-3,1) (one) [vertex,label=below:{$\beta$}] {};
+\node at (-1,1) (two) [vertex,label=below:{$\gamma$}] {};
+\node at (1,1) (three) [vertex,label=below:{$\delta$}] {};
+\node at (3,1) (four) [vertex,label=below:{$\epsilon$}] {};
 \foreach \p in {three,four} \draw (zero) to (\p);
 
-\node at (-4,2) (five) [vertex,label=above:{$\scriptstyle \zeta$}] {};
-\node at (-2,2) (six) [vertex,label=below:{$\scriptstyle \eta$}] {};
-\node at (0,2) (seven) [vertex,label=above:{$\scriptstyle \theta$}] {};
-\node at (2,2) (eight) [vertex,label=above:{$\scriptstyle \iota$}] {};
-\node at (4,2) (nine) [vertex,label=above:{$\scriptstyle \kappa$}] {};
+\node at (-4,2) (five) [vertex,label=above:{$\zeta$}] {};
+\node at (-2,2) (six) [vertex,label=below:{$\eta$}] {};
+\node at (0,2) (seven) [vertex,label=above:{$\theta$}] {};
+\node at (2,2) (eight) [vertex,label=above:{$\iota$}] {};
+\node at (4,2) (nine) [vertex,label=above:{$\kappa$}] {};
 \foreach \p in {five,six} \draw (one) to (\p);
 \foreach \p in {six,seven} \draw (two) to (\p);
 \foreach \p in {seven,eight} \draw (three) to (\p);
 \foreach \p in {eight,nine} \draw (four) to (\p);
 
-\node at (-2,3) (ten) [vertex,label=above:{$\scriptstyle \lambda$}] {};
+\node at (-2,3) (ten) [vertex,label=above:{$\lambda$}] {};
 \foreach \p in {five,six,seven} \draw (\p) to (ten);
 
 

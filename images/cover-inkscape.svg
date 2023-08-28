@@ -9,6 +9,9 @@
    id="svg1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="cover-inkscape.svg"
+   inkscape:export-filename="../../../../../../tmp/cover-inkscape.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,13 +28,14 @@
      inkscape:document-units="mm"
      inkscape:zoom="0.88550786"
      inkscape:cx="431.95551"
-     inkscape:cy="518.91126"
+     inkscape:cy="518.34661"
      inkscape:window-width="1910"
-     inkscape:window-height="1165"
+     inkscape:window-height="1166"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3" />
+     inkscape:current-layer="layer3"
+     inkscape:export-bgcolor="#e6b737ff" />
   <defs
      id="defs1">
     <rect
@@ -129,7 +133,7 @@
        style="font-size:48px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect6)"><tspan
          x="47.275391"
          y="968.7619"
-         id="tspan5"><tspan
+         id="tspan10"><tspan
            style="font-family:Abel;-inkscape-font-specification:Abel"
            id="tspan2">Jeremy Sylvestre</tspan></tspan></text>
   </g>
@@ -144,9 +148,9 @@
        style="font-size:64px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1)"><tspan
          x="112.88477"
          y="154.36287"
-         id="tspan7"><tspan
+         id="tspan12"><tspan
            style="font-family:'Porter Sans Block';-inkscape-font-specification:'Porter Sans Block'"
-           id="tspan6">Elementary</tspan></tspan></text>
+           id="tspan11">Elementary</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-36.038516,-15.443851)"
@@ -154,9 +158,9 @@
        style="font-size:64px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect3)"><tspan
          x="188.30469"
          y="246.8824"
-         id="tspan9"><tspan
+         id="tspan14"><tspan
            style="font-family:'Porter Sans Block';-inkscape-font-specification:'Porter Sans Block'"
-           id="tspan8">Foundations</tspan></tspan></text>
+           id="tspan13">Foundations</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-7.4644045,0.28595401)"
@@ -164,8 +168,8 @@
        style="font-size:37.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4)"><tspan
          x="83.277344"
          y="246.61513"
-         id="tspan11"><tspan
+         id="tspan16"><tspan
            style="font-family:Abel;-inkscape-font-specification:Abel"
-           id="tspan10">An introduction to topics in discrete mathematics</tspan></tspan></text>
+           id="tspan15">An introduction to topics in discrete mathematics</tspan></tspan></text>
   </g>
 </svg>

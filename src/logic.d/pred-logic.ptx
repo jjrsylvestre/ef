@@ -343,29 +343,28 @@ but we will establish rules that make it easy in symbolic logic.
 	To avoid making the mistake in the preceding warning,
 	consider the following question: what is the minimum number of cows that do not eat grass that can be used as evidence to demonstrate that the statement <q>all cows eat grass</q> is false?
 	</p>
-	<!-- TODO adjust sizes of the circles in the second two diagrams so that text comes out approximately equal -->
-	<sidebyside widths="30% 30% 30%">
-		<stack>
-			<image>
-				<description>A Venn diagram with the collection of cows completely inside the collection of things that eat grass.</description>
-				<latex-image><xi:include href="pred-logic.d/all-cows-eat-grass.tex" parse="text" /></latex-image>
-			</image>
-			<p>In this case, both <q>all cows eat grass</q> and <q>some cows eat grass</q> are true.</p>
-		</stack><stack>
-			<image>
-				<description>A Venn diagram with the collection of cows only partially overlapping with the collection of things that eat grass.</description>
-				<latex-image><xi:include href="pred-logic.d/some-cows-eat-grass.tex" parse="text" /></latex-image>
-			</image>
-			<p>In this case, both <q>some cows eat grass</q> and <q>some cows do not eat grass</q> are true.</p>
-		</stack><stack>
-			<image>
-				<description>A Venn diagram with the collection of cows not overlapping at all with the collection of things that eat grass.</description>
-				<latex-image><xi:include href="pred-logic.d/no-cows-eat-grass.tex" parse="text" /></latex-image>
-			</image>
-			<p>
-			In this case, each of <q>no cows eat grass</q>, <q>all cows do not eat grass</q>, and <q>some cows do not eat grass</q> are true.
-			</p>
-		</stack>
+	<sidebyside widths="36.1% 50%" valign="middle">
+		<image xml:id="image-pred-logic-all-cows-eat-grass">
+			<description>A Venn diagram with the collection of cows completely inside the collection of things that eat grass.</description>
+			<latex-image><xi:include href="pred-logic.d/all-cows-eat-grass.tex" parse="text" /></latex-image>
+		</image>
+		<p>In this case, both <q>all cows eat grass</q> and <q>some cows eat grass</q> are true.</p>
+	</sidebyside>
+	<sidebyside widths="38.5% 50%" valign="middle">
+		<image xml:id="image-pred-logic-some-cows-eat-grass">
+			<description>A Venn diagram with the collection of cows only partially overlapping with the collection of things that eat grass.</description>
+			<latex-image><xi:include href="pred-logic.d/some-cows-eat-grass.tex" parse="text" /></latex-image>
+		</image>
+		<p>In this case, both <q>some cows eat grass</q> and <q>some cows do not eat grass</q> are true.</p>
+	</sidebyside>
+	<sidebyside widths="36.1% 50%" valign="middle">
+		<image xml:id="image-pred-logic-no-cows-eat-grass">
+			<description>A Venn diagram with the collection of cows not overlapping at all with the collection of things that eat grass.</description>
+			<latex-image><xi:include href="pred-logic.d/no-cows-eat-grass.tex" parse="text" /></latex-image>
+		</image>
+		<p>
+		In this case, each of <q>no cows eat grass</q>, <q>all cows do not eat grass</q>, and <q>some cows do not eat grass</q> are true.
+		</p>
 	</sidebyside>
 	<p>
 	It takes just <em>one</em> lasagna-eating cow to make <q>all cows eat grass</q> false,

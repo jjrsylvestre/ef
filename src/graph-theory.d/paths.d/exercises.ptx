@@ -46,7 +46,7 @@ respective owners.
 		<p> Consider the graph in <xref ref="figure-paths-find-paths-and-trails" />. </p>
 		<figure xml:id="figure-paths-find-paths-and-trails">
 			<caption>An example graph.</caption>
-			<image width="45%">
+			<image xml:id="image-paths-find-paths-and-trails" width="39.4%">
 				<description>An example graph for an exercise.</description>
 				<latex-image><xi:include href="exercises.d/find-paths-and-trails.tex" parse="text" /></latex-image>
 			</image>
@@ -62,7 +62,7 @@ respective owners.
 		<p> Consider the graph in <xref ref="figure-paths-find-all-paths-and-trails" />. </p>
 		<figure xml:id="figure-paths-find-all-paths-and-trails">
 			<caption>An example graph.</caption>
-			<image width="35%">
+			<image xml:id="image-paths-find-all-paths-and-trails" width="30.8%">
 				<description>An example graph for an exercise.</description>
 				<latex-image><xi:include href="exercises.d/find-all-paths-and-trails.tex" parse="text" /></latex-image>
 			</image>
@@ -82,15 +82,15 @@ respective owners.
 		In each of <xref ref="exercisegroup-paths-find-bridges" text="type-local">Exercises</xref>,
 		identify each edge that is a bridge.
 	</p></introduction>
-	<exercise><image width="30%">
+	<exercise><image xml:id="image-paths-find-bridges-1" width="22.9%">
 		<description>An example graph for an exercise.</description>
 		<latex-image><xi:include href="exercises.d/find-bridges-1.tex" parse="text" /></latex-image>
 	</image></exercise>
-	<exercise><image width="30%">
+	<exercise><image xml:id="image-paths-find-bridges-2" width="22.6%">
 		<description>An example graph for an exercise.</description>
 		<latex-image><xi:include href="exercises.d/find-bridges-2.tex" parse="text" /></latex-image>
 	</image></exercise>
-	<exercise><image width="30%">
+	<exercise><image xml:id="image-paths-find-bridges-3" width="22.9%">
 		<description>An example graph for an exercise.</description>
 		<latex-image><xi:include href="exercises.d/find-bridges-3.tex" parse="text" /></latex-image>
 	</image></exercise>

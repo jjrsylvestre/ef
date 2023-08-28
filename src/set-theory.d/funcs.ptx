@@ -84,7 +84,7 @@ respective owners.
 
 <figure>
 	<caption>A Venn diagram of a function transforming a domain element into a codomain element.</caption>
-	<image width="40%">
+	<image xml:id="image-funcs-func-def" width="42.6%">
 		<description>A Venn diagram of a function transforming a domain element into a codomain element.</description>
 		<latex-image><xi:include href="funcs.d/func-def.tex" parse="text" /></latex-image>
 	</image>
@@ -263,6 +263,38 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 </dl></p>
 
 <example>
+	<title>Graph of a single-variable, real-valued function</title>
+	<p>
+	The graph of a function <m>\funcdef{f}{\R}{\R}</m> is a subset of <m>\R \cartprod \R = \R^2</m>.
+	We usually represent <m>\R^2</m> visually as the <m>xy</m>-plane
+	and the graph <m>\funcgraph{f} \subseteq \R^2</m> as a curve in the plane.
+	</p>
+	<figure>
+		<caption>The graph <m>\funcgraph{x \mapsto x^2}</m> represented as a curve in the Cartesian plane.</caption>
+		<image xml:id="image-funcs-graph-x-squared" width="36.7%">
+			<description>The graph <m>\funcgraph{x \mapsto x^2}</m> represented as a curve in the Cartesian plane.</description>
+			<latex-image><xi:include href="funcs.d/graph-x-squared.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
+	<p>
+	In the graph of <m>f(x) = x^2</m> above, each point on the curve represents an element of <m>\R^2</m> which is in the subset <m>\funcgraph{f}</m>.
+	For example, <m>(-1,1) \in \funcgraph{f}</m> but <m>(-1,\pi) \notin \funcgraph{f}</m>.
+	</p>
+</example>
+
+<example>
+	<title>Graph of a multi-variable, real-valued function</title>
+	<p>
+	The graph of a function <m>\funcdef{f}{\R^2}{\R}</m> is technically a subset of <m>\R^2 \cartprod \R</m>,
+	but usually we just think of this as <m>\R^3</m>, or <m>3</m>-space.
+	Instead of a curve, such a graph defines a <em>surface</em> in <m>\R^3</m>.
+	For example, the graph of the function <m>f(x,y) = x^2 + y^2</m> from
+	<xref ref="example-funcs-define-multivariable" />
+	is a parabolic cone, <ie /> a (non-solid) cone-like surface with parabolic sides.
+	</p>
+</example>
+
+<example>
 	<title>Graph of a function defined by a list</title>
 	<p>
 	To describe the graph of the function <m>\funcdef{f}{\mathscr{N}}{\mathscr{A}}</m> defined in
@@ -319,38 +351,6 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 	<p>
 	Notice that we have not joined the points in the above visualization with lines or a curve,
 	since the three points pictured are the <em>only</em> points on the graph.
-	</p>
-</example>
-
-<example>
-	<title>Graph of a single-variable, real-valued function</title>
-	<p>
-	The graph of a function <m>\funcdef{f}{\R}{\R}</m> is a subset of <m>\R \cartprod \R = \R^2</m>.
-	We usually represent <m>\R^2</m> visually as the <m>xy</m>-plane
-	and the graph <m>\funcgraph{f} \subseteq \R^2</m> as a curve in the plane.
-	</p>
-	<figure>
-		<caption>The graph <m>\funcgraph{x \mapsto x^2}</m> represented as a curve in the Cartesian plane.</caption>
-		<image width="40%">
-			<description>The graph <m>\funcgraph{x \mapsto x^2}</m> represented as a curve in the Cartesian plane.</description>
-			<latex-image><xi:include href="funcs.d/graph-x-squared.tex" parse="text" /></latex-image>
-		</image>
-	</figure>
-	<p>
-	In the graph of <m>f(x) = x^2</m> above, each point on the curve represents an element of <m>\R^2</m> which is in the subset <m>\funcgraph{f}</m>.
-	For example, <m>(-1,1) \in \funcgraph{f}</m> but <m>(-1,\pi) \notin \funcgraph{f}</m>.
-	</p>
-</example>
-
-<example>
-	<title>Graph of a multi-variable, real-valued function</title>
-	<p>
-	The graph of a function <m>\funcdef{f}{\R^2}{\R}</m> is technically a subset of <m>\R^2 \cartprod \R</m>,
-	but usually we just think of this as <m>\R^3</m>, or <m>3</m>-space.
-	Instead of a curve, such a graph defines a <em>surface</em> in <m>\R^3</m>.
-	For example, the graph of the function <m>f(x,y) = x^2 + y^2</m> from
-	<xref ref="example-funcs-define-multivariable" />
-	is a parabolic cone, <ie /> a (non-solid) cone-like surface with parabolic sides.
 	</p>
 </example>
 
@@ -548,7 +548,7 @@ sometimes what we think is a function turns out to not be a function.
 
 <figure>
 	<caption>A Venn diagram of the image of a function.</caption>
-	<image width="60%">
+	<image xml:id="image-funcs-image" width="64.1%">
 		<description>A Venn diagram of the image of a function.</description>
 		<latex-image><xi:include href="funcs.d/image.tex" parse="text" /></latex-image>
 	</image>
@@ -1048,7 +1048,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 
 <figure>
 	<caption>A Venn diagram of restricting the domain of a function.</caption>
-	<image width="60%">
+	<image xml:id="image-funcs-domain-res" width="76.4%">
 		<description>A Venn diagram of restricting the domain of a function.</description>
 		<latex-image><xi:include href="funcs.d/domain-res.tex" parse="text" /></latex-image>
 	</image>
@@ -1087,7 +1087,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 
 <figure>
 	<caption>A Venn diagram of restricting the codomain of a function.</caption>
-	<image width="60%">
+	<image xml:id="image-funcs-codomain-res" width="71.1%">
 		<description>A Venn diagram of restricting the codomain of a function.</description>
 		<latex-image><xi:include href="funcs.d/codomain-res.tex" parse="text" /></latex-image>
 	</image>
@@ -1117,7 +1117,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 
 <figure>
 	<caption>A Venn diagram of a function extension.</caption>
-	<image width="60%">
+	<image xml:id="image-funcs-extension" width="83.5%">
 		<description>A Venn diagram of a function extension.</description>
 		<latex-image><xi:include href="funcs.d/extension.tex" parse="text" /></latex-image>
 	</image>
@@ -1210,7 +1210,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 
 <figure>
 	<caption>A Venn diagram of a function composition.</caption>
-	<image width="60%">
+	<image xml:id="image-funcs-composition" width="92.9%">
 		<description>A Venn diagram of a function composition.</description>
 		<latex-image><xi:include href="funcs.d/composition.tex" parse="text" /></latex-image>
 	</image>
@@ -1348,7 +1348,7 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 
 <figure>
 	<caption>A Venn diagram of a function inverse image.</caption>
-	<image width="60%">
+	<image xml:id="image-funcs-inv-image" width="97%">
 		<description>A Venn diagram of a function inverse image.</description>
 		<latex-image><xi:include href="funcs.d/inv-image.tex" parse="text" /></latex-image>
 	</image>

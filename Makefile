@@ -135,11 +135,12 @@ ${BUILDDIR}/latex/${ROOTDOCNAME}.tex: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	  --XSL style-latex.xsl \
 	  --component all \
 	  --format latex \
-	  --publisher latex-out-print.xml \
+	  --publisher latex-out.xml \
 	  --directory ${BUILDDIR}/latex \
 	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "...applying adjustments from ./make.d/latex/"
 	@./make.d/latex/fourier-font.sh ${BUILDDIR}/latex/${ROOTDOCNAME}.tex
+	@./make.d/latex/page-breaks.sh ${BUILDDIR}/latex/${ROOTDOCNAME}.tex
 	@echo "...DONE"
 
 html-serve:

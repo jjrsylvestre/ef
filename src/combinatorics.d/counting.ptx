@@ -596,7 +596,7 @@ so that object <m>a \in A</m> is <q>placed</q> in container <m>b \in B</m> when 
 		</p>
 		<figure xml:id="figure-counting-strong-pigeon">
 			<caption>Diagram of equivalence classes under the <q>have same image</q> equivalence.</caption>
-			<image width="55%">
+			<image xml:id="image-counting-strong-pigeon" width="67.9%">
 				<description>Diagram of equivalence classes under the <q>have same image</q> equivalence.</description>
 				<latex-image><xi:include href="counting.d/strong-pigeon.tex" parse="text" /></latex-image>
 			</image>

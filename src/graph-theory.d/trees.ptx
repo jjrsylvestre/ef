@@ -30,7 +30,7 @@ respective owners.
 	</p>
 	<figure xml:id="figure-trees-comm-network-full">
 		<caption>TreeFort CommNet.</caption>
-		<image width="45%">
+		<image xml:id="image-trees-treefort-commnet-full" width="56.4%">
 			<description>A communication network.</description>
 			<latex-image><xi:include href="trees.d/treefort-commnet-full.tex" parse="text" /></latex-image>
 		</image>
@@ -41,17 +41,17 @@ respective owners.
 	</p>
 	<figure xml:id="figure-trees-comm-network-reduced">
 		<caption>TreeFort CommNet (after removing redundant communication paths).</caption>
-		<sidebyside widths="45% 45%" margins="0%">
+		<sidebyside widths="45% 45%">
 			<figure>
 				<caption>One possible result of removing redundancy.</caption>
-				<image width="45%">
+				<image xml:id="image-trees-treefort-commnet-reduced-1" width="56.4%">
 					<description>A communication network with redundant paths removed.</description>
 					<latex-image><xi:include href="trees.d/treefort-commnet-reduced-1.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
 			<figure>
 				<caption>Another possible result of removing redundancy.</caption>
-				<image width="45%">
+				<image xml:id="image-trees-treefort-commnet-reduced-2" width="56.4%">
 					<description>A communication network with redundant paths removed.</description>
 					<latex-image><xi:include href="trees.d/treefort-commnet-reduced-2.tex" parse="text" /></latex-image>
 				</image>
@@ -126,7 +126,7 @@ respective owners.
 	</p>
 	<figure xml:id="figure-trees-basic-example">
 		<caption>A nonconnected acyclic graph.</caption>
-		<image width="35%">
+		<image xml:id="image-trees-basic-acyclic" width="43.8%">
 			<description>A nonconnected acyclic graph.</description>
 			<latex-image><xi:include href="trees.d/basic-acyclic.tex" parse="text" /></latex-image>
 		</image>
@@ -315,7 +315,7 @@ respective owners.
 			</p>
 			<figure>
 				<caption>Tree <m>G</m> splits into subtrees <m>G_1,G_2</m> after removal of an edge.</caption>
-				<image width="50%">
+				<image xml:id="image-trees-num-edges" width="58.5%">
 					<description>A diagram of a tree splitting into two subtrees for an induction argument.</description>
 					<latex-image><xi:include href="trees.d/num-edges.tex" parse="text" /></latex-image>
 				</image>
@@ -458,34 +458,32 @@ We can do this by constructing a tree <m>T \preceq G</m>.
 	We perform a <xref ref="algorithm-trees-depth-first-search" text="title" />
 	on the graph in <xref ref="figure-trees-depth-first-example" />,
 	attempting to find a path from vertex <m>1</m> to vertex <m>9</m>.
-	</p>
-	<figure xml:id="figure-trees-depth-first-example">
-		<caption>An example graph to illustrate depth-first search.</caption>
-		<image width="55%">
-			<description>An example graph to illustrate depth-first search.</description>
-			<latex-image><xi:include href="trees.d/depth-first-example.tex" parse="text" /></latex-image>
-		</image>
-	</figure>
-	<p>
 	In carrying out the algorithm, if we always choose the vertex with the smallest label in
 	<xref ref="algorithm-trees-depth-first-search-look-adjacent" text="local">Step</xref>,
 	we obtain the graph in <xref ref="figure-trees-depth-first-result-smallest" />.
 	The graph in <xref ref="figure-trees-depth-first-result-largest" />
 	is the result of always choosing the vertex with the largest label.
 	</p>
+	<figure xml:id="figure-trees-depth-first-example">
+		<caption>An example graph to illustrate depth-first search.</caption>
+		<image xml:id="image-trees-depth-first-example" width="52.6%">
+			<description>An example graph to illustrate depth-first search.</description>
+			<latex-image><xi:include href="trees.d/depth-first-example.tex" parse="text" /></latex-image>
+		</image>
+	</figure>
 	<figure xml:id="figure-trees-depth-first-result">
 		<caption>Results of two different implementation choices in a depth-first search.</caption>
-		<sbsgroup width="80%">
-			<sidebyside><figure xml:id="figure-trees-depth-first-result-smallest">
+		<sbsgroup> <!-- TODO sbsgroup can also take widths ... -->
+			<sidebyside width="72.9%"><figure xml:id="figure-trees-depth-first-result-smallest">
 				<caption>Result of always choosing to move to the next adjacent vertex of smallest index.</caption>
-				<image>
+				<image xml:id="image-trees-depth-first-result-smallest">
 					<description>The result tree of depth-first search on an example graph.</description>
 					<latex-image><xi:include href="trees.d/depth-first-result-smallest.tex" parse="text" /></latex-image>
 				</image>
 			</figure></sidebyside>
-			<sidebyside><figure xml:id="figure-trees-depth-first-result-largest">
+			<sidebyside width="72.9%"><figure xml:id="figure-trees-depth-first-result-largest">
 				<caption>Result of always choosing to move to the next adjacent vertex of largest index.</caption>
-				<image>
+				<image xml:id="image-trees-depth-first-result-largest">
 					<description>Another result tree of depth-first search on an example graph.</description>
 					<latex-image><xi:include href="trees.d/depth-first-result-largest.tex" parse="text" /></latex-image>
 				</image>
@@ -540,7 +538,7 @@ The following algorithm will.
 	</p>
 	<figure xml:id="figure-trees-breadth-first-result">
 		<caption>The result of a breadth-first search.</caption>
-		<image width="70%">
+		<image xml:id="image-trees-breadth-first-results" width="64.7%">
 			<description>The result tree of a breadth-first search.</description>
 			<latex-image><xi:include href="trees.d/breadth-first-result.tex" parse="text" /></latex-image>
 		</image>
@@ -570,12 +568,12 @@ The following algorithm will.
 <example>
 	<title>Spanning trees for the complete graph <m>K_4</m></title>
 	<p> Here is the complete graph with four vertices. </p>
-	<image width="10%">
+	<image xml:id="image-trees-K4" width="10.5%">
 		<description>The complete graph with four vertices.</description>
 		<latex-image><xi:include href="trees.d/K4.tex" parse="text" /></latex-image>
 	</image>
 	<p> And here are ten different spanning trees for <m>K_4</m>. </p>
-	<image width="75%">
+	<image xml:id="image-trees-K4-spanning" width="77.3%">
 		<description>Ten spanning trees for the complete graph with four vertices.</description>
 		<latex-image><xi:include href="trees.d/K4-spanning.tex" parse="text" /></latex-image>
 	</image>
@@ -617,17 +615,17 @@ but aren't looking for a path between specific vertices, the end result will be 
 	</p>
 	<figure xml:id="figure-trees-depth-breadth-spanning">
 		<caption>Examples of depth- and breadth-first spanning trees.</caption>
-		<sbsgroup width="100%">
-			<sidebyside><figure>
+		<sbsgroup> <!-- TODO sbsgroup can also take widths... -->
+			<sidebyside width="79.7%"><figure>
 				<caption>Depth-first spanning tree for the graph in <xref ref="figure-trees-depth-first-example" />.</caption>
-				<image>
+				<image xml:id="image-trees-depth-spanning">
 					<description>A depth-first spanning tree.</description>
 					<latex-image><xi:include href="trees.d/depth-spanning.tex" parse="text" /></latex-image>
 				</image>
 			</figure></sidebyside>
-			<sidebyside><figure>
+			<sidebyside width="64.7%"><figure>
 				<caption>Breadth-first spanning tree for the graph in <xref ref="figure-trees-depth-first-example" />.</caption>
-				<image>
+				<image xml:id="image-trees-breadth-spanning">
 					<description>A breadth-first spanning tree.</description>
 					<latex-image><xi:include href="trees.d/breadth-spanning.tex" parse="text" /></latex-image>
 				</image>
@@ -681,7 +679,7 @@ but aren't looking for a path between specific vertices, the end result will be 
 		</p>
 		<figure xml:id="figure-trees-binary-search-example">
 			<caption>A binary search tree search for the root of a polynomial.</caption>
-			<image width="75%">
+			<image xml:id="image-trees-binary-search" width="90.5%">
 				<description>An example binary search tree.</description>
 				<latex-image><xi:include href="trees.d/binary-search.tex" parse="text" /></latex-image>
 			</image>

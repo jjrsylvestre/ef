@@ -15,6 +15,7 @@ respective owners.
 
 <publication>
 
+	<!-- <latex print="no" pageref="no" open-odd="skip-pages"> -->
 	<latex print="yes" pageref="no">
 		<worksheet formatted="no" />
 		<page bottom-alignment="flush" />

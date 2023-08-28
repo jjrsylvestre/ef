@@ -52,7 +52,7 @@ respective owners.
 	</p>
 	<figure xml:id="figure-trees-only-proper-cycle">
 		<caption>A graph that consists entirely of a proper cycle.</caption>
-		<image width="17%">
+		<image xml:id="image-trees-only-cycle" width="17.9%">
 			<description>A graph that consists entirely of a proper cycle.</description>
 			<latex-image><xi:include href="activities.d/only-cycle.tex" parse="text" /></latex-image>
 		</image>
