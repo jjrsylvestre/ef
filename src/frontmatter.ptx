@@ -48,6 +48,6 @@ respective owners.
 
 <xi:include href="./frontmatter.d/biography.ptx" />
 
-<xi:include href="./frontmatter.d/preface.ptx" />
+<!-- <xi:include href="./frontmatter.d/preface.ptx" /> -->
 
 </frontmatter>

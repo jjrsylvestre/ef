@@ -1,3 +1,7 @@
+* Preface
+
+* Rename "More Set Theory" section to just "Relations" ?
+
 * Cover: why the hell won't inkscape export background color?
 
 * Latex version: weird page break a couple pages before 18.4, can't figure out why
