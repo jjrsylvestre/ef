@@ -627,7 +627,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 		</p>
 		<figure xml:id="figure-relations-graph-symmetric-1">
 			<caption>The graph of a basic symmetric relation.</caption>
-			<image xml:id="image-relations-symmetric-example-1" width="35.2%">
+			<image xml:id="image-relations-symmetric-example-1" width="35.5%">
 				<description>The graph of a basic symmetric relation.</description>
 				<latex-image><xi:include href="relations.d/symmetric-example-1.tex" parse="text" /></latex-image>
 			</image>
@@ -647,7 +647,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 		</p>
 		<figure xml:id="figure-relations-graph-symmetric-2">
 			<caption>The simplified graph of a basic symmetric relation.</caption>
-			<image xml:id="image-relations-symmetric-example-2" width="35.2%">
+			<image xml:id="image-relations-symmetric-example-2" width="35.5%">
 				<description>The simplified graph of a basic symmetric relation.</description>
 				<latex-image><xi:include href="relations.d/symmetric-example-2.tex" parse="text" /></latex-image>
 			</image>

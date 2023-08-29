@@ -13,22 +13,23 @@
 % *********************************************************************
 
 \begin{tikzpicture}[
-	vertex/.style={ circle, draw, very thin, fill, inner sep=0pt, minimum size=2pt },
-	vertexg/.style={ black!40!white, circle, draw, very thin, fill, inner sep=0pt, minimum size=2pt },
-	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=2pt }
+	vertex/.style={ circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
+	vertexg/.style={ black!40!white, circle, draw, very thin, fill, inner sep=0pt, minimum size=4pt },
+	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=4pt },
+	scale=2
 ]
 
 \draw (0,0.5) circle (0.5cm);
 \fill[white] (0,1) circle (1pt);
-\node at (0,1) (np) [vertexo,label=above:{$\scriptstyle (0,1)$}] {};
-\node at (0,0) (origin) [vertex,label=below:{$\scriptstyle (0,0)$}] {};
-\draw[->] (origin.west) -- (-1.75,0);
+\node at (0,1) (np) [vertexo,label=above:{$(0,1)$}] {};
+\node at (0,0) (origin) [vertex,label=below:{$(0,0)$}] {};
+\draw[->] (origin.west) -- (-1,0);
 \draw[->] (origin.east) -- (1.75,0);
 \node[vertex] at (0.5,0.5) (cpt) {};
-\node at (1.5,1) (cptlabel) {$\scriptstyle (x,y)$};
+\node at (1.25,1) (cptlabel) {$(x,y)$};
 \draw[dashed] (cptlabel) -- (cpt);
 \node[vertex] at (1,0) (gpt) {};
-\node at (1,-1) (gptlabel) {$\scriptstyle \bbrac{f(x,y),0}$};
+\node at (1,-0.5) (gptlabel) {$\bbrac{f(x,y),0}$};
 \draw[dashed] (gptlabel) -- (gpt);
 \draw (gpt) -- (np);
 

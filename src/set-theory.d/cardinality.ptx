@@ -747,7 +747,7 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 			</p>
 			<figure>
 				<caption>Projecting the punctured circle onto the real number line.</caption>
-				<image xml:id="image-cardinality-punctured" width="30.2%">
+				<image xml:id="image-cardinality-punctured" width="46.4%">
 					<description>A diagram of a bijection projecting a punctured circle onto the real number line.</description>
 					<latex-image><xi:include href="cardinality.d/punctured.tex" parse="text" /></latex-image>
 				</image>

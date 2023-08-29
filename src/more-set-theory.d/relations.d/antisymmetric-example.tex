@@ -19,11 +19,11 @@
 	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=4pt }
 ]
 
-\node at (0,0) (a) [vertex,label=above right:$\scriptstyle a$] {};
+\node at (0,0) (a) [vertex,label={[xshift=0.1cm]above:$a$}] {};
 \draw[-latex] (a) arc (5:315:0.25cm) to (a);
-\node at (2,0) (b) [vertex,label=above:$\scriptstyle b$] {};
-\node at (4,0) (c) [vertex,label=above:$\scriptstyle c$] {};
-\node at (6,0) (d) [vertex,label=above:$\scriptstyle d$] {};
+\node at (2,0) (b) [vertex,label=above:$b$] {};
+\node at (4,0) (c) [vertex,label=above:$c$] {};
+\node at (6,0) (d) [vertex,label=above:$d$] {};
 \foreach \p in {a,c} \draw[-latex] (\p) to (b);
 
 \end{tikzpicture}

@@ -18,30 +18,30 @@
 	vertexo/.style={ circle, draw, very thin, inner sep=0pt, minimum size=4pt }
 ]
 
-\node at (0,0) (O) [vertexo,label=below:$\scriptstyle 0$] {};
-\node at (1,0) (ONE) [vertexo,label=below:$\scriptstyle 1$] {};
+\node at (0,0) (O) [vertexo,label=below:$0$] {};
+\node at (1,0) (ONE) [vertexo,label=below:$1$] {};
 
 \draw[->,very thin] (O.west) -- (-1,0);
 \draw[very thick] (O.east) -- (ONE.west);
 \draw[->,very thin] (ONE.east) -- (2,0);
 
 \begin{scope}[xshift=4cm]
-	\node at (0,0) (O2) [vertexo,label=below:$\scriptstyle 0$] {};
-	\node at (2,0) (BA) [vertexo,label=below:$\scriptstyle b-a$] {};
+	\node at (0,0) (O2) [vertexo,label=below:$0$] {};
+	\node at (2,0) (BA) [vertexo,label=below:$b-a$] {};
 	\draw[->,very thin] (O2.west) -- (-1,0);
 	\draw[very thick] (O2.east) -- (BA.west);
 	\draw[->,very thin] (BA.east) -- (3,0);
 \end{scope}
 
 \begin{scope}[xshift=9cm]
-	\node at (0,0) (A) [vertexo,label=below:$\scriptstyle a$] {};
-	\node at (2,0) (B) [vertexo,label=below:$\scriptstyle b$] {};
+	\node at (0,0) (A) [vertexo,label=below:$a$] {};
+	\node at (2,0) (B) [vertexo,label=below:$b$] {};
 	\draw[->,very thin] (A.west) -- (-1,0);
 	\draw[very thick] (A.east) -- (B.west);
 	\draw[->,very thin] (B.east) -- (3,0);
 \end{scope}
 
-\draw[->] (0.5,0.25) to [out=30,in=150] node[above] {$\scriptstyle f$} (4.5,0.25);
-\draw[->] (5.5,0.25) to [out=30,in=150] node[above] {$\scriptstyle g$} (9.5,0.25);
+\draw[->] (0.5,0.25) to [out=30,in=150] node[above] {$f$} (4.5,0.25);
+\draw[->] (5.5,0.25) to [out=30,in=150] node[above] {$g$} (9.5,0.25);
 
 \end{tikzpicture}
