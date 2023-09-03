@@ -28,7 +28,7 @@ respective owners.
 <example><title>Some objects</title><p><ul>
 	<li> The number <m>2</m>. </li>
 	<li> The real number line. </li>
-	<li> A monkey. </li>
+	<li> A chicken. </li>
 	<li> A basket of tennis balls. </li>
 </ul></p></example>
 
@@ -43,11 +43,11 @@ respective owners.
 	<ul>
 		<li> the number <m>2</m> to not be a set; </li>
 		<li> the real number line to be a set as it is a collection of points, each representing a different real number; </li>
-		<li> a monkey to not be a set; and </li>
+		<li> a chicken to not be a set; and </li>
 		<li> a basket of tennis balls to be a set as it is a collection of tennis balls (though the basket itself is not part of this set, just the container for the objects making up the set). </li>
 	</ul>
 	However, the answers above may depend on your point of view.
-	For example, a monkey could be considered a collection of cells.
+	For example, a chicken could be considered a collection of cells.
 	Even the number <m>2</m> is sometimes <em>defined</em> to be a set!
 	(See <xref ref="example-recur-induct-construct-nat-nums" />.)
 </p></example>
@@ -130,9 +130,9 @@ to indicate that the objects in the list are being collected into a set.
 </p>
 
 <example><title>Listing the elements of a set</title><p>
-	If we write <me> A = \{ \text{monkey, tennis ball, the number } 2 \} </me>,
+	If we write <me> A = \{ \text{chicken, tennis ball, the number } 2 \} </me>,
 	then we intend for the letter <m>A</m> to become a label representing the set consisting of
-	some specific monkey,
+	some specific chicken,
 	some specific tennis ball,
 	and the number <m>2</m>.
 </p></example>
