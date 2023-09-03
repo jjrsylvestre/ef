@@ -168,7 +168,7 @@ respective owners.
 
 <exercisegroup xml:id="exercisegroup-sets-investigate-set-ops">
 	<!-- \label{EXERCISE::sets::adv.set.ops} -->
-	<title>Testing set equalitye</title>
+	<title>Testing set equality</title>
 	<introduction>
 		For each of
 		<xref ref="exercisegroup-sets-investigate-set-ops" text="type-local">Exercises</xref>,
