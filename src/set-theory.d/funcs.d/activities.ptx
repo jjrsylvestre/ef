@@ -37,18 +37,18 @@ respective owners.
 
 <activity>
 	<introduction><p>
-		For each function <m>\funcdef{f}{A}{B}</m> defined below, carry out the following.
+		For each function defined below:
 		<ol marker="(i)">
 			<li>
 				Decide whether the function is injective.
 				Use the <xref ref="test-funcs-inj" text="custom">Injective Function Test</xref>
 				to verify your answer.
 			</li>
-			<li>
+			<!-- <li>  TODO NEED BETTER EXAMPLES OF DOING THIS
 				Determine some pattern that all elements of the image <m>f(B)</m> have in common.
 				That is, if you were handed an arbitrary element of the codomain <m>B</m>,
 				describe what property or properties you would use to determine whether it was in the subset <m>f(A) \subseteq B</m>.
-			</li>
+			</li> -->
 			<li>
 				Decide whether the function is surjective.
 				Use the <xref ref="test-funcs-surj" text="custom">Surjective Function Test</xref>

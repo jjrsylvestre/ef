@@ -1,3 +1,6 @@
+* Need some better examples in funcs.d/activities.ptx of describing image in set notation.
+  (See TODO in that file.)
+
 * Preface
 
 * Rename "More Set Theory" section to just "Relations" ?
