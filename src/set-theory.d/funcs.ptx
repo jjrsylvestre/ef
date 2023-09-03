@@ -238,11 +238,11 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 
 </subsection>
 
-<subsection>
+<subsection xml:id="subsection-funcs-graph">
 <title>Graph of a function</title>
 
 <p><dl width="narrow">
-	<li>
+	<li xml:id="definition-funcs-graph">
 		<title>graph (of a function)</title>
 		<idx><h>graph</h><h>of a function</h></idx>
 		<idx><h>function</h><h>graph</h></idx>
@@ -407,10 +407,9 @@ Rather than chasing some circle of definitions, we can come up with a better def
 <p><dl width="narrow">
 	<li xml:id="definition-funcs-formal">
 		<title>function (formal definition)</title>
-		<!-- \label{DEFN::function.formal.defn} -->
 		<idx><h>function</h><h>definition</h><h>formal</h></idx>
 		<p>
-			a subset <m>F \subseteq A \cartprod B</m> such that for every <m>x\in A</m> there is <em>exactly one</em> element <m>(a,b)\in F</m> with <m>a=x</m>
+		a subset <m>F \subseteq A \cartprod B</m> such that for every <m>x\in A</m> there is <em>exactly one</em> element <m>(a,b)\in F</m> with <m>a=x</m>
 		</p>
 	</li>
 </dl></p>

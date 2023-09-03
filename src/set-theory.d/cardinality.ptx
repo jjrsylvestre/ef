@@ -144,9 +144,14 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 <paragraphs>
 	<title>Cardinality of an empty set</title>
 	<p>
-		What about the empty set?
-		Clearly we should have <m>\card{\emptyset} = 0</m>.
-		But is this consistent with our definition of <xref ref="definition-cardinality-itself" text="custom">cardinality</xref>?
+	What about an empty set?
+	Clearly we should have <m>\card{\emptyset} = 0</m>,
+	but is this consistent with our definition of <xref ref="definition-cardinality-itself" text="custom">cardinality</xref>?
+	By definition,
+	to verify <m>\card{\emptyset} = 0</m> we require a bijection <m>\natnumlt{0} \to \emptyset</m>,
+	but
+	<me> \natnumlt{0} = \setdef{n \in \N}{n \lt 0} = \emptyset </me>
+	as well.
 	</p>
 	<p><dl width="narrow"><li xml:id="definition-cardinality-empty-function">
 		<title>empty function</title>
@@ -154,17 +159,30 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 		<p> a function with domain <m>\emptyset</m> </p>
 	</li></dl></p>
 	<p>
-		If we accept the existence of an <term>empty function</term> <m>\emptyset \to X</m> for every set <m>X</m>,
-		then the properties of such functions that we need in order to establish <m>\card{\emptyset} = 0</m> will be vacuously true.
+	Do empty functions even exist?
+	It is difficult to think of such a function in terms of an <term>input-output rule</term>,
+	but remember that technically a function is defined by its graph.
+	(See the <xref ref="definition-funcs-formal" text="custom">formal definition of <term>function</term></xref> in <xref ref="subsection-funcs-graph" />.)
+	Since <m>\emptyset \cartprod X = \emptyset</m> for every set <m>X</m>,
+	there exists a unique function <m>\emptyset \to X</m>,
+	namely the function whose graph is <m>\emptyset</m>.
+	And because of the empty nature of this graph,
+	the facts required to establish <m>\card{\emptyset} = 0</m> will be vacuously true.
 	</p>
+	<aside><title>Empty codomain</title><p>
+		While functions with empty domain exist,
+		note that it is not possible to have a function with empty codomain,
+		<em>except</em> in the case that the domain is empty as well.
+	</p></aside>
 	<proposition xml:id="proposition-cardinality-empty-functions">
 		<title>Properties of empty functions</title>
 		<statement><p><ol>
 			<li xml:id="proposition-cardinality-empty-functions-inj">
-				For every set <m>X</m>, an empty function <m>\emptyset \to X</m> is injective.
+				For every set <m>X</m>,
+				the corresponding empty function <m>\emptyset \to X</m> is injective.
 			</li>
 			<li xml:id="proposition-cardinality-empty-functions-bij">
-				An empty function <m>\emptyset \to \emptyset</m> is a bijection.
+				The empty function <m>\emptyset \to \emptyset</m> is a bijection.
 			</li>
 		</ol></p></statement>
 		<proof><p> You were asked to verify these statements in <xref ref="exercise-funcs-empty-functions" />. </p></proof>
@@ -175,13 +193,13 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 		</p></statement>
 		<proof><p>
 			We are required to demonstrate an example of a bijection <m>\natnumlt{0} \to \emptyset</m>.
-			But
-			<me> \natnumlt{0} = \setdef{n \in \N}{n \lt 0} = \emptyset </me>,
-			so <xref ref="proposition-cardinality-empty-functions-bij" text="local">Statement</xref>
+			As
+			<m> \natnumlt{0} = \emptyset </m>,
+			<xref ref="proposition-cardinality-empty-functions-bij" text="local">Statement</xref>
 			of <xref ref="proposition-cardinality-empty-functions" />
 			tells that the empty function
 			<m>\natnumlt{0} \to \emptyset</m>
-			is indeed a bijection.
+			is the required bijection.
 		</p></proof>
 	</corollary>
 </paragraphs>

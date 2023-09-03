@@ -91,6 +91,11 @@ respective owners.
 	Make sure you have all the <m>\{\ \}</m>-pairs you need in all the right places.
 </p></activity>
 
+<activity><p>
+	What is <m>A \cartprod \emptyset</m>?
+	What about <m>\emptyset \cartprod B</m>?
+</p></activity>
+
 <activity>
 	<p> For alphabet <m>\Sigma = \{\mathrm{a},\mathrm{b},\mathrm{c}\}</m>, describe the elements of <m>\words{\Sigma}</m> and <m>\words{(\words{\Sigma})}</m>: </p>
 	<p> Elements of <m>\words{\Sigma}</m> are <fillin characters="20" />. </p>

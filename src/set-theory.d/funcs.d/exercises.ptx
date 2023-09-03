@@ -87,7 +87,7 @@ respective owners.
 <exercise>
 	<introduction>
 		<p>
-		As usual, <m>\R^m = \R \times \R \times \dotsb \times \R</m> represents the Cartesian product of <m>m</m> copies of <m>\R</m>,
+		As usual, <m>\R^m = \R \cartprod \R \cartprod \dotsb \cartprod \R</m> represents the Cartesian product of <m>m</m> copies of <m>\R</m>,
 		where <m>m</m> is a positive integer.
 		Consider the function <m>\funcdef{D}{\R}{\R^m}</m> defined by <m>D(x) = (x,x,\dotsc,x)</m>.
 		</p>
@@ -135,6 +135,14 @@ respective owners.
 
 <exercise xml:id="exercise-funcs-empty-functions">
 	<introduction><p> Call a function with domain <m>\emptyset</m> an <term>empty function</term>. </p></introduction>
+	<task xml:id="exercise-funcs-empty-functions-formal-def"><p>
+		What must the <xref ref="definition-funcs-graph" text="custom">graph</xref> of an empty function be?
+		Does this graph satisfy the <xref ref="definition-funcs-formal" text="custom">formal definition of <term>function</term></xref>?
+	</p></task>
+	<task xml:id="exercise-funcs-empty-functions-unique"><p>
+		Use your analysis in <xref ref="exercise-funcs-empty-functions-formal-def" text="type-local" />
+		to prove that for every set <m>B</m> there exists a unique function <m>\emptyset \to B</m>.
+	</p></task>
 	<task xml:id="exercise-funcs-empty-functions-injective">
 		<statement><p> Verify that every empty function is injective. </p></statement>
 		<hint><p>
@@ -157,7 +165,6 @@ respective owners.
 </exercise>
 
 <exercise xml:id="exercise-funcs-props-of-composition">
-<!-- \label{EXERCISE::funcs::props.of.composition} -->
 	<statement><p> Let <m>\funcdef{f}{A}{B}</m> and <m>\funcdef{g}{B}{C}</m> be functions. </p></statement>
 	<task xml:id="exercise-funcs-props-of-composition-surjective"><p>
 		Prove that if <m>f</m> and <m>g</m> are both surjective, then <m>g \funccomp f</m> is surjective.

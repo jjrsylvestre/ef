@@ -1,12 +1,3 @@
-* In functions chapter, there is an exercise about empty functions.
-  Add a task that asks what such a function is as subset of the Cartesian product of domain and codomain.
-  Then, in section 12.1 Finite sets there is a sentence
-  "If we accept the existence of an empty function for every set X, then ..."
-  but there is no need "accept" existence of such functions --- the formal definition of function
-  https://sites.ualberta.ca/~jsylvest/books/EF/section-funcs-basics.html#p-1027
-  is vacuously satisfied when the domain is empty.
-  (As a "graph" the empty function is just the empty set.)
-
 * Preface
 
 * Rename "More Set Theory" section to just "Relations" ?
