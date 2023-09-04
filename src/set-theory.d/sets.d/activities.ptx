@@ -39,16 +39,16 @@ respective owners.
 	<blockquote><p> Breaking the students in a class into groups is an example of <fillin characters="15" />. </p></blockquote>
 </activity>
 
-<activity><p><ol>
-	<li>
+<activity>
+	<task><p>
 		Write a definition in <xref ref="subsection-sets-defining-candidate-condition" text="title" />
 		for the set of all points on the graph of the parabola <m>f(x) = x^2</m>.
-	</li>
-	<li>
+	</p></task>
+	<task><p>
 		Write a definition in <xref ref="subsection-sets-defining-form-parameter" text="title" />
 		for the set of all numbers that are one less than a power of two.
-	</li>
-</ol></p></activity>
+	</p></task>
+</activity>
 
 <activity>
 	<introduction>
@@ -114,13 +114,13 @@ respective owners.
 	</p>
 </activity>
 
-<activity><p>
-	The equality of sets <m>(A \cartprod B) \union (C \cartprod D) = (A \union C) \cartprod (B \union D)</m> is false in general.
-	<ol>
-		<li> Write down definitions for example sets <m>A,B,C,D</m> that form a counterexample. </li>
-		<li> Can you come up with some conditions on <m>A,B,C,D</m> that make this equality true? </li>
-	</ol>
-</p></activity>
+<activity>
+	<introduction><p>
+		The equality of sets <m>(A \cartprod B) \union (C \cartprod D) = (A \union C) \cartprod (B \union D)</m> is false in general.
+	</p></introduction>
+	<task><p> Write down definitions for example sets <m>A,B,C,D</m> that form a counterexample. </p></task>
+	<task><p> Can you come up with some conditions on <m>A,B,C,D</m> that make this equality true? </p></task>
+</activity>
 
 <activity>
 	<p>

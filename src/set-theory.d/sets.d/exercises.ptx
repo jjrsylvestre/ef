@@ -39,130 +39,132 @@ respective owners.
 		</p>
 	</introduction>
 
-	<exercise><p>
-		Sets:
-		<md>
-			<mrow> A \amp = \text{ the set of all Augustana students, } </mrow>
-			<mrow> R \amp = \text{ the set of Augustana students who attend class regularly, } </mrow>
-			<mrow> S \amp = \text{ the set of Augustana students who study diligently, } </mrow>
-			<mrow> P \amp = \text{ the set of Augustana students who will pass all their courses. } </mrow>
-		</md>
-		Symbols:
-		<me>
-			A, \quad
-			R, \quad
-			S, \quad
-			P, \quad
-			\cmplmnt{R}, \quad
-			\cmplmnt{S}, \quad
-			\cmplmnt{P}, \quad
-			\intersection, \quad
-			\union, \quad
-			=, \quad
-			\ne, \quad
-			\subseteq, \quad
-			\subsetneqq, \quad
-			\emptyset
-		</me>.
-		Statements:
-		<ol>
-			<li> All Augustana students who attend class regularly and study diligently will pass all their courses. </li>
-			<li> Some Augustana students attend class regularly but do not study diligently. </li>
-			<li> Some Augustana students who study diligently will still fail a course. </li>
-		</ol>
-	</p></exercise>
-
 	<exercise>
-		<p>
-		Recall that a square number is an integer which is equal to the square of some integer.
-		(See the introduction preceding <xref ref="exercise-proof-methods-square-number-square-free-1" /> in <xref ref="exercises-proof-methods" />.)
-		</p>
-		<p>
-		Sets:
-		<md>
-			<mrow> P \amp = \text{ the set of prime numbers, } </mrow>
-			<mrow> E \amp = \text{ the set of even numbers, } </mrow>
-			<mrow> S \amp = \text{ the set of square numbers. } </mrow>
-		</md>
-		Symbols:
-		<me>
-			2, \quad
-			\N, \quad
-			P, \quad
-			E, \quad
-			S, \quad
-			\cmplmnt{\N}, \quad
-			\cmplmnt{P}, \quad
-			\cmplmnt{E}, \quad
-			\cmplmnt{S}, \quad
-			\in, \quad
-			\intersection, \quad
-			\union, \quad
-			=, \quad
-			\ne, \quad
-			\subseteq, \quad
-			\subsetneqq, \quad
-			\emptyset, \quad
-			\{\phantom{x}\}.
-		</me>
-		Statements:
-		<ol>
-			<li> <m>2</m> is the only even, prime number. </li>
-			<li> There exist odd square numbers. </li>
-			<li> No prime number is square. </li>
-			<li> No square number is prime. </li>
-			<li> It is not true that every natural number is either even or prime. </li>
-		</ol>
-		</p>
+		<introduction><p>
+			Sets:
+			<md>
+				<mrow> A \amp = \text{ the set of all Augustana students, } </mrow>
+				<mrow> R \amp = \text{ the set of Augustana students who attend class regularly, } </mrow>
+				<mrow> S \amp = \text{ the set of Augustana students who study diligently, } </mrow>
+				<mrow> P \amp = \text{ the set of Augustana students who will pass all their courses. } </mrow>
+			</md>
+			Symbols:
+			<me>
+				A, \quad
+				R, \quad
+				S, \quad
+				P, \quad
+				\cmplmnt{R}, \quad
+				\cmplmnt{S}, \quad
+				\cmplmnt{P}, \quad
+				\intersection, \quad
+				\union, \quad
+				=, \quad
+				\ne, \quad
+				\subseteq, \quad
+				\subsetneqq, \quad
+				\emptyset
+			</me>.
+		</p></introduction>
+		<task><p> All Augustana students who attend class regularly and study diligently will pass all their courses. </p></task>
+		<task><p> Some Augustana students attend class regularly but do not study diligently. </p></task>
+		<task><p> Some Augustana students who study diligently will still fail a course. </p></task>
 	</exercise>
 
-	<exercise><p>
-		Sets:
-		<md>
-			<mrow> \mathscr{F} \amp = \text{ the set of all functions in a single real variable, } </mrow>
-			<mrow> \mathscr{C} \amp = \text{ the set of continuous functions, } </mrow>
-			<mrow> \mathscr{D} \amp = \text{ the set of differentiable functions, } </mrow>
-			<mrow> \mathscr{P} \amp = \text{ nonnegative functions } </mrow>
-			<mrow> \amp = \setdef{f(x)}{ f(x) \ge 0 \text{ for all } x \text{ in the domain of } f }\text{.} </mrow>
-		</md>
-		Elements:
-		<md><mrow>
-			f_1(x) \amp = x^2 \amp
-			f_2(x) \amp = \abs{x} \amp
-			f_3(x) \amp = \tan x
-		</mrow></md>
-		Symbols:
-		<me>
-			\mathscr{F}, \;\;\;
-			\mathscr{C}, \;\;\;
-			\mathscr{D}, \;\;\;
-			\mathscr{P}, \;\;\;
-			\cmplmnt{\mathscr{F}}, \;\;\;
-			\cmplmnt{\mathscr{C}}, \;\;\;
-			\cmplmnt{\mathscr{D}}, \;\;\;
-			\cmplmnt{\mathscr{P}}, \;\;\;
-			f_1(x), \;\;\;
-			f_2(x), \;\;\;
-			f_3(x), \;\;\;
-			\in, \;\;\;
-			\intersection, \;\;\;
-			\union, \;\;\;
-			=, \;\;\;
-			\ne, \;\;\;
-			\subseteq, \;\;\;
-			\subsetneqq, \;\;\;
-			\emptyset.
-		</me>
-		Statements:
-		<ol>
-			<li> The function <m>f_1(x)</m> is differentiable and nonnegative. </li>
-			<li> The function <m>f_2(x)</m> is continuous and nonnegative, but not differentiable. </li>
-			<li> The function <m>f_3(x)</m> is neither continuous nor nonnegative. </li>
-			<li> Every differentiable function is continuous. </li>
-			<li> Some continuous functions are not differentiable. </li>
-			<li> Not every function is continuous. </li>
-		</ol>
-	</p></exercise>
+	<exercise>
+		<introduction>
+
+			<p>
+			Recall that a square number is an integer which is equal to the square of some integer.
+			(See the introduction preceding <xref ref="exercise-proof-methods-square-number-square-free-1" /> in <xref ref="exercises-proof-methods" />.)
+			</p>
+
+			<p>
+			Sets:
+			<md>
+				<mrow> P \amp = \text{ the set of prime numbers, } </mrow>
+				<mrow> E \amp = \text{ the set of even numbers, } </mrow>
+				<mrow> S \amp = \text{ the set of square numbers. } </mrow>
+			</md>
+			Symbols:
+			<me>
+				2, \quad
+				\N, \quad
+				P, \quad
+				E, \quad
+				S, \quad
+				\cmplmnt{\N}, \quad
+				\cmplmnt{P}, \quad
+				\cmplmnt{E}, \quad
+				\cmplmnt{S}, \quad
+				\in, \quad
+				\intersection, \quad
+				\union, \quad
+				=, \quad
+				\ne, \quad
+				\subseteq, \quad
+				\subsetneqq, \quad
+				\emptyset, \quad
+				\{\phantom{x}\}.
+			</me>
+			</p>
+
+		</introduction>
+
+		<task><p> <m>2</m> is the only even, prime number. </p></task>
+		<task><p> There exist odd square numbers. </p></task>
+		<task><p> No prime number is square. </p></task>
+		<task><p> No square number is prime. </p></task>
+		<task><p> It is not true that every natural number is either even or prime. </p></task>
+
+	</exercise>
+
+	<exercise>
+		<introduction><p>
+			Sets:
+			<md>
+				<mrow> \mathscr{F} \amp = \text{ the set of all functions in a single real variable, } </mrow>
+				<mrow> \mathscr{C} \amp = \text{ the set of continuous functions, } </mrow>
+				<mrow> \mathscr{D} \amp = \text{ the set of differentiable functions, } </mrow>
+				<mrow> \mathscr{P} \amp = \text{ nonnegative functions } </mrow>
+				<mrow> \amp = \setdef{f(x)}{ f(x) \ge 0 \text{ for all } x \text{ in the domain of } f }\text{.} </mrow>
+			</md>
+			Elements:
+			<md><mrow>
+				f_1(x) \amp = x^2 \amp
+				f_2(x) \amp = \abs{x} \amp
+				f_3(x) \amp = \tan x
+			</mrow></md>
+			Symbols:
+			<me>
+				\mathscr{F}, \;\;\;
+				\mathscr{C}, \;\;\;
+				\mathscr{D}, \;\;\;
+				\mathscr{P}, \;\;\;
+				\cmplmnt{\mathscr{F}}, \;\;\;
+				\cmplmnt{\mathscr{C}}, \;\;\;
+				\cmplmnt{\mathscr{D}}, \;\;\;
+				\cmplmnt{\mathscr{P}}, \;\;\;
+				f_1(x), \;\;\;
+				f_2(x), \;\;\;
+				f_3(x), \;\;\;
+				\in, \;\;\;
+				\intersection, \;\;\;
+				\union, \;\;\;
+				=, \;\;\;
+				\ne, \;\;\;
+				\subseteq, \;\;\;
+				\subsetneqq, \;\;\;
+				\emptyset.
+			</me>
+		</p></introduction>
+		<task><p> The function <m>f_1(x)</m> is differentiable and nonnegative. </p></task>
+		<task><p> The function <m>f_2(x)</m> is continuous and nonnegative, but not differentiable. </p></task>
+		<task><p> The function <m>f_3(x)</m> is neither continuous nor nonnegative. </p></task>
+		<task><p> Every differentiable function is continuous. </p></task>
+		<task><p> Some continuous functions are not differentiable. </p></task>
+		<task><p> Not every function is continuous. </p></task>
+	</exercise>
 
 </exercisegroup>
 

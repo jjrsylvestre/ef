@@ -81,7 +81,6 @@ respective owners.
 </exercise>
 
 <exercise xml:id="exercise-cardinality-same-card-induces-same-power-set-card">
-	<!-- \label{EXERCISE::cardinality::same.card.induces.same.power.set.card} -->
 	<statement><p>
 		Prove that if <m>A</m> and <m>B</m> have the same size,
 		then so do <m>\powset{A}</m> and <m>\powset{B}</m>.
@@ -90,14 +89,12 @@ respective owners.
 </exercise>
 
 <exercise xml:id="exercise-cardinality-pow-set-size-vs-words">
-	<!-- \label{EXERCISE::cardinality::pow.set.size.vs.words} -->
 	<!-- TODO \refAdapt{hunter+discrete}{4.3}{8} -->
 	<introduction><p>
 		Suppose <m>A</m> is a set with <m>\card{A} = n</m>.
 		Then we can enumerate its elements as <m>A = \{a_1,a_2,\dotsc,a_n\}</m>.
 	</p></introduction>
 	<task xml:id="exercise-cardinality-pow-set-size-vs-words-find-bijection">
-		<!-- \label{EXERCISE::cardinality::pow.set.size.vs.words::find.bijection} -->
 		<statement>
 			<p>
 			Construct a bijection from the power set of <m>A</m> to the set of words in the alphabet <m>\Sigma = \{T,F\}</m> of length <m>n</m>.
