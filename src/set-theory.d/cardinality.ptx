@@ -45,7 +45,7 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 	<title>finite set</title>
 	<idx><h>finite</h><h>set</h></idx>
 	<idx><h>set(s)</h><h>finite</h></idx>
-	<p> a set <m>A</m> for which there exists a bijection <m>\natnumlt{m} \to A</m> for some <m>m \in \N</m>, <m>m \gt 0</m> </p>
+	<p> a set <m>A</m> for which there exists a bijection <m>\natnumlt{m} \to A</m> for some <m>m \in \N</m>, <m>m \ge 0</m> </p>
 </li></dl></p>
 
 <fact xml:id="fact-cardinality-is-unique">
@@ -57,11 +57,9 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 	Suppose <m>A</m> is finite.
 	While there is only one number <m>m</m> for which a bijection <m>\natnumlt{m} \to A</m> exists,
 	there can be many such bijections, and the number of bijections increases as <m>m</m> increases.
-	<!-- TODO XREF -->
-	<!-- \begin{inlinenote}[See]Worked Example \ref{WEXAMPLE::counting.injections.and.bijections.with.combinations} on page \pageref{WEXAMPLE::counting.injections.and.bijecti&ons.with.combinations}.\end{inlinenote} -->
 </p></remark>
 
-<exercise><p> Prove <xref ref="fact-cardinality-is-unique" />. </p></exercise>
+<exercise><p> Prove <xref ref="fact-cardinality-is-unique" /> in the case of non-empty <m>A</m>. </p></exercise>
 
 <p><dl width="narrow">
 	<li xml:id="definition-cardinality-itself">
