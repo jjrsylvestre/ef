@@ -202,7 +202,7 @@ so we encapsulate it as the proof of a Lemma, rather than just a plain Example.
 		(The reason we use <m>a_{k-1}</m> instead of <m>a_k</m> in the rules to create <m>r</m> is to make sure we consider sequence element <m>a_0</m> somewhere in there.)
 		</p><p>
 		Now we have <m>a_k \ne r</m> for every <m>k \in \N</m>, since <m>r</m> and <m>a_k</m> differ in the <m>\nth[(k+1)]</m> decimal place.
-		Furthermore, <m>r \in \mathscr{C}</m> because it is between <m>0</m> and <m>0.2</m> and its decimal expansion involves only digits <m>0</m> and <m>1</m>.
+		And, as already stated above, we have <m>r \in \mathscr{C}</m>.
 		Therefore, sequence <m>\{a_k\}</m> does not contain every element of <m>\mathscr{C}</m> because it does not contain <m>r</m>.
 		</p>
 	</proof>
