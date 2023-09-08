@@ -44,7 +44,7 @@ respective owners.
 	<introduction><p>
 		For each of the following graphs, write out its formal definition as either
 		a (regular) <xref ref="definition-graphs-formal" text="custom">graph</xref>,
-		a <xref ref="definition-graphs-weighted-formal" text="custom">weigthed graph</xref>,
+		a <xref ref="definition-graphs-weighted-formal" text="custom">weighted graph</xref>,
 		or a <xref ref="definition-graphs-directed-formal" text="custom">directed graph</xref>,
 		as appropriate.
 	</p></introduction>
