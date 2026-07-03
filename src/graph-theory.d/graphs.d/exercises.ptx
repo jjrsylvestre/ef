@@ -47,7 +47,7 @@ respective owners.
 		<statement><p> How many edges does the complete graph with ten vertices have? </p></statement>
 		<hint><p> See <xref ref="theorem-graphs-sum-of-degrees" />. </p></hint>
 	</task>
-	<task><p> Generalize your result to a formula for the number of edges in the complete graph with <m>n</m> vertices. </p></task>
+	<task><p> Generalize your result to a formula for the number of edges in the complete graph with <m> n </m> vertices. </p></task>
 </exercise>
 
 <exercise>
@@ -56,7 +56,7 @@ respective owners.
 </exercise>
 
 <exercise><p>
-	Given a collection of sets <m>A_1,A_2,\dotsc,A_n</m>,
+	Given a collection of sets <m> A_1,A_2,\dotsc,A_n </m>,
 	the intersection graph of the collection is the simple graph that has a vertex for each of the sets in the collection,
 	with two vertices joined by an edge if and only if the two corresponding sets have nonempty intersection.
 	Draw the intersection graph of the following collection of sets.
@@ -74,12 +74,12 @@ respective owners.
 		<xref ref="exercisegroup-graphs-complement" text="type-local">Exercises</xref>
 		concern the following definition.
 		<dl width="narrow"><li>
-			<title>complement (of a simple graph <m>G</m>)</title>
+			<title>complement (of a simple graph <m> G </m>)</title>
 			<idx><h>graph</h><h>complement</h></idx>
 			<idx><h>complement</h><h>of a simple graph</h></idx>
 			<p>
-			the simple graph that has the same vertex set as <m>G</m>,
-			but in which two vertices are joined by an edge if and only if those same two vertices are not joined by an edge in <m>G</m>
+			the simple graph that has the same vertex set as <m> G </m>,
+			but in which two vertices are joined by an edge if and only if those same two vertices are not joined by an edge in <m> G </m>
 			</p>
 		</li></dl>
 	</p></introduction>
@@ -98,12 +98,12 @@ respective owners.
 	</p></exercise>
 	<exercise>
 		<statement><p>
-			Suppose <m>G</m> is a simple graph with <m>n</m> vertices.
-			Determine a relationship between the number of edges in <m>G</m>,
-			the number of edges in the complement of <m>G</m>,
-			and the number of edges in the complete graph <m>K_n</m> with <m>n</m> vertices.
+			Suppose <m> G </m> is a simple graph with <m> n </m> vertices.
+			Determine a relationship between the number of edges in <m> G </m>,
+			the number of edges in the complement of <m> G </m>,
+			and the number of edges in the complete graph <m> K_n </m> with <m> n </m> vertices.
 		</p></statement>
-		<hint><p> Recall that every simple graph with <m>n</m> vertices is a subgraph of <m>K_n</m>. </p></hint>
+		<hint><p> Recall that every simple graph with <m> n </m> vertices is a subgraph of <m> K_n </m>. </p></hint>
 	</exercise>
 </exercisegroup>
 

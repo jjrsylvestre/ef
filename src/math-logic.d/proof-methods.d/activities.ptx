@@ -38,9 +38,9 @@ respective owners.
 <activity xml:id="activity-proof-methods-square-numbers-1">
 	<introduction><p>
 		A <term>square number</term> is an integer which is equal to the square of some integer.
-		An integer is <term>square free</term> if it is not divisible by any square number other than <m>1</m>.
+		An integer is <term>square free</term> if it is not divisible by any square number other than <m> 1 </m>.
 	</p></introduction>
-	<task><p> Is <m>0</m> a square number? Is it square free? </p></task>
+	<task><p> Is <m> 0 </m> a square number? Is it square free? </p></task>
 	<task><p> Does there exist a negative square number? </p></task>
 	<task><p> Is every negative number square free? </p></task>
 	<task><p> Is every prime number square free? </p></task>
@@ -52,14 +52,14 @@ respective owners.
 	<p> The following statement is a basic (and very useful) fact about real numbers. </p>
 	<blockquote><p>
 		<term>Triangle Inequality</term>:
-		For every pair of real numbers <m>x</m> and <m>y</m>, <m>\abs{x+y} \le \abs{x} + \abs{y}</m>.
+		For every pair of real numbers <m> x </m> and <m> y </m>, <m> \abs{x+y} \le \abs{x} + \abs{y} </m>.
 	</p></blockquote>
 	<p>
 	<em>Use the above statement to directly prove</em> the following extended version of the inequality,
 	<em>without</em> resorting to considering cases of positive/negative for any of the variables.
 	</p>
 	<blockquote><p>
-		For every triple of real numbers <m>x</m>, <m>y</m>, and <m>z</m>, <m>\abs{x+y+z} \le \abs{x} + \abs{y} + \abs{z}</m>.
+		For every triple of real numbers <m> x </m>, <m> y </m>, and <m> z </m>, <m> \abs{x+y+z} \le \abs{x} + \abs{y} + \abs{z} </m>.
 	</p></blockquote>
 	<paragraphs><title>Remark</title><p>
 		Using the two-number version of the inequality to prove the three-number version is an example of <em>inductive reasoning</em>, something that we will soon investigate further.
@@ -91,20 +91,20 @@ respective owners.
 
 <activity>
 	<task>
-		<p> A positive integer that is greater than <m>1</m> and <em>not</em> prime is called <term>composite</term>. </p>
+		<p> A positive integer that is greater than <m> 1 </m> and <em>not</em> prime is called <term>composite</term>. </p>
 		<p>
 			Write a technical definition for the concept of <term>composite number</term> with a similar level of detail as in the <q>more complete</q> definition of <term>prime number</term> given in <xref ref="example-proof-methods-define-prime" />.
 		</p>
 		<paragraphs><title>Note</title><p>
 			Don't just define it as <q>not prime.</q>
-			And make sure that the equality <m>7 = 1 \times 7</m> can't be used to justify the statement <q><m>7</m> is composite</q> by your definition
-			(because prime <m>7</m> is most definitely <em>not</em> composite).
+			And make sure that the equality <m> 7 = 1 \times 7 </m> can't be used to justify the statement <q><m> 7 </m> is composite</q> by your definition
+			(because prime <m> 7 </m> is most definitely <em>not</em> composite).
 		</p></paragraphs>
 	</task>
 	<task>
 		<statement><p>
 			<em>Prove by proving the contrapositive:</em>
-			If <m>2^n - 1</m> is prime, then <m>n</m> is prime.
+			If <m> 2^n - 1 </m> is prime, then <m> n </m> is prime.
 		</p></statement>
 		<hint><p>
 			You may find the following <q>difference of powers</q> factorization formula useful:
@@ -124,7 +124,7 @@ respective owners.
 <activity>
 	<introduction><p> Refer to <xref ref="activity-proof-methods-square-numbers-1" />. </p></introduction>
 	<task><p>
-		Prove that a positive number <m>n</m> is square free if and only if for every factorization <m>n = ab</m>, the integers <m>a</m> and <m>b</m> do not share a common factor other than <m>1</m>.
+		Prove that a positive number <m> n </m> is square free if and only if for every factorization <m> n = ab </m>, the integers <m> a </m> and <m> b </m> do not share a common factor other than <m> 1 </m>.
 	</p></task>
 	<task><p> Prove that a positive number is square free if and only if it is not divisible by the square of a prime number. </p></task>
 </activity>
@@ -133,14 +133,14 @@ respective owners.
 <!-- TODO this is an exercise repeat -->
 <activity>
 	<introduction><p>
-		A pair of prime numbers <m>p_1,p_2</m> is called a <term>twin prime pair</term> if <m>p_2 = p_1 + 2</m>.
+		A pair of prime numbers <m> p_1,p_2 </m> is called a <term>twin prime pair</term> if <m> p_2 = p_1 + 2 </m>.
 		A prime number is called an <term>isolated prime</term><idx><h>isolated</h><h>prime</h></idx>
 		if it is not part of a twin prime pair.
 	</p></introduction>
 	<task><p> Determine the first (<ie /> smallest) four twin prime pairs. </p></task>
 	<task><p> Determine the first (<ie /> smallest) two isolated primes. </p></task>
-	<task><p> Prove that if <m>p, p+2</m> is a twin prime pair with <m>p \ge 5</m>, then <m>p+1</m> is divisible by <m>6</m>. </p></task>
-	<task><p> Prove that if <m>p, p+2</m> is a twin prime pair, then <m>p-2,p</m> and <m>p+2,p+4</m> <em>cannot</em> be twin prime pairs. </p></task>
+	<task><p> Prove that if <m> p, p+2 </m> is a twin prime pair with <m> p \ge 5 </m>, then <m> p+1 </m> is divisible by <m> 6 </m>. </p></task>
+	<task><p> Prove that if <m> p, p+2 </m> is a twin prime pair, then <m> p-2,p </m> and <m> p+2,p+4 </m> <em>cannot</em> be twin prime pairs. </p></task>
 </activity>
 
 </worksheet>

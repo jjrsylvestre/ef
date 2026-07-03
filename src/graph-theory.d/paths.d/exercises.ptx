@@ -52,9 +52,9 @@ respective owners.
 			</image>
 		</figure>
 	</introduction>
-	<task><p> Determine four different paths from vertex <m>1</m> to vertex <m>5</m>. </p></task>
-	<task><p> Determine four different trails from vertex <m>1</m> to vertex <m>5</m>, none of which are paths. </p></task>
-	<task><p> Determine four different walks from vertex <m>1</m> to vertex <m>5</m>, none of which are trails. </p></task>
+	<task><p> Determine four different paths from vertex <m> 1 </m> to vertex <m> 5 </m>. </p></task>
+	<task><p> Determine four different trails from vertex <m> 1 </m> to vertex <m> 5 </m>, none of which are paths. </p></task>
+	<task><p> Determine four different walks from vertex <m> 1 </m> to vertex <m> 5 </m>, none of which are trails. </p></task>
 </exercise>
 
 <exercise>
@@ -68,12 +68,12 @@ respective owners.
 			</image>
 		</figure>
 	</introduction>
-	<task><p> How many different trails are there from vertex <m>1</m> to vertex <m>5</m>? </p></task>
+	<task><p> How many different trails are there from vertex <m> 1 </m> to vertex <m> 5 </m>? </p></task>
 	<task><p>
-		How many different paths are there from vertex <m>1</m> to vertex <m>5</m>?
+		How many different paths are there from vertex <m> 1 </m> to vertex <m> 5 </m>?
 		(<em>Hint:</em> See <xref ref="proposition-paths-open-is-trail" />.)
 	</p></task>
-	<task><p> How many different walks are there from vertex <m>1</m> to vertex <m>5</m>? </p></task>
+	<task><p> How many different walks are there from vertex <m> 1 </m> to vertex <m> 5 </m>? </p></task>
 </exercise>
 
 <exercisegroup xml:id="exercisegroup-paths-find-bridges">
@@ -94,21 +94,21 @@ respective owners.
 		<description>An example graph for an exercise.</description>
 		<latex-image><xi:include href="exercises.d/find-bridges-3.tex" parse="text" /></latex-image>
 	</image></exercise>
-	<exercise><p> The complete graph with <m>n</m> vertices. </p></exercise>
+	<exercise><p> The complete graph with <m> n </m> vertices. </p></exercise>
 </exercisegroup>
 
 <exercise> <!-- TODO check activities, does this need to be edited or removed? -->
 	<statement><p>
-		Among all possible nonconnected graphs with <m>n</m> vertices,
-		let <m>H</m> be one with the maximum number of edges.
-		Prove that <m>H</m> has exactly two connected components.
+		Among all possible nonconnected graphs with <m> n </m> vertices,
+		let <m> H </m> be one with the maximum number of edges.
+		Prove that <m> H </m> has exactly two connected components.
 	</p></statement>
 	<hint><p> Argue by contradiction. </p></hint>
 </exercise>
 
 <exercise><p>
-	Suppose <m>G</m> is a connected graph that contains a closed path that is also a trail.
-	Prove that it is possible to remove any single edge from this path and be left with a connected subgraph of <m>G</m>.
+	Suppose <m> G </m> is a connected graph that contains a closed path that is also a trail.
+	Prove that it is possible to remove any single edge from this path and be left with a connected subgraph of <m> G </m>.
 	That is, prove that no edge in this path could be a bridge.
 </p></exercise>
 

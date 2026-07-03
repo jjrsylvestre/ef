@@ -23,12 +23,12 @@ respective owners.
 		compute the value of the combination or formula of combinations.
 		To obtain exact answers, you should simplify the factorial expressions before computing.
 	</p></introduction>
-	<exercise><p><m>\combination{4}{4}</m></p></exercise>
-	<exercise><p><m>\combination{13}{5}</m></p></exercise>
-	<exercise><p><m>\combination{1000000}{999998}</m></p></exercise>
-	<exercise><p><m>\combination{7}{0}</m></p></exercise>
-	<exercise><p><m>\combination{10}{6} \cdot \combination{6}{3}</m></p></exercise>
-	<exercise><p><m>\combination{10}{9} / \combination{5}{2}</m></p></exercise>
+	<exercise><p><m> \combination{4}{4} </m></p></exercise>
+	<exercise><p><m> \combination{13}{5} </m></p></exercise>
+	<exercise><p><m> \combination{1000000}{999998} </m></p></exercise>
+	<exercise><p><m> \combination{7}{0} </m></p></exercise>
+	<exercise><p><m> \combination{10}{6} \cdot \combination{6}{3} </m></p></exercise>
+	<exercise><p><m> \combination{10}{9} / \combination{5}{2} </m></p></exercise>
 </exercisegroup>
 
 <exercisegroup xml:id="exercisegroup-combinations-verify" cols="2">
@@ -40,18 +40,18 @@ respective owners.
 		manipulating/simplifying one or the other or both sides until they are the same expression.
 	</p></introduction>
 	<exercise><p>
-		<m>\displaystyle \combination{n}{k} = \frac{n}{k} \cdot \combination{n-1}{k-1}</m>
+		<m> \displaystyle \combination{n}{k} = \frac{n}{k} \cdot \combination{n-1}{k-1} </m>
 	</p></exercise>
-	<exercise><p> <m>\displaystyle \combination{n}{k} = \frac{n}{n - k} \cdot \combination{n - 1}{k}</m> </p></exercise>
-	<exercise><p> <m>\displaystyle \combination{n}{k} = \frac{n - k + 1}{k} \cdot \combination{n}{k - 1}</m> </p></exercise>
+	<exercise><p> <m> \displaystyle \combination{n}{k} = \frac{n}{n - k} \cdot \combination{n - 1}{k} </m> </p></exercise>
+	<exercise><p> <m> \displaystyle \combination{n}{k} = \frac{n - k + 1}{k} \cdot \combination{n}{k - 1} </m> </p></exercise>
 	<exercise><p>
-		<m>\displaystyle \combination{n + k}{n} = \combination{n + k}{k}</m>
+		<m> \displaystyle \combination{n + k}{n} = \combination{n + k}{k} </m>
 	</p></exercise>
 </exercisegroup>
 
 <exercise><p>
-	Choose a value for <m>m</m> so that the equality in <xref ref="proposition-combinations-extram-comb-formula" />
-	becomes a formula for the sum <m>1 + 2 + 3 + \dotsb + n</m>.
+	Choose a value for <m> m </m> so that the equality in <xref ref="proposition-combinations-extram-comb-formula" />
+	becomes a formula for the sum <m> 1 + 2 + 3 + \dotsb + n </m>.
 </p></exercise>
 
 </exercises>

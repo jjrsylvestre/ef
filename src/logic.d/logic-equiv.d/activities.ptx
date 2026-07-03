@@ -16,9 +16,9 @@ respective owners.
 <worksheet xml:id="activities-logic-equiv">
 
 <activity><p>
-	Write an English language statement that has the logical form <m>\lgcnot (A \lgcor B)</m>.
-	Then write one that has the form <m>\lgcnot A \lgcand \lgcnot B</m>,
-	where <m>A</m> and <m>B</m> are the same as in your first sentence.
+	Write an English language statement that has the logical form <m> \lgcnot (A \lgcor B) </m>.
+	Then write one that has the form <m> \lgcnot A \lgcand \lgcnot B </m>,
+	where <m> A </m> and <m> B </m> are the same as in your first sentence.
 	<xref ref="proposition-logic-equiv-rules-prop-calculus-demorgan" text="title" />
 	say your two sentences are logically equivalent.
 	Do you agree?
@@ -27,7 +27,7 @@ respective owners.
 <activity><p>
 	What do you think
 	<xref ref="proposition-logic-equiv-rules-prop-calculus-demorgan" text="title" />
-	would say about <m>\lgcnot (A \lgcand B \lgcand C)</m>?
+	would say about <m> \lgcnot (A \lgcand B \lgcand C) </m>?
 	Use propositional calculus to justify your answer.
 </p></activity>
 
@@ -39,10 +39,10 @@ respective owners.
 
 <activity xml:id="activity-logic-equiv-cartesian-conditionals">
 	<introduction>
-		<p> Recall that a pair of coordinates <m>(x,y)</m> defines a point in the Cartesian plane. </p>
+		<p> Recall that a pair of coordinates <m> (x,y) </m> defines a point in the Cartesian plane. </p>
 		<p> Consider the following conditional statement. </p>
 		<blockquote><p>
-			If Cartesian points <m>(a,b)</m> and <m>(c,d)</m> are actually the same point, then <m>a = c</m>.
+			If Cartesian points <m> (a,b) </m> and <m> (c,d) </m> are actually the same point, then <m> a = c </m>.
 		</p></blockquote>
 	</introduction>
 	<task xml:id="activity-logic-equiv-cartesian-conditionals-related"><p>
@@ -64,14 +64,14 @@ respective owners.
 	<introduction><p>
 		In this activity, we will justify the equivalence
 		<md> p \lgcbicond q \lgcequiv (p\lgccond q) \lgcand (q \lgccond p) </md>.
-		So consider the statements <m>A = p \lgcbicond q</m> and <m>B = (p\lgccond q) \lgcand (q \lgccond p)</m>.
+		So consider the statements <m> A = p \lgcbicond q </m> and <m> B = (p\lgccond q) \lgcand (q \lgccond p) </m>.
 	</p></introduction>
 	<task xml:id="activity-logic-equiv-construct-bicond-1">
-		<p> Argue that if <m>A</m> is false, then so is <m>B</m>. </p>
+		<p> Argue that if <m> A </m> is false, then so is <m> B </m>. </p>
 		<p> Do <em>not</em> use the proposed equivalence above as part of your argument. </p>
 	</task>
 	<task xml:id="activity-logic-equiv-construct-bicond-2">
-		<p> Argue that if <m>B</m> is false, then so is <m>A</m>. </p>
+		<p> Argue that if <m> B </m> is false, then so is <m> A </m>. </p>
 		<p> Do <em>not</em> use the proposed equivalence above as part of your argument. </p>
 	</task>
 	<task><p>
@@ -79,13 +79,13 @@ respective owners.
 		in <xref ref="activity-logic-equiv-construct-bicond-1" text="type-local" />
 		and <xref ref="activity-logic-equiv-construct-bicond-2" text="type-local" />,
 		taken together,
-		justify the equivalence <m>A \lgcequiv B</m>.
-		Do this <em>without</em> making any further arguments about the truth values of <m>p</m> and <m>q</m>.
+		justify the equivalence <m> A \lgcequiv B </m>.
+		Do this <em>without</em> making any further arguments about the truth values of <m> p </m> and <m> q </m>.
 	</p></task>
 </activity>
 
 <activity>
-	<p> Consider the statements <m>p \lgccond (q_1 \lgcor q_2)</m> and <m>(p \lgcand \lgcnot q_1) \lgccond q_2</m>. </p>
+	<p> Consider the statements <m> p \lgccond (q_1 \lgcor q_2) </m> and <m> (p \lgcand \lgcnot q_1) \lgccond q_2 </m>. </p>
 	<p> Use propositional calculus and substitution to show that these two statements are equivalent. </p>
 </activity>
 

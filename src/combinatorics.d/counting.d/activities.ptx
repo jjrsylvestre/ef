@@ -24,7 +24,7 @@ respective owners.
 			or do you think it should have added another letter instead?
 			(Or, as a third possibility, is it irrelevant in practical terms?)
 		</p></statement>
-		<hint><p> The figure <m>26^3 = 17576</m> may help you decide. </p></hint>
+		<hint><p> The figure <m> {26}^3 = 17576 </m> may help you decide. </p></hint>
 	</task>
 </activity>
 
@@ -35,13 +35,13 @@ respective owners.
 	</p></task>
 	<task><p>
 		Describe how <xref ref="activity-counting-roll-die-ten-times" text="type-local" />
-		relates to the problem of determining <m>\card{\words{\Sigma}_{10}}</m> for a suitable alphabet <m>\Sigma</m>.
+		relates to the problem of determining <m> \card{\words{\Sigma}_{10}} </m> for a suitable alphabet <m> \Sigma </m>.
 	</p></task>
 </activity>
 
 <activity><p>
-	Let <m>\Sigma = \EngAlphabet</m>.
-	How many words in <m>\words{\Sigma}_5</m> end in the letter <m>z</m>?
+	Let <m> \Sigma = \EngAlphabet </m>.
+	How many words in <m> \words{\Sigma}_5 </m> end in the letter <m> z </m>?
 	How many do not?
 </p></activity>
 
@@ -55,13 +55,13 @@ respective owners.
 </p></activity>
 
 <activity>
-	<statement><p> How many natural numbers between <m>1</m> and <m>1,000,000</m> (inclusive) contain the digit <m>5</m>? </p></statement>
-	<hint><p> You might instead count how many numbers <em>don't</em> contain the digit <m>5</m>. </p></hint>
+	<statement><p> How many natural numbers between <m> 1 </m> and <m> 1,000,000 </m> (inclusive) contain the digit <m> 5 </m>? </p></statement>
+	<hint><p> You might instead count how many numbers <em>don't</em> contain the digit <m> 5 </m>. </p></hint>
 </activity>
 
 <activity>
 	<statement><p>
-		How many natural numbers between <m>100</m> and <m>999</m> (inclusive) have no repeated digits?
+		How many natural numbers between <m> 100 </m> and <m> 999 </m> (inclusive) have no repeated digits?
 		Of these, how many are odd?
 	</p></statement>
 	<hint><p> There's no rule that when you <q>construct</q> an arbitrary object of this type that you have to choose the first digit first. </p></hint>
@@ -85,23 +85,23 @@ respective owners.
 
 <activity>
 	<p>
-	Let <m>n</m> be a fixed natural number.
-	Determine the smallest number <m>M</m> for which the following statement is true:
+	Let <m> n </m> be a fixed natural number.
+	Determine the smallest number <m> M </m> for which the following statement is true:
 	every subset of <md> \natnumlt{2n + 1} = \{0,1,2,3,\dotsc,2n\} </md>
-	of size <m>M</m> contains at least one odd number.
+	of size <m> M </m> contains at least one odd number.
 </p></activity>
 
 <activity>
 	<introduction><p>
 		You're cleaning up your little nephew's toy room.
-		There are <m>T</m> toys on the floor and <m>n</m> empty toy storage boxes.
-		You randomly throw toys into boxes, and when you're done the box with the most toys contains <m>N</m> toys.
+		There are <m> T </m> toys on the floor and <m> n </m> empty toy storage boxes.
+		You randomly throw toys into boxes, and when you're done the box with the most toys contains <m> N </m> toys.
 	</p></introduction>
-	<task><p> What is the smallest that <m>N</m> could be when <m>T = 2 n + 1</m>? </p></task>
-	<task><p> What is the smallest that <m>N</m> could be when <m>T = k n + 1</m>? </p></task>
+	<task><p> What is the smallest that <m> N </m> could be when <m> T = 2 n + 1 </m>? </p></task>
+	<task><p> What is the smallest that <m> N </m> could be when <m> T = k n + 1 </m>? </p></task>
 	<task>
 		<statement><p>
-			Now suppose that the number of toys <m>T</m> satisfies
+			Now suppose that the number of toys <m> T </m> satisfies
 			<md> T \lt \frac{n (n - 1)}{2} </md>.
 			Prove that when you are done cleaning up, there will be (at least) one pair of boxes that contain the same number of toys.
 		</p></statement>

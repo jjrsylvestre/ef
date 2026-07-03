@@ -17,18 +17,18 @@ respective owners.
 
 <activity>
 	<task><p>
-		Devise an example of predicates <m>A(x)</m> and <m>B(x)</m> such that, of the statements
+		Devise an example of predicates <m> A(x) </m> and <m> B(x) </m> such that, of the statements
 		<ul>
-			<li> <m>(\forall x)\bbrac{A(x) \lgcor B(x)}</m>,  and </li>
-			<li> <m>(\forall x)A(x) \lgcor (\forall x)B(x)</m>, </li>
+			<li> <m> (\forall x)\bbrac{A(x) \lgcor B(x)} </m>,  and </li>
+			<li> <m> (\forall x)A(x) \lgcor (\forall x)B(x) </m>, </li>
 		</ul>
 		the first is true but the second is false.
 	</p></task>
 	<task><p>
-        Devise an example of predicates <m>A(x)</m> and <m>B(x)</m> such that, of the statements
+        Devise an example of predicates <m> A(x) </m> and <m> B(x) </m> such that, of the statements
 		<ul>
-			<li> <m>(\exists x)\bbrac{A(x) \lgcand B(x)}</m>, and </li>
-			<li> <m>(\exists x)A(x) \lgcand (\exists x)B(x)</m>, </li>
+			<li> <m> (\exists x)\bbrac{A(x) \lgcand B(x)} </m>, and </li>
+			<li> <m> (\exists x)A(x) \lgcand (\exists x)B(x) </m>, </li>
 		</ul>
 		the first is false but the second is true.
 	</p></task>
@@ -38,28 +38,28 @@ respective owners.
 <activity>
 	<introduction>
 		<p>
-		Let <m>P(f,g)</m> represent the predicate <m>\frac{df}{dx} = g</m>,
-		where <m>f</m> and <m>g</m> are free variables in the domain of <em>continuous</em> functions in the real variable <m>x</m>.
+		Let <m> P(f,g) </m> represent the predicate <m> \frac{df}{dx} = g </m>,
+		where <m> f </m> and <m> g </m> are free variables in the domain of <em>continuous</em> functions in the real variable <m> x </m>.
 		</p><p>
 		For each of the following, determine whether the statement is true or false.
 		Explain your reasoning.
 		</p>
 	</introduction>
-	<task><p> <m>(\exists f)(\exists g) P(f,g)</m> </p></task>
-	<task><p> <m>(\forall f)(\forall g) P(f,g)</m> </p></task>
-	<task><p> <m>(\forall f)(\exists g) P(f,g)</m> </p></task>
-	<task><p> <m>(\exists f)(\forall g) P(f,g)</m> </p></task>
-	<task><p> <m>(\forall g)(\exists f) P(f,g)</m> </p></task>
-	<task><p> <m>(\exists g)(\forall f) P(f,g)</m> </p></task>
+	<task><p> <m> (\exists f)(\exists g) P(f,g) </m> </p></task>
+	<task><p> <m> (\forall f)(\forall g) P(f,g) </m> </p></task>
+	<task><p> <m> (\forall f)(\exists g) P(f,g) </m> </p></task>
+	<task><p> <m> (\exists f)(\forall g) P(f,g) </m> </p></task>
+	<task><p> <m> (\forall g)(\exists f) P(f,g) </m> </p></task>
+	<task><p> <m> (\exists g)(\forall f) P(f,g) </m> </p></task>
 </activity>
 
 <!-- TODO exercise repeat -->
 <activity xml:id="activity-pred-logic-multivar-predicate-to-english">
 	<introduction>
 		<p>
-		Let <m>P(f,g)</m> represent the predicate <m>\frac{df}{dx} = g</m>,
-		and let <m>E(f,g)</m> represent the predicate <m>g = f</m>,
-		where <m>f</m> and <m>g</m> are functions in the real variable <m>x</m>.
+		Let <m> P(f,g) </m> represent the predicate <m> \frac{df}{dx} = g </m>,
+		and let <m> E(f,g) </m> represent the predicate <m> g = f </m>,
+		where <m> f </m> and <m> g </m> are functions in the real variable <m> x </m>.
 		Consider the statement
 		<md> (\forall f)(\forall g)\Bbrac{(\exists h)\bbrac{P(f,h) \lgcand P(g,h)} \lgccond E(f,g)} </md>.
 		</p>
@@ -71,7 +71,7 @@ respective owners.
 	<task xml:id="activity-pred-logic-multivar-predicate-to-english-negate"><p>
 		Working with the originally provided symbolic version above,
 		negate the statement.
-		Simplify the negated version to so that any/all negation symbols appear directly to the left of one of the predicates <m>P</m> or <m>E</m>.
+		Simplify the negated version to so that any/all negation symbols appear directly to the left of one of the predicates <m> P </m> or <m> E </m>.
 	</p></task>
 	<task><p>
 		Translate your simplified negated statement from
@@ -88,9 +88,9 @@ respective owners.
 		Here is the question you've been assigned to mark two thousand times.
 		</p>
 		<blockquote>
-			<p> Let <m>x</m> represent a free variable from the domain of all living humans. </p>
+			<p> Let <m> x </m> represent a free variable from the domain of all living humans. </p>
 			<p>
-			Translate the following two statements into properly quantified predicate statements in the variable <m>x</m>.
+			Translate the following two statements into properly quantified predicate statements in the variable <m> x </m>.
 			<ol marker="(i)">
 				<li> All university students study diligently. </li>
 				<li> Some university students study diligently. </li>
@@ -102,11 +102,11 @@ respective owners.
 		Here is the student's answer.
 		</p>
 		<blockquote><p>
-			Let <m>U(x)</m> mean <q><m>x</m> is a university student</q>.
-			Let <m>S(x)</m> mean <q><m>x</m> studies diligently</q>.
+			Let <m> U(x) </m> mean <q><m> x </m> is a university student</q>.
+			Let <m> S(x) </m> mean <q><m> x </m> studies diligently</q>.
 			<ol marker="(i)">
-				<li> <m>(\forall x)\bigl[ U(x) \lgccond S(x) \bigr]</m>. </li>
-				<li> <m>(\exists x)\bigl[ U(x) \lgccond S(x) \bigr]</m>. </li>
+				<li> <m> (\forall x)\bigl[ U(x) \lgccond S(x) \bigr] </m>. </li>
+				<li> <m> (\exists x)\bigl[ U(x) \lgccond S(x) \bigr] </m>. </li>
 			</ol>
 		</p></blockquote>
 		<p>
@@ -116,7 +116,7 @@ respective owners.
 	</statement>
 	<hint><p>
 		Try translating the student's symbolic language statements back into English,
-		<em>explicitly using the stated domain of <m>x</m></em>,
+		<em>explicitly using the stated domain of <m> x </m></em>,
 		and see what you get.
 		Is it possible for the student's version of the statement to be true in a way that goes against the idea expressed by the original English version of the statement?
 	</p></hint>

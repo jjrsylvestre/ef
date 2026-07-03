@@ -29,7 +29,7 @@ respective owners.
 
 <activity>
 	<introduction><p>
-		Devise a graph with exactly four vertices, each of which has degree <m>5</m>,
+		Devise a graph with exactly four vertices, each of which has degree <m> 5 </m>,
 		so that the graph is
 	</p></introduction>
 	<task><p> nonconnected. </p></task>
@@ -46,7 +46,7 @@ respective owners.
 	<task><p> Contains a bridge. </p></task>
 	<task><p> <em>Every</em> edge is a bridge. </p></task>
 	<task><p> Contains an articulation vertex. </p></task>
-	<task><p> <em>Every</em> vertex of degree at least <m>2</m> is an articulation vertex. </p></task>
+	<task><p> <em>Every</em> vertex of degree at least <m> 2 </m> is an articulation vertex. </p></task>
 </activity>
 
 <activity><p> Does increasing the number of edges in a graph increase its edge connectivity? </p></activity>
@@ -61,7 +61,7 @@ respective owners.
 	</figure>
 	<p>
 	In the graph of <xref ref="figure-paths-testing-connected-component-def" />,
-	explain why the subgraph formed by vertices <m>2</m>, <m>3</m>, and <m>4</m>,
+	explain why the subgraph formed by vertices <m> 2 </m>, <m> 3 </m>, and <m> 4 </m>,
 	along with all edges incident to these vertices,
 	<em>fails</em> the
 	<xref ref="definition-paths-connected-component-formal" text="custom">formal definition of connected component</xref>.
@@ -72,12 +72,12 @@ respective owners.
 
 <activity xml:id="activity-paths-maximal-simple-nonconnected">
 	<p>
-	Suppose <m>G</m> is a simple, nonconnected graph with <m>n</m> vertices that is <term>maximal</term> with respect to these properties.
-	That is, if you tried to make a larger graph in which <m>G</m> is a subgraph,
-	this larger graph will lose at least one of the properties (a) simple, (b) nonconnected, or (c) has <m>n</m> vertices.
+	Suppose <m> G </m> is a simple, nonconnected graph with <m> n </m> vertices that is <term>maximal</term> with respect to these properties.
+	That is, if you tried to make a larger graph in which <m> G </m> is a subgraph,
+	this larger graph will lose at least one of the properties (a) simple, (b) nonconnected, or (c) has <m> n </m> vertices.
 	</p><p>
-	What does being maximal with respect to these properties imply about <m>G</m>?
-	That is, what further properties must <m>G</m> possess because of this assumption?
+	What does being maximal with respect to these properties imply about <m> G </m>?
+	That is, what further properties must <m> G </m> possess because of this assumption?
 	</p>
 </activity>
 

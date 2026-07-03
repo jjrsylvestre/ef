@@ -28,15 +28,15 @@ Be careful with definitions: as stated by mathematicians, they often contain imp
 	<p>
 	A number is called
 	<term>prime</term><idx>prime number</idx>
-	if its only divisors are <m>1</m> and itself.
+	if its only divisors are <m> 1 </m> and itself.
 	</p>
 	<p> This definition has some hidden parts: a more complete definition would be as follows. </p>
 	<p>
 	A number is called <term>prime</term> if
 	<ol marker="(i)">
 		<li> it is an integer, </li>
-		<li> it is strictly greater than <m>1</m>, and </li>
-		<li> there does not exist any <em>other</em> number greater than <m>1</m> which divides it. </li>
+		<li> it is strictly greater than <m> 1 </m>, and </li>
+		<li> there does not exist any <em>other</em> number greater than <m> 1 </m> which divides it. </li>
 	</ol>
 	</p>
 </example>
@@ -48,13 +48,13 @@ You should view a definition as a <em>technical test</em> or <em>collection of t
 <problem> <!-- worked example -->
 	<statement><p>
 		Demonstrate that, according to the technical definition of <term>prime</term>,
-		<m>17</m> is prime but <m>21</m> is not.
+		<m> 17 </m> is prime but <m> 21 </m> is not.
 	</p></statement>
 	<solution><p>
-		Let us test <m>17</m>.
+		Let us test <m> 17 </m>.
 		<ol marker="(i)">
-			<li> Yes, <m>17</m> is an integer. </li>
-			<li> Yes, <m>17 \gt 1</m>. </li>
+			<li> Yes, <m> 17 </m> is an integer. </li>
+			<li> Yes, <m> 17 \gt 1 </m>. </li>
 			<li>
 				None of the numbers in the following list is an integer:
 				<md>
@@ -65,15 +65,15 @@ You should view a definition as a <em>technical test</em> or <em>collection of t
 				</md>.
 			</li>
 		</ol>
-		So <m>17</m> is prime since it passes the technical tests that define the concept of <term>prime</term>.
+		So <m> 17 </m> is prime since it passes the technical tests that define the concept of <term>prime</term>.
 		</p><p>
-		Now let us test <m>21</m>.
+		Now let us test <m> 21 </m>.
 		<ol marker="(i)">
-			<li> Yes, <m>21</m> is an integer. </li>
-			<li> Yes, <m>21 \gt 1</m>. </li>
-			<li> However, clearly <m>21/3 = 7</m> is an integer, so <m>3</m> divides <m>21</m>. </li>
+			<li> Yes, <m> 21 </m> is an integer. </li>
+			<li> Yes, <m> 21 \gt 1 </m>. </li>
+			<li> However, clearly <m> 21/3 = 7 </m> is an integer, so <m> 3 </m> divides <m> 21 </m>. </li>
 		</ol>
-		So <m>21</m> is not prime, since it fails <em>at least one</em> of the technical tests that define the concept of <term>prime</term>.
+		So <m> 21 </m> is not prime, since it fails <em>at least one</em> of the technical tests that define the concept of <term>prime</term>.
 		</p>
 	</solution>
 </problem>
@@ -81,8 +81,8 @@ You should view a definition as a <em>technical test</em> or <em>collection of t
 <p> Often, the first thing we do in mathematics is to look for ways to make testing our definition easier. </p>
 
 <proposition xml:id="proposition-proof-methods-prime-refine"><p>
-	Suppose <m>n</m> is an integer with <m>n \ge 2</m>.
-	Then <m>n</m> is prime if and only if <m>n/m</m> is <em>not</em> an integer for every integer <m>m</m> with <m>2 \le m \lt \frac{n}{2}</m>.
+	Suppose <m> n </m> is an integer with <m> n \ge 2 </m>.
+	Then <m> n </m> is prime if and only if <m> n/m </m> is <em>not</em> an integer for every integer <m> m </m> with <m> 2 \le m \lt \frac{n}{2} </m>.
 </p></proposition>
 
 <p>
@@ -96,9 +96,9 @@ The proof is left to you as
 </p></aside>
 
 <problem> <!-- worked example -->
-	<statement><p> Demonstrate that <m>17</m> is prime. </p></statement>
+	<statement><p> Demonstrate that <m> 17 </m> is prime. </p></statement>
 	<solution><title>(Sketch)</title><p>
-		By the proposition, to check that <m>17</m> is prime we now only need to note that none of the numbers in the following shorter list is an integer:
+		By the proposition, to check that <m> 17 </m> is prime we now only need to note that none of the numbers in the following shorter list is an integer:
 		<md>
 			\frac{17}{2}, \frac{17}{3}, \frac{17}{4},
 			\dotsc
@@ -113,20 +113,20 @@ The proof is left to you as
 <title>Common mathematical statements</title>
 
 <p>
-In mathematics, we often want to prove that some statement <m>P</m>
+In mathematics, we often want to prove that some statement <m> P </m>
 <term><xref ref="definition-symb-lang-logically-implies" text="title"/></term>
-some other statement <m>Q</m>;
-<ie /> we want to prove that <m>P \lgcimplies Q</m> or <m>(\forall x)(P(x) \lgcimplies Q(x))</m>.
-Note that the universal form covers the common statement <q>all <m>A</m> are <m>B</m></q>, since this can be rephrased <q>for all <m>x</m>, if <m>x</m> is <m>A</m> then <m>x</m> is <m>B</m></q>.
+some other statement <m> Q </m>;
+<ie /> we want to prove that <m> P \lgcimplies Q </m> or <m> (\forall x)(P(x) \lgcimplies Q(x)) </m>.
+Note that the universal form covers the common statement <q>all <m> A </m> are <m> B </m></q>, since this can be rephrased <q>for all <m> x </m>, if <m> x </m> is <m> A </m> then <m> x </m> is <m> B </m></q>.
 </p><p>
-Below are some common methods for proving <m>P \lgcimplies Q</m>.
-In the universal case <m>(\forall x)(P(x) \lgcimplies Q(x))</m>, the domain of <m>x</m> may be infinite, so we cannot prove <m>P(x) \lgcimplies Q(x)</m> for each specific <m>x</m>, one-by-one.
-Instead, we treat <m>x</m> as a <em>fixed but arbitrary</em> object in the domain, and try to construct an argument proving <m>P(x) \lgcimplies Q(x)</m> which does not depending on knowing the specific object <m>x</m>.
+Below are some common methods for proving <m> P \lgcimplies Q </m>.
+In the universal case <m> (\forall x)(P(x) \lgcimplies Q(x)) </m>, the domain of <m> x </m> may be infinite, so we cannot prove <m> P(x) \lgcimplies Q(x) </m> for each specific <m> x </m>, one-by-one.
+Instead, we treat <m> x </m> as a <em>fixed but arbitrary</em> object in the domain, and try to construct an argument proving <m> P(x) \lgcimplies Q(x) </m> which does not depending on knowing the specific object <m> x </m>.
 So all of the methods below can also be used in the universal case.
 </p><p>
-Since a conditional <m>P \lgccond Q</m> is true automatically when <m>P</m> is false, it will be a tautology as long as we cannot have the case of <m>P</m> true and <m>Q</m> false at the same time.
+Since a conditional <m> P \lgccond Q </m> is true automatically when <m> P </m> is false, it will be a tautology as long as we cannot have the case of <m> P </m> true and <m> Q </m> false at the same time.
 (See <xref ref="figure-symb-lang-connectives-truth-tables" />.)
-Therefore, we (almost always) <alert>begin a proof by assuming that <m>P</m> is true</alert>, and proceed to <alert>demonstrate that <m>Q</m> must then also be true</alert>, based on that assumption.
+Therefore, we (almost always) <alert>begin a proof by assuming that <m> P </m> is true</alert>, and proceed to <alert>demonstrate that <m> Q </m> must then also be true</alert>, based on that assumption.
 </p>
 
 </section>
@@ -151,32 +151,32 @@ Therefore, we (almost always) <alert>begin a proof by assuming that <m>P</m> is 
 	<idx><h>Procedure</h><h>direct proof</h></idx>
 	<p><ul>
 		<li>
-			To prove <m>P \lgcimplies Q</m>, start by assuming that <m>P</m> is true.
+			To prove <m> P \lgcimplies Q </m>, start by assuming that <m> P </m> is true.
 			Then, through a sequence of (appropriately justified) intermediate conclusions,
-			arrive at <m>Q</m> as a final conclusion.
+			arrive at <m> Q </m> as a final conclusion.
 		</li>
 		<li>
-			To prove <m>(\forall x)\bbrac{P(x) \lgcimplies Q(x)}</m>, start by assuming that <m>x</m> is an <em>arbitrary but unspecified</em> element in the domain such that <m>P(x)</m> is true.
+			To prove <m> (\forall x)\bbrac{P(x) \lgcimplies Q(x)} </m>, start by assuming that <m> x </m> is an <em>arbitrary but unspecified</em> element in the domain such that <m> P(x) </m> is true.
 			The first sentence in your argument should be:
-			<q>Suppose <m>x</m> is a <fillin characters="5" /> such that <m>P(x)</m></q>,
-			where the blank is filled in by the definition of the domain of <m>x</m>.
+			<q>Suppose <m> x </m> is a <fillin characters="5" /> such that <m> P(x) </m></q>,
+			where the blank is filled in by the definition of the domain of <m> x </m>.
 			Then,
-			through a sequence of (appropriately justified) intermediate conclusions that do not depend on knowing the specific object <m>x</m> in the domain,
-			arrive at <m>Q(x)</m> as a conclusion.
+			through a sequence of (appropriately justified) intermediate conclusions that do not depend on knowing the specific object <m> x </m> in the domain,
+			arrive at <m> Q(x) </m> as a conclusion.
 		</li>
 	</ul></p>
 </identity>
 
 <problem xml:id="wexample-proof-methods-n-even-n-sq-even"> <!-- worked example -->
 	<!-- \label{WEXAMPLE::n.even.n.sq.even} -->
-	<statement><p> <em>Prove:</em> If <m>n</m> is even, then <m>n^2</m> even. </p></statement>
+	<statement><p> <em>Prove:</em> If <m> n </m> is even, then <m> n^2 </m> even. </p></statement>
 	<solution>
 		<p>
-		Let <m>P(n)</m> represent the predicate <q><m>n</m> is even</q> and let <m>Q(n)</m> represent the predicate <q><m>n^2</m> is even</q>,
+		Let <m> P(n) </m> represent the predicate <q><m> n </m> is even</q> and let <m> Q(n) </m> represent the predicate <q><m> n^2 </m> is even</q>,
 		with domain the integers.
 		</p><p>
-		Suppose that <m>n</m> is an arbitrary (but unspecified) integer such that <m>n</m> is even.
-		Then there exists an integer <m>m</m> such that <m>n = 2m</m>, and so <m>n^2 = 4m^2 = 2(2m)</m> is even.
+		Suppose that <m> n </m> is an arbitrary (but unspecified) integer such that <m> n </m> is even.
+		Then there exists an integer <m> m </m> such that <m> n = 2m </m>, and so <m> n^2 = 4m^2 = 2(2m) </m> is even.
 	</p></solution>
 </problem>
 
@@ -220,20 +220,20 @@ By substitution and <xref ref="fact-proof-methods-distrib-cond-disj" />,
 	(P \lgcand C_1 \lgccond Q) \lgcand \dotsb \lgcand (P \lgcand C_m \lgccond Q).
 </md>
 A conjunction is only true if each <q>factor</q> in the conjunction is true,
-so the conjunction on the right above can only be a tautology if each conditional <m>P \lgcand C_1 \lgccond Q</m> is a tautology.
-Therefore, when we have a collection of statements <m>C_1,\dotsc,C_m</m> so that
+so the conjunction on the right above can only be a tautology if each conditional <m> P \lgcand C_1 \lgccond Q </m> is a tautology.
+Therefore, when we have a collection of statements <m> C_1,\dotsc,C_m </m> so that
 <md> C_1 \lgcor C_2 \lgcor \dotsb \lgcor C_m </md>
 is a tautology,
-we can prove <m> P \lgccond Q </m> by instead proving each of <m>P \lgcand C_i \lgcimplies Q</m> one at a time.
-This is also valid for universal statements, since <m>\forall</m> distributes over <m>\lgcand</m>
+we can prove <m> P \lgccond Q </m> by instead proving each of <m> P \lgcand C_i \lgcimplies Q </m> one at a time.
+This is also valid for universal statements, since <m> \forall </m> distributes over <m> \lgcand </m>
 (<xref ref="proposition-pred-logic-distrib-quants" />).
 </p><p>
-Now, having to prove many slightly more complicated statements <m>P \lgcand C_i \lgcimplies Q</m> seems like a lot more work than just proving the single simple statement <m>P \lgccond Q</m> <mdash />
+Now, having to prove many slightly more complicated statements <m> P \lgcand C_i \lgcimplies Q </m> seems like a lot more work than just proving the single simple statement <m> P \lgccond Q </m> <mdash />
 why would we want to go to all this extra effort?
 </p>
 
 <hypothesis><statement><p> <!-- idea -->
-	Each case statement <m>C_i</m> provides extra information that can be combined with the assumption that <m>P</m> is true to arrive at the conclusion that <m>Q</m> must also be true.
+	Each case statement <m> C_i </m> provides extra information that can be combined with the assumption that <m> P </m> is true to arrive at the conclusion that <m> Q </m> must also be true.
 </p></statement></hypothesis>
 
 <identity><title>Reduction to cases</title> <!-- Procedure -->
@@ -242,35 +242,35 @@ why would we want to go to all this extra effort?
 	<idx><h>Procedure</h><h>reduction to cases</h></idx>
 	<p><ul>
 		<li>
-			To prove <m>P\lgcimplies Q</m>,
-			determine a set of cases <m>C_1, C_2, \dotsc, C_m</m> such that <m>C_1 \lgcor C_2 \lgcor \dotsb \lgcor C_m</m> is true,
-			then provide a separate proof of each logical implication <m>P \lgcand C_i \lgcimplies Q</m>.
+			To prove <m> P\lgcimplies Q </m>,
+			determine a set of cases <m> C_1, C_2, \dotsc, C_m </m> such that <m> C_1 \lgcor C_2 \lgcor \dotsb \lgcor C_m </m> is true,
+			then provide a separate proof of each logical implication <m> P \lgcand C_i \lgcimplies Q </m>.
 		</li>
 		<li>
-			To prove <m>(\forall x)\bbrac{P(x)\lgcimplies Q(x)}</m>,
-			determine a set of cases <m>C_1(x), C_2(x), \dotsc, C_m(x)</m> such that
+			To prove <m> (\forall x)\bbrac{P(x)\lgcimplies Q(x)} </m>,
+			determine a set of cases <m> C_1(x), C_2(x), \dotsc, C_m(x) </m> such that
 			<md> (\forall x) \bbrac{C_1(x) \lgcor C_2(x) \lgcor \dotsb \lgcor C_m(x)} </md>
-			is true, then provide a separate proof of each universally quantified logical implication <m>(\forall x)\bbrac{P(x) \lgcand C_i(x) \lgcimplies Q(x)}</m>.
+			is true, then provide a separate proof of each universally quantified logical implication <m> (\forall x)\bbrac{P(x) \lgcand C_i(x) \lgcimplies Q(x)} </m>.
 		</li>
 	</ul></p>
 </identity>
 
 <problem> <!-- worked example -->
-	<statement><p> Show <m>n^2 - n</m> is always even. </p></statement>
+	<statement><p> Show <m> n^2 - n </m> is always even. </p></statement>
 	<solution>
 		<p>
-		Let <m>P(n)</m> represent the predicate <q><m>n</m> is an integer</q> and let <m>Q(n)</m> represent the predicate <q><m>n^2 - n</m> is even</q>, each with domain the integers. Note that <m>P(n)</m> is actually true for each <m>n</m> in the domain,
-		since our original statement makes no extra premise on <m>n</m> besides its domain.
+		Let <m> P(n) </m> represent the predicate <q><m> n </m> is an integer</q> and let <m> Q(n) </m> represent the predicate <q><m> n^2 - n </m> is even</q>, each with domain the integers. Note that <m> P(n) </m> is actually true for each <m> n </m> in the domain,
+		since our original statement makes no extra premise on <m> n </m> besides its domain.
 		</p><p>
-		Suppose that <m>n</m> is an integer.
-		Break into cases based on whether <m>n</m> is even or odd; in each case, proceed by direct proof.
+		Suppose that <m> n </m> is an integer.
+		Break into cases based on whether <m> n </m> is even or odd; in each case, proceed by direct proof.
 		</p>
-		<case><title>Case <m>n</m> even</title><p>
-			If <m>n</m> is even, then there exists an integer <m>m</m> such that <m>n = 2m</m>.
+		<case><title>Case <m> n </m> even</title><p>
+			If <m> n </m> is even, then there exists an integer <m> m </m> such that <m> n = 2m </m>.
 			Then, <md> n^2 - n = n(n-1) = 2m(2m - 1) </md> is also even.
 		</p></case>
-		<case><title>Case <m>n</m> odd</title><p>
-			If <m>n</m> is odd, then <m>n - 1</m> is even, so there exists an integer <m>m</m> such that <m>n - 1 = 2m</m>, or <m>n = 2m + 1</m>.
+		<case><title>Case <m> n </m> odd</title><p>
+			If <m> n </m> is odd, then <m> n - 1 </m> is even, so there exists an integer <m> m </m> such that <m> n - 1 = 2m </m>, or <m> n = 2m + 1 </m>.
 			Then, <md> n^2 - n = n(n-1) = (2m+1)(2m) </md> is even.
 		</p></case>
 	</solution>
@@ -289,36 +289,36 @@ why would we want to go to all this extra effort?
 
 <p>
 First, let's consider a conditional statement with a disjunction on the hypothesis side.
-To prove a statement of the form <m>(P_1 \lgcor P_2) \lgcimplies Q</m>,
+To prove a statement of the form <m> (P_1 \lgcor P_2) \lgcimplies Q </m>,
 we can use <xref ref="fact-proof-methods-distrib-cond-disj" /> to decompose into two conditionals:
 <md> (P_1 \lgcor P_2) \lgccond Q \lgcequiv (P_1 \lgccond Q) \lgcand (P_2 \lgccond Q) </md>.
 Appealing to the properties of conjunction, as in our discussion of reduction to cases,
-we see that we can prove <m>P_1 \lgcimplies Q</m> and <m>P_2 \lgcimplies Q</m> by separate proofs.
+we see that we can prove <m> P_1 \lgcimplies Q </m> and <m> P_2 \lgcimplies Q </m> by separate proofs.
 </p>
 
 <p>
 What about a conditional with a disjunction on the conclusion side?
-To prove a statement of the form <m>P \lgcimplies (Q_1 \lgcor Q_2)</m>, we can again reduce to cases, but in a sort of tricky way.
+To prove a statement of the form <m> P \lgcimplies (Q_1 \lgcor Q_2) </m>, we can again reduce to cases, but in a sort of tricky way.
 For any statement, there are only two possibilities <mdash /> either the statement is true or it is false.
 (See <xref ref="example-symb-lang-basic-tauts-law-excl-mid">Basic Tautology</xref>
 in <xref ref="example-symb-lang-basic-tauts" />.
 Apply this fact to one of the statements we are trying to prove.
 </p>
 
-<!-- %Applying this fact to one of our desired conclusions, say <m>Q_1</m>, leads to two separate cases: regardless of <m>P</m>, exactly one of the two cases <m>Q_1=\true</m>, <m>Q_1=\false</m>, is true.
-%Recall that <m>C \lgcor \lgcnot C</m> is a tautology, so we can use this in a reduction to cases:
+<!-- %Applying this fact to one of our desired conclusions, say <m> Q_1 </m>, leads to two separate cases: regardless of <m> P </m>, exactly one of the two cases <m> Q_1=\true </m>, <m> Q_1=\false </m>, is true.
+%Recall that <m> C \lgcor \lgcnot C </m> is a tautology, so we can use this in a reduction to cases:
 %<md>
 %	P \lgccond (Q_1 \lgcor Q_2)
 %	\lgcequiv \bigl[(P \lgcand C) \lgccond (Q_1 \lgcor Q_2) \bigr]
 %		\lgcand \bigl[(P \lgcand \lgcnot C) \lgccond (Q_1 \lgcor Q_2) \bigr].
 %</md>
-%Let's see what happens when we substitute <m>C = Q_1</m> into the above equivalence:
+%Let's see what happens when we substitute <m> C = Q_1 </m> into the above equivalence:
 %<md>
 %	P \lgccond (Q_1 \lgcor Q_2)
 %	\lgcequiv \bigl[(P \lgcand Q_1) \lgccond (Q_1 \lgcor Q_2) \bigr]
 %		\lgcand \bigl[(P \lgcand \lgcnot Q_1) \lgccond (Q_1 \lgcor Q_2) \bigr].
 %</md>
-%Now, <m>(P \lgcand Q_1) \lgccond (Q_1 \lgcor Q_2)</m> is a tautology. \begin{inlinenote}[See]Exercise \ref{EXERCISE::disjunctive tautology} of \S\zref{CHAPTER::symb.lang}.\end{inlinenote} Therefore,
+%Now, <m> (P \lgcand Q_1) \lgccond (Q_1 \lgcor Q_2) </m> is a tautology. \begin{inlinenote}[See]Exercise \ref{EXERCISE::disjunctive tautology} of \S\zref{CHAPTER::symb.lang}.\end{inlinenote} Therefore,
 %<md><mrow>
 %	P \lgccond (Q_1 \lgcor Q_2)
 %	&\lgcequiv \bigl[(P \lgcand Q_1) \lgccond (Q_1 \lgcor Q_2) \bigr]
@@ -336,15 +336,15 @@ Apply this fact to one of the statements we are trying to prove.
 	<idx><h>proof</h><h>of conditional involving disjunction</h></idx>
 	<idx><h>Procedure</h><h>proof of conditional involving disjunction</h></idx>
 	<p>
-	To prove a statement of the form <m>P \lgcimplies (Q_1 \lgcor Q_2)</m>, start by assuming that <m>P</m> is true and <m>Q_1</m> is <alert>false</alert>.
-	Try to show that these assumptions lead to <m>Q_2</m> being true.
+	To prove a statement of the form <m> P \lgcimplies (Q_1 \lgcor Q_2) </m>, start by assuming that <m> P </m> is true and <m> Q_1 </m> is <alert>false</alert>.
+	Try to show that these assumptions lead to <m> Q_2 </m> being true.
 	</p>
 </identity>
 
 <hypothesis><statement><p> <!-- idea -->
-	There are only two possibilities for <m>Q_1</m>: either it is true or it is false.
-	If <m>Q_1</m> is true, then <m>Q_1 \lgcor Q_2</m> is already true, regardless of the truth values of <m>P</m> and <m>Q_2</m>, so there is nothing to prove in this case.
-	On the other hand, if <m>Q_1</m> is false, the only way <m>Q_1 \lgcor Q_2</m> could be true is if <m>Q_2</m> is true.
+	There are only two possibilities for <m> Q_1 </m>: either it is true or it is false.
+	If <m> Q_1 </m> is true, then <m> Q_1 \lgcor Q_2 </m> is already true, regardless of the truth values of <m> P </m> and <m> Q_2 </m>, so there is nothing to prove in this case.
+	On the other hand, if <m> Q_1 </m> is false, the only way <m> Q_1 \lgcor Q_2 </m> could be true is if <m> Q_2 </m> is true.
 </p></statement></hypothesis>
 
 <note><p><ul>
@@ -353,32 +353,32 @@ Apply this fact to one of the statements we are trying to prove.
 		<xref ref="exercise-logic-equiv-neg-and-or" />.
 	</li>
 	<li>
-	Of course, you can swap the roles of <m>Q_1</m> and <m>Q_2</m> above:
-	you could also start by assuming that <m>P</m> is true and <m>Q_2</m> is false, then try to show that this leads to <m>Q_1</m> being true.
+	Of course, you can swap the roles of <m> Q_1 </m> and <m> Q_2 </m> above:
+	you could also start by assuming that <m> P </m> is true and <m> Q_2 </m> is false, then try to show that this leads to <m> Q_1 </m> being true.
 	</li>
 	<li>
 		Another strategy is to attempt a <term>proof by contradiction</term>
 		(discussed in <xref ref="section-proof-methods-contradiction" /> below).
-		By DeMorgan, <m>\lgcnot(Q_1 \lgcor Q_2) \lgcequiv \lgcnot Q_1 \lgcand \lgcnot Q_2</m>, so for this strategy, you should start by assuming that <m>P</m> is true and <em>both</em> <m>Q_1</m> and <m>Q_2</m> are false.
+		By DeMorgan, <m> \lgcnot(Q_1 \lgcor Q_2) \lgcequiv \lgcnot Q_1 \lgcand \lgcnot Q_2 </m>, so for this strategy, you should start by assuming that <m> P </m> is true and <em>both</em> <m> Q_1 </m> and <m> Q_2 </m> are false.
 		Then, try to arrive at a contradiction.
 	</li>
 </ul></p></note>
 
 <problem xml:id="wexample-proof-methods-every-odd-1-or-3-mod-4"> <!-- worked example -->
 	<!-- \label{WEXAMPLE::every.odd.1.or.3.mod.4} -->
-	<statement><p> <em>Prove:</em> Every odd number is either <m>1</m> more or <m>3</m> more than a multiple of <m>4</m>. </p></statement>
+	<statement><p> <em>Prove:</em> Every odd number is either <m> 1 </m> more or <m> 3 </m> more than a multiple of <m> 4 </m>. </p></statement>
 	<solution>
 		<p>
-		Let <m>P(n)</m> represent the predicate <q><m>n</m> is odd</q>, let <m>Q_1(n)</m> represent the predicate <q><m>n</m> is <m>1</m> more than a multiple of <m>4</m></q>, and let <m>Q_2(n)</m> represent the predicate <q><m>n</m> is <m>3</m> more than a multiple of <m>4</m></q>, each with domain the integers.
+		Let <m> P(n) </m> represent the predicate <q><m> n </m> is odd</q>, let <m> Q_1(n) </m> represent the predicate <q><m> n </m> is <m> 1 </m> more than a multiple of <m> 4 </m></q>, and let <m> Q_2(n) </m> represent the predicate <q><m> n </m> is <m> 3 </m> more than a multiple of <m> 4 </m></q>, each with domain the integers.
 		</p><p>
-		Start by assuming that <m>n</m> is an odd number that is <em>not</em> <m>1</m> more than a multiple of <m>4</m>.
-		We must now try to show that <m>n</m> <em>is</em> <m>3</m> more than a multiple of <m>4</m>.
-		We know that <m>n</m> is odd, so there exists a number <m>m</m> such that <m>n = 2m + 1</m>.
-		However, since <m>n</m> is <em>not</em> <m>1</m> more than a multiple of <m>4</m>, <m>2m</m> cannot be a multiple of <m>4</m>, and so <m>m</m> cannot be a multiple of <m>2</m>.
-		Therefore, <m>m</m> is also odd, and so there exists another number <m>\ell</m> such that <m>m = 2\ell + 1</m>.
+		Start by assuming that <m> n </m> is an odd number that is <em>not</em> <m> 1 </m> more than a multiple of <m> 4 </m>.
+		We must now try to show that <m> n </m> <em>is</em> <m> 3 </m> more than a multiple of <m> 4 </m>.
+		We know that <m> n </m> is odd, so there exists a number <m> m </m> such that <m> n = 2m + 1 </m>.
+		However, since <m> n </m> is <em>not</em> <m> 1 </m> more than a multiple of <m> 4 </m>, <m> 2m </m> cannot be a multiple of <m> 4 </m>, and so <m> m </m> cannot be a multiple of <m> 2 </m>.
+		Therefore, <m> m </m> is also odd, and so there exists another number <m> \ell </m> such that <m> m = 2\ell + 1 </m>.
 		Then
 		<md> n = 2m + 1 = 2(2\ell + 1) + 1 = 4\ell + 3 </md>,
-		which says that <m>n</m> is <m>3</m> more than a multiple of <m>4</m>, as desired.
+		which says that <m> n </m> is <m> 3 </m> more than a multiple of <m> 4 </m>, as desired.
 	</p></solution>
 </problem>
 
@@ -389,13 +389,13 @@ Apply this fact to one of the statements we are trying to prove.
 
 <paragraphs><title>Recall</title><p>
 	<term><xref ref="theorem-logic-equiv-modus-tollens" text="title" /></term>:
-	<m>P \lgccond Q \lgcequiv \lgcnot Q \lgccond \lgcnot P</m>.
+	<m> P \lgccond Q \lgcequiv \lgcnot Q \lgccond \lgcnot P </m>.
 </p></paragraphs>
 
 <identity><title>Proof by proving the contrapositive</title> <!-- procedure -->
 	<idx><h>proof</h><h>by proving the contrapositive</h></idx>
 	<idx><h>Procedure</h><h>proof by proving the contrapositive</h></idx>
-	<p> To prove <m>P \lgcimplies Q</m>, you can instead prove <m>\lgcnot Q \lgcimplies \lgcnot P</m>. </p>
+	<p> To prove <m> P \lgcimplies Q </m>, you can instead prove <m> \lgcnot Q \lgcimplies \lgcnot P </m>. </p>
 </identity>
 
 <example><p>
@@ -406,23 +406,23 @@ Apply this fact to one of the statements we are trying to prove.
 </p></example>
 
 <problem> <!-- worked example -->
-	<statement><p> Prove that every prime number larger than <m>2</m> is odd. </p></statement>
+	<statement><p> Prove that every prime number larger than <m> 2 </m> is odd. </p></statement>
 	<solution>
 		<p>
 		We want to prove the following universally quantified conditional
-		(<q>for all <m>p</m></q> omitted, domain is positive integers).
+		(<q>for all <m> p </m></q> omitted, domain is positive integers).
 		<dl width="narrow">
-			<li><title>conditional</title><p> if (<m>p</m> is prime and <m>p>2</m>) then <m>p</m> is odd. </p></li>
-			<li><title>contrapositive</title><p> if <m>p</m> is not odd, then not (<m>p</m> is prime and <m>p>2</m>) </p></li>
-			<li><title>DeMorgan substitution</title><p> if <m>p</m> is not odd, then (<m>p</m> is not prime or <m>p \le 2</m>) </p></li>
+			<li><title>conditional</title><p> if (<m> p </m> is prime and <m> p>2 </m>) then <m> p </m> is odd. </p></li>
+			<li><title>contrapositive</title><p> if <m> p </m> is not odd, then not (<m> p </m> is prime and <m> p>2 </m>) </p></li>
+			<li><title>DeMorgan substitution</title><p> if <m> p </m> is not odd, then (<m> p </m> is not prime or <m> p \le 2 </m>) </p></li>
 		</dl>
 		These are all equivalent.
 		</p><p>
-		Let's prove the last statement: as in the procedure for proving conditionals with a disjunction, start by assuming that <m>p</m> is not odd and <m>p \gt 2</m>.
-		We must then show that <m>p</m> is not prime.
-		Since <m>p</m> is not odd, it is divisible by <m>2</m>.
-		But since <m>p \gt 2</m>, <m>p</m> is divisible by a number <em>other than</em> <m>1</m> and <m>p</m> itself.
-		Therefore, <m>p</m> is not prime.
+		Let's prove the last statement: as in the procedure for proving conditionals with a disjunction, start by assuming that <m> p </m> is not odd and <m> p \gt 2 </m>.
+		We must then show that <m> p </m> is not prime.
+		Since <m> p </m> is not odd, it is divisible by <m> 2 </m>.
+		But since <m> p \gt 2 </m>, <m> p </m> is divisible by a number <em>other than</em> <m> 1 </m> and <m> p </m> itself.
+		Therefore, <m> p </m> is not prime.
 		</p>
 	</solution>
 </problem>
@@ -436,19 +436,19 @@ Apply this fact to one of the statements we are trying to prove.
 <section xml:id="section-proof-methods-counterexample">
 <title>Proof by counterexample</title>
 
-<p> Sometimes we want to prove that <m>P \not\lgcimplies Q</m>; <ie /> that <m>P \lgccond Q</m> is <em>not</em> a tautology. </p>
+<p> Sometimes we want to prove that <m> P \not\lgcimplies Q </m>; <ie /> that <m> P \lgccond Q </m> is <em>not</em> a tautology. </p>
 
 <paragraphs><title>Recall</title><p>
 	The equivalence
 	<md> P \lgccond Q \lgcequiv (P \lgcand C_1 \lgccond Q) \lgcand \dotsb \lgcand (P \lgcand C_m \lgccond Q) </md>
-	holds for any set of cases <m>C_1, C_2, \dotsc, C_m</m> such that <m>C_1 \lgcor \dotsb \lgcor C_m</m> is a tautology.
+	holds for any set of cases <m> C_1, C_2, \dotsc, C_m </m> such that <m> C_1 \lgcor \dotsb \lgcor C_m </m> is a tautology.
 	(See <xref ref="section-proof-methods-cases" />.)
 </p></paragraphs>
 
 <p>
-So if <m>P \lgcand C_i \lgccond Q</m> is <em>not</em> a tautology for at least one <m>i</m>,
-then <m>P \lgccond Q</m> also cannot be a tautology.
-Again, this also works in the universal case since <m>\forall</m> distributes over <m>\lgcand</m>
+So if <m> P \lgcand C_i \lgccond Q </m> is <em>not</em> a tautology for at least one <m> i </m>,
+then <m> P \lgccond Q </m> also cannot be a tautology.
+Again, this also works in the universal case since <m> \forall </m> distributes over <m> \lgcand </m>
 (<xref ref="proposition-pred-logic-distrib-quants" />).
 </p>
 
@@ -456,8 +456,8 @@ Again, this also works in the universal case since <m>\forall</m> distributes ov
 	<title>counterexample</title>
 	<idx>counterexample</idx>
 	<p>
-	relative to the logical implication <m>P \lgcimplies Q</m>,
-	a statement <m>C</m> such that <m>P \lgcand C \lgccond Q</m> is false
+	relative to the logical implication <m> P \lgcimplies Q </m>,
+	a statement <m> C </m> such that <m> P \lgcand C \lgccond Q </m> is false
 	</p>
 </li></dl></p>
 
@@ -467,13 +467,13 @@ Again, this also works in the universal case since <m>\forall</m> distributes ov
 		In <xref ref="exercise-proof-methods-contrapos" />,
 		you are asked to prove the following statement by proving the contrapositive.
 		</p>
-		<blockquote><p> If <m>2^n - 1</m> prime, then <m>n</m> is prime. </p></blockquote>
+		<blockquote><p> If <m> 2^n - 1 </m> prime, then <m> n </m> is prime. </p></blockquote>
 		<p> Prove that the <em>converse</em> of this statement is <em>false</em>. </p>
 	</statement>
 	<solution><p>
-		The converse statement is <q>If <m>n</m> is prime, then <m>2^n - 1</m> is prime.</q>
-		But the case <m>n=11</m> is a <term>counterexample</term>:
-		<md> 2^{11} - 1 = 2047 = 23 \cdot 89 </md> is not prime even though <m>n = 11</m> is prime.
+		The converse statement is <q>If <m> n </m> is prime, then <m> 2^n - 1 </m> is prime.</q>
+		But the case <m> n=11 </m> is a <term>counterexample</term>:
+		<md> 2^{11} - 1 = 2047 = 23 \cdot 89 </md> is not prime even though <m> n = 11 </m> is prime.
 	</p></solution>
 </problem>
 
@@ -487,8 +487,8 @@ Again, this also works in the universal case since <m>\forall</m> distributes ov
 <title>Proving biconditionals</title>
 
 <p>
-We also often want to prove that two statements <m>P,Q</m> are equivalent;
-<ie /> that <m>P \lgcequiv Q</m>.
+We also often want to prove that two statements <m> P,Q </m> are equivalent;
+<ie /> that <m> P \lgcequiv Q </m>.
 </p>
 
 <fact>
@@ -496,7 +496,7 @@ We also often want to prove that two statements <m>P,Q</m> are equivalent;
 		The equivalence
 		<md> P \lgcbicond Q \; \lgcequiv \; (P \lgccond Q) \lgcand (Q \lgccond P) </md>
 		holds;
-		<ie /> a biconditional is equivalent to the conjunction of the corresponding conditional <m>P\lgccond Q</m> <em>and</em> its converse.
+		<ie /> a biconditional is equivalent to the conjunction of the corresponding conditional <m> P\lgccond Q </m> <em>and</em> its converse.
 	</p></statement>
 	<proof><p>
 		You are asked to prove this by truth table in
@@ -507,11 +507,11 @@ We also often want to prove that two statements <m>P,Q</m> are equivalent;
 <identity><title>Proving a biconditional</title> <!-- procedure -->
 	<idx><h>proof</h><h>of a biconditional</h></idx>
 	<idx><h>Procedure</h><h>proving a biconditional</h></idx>
-	<p> To prove <m>P \lgcequiv Q</m>, prove <m>P \lgcimplies Q</m> and <m>Q \lgcimplies P</m> separately. </p>
+	<p> To prove <m> P \lgcequiv Q </m>, prove <m> P \lgcimplies Q </m> and <m> Q \lgcimplies P </m> separately. </p>
 </identity>
 
 <p>
-As usual, this also works in the universal case since <m>\forall</m> distributes over <m>\lgcand</m>
+As usual, this also works in the universal case since <m> \forall </m> distributes over <m> \lgcand </m>
 (<xref ref="proposition-pred-logic-distrib-quants" />).
 </p>
 
@@ -520,23 +520,23 @@ As usual, this also works in the universal case since <m>\forall</m> distributes
 	<solution>
 		<p>
 		We want to prove that the following quantified biconditional
-		(<q>for all <m>n</m></q> omitted, domain is nonnegative, whole numbers).
+		(<q>for all <m> n </m></q> omitted, domain is nonnegative, whole numbers).
 		<dl width="narrow">
-			<li><title>biconditional</title><p> <m>n</m> is even if and only if <m>n^2</m> is even. </p></li>
-			<li><title>conditional and converse</title><p> (if <m>n</m> is even then <m>n^2</m> is even) and (if <m>n^2</m> is even then <m>n</m> is even) </p></li>
-			<li><title>contrapositive and converse</title><p> (if <m>n^2</m> is odd then <m>n</m> is odd) and (if <m>n^2</m> is even then <m>n</m> is even) </p></li>
-			<li><title>conditional and inverse</title><p> (if <m>n</m> is even then <m>n^2</m> is even) and (if <m>n</m> is odd then <m>n^2</m> is odd) </p></li>
+			<li><title>biconditional</title><p> <m> n </m> is even if and only if <m> n^2 </m> is even. </p></li>
+			<li><title>conditional and converse</title><p> (if <m> n </m> is even then <m> n^2 </m> is even) and (if <m> n^2 </m> is even then <m> n </m> is even) </p></li>
+			<li><title>contrapositive and converse</title><p> (if <m> n^2 </m> is odd then <m> n </m> is odd) and (if <m> n^2 </m> is even then <m> n </m> is even) </p></li>
+			<li><title>conditional and inverse</title><p> (if <m> n </m> is even then <m> n^2 </m> is even) and (if <m> n </m> is odd then <m> n^2 </m> is odd) </p></li>
 		</dl>
 		These are all equivalent, so we could prove any one pair.
 		</p>
 		<case><title>Original conditional</title><p> This is proved as <xref ref="wexample-proof-methods-n-even-n-sq-even" />. </p></case>
 		<case><title>Converse</title><p>
-			If <m>n^2</m> is even, then there exists an integer <m>m</m> such that <m>n^2 = 2m</m>, so that <m>n = \sqrt{2m}</m> <ellipsis /> ?
+			If <m> n^2 </m> is even, then there exists an integer <m> m </m> such that <m> n^2 = 2m </m>, so that <m> n = \sqrt{2m} </m> <ellipsis /> ?
 			We seem to be stuck.
 		</p></case>
 		<case><title>Inverse</title><p>
-			If <m>n</m> is odd, then there exists an integer <m>m</m> such that <m>n = 2m+1</m>.
-			Then, <m>n^2 = 4m^2 + 4m + 1</m> is odd.
+			If <m> n </m> is odd, then there exists an integer <m> m </m> such that <m> n = 2m+1 </m>.
+			Then, <m> n^2 = 4m^2 + 4m + 1 </m> is odd.
 		</p></case>
 	</solution>
 </problem>
@@ -551,15 +551,15 @@ As usual, this also works in the universal case since <m>\forall</m> distributes
 
 <fact>
 	<statement><p>
-		For any logically false statement <m>e</m>,
+		For any logically false statement <m> e </m>,
 		we have
 		<md> s \lgccond t \; \lgcequiv \; (s \lgcand \lgcnot t) \lgccond e </md>.
 	</p></statement>
 	<proof><p>
-		First, <m>s\lgccond t</m> is false precisely when <m>s</m> is true and <m>t</m> is false.
+		First, <m> s\lgccond t </m> is false precisely when <m> s </m> is true and <m> t </m> is false.
 		On the other hand,
-		<m>(s \lgcand \lgcnot t) \lgccond e</m> is false precisely when <m>s \lgcand \lgcnot t</m> is true,
-		and <m>s \lgcand \lgcnot t</m> is true precisely when <m>s, \lgcnot t</m> are both true, <ie /> when <m>s</m> is true and <m>t</m> is false.
+		<m> (s \lgcand \lgcnot t) \lgccond e </m> is false precisely when <m> s \lgcand \lgcnot t </m> is true,
+		and <m> s \lgcand \lgcnot t </m> is true precisely when <m> s, \lgcnot t </m> are both true, <ie /> when <m> s </m> is true and <m> t </m> is false.
 	</p></proof>
 </fact>
 
@@ -568,40 +568,40 @@ As usual, this also works in the universal case since <m>\forall</m> distributes
 	<idx><h>proof</h><h>by contradiction</h></idx>
 	<idx><h>Procedure</h><h>proof by contradiction</h></idx>
 	<p><ul>
-		<li> To prove <m>P \lgcimplies Q</m>, devise a false statement <m>E</m> such that <m>(P \lgcand \lgcnot Q) \lgcimplies E</m>. </li>
+		<li> To prove <m> P \lgcimplies Q </m>, devise a false statement <m> E </m> such that <m> (P \lgcand \lgcnot Q) \lgcimplies E </m>. </li>
 		<li>
-			To prove <m>(\forall x)\bbrac{P(x) \lgcimplies Q(x)}</m>, devise a predicate <m>E(x)</m> such that <m>(\forall x)\bbrac{\lgcnot E(x)}</m> is true
-			(<ie /> <m>E(x)</m> is false for <em>all</em> <m>x</m> in the domain),
-			but <m>(\forall x)\bigl[\bbrac{P(x) \lgcand \lgcnot Q(x)} \lgcimplies E(x)\bigr]</m>.
+			To prove <m> (\forall x)\bbrac{P(x) \lgcimplies Q(x)} </m>, devise a predicate <m> E(x) </m> such that <m> (\forall x)\bbrac{\lgcnot E(x)} </m> is true
+			(<ie /> <m> E(x) </m> is false for <em>all</em> <m> x </m> in the domain),
+			but <m> (\forall x)\bigl[\bbrac{P(x) \lgcand \lgcnot Q(x)} \lgcimplies E(x)\bigr] </m>.
 		</li>
 	</ul></p>
 </identity>
 
 <note><p>
-	Usually <m>E</m> is taken to be some variation of <m>C \lgcand \lgcnot C</m>, for some statement <m>C</m>.
+	Usually <m> E </m> is taken to be some variation of <m> C \lgcand \lgcnot C </m>, for some statement <m> C </m>.
 	(See the <term>Law of Contradiction</term>, recorded as
 	<xref ref="example-symb-lang-basic-tauts-law-contra">Basic Tautology</xref>
 	in <xref ref="example-symb-lang-basic-tauts" />.)
 </p></note>
 
 <!-- <warning><p>
-	In set theory, it is possible to violate the Law of Contradiction (see the warning on page \pageref{WARNING::vac.true.contra}), so some care must be exercised when choosing <m>C</m> to use in <m>E = C \lgcand \lgcnot C</m>.
+	In set theory, it is possible to violate the Law of Contradiction (see the warning on page \pageref{WARNING::vac.true.contra}), so some care must be exercised when choosing <m> C </m> to use in <m> E = C \lgcand \lgcnot C </m>.
 </p></warning> -->
 
 <problem> <!-- worked example -->
 	<!-- \label{WEXAMPLE::sq.rt.2.irrational} -->
-	<statement><p> Prove that <m>\sqrt{2}</m> is irrational. </p></statement>
+	<statement><p> Prove that <m> \sqrt{2} </m> is irrational. </p></statement>
 	<solution>
 		<p>
 		We want to prove the quantified conditional with domain the real numbers:
-		for all <m>x</m>, if <m>x^2 = 2</m> and <m>x \gt 0</m> then <m>x</m> is not rational.
+		for all <m> x </m>, if <m> x^2 = 2 </m> and <m> x \gt 0 </m> then <m> x </m> is not rational.
 		</p><p>
-		Suppose that <m>x</m> is a real number such that <m>x^2 = 2</m> and <m>x \gt 0</m>.
-		By contradiction, also assume that <m>x</m> <em>is</em> rational.
+		Suppose that <m> x </m> is a real number such that <m> x^2 = 2 </m> and <m> x \gt 0 </m>.
+		By contradiction, also assume that <m> x </m> <em>is</em> rational.
 		We want this extra assumption to lead to a false statement.
-		Now, <m>x</m> rational means <m>x = a/b</m> for some integers <m>a,b</m>.
-		We may assume <m>a,b</m> are both positive, since <m>x \gt 0</m>.
-		We may also assume <m>a,b</m> have no common factors (<ie /> fraction <m>a/b</m> is in lowest terms).
+		Now, <m> x </m> rational means <m> x = a/b </m> for some integers <m> a,b </m>.
+		We may assume <m> a,b </m> are both positive, since <m> x \gt 0 </m>.
+		We may also assume <m> a,b </m> have no common factors (<ie /> fraction <m> a/b </m> is in lowest terms).
 		Then,
 		<md>
 			<mrow> x^2 = 2 \amp \; \lgcimplies \; a^2 = 2 b^2, </mrow>
@@ -613,14 +613,14 @@ As usual, this also works in the universal case since <m>\forall</m> distributes
 			<mrow> \amp \; \lgcimplies \; b^2 \text{ even}, </mrow>
 			<mrow> \amp \; \lgcimplies \; b \text{ even}. </mrow>
 		</md>
-		But if both <m>a,b</m> are even, then <m>a</m> and <m>b</m> are both divisible by <m>2</m>.
-		We have arrived at our contradiction: <m>a,b</m> have no common factor but <m>a,b</m> have a common factor of <m>2</m>.
+		But if both <m> a,b </m> are even, then <m> a </m> and <m> b </m> are both divisible by <m> 2 </m>.
+		We have arrived at our contradiction: <m> a,b </m> have no common factor but <m> a,b </m> have a common factor of <m> 2 </m>.
 		That is, we have shown the following.
 		</p>
 		<blockquote><p>
-			For all <m>x</m>,
+			For all <m> x </m>,
 			if <m> \bbrac{ (x^2 = 2 \text{ and } x \gt 0) \text{ and } x \text{ not irrational}} </m>
-			then (there exist positive integers <m>a,b</m> such that <m>x = a/b</m> and <m>a,b</m> have no common divisor and <m>a,b</m> have a common divisor).
+			then (there exist positive integers <m> a,b </m> such that <m> x = a/b </m> and <m> a,b </m> have no common divisor and <m> a,b </m> have a common divisor).
 		</p></blockquote>
 	</solution>
 </problem>
@@ -637,47 +637,47 @@ As usual, this also works in the universal case since <m>\forall</m> distributes
 
 <p>
 In mathematics we often want to know whether an object with specific desirable properties actually exists.
-In symbolic language, this is just <m>(\exists x)A(x)</m>.
+In symbolic language, this is just <m> (\exists x)A(x) </m>.
 Conceptually, this is easy to do: just find an example!
 (In practice, this can often be quite difficult.)
 </p>
 
 <problem> <!-- worked example -->
-	<statement><p> Prove that <m>851</m> is not prime. </p></statement>
+	<statement><p> Prove that <m> 851 </m> is not prime. </p></statement>
 	<solution><p>
 		We want to prove the quantified statement
 		<md> (\exists n)\bbrac{ (n \ne 1) \lgcand (n \ne 851) \lgcand (n \text{ divides } 851)} </md>,
 		with domain the positive, whole numbers.
-		Testing each number, one by one, starting at <m>n = 2</m>, we find that using <m>n=23</m> fits the bill.
+		Testing each number, one by one, starting at <m> n = 2 </m>, we find that using <m> n=23 </m> fits the bill.
 	</p></solution>
 </problem>
 
 <p>
 Once we have found an example for an existential statement, we also often want to know whether there are more examples, or whether the one we have found is <term>unique</term>.
-Suppose <m>x_0</m> is our concrete example proving <m>(\exists x)A(x)</m>.
-To show that <m>x_0</m> is unique, we should prove the universal statement: <m>(\forall y)\bbrac{ A(y) \lgccond (y = x_0) }</m>.
+Suppose <m> x_0 </m> is our concrete example proving <m> (\exists x)A(x) </m>.
+To show that <m> x_0 </m> is unique, we should prove the universal statement: <m> (\forall y)\bbrac{ A(y) \lgccond (y = x_0) } </m>.
 This translates as the following.
 </p>
-<blockquote><p> For all <m>y</m>, if <m>A(y)</m> is true, then <m>y=x_0</m>. </p></blockquote>
-<p> That is, the only way object <m>y</m> can satisfy <m>A(y)</m> is if <m>y</m> is actually our original example <m>x_0</m>. </p>
+<blockquote><p> For all <m> y </m>, if <m> A(y) </m> is true, then <m> y=x_0 </m>. </p></blockquote>
+<p> That is, the only way object <m> y </m> can satisfy <m> A(y) </m> is if <m> y </m> is actually our original example <m> x_0 </m>. </p>
 
 <identity xml:id="procedure-proof-methods-proving-unique">
 	<title>Proving uniqueness</title>
 	<idx><h>proof</h><h>of uniqueness</h></idx>
 	<idx><h>Procedure</h><h>proving uniqueness</h></idx>
 	<p>
-	To prove that <m>x = x_0</m> is the unique instance of an object <m>x</m> such that <m>A(x)</m> is true,
-	assume that <m>y</m> is also an object such that <m>A(y)</m> is true, and prove that <m>y = x_0</m>.
+	To prove that <m> x = x_0 </m> is the unique instance of an object <m> x </m> such that <m> A(x) </m> is true,
+	assume that <m> y </m> is also an object such that <m> A(y) </m> is true, and prove that <m> y = x_0 </m>.
 	</p>
 </identity>
 
 <problem> <!-- worked example -->
-	<statement><p> Prove that <m>2</m> is the unique positive number that is both prime and even. </p></statement>
+	<statement><p> Prove that <m> 2 </m> is the unique positive number that is both prime and even. </p></statement>
 	<solution><p>
-		Suppose <m>n</m> is a positive number which is both prime and even.
-		Since <m>n</m> is even, it is divisible by <m>2</m>.
-		But since <m>n</m> is prime, it is divisble by <em>only</em> <m>1</m> and itself.
-		Therefore, <m>2</m> and <q>itself</q> must be the same, <ie /> <m>n = 2</m>.
+		Suppose <m> n </m> is a positive number which is both prime and even.
+		Since <m> n </m> is even, it is divisible by <m> 2 </m>.
+		But since <m> n </m> is prime, it is divisble by <em>only</em> <m> 1 </m> and itself.
+		Therefore, <m> 2 </m> and <q>itself</q> must be the same, <ie /> <m> n = 2 </m>.
 	</p></solution>
 </problem>
 

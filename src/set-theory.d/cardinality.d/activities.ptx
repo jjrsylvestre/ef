@@ -17,37 +17,37 @@ respective owners.
 
 <activity><p>
 	Use the definition of <term><xref ref="definition-cardinality-itself" text="custom">cardinality</xref></term>
-	to verify that <m>\card{A} = 8</m> for <md> A = \{1,2,4,8,16,32,64,128\} </md>.
+	to verify that <m> \card{A} = 8 </m> for <md> A = \{1,2,4,8,16,32,64,128\} </md>.
 </p></activity>
 
 <activity xml:id="activity-cardinality-subset-of-finite">
 	<introduction>
 		<p> The steps below will guide you through a proof of the following statement. </p>
-		<blockquote><p> If <m>B</m> is finite and <m>A \subseteq B</m>, then <m>A</m> is also finite. </p></blockquote>
+		<blockquote><p> If <m> B </m> is finite and <m> A \subseteq B </m>, then <m> A </m> is also finite. </p></blockquote>
 	</introduction>
 	<task xml:id="activity-cardinality-subset-of-finite-unravel-finite"><p>
-		Start by assuming that <m>B</m> is finite.
+		Start by assuming that <m> B </m> is finite.
 		Write out what this means.
 		(You may do this using the technical definition of
 		<term><xref ref="definition-cardinality-finite-set" text="title" /></term>,
 		or you may do this using the sequence characterization of finiteness in <xref ref="fact-cardinality-finite-set-finite-sequence" />.)
 	</p></task>
 	<task xml:id="activity-cardinality-subset-of-finite-unravel-subset"><p>
-		Now add the assumption that <m>A \subseteq B</m>.
-		Try to use your technical expression of the assumption <q><m>B</m> is finite</q> from
+		Now add the assumption that <m> A \subseteq B </m>.
+		Try to use your technical expression of the assumption <q><m> B </m> is finite</q> from
 		<xref ref="activity-cardinality-subset-of-finite-unravel-finite" text="type-local" />
-		to determine a similar technical expression of the desired conclusion <q><m>A</m> is finite.</q>
+		to determine a similar technical expression of the desired conclusion <q><m> A </m> is finite.</q>
 	</p></task>
 </activity>
 
 <activity>
 	<statement>
 		<p> Use the sequence characterization of finiteness in <xref ref="fact-cardinality-finite-set-finite-sequence" /> to prove the following statement. </p>
-		<blockquote><p> If <m>A</m> and <m>B</m> are finite and do not intersect, then <m>\abs{A \sqcup B} = \abs{A} + \abs{B}</m>. </p></blockquote>
+		<blockquote><p> If <m> A </m> and <m> B </m> are finite and do not intersect, then <m> \abs{A \sqcup B} = \abs{A} + \abs{B} </m>. </p></blockquote>
 	</statement>
 	<hint><p>
-		Use separate finite sequences to <q>count</q> the elements of <m>A</m> and <m>B</m>.
-		Then use these two sequences to build a sequence that <q>counts</q> the elements of <m>A \sqcup B</m>.
+		Use separate finite sequences to <q>count</q> the elements of <m> A </m> and <m> B </m>.
+		Then use these two sequences to build a sequence that <q>counts</q> the elements of <m> A \sqcup B </m>.
 	</p></hint>
 </activity>
 
@@ -59,12 +59,12 @@ respective owners.
 		by explicitly describing a bijection between them.
 	</p></introduction>
 	<task><p> The set of natural numbers and the set of positive natural numbers. </p></task>
-	<task><p> The set of natural numbers and the set of natural numbers that are greater than <m>9,999,999</m>. </p></task>
+	<task><p> The set of natural numbers and the set of natural numbers that are greater than <m> 9,999,999 </m>. </p></task>
 	<task><p> The set of even natural numbers and the set of odd natural numbers. </p></task>
 	<task><p> The set of even natural numbers and the set of natural numbers. </p></task>
-	<task><p> The set of natural numbers and the set of integer powers of <m>2</m>. </p></task>
+	<task><p> The set of natural numbers and the set of integer powers of <m> 2 </m>. </p></task>
 	<!-- OLD replaced by more detailed version in next activity
-	<li> \label{EXER::same.size::power.set.v.words} The power set of <m>\{a,b,c,d,e\}</m> and the set of all words in the alphabet <m>\Sigma = \{T,F\}</m> of length <m>5</m>.
+	<li> \label{EXER::same.size::power.set.v.words} The power set of <m> \{a,b,c,d,e\} </m> and the set of all words in the alphabet <m> \Sigma = \{T,F\} </m> of length <m> 5 </m>.
 	-->
 </activity>
 
@@ -72,8 +72,8 @@ respective owners.
 	<introduction><p> Set <md><mrow> A \amp = \{\mathrm{a},\mathrm{b},\mathrm{c},\mathrm{d},\mathrm{e}\}, \amp \Sigma \amp = \{\mathrm{Y},\mathrm{N}\} </mrow></md>. </p></introduction>
 	<task xml:id="activity-cardinality-power-set-vs-strings-bij">
 		<statement><p>
-			Demonstrate that <m>\powset{A}</m> and <m>\words{\Sigma}_5</m> have the same size.
-			(Recall that <m>\words{\Sigma}_5</m> means the set of words in <m>\words{\Sigma}</m> of length exactly <m>5</m>.)
+			Demonstrate that <m> \powset{A} </m> and <m> \words{\Sigma}_5 </m> have the same size.
+			(Recall that <m> \words{\Sigma}_5 </m> means the set of words in <m> \words{\Sigma} </m> of length exactly <m> 5 </m>.)
 			Do this not by determining the cardinality of each of the two sets,
 			but by showing that the sets satisfy the technical definition of
 			<term><xref ref="definition-cardinality-same-size" text="title" /></term>.
@@ -81,15 +81,15 @@ respective owners.
 			explicitly describe a bijection between the two sets.
 		</p></statement>
 		<hint><p>
-			Think of a <m>5</m>-letter word in the alphabet <m>\Sigma</m> as the answers to five yes-or-no questions.
-			How does such a string of answers correspond to some subset of <m>A</m>?
+			Think of a <m> 5 </m>-letter word in the alphabet <m> \Sigma </m> as the answers to five yes-or-no questions.
+			How does such a string of answers correspond to some subset of <m> A </m>?
 		</p></hint>
 	</task>
 	<task>
 		<p>
 		Describe how you could use the bijection you set up in
 		<xref ref="activity-cardinality-power-set-vs-strings-bij" text="type-local" />
-		to turn the problem of counting the number of subsets of <m>A</m> that have exactly <m>3</m> elements into a problem of counting a related collection of words in the alphabet <m>\Sigma</m>.
+		to turn the problem of counting the number of subsets of <m> A </m> that have exactly <m> 3 </m> elements into a problem of counting a related collection of words in the alphabet <m> \Sigma </m>.
 		</p><p>
 		(<em>Note:</em>
 		You are not asked to actually determine the number of such subsets.

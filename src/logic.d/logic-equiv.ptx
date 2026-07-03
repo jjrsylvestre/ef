@@ -28,13 +28,13 @@ respective owners.
 		<idx><h>logical</h><h>statement(s)</h><h>equivalent</h></idx>
 		<notation>
 			<usage><m> A \lgcequiv B </m></usage>
-			<description>statements <m>A</m> and <m>B</m> are equivalent</description>
+			<description>statements <m> A </m> and <m> B </m> are equivalent</description>
 		</notation>
-		<p> statements <m>A,B</m> such that <m>A \lgcbicond B</m> is a tautology </p>
+		<p> statements <m> A,B </m> such that <m> A \lgcbicond B </m> is a tautology </p>
 	</li>
 	<li>
-		<title><m>A \lgcequiv B</m></title>
-		<p> statements <m>A</m> and <m>B</m> are equivalent </p>
+		<title><m> A \lgcequiv B </m></title>
+		<p> statements <m> A </m> and <m> B </m> are equivalent </p>
 	</li>
 </dl></p>
 
@@ -45,8 +45,8 @@ respective owners.
 	<idx><h>statement(s) (in logic)</h><h>equivalent</h><h>Test</h></idx>
 	<idx><h>logical</h><h>statement(s)</h><h>equivalent</h><h>Test</h></idx>
 	<statement><p>
-		Statements <m>A</m> and <m>B</m> are logically equivalent if <m>A</m> and <m>B</m> <em>always</em> have the same output truth value whenever the same input truth values are substituted for the substatement variables in each.
-		That is, <m>A \lgcequiv B</m> if <em><m>A</m> and <m>B</m> have the same truth table</em>.
+		Statements <m> A </m> and <m> B </m> are logically equivalent if <m> A </m> and <m> B </m> <em>always</em> have the same output truth value whenever the same input truth values are substituted for the substatement variables in each.
+		That is, <m> A \lgcequiv B </m> if <em><m> A </m> and <m> B </m> have the same truth table</em>.
 	</p></statement>
 </claim>
 
@@ -56,49 +56,49 @@ respective owners.
 	<statement>
 		<p> Demonstrate that the following are equivalent statements. </p>
 		<tabular halign="left">
-			<row><cell><m>A</m>:</cell><cell>If it's nice outside, I will ride my bike.</cell></row>
-			<row><cell><m>B</m>:</cell><cell>It's not nice outside, or I will ride my bike.</cell></row>
+			<row><cell><m> A </m>:</cell><cell>If it's nice outside, I will ride my bike.</cell></row>
+			<row><cell><m> B </m>:</cell><cell>It's not nice outside, or I will ride my bike.</cell></row>
 		</tabular>
 	</statement>
 	<solution>
 		<p>
-		Let <m>p</m> represent the substatement <q>it's nice outside,</q>
-		and let <m>q</m> represent the substatement <q>I will ride my bike.</q>
+		Let <m> p </m> represent the substatement <q>it's nice outside,</q>
+		and let <m> q </m> represent the substatement <q>I will ride my bike.</q>
 		Then the equivalence we want to establish is <md>p \lgccond q \lgcequiv \lgcnot p \lgcor q</md>.
 		We can analyze the truth tables of both statements in the same table.
 		</p>
 		<tabular halign="center">
 			<col /><col right="minor" /><col right="minor" /><col /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>\lgcnot p</m></cell>
-				<cell><m>\lgcnot p \lgcor q</m></cell>
-				<cell><m>p \lgccond q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> \lgcnot p </m></cell>
+				<cell><m> \lgcnot p \lgcor q </m></cell>
+				<cell><m> p \lgccond q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
 		<p>
@@ -114,46 +114,46 @@ respective owners.
 
 <problem xml:id="wexample-logic-equiv-negate-biconditional">
 	<!-- \label{WEXAMPLE::negate.biconditional} -->
-	<statement><p> Demonstrate the equivalence <m>p \lgcbicond q \lgcequiv \lgcnot p \lgcbicond \lgcnot q</m>. </p></statement>
+	<statement><p> Demonstrate the equivalence <m> p \lgcbicond q \lgcequiv \lgcnot p \lgcbicond \lgcnot q </m>. </p></statement>
 	<solution>
 		<p> Again we build a truth table, and see that the <q>output</q> columns for the two statements are identical. </p>
 		<tabular halign="center">
 			<col /><col right="minor" /><col /><col right="minor" /><col /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>\lgcnot p</m></cell>
-				<cell><m>\lgcnot q</m></cell>
-				<cell><m>p \lgcbicond q</m></cell>
-				<cell><m>\lgcnot p \lgcbicond \lgcnot q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> \lgcnot p </m></cell>
+				<cell><m> \lgcnot q </m></cell>
+				<cell><m> p \lgcbicond q </m></cell>
+				<cell><m> \lgcnot p \lgcbicond \lgcnot q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
 	</solution>
@@ -161,7 +161,7 @@ respective owners.
 
 <!-- OLD... is this an exercise or activity now?
 \begin{tyu}
-	Show that <m>p \lgcbicond q \lgcequiv (p \lgccond q) \lgcand (q\lgccond p)</m>.
+	Show that <m> p \lgcbicond q \lgcequiv (p \lgccond q) \lgcand (q\lgccond p) </m>.
 \end{tyu} -->
 
 <proposition xml:id="proposition-logic-equiv-properties"><p>
@@ -169,15 +169,15 @@ respective owners.
 	<ol>
 		<li>
 			It is <term>reflexive</term>.
-			That is, <m>A \lgcequiv A</m> is always true.
+			That is, <m> A \lgcequiv A </m> is always true.
 		</li>
 		<li>
 			It is <term>symmetric</term>.
-			That is, whenever <m>A \lgcequiv B</m>, then also <m>B \lgcequiv A</m>.
+			That is, whenever <m> A \lgcequiv B </m>, then also <m> B \lgcequiv A </m>.
 		</li>
 		<li>
 			It is <term>transitive</term>.
-			That is, whenever <m>A \lgcequiv B</m> and <m>B \lgcequiv C</m>, then also <m>A \lgcequiv C</m>.
+			That is, whenever <m> A \lgcequiv B </m> and <m> B \lgcequiv C </m>, then also <m> A \lgcequiv C </m>.
 		</li>
 		<li> Every pair of tautologies is an equivalent pair of logical statements. </li>
 		<li> Every pair of contradictions is an equivalent pair of logical statements. </li>
@@ -207,8 +207,8 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 	<idx><h>Rule(s)</h><h>of Propositional Calculus</h></idx>
 	<idx><h>propositional calculus</h><h>rules of</h></idx>
 	<statement><p>
-		Suppose <m>A,B,C,E,U</m> are logical statements,
-		where <m>E</m> is a contradiction and <m>U</m> is a tautology.
+		Suppose <m> A,B,C,E,U </m> are logical statements,
+		where <m> E </m> is a contradiction and <m> U </m> is a tautology.
 		Then the following equivalences always hold.
 		<ol>
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-tauts">
@@ -216,55 +216,55 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 				<idx><h>tautology</h><h>propositional calculus rules</h></idx>
 				<p><ol cols="2">
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-tauts-disjunction">
-						<m>A \lgcor U \lgcequiv U</m>
+						<m> A \lgcor U \lgcequiv U </m>
 					</li>
-					<li> <m>A \lgcand U \lgcequiv A</m> </li>
+					<li> <m> A \lgcand U \lgcequiv A </m> </li>
 				</ol></p>
 			</li>
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-contras">
 				<title>Rules involving contradictions</title>
 				<idx><h>contradiction</h><h>propositional calculus rules</h></idx>
 				<p><ol cols="2">
-					<li> <m>A \lgcor E \lgcequiv A</m> </li>
-					<li> <m>A \lgcand E \lgcequiv E</m> </li>
+					<li> <m> A \lgcor E \lgcequiv A </m> </li>
+					<li> <m> A \lgcand E \lgcequiv E </m> </li>
 				</ol></p>
 			</li>
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-duality">
 				<title>Duality of tautologies and contradictions</title>
 				<idx><h>duality</h><h>of truth/falsity</h></idx>
 				<p><ol cols="2">
-					<li> <m>\lgcnot U \lgcequiv E</m> </li>
-					<li> <m>\lgcnot E \lgcequiv U</m> </li>
+					<li> <m> \lgcnot U \lgcequiv E </m> </li>
+					<li> <m> \lgcnot E \lgcequiv U </m> </li>
 				</ol></p>
 			</li>
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-dbl-negation">
 				<title>Double negation</title>
 				<idx><h>negation</h><h>double</h></idx>
 				<idx><h>double</h><h>negation</h></idx>
-				<p> <m>\lgcnot \lgcnot A \lgcequiv A</m> </p>
+				<p> <m> \lgcnot \lgcnot A \lgcequiv A </m> </p>
 			</li>
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-idempotence">
 				<title>Idempotence</title>
 				<idx><h>idempotence</h><h>of logical connectives</h></idx>
 				<p><ol cols="2">
-					<li> <m>A \lgcor A \lgcequiv A</m> </li>
-					<li> <m>A \lgcand A \lgcequiv A</m> </li>
+					<li> <m> A \lgcor A \lgcequiv A </m> </li>
+					<li> <m> A \lgcand A \lgcequiv A </m> </li>
 				</ol></p>
 			</li>
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-commutativity">
 				<title>Commutativity</title>
 				<idx><h>commutativity</h><h>of logical connectives</h></idx>
 				<p><ol cols="2">
-					<li> <m>A \lgcor B \lgcequiv B \lgcor A</m> </li>
-					<li> <m>A \lgcand B \lgcequiv B \lgcand A</m> </li>
+					<li> <m> A \lgcor B \lgcequiv B \lgcor A </m> </li>
+					<li> <m> A \lgcand B \lgcequiv B \lgcand A </m> </li>
 				</ol></p>
 			</li>
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-associativity">
 				<title>Associativity</title>
 				<idx><h>associativity</h><h>of logical connectives</h></idx>
 				<p><ol cols="2">
-					<li> <m>(A \lgcor B) \lgcor C \lgcequiv A \lgcor (B \lgcor C)</m> </li>
-					<li> <m>(A \lgcand B) \lgcand C \lgcequiv A \lgcand (B \lgcand C)</m> </li>
+					<li> <m> (A \lgcor B) \lgcor C \lgcequiv A \lgcor (B \lgcor C) </m> </li>
+					<li> <m> (A \lgcand B) \lgcand C \lgcequiv A \lgcand (B \lgcand C) </m> </li>
 				</ol></p>
 			</li>
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-distributivity">
@@ -272,16 +272,16 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 				<idx><h>distributivity</h><h>of logical connectives</h></idx>
 				<p><ol>
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-distributivity-left-and-over-or">
-						<m>A \lgcand (B \lgcor C) \lgcequiv (A \lgcand B) \lgcor (A \lgcand C)</m>
+						<m> A \lgcand (B \lgcor C) \lgcequiv (A \lgcand B) \lgcor (A \lgcand C) </m>
 					</li>
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-distributivity-left-or-over-and">
-						<m>A \lgcor (B \lgcand C) \lgcequiv (A \lgcor B) \lgcand (A \lgcor C)</m>
+						<m> A \lgcor (B \lgcand C) \lgcequiv (A \lgcor B) \lgcand (A \lgcor C) </m>
 					</li>
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-distributivity-right-and-over-or">
-						<m>(A \lgcor B) \lgcand C \lgcequiv (A \lgcand C) \lgcor (B \lgcand C)</m>
+						<m> (A \lgcor B) \lgcand C \lgcequiv (A \lgcand C) \lgcor (B \lgcand C) </m>
 					</li>
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-distributivity-right-or-over-and">
-						<m>(A \lgcand B) \lgcor C \lgcequiv (A \lgcor C) \lgcand (B \lgcor C)</m>
+						<m> (A \lgcand B) \lgcor C \lgcequiv (A \lgcor C) \lgcand (B \lgcor C) </m>
 					</li>
 				</ol></p>
 			</li>
@@ -292,10 +292,10 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 				<idx><h>Law</h><h>DeMorgan's</h><h>for logical connectives</h></idx>
 				<p><ol cols="2">
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-demorgan-not-or">
-						<m>\lgcnot (A \lgcor B) \lgcequiv \lgcnot A \lgcand \lgcnot B</m>
+						<m> \lgcnot (A \lgcor B) \lgcequiv \lgcnot A \lgcand \lgcnot B </m>
 					</li>
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-demorgan-not-and">
-						<m>\lgcnot (A \lgcand B) \lgcequiv \lgcnot A \lgcor \lgcnot B</m>
+						<m> \lgcnot (A \lgcand B) \lgcequiv \lgcnot A \lgcor \lgcnot B </m>
 					</li>
 				</ol></p>
 				<!-- </paragraphs> -->
@@ -305,10 +305,10 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 				<idx><h>conditional</h><h>construction from negation and disjunction</h></idx>
 				<p><ol cols="2">
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-cond-bicond-cond">
-						<m>A \lgccond B \lgcequiv \lgcnot A \lgcor B</m>
+						<m> A \lgccond B \lgcequiv \lgcnot A \lgcor B </m>
 					</li>
 					<li xml:id="proposition-logic-equiv-rules-prop-calculus-cond-bicond-bicond">
-						<m>A \lgcbicond B \lgcequiv (A \lgccond B) \lgcand (B \lgccond A)</m>
+						<m> A \lgcbicond B \lgcequiv (A \lgccond B) \lgcand (B \lgccond A) </m>
 					</li>
 				</ol></p>
 			</li>
@@ -332,10 +332,10 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 		<li> The triangle is not right or it is not equilateral. </li>
 	</ol>
 	To see how the rule applies,
-	let <m>p</m> represent the statement <q>the triangle is right</q> and
-	let <m>q</m> represent the statement <q>the triangle is equilateral.</q>
-	Then the first statement above is <m>\lgcnot (p \lgcand q)</m>,
-	while the second statement above is <m>\lgcnot p \lgcor \lgcnot q</m>.
+	let <m> p </m> represent the statement <q>the triangle is right</q> and
+	let <m> q </m> represent the statement <q>the triangle is equilateral.</q>
+	Then the first statement above is <m> \lgcnot (p \lgcand q) </m>,
+	while the second statement above is <m> \lgcnot p \lgcor \lgcnot q </m>.
 	</p>
 </example>
 
@@ -353,30 +353,30 @@ in logical calculations.
 		<li xml:id="theorem-logic-equiv-subst-equiv-substatements">
 			<title>Replacing a substatement by an equivalent one</title>
 			<p>
-			Suppose <m>A</m> is a logical statement and <m>X</m> is a substatement of <m>A</m>.
-			If statement <m>Y</m> is equivalent to <m>X</m>,
-			then the new statement <m>A'</m> obtained from <m>A</m> by replacing substatement <m>X</m> by <m>Y</m> is equivalent to <m>A</m>.
-			That is, if <m>Y \lgcequiv X</m> then <m>A' \lgcequiv A</m>.
+			Suppose <m> A </m> is a logical statement and <m> X </m> is a substatement of <m> A </m>.
+			If statement <m> Y </m> is equivalent to <m> X </m>,
+			then the new statement <m> A' </m> obtained from <m> A </m> by replacing substatement <m> X </m> by <m> Y </m> is equivalent to <m> A </m>.
+			That is, if <m> Y \lgcequiv X </m> then <m> A' \lgcequiv A </m>.
 			</p>
 		</li>
 		<li xml:id="theorem-logic-equiv-subst-equiv-into-variables">
 			<title>Substituting into a known equivalence</title>
 			<p>
-			Suppose <m>A</m> and <m>B</m> are logical statements,
+			Suppose <m> A </m> and <m> B </m> are logical statements,
 			each of which involves substatement variables
-			<m>p_1, p_2, \dotsc, p_m</m>.
-			If <m>A</m> and <m>B</m> are equivalent,
-			then so are new statements <m>A'</m> and <m>B'</m> obtained by applying substitution <m>p_i = C_i</m> to <em>both</em> <m>A</m> and <m>B</m>, for every collection of statements <m>C_1, C_2, \dotsc, C_m</m>.
+			<m> p_1, p_2, \dotsc, p_m </m>.
+			If <m> A </m> and <m> B </m> are equivalent,
+			then so are new statements <m> A' </m> and <m> B' </m> obtained by applying substitution <m> p_i = C_i </m> to <em>both</em> <m> A </m> and <m> B </m>, for every collection of statements <m> C_1, C_2, \dotsc, C_m </m>.
 			</p>
 		</li>
 	</ol></p></statement>
 	<proof><title>Proof idea</title><p><ol>
 		<li>
-			Think of <m>X</m> as an intermediate column in the calculation of the truth table of <m>A</m>.
-			Replacing <m>X</m> by <m>Y</m> does not change this column,
-			as the truth tables of <m>X</m> and <m>Y</m> are the same.
+			Think of <m> X </m> as an intermediate column in the calculation of the truth table of <m> A </m>.
+			Replacing <m> X </m> by <m> Y </m> does not change this column,
+			as the truth tables of <m> X </m> and <m> Y </m> are the same.
 		</li><li>
-			We leave this statement for you, the reader, to consider. (Again, think of the <m>C_i</m> as intermediate columns in the calculations of the truth tables of <m>A'</m> and <m>B'</m>.)
+			We leave this statement for you, the reader, to consider. (Again, think of the <m> C_i </m> as intermediate columns in the calculations of the truth tables of <m> A' </m> and <m> B' </m>.)
 		</li>
 	</ol></p></proof>
 </theorem>
@@ -385,7 +385,7 @@ in logical calculations.
 	One of DeMorgan's Laws
 	(<xref ref="proposition-logic-equiv-rules-prop-calculus-demorgan-not-or">Rule</xref>
 	of <xref ref="proposition-logic-equiv-rules-prop-calculus" />)
-	says that <m>\lgcnot (p \lgcor q) \lgcequiv \lgcnot p \lgcand \lgcnot q</m>.
+	says that <m> \lgcnot (p \lgcor q) \lgcequiv \lgcnot p \lgcand \lgcnot q </m>.
 	Therefore,
 	<md>
 		\lgcnot \bbrac{ (r \lgccond t) \lgcor (t \lgccond r) } \lgcequiv
@@ -393,7 +393,7 @@ in logical calculations.
 	</md>
 	using <xref ref="theorem-logic-equiv-subst-equiv-into-variables">Rule</xref>
 	of our new <xref ref="theorem-logic-equiv-subst-equiv" text="title" />,
-	with substitutions <m>p = r \lgccond t</m>, <m>q = t \lgccond r</m>.
+	with substitutions <m> p = r \lgccond t </m>, <m> q = t \lgccond r </m>.
 </p></example>
 
 <p>
@@ -412,9 +412,9 @@ to manipulate an expression involving a conditional.
 	<!-- \label{EXAMPLE::conditional.demorgan} -->
 	<title>DeMorgan with a conditional</title>
 	<p>
-	Consider the statement <m>(p_1 \lgcor p_2) \lgccond q</m>.
-	We may read it as <q>if either <m>p_1</m> or <m>p_2</m> is true, then <m>q</m> will be true as well.</q>
-	So it seems that each of <m>p_1</m> and <m>p_2</m> must imply <m>q</m> on its own.
+	Consider the statement <m> (p_1 \lgcor p_2) \lgccond q </m>.
+	We may read it as <q>if either <m> p_1 </m> or <m> p_2 </m> is true, then <m> q </m> will be true as well.</q>
+	So it seems that each of <m> p_1 </m> and <m> p_2 </m> must imply <m> q </m> on its own.
 	Let's see what propositional calculus says about this:
 	<md>
 		<mrow>
@@ -441,7 +441,7 @@ to manipulate an expression involving a conditional.
 		<li>
 			<xref ref="theorem-logic-equiv-subst-equiv-into-variables">Rule</xref>
 			of our new <xref ref="theorem-logic-equiv-subst-equiv" text="title" />,
-			where we substitute <m>A = p_1 \lgcor p_2</m> into both sides of the construction of the conditional
+			where we substitute <m> A = p_1 \lgcor p_2 </m> into both sides of the construction of the conditional
 			(<xref ref="proposition-logic-equiv-rules-prop-calculus-cond-bicond-cond">Rule</xref>
 			of <xref ref="proposition-logic-equiv-rules-prop-calculus"/>);
 		</li>
@@ -451,7 +451,7 @@ to manipulate an expression involving a conditional.
 			using DeMorgan
 			(<xref ref="proposition-logic-equiv-rules-prop-calculus-demorgan-not-or">Rule</xref>
 			of <xref ref="proposition-logic-equiv-rules-prop-calculus"/>)
-			on the substatement <m>\lgcnot (p_1 \lgcor p_2)</m>;
+			on the substatement <m> \lgcnot (p_1 \lgcor p_2) </m>;
 		</li>
 		<li>
 			distributivity
@@ -484,25 +484,25 @@ to manipulate an expression involving a conditional.
 <title>Converse, inverse, and contrapositive</title>
 
 <p>
-Related to the conditional <m>p \lgccond q</m> are three important variations.
+Related to the conditional <m> p \lgccond q </m> are three important variations.
 <dl width="narrow">
 	<li>
 		<title>converse</title>
 		<idx>converse</idx>
 		<idx><h>conditional</h><h>converse</h></idx>
-		<p> <m>q \lgccond p</m> </p>
+		<p> <m> q \lgccond p </m> </p>
 	</li>
 	<li>
 		<title>inverse</title>
 		<idx><h>inverse</h><h>conditional</h></idx>
 		<idx><h>conditional</h><h>inverse</h></idx>
-		<p> <m>\lgcnot p \lgccond \lgcnot q</m> </p>
+		<p> <m> \lgcnot p \lgccond \lgcnot q </m> </p>
 	</li>
 	<li xml:id="definition-logic-equiv-contrapositive">
 		<title>contrapositive</title>
 		<idx>contrapositive</idx>
 		<idx><h>conditional</h><h>contrapositive</h></idx>
-		<p> <m>\lgcnot q \lgccond \lgcnot p</m> </p>
+		<p> <m> \lgcnot q \lgccond \lgcnot p </m> </p>
 	</li>
 </dl>
 </p>
@@ -516,40 +516,40 @@ Related to the conditional <m>p \lgccond q</m> are three important variations.
 		<tabular halign="center">
 			<col /><col right="minor" /><col /><col right="minor" /><col /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>\lgcnot p</m></cell>
-				<cell><m>\lgcnot q</m></cell>
-				<cell><m>p\lgccond q</m></cell>
-				<cell><m>\lgcnot q \lgccond \lgcnot p</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> \lgcnot p </m></cell>
+				<cell><m> \lgcnot q </m></cell>
+				<cell><m> p\lgccond q </m></cell>
+				<cell><m> \lgcnot q \lgccond \lgcnot p </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
 		<p> As the two <q>output</q> columns are identical, we conclude that the statements are equivalent. </p>
@@ -560,9 +560,9 @@ Related to the conditional <m>p \lgccond q</m> are three important variations.
 	<title>Modus tollens for inverse and converse</title>
 	<statement><p> The inverse and converse of a conditional are equivalent. </p></statement>
 	<proof><p>
-		The inverse of the conditional <m>p \lgccond q</m> is <m>\lgcnot p \lgccond \lgcnot q</m>.
-		The contrapositive of this new conditional is <m>\lgcnot\lgcnot q \lgccond \lgcnot\lgcnot p</m>,
-		which is equivalent to <m>q \lgccond p</m> by double negation.
+		The inverse of the conditional <m> p \lgccond q </m> is <m> \lgcnot p \lgccond \lgcnot q </m>.
+		The contrapositive of this new conditional is <m> \lgcnot\lgcnot q \lgccond \lgcnot\lgcnot p </m>,
+		which is equivalent to <m> q \lgccond p </m> by double negation.
 	</p></proof>
 </corollary>
 
@@ -579,22 +579,22 @@ Related to the conditional <m>p \lgccond q</m> are three important variations.
 	<!-- \label{exmps::converse.not.equiv.cond} -->
 	<p><ol>
 		<li><p>
-			Suppose <m>m</m> is a fixed but unspecified whole number that is greater than <m>2</m>.
+			Suppose <m> m </m> is a fixed but unspecified whole number that is greater than <m> 2 </m>.
 			<dl width="narrow">
-				<li><title>conditional</title><p> If <m>m</m> is a prime number, then it is an odd number. </p></li>
-				<li><title>contrapositive</title><p> If <m>m</m> is not an odd number, then it is not a prime number. </p></li>
-				<li><title>converse</title><p> If <m>m</m> is an odd number, then it is a prime number. </p></li>
-				<li><title>inverse</title><p> If <m>m</m> is not a prime number, then it is not an odd number. </p></li>
+				<li><title>conditional</title><p> If <m> m </m> is a prime number, then it is an odd number. </p></li>
+				<li><title>contrapositive</title><p> If <m> m </m> is not an odd number, then it is not a prime number. </p></li>
+				<li><title>converse</title><p> If <m> m </m> is an odd number, then it is a prime number. </p></li>
+				<li><title>inverse</title><p> If <m> m </m> is not a prime number, then it is not an odd number. </p></li>
 			</dl>
 			Only two of these four statements are true!
 		</p></li>
 		<li><p>
-			Suppose <m>f(x)</m> is a fixed but unspecified function.
+			Suppose <m> f(x) </m> is a fixed but unspecified function.
 			<dl width="narrow">
-				<li><title>conditional</title><p> If <m>f</m> is continuous, then it is differentiable. </p></li>
-				<li><title>contrapositive</title><p> If <m>f</m> is not differentiable, then it is not continuous. </p></li>
-				<li><title>converse</title><p> If <m>f</m> is differentiable, then it is continuous. </p></li>
-				<li><title>inverse</title><p> If <m>f</m> is not continuous, then it is not differentiable. </p></li>
+				<li><title>conditional</title><p> If <m> f </m> is continuous, then it is differentiable. </p></li>
+				<li><title>contrapositive</title><p> If <m> f </m> is not differentiable, then it is not continuous. </p></li>
+				<li><title>converse</title><p> If <m> f </m> is differentiable, then it is continuous. </p></li>
+				<li><title>inverse</title><p> If <m> f </m> is not continuous, then it is not differentiable. </p></li>
 			</dl>
 			Only two of these four statements are true!
 		</p></li>

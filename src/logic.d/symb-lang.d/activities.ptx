@@ -56,7 +56,7 @@ respective owners.
 		</statement>
 		<hint><p>
 			Start with the assumption that this conditional statement <em>is</em> false,
-			and then work backwards from the statement to the possible truth values of <m>p</m> and <m>q</m> based on that assumption
+			and then work backwards from the statement to the possible truth values of <m> p </m> and <m> q </m> based on that assumption
 			to conclude that the statement being false is not actually possible.
 		</p></hint>
 	</task>
@@ -82,8 +82,8 @@ respective owners.
 	<term><xref ref="definition-symb-lang-logically-implies" text="title" /></term>
 	another.
 	</p><p>
-	Suppose that <m>A</m> logically implies <m>B</m> and <m>B</m> logically implies <m>C</m>.
-	Must <m>A</m> logically imply <m>C</m>?
+	Suppose that <m> A </m> logically implies <m> B </m> and <m> B </m> logically implies <m> C </m>.
+	Must <m> A </m> logically imply <m> C </m>?
 	Argue convincingly in support of your answer by arguing that the technical definition of
 	<term><xref ref="definition-symb-lang-logically-implies" text="title" /></term>
 	is satisfied.

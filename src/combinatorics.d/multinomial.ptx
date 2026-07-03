@@ -23,8 +23,8 @@ respective owners.
 	<title>binomial</title>
 	<idx>binomial</idx>
 	<p>
-	an expression of the form <m>(x + y)^n</m>,
-	where <m>n \in \N</m> and <m>x,y</m> are real numbers
+	an expression of the form <m> (x + y)^n </m>,
+	where <m> n \in \N </m> and <m> x,y </m> are real numbers
 	(or elements of any commutative ring with identity)
 	</p>
 </li></dl></p>
@@ -32,7 +32,7 @@ respective owners.
 <example xml:id="example-multinomial-expanding-binomials">
 	<title>Expanding binomials</title>
 	<p>
-	Expanding binomials gets more complicated as <m>n</m> increases.
+	Expanding binomials gets more complicated as <m> n </m> increases.
 	<md>
 		<mrow> (x + y)^2 \amp = x^2 + 2 x y + y^2 </mrow>
 		<mrow> (x + y)^3 \amp = (x + y) (x^2 + 2 x y + y^2) = x^3 + 3 x^2 y + 3 x y^2 + y^3 </mrow>
@@ -42,8 +42,8 @@ respective owners.
 		<mrow> \amp \vdots </mrow>
 	</md>
 	The symmetry in each of these expansions should be expected:
-	we would get the same expression in the summation opposite order if we swapped <m>x</m> and <m>y</m>,
-	since <m>(x + y)^n = (y + x)^n</m>.
+	we would get the same expression in the summation opposite order if we swapped <m> x </m> and <m> y </m>,
+	since <m> (x + y)^n = (y + x)^n </m>.
 	</p>
 </example>
 
@@ -52,15 +52,15 @@ respective owners.
 		<title>binomial coefficient</title>
 		<idx><h>binomial</h><h>coefficient</h></idx>
 		<idx><h>coefficient</h><h>binomial</h></idx>
-		<p> a number appearing as a coefficient in the expansion of <m>(x + y)^n</m> </p>
+		<p> a number appearing as a coefficient in the expansion of <m> (x + y)^n </m> </p>
 	</li>
 	<li>
-		<title><m>\displaystyle \binom{n}{k}</m></title>
+		<title><m> \displaystyle \binom{n}{k} </m></title>
 		<notation>
-			<usage><m>\binom{n}{k}</m></usage>
-			<description> the <m>\nth[k]</m> coefficient in the expansion of <m>(x + y)^n</m> </description>
+			<usage><m> \binom{n}{k} </m></usage>
+			<description> the <m> \nth[k] </m> coefficient in the expansion of <m> (x + y)^n </m> </description>
 		</notation>
-		<p> the <m>\nth[k]</m> coefficient in the expansion of <m>(x + y)^n</m> (<m>0 \le k \le n</m>) </p>
+		<p> the <m> \nth[k] </m> coefficient in the expansion of <m> (x + y)^n </m> (<m> 0 \le k \le n </m>) </p>
 	</li>
 </dl></p>
 
@@ -128,7 +128,7 @@ let's extract the binomial coefficients from those expressions.
 	<idx><h>Theorem</h><h>Binomial</h></idx>
 	<idx>Binomial Theorem</idx>
 	<p>
-	For every <m>x,y\in\R</m> and every <m>n \in \N</m>,
+	For every <m> x,y\in\R </m> and every <m> n \in \N </m>,
 	we have
 	<md>
 		(x+y)^n
@@ -142,9 +142,9 @@ let's extract the binomial coefficients from those expressions.
 	<proof>
 		<title>Informal direct proof outline</title>
 		<p>
-		Write <m>(x+y)^n = (x+y)(x+y)\dotsm(x+y)</m>, with <m>n</m> factors.
+		Write <m> (x+y)^n = (x+y)(x+y)\dotsm(x+y) </m>, with <m> n </m> factors.
 		To expand this out, we generalize the FOIL method:
-		from each factor, choose either <m>x</m> or <m>y</m>,
+		from each factor, choose either <m> x </m> or <m> y </m>,
 		then multiply all your choices together.
 		Then add the results of all possible such products.
 		For example,
@@ -152,23 +152,23 @@ let's extract the binomial coefficients from those expressions.
 			<mrow> (x + y)^2 \amp = x x + x y + y x + y y = x^2 + 2 x y + y^2, </mrow>
 			<mrow> (x + y)^3 \amp = x x x + x x y + x y x + x y y + y x x + y x y + y y x + y y y = x^3 + 3 x^2y + 3 x y^2 + y^3. </mrow>
 		</md>
-		When forming a specific product, if you chose <m>y</m> for <m>k</m> out of <m>n</m> choices,
-		you must have chosen <m>x</m> for the remaining <m>n - k</m> of the <m>n</m> choices.
-		The result will be <m>x^{n - k} y^k</m>.
-		So to figure out the coefficient on <m>x^{n - k} y^k</m>,
-		just count how many ways there are to choose <m>y</m> for <m>k</m> of the <m>n</m> choices.
-		This is just <m>\combinationalt{n}{k}</m>,
-		where we choose <m>k</m> factors of <m>(x+y)</m> to give us a <m>y</m>,
-		and the rest to give us an <m>x</m>.
+		When forming a specific product, if you chose <m> y </m> for <m> k </m> out of <m> n </m> choices,
+		you must have chosen <m> x </m> for the remaining <m> n - k </m> of the <m> n </m> choices.
+		The result will be <m> x^{n - k} y^k </m>.
+		So to figure out the coefficient on <m> x^{n - k} y^k </m>,
+		just count how many ways there are to choose <m> y </m> for <m> k </m> of the <m> n </m> choices.
+		This is just <m> \combinationalt{n}{k} </m>,
+		where we choose <m> k </m> factors of <m> (x+y) </m> to give us a <m> y </m>,
+		and the rest to give us an <m> x </m>.
 		</p>
 	</proof>
 	<proof>
 		<title>Induction proof outline</title>
-		<case><title>Base case</title><p> The cases of <m>n=0,1</m> are trivially true. </p></case>
+		<case><title>Base case</title><p> The cases of <m> n=0,1 </m> are trivially true. </p></case>
 		<case>
 			<title>Induction step</title>
 			<p>
-			Use the binomial formula for <m>(x+y)^{n - 1}</m> to obtain the binomial formula for <m>(x + y)^n</m>,
+			Use the binomial formula for <m> (x+y)^{n - 1} </m> to obtain the binomial formula for <m> (x + y)^n </m>,
 			by manipulating
 			<md>
 				<mrow> (x + y)^n \amp = (x + y) (x + y)^{n - 1} </mrow>
@@ -185,9 +185,9 @@ let's extract the binomial coefficients from those expressions.
 
 <problem xml:id="wexample-multinomial-binomial-using-pascal">
 	<title>Expanding a binomial</title>
-	<statement><p> Expand <m>(x-2)^5</m>. </p></statement>
+	<statement><p> Expand <m> (x-2)^5 </m>. </p></statement>
 	<solution><p>
-		We saw that the <m>n = 5</m> row of Pascal's triangle is <m>1,5,10,10,5,1</m>.
+		We saw that the <m> n = 5 </m> row of Pascal's triangle is <m> 1,5,10,10,5,1 </m>.
 		<md>
 			<mrow> \amp (x - 2)^5 </mrow>
 			<mrow> \amp \bbrac{x + (- 2)}^5 </mrow>
@@ -202,10 +202,10 @@ let's extract the binomial coefficients from those expressions.
 
 <problem xml:id="wexample-multinomial-binomial-one-coefficient">
 	<title>Determining a specific coefficient in a binomial expansion</title>
-	<statement><p> What is the coefficient on the <m>x^4 y^9</m> term in the expansion of <m> (3 x + y)^{13} </m>? </p></statement>
+	<statement><p> What is the coefficient on the <m> x^4 y^9 </m> term in the expansion of <m> (3 x + y)^{13} </m>? </p></statement>
 	<solution><p>
 		Considering <md> (3 x + y)^{13} = \bbrac{(3 x) + y}^{13} </md>,
-		the <m>x^4 y^9</m> term is
+		the <m> x^4 y^9 </m> term is
 		<md>
 			<mrow>
 				\binom{13}{9} (3x)^4 y^9
@@ -214,7 +214,7 @@ let's extract the binomial coefficients from those expressions.
 			<mrow> \amp = \frac{13 \cdot 12 \cdot 11 \cdot 10 \cdot 27 \cdot 3}{4\cdot 3 \cdot 2} x^4 y^9 </mrow>
 			<mrow> \amp = (13 \cdot 3 \cdot 11 \cdot 5 \cdot 27) x^4 y^9 </mrow>
 		</md>.
-		So the desired coefficient is <m>57,915</m>.
+		So the desired coefficient is <m> 57,915 </m>.
 	</p></solution>
 </problem>
 
@@ -228,9 +228,9 @@ let's extract the binomial coefficients from those expressions.
 	<idx><h>Theorem</h><h>Trinomial</h></idx>
 	<idx>Trinomial Theorem</idx>
 	<statement><p>
-		The expansion of the trinomial <m>(x + y + z)^n</m> is the sum of all possible products
+		The expansion of the trinomial <m> (x + y + z)^n </m> is the sum of all possible products
 		<md> \frac{n!}{i! \, j!\, k!}\,x^i y^j z^k, </md>
-		where <m>0 \le i,j,k \le n</m> such that <m>i + j + k = n</m>.
+		where <m> 0 \le i,j,k \le n </m> such that <m> i + j + k = n </m>.
 	</p></statement>
 	<proof>
 		<title>Proof idea</title>
@@ -238,21 +238,21 @@ let's extract the binomial coefficients from those expressions.
 		Similarly to the proof of the <xref ref="theorem-multinomial-binomial" text="title" />,
 		write
 		<md xml:id="equation-multinomial-trinomial" tag="star"> (x + y + z)^n = (x + y + z) (x + y + z) \dotsm (x + y + z) </md>,
-		with <m>n</m> factors.
+		with <m> n </m> factors.
 		To expand this out, we generalize the FOIL method:
-		from each factor, choose either <m>x</m>, <m>y</m>, or <m>z</m>,
+		from each factor, choose either <m> x </m>, <m> y </m>, or <m> z </m>,
 		then multiply all your choices together.
-		For any such product, the powers on <m>x</m>, <m>y</m>, and <m>z</m> must sum to <m>n</m>.
+		For any such product, the powers on <m> x </m>, <m> y </m>, and <m> z </m> must sum to <m> n </m>.
 		To get the final expansion, add the results of all possible such products.
 		</p>
 		<p>
-		But we can collect terms that have the same exponent on each of <m>x</m>, <m>y</m>, and <m>z</m>.
-		How many ways can we form a specific term <m>x^i y^j z^k</m>, for <m>0 \le i,j,k \le n</m> such that <m>i + j + k = n</m>?
-		We have <m>\combinationalt{n}{i}</m> ways to choose <m>i</m> factors from the right-hand side of <xref ref="equation-multinomial-trinomial" /> from which to take <m>x</m>,
-		then <m>\combinationalt{n - i}{j}</m> ways to choose <m>j</m> factors from which to take <m>y</m>.
-		But now from all remaining factors we must choose <m>z</m>,
-		and there is only <m>1</m> way to do this.
-		So the coefficient on <m>x^i y^j z^k</m> is
+		But we can collect terms that have the same exponent on each of <m> x </m>, <m> y </m>, and <m> z </m>.
+		How many ways can we form a specific term <m> x^i y^j z^k </m>, for <m> 0 \le i,j,k \le n </m> such that <m> i + j + k = n </m>?
+		We have <m> \combinationalt{n}{i} </m> ways to choose <m> i </m> factors from the right-hand side of <xref ref="equation-multinomial-trinomial" /> from which to take <m> x </m>,
+		then <m> \combinationalt{n - i}{j} </m> ways to choose <m> j </m> factors from which to take <m> y </m>.
+		But now from all remaining factors we must choose <m> z </m>,
+		and there is only <m> 1 </m> way to do this.
+		So the coefficient on <m> x^i y^j z^k </m> is
 		<md>
 			\binom{n}{i} \binom{n-i}{j}
 			= \left(\choosefuncformula{n}{i}{(n-i)}\right) \:\: \left(\choosefuncformula{(n-i)}{j}{(n-i-j)}\right)
@@ -262,8 +262,8 @@ let's extract the binomial coefficients from those expressions.
 	<proof>
 		<title>Alternative proof idea</title>
 		<p>
-		Use the <xref ref="theorem-multinomial-binomial" text="title" /> on <m>\bbrac{x + (y + z)}^n</m>,
-		then again on <m>(y + z)^k</m> for each term <m>\combinationalt{n}{k} x^{n - k} (y + z)^k</m>.
+		Use the <xref ref="theorem-multinomial-binomial" text="title" /> on <m> \bbrac{x + (y + z)}^n </m>,
+		then again on <m> (y + z)^k </m> for each term <m> \combinationalt{n}{k} x^{n - k} (y + z)^k </m>.
 		(This would be very tedious!)
 		</p>
 	</proof>
@@ -271,60 +271,60 @@ let's extract the binomial coefficients from those expressions.
 
 <problem>
 	<title>Expanding a trinomial</title>
-	<statement><p> Determine the terms in the expansion of <m>(2 x + y - 3 z)^3</m>. </p></statement>
+	<statement><p> Determine the terms in the expansion of <m> (2 x + y - 3 z)^3 </m>. </p></statement>
 	<solution>
 		<p>
 		First, rewrite
 		<md> (2 x + y - 3 z)^3 = \bbrac{(2 x) + y + (-3 z)}^3 </md>.
 		So the terms in the expansion involve products
 		<md> (2 x)^i y^j (-3 z)^k </md>.
-		We need to account for all triples of exponents <m>i, j, k</m> that sum to <m>3</m>.
+		We need to account for all triples of exponents <m> i, j, k </m> that sum to <m> 3 </m>.
 		</p>
 		<tabular halign="center">
 			<col /><col /><col right="minor" /><col right="minor" /><col right="minor" /><col />
 			<row bottom="medium">
-				<cell><m>i</m></cell> <cell><m>j</m></cell> <cell><m>k</m></cell>
+				<cell><m> i </m></cell> <cell><m> j </m></cell> <cell><m> k </m></cell>
 				<cell><m> n! \over i! \, j! \, k! </m></cell> <cell>term</cell> <cell> simplified </cell>
 			</row>
 			<row>
-				<cell><m>3</m></cell> <cell><m>0</m></cell> <cell><m>0</m></cell>
-				<cell><m>1</m></cell> <cell><m> (2 x)^3 </m></cell> <cell><m> 8 x^3 </m></cell>
+				<cell><m> 3 </m></cell> <cell><m> 0 </m></cell> <cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell> <cell><m> (2 x)^3 </m></cell> <cell><m> 8 x^3 </m></cell>
 			</row>
 			<row>
-				<cell><m>0</m></cell> <cell><m>3</m></cell> <cell><m>0</m></cell>
-				<cell><m>1</m></cell> <cell><m> y^3 </m></cell>  <cell><m> y^3 </m></cell>
+				<cell><m> 0 </m></cell> <cell><m> 3 </m></cell> <cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell> <cell><m> y^3 </m></cell>  <cell><m> y^3 </m></cell>
 			</row>
 			<row>
-				<cell><m>0</m></cell> <cell><m>0</m></cell> <cell><m>3</m></cell>
-				<cell><m>1</m></cell> <cell><m> (-3 x)^3 </m></cell>  <cell><m> -27 z^3 </m></cell>
+				<cell><m> 0 </m></cell> <cell><m> 0 </m></cell> <cell><m> 3 </m></cell>
+				<cell><m> 1 </m></cell> <cell><m> (-3 x)^3 </m></cell>  <cell><m> -27 z^3 </m></cell>
 			</row>
 			<row>
-				<cell><m>2</m></cell> <cell><m>1</m></cell> <cell><m>0</m></cell>
-				<cell><m>3</m></cell> <cell><m> 3 (2 x)^2 y </m></cell> <cell><m> 12 x^2y </m></cell>
+				<cell><m> 2 </m></cell> <cell><m> 1 </m></cell> <cell><m> 0 </m></cell>
+				<cell><m> 3 </m></cell> <cell><m> 3 (2 x)^2 y </m></cell> <cell><m> 12 x^2y </m></cell>
 			</row>
 			<row>
-				<cell><m>2</m></cell> <cell><m>0</m></cell> <cell><m>1</m></cell>
-				<cell><m>3</m></cell> <cell><m> 3 (2 x)^2 (-3 z) </m></cell>  <cell><m> -36 x^2 z </m></cell>
+				<cell><m> 2 </m></cell> <cell><m> 0 </m></cell> <cell><m> 1 </m></cell>
+				<cell><m> 3 </m></cell> <cell><m> 3 (2 x)^2 (-3 z) </m></cell>  <cell><m> -36 x^2 z </m></cell>
 			</row>
 			<row>
-				<cell><m>1</m></cell> <cell><m>2</m></cell> <cell><m>0</m></cell>
-				<cell><m>3</m></cell> <cell><m> 3 (2 x) y^2 </m></cell>  <cell><m> 6 x y^2 </m></cell>
+				<cell><m> 1 </m></cell> <cell><m> 2 </m></cell> <cell><m> 0 </m></cell>
+				<cell><m> 3 </m></cell> <cell><m> 3 (2 x) y^2 </m></cell>  <cell><m> 6 x y^2 </m></cell>
 			</row>
 			<row>
-				<cell><m>0</m></cell> <cell><m>2</m></cell> <cell><m>1</m></cell>
-				<cell><m>3</m></cell> <cell><m> 3 y^2 (-3 z) </m></cell> <cell><m> -9 y^2 z </m></cell>
+				<cell><m> 0 </m></cell> <cell><m> 2 </m></cell> <cell><m> 1 </m></cell>
+				<cell><m> 3 </m></cell> <cell><m> 3 y^2 (-3 z) </m></cell> <cell><m> -9 y^2 z </m></cell>
 			</row>
 			<row>
-				<cell><m>1</m></cell> <cell><m>0</m></cell> <cell><m>2</m></cell>
-				<cell><m>3</m></cell> <cell><m> 3 (2 x) (-3 z)^2 </m></cell> <cell><m> -54 x z^2 </m></cell>
+				<cell><m> 1 </m></cell> <cell><m> 0 </m></cell> <cell><m> 2 </m></cell>
+				<cell><m> 3 </m></cell> <cell><m> 3 (2 x) (-3 z)^2 </m></cell> <cell><m> -54 x z^2 </m></cell>
 			</row>
 			<row>
-				<cell><m>0</m></cell> <cell><m>1</m></cell> <cell><m>2</m></cell>
-				<cell><m>3</m></cell> <cell><m> 3 y (-3 z)^2 </m></cell> <cell><m> -9 y z^2 </m></cell>
+				<cell><m> 0 </m></cell> <cell><m> 1 </m></cell> <cell><m> 2 </m></cell>
+				<cell><m> 3 </m></cell> <cell><m> 3 y (-3 z)^2 </m></cell> <cell><m> -9 y z^2 </m></cell>
 			</row>
 			<row>
-				<cell><m>1</m></cell> <cell><m>1</m></cell> <cell><m>1</m></cell>
-				<cell><m>3!</m></cell> <cell><m> 6 (2 x) y (-3 z) </m></cell> <cell><m> -36 x y z </m></cell>
+				<cell><m> 1 </m></cell> <cell><m> 1 </m></cell> <cell><m> 1 </m></cell>
+				<cell><m> 3! </m></cell> <cell><m> 6 (2 x) y (-3 z) </m></cell> <cell><m> -36 x y z </m></cell>
 			</row>
 		</tabular>
 		<p>
@@ -340,10 +340,10 @@ let's extract the binomial coefficients from those expressions.
 
 <problem>
 	<title>Determining a specific coefficient in a trinomial expansion</title>
-	<statement><p> Determine the coefficient on <m>x^5 y^2 z^7</m> in the expansion of <m>(x + y + z)^{14}</m>. </p></statement>
+	<statement><p> Determine the coefficient on <m> x^5 y^2 z^7 </m> in the expansion of <m> (x + y + z)^{14} </m>. </p></statement>
 	<solution><p>
 		Here we don't have any extra contributions to the coefficient from constants inside the trinomial,
-		so using <m>n=14</m>, <m>i = 5</m>, <m>j = 2</m>, <m>k = 7</m>,
+		so using <m> n=14 </m>, <m> i = 5 </m>, <m> j = 2 </m>, <m> k = 7 </m>,
 		the coefficient is simply
 		<md>
 			\frac{14!}{5! \, 2! \, 7!}
@@ -367,9 +367,9 @@ continues.
 	<idx><h>Theorem</h><h>Multinomial</h></idx>
 	<idx>Multinomial Theorem</idx>
 	<statement><p>
-		The expansion of <m>(x_1 + x_2 + \dotsb + x_m)^n</m> is the sum of all possible products
+		The expansion of <m> (x_1 + x_2 + \dotsb + x_m)^n </m> is the sum of all possible products
 		<md> \frac{n!}{i_1! \, i_2! \, \dotsm \, i_m!} \, x_1^{i_1} x_2^{i_2} \dotsm x_m^{i_m} </md>,
-		where the exponents <m>i_1, i_2, \dotsc, i_n</m> sum to <m>n</m>.
+		where the exponents <m> i_1, i_2, \dotsc, i_n </m> sum to <m> n </m>.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
 		Use the same generalized FOIL method argument as in the Binomial and Trinomial Theorem proofs,
@@ -379,7 +379,7 @@ continues.
 
 <problem>
 	<title>Determining a specific coefficient in a multinomial expansion</title>
-	<statement><p> Determine the coefficient on <m>x^2 y z^6</m> in the expansion of <m>(3 x + 2 y + z^2 + 6)^8</m>. </p></statement>
+	<statement><p> Determine the coefficient on <m> x^2 y z^6 </m> in the expansion of <m> (3 x + 2 y + z^2 + 6)^8 </m>. </p></statement>
 	<solution><p>
 		Rewriting
 		<md> (3 x + 2 y + z^2 + 6)^8 = \bbrac{(3 x) + (2 y) + (z^2) + 6}^8 </md>,
@@ -391,7 +391,7 @@ continues.
 		such terms in the expansion of the multinomial.
 		Therefore, we obtain the term
 		<md> (1,680) (3 x)^2 (2 y)^1 (z^2)^3 6^2 = (1,088,640) x^2 y z^6 </md>
-		with a total coefficient of <m>1,088,640</m>.
+		with a total coefficient of <m> 1,088,640 </m>.
 	</p></solution>
 </problem>
 
@@ -400,17 +400,17 @@ continues.
 		<title>multinomial coefficient</title>
 		<idx><h>multinomial</h><h>coefficient</h></idx>
 		<idx><h>coefficient</h><h>multinomial</h></idx>
-		<p> a number appearing as a coefficient in the expansion of <m>(x_1 + x_2 + \dotsb + x_m)^n</m> </p>
+		<p> a number appearing as a coefficient in the expansion of <m> (x_1 + x_2 + \dotsb + x_m)^n </m> </p>
 	</li>
 	<li>
-		<title><m>\binom{n}{i_1,i_2,\dotsc,i_m}</m></title>
+		<title><m> \binom{n}{i_1,i_2,\dotsc,i_m} </m></title>
 		<notation>
-			<usage><m>\binom{n}{i_1,i_2,\dotsc,i_m}</m></usage>
-			<description> the coefficient on the term <m>x_1^{i_1} x_2^{i_2} \dotsm x_m^{i_m}</m> in the expansion of <m>(x_1 + x_2 + \dotsm + x_m)^n</m> </description>
+			<usage><m> \binom{n}{i_1,i_2,\dotsc,i_m} </m></usage>
+			<description> the coefficient on the term <m> x_1^{i_1} x_2^{i_2} \dotsm x_m^{i_m} </m> in the expansion of <m> (x_1 + x_2 + \dotsm + x_m)^n </m> </description>
 		</notation>
 		<p>
-		the coefficient on the term <m>x_1^{i_1} x_2^{i_2} \dotsm x_m^{i_m}</m> in the expansion of <m>(x_1 + x_2 + \dotsm + x_m)^n</m>,
-		where the exponents <m>i_1, i_2, \dotsc, i_m</m> must sum to <m>n</m>
+		the coefficient on the term <m> x_1^{i_1} x_2^{i_2} \dotsm x_m^{i_m} </m> in the expansion of <m> (x_1 + x_2 + \dotsm + x_m)^n </m>,
+		where the exponents <m> i_1, i_2, \dotsc, i_m </m> must sum to <m> n </m>
 		</p>
 	</li>
 </dl></p>
@@ -418,19 +418,19 @@ continues.
 <note><p><ul>
 	<li>
 	The <xref ref="theorem-multinomial-multinomial" text="title" /> tells us
-	<m>\displaystyle
+	<m> \displaystyle
 		\binom{n}{i_1,i_2,\dotsc,i_m} = \frac{n!}{i_1! \, i_2! \, \dotsm \, i_m!}
-	</m>.
+	 </m>.
 	</li>
 	<li>
-	In the case of a binomial expansion <m>(x_1 + x_2)^n</m>,
-	the term <m>x_1^{i_1} x_2^{i_2}</m> must have <m>i_1 + i_2 = n</m>, or <m>i_2 = n - i_1</m>.
+	In the case of a binomial expansion <m> (x_1 + x_2)^n </m>,
+	the term <m> x_1^{i_1} x_2^{i_2} </m> must have <m> i_1 + i_2 = n </m>, or <m> i_2 = n - i_1 </m>.
 	The <xref ref="theorem-multinomial-multinomial" text="title" /> tells us that the coefficient on this term is
 	<md>
 		\binom{n}{i_1,i_2} = \choosefuncformula{n}{i_1}{i_2}
 		= \choosefuncformula{n}{i_1}{(n - i_1)} = \binom{n}{i_1}.
 	</md>
-	Therefore, in the case <m>m=2</m>, the <xref ref="theorem-multinomial-multinomial" text="title" /> reduces to the <xref ref="theorem-multinomial-binomial" text="title" />.
+	Therefore, in the case <m> m=2 </m>, the <xref ref="theorem-multinomial-multinomial" text="title" /> reduces to the <xref ref="theorem-multinomial-binomial" text="title" />.
 	</li>
 </ul></p></note>
 
@@ -442,52 +442,52 @@ continues.
 <proposition>
 	<title>Counting partitions of a finite set</title>
 	<statement><p>
-		If <m>\abs{A} = n</m>, then the number of ways to partition <m>A</m> into <m>m</m> disjoint subsets <m>A_1, A_2, \dotsc, A_m</m>,
-		with each subset of predetermined size <m>\abs{A_j} = i_j</m>, is
+		If <m> \abs{A} = n </m>, then the number of ways to partition <m> A </m> into <m> m </m> disjoint subsets <m> A_1, A_2, \dotsc, A_m </m>,
+		with each subset of predetermined size <m> \abs{A_j} = i_j </m>, is
 		<md> \binom{n}{i_1,i_2,\dotsc,i_m} </md>.
 	</p></statement>
 	<proof>
 		<title>Proof idea</title>
 		<p>
-		There are <m>\combinationalt{n}{i_1}</m> possibilities for <m>A_1</m>.
-		After choosing <m>A_1</m>, there are <m>\combinationalt{n - i_1}{i_2}</m> possibilities for <m>A_2</m>.
-		After choosing <m>A_2</m>, there are <m>\combinationalt{n - i_1 - i_2}{i_3}</m> possibilities for <m>A_2</m>.
-		Continue in this fashion, all the way to <m>A_m</m>, then multiply all the combination formula expressions together.
+		There are <m> \combinationalt{n}{i_1} </m> possibilities for <m> A_1 </m>.
+		After choosing <m> A_1 </m>, there are <m> \combinationalt{n - i_1}{i_2} </m> possibilities for <m> A_2 </m>.
+		After choosing <m> A_2 </m>, there are <m> \combinationalt{n - i_1 - i_2}{i_3} </m> possibilities for <m> A_2 </m>.
+		Continue in this fashion, all the way to <m> A_m </m>, then multiply all the combination formula expressions together.
 		</p>
 	</proof>
 	<proof>
 		<title>Alternative proof idea</title>
 		<p>
 		Going back to basic counting principles, we can approach this in the same way that we came up with the factorial formula for the choose function.
-		Choosing a permutation of <m>A</m> (<m>n!</m> ways) gives us an instance of the desired partition of <m>A</m> by setting <m>A_1</m> to be the subset consisting of the first <m>i_1</m> objects in the permutation,
-		then setting <m>A_2</m> to be the subset consisting of the next <m>i_2</m> objects in the permutation,
+		Choosing a permutation of <m> A </m> (<m> n! </m> ways) gives us an instance of the desired partition of <m> A </m> by setting <m> A_1 </m> to be the subset consisting of the first <m> i_1 </m> objects in the permutation,
+		then setting <m> A_2 </m> to be the subset consisting of the next <m> i_2 </m> objects in the permutation,
 		and so on.
-		However, the ordering of the elements inside any such subset <m>A_j</m> does not matter,
-		and we would get the same partition if we took our permutation of <m>A</m> and again permuted the <q>clusters</q> corresponding to each subset <m>A_j</m>.
-		Since there are <m>i_j!</m> ways to permute subset <m>A_j</m>, we should divide <m>n!</m> by each of the factorials <m>i_j!</m>.
+		However, the ordering of the elements inside any such subset <m> A_j </m> does not matter,
+		and we would get the same partition if we took our permutation of <m> A </m> and again permuted the <q>clusters</q> corresponding to each subset <m> A_j </m>.
+		Since there are <m> i_j! </m> ways to permute subset <m> A_j </m>, we should divide <m> n! </m> by each of the factorials <m> i_j! </m>.
 		</p>
 	</proof>
 </proposition>
 
-<warning><p> In the above theorem, the order <m>A_1, A_2, \dotsc, A_m</m> matters! </p></warning>
+<warning><p> In the above theorem, the order <m> A_1, A_2, \dotsc, A_m </m> matters! </p></warning>
 
 <proposition>
 	<title>Counting words with a fixed composition of letters</title>
 	<statement><p>
-		Suppose <m>x_1, x_2, \dotsc, x_m</m> are distinct letters in the alphabet <m>\Sigma</m>.
-		For <m>i_1 + i_2 + \dotsb + i_m = n</m>,
-		the number of words in <m>\words{\Sigma}</m> of length <m>n</m> which consist of exactly <m>i_1</m> <m>x_1</m>'s, <m>i_2</m> <m>x_2</m>'s, <m>\dotsc</m>, and <m>i_m</m> <m>x_m</m>'s is the multinomial coefficient
+		Suppose <m> x_1, x_2, \dotsc, x_m </m> are distinct letters in the alphabet <m> \Sigma </m>.
+		For <m> i_1 + i_2 + \dotsb + i_m = n </m>,
+		the number of words in <m> \words{\Sigma} </m> of length <m> n </m> which consist of exactly <m> i_1 </m> <m> x_1 </m>'s, <m> i_2 </m> <m> x_2 </m>'s, <m> \dotsc </m>, and <m> i_m </m> <m> x_m </m>'s is the multinomial coefficient
 		<md> \binom{n}{i_1,i_2,\dotsc,i_m} </md>.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
-		If we view each letter <m>x_i</m> as a variable and each word made up of the letters <m>x_1,\dotsc,x_m</m> as a product of these variables,
-		then each of the words we want to count gives us one way to achieve a term of <m>x_1^{i_1} \dotsm x_m^{i_m}</m> in the expansion of <m>(x_1 + \dotsb + x_m)^n</m>.
+		If we view each letter <m> x_i </m> as a variable and each word made up of the letters <m> x_1,\dotsc,x_m </m> as a product of these variables,
+		then each of the words we want to count gives us one way to achieve a term of <m> x_1^{i_1} \dotsm x_m^{i_m} </m> in the expansion of <m> (x_1 + \dotsb + x_m)^n </m>.
 		The number of such ways is the multinomial coefficient.
 	</p></proof>
 </proposition>
 
 <problem>
-	<statement><p> How many different <m>9</m>-digit integers can we form from three <m>3</m>s, four <m>6</m>s and two <m>9</m>s? </p></statement>
+	<statement><p> How many different <m> 9 </m>-digit integers can we form from three <m> 3 </m>s, four <m> 6 </m>s and two <m> 9 </m>s? </p></statement>
 	<solution><p>
 		The number of integers of the desired digit composition is the multinomial coefficient
 		<md>

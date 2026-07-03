@@ -24,12 +24,12 @@ respective owners.
 <dl width="narrow"><li xml:id="definition-recur-induct-counting-set">
 	<title>counting set</title>
 	<notation>
-		<usage><m>\natnumlt{m}</m></usage>
-		<description>the set of natural numbers that are less than <m>m</m></description>
+		<usage><m> \natnumlt{m} </m></usage>
+		<description>the set of natural numbers that are less than <m> m </m></description>
 	</notation>
 	<p> the set <md> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0,\, 1,\, \dotsc,\, m-1\} </md> </p>
 </li></dl>
-The set <m>\natnumlt{m}</m> has exactly <m>m</m> elements in it.
+The set <m> \natnumlt{m} </m> has exactly <m> m </m> elements in it.
 In <xref ref="chapter-cardinality" /> we will use these counting sets to, well, <em>count</em> the elements in other sets.
 For now, we will use them to index the objects in an ordered list.
 </p>
@@ -37,56 +37,56 @@ For now, we will use them to index the objects in an ordered list.
 <p><dl width="narrow">
 	<li xml:id="definition-recur-induct-finite-seq">
 	<!-- \label{DEFN::finite.seq} -->
-		<title>finite sequence (from a set <m>A</m>)</title>
+		<title>finite sequence (from a set <m> A </m>)</title>
 		<idx><h>sequence</h><h>finite</h></idx>
 		<idx><h>finite</h><h>sequence</h></idx>
-		<p> a function <m>\natnumlt{m} \to A</m> </p>
+		<p> a function <m> \natnumlt{m} \to A </m> </p>
 	</li>
 	<li>
-		<title>infinite sequence (from a set <m>A</m>)</title>
+		<title>infinite sequence (from a set <m> A </m>)</title>
 		<idx><h>sequence</h><h>infinite</h></idx>
 		<idx><h>infinite</h><h>sequence</h></idx>
-		<p> a function <m>\N \to A</m> </p>
+		<p> a function <m> \N \to A </m> </p>
 	</li>
 	<li>
 		<title>term in a sequence</title>
 		<p> one of the image elements of the function defining the sequence </p>
 	</li>
 	<li>
-		<title><m>a_k</m></title>
+		<title><m> a_k </m></title>
 		<notation>
-			<usage><m>a_k</m></usage>
-			<description><m>\nth[k]</m> term in a sequence</description>
+			<usage><m> a_k </m></usage>
+			<description><m> \nth[k] </m> term in a sequence</description>
 		</notation>
 		<p>
-		the <m>\nth[k]</m> term in a sequence,
-		so that if <m>\funcdef{f}{\natnumlt{m}}{A}</m> or <m>\funcdef{f}{\N}{A}</m>
-		is a sequence then <m>a_k = f(k)</m>
+		the <m> \nth[k] </m> term in a sequence,
+		so that if <m> \funcdef{f}{\natnumlt{m}}{A} </m> or <m> \funcdef{f}{\N}{A} </m>
+		is a sequence then <m> a_k = f(k) </m>
 		</p>
 	</li>
 	<li>
-		<title><m>\{a_k\}</m></title>
+		<title><m> \{a_k\} </m></title>
 		<notation>
-			<usage><m>\{a_k\}</m></usage>
+			<usage><m> \{a_k\} </m></usage>
 			<description>the collection of terms in a sequence</description>
 		</notation>
 		<p> the collection of all terms in a sequence </p>
 	</li>
 	<li>
-		<title><m>\{a_k\}_0^m</m></title>
+		<title><m> \{a_k\}_0^m </m></title>
 		<notation>
-			<usage><m>\{a_k\}_0^m</m></usage>
+			<usage><m> \{a_k\}_0^m </m></usage>
 			<description>the collection of terms in a finite sequence</description>
 		</notation>
 		<p>
-			the collection of the terms in a sequence up to (and including) the <m>\nth[m]</m> term
-			(if the sequence is finite, this could represent all terms in the sequence for the appropriate <m>m</m> value)
+			the collection of the terms in a sequence up to (and including) the <m> \nth[m] </m> term
+			(if the sequence is finite, this could represent all terms in the sequence for the appropriate <m> m </m> value)
 		</p>
 	</li>
 	<li>
-		<title><m>\{a_k\}_0^\infty</m></title>
+		<title><m> \{a_k\}_0^\infty </m></title>
 		<notation>
-			<usage><m>\{a_k\}_0^\infty</m></usage>
+			<usage><m> \{a_k\}_0^\infty </m></usage>
 			<description>the collection of terms in an infinite sequence</description>
 		</notation>
 		<p> the collection of all terms in a sequence, where we are explicit that it is an infinite sequence </p>
@@ -95,18 +95,18 @@ For now, we will use them to index the objects in an ordered list.
 
 <remark><p><ul>
 	<li>
-		Of course, we do not restrict ourselves to the letter <m>a</m> to represent the terms of a sequence.
-		We might write <m>b_k</m>, or <m>s_k</m>, <etc />.
+		Of course, we do not restrict ourselves to the letter <m> a </m> to represent the terms of a sequence.
+		We might write <m> b_k </m>, or <m> s_k </m>, <etc />.
 	</li>
 	<li>
-		While we use set-like notation <m>\{\}</m> to represent the collection of all terms in a sequence,
+		While we use set-like notation <m> \{\} </m> to represent the collection of all terms in a sequence,
 		this collection is <em>not</em> a set, since order and repetition matter.
 	</li>
 </ul></p></remark>
 
 <example><title>Sequence of squares</title><p>
-	The sequence  <m>\{k^2\}</m>
-	has terms <m>0, \, 1, \, 4, \, 9, \, 16, \, 25, \, \dotsc, \, k^2, \, \dotsc</m>.
+	The sequence  <m> \{k^2\} </m>
+	has terms <m> 0, \, 1, \, 4, \, 9, \, 16, \, 25, \, \dotsc, \, k^2, \, \dotsc </m>.
 </p></example>
 
 <example><title>Sequence of definite integral values</title><p>
@@ -127,9 +127,9 @@ For now, we will use them to index the objects in an ordered list.
 		<idx>recursively-defined sequence</idx>
 		<idx><h>sequence</h><h>recursively-defined</h></idx>
 		<p>
-		a sequence <m>\{a_k\}</m> from a set <m>A</m>, where
-		<m>a_0,a_1,\dotsc,a_{K-1}</m> are defined explicitly,
-		and for <m>k\ge K</m>, the term <m>a_k</m> is defined in terms of some (or all) of the previous terms in the sequence <m>a_0, \, a_1, \, \dotsc, \, a_{k-1}</m>
+		a sequence <m> \{a_k\} </m> from a set <m> A </m>, where
+		<m> a_0,a_1,\dotsc,a_{K-1} </m> are defined explicitly,
+		and for <m> k\ge K </m>, the term <m> a_k </m> is defined in terms of some (or all) of the previous terms in the sequence <m> a_0, \, a_1, \, \dotsc, \, a_{k-1} </m>
 		</p>
 	</li>
 	<li>
@@ -137,8 +137,8 @@ For now, we will use them to index the objects in an ordered list.
 		<idx>recurrence relation</idx>
 		<p>
 			for a recursively-defined sequence,
-			the formula that defines the general term <m>a_k</m> recursively in the previous terms
-			<m>a_0, \, a_1, \, \dotsc, \, a_{k-1}</m>
+			the formula that defines the general term <m> a_k </m> recursively in the previous terms
+			<m> a_0, \, a_1, \, \dotsc, \, a_{k-1} </m>
 		</p>
 	</li>
 </dl></p>
@@ -148,10 +148,10 @@ For now, we will use them to index the objects in an ordered list.
 	<title>A bouncing ball</title>
 	<p>
 	A ball is dropped from a height of <quantity><mag>100</mag><unit base="metre" prefix="centi" /></quantity>.
-	On each bounce, it returns to <m>75\%</m> of its previous height.
+	On each bounce, it returns to <m> 75\% </m> of its previous height.
 	</p><p>
-	Let <m>h_k</m> be the height in centimetres after the <m>\nth[k]</m> bounce.
-	Then <m>h_0 = 100</m> and the recurrence relation is
+	Let <m> h_k </m> be the height in centimetres after the <m> \nth[k] </m> bounce.
+	Then <m> h_0 = 100 </m> and the recurrence relation is
 	<md><mrow> h_k \amp = \frac{3h_{k-1}}{4} \text{,} \amp k \amp \ge 1 \text{.} </mrow></md>
 	The terms of the sequence are
 	<md> 100, \, 75, \, 56.25, \, 42.1875, \, \dotsc </md>.
@@ -162,7 +162,7 @@ For now, we will use them to index the objects in an ordered list.
 	<!-- \label{EXAMPLE::factorial.recurrence} -->
 	<title>Factorial</title>
 	<p>
-	Set <m>a_0 = 1</m>, and let <m>a_k = k a_{k-1}</m> for <m>k \ge 1</m>.
+	Set <m> a_0 = 1 </m>, and let <m> a_k = k a_{k-1} </m> for <m> k \ge 1 </m>.
 	Then the terms of the sequence are
 	<md> 1, \, 1, \, 2, \, 6, \, 24, \, 120, \, \dotsc </md>.
 	</p>
@@ -173,7 +173,7 @@ For now, we will use them to index the objects in an ordered list.
 	The sequence
 	<md> 0, \, 1, \, 1, \, 2, \, 3, \, 5, \, 8, \, 13, \, 21, \, 34, \dotsc </md>
 	can be defined recursively by
-	<m>a_0 = 0</m>, <m>a_1 = 1</m>, and
+	<m> a_0 = 0 </m>, <m> a_1 = 1 </m>, and
 	<md><mrow> a_k \amp = a_{k-1} + a_{k-2} \text{,} \amp k \amp \ge 2 \text{.} </mrow></md>
 	</p>
 </example>
@@ -182,8 +182,8 @@ For now, we will use them to index the objects in an ordered list.
 	<!-- \label{EXAMPLE::sequence.of.sets} -->
 	<title>A sequence of sets</title>
 	<p>
-	Define a sequence <m>\{A_k\}</m> from <m>\powset{\N}</m> recursively as follows.
-	Let <m>A_0 = \emptyset</m>,
+	Define a sequence <m> \{A_k\} </m> from <m> \powset{\N} </m> recursively as follows.
+	Let <m> A_0 = \emptyset </m>,
 	and take the recurrence relation to be
 	<md><mrow> A_k \amp = A_{k-1} \cup \{k\} \text{,} \amp k \amp \ge 1 \text{.} </mrow></md>
 	Then the terms of the sequence are
@@ -197,15 +197,15 @@ For now, we will use them to index the objects in an ordered list.
 <title>Solving through iteration</title>
 
 <p>
-Given a recursively defined sequence <m>\{a_k\}</m>,
-we can <q>unravel</q> the recursive definition to determine an explicit formula for the general term <m>a_k</m> which involves only the index <m>k</m>.
+Given a recursively defined sequence <m> \{a_k\} </m>,
+we can <q>unravel</q> the recursive definition to determine an explicit formula for the general term <m> a_k </m> which involves only the index <m> k </m>.
 </p>
 
 <problem>
 	<statement><p> Solve the recurrence relation from <xref ref="example-recur-induct-ball-recurrence" />. </p></statement>
 	<solution>
 		<p>
-		The sequence in the example was defined recursively by <m>h_0 = 100</m> and
+		The sequence in the example was defined recursively by <m> h_0 = 100 </m> and
 		<md><mrow> h_k \amp = \frac{3}{4} \, h_{k-1} \text{,} \amp k \amp \ge 1 \text{.} </mrow></md>
 		We can apply this formula to every term in the sequence, except for the first, using the pattern
 		<q>each term is three-quarters of the previous term.</q>
@@ -216,7 +216,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 			h_{k-2} \amp = \frac{3}{4} \, h_{k-3} \text{,} \amp
 			\amp \dotsc
 		</mrow></md>.
-		Therefore, for <m>k \ge 1</m>, we can calculate
+		Therefore, for <m> k \ge 1 </m>, we can calculate
 		<md>
 			<mrow> h_k \amp = \frac{3}{4}\,h_{k-1} </mrow>
 			<mrow>
@@ -232,7 +232,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 				= \left(\frac{3}{4}\right)^k (100).
 			</mrow>
 		</md>
-		(Note that this formula is also valid for <m>k=0</m>.)
+		(Note that this formula is also valid for <m> k=0 </m>.)
 		</p><p>
 		We can verify our formula by substituting it into the original recurrence relation:
 		<md>
@@ -251,8 +251,8 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 <problem>
 	<statement>
 		<p>
-		Solve the recurrence relation <m>a_k = r a_{k-1}</m> for <m>k\ge 1</m>,
-		where <m>r</m> is a constant and the first term <m>a_0</m> is arbitrarily chosen.
+		Solve the recurrence relation <m> a_k = r a_{k-1} </m> for <m> k\ge 1 </m>,
+		where <m> r </m> is a constant and the first term <m> a_0 </m> is arbitrarily chosen.
 		</p>
 		<aside><title>Compare</title><p>
 			This example generalizes the previous example.
@@ -271,14 +271,14 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 	</p></solution>
 </problem>
 
-<!-- So our previous example of <m>a_0 = 1</m> and <m>a_n = 2a_{n-1}</m> for <m>n\ge 1</m> gives <m>a_n = 2^n</m>, as expected. [<em>Recall:} this example was determining <m>\abs{\powset{A_n}}</m> for <m>\abs{A_n} = n</m>.] -->
+<!-- So our previous example of <m> a_0 = 1 </m> and <m> a_n = 2a_{n-1} </m> for <m> n\ge 1 </m> gives <m> a_n = 2^n </m>, as expected. [<em>Recall:} this example was determining <m> \abs{\powset{A_n}} </m> for <m> \abs{A_n} = n </m>.] -->
 
 <problem>
 	<statement><p> Solve the recurrence relation from <xref ref="example-recur-induct-factorial-recurrence" />. </p></statement>
 	<solution><p>
-		The sequence in the example was defined recursively by <m>a_0 = 1</m> and
+		The sequence in the example was defined recursively by <m> a_0 = 1 </m> and
 		<md><mrow> a_k \amp = ka_{k-1} \text{,} \amp k \amp \ge 1 \text{.} </mrow></md>
-		Therefore, for <m>k \ge 1</m>, we have
+		Therefore, for <m> k \ge 1 </m>, we have
 		<md>
 			<mrow>
 				a_k \amp
@@ -292,7 +292,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 		</md>.
 		Simplifying this last expression leads to
 		<md> a_k = k(k-1)(k-2)\dotsm 1 \cdot a_0 = k! </md>.
-		Note that the formula <m>a_k = k!</m> is also valid for <m>k=0</m> when we adopt the convention <m>0! = 1</m>.
+		Note that the formula <m> a_k = k! </m> is also valid for <m> k=0 </m> when we adopt the convention <m> 0! = 1 </m>.
 		<!-- TODO XREF (See \lecsectitleref{SECTION::permutations::factorials} in \S\zref{CHAPTER::permutations}.) -->
 	</p></solution>
 </problem>
@@ -301,7 +301,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 
 <problem>
 	<statement><p>
-		Solve the recurrence relation <m>a_0 = 1</m>, <m>a_1 = \frac{1}{2}</m>, and
+		Solve the recurrence relation <m> a_0 = 1 </m>, <m> a_1 = \frac{1}{2} </m>, and
 		<md><mrow> a_k \amp = \frac{k}{2(k-1)}\, a_{k-1} \text{,} \amp k \amp \ge 2 \text{.} </mrow></md>
 	</p></statement>
 	<solution><p>
@@ -366,19 +366,19 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 
 <example xml:id="example-recur-induct-construct-logical-statements">
 	<title>Set of all possible logical statements</title>
-	<p> Let us define a set <m>\mathscr{L}</m> with the following inductive definition. </p>
-	<case><title>Base clause</title><p> For every <m>m \in \N</m>, the statement variable <m>p_m</m> belongs to <m>\mathscr{L}</m>. </p></case>
+	<p> Let us define a set <m> \mathscr{L} </m> with the following inductive definition. </p>
+	<case><title>Base clause</title><p> For every <m> m \in \N </m>, the statement variable <m> p_m </m> belongs to <m> \mathscr{L} </m>. </p></case>
 	<case><title>Inductive clause</title><p>
-		Given statements <m>A,B \in \mathscr{L}</m>,
+		Given statements <m> A,B \in \mathscr{L} </m>,
 		the statements
 		<md> \lgcnot A, \quad A \lgcand B, \quad A \lgcor B, \quad A \lgccond B, \quad A \lgcbicond B </md>
-		are also elements of <m>\mathscr{L}</m>.
+		are also elements of <m> \mathscr{L} </m>.
 	</p></case>
 	<case><title>Limiting clause</title><p>
-		The set <m>\mathscr{L}</m> does not contain any elements except those that can be obtained from a finite number of applications of the base and inductive clauses.
+		The set <m> \mathscr{L} </m> does not contain any elements except those that can be obtained from a finite number of applications of the base and inductive clauses.
 	</p></case>
 	<p>
-	For example, the logical statement <m>\lgcnot p_2 \lgcand (p_1 \lgccond p_2)</m> is in <m>\mathscr{L}</m> by the following construction.
+	For example, the logical statement <m> \lgcnot p_2 \lgcand (p_1 \lgccond p_2) </m> is in <m> \mathscr{L} </m> by the following construction.
 	<md>
 		p_1, p_2 \in \mathscr{L}
 		\quad \lgcimplies \quad \lgcnot p_2 \in \mathscr{L}, \;\; p_1 \lgccond p_2 \in \mathscr{L}
@@ -391,21 +391,21 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 	<!-- \label{EXAMPLE::construct.nat.nums} -->
 	<title>Set-theoretic construction of the natural numbers</title>
 	<p>
-	We assume that an empty set <m>\emptyset</m> exists.
-	Let us define a set <m>N</m> inductively.
+	We assume that an empty set <m> \emptyset </m> exists.
+	Let us define a set <m> N </m> inductively.
 	</p>
-	<case><title>Base clause</title><p> The empty set <m>\emptyset</m> is an <em>element</em> of <m>N</m>. </p></case>
+	<case><title>Base clause</title><p> The empty set <m> \emptyset </m> is an <em>element</em> of <m> N </m>. </p></case>
 	<case><title>Inductive clause</title><p>
-		If <m>X</m> is an element of <m>N</m> and <m>X</m> itself is a set,
-		then the set <m>X^+ = X \cup \{X\}</m> is also an element of <m>N</m>.
+		If <m> X </m> is an element of <m> N </m> and <m> X </m> itself is a set,
+		then the set <m> X^+ = X \cup \{X\} </m> is also an element of <m> N </m>.
 	</p></case>
 	<case><title>Limiting clause</title><p>
-	 	The set <m>N</m> does not contain any other elements except those that can be obtained from a finite number of applications of the base and inductive clauses.
+	 	The set <m> N </m> does not contain any other elements except those that can be obtained from a finite number of applications of the base and inductive clauses.
 	</p></case>
 	<p>
-	Note that the three clauses together imply that every element of <m>N</m> must be a set, so the <q>and <m>X</m> itself is a set</q> part of the inductive clause is superfluous.
+	Note that the three clauses together imply that every element of <m> N </m> must be a set, so the <q>and <m> X </m> itself is a set</q> part of the inductive clause is superfluous.
 	</p><p>
-	Since the base clause involves a single initial element of <m>N</m> and the inductive clause produces one new element of <m>N</m> from a single old element of <m>N</m>,
+	Since the base clause involves a single initial element of <m> N </m> and the inductive clause produces one new element of <m> N </m> from a single old element of <m> N </m>,
 	we can explicitly carry out the construction step-by-step.
 	We now <em>define</em> the natural numbers to be the elements in this construction:
 	<md>
@@ -415,54 +415,54 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 		<mrow> 3 \amp = 2^+ = 2 \cup \{ 2 \} = \{ 0, 1 \} \cup \{ 2 \} = \{ 0, 1, 2 \} \ne 0,1,2 </mrow>
 		<mrow> \amp \;\;\vdots </mrow>
 	</md>
-	We usually write <m>\N</m> for this set instead of <m>N</m>.
+	We usually write <m> \N </m> for this set instead of <m> N </m>.
 	</p><p>
 	Note that the number of elements in each natural number (as a set) is equal to the number defined by that set,
-	and that each natural number <m>m</m> is defined to be the set that we have previously called <m>\natnumlt{m}</m>.
+	and that each natural number <m> m </m> is defined to be the set that we have previously called <m> \natnumlt{m} </m>.
 	</p>
 </example>
 
 <paragraphs><title>Bonus</title>
 	<p>
 	In <xref ref="example-recur-induct-construct-nat-nums" /> above,
-	we constructed the set <m>\N</m> inductively using only the axioms of set theory.
+	we constructed the set <m> \N </m> inductively using only the axioms of set theory.
 	But how do we do arithmetic with this definition?
 	We can define addition as an infinite collection of inductively-defined functions:
-	for each <m>m \in \N</m>, define a <q>sum with <m>m</m></q> function <m>\funcdef{s_m}{\N}{\N}</m> as follows.
+	for each <m> m \in \N </m>, define a <q>sum with <m> m </m></q> function <m> \funcdef{s_m}{\N}{\N} </m> as follows.
 	</p>
-	<case><title>Base clause</title><p> Set <m>s_m(0) = m</m>. </p></case>
+	<case><title>Base clause</title><p> Set <m> s_m(0) = m </m>. </p></case>
 	<case><title>Inductive clause</title><p>
-		For <m>n \in \N</m> such that <m>s_m(n)</m> is already defined,
+		For <m> n \in \N </m> such that <m> s_m(n) </m> is already defined,
 		set
 		<md> s_m(n^+) = s_m(n)^+ = s_m(n) \cup \{s_m(n)\} </md>.
-		That is, if <m>s_m(n)</m> is defined and <m>n^+</m> is the next natural number after <m>n</m> in the inductive definition of <m>\N</m>,
-		then define <m>s_m(n^+)</m> to be the next natural number after <m>s_m(n)</m>.
+		That is, if <m> s_m(n) </m> is defined and <m> n^+ </m> is the next natural number after <m> n </m> in the inductive definition of <m> \N </m>,
+		then define <m> s_m(n^+) </m> to be the next natural number after <m> s_m(n) </m>.
 	</p></case>
 	<p>
-	We then use the symbols <m>m + n</m> to mean <m>s_m(n)</m>.
-	In this notation, you can think of the inductive clause above as saying that once <m>m+n</m> is defined,
-	we can define <m>m+(n+1)</m> as <m>(m+n)+1</m>.
+	We then use the symbols <m> m + n </m> to mean <m> s_m(n) </m>.
+	In this notation, you can think of the inductive clause above as saying that once <m> m+n </m> is defined,
+	we can define <m> m+(n+1) </m> as <m> (m+n)+1 </m>.
 	</p><p>
-	If you are bored on a Friday or Saturday night, you can try the following using the above definition of addition in <m>\N</m>.
+	If you are bored on a Friday or Saturday night, you can try the following using the above definition of addition in <m> \N </m>.
 	</p>
 	<exercise>
 		<statement><p><ol>
 			<li><p>
-				Prove that addition in <m>\N</m> is:
+				Prove that addition in <m> \N </m> is:
 				<ol>
-					<li> <term>commutative</term>: <m>m+n = n+m</m>, <ie /> <m>s_m(n) = s_n(m)</m> for all <m>m,n \in \N</m>; and </li>
-					<li> <term>associative</term>: <m>(m+n)+\ell = m + (n+\ell)</m>, <ie /> <m>s_{s_m(n)}(\ell) = s_m\bbrac{s_n(\ell)}</m>, for all <m>m,n,\ell \in \N</m>.
+					<li> <term>commutative</term>: <m> m+n = n+m </m>, <ie /> <m> s_m(n) = s_n(m) </m> for all <m> m,n \in \N </m>; and </li>
+					<li> <term>associative</term>: <m> (m+n)+\ell = m + (n+\ell) </m>, <ie /> <m> s_{s_m(n)}(\ell) = s_m\bbrac{s_n(\ell)} </m>, for all <m> m,n,\ell \in \N </m>.
 					</li>
 				</ol>
 			</p></li>
 			<li>
-				Use the idea that every positive integer should have a negative to define <m>\Z</m> as a subset of the Cartesian product <m>\N \times \N</m>.
-				Then define addition and subtraction in <m>\Z</m>.
+				Use the idea that every positive integer should have a negative to define <m> \Z </m> as a subset of the Cartesian product <m> \N \times \N </m>.
+				Then define addition and subtraction in <m> \Z </m>.
 			</li>
 		</ol></p></statement>
 		<hint><p>
-			To define <m>\Z</m>,
-			first choose an appropriate one-to-one function embedding <m>\N</m> into <m>\N \times \N</m> in such a way that will then allow you to attach an additional second piece of information to each natural number
+			To define <m> \Z </m>,
+			first choose an appropriate one-to-one function embedding <m> \N </m> into <m> \N \times \N </m> in such a way that will then allow you to attach an additional second piece of information to each natural number
 			(namely, a designator of the sign of the number).
 		</p></hint>
 	</exercise>

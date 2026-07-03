@@ -27,7 +27,7 @@ respective owners.
 % 		<li> Did you study for the test?
 % 		<li> No parking.
 % 		<li> Math is hard, but it is also fun.
-% 		<li> <m>x + 2y = 9</m>.
+% 		<li> <m> x + 2y = 9 </m>.
 % 	</ol>
 
 % 	<li> Write an English language sentence that expresses the negation of each the following.
@@ -35,12 +35,12 @@ respective owners.
 % 		<li> TODO
 % 	</ol>
 
-% 	<li> Let <m>p</m> represent the statement <q>TODO</q> and <m>q</m> represent the statement <q>TODO</q>. Translate the following English language statements into symbolic language.
+% 	<li> Let <m> p </m> represent the statement <q>TODO</q> and <m> q </m> represent the statement <q>TODO</q>. Translate the following English language statements into symbolic language.
 % 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol>
 
-% 	<li> Let <m>p</m> represent the statement <q>TODO</q> and <m>q</m> represent the statement <q>TODO</q>. Translate the following symbolic language statements into proper English sentences.
+% 	<li> Let <m> p </m> represent the statement <q>TODO</q> and <m> q </m> represent the statement <q>TODO</q>. Translate the following symbolic language statements into proper English sentences.
 % 	<ol marker="alph">
 % 		<li> TODO
 % 	</ol>
@@ -60,7 +60,7 @@ respective owners.
 	<!-- TODO do I need number="?" like in sample book ? -->
 	<!-- TODO  \refAdapt{hunter+discrete}{1.1}{13} -->
 	<p>
-	Let <m>p</m>, <m>q</m>, and <m>r</m> represent the following statements.
+	Let <m> p </m>, <m> q </m>, and <m> r </m> represent the following statements.
 	<md>
 		<mrow> p\colon\quad \amp \text{The game is on.} </mrow>
 		<mrow> q\colon\quad \amp \text{The popcorn is ready.} </mrow>
@@ -79,10 +79,10 @@ respective owners.
 <exercise xml:id="exercise-symb-lang-disjunctive-tautology">
 	<!-- \label{EXERCISE::symb.lang::disjunctive tautology} -->
 	<p>
-	Consider the logical statement <m>(p \lgcand q_1) \lgccond (q_1 \lgcor q_2)</m>.
+	Consider the logical statement <m> (p \lgcand q_1) \lgccond (q_1 \lgcor q_2) </m>.
 	Partially translated, this statement says:
 	</p>
-	<blockquote><p> if <m>p</m> and <m>q_1</m> are both true, then at least one of <m>q_1</m> and <m>q_2</m> is true. </p></blockquote>
+	<blockquote><p> if <m> p </m> and <m> q_1 </m> are both true, then at least one of <m> q_1 </m> and <m> q_2 </m> is true. </p></blockquote>
 	<p> Would you expect this statement to be a tautology? <ellipsis /> a contradiction? <ellipsis /> neither? </p>
 	<p> Use a truth table to check. </p>
 </exercise>
@@ -100,34 +100,34 @@ respective owners.
 		<tabular halign="center">
 			<col /><col right="minor" /><col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>r</m></cell>
-				<cell><m>s</m></cell>
-				<cell><m>r \lgcand s</m></cell>
-				<cell><m>r \lgcor s</m></cell>
-				<cell><m>(r \lgcand s) \lgccond (r \lgcor s)</m></cell>
+				<cell><m> r </m></cell>
+				<cell><m> s </m></cell>
+				<cell><m> r \lgcand s </m></cell>
+				<cell><m> r \lgcor s </m></cell>
+				<cell><m> (r \lgcand s) \lgccond (r \lgcor s) </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 				<cell>?</cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 				<cell>?</cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 				<cell>?</cell>
 			</row>
 		</tabular>
@@ -139,30 +139,30 @@ respective owners.
 		<p>
 		While you were filling out the truth table, Hatty got bored and opened up a portal to a parallel universe.
 		Parallel Hatty is also working on the same truth table, and is stuck at the same spot that normal Hatty was.
-		However, you notice that parallel Hatty's textbook is open to the page with the truth table for the basic conditional <m>p \lgccond q</m>, and it looks as follows.
+		However, you notice that parallel Hatty's textbook is open to the page with the truth table for the basic conditional <m> p \lgccond q </m>, and it looks as follows.
 		</p>
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgccond q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgccond q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
 		<p>
@@ -175,30 +175,30 @@ respective owners.
 		<p>
 		While you were finishing parallel Hatty's homework, Hatty got bored again and opened up a portal to <em>another</em> parallel universe!
 		Parallel Hatty number two is also working on the same truth table, and is stuck at the same spot that the previous two Hattys were.
-		This time, however, parallel Hatty number two's textbook says that the truth table for the basic conditional <m>p \lgccond q</m> is as follows.
+		This time, however, parallel Hatty number two's textbook says that the truth table for the basic conditional <m> p \lgccond q </m> is as follows.
 		</p>
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgccond q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgccond q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
 		<p>
@@ -212,30 +212,30 @@ respective owners.
 		You'll never believe what happened while you were finishing parallel Hatty number two's homework!
 		Yep, Hatty got bored again and opened up a portal to <em>a third</em> parallel universe.
 		Parallel Hatty number three is also working on the same truth table, and is stuck at the same spot that the previous three Hattys were.
-		The truth table for the basic conditional <m>p \lgccond q</m> is different in parallel Hatty number three's universe, yet again.
+		The truth table for the basic conditional <m> p \lgccond q </m> is different in parallel Hatty number three's universe, yet again.
 		</p>
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgccond q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgccond q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
 		<p>
@@ -247,9 +247,9 @@ respective owners.
 	<task>
 		<p>
 		OK, so what the heck is the point of all this?
-		The statement <m>(r \lgcand s) \lgccond (r \lgcor s)</m> could be read as:
+		The statement <m> (r \lgcand s) \lgccond (r \lgcor s) </m> could be read as:
 		</p>
-		<blockquote><p> If <m>r</m> and <m>s</m> are both true statements, then at least one of <m>r</m> and <m>s</m> is a true statement. </p></blockquote>
+		<blockquote><p> If <m> r </m> and <m> s </m> are both true statements, then at least one of <m> r </m> and <m> s </m> is a true statement. </p></blockquote>
 		<p>
 		This conditional statement seems <q>obviously true</q>.
 		Based on this example, what do you think of each parallel universe's system of logic compared to our own?
@@ -273,14 +273,14 @@ respective owners.
 
 <exercise xml:id="exercise-symb-lang-taut-contra-1">
 	<!-- \label{EXERCISE::symb.lang::taut.contra.1} -->
-	<introduction><p> Suppose <m>A,E,U</m> are logical statements such that <m>U</m> is a tautology and <m>E</m> is a contradiction. </p></introduction>
-	<task><p> Show that <m>A \lgcor U</m> is always a tautology. </p></task>
-	<task><p> Show that <m>A \lgcand E</m> is always a contradiction. </p></task>
+	<introduction><p> Suppose <m> A,E,U </m> are logical statements such that <m> U </m> is a tautology and <m> E </m> is a contradiction. </p></introduction>
+	<task><p> Show that <m> A \lgcor U </m> is always a tautology. </p></task>
+	<task><p> Show that <m> A \lgcand E </m> is always a contradiction. </p></task>
 </exercise>
 
 <exercise><p>
-	Suppose that <m>A</m>, <m>B</m>, and <m>C</m> are logical statements such that <m>A \lgcimplies B</m> and <m>B \lgcimplies C</m>.
-	Must <m>A \lgcimplies C</m>?
+	Suppose that <m> A </m>, <m> B </m>, and <m> C </m> are logical statements such that <m> A \lgcimplies B </m> and <m> B \lgcimplies C </m>.
+	Must <m> A \lgcimplies C </m>?
 </p></exercise>
 
 </exercises>

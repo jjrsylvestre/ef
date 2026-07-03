@@ -65,17 +65,17 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 		</p>
 	</li>
 	<li>
-		<title><m>\mathord{\equiv}</m></title>
+		<title><m> \mathord{\equiv} </m></title>
 		<notation>
-			<usage><m>a \equiv b</m></usage>
+			<usage><m> a \equiv b </m></usage>
 			<description>
-				<m>a</m> is related to <m>b</m> by the equivalence relation <m>\mathord{\equiv}</m>;
-				in other words, <m>a</m> is somehow equivalent to <m>b</m>
+				<m> a </m> is related to <m> b </m> by the equivalence relation <m> \mathord{\equiv} </m>;
+				in other words, <m> a </m> is somehow equivalent to <m> b </m>
 			</description>
 		</notation>
 		<p>
 		symbol for an abstract equivalence relation
-		(instead of the letter <m>R</m> that we've been using for abstract relations up until now)
+		(instead of the letter <m> R </m> that we've been using for abstract relations up until now)
 		</p>
 	</li>
 </dl>
@@ -83,52 +83,52 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 
 <problem> <!-- worked example -->
 	<statement><p>
-		Let <m>\mathscr{L}</m> be the set of all possible logical statements built out of the statement variables <m>p_1, p_2, p_3, \dotsc</m>.
+		Let <m> \mathscr{L} </m> be the set of all possible logical statements built out of the statement variables <m> p_1, p_2, p_3, \dotsc </m>.
 		Show that
 		<xref ref="definition-logic-equiv-equiv-statements" text="custom">logical equivalence of statements</xref>
-		is an equivalence relation on <m>\mathscr{L}</m>.
+		is an equivalence relation on <m> \mathscr{L} </m>.
 	</p></statement>
 	<solution>
 		<case><title>Reflexive</title><p>
-			We have <m>A \lgcequiv A</m> for every statement <m>A</m>,
-			since <m>A</m> has the same truth table as itself.
+			We have <m> A \lgcequiv A </m> for every statement <m> A </m>,
+			since <m> A </m> has the same truth table as itself.
 		</p></case>
 		<case><title>Symmetric</title><p>
-			If <m>A \lgcequiv B</m>, then <m>A,B</m> have the same truth table,
-			so <m>B \lgcequiv A</m>.
+			If <m> A \lgcequiv B </m>, then <m> A,B </m> have the same truth table,
+			so <m> B \lgcequiv A </m>.
 		</p></case>
 		<case><title>Transitive</title><p>
-			If <m>A \lgcequiv B</m> and <m>B \lgcequiv C</m>,
-			then <m>A</m> has the same truth table as <m>B</m>,
-			which has the same truth table as <m>C</m>.
-			So <m>A</m> has the same truth table as <m>C</m>, <ie /> <m>A \lgcequiv C</m>.
+			If <m> A \lgcequiv B </m> and <m> B \lgcequiv C </m>,
+			then <m> A </m> has the same truth table as <m> B </m>,
+			which has the same truth table as <m> C </m>.
+			So <m> A </m> has the same truth table as <m> C </m>, <ie /> <m> A \lgcequiv C </m>.
 		</p></case>
 	</solution>
 </problem>
 
 <p>
-Here is an important equivalence relation on <m>\N</m> or on <m>\Z</m>.
+Here is an important equivalence relation on <m> \N </m> or on <m> \Z </m>.
 <dl width="narrow">
 	<li>
-		<title>equivalence modulo <m>n</m></title>
+		<title>equivalence modulo <m> n </m></title>
 		<idx>modulo</idx>
 		<idx><h>equivalence</h><h>modulo</h></idx>
 		<p>
 		an equivalence of integers,
-		where two integers are equivalent if they have the same remainder when divided by <m>n</m>
+		where two integers are equivalent if they have the same remainder when divided by <m> n </m>
 		</p>
 	</li>
 	<li>
-		<title><m>m_1 \equiv_n m_2</m></title>
+		<title><m> m_1 \equiv_n m_2 </m></title>
 		<notation>
-			<usage><m>m_1 \equiv_n m_2</m></usage>
-			<description>integers <m>m_1,m_2</m> are equivalent modulo <m>n</m></description>
+			<usage><m> m_1 \equiv_n m_2 </m></usage>
+			<description>integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m></description>
 		</notation>
-		<p> integers <m>m_1,m_2</m> are equivalent modulo <m>n</m> </p>
+		<p> integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m> </p>
 	</li>
 </dl></p>
 
-<exercise><p> Verify that equivalence modulo <m>n</m> is an equivalence relation. </p></exercise>
+<exercise><p> Verify that equivalence modulo <m> n </m> is an equivalence relation. </p></exercise>
 
 </section>
 
@@ -141,8 +141,8 @@ an equivalence relation can be used to group equivalent objects together.
 </p>
 
 <example><p>
-	Consider <m>\mathord{\equiv_5}</m> on <m>\N</m>.
-	Notice that the elements in each of the following sets are all equivalent to each other with respect to <m>\mathord{\equiv_5}</m>.
+	Consider <m> \mathord{\equiv_5} </m> on <m> \N </m>.
+	Notice that the elements in each of the following sets are all equivalent to each other with respect to <m> \mathord{\equiv_5} </m>.
 	<md alignment="gather">
 		<mrow> \{ 0, 5, 10, 15, \dotsc \} </mrow>
 		<mrow> \{ 1, 6, 11, 16, \dotsc \} </mrow>
@@ -150,12 +150,12 @@ an equivalence relation can be used to group equivalent objects together.
 		<mrow> \{ 3, 8, 13, 18, \dotsc \} </mrow>
 		<mrow> \{ 4, 9, 14, 19, \dotsc \} </mrow>
 	</md>
-	Also notice that <m>\N</m> is the
+	Also notice that <m> \N </m> is the
 	<term><xref ref="definition-sets-disjoint-sets" text="custom">disjoint</xref> <xref ref="definition-sets-disjoint-union" text="custom">union</xref></term>
 	of the above sets.
 	</p><p>
-	In fact, we could do the same for every divisor <m>n</m>, not just for <m>n = 5</m>,
-	as <m>\N</m> is also the disjoint union of the sets
+	In fact, we could do the same for every divisor <m> n </m>, not just for <m> n = 5 </m>,
+	as <m> \N </m> is also the disjoint union of the sets
 	<md alignment="gather">
 		<mrow> \{ \, 0, \, n, \, 2n, \, 3n, \, \dotsc \, \}, </mrow>
 		<mrow> \{ \, 1, \, n+1, \, 2n+1, \, 3n+1, \, \dotsc \, \}, </mrow>
@@ -163,40 +163,40 @@ an equivalence relation can be used to group equivalent objects together.
 		<mrow> \vdots </mrow>
 		<mrow> \{ \, n-1, \, n + (n-1), \, 2n + (n-1), \, 3n + (n-1), \, \dotsc \, \}, </mrow>
 	</md>
-	and again elements in each of the above sets are all equivalent to each other with respect to <m>\mathord{\equiv_n}</m>.
+	and again elements in each of the above sets are all equivalent to each other with respect to <m> \mathord{\equiv_n} </m>.
 	</p>
 </example>
 
 <p><dl width="narrow">
 	<li>
-		<title>equivalence class (of an element <m>a</m>)</title>
+		<title>equivalence class (of an element <m> a </m>)</title>
 		<idx><h>equivalence</h><h>class</h></idx>
 		<idx>class (for an equivalence relation)</idx>
 		<p>
-			the subset of <m>A</m> consisting of all elements that are equivalent to the given element <m>a \in A</m>,
-			relative to a specific equivalence relation <m>\mathord{\equiv}</m> on <m>A</m>;
+			the subset of <m> A </m> consisting of all elements that are equivalent to the given element <m> a \in A </m>,
+			relative to a specific equivalence relation <m> \mathord{\equiv} </m> on <m> A </m>;
 			<ie /> the set <md> \setdef{x\in A}{ x \equiv a } </md>
 		</p>
 	</li>
 	<li>
-		<title><m>\eqclass{a}</m></title>
+		<title><m> \eqclass{a} </m></title>
 		<notation>
-			<usage><m>\eqclass{a}</m></usage>
-			<description>the equivalence class of the element <m>a \in A</m> relative to some specific equivalence relation on <m>A</m></description>
+			<usage><m> \eqclass{a} </m></usage>
+			<description>the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m></description>
 		</notation>
-		<p> the equivalence class of the element <m>a \in A</m> relative to some specific equivalence relation on <m>A</m> </p>
+		<p> the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m> </p>
 	</li>
 </dl></p>
 
 <example xml:id="example-equiv-rel-classes-mod-5">
-	<title>Equivalence classes of natural numbers modulo <m>5</m></title>
+	<title>Equivalence classes of natural numbers modulo <m> 5 </m></title>
 	<p>
-	If we divide <m>8</m> by <m>5</m>, we get <m>1</m> with <m>3</m> remainder.
-	So the equivalence class of <m>8</m> relative to <m>\mathord{\equiv_5}</m> consists of all natural numbers that have remainder <m>3</m> when divided by <m>5</m>:
+	If we divide <m> 8 </m> by <m> 5 </m>, we get <m> 1 </m> with <m> 3 </m> remainder.
+	So the equivalence class of <m> 8 </m> relative to <m> \mathord{\equiv_5} </m> consists of all natural numbers that have remainder <m> 3 </m> when divided by <m> 5 </m>:
 	<md> \eqclass{8} = \{ 3, 8, 13, 18, \dotsc \} </md>.
-	Now, <m>3</m> is in this class because when we divide <m>3</m> by <m>5</m> we get <m>0</m> with <m>3</m> remainder.
-	But if we had started with <m>3</m> instead of <m>8</m>,
-	we would have also said that the equivalence class of <m>3</m> relative to <m>\mathord{\equiv_5}</m> consists of all natural numbers that have remainder <m>3</m> when divided by <m>5</m>:
+	Now, <m> 3 </m> is in this class because when we divide <m> 3 </m> by <m> 5 </m> we get <m> 0 </m> with <m> 3 </m> remainder.
+	But if we had started with <m> 3 </m> instead of <m> 8 </m>,
+	we would have also said that the equivalence class of <m> 3 </m> relative to <m> \mathord{\equiv_5} </m> consists of all natural numbers that have remainder <m> 3 </m> when divided by <m> 5 </m>:
 	<md> \eqclass{3} = \{ 3, 8, 13, 18, \dotsc \} </md>.
 	</p>
 </example>
@@ -205,79 +205,79 @@ an equivalence relation can be used to group equivalent objects together.
 <!-- \label{PROPOSITION::equiv.relation.properties} -->
 	<title>Properties of equivalence classes</title>
 	<statement><p>
-		Suppose <m>\mathord{\equiv}</m> is an equivalence relation on a nonempty set <m>A</m>.
+		Suppose <m> \mathord{\equiv} </m> is an equivalence relation on a nonempty set <m> A </m>.
 		<ol>
 			<li xml:id="proposition-equiv-rel-properties-element-in-own-class">
 			<!-- \label{PROPOSITION::element.in.own.class} -->
-				For every <m>a \in A</m>, we have <m>a \in \eqclass{a}</m>.
+				For every <m> a \in A </m>, we have <m> a \in \eqclass{a} </m>.
 			</li>
 			<li xml:id="proposition-equiv-rel-properties-same-class-equivalent">
-				For <m>a,a_1,a_2 \in A</m> with <m>a_1,a_2 \in \eqclass{a}</m>,
-				we have <m>a_1 \equiv a_2</m>.
+				For <m> a,a_1,a_2 \in A </m> with <m> a_1,a_2 \in \eqclass{a} </m>,
+				we have <m> a_1 \equiv a_2 </m>.
 			</li>
 			<li xml:id="proposition-equiv-rel-properties-equal-classes">
 			<!-- \label{PROPOSITION::equal.classes} -->
-				For each pair <m>a_1,a_2 \in A</m>,
-				we have <m>a_1 \equiv a_2</m> if and only if <m>\eqclass{a_1} = \eqclass{a_2}</m>.
+				For each pair <m> a_1,a_2 \in A </m>,
+				we have <m> a_1 \equiv a_2 </m> if and only if <m> \eqclass{a_1} = \eqclass{a_2} </m>.
 			</li>
 			<li xml:id="proposition-equiv-rel-properties-disjoint-classes">
-				For each pair <m>a_1,a_2 \in A</m>,
-				we have <m>a_1 \not\equiv a_2</m> if and only if <m>\eqclass{a_1} \intersection \eqclass{a_2} = \emptyset</m>.
+				For each pair <m> a_1,a_2 \in A </m>,
+				we have <m> a_1 \not\equiv a_2 </m> if and only if <m> \eqclass{a_1} \intersection \eqclass{a_2} = \emptyset </m>.
 			</li>
 		</ol>
 	</p></statement>
 	<proof>
 		<title>Proof of <xref ref="proposition-equiv-rel-properties-element-in-own-class" text="local">Statement</xref></title>
-		<p> This is just the reflexive property, <m>a \equiv a</m>. </p>
+		<p> This is just the reflexive property, <m> a \equiv a </m>. </p>
 	</proof>
 	<proof>
 		<title>Proof of <xref ref="proposition-equiv-rel-properties-same-class-equivalent" text="local">Statement</xref></title>
 		<p>
-		If <m>a_1,a_2 \in \eqclass{a}</m>,
-		then by definition we have both <m>a_1 \equiv a</m> and <m>a_2 \equiv a</m>.
+		If <m> a_1,a_2 \in \eqclass{a} </m>,
+		then by definition we have both <m> a_1 \equiv a </m> and <m> a_2 \equiv a </m>.
 		Applying symmetry to the latter equivalence, we may write
-		<m>a_1 \equiv a \equiv a_2</m>, to which we may apply transitivity to obtain
-		<m>a_1 \equiv a_2</m>, as desired.
+		<m> a_1 \equiv a \equiv a_2 </m>, to which we may apply transitivity to obtain
+		<m> a_1 \equiv a_2 </m>, as desired.
 		</p>
 	</proof>
 	<proof>
 		<title>Proof of <xref ref="proposition-equiv-rel-properties-equal-classes" text="local">Statement</xref></title>
 		<case direction="forward"><p>
-			Suppose <m>a_1 \equiv a_2</m>.
-			To verify <m>\eqclass{a_1} = \eqclass{a_2}</m>,
+			Suppose <m> a_1 \equiv a_2 </m>.
+			To verify <m> \eqclass{a_1} = \eqclass{a_2} </m>,
 			we follow the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref>.
-			First, assume <m>x</m> is an arbitrary element in <m>\eqclass{a_1}</m>.
-			Then <m>x \equiv a_1 \equiv a_2</m>, so <m>x \equiv a_2</m> by the transitive property.
-			Therefore, <m>x \in \eqclass{a_2}</m>, as required.
-			This shows that <m>\eqclass{a_1} \subseteq \eqclass{a_2}</m>;
-			the argument to show <m>\eqclass{a_2} \subseteq \eqclass{a_1}</m> is almost exactly the same,
-			just using the symmetric property to first obtain <m>a_2 \equiv a_1</m>.
+			First, assume <m> x </m> is an arbitrary element in <m> \eqclass{a_1} </m>.
+			Then <m> x \equiv a_1 \equiv a_2 </m>, so <m> x \equiv a_2 </m> by the transitive property.
+			Therefore, <m> x \in \eqclass{a_2} </m>, as required.
+			This shows that <m> \eqclass{a_1} \subseteq \eqclass{a_2} </m>;
+			the argument to show <m> \eqclass{a_2} \subseteq \eqclass{a_1} </m> is almost exactly the same,
+			just using the symmetric property to first obtain <m> a_2 \equiv a_1 </m>.
 		</p></case>
 		<case direction="backward"><p>
 			By <xref ref="proposition-equiv-rel-properties-element-in-own-class" text="local">Statement</xref> of this proposition,
-			we have <m>a_1 \in \eqclass{a_1}</m>.
-			If we assume <m>\eqclass{a_1} = \eqclass{a_2}</m>,
-			then we also have <m>a_1 \in \eqclass{a_2}</m>, which means that <m>a_1 \equiv a_2</m>,
+			we have <m> a_1 \in \eqclass{a_1} </m>.
+			If we assume <m> \eqclass{a_1} = \eqclass{a_2} </m>,
+			then we also have <m> a_1 \in \eqclass{a_2} </m>, which means that <m> a_1 \equiv a_2 </m>,
 			as required.
 		</p></case>
 	</proof>
 	<proof>
 		<title>Proof of <xref ref="proposition-equiv-rel-properties-disjoint-classes" text="local">Statement</xref></title>
 		<p>
-		Let us prove the equivalent <q>double contrapositive</q> biconditional <m>a_1 \equiv a_2 \lgcequiv \eqclass{a_1} \intersection \eqclass{a_2} \ne \emptyset</m>.
+		Let us prove the equivalent <q>double contrapositive</q> biconditional <m> a_1 \equiv a_2 \lgcequiv \eqclass{a_1} \intersection \eqclass{a_2} \ne \emptyset </m>.
 		(See <xref ref="wexample-logic-equiv-negate-biconditional" />.)
 		</p>
 		<case direction="forward"><p>
-			Suppose <m>a_1 \equiv a_2</m>.
-			Then <m>\eqclass{a_1} = \eqclass{a_2}</m> by <xref ref="proposition-equiv-rel-properties-equal-classes" text="local">Statement</xref>,
+			Suppose <m> a_1 \equiv a_2 </m>.
+			Then <m> \eqclass{a_1} = \eqclass{a_2} </m> by <xref ref="proposition-equiv-rel-properties-equal-classes" text="local">Statement</xref>,
 			so <md> \eqclass{a_1} \intersection \eqclass{a_2} = \eqclass{a_1} \intersection \eqclass{a_1} = \eqclass{a_1} </md>.
-			But <m>\eqclass{a_1}</m> is nonempty by <xref ref="proposition-equiv-rel-properties-element-in-own-class" text="local">Statement</xref>.
+			But <m> \eqclass{a_1} </m> is nonempty by <xref ref="proposition-equiv-rel-properties-element-in-own-class" text="local">Statement</xref>.
 		</p></case>
 		<case direction="backward"><p>
-			Suppose <m>\eqclass{a_1} \intersection \eqclass{a_2} \ne \emptyset</m>.
-			Then there exists some element <m>x \in A</m> that is in both <m>\eqclass{a_1}</m> and <m>\eqclass{a_2}</m>,
-			so that both <m>x \equiv a_1</m> and <m>x \equiv a_2</m>.
-			By the symmetric property, we have <m>a_1 \equiv x</m>, and combining this with <m>x \equiv a_2</m> in the transitive property gives <m>a_1 \equiv a_2</m>.
+			Suppose <m> \eqclass{a_1} \intersection \eqclass{a_2} \ne \emptyset </m>.
+			Then there exists some element <m> x \in A </m> that is in both <m> \eqclass{a_1} </m> and <m> \eqclass{a_2} </m>,
+			so that both <m> x \equiv a_1 </m> and <m> x \equiv a_2 </m>.
+			By the symmetric property, we have <m> a_1 \equiv x </m>, and combining this with <m> x \equiv a_2 </m> in the transitive property gives <m> a_1 \equiv a_2 </m>.
 		</p></case>
 	</proof>
 </proposition>
@@ -292,7 +292,7 @@ tells us that any member of an equivalence class may be used to define the class
 		<idx><h>equivalence</h><h>class</h><h>representative</h></idx>
 		<idx><h>class (for an equivalence relation)</h><h>representative</h></idx>
 		<p>
-		an element <m>a \in A</m> used to define the equivalence class
+		an element <m> a \in A </m> used to define the equivalence class
 		<md> \eqclass{a} = \setdef{x\in A}{ x \equiv a } </md>
 		</p>
 	</li>
@@ -301,8 +301,8 @@ tells us that any member of an equivalence class may be used to define the class
 		<idx><h>equivalence</h><h>class</h><h>set of representatives</h></idx>
 		<idx><h>class (for an equivalence relation)</h><h>representative</h><h>complete set</h></idx>
 		<p>
-		a subset <m>C \subseteq A</m> so that for each <m>x \in A</m>
-		there exists <em>exactly one</em> <m>a \in C</m> so that <m>x \in \eqclass{a}</m>
+		a subset <m> C \subseteq A </m> so that for each <m> x \in A </m>
+		there exists <em>exactly one</em> <m> a \in C </m> so that <m> x \in \eqclass{a} </m>
 		</p>
 	</li>
 </dl>
@@ -314,24 +314,24 @@ we are deciding to always interchange an element for the chosen representative o
 </p>
 
 <example xml:id="example-equiv-rel-class-reps-mod-5">
-	<title>A complete set of equivalence class representatives for natural numbers modulo <m>5</m></title>
+	<title>A complete set of equivalence class representatives for natural numbers modulo <m> 5 </m></title>
 	<p>
 	Continuing <xref ref="example-equiv-rel-classes-mod-5" />,
-	we <em>could</em> represent the class of numbers that have remainder <m>3</m> by the number <m>8</m>:
+	we <em>could</em> represent the class of numbers that have remainder <m> 3 </m> by the number <m> 8 </m>:
 	<md> \eqclass{8} = \{ 3, 8, 13, 18, \dotsc \} </md>.
-	But it seems more <q>natural</q> to represent this class by the number <m>3</m>:
+	But it seems more <q>natural</q> to represent this class by the number <m> 3 </m>:
 	<md> \eqclass{3} = \{ 3, 8, 13, 18, \dotsc \} </md>.
 	</p><p>
-	Notice that each of the numbers <m>0,1,2,3,4</m> has a different remainder when divided by <m>5</m>,
+	Notice that each of the numbers <m> 0,1,2,3,4 </m> has a different remainder when divided by <m> 5 </m>,
 	so no two of them are equivalent.
 	That also means that each is in a different class
 	(<xref ref="proposition-equiv-rel-properties-disjoint-classes" text="type-local">Statement</xref>
 	of <xref ref="proposition-equiv-rel-properties" />).
-	But when we go past <m>4</m>, the remainders when divided by <m>5</m> start repeating:
-	each of the numbers in the list <m>5,6,7,8,9</m> has the same remainder as the number in the corresponding position in the list <m>0,1,2,3,4</m>.
-	And then the remainders repeat again when we go past <m>9</m>.
+	But when we go past <m> 4 </m>, the remainders when divided by <m> 5 </m> start repeating:
+	each of the numbers in the list <m> 5,6,7,8,9 </m> has the same remainder as the number in the corresponding position in the list <m> 0,1,2,3,4 </m>.
+	And then the remainders repeat again when we go past <m> 9 </m>.
 	And so on.
-	So it seems <q>natural</q> to use <m>0,1,2,3,4</m> as a complete set of representatives of the equivalence classes for <m>\N</m> modulo <m>5</m>:
+	So it seems <q>natural</q> to use <m> 0,1,2,3,4 </m> as a complete set of representatives of the equivalence classes for <m> \N </m> modulo <m> 5 </m>:
 	<md>
 		<mrow> \eqclass{0} \amp = \{ 0, 5, 10, 15, \dotsc \}, </mrow>
 		<mrow> \eqclass{1} \amp = \{ 1, 6, 11, 16, \dotsc \}, </mrow>
@@ -344,14 +344,14 @@ we are deciding to always interchange an element for the chosen representative o
 
 <p>
 The definition of <term><xref ref="definition-equiv-rel-complete-rep-set" text="title" /></term>
-implicitly assumes that the equivalence classes <q>fill up</q> the whole set <m>A</m>.
+implicitly assumes that the equivalence classes <q>fill up</q> the whole set <m> A </m>.
 But that is always precisely the case.
 <dl width="narrow">
 	<li>
 		<title>partition</title>
 		<idx>partition</idx>
 		<idx><h>set(s)</h><h>partition</h></idx>
-		<p> a collection of subsets of a set <m>A</m> that are pairwise disjoint and whose union is <m>A</m> </p>
+		<p> a collection of subsets of a set <m> A </m> that are pairwise disjoint and whose union is <m> A </m> </p>
 	</li>
 	<li>
 		<title>partition cell</title>
@@ -364,7 +364,7 @@ But that is always precisely the case.
 <figure xml:id="figure-equiv-rel-partition">
 	<caption>
 		A diagram illustrating a <term>partition</term> of a set,
-		so that <m>A = A_1 \sqcup A_2 \sqcup A_3 \sqcup \dotsb \sqcup A_n</m>.
+		so that <m> A = A_1 \sqcup A_2 \sqcup A_3 \sqcup \dotsb \sqcup A_n </m>.
 	</caption>
 	<image xml:id="image-equiv-rel-partition" width="56.1%">
 		<description>A diagram illustrating a partition of a set.</description>
@@ -385,24 +385,24 @@ But that is always precisely the case.
 <theorem xml:id="theorem-equiv-rel-classes-form-partition">
 	<title>Equivalence classes form a partition</title>
 	<statement><p>
-		If <m>\mathord{\equiv}</m> is an equivalence relation on a set <m>A</m>,
-		then the equivalence classes with respect to <m>\mathord{\equiv}</m> are a partition of <m>A</m>.
+		If <m> \mathord{\equiv} </m> is an equivalence relation on a set <m> A </m>,
+		then the equivalence classes with respect to <m> \mathord{\equiv} </m> are a partition of <m> A </m>.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
-		This theorem claims that every element of <m>A</m> is in <em>exactly one</em> equivalence class.
+		This theorem claims that every element of <m> A </m> is in <em>exactly one</em> equivalence class.
 		But this follows from the statements of <xref ref="proposition-equiv-rel-properties" />.
 	</p></proof>
 </theorem>
 
 <example>
-	<title>Equivalence classes modulo <m>n</m></title>
+	<title>Equivalence classes modulo <m> n </m></title>
 	<p>
 	Generalizing <xref ref="example-equiv-rel-class-reps-mod-5" />,
-	each of the numbers <m>0,1,2,3,\dots,n-1</m> is its own remainder when divided by <m>n</m>.
-	And then the pattern of remainders repeats, starting over at remainder <m>0</m>,
-	when we continue on to the numbers <m>n,n+1,\dotsc</m>.
-	So <m>0,1,2,3,\dots,n-1</m> is a complete set of equivalence class representatives,
-	and the classes modulo <m>n</m> partition <m>\N</m> into the disjoint subsets
+	each of the numbers <m> 0,1,2,3,\dots,n-1 </m> is its own remainder when divided by <m> n </m>.
+	And then the pattern of remainders repeats, starting over at remainder <m> 0 </m>,
+	when we continue on to the numbers <m> n,n+1,\dotsc </m>.
+	So <m> 0,1,2,3,\dots,n-1 </m> is a complete set of equivalence class representatives,
+	and the classes modulo <m> n </m> partition <m> \N </m> into the disjoint subsets
 	<md>
 		<mrow> \eqclass{0} \amp = \{ \, 0, \, n, 2n, \, 3n, \, \dotsc \, \}, </mrow>
 		<mrow> \eqclass{1} \amp = \{ \, 1, \, n+1, 2n+1, \, 3n+1, \, \dotsc \, \}, </mrow>
@@ -414,21 +414,21 @@ But that is always precisely the case.
 </example>
 
 <example><p>
-	Let <m>\mathscr{L}</m> be the set of all lines in the plane,
-	and consider <m>\ell_1 \equiv \ell_2</m> if <m>\ell_1, \ell_2</m> are parallel.
-	Then <m>\mathord{\equiv}</m> partitions <m>\mathscr{L}</m> into sets of parallel lines.
+	Let <m> \mathscr{L} </m> be the set of all lines in the plane,
+	and consider <m> \ell_1 \equiv \ell_2 </m> if <m> \ell_1, \ell_2 </m> are parallel.
+	Then <m> \mathord{\equiv} </m> partitions <m> \mathscr{L} </m> into sets of parallel lines.
 </p></example>
 
 <example>
 	<p>
-	Recall that for alphabet <m>\Sigma</m>,
-	<m>\words{\Sigma}_n</m> is the subset of <m>\words{\Sigma}</m> consisting of all words whose length is exactly <m>n</m>.
+	Recall that for alphabet <m> \Sigma </m>,
+	<m> \words{\Sigma}_n </m> is the subset of <m> \words{\Sigma} </m> consisting of all words whose length is exactly <m> n </m>.
 	Then <md>\words{\Sigma}_0, \words{\Sigma}_1, \words{\Sigma}_2, \dotsc</md>
-	is a partition of <m>\words{\Sigma}</m>.
+	is a partition of <m> \words{\Sigma} </m>.
 	(See <xref ref="exercise-sets-words-disjoint-union-of-lengths" />.)
 	</p><p>
-	Recall that a relation on <m>\words{\Sigma}</m> can be defined as a subset of <m>\words{\Sigma} \cartprod \words{\Sigma}</m>.
-	So consider the relation <m>R</m> on <m>\words{\Sigma}</m> defined by
+	Recall that a relation on <m> \words{\Sigma} </m> can be defined as a subset of <m> \words{\Sigma} \cartprod \words{\Sigma} </m>.
+	So consider the relation <m> R </m> on <m> \words{\Sigma} </m> defined by
 	<md>
 		R \;\; =\;\;
 		(\words{\Sigma}_0 \cartprod \words{\Sigma}_0)
@@ -436,34 +436,34 @@ But that is always precisely the case.
 		\;\; \sqcup \;\; (\words{\Sigma}_2 \cartprod \words{\Sigma}_2)
 		\;\; \sqcup \;\; \dotsb
 	</md>
-	Then <m>R</m> is the equivalence relation on <m>\words{\Sigma}</m> where <m>w \mathrel{R} y</m> if <m>\length{w} = \length{y}</m>,
-	and its equivalence classes are precisely the sets <m>\words{\Sigma}_n</m>, <m>n\ge 0</m>.
+	Then <m> R </m> is the equivalence relation on <m> \words{\Sigma} </m> where <m> w \mathrel{R} y </m> if <m> \length{w} = \length{y} </m>,
+	and its equivalence classes are precisely the sets <m> \words{\Sigma}_n </m>, <m> n\ge 0 </m>.
 	</p>
 </example>
 
 <theorem xml:id="theorem-equiv-rel-from-partition">
 	<title>Partitions arise from equivalence relations</title>
 	<statement><p>
-		Given a partition of a set <m>A</m>,
-		there exists an equivalence relation <m>\mathord{\equiv}</m> on <m>A</m> whose equivalence classes are precisely the cells of the partition.
+		Given a partition of a set <m> A </m>,
+		there exists an equivalence relation <m> \mathord{\equiv} </m> on <m> A </m> whose equivalence classes are precisely the cells of the partition.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
-		Given a partition of <m>A</m>,
-		for each <m>a \in A</m> there exists exactly one partition cell containing <m>a</m>.
-		So define <m>a_1 \equiv a_2</m> to mean <q>elements <m>a_1,a_2</m> are contained in the same partition cell of <m>A</m>.</q>
+		Given a partition of <m> A </m>,
+		for each <m> a \in A </m> there exists exactly one partition cell containing <m> a </m>.
+		So define <m> a_1 \equiv a_2 </m> to mean <q>elements <m> a_1,a_2 </m> are contained in the same partition cell of <m> A </m>.</q>
 	</p></proof>
 </theorem>
 
 <remark><p>
 	<xref ref="theorem-equiv-rel-classes-form-partition" /> and <xref ref="theorem-equiv-rel-from-partition" />
-	combine to provide, for each set <m>A</m>, a bijective correspondence
+	combine to provide, for each set <m> A </m>, a bijective correspondence
 	<md> \{ \text{equivalence relations on } A \} \;\; \longleftrightarrow \;\; \{ \text{partitions of } A \}. </md>
 </p></remark>
 
 <problem xml:id="wexample-equiv-rel-equivrel-from-partition">
 	<title>Determining an equivalence relation from a partition</title>
 	<statement><p>
-		Determine an explicit equivalence relation <m>\mathord{\equiv}</m> on <m>\Z</m> for which the equivalence classes give the following partition.
+		Determine an explicit equivalence relation <m> \mathord{\equiv} </m> on <m> \Z </m> for which the equivalence classes give the following partition.
 		<md>
 			\Z \;\; = \;\; \dotsb
 			\;\; \sqcup \;\; \{ -3, -2, -1 \}
@@ -473,29 +473,29 @@ But that is always precisely the case.
 		</md>
 	</p></statement>
 	<solution><p>
-		Notice that each cell in the partition contains a multiple of <m>3</m> along with the next two consecutive integers.
+		Notice that each cell in the partition contains a multiple of <m> 3 </m> along with the next two consecutive integers.
 		So one way to explicitly define the corresponding equivalence relation is:
-		for <m>a,b \in \Z</m>, define <m>a \equiv b</m> to be true if there exists <m>n \in \Z</m> such that <m>3 n \le a,b \le 3 n + 2</m>.
+		for <m> a,b \in \Z </m>, define <m> a \equiv b </m> to be true if there exists <m> n \in \Z </m> such that <m> 3 n \le a,b \le 3 n + 2 </m>.
 		(<em>Note:</em> Details showing that this is an equivalence relation are omitted.)
 	</p></solution>
 </problem>
 
 <p><dl width="narrow">
 	<li>
-		<title>quotient (of a set <m>A</m> relative to an equivalence relation <m>\mathord{\equiv}</m>)</title>
+		<title>quotient (of a set <m> A </m> relative to an equivalence relation <m> \mathord{\equiv} </m>)</title>
 		<idx>quotient</idx>
 		<idx><h>equivalence</h><h>relation</h><h>quotient</h></idx>
 		<idx><h>relation(s)</h><h>equivalence</h><h>quotient</h></idx>
-		<p> the subset of <m>\powset{A}</m> whose elements are the equivalence classes of <m>\mathord{\equiv}</m> </p>
+		<p> the subset of <m> \powset{A} </m> whose elements are the equivalence classes of <m> \mathord{\equiv} </m> </p>
 	</li>
 	<li>
 		<title><m> A / \mathord{\equiv} </m></title>
 		<notation>
 			<usage><m> A / \mathord{\equiv} </m></usage>
-			<description>the quotient of <m>A</m> relative to equivalence relation <m>\mathord{\equiv}</m></description>
+			<description>the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m></description>
 		</notation>
 		<p>
-		the quotient of <m>A</m> relative to equivalence relation <m>\mathord{\equiv}</m>,
+		the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m>,
 		so that <md> (A / \mathord{\equiv}) = \setdef{\eqclass{a}}{a \in A} </md>
 		</p>
 	</li>
@@ -504,9 +504,9 @@ But that is always precisely the case.
 <example>
 	<title>A quotient described by class representatives</title>
 	<p>
-	Consider the partition of <m>\Z</m> from <xref ref="wexample-equiv-rel-equivrel-from-partition" />,
-	and the corresponding equivalence relation <m>\mathrel{\equiv}</m>.
-	To describe <m>\Z / \equiv</m>, we just need to pick a representative of each class.
+	Consider the partition of <m> \Z </m> from <xref ref="wexample-equiv-rel-equivrel-from-partition" />,
+	and the corresponding equivalence relation <m> \mathrel{\equiv} </m>.
+	To describe <m> \Z / \equiv </m>, we just need to pick a representative of each class.
 	The most obvious way in this case is <md> (\Z / \mathord{\equiv}) = \{ \dotsc, \eqclass{-3}, \eqclass{0}, \eqclass{3}, \eqclass{6}, \dotsc \} </md>.
 	</p>
 </example>
@@ -514,34 +514,34 @@ But that is always precisely the case.
 <problem>
 	<title>Determining a quotient</title>
 	<statement><p>
-		Let <m>\mathord{\equiv}</m> represent the equivalence relation on <m>\Z</m> defined by
+		Let <m> \mathord{\equiv} </m> represent the equivalence relation on <m> \Z </m> defined by
 		<ol marker="(i)">
-			<li> <m>0 \equiv 0</m>, and </li>
+			<li> <m> 0 \equiv 0 </m>, and </li>
 			<li>
-				for non-zero <m>m,n \in \Z</m>,
+				for non-zero <m> m,n \in \Z </m>,
 				<md><mrow> m \amp \equiv n \amp \amp \text{if} \amp \frac{m}{\abs{m}} \amp = \frac{n}{\abs{n}} </mrow></md>.
 			</li>
 		</ol>
-		Determine the corresponding partition and quotient of <m>\Z</m>.
+		Determine the corresponding partition and quotient of <m> \Z </m>.
 	</p></statement>
 	<solution><p>
-		First notice that <m>0</m> will be in an equivalence class all by itself.
-		Next, consider the values that <m>m/\abs{m}</m> can possibly take.
+		First notice that <m> 0 </m> will be in an equivalence class all by itself.
+		Next, consider the values that <m> m/\abs{m} </m> can possibly take.
 		<ul>
-			<li> If <m>m \gt 0</m>, then <m>\abs{m} = m</m> so <m>m/\abs{m} = 1</m>. </li>
-			<li> If <m>m \lt 0</m>, then <m>\abs{m} = - m</m> so <m>m/\abs{m} = -1</m>. </li>
+			<li> If <m> m \gt 0 </m>, then <m> \abs{m} = m </m> so <m> m/\abs{m} = 1 </m>. </li>
+			<li> If <m> m \lt 0 </m>, then <m> \abs{m} = - m </m> so <m> m/\abs{m} = -1 </m>. </li>
 		</ul>
-		So this equivalence relation is just a fancy way of saying that <m>m,n</m> have the <em>same sign</em>.
+		So this equivalence relation is just a fancy way of saying that <m> m,n </m> have the <em>same sign</em>.
 		Therefore, all positive numbers will be in the same equivalence class,
 		and all negative numbers will be in the same equivalence class.
-		It now makes sense that <m>0</m> is in a class by itself, since <m>0</m> is neither positive nor negative.
-		The partition of <m>\Z</m> corresponding to <m>\mathord{\equiv}</m> is then
+		It now makes sense that <m> 0 </m> is in a class by itself, since <m> 0 </m> is neither positive nor negative.
+		The partition of <m> \Z </m> corresponding to <m> \mathord{\equiv} </m> is then
 		<md>
 			\Z \;\; = \;\; \{ \dotsc, -3, -2, -1 \}
 			\;\; \sqcup \;\; \{ 0 \}
 			\;\; \sqcup \;\; \{ 1, 2, 3, \dotsc \}
 		</md>.
-		To describe <m>\Z / \mathord{\equiv}</m>, we just need to pick a representative of each equivalence class.
+		To describe <m> \Z / \mathord{\equiv} </m>, we just need to pick a representative of each equivalence class.
 		One possibility is
 		<md> \Z = \eqclass{-1} \sqcup \eqclass{0} \sqcup \eqclass{1} </md>,
 		so that
@@ -550,20 +550,20 @@ But that is always precisely the case.
 </problem>
 
 <p><dl width="narrow"><li>
-	<title>natural projection (on a set <m>A</m> relative to an equivalence relation <m>\mathord{\equiv}</m>)</title>
+	<title>natural projection (on a set <m> A </m> relative to an equivalence relation <m> \mathord{\equiv} </m>)</title>
 	<idx><h>natural</h><h>projection</h></idx>
 	<idx><h>projection</h><h>natural (onto a quotient)</h></idx>
-	<p> the function <m>A \to (A / \mathord{\equiv})</m> defined by <m>a \mapsto \eqclass{a}</m> </p>
+	<p> the function <m> A \to (A / \mathord{\equiv}) </m> defined by <m> a \mapsto \eqclass{a} </m> </p>
 </li></dl></p>
 
-<note><p> The natural projection <m>A \to (A / \mathord{\equiv})</m> is always surjective, but it is almost never injective. </p></note>
+<note><p> The natural projection <m> A \to (A / \mathord{\equiv}) </m> is always surjective, but it is almost never injective. </p></note>
 
 <example>
-	<title>Natural projection modulo-<m>5</m></title>
+	<title>Natural projection modulo-<m> 5 </m></title>
 	<p>
-	Recall that <m>\mathord{\equiv}_5</m> represents the modulo-<m>5</m> equivalence relation on <m>\N</m>.
+	Recall that <m> \mathord{\equiv}_5 </m> represents the modulo-<m> 5 </m> equivalence relation on <m> \N </m>.
 	In <xref ref="example-equiv-rel-class-reps-mod-5" /> we determined that there are five equivalence classes,
-	represented by elements <m>0,1,2,3,4</m>,
+	represented by elements <m> 0,1,2,3,4 </m>,
 	so that <md> (\N / \mathord{\equiv}_5) = \{\eqclass{0},\eqclass{1},\eqclass{2},\eqclass{3},\eqclass{4}\} </md>.
 	Below are some examples of images of elements under the natural projection.
 	<md><mrow>
@@ -583,22 +583,22 @@ But that is always precisely the case.
 <example>
 	<title>Equality is the strongest form of equivalence</title>
 	<p>
-	The <q>strongest</q> equivalence relation on a set <m>A</m> is the identity relation,
-	where <m>a \equiv b</m> if and only if <m>a = b</m>.
+	The <q>strongest</q> equivalence relation on a set <m> A </m> is the identity relation,
+	where <m> a \equiv b </m> if and only if <m> a = b </m>.
 	In this case, each equivalence class is a singleton:
-	<m>[a] = \{a\}</m> for each <m>a \in A</m>.
-	This equivalence relation yields the <q>finest</q> or most <q>granular</q> partition of <m>A</m>,
-	into the union of all the singleton sets in <m>\powset{A}</m>.
-	Here, the quotient <m>A/\equiv</m> is essentially the same as <m>A</m>:
-	the natural projection <m>A \to (A/\equiv)</m> is a bijection.
+	<m> [a] = \{a\} </m> for each <m> a \in A </m>.
+	This equivalence relation yields the <q>finest</q> or most <q>granular</q> partition of <m> A </m>,
+	into the union of all the singleton sets in <m> \powset{A} </m>.
+	Here, the quotient <m> A/\equiv </m> is essentially the same as <m> A </m>:
+	the natural projection <m> A \to (A/\equiv) </m> is a bijection.
 	</p>
 </example>
 
 <example xml:id="example-equiv-rel-even-and-odd-mod-2">
 	<title>Even and odd</title>
 	<p>
-	We can partition <m>\N</m> into the subsets of even and odd numbers.
-	This is the same partition obtained from the modulo-<m>2</m> equivalance relation <m>\mathord{\equiv}_2</m>,
+	We can partition <m> \N </m> into the subsets of even and odd numbers.
+	This is the same partition obtained from the modulo-<m> 2 </m> equivalance relation <m> \mathord{\equiv}_2 </m>,
 	and we have quotient <md> (\N / \mathord{\equiv}_2) = \{ \eqclass{0}, \eqclass{1} \} </md>.
 	This quotient is how we construct <em>boolean algebra</em> (see <xref ref="chapter-bool-alg" />).
 	The convention <m> 1 + 1 = 0 </m> in boolean algebra comes from defining addition in the quotient so that
@@ -607,40 +607,40 @@ But that is always precisely the case.
 </example>
 
 <example>
-	<title>Modulo-<m>n</m> arithmetic</title>
+	<title>Modulo-<m> n </m> arithmetic</title>
 	<p>
 	Similarly to <xref ref="example-equiv-rel-even-and-odd-mod-2" />,
-	if we consider the modulo-<m>n</m> equivalence relation <m>\mathord{\equiv}_n</m> on <m>\N</m>,
+	if we consider the modulo-<m> n </m> equivalence relation <m> \mathord{\equiv}_n </m> on <m> \N </m>,
 	we have
 	<md> (\N / \mathord{\equiv}_n) = \{ \eqclass{0}, \eqclass{1}, \eqclass{2}, \dotsc, \eqclass{n-1} \} </md>.
-	We can transfer the arithmetic of <m>\N</m> to <m>\N / \mathord{\equiv}_n</m> by defining
+	We can transfer the arithmetic of <m> \N </m> to <m> \N / \mathord{\equiv}_n </m> by defining
 	<md><mrow>
 		\eqclass{m} + \eqclass{n} \amp = \eqclass{m + n} \text{,} \amp
 		\eqclass{m} \cdot \eqclass{n} \amp = \eqclass{m n} \text{.}
 	</mrow></md>
-	For example, in modulo-<m>5</m> arithmetic,
+	For example, in modulo-<m> 5 </m> arithmetic,
 	<md> \eqclass{2} + \eqclass{4} = \eqclass{6} = \eqclass{1} </md>
 	and <md> \eqclass{2} \cdot \eqclass{4} = \eqclass{8} = \eqclass{3} </md>.
 	</p>
 </example>
 
 <exercise>
-	<title>(Bonus content) Properties of modulo-<m>n</m> arithmetic</title>
+	<title>(Bonus content) Properties of modulo-<m> n </m> arithmetic</title>
 	<p>
-	There are a few things to check about this new modulo-<m>n</m> arithmetic.
+	There are a few things to check about this new modulo-<m> n </m> arithmetic.
 	<ol>
 		<li>
-			Check that modulo-<m>n</m> addition and multiplication are <term>well-defined</term>;
+			Check that modulo-<m> n </m> addition and multiplication are <term>well-defined</term>;
 			that is, make sure the result of each of these operations never depends on the choices of representatives of the equivalence classes involved.
 		</li>
 		<li>
-			Check that modulo-<m>n</m> addition and multiplication satisfy all the usual rules of arithmetic.
-			That is, check that modulo-<m>n</m> addition and multiplication are both <term>associative</term> and <term>commutative</term>,
+			Check that modulo-<m> n </m> addition and multiplication satisfy all the usual rules of arithmetic.
+			That is, check that modulo-<m> n </m> addition and multiplication are both <term>associative</term> and <term>commutative</term>,
 			and that multiplication distributes over addition.
 		</li>
 		<li>
-			The natural numbers <m>0</m> and <m>1</m> play special roles in <m>\N</m> with respect to ordinary addition and multiplication, respectively.
-			Do their equivalence classes <m>\eqclass{0}</m> and <m>\eqclass{1}</m> play the same special roles in <m>\N / \mathrel{\equiv}_n</m> with respect to modulo-<m>n</m> addition and multiplication, respectively?
+			The natural numbers <m> 0 </m> and <m> 1 </m> play special roles in <m> \N </m> with respect to ordinary addition and multiplication, respectively.
+			Do their equivalence classes <m> \eqclass{0} </m> and <m> \eqclass{1} </m> play the same special roles in <m> \N / \mathrel{\equiv}_n </m> with respect to modulo-<m> n </m> addition and multiplication, respectively?
 		</li>
 	</ol>
 </p></exercise>
@@ -648,17 +648,17 @@ But that is always precisely the case.
 <example xml:id="example-equiv-rel-eq-func-image">
 	<title>Same image under a function</title>
 	<p>
-	For a function <m>\funcdef{f}{A}{B}</m>,
-	we may consider elements of the domain equivalent if they produce the same output under <m>f</m>.
-	That is, the relation <m>\mathord{\equiv}_f</m> on <m>A</m> defined by <q><m>a_1 \equiv_f a_2</m> means <m>f(a_1) = f(a_2)</m></q> is an equivalence relation.
+	For a function <m> \funcdef{f}{A}{B} </m>,
+	we may consider elements of the domain equivalent if they produce the same output under <m> f </m>.
+	That is, the relation <m> \mathord{\equiv}_f </m> on <m> A </m> defined by <q><m> a_1 \equiv_f a_2 </m> means <m> f(a_1) = f(a_2) </m></q> is an equivalence relation.
 	</p>
 </example>
 
 <exercise>
 	<title>Classes of the <q>same image</q> relation for an injective function</title>
 	<p>
-	Suppose <m>\funcdef{f}{A}{B}</m> is a function, and consider the equivalence relation <m>\mathord{\equiv}_f</m> on <m>A</m> described in <xref ref="example-equiv-rel-eq-func-image" />.
-	How could one tell whether or not <m>f</m> is injective by looking at the equivalence classes in <m>A</m> under <m>\mathord{\equiv}_f</m>?
+	Suppose <m> \funcdef{f}{A}{B} </m> is a function, and consider the equivalence relation <m> \mathord{\equiv}_f </m> on <m> A </m> described in <xref ref="example-equiv-rel-eq-func-image" />.
+	How could one tell whether or not <m> f </m> is injective by looking at the equivalence classes in <m> A </m> under <m> \mathord{\equiv}_f </m>?
 	</p>
 </exercise>
 
@@ -669,8 +669,8 @@ But that is always precisely the case.
 	<xref ref="definition-funcs-inverse-element-image" text="custom">inverse image of an element</xref>
 	from <xref ref="section-funcs-inverses" />.
 	</p><p>
-	Suppose <m>\funcdef{f}{A}{B}</m>,
-	and consider the equivalence relation <m>\mathord{\equiv}</m> on <m>A</m> described in
+	Suppose <m> \funcdef{f}{A}{B} </m>,
+	and consider the equivalence relation <m> \mathord{\equiv} </m> on <m> A </m> described in
 	<xref ref="example-equiv-rel-eq-func-image" />.
 	Then we may create a new, <q>induced</q> function
 	<md>
@@ -679,35 +679,35 @@ But that is always precisely the case.
 	</md>
 	</p>
 	<figure>
-		<caption>Diagram illustrating the induced map <m>\tilde{f}</m>.</caption>
+		<caption>Diagram illustrating the induced map <m> \tilde{f} </m>.</caption>
 		<image xml:id="image-equiv-rel-induced-quotient-map" width="66.1%">
 			<description>Diagram illustrating an induced map on a quotient</description>
 			<latex-image><xi:include href="equiv-rel.d/induced-quotient-map.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
 	<p>
-	In this function definition, an entire equivalence class is being mapped to the output image of one of the elements of that class under the original function <m>f</m>.
+	In this function definition, an entire equivalence class is being mapped to the output image of one of the elements of that class under the original function <m> f </m>.
 	But under this equivalence relation, each element in a specific equivalence class shares the same output image in the codomain as all the other elements in that class.
 	For this reason, allowing our <xref ref="definition-funcs-rule" text="title" /> definition
-	<m>\tilde{f}\bbrac{\eqclass{a}} = f(a)</m>
-	to depend on the choice of class representative <m>a</m> is <term>well-defined</term>,
+	<m> \tilde{f}\bbrac{\eqclass{a}} = f(a) </m>
+	to depend on the choice of class representative <m> a </m> is <term>well-defined</term>,
 	and hence <em>is</em> a function.
 	</p>
 	<aside><title>See</title><p> <xref ref="example-funcs-well-defined" />. </p></aside>
 	<p>
-	Moreover, the induced function <m>\tilde{f}</m> is always injective,
-	even if <m>f</m> is not.
-	If we assume that <m>f</m> is surjective
-	(or, if <m>f</m> is not surjective we could replace our codomain <m>B</m> with the image set <m>f(A)</m> so that <m>f</m> <em>is</em> surjective <mdash />
+	Moreover, the induced function <m> \tilde{f} </m> is always injective,
+	even if <m> f </m> is not.
+	If we assume that <m> f </m> is surjective
+	(or, if <m> f </m> is not surjective we could replace our codomain <m> B </m> with the image set <m> f(A) </m> so that <m> f </m> <em>is</em> surjective <mdash />
 	see <xref ref="definition-funcs-restricting-domain" text="title" />),
-	then <m>\tilde{f}</m> will also be surjective, hence <em>bijective</em>.
-	This means that <m>\tilde{f}</m> is invertible, with inverse
+	then <m> \tilde{f} </m> will also be surjective, hence <em>bijective</em>.
+	This means that <m> \tilde{f} </m> is invertible, with inverse
 	<md>
 		<mrow> \inv{\tilde{f}} \colon B \amp \to (A / \mathord{\equiv}_f), </mrow>
 		<mrow> b \amp \mapsto \setdef{a\in A}{ f(a) = b } = \inv{f}\bbrac{\{b\}}. </mrow>
 	</md>
-	In some sense <m>\inv{\tilde{f}}</m> is an inverse of <m>f</m>,
-	except that it is a function <m>B \to (A / \mathord{\equiv}_f) </m> instead of <m>B \to A</m>.
+	In some sense <m> \inv{\tilde{f}} </m> is an inverse of <m> f </m>,
+	except that it is a function <m> B \to (A / \mathord{\equiv}_f) </m> instead of <m> B \to A </m>.
 	</p>
 </example>
 
@@ -717,7 +717,7 @@ But that is always precisely the case.
 <title>Graph for an equivalence relation</title>
 
 <p>
-Given an equivalence relation on a finite set <m>A</m>,
+Given an equivalence relation on a finite set <m> A </m>,
 what will we observe if we draw the relation's graph?
 <ul>
 	<li> Since an equivalence relation is reflexive, we might as well omit the loops at each node. </li>
@@ -744,9 +744,9 @@ what will we observe if we draw the relation's graph?
 <example>
 	<title>Graph of the <q>same cardinality</q> equivalence relation</title>
 	<p>
-	Let <m>A = \{a,b,c,d\}</m>, and let <m>\mathord{\equiv}</m> be the equivalence relation on <m>\powset{A}</m> defined by <m>B \equiv B'</m> if <m>\card{B} = \card{B'}</m>.
-	That is, two subsets of <m>A</m> will be considered equivalent if they contain the same number of elements.
-	<xref ref="figure-equiv-rel-graph-same-cardinality" /> contains the graph for <m>\mathord{\equiv}</m>,
+	Let <m> A = \{a,b,c,d\} </m>, and let <m> \mathord{\equiv} </m> be the equivalence relation on <m> \powset{A} </m> defined by <m> B \equiv B' </m> if <m> \card{B} = \card{B'} </m>.
+	That is, two subsets of <m> A </m> will be considered equivalent if they contain the same number of elements.
+	<xref ref="figure-equiv-rel-graph-same-cardinality" /> contains the graph for <m> \mathord{\equiv} </m>,
 	with reflexive loops and symmetric bidirectional arrows omitted.
 	</p>
 	<figure xml:id="figure-equiv-rel-graph-same-cardinality">

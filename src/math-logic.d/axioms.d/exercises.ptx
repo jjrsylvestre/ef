@@ -89,7 +89,7 @@ respective owners.
 				So if fixed, the above xref shouldn't need "proof" content.
 			-->
 			of <xref ref="theorem-axioms-three-distinct-dorples" />.
-			Now argue by contradiction: what do the axioms say would happen if you added a fourth dorple <m>d_4</m>?
+			Now argue by contradiction: what do the axioms say would happen if you added a fourth dorple <m> d_4 </m>?
 		</p></hint>
 	</exercise>
 
@@ -109,7 +109,7 @@ respective owners.
 			</li>
 			<li xml:id="exercise-axioms-wizards-axiom-no-non-zap-pairs">
 				<!-- \label{AXIOM::no.non.frost.pairs} -->
-				If <m>W_1</m>, <m>W_2</m> are distinct wizards, then <m>W_1</m> zaps <m>W_2</m> or <m>W_2</m> zaps <m>W_1</m>.
+				If <m> W_1 </m>, <m> W_2 </m> are distinct wizards, then <m> W_1 </m> zaps <m> W_2 </m> or <m> W_2 </m> zaps <m> W_1 </m>.
 			</li>
 			<li xml:id="exercise-axioms-wizards-axiom-no-self-zap">
 				<!-- \label{AXIOM::no.self.frost} -->
@@ -117,7 +117,7 @@ respective owners.
 			</li>
 			<li xml:id="exercise-axioms-wizards-axiom-zap-transitive">
 				<!-- \label{AXIOM::frosttransitive} -->
-				If <m>W_1</m>, <m>W_2</m>, <m>W_3</m> are wizards such that <m>W_1</m> zaps <m>W_2</m> and <m>W_2</m> zaps <m>W_3</m>, then <m>W_1</m> zaps <m>W_3</m>.
+				If <m> W_1 </m>, <m> W_2 </m>, <m> W_3 </m> are wizards such that <m> W_1 </m> zaps <m> W_2 </m> and <m> W_2 </m> zaps <m> W_3 </m>, then <m> W_1 </m> zaps <m> W_3 </m>.
 			</li>
 		</ol></p></paragraphs>
 		<paragraphs><title>Notes</title><p><ul>
@@ -125,23 +125,23 @@ respective owners.
 			<li>
 				In <xref ref="exercise-axioms-wizards-axiom-no-non-zap-pairs" text="local">Axiom</xref>
 				and <xref ref="exercise-axioms-wizards-axiom-zap-transitive" text="local">Axiom</xref>,
-				you should treat <m>W_1,W_2,W_3</m> as variables or placeholders that can be <q>substituted into</q>.
+				you should treat <m> W_1,W_2,W_3 </m> as variables or placeholders that can be <q>substituted into</q>.
 				These axioms are not stating facts about <em>specific</em> wizards;
 				rather, they are stating facts about <em>all</em> wizards, and their relationships to each other through zapping.
-				In particular, <xref ref="exercise-axioms-wizards-axiom-zap-transitive" text="local">Axiom</xref> could (in principle) be applied to a collection <m>W_1,W_2,W_3</m> of wizards where <m>W_1</m> and <m>W_3</m> are in fact the <em>same</em> wizard.
+				In particular, <xref ref="exercise-axioms-wizards-axiom-zap-transitive" text="local">Axiom</xref> could (in principle) be applied to a collection <m> W_1,W_2,W_3 </m> of wizards where <m> W_1 </m> and <m> W_3 </m> are in fact the <em>same</em> wizard.
 			</li>
 		</ul></p></paragraphs>
 		<p> Prove the following statements based on this axiomatic system. </p>
 	</introduction>
 	<task><p>
 		<term>Principle of Non-Retaliation</term>.
-		If wizard <m>A</m> zaps wizard <m>B</m>, then <m>B</m> does not zap <m>A</m>.
+		If wizard <m> A </m> zaps wizard <m> B </m>, then <m> B </m> does not zap <m> A </m>.
 	</p></task>
 	<task>
 		<statement><p>
 			<term>Friends and Enemies Theorem</term>.
-			If <m>A</m>, <m>B</m>, and <m>C</m> are <em>distinct</em> wizards such that <m>A</m> zaps <m>B</m>,
-			then <m>A</m> zaps <m>C</m> or <m>C</m> zaps <m>B</m>.
+			If <m> A </m>, <m> B </m>, and <m> C </m> are <em>distinct</em> wizards such that <m> A </m> zaps <m> B </m>,
+			then <m> A </m> zaps <m> C </m> or <m> C </m> zaps <m> B </m>.
 		</p></statement>
 		<hint><p> You may wish to refer back to <xref ref="activity-proof-methods-disjunctive-wizards" />. </p></hint>
 	</task>

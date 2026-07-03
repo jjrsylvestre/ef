@@ -18,20 +18,20 @@ respective owners.
 
 <exercise>
 	<introduction><p>
-		Let <m>\mathord{\equiv}</m> represent the relation on <m>\R\times\R</m> where <m>(x_1,y_1) \equiv (x_2,y_2)</m> means <m>y_1 - x_1^2 = y_2 - x_2^2</m>.
+		Let <m> \mathord{\equiv} </m> represent the relation on <m> \R\times\R </m> where <m> (x_1,y_1) \equiv (x_2,y_2) </m> means <m> y_1 - x_1^2 = y_2 - x_2^2 </m>.
 	</p></introduction>
-	<task><p> Verify that <m>\mathord{\equiv}</m> is an equivalence relation. </p></task>
-	<task><p> Describe the equivalence classes <m>[(0,0)]</m>, <m>[(0,1)]</m>, and <m>[(1,0)]</m> geometrically as sets of points in the plane. </p></task>
+	<task><p> Verify that <m> \mathord{\equiv} </m> is an equivalence relation. </p></task>
+	<task><p> Describe the equivalence classes <m> [(0,0)] </m>, <m> [(0,1)] </m>, and <m> [(1,0)] </m> geometrically as sets of points in the plane. </p></task>
 </exercise>
 
 <exercise> <!-- TODO \refAdapt[s]{hunter+discrete}{2.4}{21,22} .... especially graph! -->
 	<introduction><p>
-		Given a connected (undirected) graph <m>G</m>, we can define a relation on the set <m>V</m> of vertices in <m>G</m> as follows:
-		let <m>v_1 R v_2</m> mean that there exists a trail within <m>G</m> beginning at vertex <m>v_1</m> and ending at vertex <m>v_2</m> that traverses an even number of edges.
+		Given a connected (undirected) graph <m> G </m>, we can define a relation on the set <m> V </m> of vertices in <m> G </m> as follows:
+		let <m> v_1 R v_2 </m> mean that there exists a trail within <m> G </m> beginning at vertex <m> v_1 </m> and ending at vertex <m> v_2 </m> that traverses an even number of edges.
 	</p></introduction>
-	<task><p> Prove that <m>R</m> is an equivalence relation on <m>V</m>. </p></task>
+	<task><p> Prove that <m> R </m> is an equivalence relation on <m> V </m>. </p></task>
 	<task>
-		<p> Determine the equivalence classes for this relation when <m>G</m> is the graph below. </p>
+		<p> Determine the equivalence classes for this relation when <m> G </m> is the graph below. </p>
 		<image xml:id="image-equiv-rel-even-trails" width="39.4%">
 			<description>An example graph for vertices equivalent when connected by an <q>even</q> trail.</description>
 			<latex-image><xi:include href="exercises.d/even-trails.tex" parse="text" /></latex-image>
@@ -44,46 +44,46 @@ respective owners.
 	<introduction><p>
 		In each of
 		<xref ref="exercisegroup-equiv-rel-determine-equiv-and-classes" text="type-local">Exercises</xref>,
-		you are given a set <m>A</m> and a relation <m>R</m> on <m>A</m>.
-		Determine whether <m>R</m> is an equivalence relation, and, if it is,
+		you are given a set <m> A </m> and a relation <m> R </m> on <m> A </m>.
+		Determine whether <m> R </m> is an equivalence relation, and, if it is,
 		describe its equivalence classes.
-		Try to be more descriptive than just <q><m>\eqclass{a}</m> is the set of all elements that are equivalent to <m>a</m>.</q>
+		Try to be more descriptive than just <q><m> \eqclass{a} </m> is the set of all elements that are equivalent to <m> a </m>.</q>
 	</p></introduction>
 	<exercise><p>
 		<m> A = \{a, b, c\} </m>; <m> R = \{(a,a),(b,b),(c,c),(a,b),(b,a)\} </m>.
 	</p></exercise>
-	<exercise><p> <m> A = \{-1, 0, 1\} </m>; <m>R = \{(x,y) | x^2 = y^2\} </m>. </p></exercise>
-	<exercise><p> <m>A</m> is the power set of some set; <m>R</m> is the subset relation. </p></exercise>
+	<exercise><p> <m> A = \{-1, 0, 1\} </m>; <m> R = \{(x,y) | x^2 = y^2\} </m>. </p></exercise>
+	<exercise><p> <m> A </m> is the power set of some set; <m> R </m> is the subset relation. </p></exercise>
 	<exercise><p>
 		<m> A = \R </m>;
 		<m> x_1 \mathrel{R} x_2 </m> means <m> f(x_1) = f(x_2) </m>,
-		where <m>\funcdef{f}{\R}{\R}</m> is the function <m> f(x) = x^2 </m>.
+		where <m> \funcdef{f}{\R}{\R} </m> is the function <m> f(x) = x^2 </m>.
 	</p></exercise>
 	<exercise><p>
-		<m>A</m> is some abstract set;
-		<m>a_1 \mathrel{R} a_2</m> means <m> f(a_1) = f(a_2)</m>,
-		where <m>\funcdef{f}{A}{B}</m> is an arbitrary function with domain <m>A</m>.
+		<m> A </m> is some abstract set;
+		<m> a_1 \mathrel{R} a_2 </m> means <m> f(a_1) = f(a_2) </m>,
+		where <m> \funcdef{f}{A}{B} </m> is an arbitrary function with domain <m> A </m>.
 	</p></exercise>
 	<exercise>
 		<p>
-		<m>A</m> is the set of all <q>formal</q> expressions <m>a/b</m>,
-		where <m>a,b</m> are integers and <m>b</m> is nonzero;
+		<m> A </m> is the set of all <q>formal</q> expressions <m> a/b </m>,
+		where <m> a,b </m> are integers and <m> b </m> is nonzero;
 		<m> (a/b) \mathrel{R} (c/d) </m> means <m> ad = bc </m>.
 		</p><p>
 		<em>Note:</em>
-		Do not think of <m>a/b</m> as a fraction in the usual way;
+		Do not think of <m> a/b </m> as a fraction in the usual way;
 		instead think of it as a collection of symbols consisting of two integers in a specific order with a forward slash between them.
 		</p>
 	</exercise>
-	<exercise><p> <m>A</m> is the power set of some finite set; <m>X \mathrel{R} Y</m> means <m>\card{X} = \card{Y} </m>. </p></exercise>
-	<exercise><p> <m>A</m> is the set of all straight lines in the plane; <m>L_1 \mathrel{R} L_2</m> means <m>L_1</m> is parallel to <m>L_2</m>. </p></exercise>
-	<exercise><p> <m>A</m> is the set of all straight lines in the plane; <m>L_1 \mathrel{R} L_2</m> means <m>L_1</m> is perpendicular to <m>L_2</m>. </p></exercise>
+	<exercise><p> <m> A </m> is the power set of some finite set; <m> X \mathrel{R} Y </m> means <m> \card{X} = \card{Y} </m>. </p></exercise>
+	<exercise><p> <m> A </m> is the set of all straight lines in the plane; <m> L_1 \mathrel{R} L_2 </m> means <m> L_1 </m> is parallel to <m> L_2 </m>. </p></exercise>
+	<exercise><p> <m> A </m> is the set of all straight lines in the plane; <m> L_1 \mathrel{R} L_2 </m> means <m> L_1 </m> is perpendicular to <m> L_2 </m>. </p></exercise>
 	<exercise>
 		<statement><p>
 			<m> A = \R \cartprod \R </m>;
-			<m>(x_1,y_1) \mathrel{R} (x_2,y_2)</m> means <m>x_1^2 + y_1^2 = x_2^2 + y_2^2 </m>.
+			<m> (x_1,y_1) \mathrel{R} (x_2,y_2) </m> means <m> x_1^2 + y_1^2 = x_2^2 + y_2^2 </m>.
 		</p></statement>
-		<hint><p> Does the expression <m>x^2 + y^2</m> remind you of anything from geometry? </p></hint>
+		<hint><p> Does the expression <m> x^2 + y^2 </m> remind you of anything from geometry? </p></hint>
 	</exercise>
 </exercisegroup>
 

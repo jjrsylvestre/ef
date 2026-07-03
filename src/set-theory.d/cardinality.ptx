@@ -23,12 +23,12 @@ respective owners.
 
 <paragraphs><title>Recall</title>
 	<p>
-	For <m>m\in\N</m> we have defined the
+	For <m> m\in\N </m> we have defined the
 	<term><xref ref="definition-recur-induct-counting-set" text="title" /></term>
 	<md> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0, \, 1, \, \dotsc, \, m-1\} </md>.
 	</p><p>
-	Clearly, <m>\natnumlt{m}</m> contains exactly <m>m</m> elements.
-	In fact, we have <em>defined</em> the number <m>m</m> to be the set <m>\natnumlt{m}</m>.
+	Clearly, <m> \natnumlt{m} </m> contains exactly <m> m </m> elements.
+	In fact, we have <em>defined</em> the number <m> m </m> to be the set <m> \natnumlt{m} </m>.
 	(See <xref ref="example-recur-induct-construct-nat-nums" />.)
 	</p>
 </paragraphs>
@@ -36,104 +36,104 @@ respective owners.
 <p>
 As the terminology implies,
 we will use these sets to count the elements of other sets.
-In particular, given a set <m>A</m>,
-if we can match up the elements of <m>A</m> with the elements of <m>\natnumlt{m}</m>, one for one,
-then <m>A</m> must also contain exactly <m>m</m> elements.
+In particular, given a set <m> A </m>,
+if we can match up the elements of <m> A </m> with the elements of <m> \natnumlt{m} </m>, one for one,
+then <m> A </m> must also contain exactly <m> m </m> elements.
 </p>
 
 <p><dl width="narrow"><li xml:id="definition-cardinality-finite-set">
 	<title>finite set</title>
 	<idx><h>finite</h><h>set</h></idx>
 	<idx><h>set(s)</h><h>finite</h></idx>
-	<p> a set <m>A</m> for which there exists a bijection <m>\natnumlt{m} \to A</m> for some <m>m \in \N</m>, <m>m \ge 0</m> </p>
+	<p> a set <m> A </m> for which there exists a bijection <m> \natnumlt{m} \to A </m> for some <m> m \in \N </m>, <m> m \ge 0 </m> </p>
 </li></dl></p>
 
 <fact xml:id="fact-cardinality-is-unique">
 	<title>Uniqueness of counting number</title>
-	<p> For finite set <m>A</m> there exists <em>one unique</em> natural number <m>m</m> for which a bijection <m>\natnumlt{m} \to A</m> exists. </p>
+	<p> For finite set <m> A </m> there exists <em>one unique</em> natural number <m> m </m> for which a bijection <m> \natnumlt{m} \to A </m> exists. </p>
 </fact>
 
 <remark><p>
-	Suppose <m>A</m> is finite.
-	While there is only one number <m>m</m> for which a bijection <m>\natnumlt{m} \to A</m> exists,
-	there can be many such bijections, and the number of bijections increases as <m>m</m> increases.
+	Suppose <m> A </m> is finite.
+	While there is only one number <m> m </m> for which a bijection <m> \natnumlt{m} \to A </m> exists,
+	there can be many such bijections, and the number of bijections increases as <m> m </m> increases.
 </p></remark>
 
-<exercise><p> Prove <xref ref="fact-cardinality-is-unique" /> in the case of non-empty <m>A</m>. </p></exercise>
+<exercise><p> Prove <xref ref="fact-cardinality-is-unique" /> in the case of non-empty <m> A </m>. </p></exercise>
 
 <p><dl width="narrow">
 	<li xml:id="definition-cardinality-itself">
-		<title>cardinality (of a finite set <m>A</m>)</title>
+		<title>cardinality (of a finite set <m> A </m>)</title>
 		<idx>cardinality</idx>
 		<idx><h>set(s)</h><h>cardinality</h></idx>
-		<p> the unique natural number <m>m</m> for which a bijection <m>\natnumlt{m} \to A</m> exists </p>
+		<p> the unique natural number <m> m </m> for which a bijection <m> \natnumlt{m} \to A </m> exists </p>
 	</li>
 	<li>
-		<title><m>\card{A}</m></title>
+		<title><m> \card{A} </m></title>
 		<notation>
-			<usage><m>\card{A}</m></usage>
-			<description>cardinality of the set <m>A</m></description>
+			<usage><m> \card{A} </m></usage>
+			<description>cardinality of the set <m> A </m></description>
 		</notation>
-		<p> the cardinality of the finite set <m>A</m> </p>
+		<p> the cardinality of the finite set <m> A </m> </p>
 	</li>
 	<li>
-		<title><m>\cardop A</m></title>
+		<title><m> \cardop A </m></title>
 		<notation>
-			<usage><m>\cardop A</m></usage>
-			<description>alternative notation for the cardinality of the set <m>A</m></description>
+			<usage><m> \cardop A </m></usage>
+			<description>alternative notation for the cardinality of the set <m> A </m></description>
 		</notation>
-		<p> alternative notation for the cardinality of the finite set <m>A</m> </p>
+		<p> alternative notation for the cardinality of the finite set <m> A </m> </p>
 	</li>
 	<li>
-		<title><m>\ncardop\{\dots\}</m></title>
+		<title><m> \ncardop\{\dots\} </m></title>
 		<notation>
-			<usage><m>\ncardop\{\dots\}</m></usage>
-			<description>alternative notation for the cardinality of the set defined by <m>\{\dots\}</m></description>
+			<usage><m> \ncardop\{\dots\} </m></usage>
+			<description>alternative notation for the cardinality of the set defined by <m> \{\dots\} </m></description>
 		</notation>
-		<p> alternative notation for the cardinality of the set defined by <m>\{\dots\}</m> </p>
+		<p> alternative notation for the cardinality of the set defined by <m> \{\dots\} </m> </p>
 	</li>
 </dl></p>
 
 <example>
 	<p>
-	For <m>\Sigma = \ShortEngAlphabet</m>, we have <m>\card{\Sigma} = 26</m>.
-	Below are two example bijections <m>\funcdef{\varphi,\psi}{\natnumlt{26}}{\Sigma}</m> that verify this cardinality number.
+	For <m> \Sigma = \ShortEngAlphabet </m>, we have <m> \card{\Sigma} = 26 </m>.
+	Below are two example bijections <m> \funcdef{\varphi,\psi}{\natnumlt{26}}{\Sigma} </m> that verify this cardinality number.
 	</p>
 	<figure>
 		<caption>
-			Bijections <m>\funcdef{\varphi,\psi}{\natnumlt{26}}{\Sigma}</m>
+			Bijections <m> \funcdef{\varphi,\psi}{\natnumlt{26}}{\Sigma} </m>
 			defined by a table of values.
 		</caption>
 		<tabular top="medium" bottom="medium" halign="center">
 			<col right="minor" /><col /><col /><col /><col /><col /><col /><col />
 			<row bottom="minor">
-				<cell><m>\sigma</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>2</m></cell>
-				<cell><m>3</m></cell>
-				<cell><m>\cdots</m></cell>
-				<cell><m>24</m></cell>
-				<cell><m>25</m></cell>
+				<cell><m> \sigma </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 2 </m></cell>
+				<cell><m> 3 </m></cell>
+				<cell><m> \cdots </m></cell>
+				<cell><m> 24 </m></cell>
+				<cell><m> 25 </m></cell>
 			</row><row bottom="minor">
-				<cell><m>\varphi(\sigma)</m></cell>
-				<cell><m>\mathrm{a}</m></cell>
-				<cell><m>\mathrm{b}</m></cell>
-				<cell><m>\mathrm{c}</m></cell>
-				<cell><m>\mathrm{d}</m></cell>
-				<cell><m>\cdots</m></cell>
-				<cell><m>\mathrm{y}</m></cell>
-				<cell><m>\mathrm{z}</m></cell>
+				<cell><m> \varphi(\sigma) </m></cell>
+				<cell><m> \mathrm{a} </m></cell>
+				<cell><m> \mathrm{b} </m></cell>
+				<cell><m> \mathrm{c} </m></cell>
+				<cell><m> \mathrm{d} </m></cell>
+				<cell><m> \cdots </m></cell>
+				<cell><m> \mathrm{y} </m></cell>
+				<cell><m> \mathrm{z} </m></cell>
 			</row>
 			<row>
-				<cell><m>\psi(\sigma)</m></cell>
-				<cell><m>\mathrm{a}</m></cell>
-				<cell><m>\mathrm{z}</m></cell>
-				<cell><m>\mathrm{b}</m></cell>
-				<cell><m>\mathrm{y}</m></cell>
-				<cell><m>\cdots</m></cell>
-				<cell><m>\mathrm{m}</m></cell>
-				<cell><m>\mathrm{n}</m></cell>
+				<cell><m> \psi(\sigma) </m></cell>
+				<cell><m> \mathrm{a} </m></cell>
+				<cell><m> \mathrm{z} </m></cell>
+				<cell><m> \mathrm{b} </m></cell>
+				<cell><m> \mathrm{y} </m></cell>
+				<cell><m> \cdots </m></cell>
+				<cell><m> \mathrm{m} </m></cell>
+				<cell><m> \mathrm{n} </m></cell>
 			</row>
 		</tabular>
 	</figure>
@@ -143,10 +143,10 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 	<title>Cardinality of an empty set</title>
 	<p>
 	What about an empty set?
-	Clearly we should have <m>\card{\emptyset} = 0</m>,
+	Clearly we should have <m> \card{\emptyset} = 0 </m>,
 	but is this consistent with our definition of <xref ref="definition-cardinality-itself" text="custom">cardinality</xref>?
 	By definition,
-	to verify <m>\card{\emptyset} = 0</m> we require a bijection <m>\natnumlt{0} \to \emptyset</m>,
+	to verify <m> \card{\emptyset} = 0 </m> we require a bijection <m> \natnumlt{0} \to \emptyset </m>,
 	but
 	<md> \natnumlt{0} = \setdef{n \in \N}{n \lt 0} = \emptyset </md>
 	as well.
@@ -154,18 +154,18 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 	<p><dl width="narrow"><li xml:id="definition-cardinality-empty-function">
 		<title>empty function</title>
 		<idx><h>empty</h><h>function</h></idx>
-		<p> a function with domain <m>\emptyset</m> </p>
+		<p> a function with domain <m> \emptyset </m> </p>
 	</li></dl></p>
 	<p>
 	Do empty functions even exist?
 	It is difficult to think of such a function in terms of an <term>input-output rule</term>,
 	but remember that technically a function is defined by its graph.
 	(See the <xref ref="definition-funcs-formal" text="custom">formal definition of <term>function</term></xref> in <xref ref="subsection-funcs-graph" />.)
-	Since <m>\emptyset \cartprod X = \emptyset</m> for every set <m>X</m>,
-	there exists a unique function <m>\emptyset \to X</m>,
-	namely the function whose graph is <m>\emptyset</m>.
+	Since <m> \emptyset \cartprod X = \emptyset </m> for every set <m> X </m>,
+	there exists a unique function <m> \emptyset \to X </m>,
+	namely the function whose graph is <m> \emptyset </m>.
 	And because of the empty nature of this graph,
-	the facts required to establish <m>\card{\emptyset} = 0</m> will be vacuously true.
+	the facts required to establish <m> \card{\emptyset} = 0 </m> will be vacuously true.
 	</p>
 	<aside><title>Empty codomain</title><p>
 		While functions with empty domain exist,
@@ -176,27 +176,27 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 		<title>Properties of empty functions</title>
 		<statement><p><ol>
 			<li xml:id="proposition-cardinality-empty-functions-inj">
-				For every set <m>X</m>,
-				the corresponding empty function <m>\emptyset \to X</m> is injective.
+				For every set <m> X </m>,
+				the corresponding empty function <m> \emptyset \to X </m> is injective.
 			</li>
 			<li xml:id="proposition-cardinality-empty-functions-bij">
-				The empty function <m>\emptyset \to \emptyset</m> is a bijection.
+				The empty function <m> \emptyset \to \emptyset </m> is a bijection.
 			</li>
 		</ol></p></statement>
 		<proof><p> You were asked to verify these statements in <xref ref="exercise-funcs-empty-functions" />. </p></proof>
 	</proposition>
 	<corollary>
 		<statement><title>Cardinality of the empty set</title><p>
-			The cardinality of the empty set is <m>0</m>.
+			The cardinality of the empty set is <m> 0 </m>.
 		</p></statement>
 		<proof><p>
-			We are required to demonstrate an example of a bijection <m>\natnumlt{0} \to \emptyset</m>.
+			We are required to demonstrate an example of a bijection <m> \natnumlt{0} \to \emptyset </m>.
 			As
 			<m> \natnumlt{0} = \emptyset </m>,
 			<xref ref="proposition-cardinality-empty-functions-bij" text="local">Statement</xref>
 			of <xref ref="proposition-cardinality-empty-functions" />
 			tells that the empty function
-			<m>\natnumlt{0} \to \emptyset</m>
+			<m> \natnumlt{0} \to \emptyset </m>
 			is the required bijection.
 		</p></proof>
 	</corollary>
@@ -211,9 +211,9 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 <title>Finite sets versus finite sequences</title>
 
 <p>
-Recall that a function <m>\funcdef{f}{\natnumlt{n}}{A}</m> defines a
+Recall that a function <m> \funcdef{f}{\natnumlt{n}}{A} </m> defines a
 <term><xref ref="definition-recur-induct-finite-seq" text="custom">finite sequence</xref></term>
-of elements from the set <m>A</m>, by setting
+of elements from the set <m> A </m>, by setting
 <md><mrow>
 	a_0 \amp = f(0), \amp
 	a_1 \amp = f(1), \amp
@@ -221,7 +221,7 @@ of elements from the set <m>A</m>, by setting
 	\amp \dotsc, \amp
 	a_{n-1} \amp = f(n-1)
 </mrow></md>.
-If <m>A</m> is finite, then there exists such a function <m>f</m> that is
+If <m> A </m> is finite, then there exists such a function <m> f </m> that is
 <term><xref ref="definition-funcs-bijective" text="custom">bijective</xref></term>,
 which leads to the following.
 </p>
@@ -229,20 +229,20 @@ which leads to the following.
 <fact xml:id="fact-cardinality-finite-set-finite-sequence">
 	<!-- \label{FACT::finite.set.finite.sequence} -->
 	<title>Characterization of finiteness using sequences</title>
-	<p> A set <m>A</m> is finite if and only if there exists a finite sequence from <m>A</m> in which each element of <m>A</m> appears <em>exactly</em> once. </p>
+	<p> A set <m> A </m> is finite if and only if there exists a finite sequence from <m> A </m> in which each element of <m> A </m> appears <em>exactly</em> once. </p>
 </fact>
 
 <remark><p><ol>
 	<li>
 		The above fact makes an important connection between functions and counting.
-		If <m>A</m> is a finite set,
-		<m>\funcdef{f}{\natnumlt{n}}{A}</m> is a corresponding bijection,
-		and we create sequence <m>\{a_k\}_{k=0}^m</m> with <m>a_k = f(k)</m> as above,
-		then we are able to list the elements of <m>A</m> in sequence:
+		If <m> A </m> is a finite set,
+		<m> \funcdef{f}{\natnumlt{n}}{A} </m> is a corresponding bijection,
+		and we create sequence <m> \{a_k\}_{k=0}^m </m> with <m> a_k = f(k) </m> as above,
+		then we are able to list the elements of <m> A </m> in sequence:
 		<md> A = \{a_0, a_1, \dotsc, a_{n-1} \} </md>.
-		In turn, writing the elements of <m>A</m> in sequence is really just a way of <em>counting</em> them,
+		In turn, writing the elements of <m> A </m> in sequence is really just a way of <em>counting</em> them,
 		in a manner that is roughly equivalent to counting on your fingers (if you had a lot of fingers).
-		In fact, counting the elements of <m>A</m> <term>totally orders</term> the elements of <m>A</m>
+		In fact, counting the elements of <m> A </m> <term>totally orders</term> the elements of <m> A </m>
 		<!-- TODO XREF -->
 		(a concept we will meet in a future chapter).
 		<!-- \begin{inlinenote}[See]page \pageref{DEFN::total.order}, Example \ref{EXAMPLE::countable.set.can.be.totally.ordered}, in particular.\end{inlinenote} -->
@@ -252,17 +252,17 @@ which leads to the following.
 		We should note, however, that the above fact is essentially trivial once we <q>unravel</q> the definitions of
 		<term><xref ref="definition-cardinality-finite-set" text="title" /></term> and
 		<term><xref ref="definition-recur-induct-finite-seq" text="custom">finite sequence</xref></term>,
-		as both involve a function with domain <m>\natnumlt{m}</m> for some <m>m</m> and codomain <m>A</m>.
+		as both involve a function with domain <m> \natnumlt{m} </m> for some <m> m </m> and codomain <m> A </m>.
 	</li>
 </ol></p></remark>
 
 <corollary>
 	<statement><p>
-		A set <m>A</m> is finite if and only if
-		there exists a finite sequence from <m>A</m> which contains each element of <m>A</m> <em>at least</em> once.
+		A set <m> A </m> is finite if and only if
+		there exists a finite sequence from <m> A </m> which contains each element of <m> A </m> <em>at least</em> once.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
-		If we have a sequence that contains each element of <m>A</m> at least once, we could turn it into a sequence that contains each element of <m>A</m> <em>exactly</em> once by removing repeated terms.
+		If we have a sequence that contains each element of <m> A </m> at least once, we could turn it into a sequence that contains each element of <m> A </m> <em>exactly</em> once by removing repeated terms.
 	</p></proof>
 </corollary>
 
@@ -280,28 +280,28 @@ This fact lets us relate finite sets to each other.
 <fact xml:id="fact-cardinality-vs-bijection">
 	<title>Bijection implies same cardinality</title>
 	<statement><p>
-		If one of <m>A,B</m> is finite and there exists a bijection <m>\funcdef{f}{A}{B}</m>,
-		then <em>both</em> are finite and <m>\card{A} = \card{B}</m>.
+		If one of <m> A,B </m> is finite and there exists a bijection <m> \funcdef{f}{A}{B} </m>,
+		then <em>both</em> are finite and <m> \card{A} = \card{B} </m>.
 	</p></statement>
 	<proof>
 		<p>
-		Reconsider <q>one of <m>A,B</m> finite</q> as a disjunction:
-		<q><m>A</m> is finite or <m>B</m> is finite</q>.
+		Reconsider <q>one of <m> A,B </m> finite</q> as a disjunction:
+		<q><m> A </m> is finite or <m> B </m> is finite</q>.
 		Then break into cases.
 		</p>
 		<case>
-			<title>Assume <m>A</m> is finite</title>
+			<title>Assume <m> A </m> is finite</title>
 			<p>
-			Suppose <m>\card{A} = n</m>, so that there exists a bijection <m>\funcdef{g}{\natnumlt{n}}{A}</m>.
-			Then <m>\funcdef{f\circ g}{\natnumlt{n}}{B}</m> is also a bijection, so <m>\card{B} = n</m>.
+			Suppose <m> \card{A} = n </m>, so that there exists a bijection <m> \funcdef{g}{\natnumlt{n}}{A} </m>.
+			Then <m> \funcdef{f\circ g}{\natnumlt{n}}{B} </m> is also a bijection, so <m> \card{B} = n </m>.
 			</p>
 		</case>
 		<case>
-			<title>Assume <m>B</m> is finite</title>
+			<title>Assume <m> B </m> is finite</title>
 			<p>
-			Suppose <m>\card{B} = n</m>.
+			Suppose <m> \card{B} = n </m>.
 			Repeat the argument from the previous case,
-			swapping roles of <m>A</m> and <m>B</m> and using the bijection <m>\funcdef{\inv{f}}{B}{A}</m> in place of <m>f</m>.
+			swapping roles of <m> A </m> and <m> B </m> and using the bijection <m> \funcdef{\inv{f}}{B}{A} </m> in place of <m> f </m>.
 			</p>
 		</case>
 	</proof>
@@ -311,13 +311,13 @@ This fact lets us relate finite sets to each other.
 	<title>Subset of finite is finite</title>
 	<statement>
 		<p>
-		Assume <m>B</m> is a finite set.
+		Assume <m> B </m> is a finite set.
 		<ol>
 			<li xml:id="fact-cardinality-subset-of-finite-subset">
-				Every subset <m>A \subseteq B</m> is finite, with <m>\card{A} \le \card{B}</m>.
+				Every subset <m> A \subseteq B </m> is finite, with <m> \card{A} \le \card{B} </m>.
 			</li>
 			<li xml:id="fact-cardinality-subset-of-finite-inj-image">
-				If <m>\funcdef{f}{C}{B}</m> is an injection, then <m>C</m> is finite with <m>\card{C} \le \card{B}</m>.
+				If <m> \funcdef{f}{C}{B} </m> is an injection, then <m> C </m> is finite with <m> \card{C} \le \card{B} </m>.
 			</li>
 		</ol>
 		</p>
@@ -325,8 +325,8 @@ This fact lets us relate finite sets to each other.
 	<proof><title>Proof idea</title><p><ol>
 		<li> This is left to you as <xref ref="exercise-cardinality-finite-subset" />. </li>
 		<li>
-			Let <m>A</m> represent the image <m>f(C)</m>.
-			Then <m>A \subseteq B</m>, so we can apply
+			Let <m> A </m> represent the image <m> f(C) </m>.
+			Then <m> A \subseteq B </m>, so we can apply
 			<xref ref="fact-cardinality-subset-of-finite-subset" text="local">Statement</xref>
 			and <xref ref="fact-cardinality-vs-bijection" />.
 		</li>
@@ -338,10 +338,10 @@ This fact lets us relate finite sets to each other.
 <fact>
 	<title>Cardinality of unions</title>
 	<statement><p>
-		Suppose <m>A</m> and <m>B</m> are finite subsets of a universal set <m>U</m>.
+		Suppose <m> A </m> and <m> B </m> are finite subsets of a universal set <m> U </m>.
 		<ol>
-			<li> If <m>A</m> and <m>B</m> are disjoint, then <m>\card{A \sqcup B} = \card{A} + \card{B}</m>. </li>
-			<li> <m>\card{A \cup B} = \card{A} + \card{B} - \card{A \cap B}</m>. </li>
+			<li> If <m> A </m> and <m> B </m> are disjoint, then <m> \card{A \sqcup B} = \card{A} + \card{B} </m>. </li>
+			<li> <m> \card{A \cup B} = \card{A} + \card{B} - \card{A \cap B} </m>. </li>
 		</ol>
 	</p></statement>
 	<proof><title>Proof idea</title><p>
@@ -356,11 +356,11 @@ This fact lets us relate finite sets to each other.
 
 <problem xml:id="wexample-cardinality-pow-set"> <!-- worked example -->
 	<!-- \label{WEXAMPLE::pow.set.cardinality} -->
-	<statement><p> What is the cardinality of <m>\powset{\{1,2,3,\dotsc,k\}}</m>? </p></statement>
+	<statement><p> What is the cardinality of <m> \powset{\{1,2,3,\dotsc,k\}} </m>? </p></statement>
 	<solution><p>
 		We can solve this using recursion!
 		In <xref ref="example-recur-induct-sequence-of-sets" />,
-		we defined the following sequence of subsets of <m>\N</m>,
+		we defined the following sequence of subsets of <m> \N </m>,
 		<md alignment="gather">
 			<mrow>
 				A_0 = \emptyset, \quad
@@ -375,15 +375,15 @@ This fact lets us relate finite sets to each other.
 		</md>,
 		recursively.
 		We can also express the sequence
-		<m> N_k = \card{\powset{A_k}}</m> recursively.
-		First, <m>N_0 = 1</m>.
+		<m> N_k = \card{\powset{A_k}} </m> recursively.
+		First, <m> N_0 = 1 </m>.
 		Then, since
 		<md> A_{k-1} = \{ 1, 2, \dotsc, k-1 \} \subsetneqq \{1,2,\dotsc,k-1,k\} = A_k, </md>
-		we can consider <m>\powset{A_{k-1}} \subseteq \powset{A_k}</m>.
+		we can consider <m> \powset{A_{k-1}} \subseteq \powset{A_k} </m>.
 		(See <xref ref="exercise-sets-investigate-pow-set-ops-subset" />.)
-		In doing so, we can break <m>\powset{A_k}</m> into the disjoint union
+		In doing so, we can break <m> \powset{A_k} </m> into the disjoint union
 		<md> \powset{A_k} = \powset{A_{k-1}} \sqcup \cmplmnt{\powset{A_{k-1}}}. </md>
-		Notice that the elements of <m>\powset{A_{k-1}}</m> are precisely those subsets of <m>A_k</m> that <em>do not</em> contain the element <m>k</m>, and therefore the elements of <m>\cmplmnt{\powset{A_{k-1}}}</m>  are precisely those subsets of <m>A_k</m> that <em>do</em> contain the element <m>k</m>.
+		Notice that the elements of <m> \powset{A_{k-1}} </m> are precisely those subsets of <m> A_k </m> that <em>do not</em> contain the element <m> k </m>, and therefore the elements of <m> \cmplmnt{\powset{A_{k-1}}} </m>  are precisely those subsets of <m> A_k </m> that <em>do</em> contain the element <m> k </m>.
 		So
 		<md> B \in \powset{A_{k-1}} \quad \lgcimplies \quad B \cup \{k\} \in \cmplmnt{\powset{A_{k-1}}} </md>.
 		This correspondence actually gives us a bijection
@@ -419,9 +419,9 @@ This fact lets us relate finite sets to each other.
 <theorem xml:id="theorem-cardinality-power-set">
 	<!-- \label{THEOREM::power.set.cardinality} -->
 	<title>Cardinality of a power set</title>
-	<statement><p> If <m>\card{A} = n</m>, then <m>\card{\powset{A}} = 2^n</m>. </p></statement>
+	<statement><p> If <m> \card{A} = n </m>, then <m> \card{\powset{A}} = 2^n </m>. </p></statement>
 	<proof><title>Proof idea</title><p>
-		Since <m>A</m> has the same cardinality as the set <m>\{1,2,3,\dots,n\}</m>, there exists a bijection between the two sets.
+		Since <m> A </m> has the same cardinality as the set <m> \{1,2,3,\dots,n\} </m>, there exists a bijection between the two sets.
 		In <xref ref="exercise-cardinality-same-card-induces-same-power-set-card" />,
 		you are asked to prove that two sets of the same cardinality also have power sets of the same cardinality.
 		Using this fact and the result of <xref ref="wexample-cardinality-pow-set" />,
@@ -433,19 +433,19 @@ This fact lets us relate finite sets to each other.
      TODO do I ask them to do a proof by induction in the exercises?
 % 	By induction.
 % 	<dl width="narrow">
-% 		<li>[base case] When <m>n=0</m>, we must have <m>A = \emptyset</m>, so that <m>\powset{A} = \{ \emptyset \}</m>. Thus, <m>\card{\powset{A}} = 1 = 2^0</m>. \begin{inlinenote}[Careful]If <m>A</m> is empty, then <m>\powset{A}</m> is <em>not} empty; it <em>contains} the empty set as its only element.\end{inlinenote}
-% 		<li>[induction step] Assume the statement is true for <m>n=k</m>, for some <m>k \ge 0</m>, and suppose <m>\card{A} = k+1</m>. Write the elements of <m>A</m> as a finite sequence: <m>A = \{ a_0, a_1, a_2, \dotsc, a_{k+1} \}</m> (see the Fact on page \pageref{FACT::finite.set.finite.sequence}). Let <m>A' = A\smallsetminus \{a_k\} = \{a_0,a_1,\dotsc,a_{k-1}\}</m>. Then <m>\card{A'} = k</m>, so <m>\card{\powset{A'}} = 2^k</m> by the induction hypothesis. Now,
+% 		<li>[base case] When <m> n=0 </m>, we must have <m> A = \emptyset </m>, so that <m> \powset{A} = \{ \emptyset \} </m>. Thus, <m> \card{\powset{A}} = 1 = 2^0 </m>. \begin{inlinenote}[Careful]If <m> A </m> is empty, then <m> \powset{A} </m> is <em>not} empty; it <em>contains} the empty set as its only element.\end{inlinenote}
+% 		<li>[induction step] Assume the statement is true for <m> n=k </m>, for some <m> k \ge 0 </m>, and suppose <m> \card{A} = k+1 </m>. Write the elements of <m> A </m> as a finite sequence: <m> A = \{ a_0, a_1, a_2, \dotsc, a_{k+1} \} </m> (see the Fact on page \pageref{FACT::finite.set.finite.sequence}). Let <m> A' = A\smallsetminus \{a_k\} = \{a_0,a_1,\dotsc,a_{k-1}\} </m>. Then <m> \card{A'} = k </m>, so <m> \card{\powset{A'}} = 2^k </m> by the induction hypothesis. Now,
 % 		<md><mrow>
 % 			\powset{A'} = \{ B\subseteq A' \} &= \setdef{B\in\powset{A}}{a_k\notin B} \subseteq \powset{A},
 % 			\\
 % 			\cmplmnt{\powset{A'}} &= \setdef{B\in\powset{A}}{a_k\in B},
 % 		</mrow></md>
-% 		and <m>\powset{A}</m> is the disjoint union of <m>\powset{A'}</m> and <m>\cmplmnt{\powset{A'}}</m>. Moreover, there is a bijection <m>\powset{A'} \to \cmplmnt{\powset{A'}}</m> by <m>B \mapsto B\cup\{a_k\}</m>. Therefore, if <m>B_0, B_1, B_2, \dotsc, B_{2^k}</m> is a sequence which contains each element of <m>\powset{A'}</m> exactly once, then the sequence
+% 		and <m> \powset{A} </m> is the disjoint union of <m> \powset{A'} </m> and <m> \cmplmnt{\powset{A'}} </m>. Moreover, there is a bijection <m> \powset{A'} \to \cmplmnt{\powset{A'}} </m> by <m> B \mapsto B\cup\{a_k\} </m>. Therefore, if <m> B_0, B_1, B_2, \dotsc, B_{2^k} </m> is a sequence which contains each element of <m> \powset{A'} </m> exactly once, then the sequence
 % 		<md>
 % 			B_0, \, B_0 \cup \{a_k\}, \, B_1, \, B_1 \cup \{a_k\}, \, B_2, \, B_2 \cup \{a_k\},
 % 			\, \dotsc, \, B_{2^k}, B_{2^k} \cup \{a_k\},
 % 		</md>
-% 		contains each element of <m>\powset{A}</m> exactly once. Since there are <m>2(2^k) = 2^{k+1}</m> elements in this sequence, we have <m>\card{\powset{A}} = 2^{k+1}</m>, as desired.
+% 		contains each element of <m> \powset{A} </m> exactly once. Since there are <m> 2(2^k) = 2^{k+1} </m> elements in this sequence, we have <m> \card{\powset{A}} = 2^{k+1} </m>, as desired.
 % 		\qedhere
 % 	</dl>
 -->
@@ -463,73 +463,73 @@ This fact lets us relate finite sets to each other.
 		<p> a set that is not finite </p>
 	</li>
 	<li>
-		<title><m>\card{A} = \infty</m></title>
+		<title><m> \card{A} = \infty </m></title>
 		<notation>
-			<usage><m>\card{A} = \infty</m></usage>
-			<description>set <m>A</m> is infinite</description>
+			<usage><m> \card{A} = \infty </m></usage>
+			<description>set <m> A </m> is infinite</description>
 		</notation>
-		<p> set <m>A</m> is infinite </p>
+		<p> set <m> A </m> is infinite </p>
 	</li>
 	<li>
-		<title><m>\card{A} \lt \infty</m></title>
+		<title><m> \card{A} \lt \infty </m></title>
 		<notation>
-			<usage><m>\card{A} \lt \infty</m></usage>
-			<description>set <m>A</m> is finite</description>
+			<usage><m> \card{A} \lt \infty </m></usage>
+			<description>set <m> A </m> is finite</description>
 		</notation>
-		<p> set <m>A</m> is finite </p>
+		<p> set <m> A </m> is finite </p>
 	</li>
 </dl></p>
 
 <p>
-To demonstrate that a set <m>A</m> is infinite using the technical definition,
-we must demonstrate that no bijection <m>\natnumlt{m} \to A</m> can exist,
-for every cardinality value <m>m</m>.
-But if <m>A</m> <em>is</em> infinite, there will be many <em>injective</em> functions <m>\natnumlt{m} \ifuncto A</m> for each <m>m</m>.
-Therefore, one must demonstrate that no <em>surjection</em> <m>\natnumlt{m} \sfuncto A</m> can exist, for every <m>m</m>.
+To demonstrate that a set <m> A </m> is infinite using the technical definition,
+we must demonstrate that no bijection <m> \natnumlt{m} \to A </m> can exist,
+for every cardinality value <m> m </m>.
+But if <m> A </m> <em>is</em> infinite, there will be many <em>injective</em> functions <m> \natnumlt{m} \ifuncto A </m> for each <m> m </m>.
+Therefore, one must demonstrate that no <em>surjection</em> <m> \natnumlt{m} \sfuncto A </m> can exist, for every <m> m </m>.
 </p>
 
 <example xml:id="example-cardinality-infinite-from-defn">
 	<title>Demonstrating that a set is infinite from the definition</title>
 	<p>
-	Suppose we have an alphabet consisting of a single letter <m>\Sigma = \{\mathrm{x}\}</m>.
+	Suppose we have an alphabet consisting of a single letter <m> \Sigma = \{\mathrm{x}\} </m>.
 	Then the set of words
 	<md> \words{\Sigma} = \{x,\, xx,\, xxx,\, \dotsc \} </md>
 	is infinite.
 	</p><p>
-	To verify this, we will argue that no function <m>\natnumlt{m} \to \words{\Sigma}</m> can be surjective,
-	no matter the cardinality value <m>m</m>.
-	So suppose <m>m \in \N</m> is fixed but arbitrary, and <m>\funcdef{f}{\natnumlt{m}}{\words{\Sigma}}</m> is an arbitrary function.
+	To verify this, we will argue that no function <m> \natnumlt{m} \to \words{\Sigma} </m> can be surjective,
+	no matter the cardinality value <m> m </m>.
+	So suppose <m> m \in \N </m> is fixed but arbitrary, and <m> \funcdef{f}{\natnumlt{m}}{\words{\Sigma}} </m> is an arbitrary function.
 	Following the <xref ref="test-funcs-surj" text="custom">Test for Surjectivity</xref>
 	(which also describes how to demonstrate that a function is <em>not</em> surjective),
-	we must exhibit an example element in <m>\words{\Sigma}</m> that is <em>not</em> the image under <m>f</m> of any domain element in <m>\natnumlt{m}</m>.
+	we must exhibit an example element in <m> \words{\Sigma} </m> that is <em>not</em> the image under <m> f </m> of any domain element in <m> \natnumlt{m} </m>.
 	</p><p>
-	Function <m>f</m> defines a
+	Function <m> f </m> defines a
 	<xref ref="definition-recur-induct-finite-seq" text="custom">finite sequence</xref>
-	of words from <m>\words{\Sigma}</m>:
+	of words from <m> \words{\Sigma} </m>:
 	<md> w_0, w_1, w_2, \dotsc, w_{m-1}, </md>
-	where each <m>w_j</m> is the image <m>f(j)</m>.
+	where each <m> w_j </m> is the image <m> f(j) </m>.
 	We have two cases.
 	</p>
-	<case><title>Each <m>w_j</m> is the empty word</title><p>
-		In this case, clearly <m>f</m> cannot be surjective since the word consisting of the single letter <m>x</m> is not in the sequence of outputs for <m>f</m>.
+	<case><title>Each <m> w_j </m> is the empty word</title><p>
+		In this case, clearly <m> f </m> cannot be surjective since the word consisting of the single letter <m> x </m> is not in the sequence of outputs for <m> f </m>.
 	</p></case>
 	<case><title>Otherwise</title><p>
-		In this case, consider the word we get by concatenating the words <m>w_0, w_1, \dotsc, w_{m-1}</m> together <em>twice over</em>:
+		In this case, consider the word we get by concatenating the words <m> w_0, w_1, \dotsc, w_{m-1} </m> together <em>twice over</em>:
 		<md> w = w_0 w_1 w_2 \dotsm w_{m-1} w_0 w_1 w_2 \dotsm w_{m-1} </md>.
 		(Note that this is not multiplication, we are just writing the words one after the other to create one big word.)
-		Then this word is certainly longer than any of the individual words <m>w_j</m>,
+		Then this word is certainly longer than any of the individual words <m> w_j </m>,
 		and so cannot be equal to one of those words.
-		(The reason we have concatenated all the <m>w_j</m> <em>twice over</em> is so that we don't have to separately consider the case that <em>all but one</em> of the <m>w_j</m> is empty, since in that case concatenating all the <m>w_j</m> just once over wouldn't actually produce a result that is longer than that one non-empty <m>w_j</m>.)
-		Since this long word is not in the sequence of image elements for <m>f</m>,
-		the function <m>f</m> cannot be surjective.
+		(The reason we have concatenated all the <m> w_j </m> <em>twice over</em> is so that we don't have to separately consider the case that <em>all but one</em> of the <m> w_j </m> is empty, since in that case concatenating all the <m> w_j </m> just once over wouldn't actually produce a result that is longer than that one non-empty <m> w_j </m>.)
+		Since this long word is not in the sequence of image elements for <m> f </m>,
+		the function <m> f </m> cannot be surjective.
 	</p></case>
 </example>
 
 <remark><p>
-	While we have no hope of demonstrating that a set <m>A</m> is infinite by demonstrating that functions <m>\natnumlt{m} \to A</m> cannot be injective,
+	While we have no hope of demonstrating that a set <m> A </m> is infinite by demonstrating that functions <m> \natnumlt{m} \to A </m> cannot be injective,
 	if we wish we <em>can</em> argue using injectivity by just turning things around.
-	If a bijection <m>\natnumlt{m} \to A</m> were possible, its inverse <m>A \to \natnumlt{m}</m> would also be a bijection.
-	So another way to demonstrate that a set <m>A</m> is infinite is to demonstrate that no injection <m>A \to \natnumlt{m}</m> is possible, for every cardinality number <m>m</m>.
+	If a bijection <m> \natnumlt{m} \to A </m> were possible, its inverse <m> A \to \natnumlt{m} </m> would also be a bijection.
+	So another way to demonstrate that a set <m> A </m> is infinite is to demonstrate that no injection <m> A \to \natnumlt{m} </m> is possible, for every cardinality number <m> m </m>.
 </p></remark>
 
 <p> We can also demonstrate that a set is infinite by relating it to known infinite sets. </p>
@@ -537,12 +537,12 @@ Therefore, one must demonstrate that no <em>surjection</em> <m>\natnumlt{m} \sfu
 <fact xml:id="fact-cardinality-contains-infinite-subset">
 	<title>Contains infinite subset implies infinite</title>
 	<statement><p>
-		Assume <m>A</m> is an infinite set.
+		Assume <m> A </m> is an infinite set.
 		<ol>
 			<li xml:id="fact-cardinality-contains-infinite-subset-subset">
-				Every set <m>B</m> that contains <m>A</m> as a subset (<ie /> <m>B \supseteq A</m>) is infinite.
+				Every set <m> B </m> that contains <m> A </m> as a subset (<ie /> <m> B \supseteq A </m>) is infinite.
 			</li>
-			<li> If <m>\funcdef{f}{A}{B}</m> is an injection, then <m>B</m> is also infinite. </li>
+			<li> If <m> \funcdef{f}{A}{B} </m> is an injection, then <m> B </m> is also infinite. </li>
 		</ol>
 	</p></statement>
 	<proof><p><ol>
@@ -557,19 +557,19 @@ Therefore, one must demonstrate that no <em>surjection</em> <m>\natnumlt{m} \sfu
 
 <problem> <!-- worked example -->
 	<statement><p>
-		Show that if <m>\Sigma \ne \emptyset</m>,
-		then <m>\card{\words{\Sigma}} = \infty</m>, regardless of whether <m>\card{\Sigma} \lt \infty</m> or <m>\card{\Sigma} = \infty</m>.
+		Show that if <m> \Sigma \ne \emptyset </m>,
+		then <m> \card{\words{\Sigma}} = \infty </m>, regardless of whether <m> \card{\Sigma} \lt \infty </m> or <m> \card{\Sigma} = \infty </m>.
 	</p></statement>
 	<solution><p>
-		If <m>\Sigma \ne \emptyset</m>, then there exists some <m>x \in \Sigma</m>.
-		Consider the restricted alphabet <m>\Xi = \{x\}</m>.
+		If <m> \Sigma \ne \emptyset </m>, then there exists some <m> x \in \Sigma </m>.
+		Consider the restricted alphabet <m> \Xi = \{x\} </m>.
 		In <xref ref="example-cardinality-infinite-from-defn" />,
-		we demonstrated that <m>\words{\Xi}</m> was infinite.
-		Clearly <m>\Xi \subseteq \Sigma</m> implies <m>\words{\Xi} \subseteq \words{\Sigma}</m>,
+		we demonstrated that <m> \words{\Xi} </m> was infinite.
+		Clearly <m> \Xi \subseteq \Sigma </m> implies <m> \words{\Xi} \subseteq \words{\Sigma} </m>,
 		so applying
 		<xref ref="fact-cardinality-contains-infinite-subset-subset" text="local">Statement</xref>
 		of <xref ref="fact-cardinality-contains-infinite-subset" />
-		we may conclude that <m>\words{\Sigma}</m> is also infinite.
+		we may conclude that <m> \words{\Sigma} </m> is also infinite.
 	</p></solution>
 </problem>
 
@@ -581,8 +581,8 @@ Therefore, one must demonstrate that no <em>surjection</em> <m>\natnumlt{m} \sfu
 <title>Relative sizes of sets</title>
 
 <p>
-We have defined a set <m>A</m> to be finite when we can count its elements by matching them bijectively with the elements of some counting set <m>\natnumlt{m}</m>.
-And in this case, by defining <m>\card{A} = m</m>, we are declaring that <m>A</m> has the same <q>size</q> as <m>\natnumlt{m}</m>.
+We have defined a set <m> A </m> to be finite when we can count its elements by matching them bijectively with the elements of some counting set <m> \natnumlt{m} </m>.
+And in this case, by defining <m> \card{A} = m </m>, we are declaring that <m> A </m> has the same <q>size</q> as <m> \natnumlt{m} </m>.
 </p><p>
 Expanding on this idea, we can think of <em>every</em> bijection as using the elements of one set to <q>count</q> the elements of another.
 </p>
@@ -591,18 +591,18 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 	<title>same size</title>
 	<idx><h>set(s)</h><h>same size</h></idx>
 	<idx>same size (for sets)</idx>
-	<p> sets <m>A</m> and <m>B</m> for which there exists a bijection <m>A \to B</m> </p>
+	<p> sets <m> A </m> and <m> B </m> for which there exists a bijection <m> A \to B </m> </p>
 </li></dl></p>
 
 <fact>
 	<title>Symmetry of size</title>
-	<statement><p> If <m>B</m> has the same size as <m>A</m>, then <m>A</m> has the same size as <m>B</m>. </p></statement>
-	<proof><p> If <m>\funcdef{f}{A}{B}</m> is a bijection, then so is <m>\funcdef{\inv{f}}{B}{A}</m>. </p></proof>
+	<statement><p> If <m> B </m> has the same size as <m> A </m>, then <m> A </m> has the same size as <m> B </m>. </p></statement>
+	<proof><p> If <m> \funcdef{f}{A}{B} </m> is a bijection, then so is <m> \funcdef{\inv{f}}{B}{A} </m>. </p></proof>
 </fact>
 
 <fact xml:id="fact-cardinality-same-size-transitivity">
 	<title>Transitivity of size</title>
-	<statement><p> If <m>A</m> has the same size as <m>B</m> and <m>B</m> has the same size as <m>C</m>, then <m>A</m> has the same size as <m>C</m>. </p></statement>
+	<statement><p> If <m> A </m> has the same size as <m> B </m> and <m> B </m> has the same size as <m> C </m>, then <m> A </m> has the same size as <m> C </m>. </p></statement>
 	<proof><p> This is left to you as <xref ref="exercise-cardinality-same-size-transitivity" />. </p></proof>
 </fact>
 
@@ -611,58 +611,58 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 <fact>
 	<title>Finite sets with equal cardinality have the same size</title>
 	<statement><p>
-		Assume <m>A</m> and <m>B</m> are finite sets.
-		Then <m>\card{A} = \card{B}</m> if and only if <m>A</m> and <m>B</m> have the same size.
+		Assume <m> A </m> and <m> B </m> are finite sets.
+		Then <m> \card{A} = \card{B} </m> if and only if <m> A </m> and <m> B </m> have the same size.
 	</p></statement>
 	<proof>
 		<case><title>Assume equal cardinality, show same size</title><p>
-			Assume <m>\card{A} = \card{B} = m</m>.
-			Then by definition there exist bijections <m>\funcdef{f}{\natnumlt{m}}{A}</m> and <m>\funcdef{g}{\natnumlt{m}}{B}</m>.
-			Now <m>g \circ \inv{f}</m> is a bijection <m>A \to B</m>, so <m>A</m> and <m>B</m> have the same size according to the technical definition.
+			Assume <m> \card{A} = \card{B} = m </m>.
+			Then by definition there exist bijections <m> \funcdef{f}{\natnumlt{m}}{A} </m> and <m> \funcdef{g}{\natnumlt{m}}{B} </m>.
+			Now <m> g \circ \inv{f} </m> is a bijection <m> A \to B </m>, so <m> A </m> and <m> B </m> have the same size according to the technical definition.
 		</p></case>
 		<case><title>Assume same size, show equal cardinality</title><p>
-			Assume <m>A</m> and <m>B</m> have the same size.
-			Then by definition there exists a bijection <m>\funcdef{f}{A}{B}</m>.
-			Now, we have also assumed that <m>A</m> is finite,
-			so there exists a bijection <m>\funcdef{g}{\natnumlt{m}}{A}</m>,
-			where <m>m = \card{A}</m>.
-			Then <m>\funcdef{f \circ g}{\natnumlt{m}}{B}</m> is a bijection that demonstrates <m>\card{B} = m</m> as well.
+			Assume <m> A </m> and <m> B </m> have the same size.
+			Then by definition there exists a bijection <m> \funcdef{f}{A}{B} </m>.
+			Now, we have also assumed that <m> A </m> is finite,
+			so there exists a bijection <m> \funcdef{g}{\natnumlt{m}}{A} </m>,
+			where <m> m = \card{A} </m>.
+			Then <m> \funcdef{f \circ g}{\natnumlt{m}}{B} </m> is a bijection that demonstrates <m> \card{B} = m </m> as well.
 		</p></case>
 	</proof>
 </fact>
 
 <warning><p>
 	Your intuition may fail you when considering <q>sizes</q> of infinite sets.
-	In particular, it is possible to have <m>\card{A} = \card{B} = \infty</m>,
-	where <m>A</m> and <m>B</m> <em>do not</em> have the same size.
+	In particular, it is possible to have <m> \card{A} = \card{B} = \infty </m>,
+	where <m> A </m> and <m> B </m> <em>do not</em> have the same size.
 </p></warning>
 
 <example xml:id="example-cardinality-integers-same-size-nat-nums">
 	<!-- \label{EXAMPLE::integers.same.size.nat.nums} -->
 	<title>Sets of integers and natural numbers have the same size</title>
 	<p>
-	Even though <m>\N \subsetneqq \Z</m>, <m>\N</m> and <m>\Z</m> have the <em>same size</em>!
-	The following defines a bijection <m>\funcdef{f}{\N}{\Z}</m>.
+	Even though <m> \N \subsetneqq \Z </m>, <m> \N </m> and <m> \Z </m> have the <em>same size</em>!
+	The following defines a bijection <m> \funcdef{f}{\N}{\Z} </m>.
 	</p>
 	<tabular top="medium" bottom="medium" halign="right">
 		<col right="minor" /><col /><col /><col /><col /><col /><col />
 		<row bottom="minor">
-			<cell><m>n</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>2</m></cell>
-			<cell><m>3</m></cell>
-			<cell><m>4</m></cell>
-			<cell><m>\cdots</m></cell>
+			<cell><m> n </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 2 </m></cell>
+			<cell><m> 3 </m></cell>
+			<cell><m> 4 </m></cell>
+			<cell><m> \cdots </m></cell>
 		</row>
 		<row>
-			<cell><m>f(n)</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>-1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>-2</m></cell>
-			<cell><m>2</m></cell>
-			<cell><m>\cdots</m></cell>
+			<cell><m> f(n) </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> -1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> -2 </m></cell>
+			<cell><m> 2 </m></cell>
+			<cell><m> \cdots </m></cell>
 		</row>
 	</tabular>
 	<p>
@@ -680,8 +680,8 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 <example>
 	<title>Sets of real numbers and natural numbers do not have the same size</title>
 	<p>
-	In <xref ref="chapter-countable" />, we will see that even though <m>\card{\N} = \card{\R} = \infty</m>,
-	the sets <m>\N</m> and <m>\R</m> <em>do not</em> have the same size!
+	In <xref ref="chapter-countable" />, we will see that even though <m> \card{\N} = \card{\R} = \infty </m>,
+	the sets <m> \N </m> and <m> \R </m> <em>do not</em> have the same size!
 	<!-- TODO XREF \begin{inlinenote}[See]page \pageref{THEOREM::R.uncountable}.\end{inlinenote} -->
 	</p>
 </example>
@@ -690,8 +690,8 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 	<!-- \label{EXAMPLE::intervals.same.size} -->
 	<title>Intervals of real numbers of different lengths have the same size</title>
 	<p>
-	Recall from first-year calculus that for <m>a,b \in \R</m> with <m>a \lt b</m>,
-	we define the <term>open interval</term> from <m>a</m> to <m>b</m> to be the set of all real numbers <em>strictly</em> between <m>a</m> and <m>b</m>:
+	Recall from first-year calculus that for <m> a,b \in \R </m> with <m> a \lt b </m>,
+	we define the <term>open interval</term> from <m> a </m> to <m> b </m> to be the set of all real numbers <em>strictly</em> between <m> a </m> and <m> b </m>:
 	<md> (a,b) = \setdef{x \in \R}{a \lt x \lt b} </md>.
 	</p>
 	<figure>
@@ -703,10 +703,10 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 	</figure>
 	<p>
 	It turns out that, even though they may have different <term>lengths</term>,
-	the interval <m>(a,b)</m> and the unit interval <m>(0,1)</m> have the <em>same size</em>!
+	the interval <m> (a,b) </m> and the unit interval <m> (0,1) </m> have the <em>same size</em>!
 	(That is, they somehow contain the same <q>number</q> of numbers.)
 	</p><p>
-	Construct a bijection <m>(0,1)\to(a,b)</m> in two steps.
+	Construct a bijection <m> (0,1)\to(a,b) </m> in two steps.
 	<ol>
 		<li>
 			The map
@@ -727,7 +727,7 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 			(Check!)
 		</li>
 	</ol>
-	Then <m>\funcdef{g\circ f}{(0,1)}{(a,b)}</m> is a bijection.
+	Then <m> \funcdef{g\circ f}{(0,1)}{(a,b)} </m> is a bijection.
 	</p>
 	<figure>
 		<caption>Scaling and translating the unit interval onto another interval.</caption>
@@ -741,25 +741,25 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 
 <example xml:id="example-cardinality-punctured-circle-same-size-R">
 	<!-- \label{EXAMPLE::punctured.circle.same.size.R} -->
-	<title>A punctured circle has the same size as <m>\R</m></title>
+	<title>A punctured circle has the same size as <m> \R </m></title>
 	<p>
 	Define
 	<md><mrow>
 		S \amp = \setdef{(x,y) \in \R^2}{ x^2 + (y-\frac{1}{2})^2 = \frac{1}{4} } \text{,} \amp
 		\hat{S} \amp = S \relcmplmnt \{(0,1)\}
 	</mrow></md>.
-	Here, <m>S</m> is a circle in the plane with radius <m>\frac{1}{2}</m> and centre <m>(0,\frac{1}{2})</m>,
-	and <m>\hat{S}</m> is the circle <m>S</m> <q>punctured</q> at the <q>north pole</q>.
+	Here, <m> S </m> is a circle in the plane with radius <m> \frac{1}{2} </m> and centre <m> (0,\frac{1}{2}) </m>,
+	and <m> \hat{S} </m> is the circle <m> S </m> <q>punctured</q> at the <q>north pole</q>.
 	</p><p>
-	We claim that <m>\hat{S}</m> has the same size as <m>\R</m>.
-	Construct a bijection <m>\hat{S}\to\R</m> in two steps.
+	We claim that <m> \hat{S} </m> has the same size as <m> \R </m>.
+	Construct a bijection <m> \hat{S}\to\R </m> in two steps.
 	<ol>
 		<li>
 			<p>
-			Let <m>X</m> represent the <m>x</m>-axis in the plane,
+			Let <m> X </m> represent the <m> x </m>-axis in the plane,
 			<ie /> <md> X = \setdef{(x,0)}{x \in \R} \subseteq \R^2 </md>.
-			Let <m>\funcdef{f}{\hat{S}}{X}</m> be defined as follows:
-			for <m>(x,y)\in \hat{S}</m>, let <m>f(x,y)</m> be the <m>x</m>-intercept of the line through points <m>(0,1),(x,y)</m>.
+			Let <m> \funcdef{f}{\hat{S}}{X} </m> be defined as follows:
+			for <m> (x,y)\in \hat{S} </m>, let <m> f(x,y) </m> be the <m> x </m>-intercept of the line through points <m> (0,1),(x,y) </m>.
 			</p>
 			<figure>
 				<caption>Projecting the punctured circle onto the real number line.</caption>
@@ -769,13 +769,13 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 				</image>
 			</figure>
 			<p>
-			Then <m>f</m> is a bijection.
+			Then <m> f </m> is a bijection.
 			(Check!)
 			</p>
 		</li>
-		<li> We also have a bijection <m>\funcdef{g}{X}{\R}</m> by <m>g(x,0) = x</m>. </li>
+		<li> We also have a bijection <m> \funcdef{g}{X}{\R} </m> by <m> g(x,0) = x </m>. </li>
 	</ol>
-	Therefore, the composition <m>\funcdef{g\circ f}{\hat{S}}{\R}</m> is a bijection.
+	Therefore, the composition <m> \funcdef{g\circ f}{\hat{S}}{\R} </m> is a bijection.
 	</p>
 </example>
 
@@ -784,7 +784,7 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 	<p>
 	<xref ref="example-cardinality-intervals-same-size" /> and
 	<xref ref="example-cardinality-punctured-circle-same-size-R" />
-	can be combined to demonstrate that every finite-length interval <m>(a,b)</m> of real numbers has the <em>same size</em> as the entire set <m>\R</m> of real numbers.
+	can be combined to demonstrate that every finite-length interval <m> (a,b) </m> of real numbers has the <em>same size</em> as the entire set <m> \R </m> of real numbers.
 	See <xref ref="exercise-cardinality-interval-same-size-R" />.
 	</p>
 </example>
@@ -804,7 +804,7 @@ In this section, we look at how to count collections by finding a collection of 
 <example>
 	<title>Counting paths with words</title>
 	<p>
-	Consider paths in the <m>5 \times 10</m> grid below that start at the bottom left and end at the top right, and only move up or right at each step.
+	Consider paths in the <m> 5 \times 10 </m> grid below that start at the bottom left and end at the top right, and only move up or right at each step.
 	(One such path is drawn in.)
 	How many such paths are there?
 	</p>
@@ -813,23 +813,23 @@ In this section, we look at how to count collections by finding a collection of 
 		<latex-image><xi:include href="cardinality.d/paths.tex" parse="text" /></latex-image>
 	</image>
 	<p>
-	Let <m>P</m> represent the set of all such paths.
-	We can distinguish each element of <m>P</m> by the sequence of directions it takes at each step.
-	Let <m>\Sigma = \{R,U\}</m>, where <m>R</m> and <m>U</m> stand for the directions <q>right</q> and <q>up</q>, respectively.
-	Then for each path <m>p \in P</m> we can build a word <m>w_p \in \words{\Sigma}</m> by setting the letters of <m>w_p</m> to correspond to the steps in the path.
-	For example, the path in the diagram above would correspond to the word <m>RRURUURRRRURR</m>.
+	Let <m> P </m> represent the set of all such paths.
+	We can distinguish each element of <m> P </m> by the sequence of directions it takes at each step.
+	Let <m> \Sigma = \{R,U\} </m>, where <m> R </m> and <m> U </m> stand for the directions <q>right</q> and <q>up</q>, respectively.
+	Then for each path <m> p \in P </m> we can build a word <m> w_p \in \words{\Sigma} </m> by setting the letters of <m> w_p </m> to correspond to the steps in the path.
+	For example, the path in the diagram above would correspond to the word <m> RRURUURRRRURR </m>.
 	</p><p>
-	This assignment of words in <m>\words{\Sigma}</m> to paths in <m>P</m> is a function!
-	Let's call it <m>\funcdef{f}{P}{\words{\Sigma}}</m>,
-	and set <m>W = f(P)</m>, the image of <m>f</m> in <m>\words{\Sigma}</m>.
+	This assignment of words in <m> \words{\Sigma} </m> to paths in <m> P </m> is a function!
+	Let's call it <m> \funcdef{f}{P}{\words{\Sigma}} </m>,
+	and set <m> W = f(P) </m>, the image of <m> f </m> in <m> \words{\Sigma} </m>.
 	This function is clearly one-to-one, as different paths must produce different words of direction indicators.
 	And since every function maps its domain surjectively onto its image,
-	we obtain a bijection <m>\funcdef{f}{P}{W}</m> by
+	we obtain a bijection <m> \funcdef{f}{P}{W} </m> by
 	<xref ref="definition-funcs-restrict-codomain" text="title" />.
-	Therefore, we can count the paths in <m>P</m> by instead counting the words in <m>W</m>!
+	Therefore, we can count the paths in <m> P </m> by instead counting the words in <m> W </m>!
 	</p><p>
-	Since each path in <m>P</m> takes exactly <m>13</m> steps, exactly <m>4</m> of which must be upwards and exactly <m>9</m> of which must be to the right,
-	we see that <m>W</m> consists precisely of those words in <m>\words{\Sigma}</m> that have length <m>13</m> and contain exactly <m>4</m> <m>U</m>s and <m>9</m> <m>R</m>s.
+	Since each path in <m> P </m> takes exactly <m> 13 </m> steps, exactly <m> 4 </m> of which must be upwards and exactly <m> 9 </m> of which must be to the right,
+	we see that <m> W </m> consists precisely of those words in <m> \words{\Sigma} </m> that have length <m> 13 </m> and contain exactly <m> 4 </m> <m> U </m>s and <m> 9 </m> <m> R </m>s.
 	Once we learn some basic counting techniques
 	later in the course,
 	<!-- TODO <xref ref="chapter-counting" />, -->

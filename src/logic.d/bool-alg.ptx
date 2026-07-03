@@ -19,7 +19,7 @@ respective owners.
 <section xml:id="section-bool-alg-poly">
 <title>Boolean polynomials</title>
 
-<p> We can proceed more algebraically by assigning value <m>0</m> to represent false and value <m>1</m> to represent true. </p>
+<p> We can proceed more algebraically by assigning value <m> 0 </m> to represent false and value <m> 1 </m> to represent true. </p>
 
 <example>
 	<title>Boolean multiplication</title>
@@ -31,49 +31,49 @@ respective owners.
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>x</m></cell>
-				<cell><m>y</m></cell>
-				<cell><m>x y</m></cell>
+				<cell><m> x </m></cell>
+				<cell><m> y </m></cell>
+				<cell><m> x y </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row>
 		</tabular>
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgcand q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgcand q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
 	</sidebyside>
@@ -87,55 +87,55 @@ respective owners.
 	</p>
 	<aside><title>Boolean arithmetic</title><p>
 		Notice that in the first row for Boolean addition,
-		we use <term>mod <m>2</m> arithmetic</term> to define <m>1+1 = 0</m>.
+		we use <term>mod <m> 2 </m> arithmetic</term> to define <m> 1+1 = 0 </m>.
 	</p></aside>
 	<sidebyside>
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>x</m></cell>
-				<cell><m>y</m></cell>
-				<cell><m>x + y</m></cell>
+				<cell><m> x </m></cell>
+				<cell><m> y </m></cell>
+				<cell><m> x + y </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row>
 		</tabular>
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>\lgcnot (p \lgcbicond q)</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> \lgcnot (p \lgcbicond q) </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
 	</sidebyside>
@@ -148,49 +148,49 @@ respective owners.
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>x</m></cell>
-				<cell><m>y</m></cell>
-				<cell><m>x + y + x y</m></cell>
+				<cell><m> x </m></cell>
+				<cell><m> y </m></cell>
+				<cell><m> x + y + x y </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row>
 		</tabular>
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgcor q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgcor q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
 	</sidebyside>
@@ -203,39 +203,39 @@ respective owners.
 		<tabular halign="center">
 			<col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>x</m></cell>
-				<cell><m>x + 1</m></cell>
+				<cell><m> x </m></cell>
+				<cell><m> x + 1 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row>
 		</tabular>
 		<tabular halign="center">
 			<col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>\lgcnot p</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> \lgcnot p </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
 	</sidebyside>
 </example>
 
 <p>
-For notation, we borrow symbols <m>\lgcand</m> and <m>\lgcor</m> from logic, but add new negation notation.
+For notation, we borrow symbols <m> \lgcand </m> and <m> \lgcor </m> from logic, but add new negation notation.
 <dl width="narrow">
 	<li>
-		<title><m>\boolnot{x}</m></title>
+		<title><m> \boolnot{x} </m></title>
 		<notation>
-			<usage><m>\boolnot{x}</m></usage>
+			<usage><m> \boolnot{x} </m></usage>
 			<description>Boolean negation</description>
 		</notation>
 		<p> Boolean negation </p>
@@ -255,8 +255,8 @@ we have
 		<title>Boolean polynomial</title>
 		<idx><h>Boolean</h><h>polynomial</h></idx>
 		<p>
-		an expression involving variables <m>x_1, x_2, \dotsc, x_m</m> representing Boolean values,
-		and operations <m>\lgcand, \lgcor, \boolnot{}</m>, often written in function notation
+		an expression involving variables <m> x_1, x_2, \dotsc, x_m </m> representing Boolean values,
+		and operations <m> \lgcand, \lgcor, \boolnot{} </m>, often written in function notation
 		</p>
 	</li>
 </dl></p>
@@ -274,55 +274,55 @@ we have
 </p></example>
 
 <example>
-	<p> The Boolean polynomials <m>p(x,y) = x' \lgcor y</m> and <m>q(x,y) = (x \lgcand y')'</m> have the same truth table. </p>
+	<p> The Boolean polynomials <m> p(x,y) = x' \lgcor y </m> and <m> q(x,y) = (x \lgcand y')' </m> have the same truth table. </p>
 	<tabular halign="center">
 		<col /><col right="minor" /><col right="minor" /><col right="minor" /><col /><col right="minor" /><col />
 		<row bottom="minor">
-			<cell><m>x</m></cell>
-			<cell><m>y</m></cell>
-			<cell><m>x'</m></cell>
-			<cell><m>p(x,y)</m></cell>
-			<cell><m>y'</m></cell>
-			<cell><m>x \lgcand y'</m></cell>
-			<cell><m>q(x,y)</m></cell>
+			<cell><m> x </m></cell>
+			<cell><m> y </m></cell>
+			<cell><m> x' </m></cell>
+			<cell><m> p(x,y) </m></cell>
+			<cell><m> y' </m></cell>
+			<cell><m> x \lgcand y' </m></cell>
+			<cell><m> q(x,y) </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row>
 	</tabular>
 	<p>
 		Using our knowledge of logical equivalence,
 		we see that the truth tables are the same because as logical statements,
-		<m>p</m> and <m>q</m> are equivalent by DeMorgan.
+		<m> p </m> and <m> q </m> are equivalent by DeMorgan.
 	</p>
 </example>
 
@@ -336,7 +336,7 @@ we have
 
 <fact>
 	<title>Recognizing equivalent Boolean polynomials</title>
-	<p> Polynomials <m>p,q</m> are equivalent if and only if they have the same truth table. </p>
+	<p> Polynomials <m> p,q </m> are equivalent if and only if they have the same truth table. </p>
 </fact>
 
 </section>
@@ -351,50 +351,50 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 
 <problem> <!-- worked example -->
 	<statement>
-		<p> Determine a Boolean polynomial <m>p(x,y)</m> that has the truth table below. </p>
+		<p> Determine a Boolean polynomial <m> p(x,y) </m> that has the truth table below. </p>
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>x</m></cell>
-				<cell><m>y</m></cell>
-				<cell><m>p(x,y)</m></cell>
+				<cell><m> x </m></cell>
+				<cell><m> y </m></cell>
+				<cell><m> p(x,y) </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row>
 		</tabular>
 	</statement>
 	<solution><p>
 		We want a <q>true</q> output when the inputs match the first or fourth rows, and only then.
-		The inputs match the first row precisely when both <m>x</m> and <m>y</m> are true
-		(<ie /> when the conjunction <m>x \lgcand y</m> is true),
-		and they match the fourth row precisely when both <m>x</m> is not true and <m>y</m> is not true
-		(<ie /> when the conjunction <m>x' \lgcand y'</m> is true).
-		So take the disjunction of these two conjunctions: <m>p(x,y) = (x \lgcand y) \lgcor (x' \lgcand y')</m>.
+		The inputs match the first row precisely when both <m> x </m> and <m> y </m> are true
+		(<ie /> when the conjunction <m> x \lgcand y </m> is true),
+		and they match the fourth row precisely when both <m> x </m> is not true and <m> y </m> is not true
+		(<ie /> when the conjunction <m> x' \lgcand y' </m> is true).
+		So take the disjunction of these two conjunctions: <m> p(x,y) = (x \lgcand y) \lgcor (x' \lgcand y') </m>.
 	</p></solution>
 </problem>
 
 <remark><p>
 	In the solution to the above worked example,
 	it might seem like we should take a <em>conjunction</em> of the two conjunctions instead of a <em>disjunction</em>,
-	since we see an output of <m>1</m> in the first row <em>and</em> in the fourth row.
+	since we see an output of <m> 1 </m> in the first row <em>and</em> in the fourth row.
 	However, we cannot be in the input <q>state</q> described by those two rows simultaneously,
-	since neither <m>x</m> nor <m>y</m> can be both <m>1</m> and <m>0</m> simultaneously.
+	since neither <m> x </m> nor <m> y </m> can be both <m> 1 </m> and <m> 0 </m> simultaneously.
 	So you should think of it this way instead:
-	if we see an output state of <m>1</m>,
+	if we see an output state of <m> 1 </m>,
 	then we know we must be either in the input state of the first row <em>or</em> of the fourth row.
 </p></remark>
 
@@ -403,9 +403,9 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 		<title>disjunctive normal form</title>
 		<idx>disjunctive normal form</idx>
 		<p>
-		a Boolean polynomial in variables <m>x_1,x_2,\dotsc,x_n</m> which is the disjunction of <em>distinct</em> terms of the form
-		<m>a_1 \lgcand a_2 \lgcand \dotsb \lgcand a_n</m>,
-		where each <m>a_i</m> is either <m>x_i</m> or <m>x_i'</m>.
+		a Boolean polynomial in variables <m> x_1,x_2,\dotsc,x_n </m> which is the disjunction of <em>distinct</em> terms of the form
+		<m> a_1 \lgcand a_2 \lgcand \dotsb \lgcand a_n </m>,
+		where each <m> a_i </m> is either <m> x_i </m> or <m> x_i' </m>.
 		</p>
 	</li>
 </dl></p>
@@ -425,8 +425,8 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	Given a truth table with nonzero output,
 	we may obtain a Boolean polynomial in disjunctive normal form with that truth table as follows.
 	<ol>
-		<li> Identify rows the in truth table for which the desired output is <m>1</m> </li>
-		<li> For each such row, form the conjunction of all variables, but negate those variables that have input value <m>0</m> for that row. </li>
+		<li> Identify rows the in truth table for which the desired output is <m> 1 </m> </li>
+		<li> For each such row, form the conjunction of all variables, but negate those variables that have input value <m> 0 </m> for that row. </li>
 		<li> Form a polynomial by taking the disjunction of all those conjunctions. </li>
 	</ol>
 	</p>
@@ -435,65 +435,65 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 <problem xml:id="wexample-bool-alg-table-to-bool-poly-1"> <!-- worked example -->
 	<!-- <title>Using the disjunctive normal form procedure</title> -->
 	<statement>
-		<p> Determine a Boolean polynomial <m>p(x,y,z)</m> that has the truth table below. </p>
+		<p> Determine a Boolean polynomial <m> p(x,y,z) </m> that has the truth table below. </p>
 		<tabular halign="center">
 			<col /><col /><col right="minor" /><col />
 			<row bottom="minor">
-				<cell><m>x</m></cell>
-				<cell><m>y</m></cell>
-				<cell><m>z</m></cell>
-				<cell><m>p(x,y,z)</m></cell>
+				<cell><m> x </m></cell>
+				<cell><m> y </m></cell>
+				<cell><m> z </m></cell>
+				<cell><m> p(x,y,z) </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row>
 		</tabular>
 	</statement>
 	<solution><p>
-		The fourth, fifth, seventh, and eigth rows have outcome <m>1</m>.
+		The fourth, fifth, seventh, and eigth rows have outcome <m> 1 </m>.
 		The corresponding conjunctions are
 		<dl width="narrow">
-			<li><title>fourth row</title><p><m>x \lgcand y' \lgcand z'</m>;</p></li>
-			<li><title>fifth row</title><p><m>x' \lgcand y \lgcand z</m>;</p></li>
-			<li><title>seventh row</title><p><m>x' \lgcand y' \lgcand z</m>; and</p></li>
-			<li><title>eigth row</title><p><m>x' \lgcand y' \lgcand z'</m>.</p></li>
+			<li><title>fourth row</title><p><m> x \lgcand y' \lgcand z' </m>;</p></li>
+			<li><title>fifth row</title><p><m> x' \lgcand y \lgcand z </m>;</p></li>
+			<li><title>seventh row</title><p><m> x' \lgcand y' \lgcand z </m>; and</p></li>
+			<li><title>eigth row</title><p><m> x' \lgcand y' \lgcand z' </m>.</p></li>
 		</dl>
 		Therefore, the Boolean polynomial
 		<md>
@@ -509,68 +509,68 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 <problem xml:id="wexample-bool-alg-table-to-bool-poly-2"> <!-- worked example -->
 	<!-- <title>Using the disjunctive normal form procedure</title> -->
 	<statement>
-		<p> Determine a Boolean polynomial <m>q(x,y,z)</m> that has the truth table below. </p>
+		<p> Determine a Boolean polynomial <m> q(x,y,z) </m> that has the truth table below. </p>
 		<tabular halign="center">
 			<col /><col /><col right="minor"/><col />
 			<row bottom="minor">
-				<cell><m>x</m></cell>
-				<cell><m>y</m></cell>
-				<cell><m>z</m></cell>
-				<cell><m>q(x,y,z)</m></cell>
+				<cell><m> x </m></cell>
+				<cell><m> y </m></cell>
+				<cell><m> z </m></cell>
+				<cell><m> q(x,y,z) </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 			</row><row>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row><row>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 			</row>
 		</tabular>
 	</statement>
 	<solution><p>
-		Every row <em>except</em> the third has outcome <m>1</m>,
+		Every row <em>except</em> the third has outcome <m> 1 </m>,
 		so we must form conjunctions for all rows except that one:
 		<dl width="narrow">
-			<li><title>first row</title><p><m>x \lgcand y \lgcand z</m>;</p></li>
-			<li><title>second row</title><p><m>x \lgcand y \lgcand z'</m>;</p></li>
-			<li><title>fourth row</title><p><m>x \lgcand y' \lgcand z'</m>;</p></li>
-			<li><title>fifth row</title><p><m>x' \lgcand y \lgcand z</m>;</p></li>
-			<li><title>sixth row</title><p><m>x' \lgcand y \lgcand z'</m>;</p></li>
-			<li><title>seventh row</title><p><m>x' \lgcand y' \lgcand z</m>; and</p></li>
-			<li><title>eigth row</title><p><m>x' \lgcand y' \lgcand z'</m>.</p></li>
+			<li><title>first row</title><p><m> x \lgcand y \lgcand z </m>;</p></li>
+			<li><title>second row</title><p><m> x \lgcand y \lgcand z' </m>;</p></li>
+			<li><title>fourth row</title><p><m> x \lgcand y' \lgcand z' </m>;</p></li>
+			<li><title>fifth row</title><p><m> x' \lgcand y \lgcand z </m>;</p></li>
+			<li><title>sixth row</title><p><m> x' \lgcand y \lgcand z' </m>;</p></li>
+			<li><title>seventh row</title><p><m> x' \lgcand y' \lgcand z </m>; and</p></li>
+			<li><title>eigth row</title><p><m> x' \lgcand y' \lgcand z' </m>.</p></li>
 		</dl>
 		Therefore, the Boolean polynomial
 		<md>
@@ -591,10 +591,10 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	</p></solution>
 	<solution xml:id="wexample-bool-alg-table-to-bool-poly-2-alt-sol"><title>Alternative solution</title>
 		<p>
-			We can get a much simpler expression for <m>q(x,y,z)</m> by <em>not</em> using the procedure
+			We can get a much simpler expression for <m> q(x,y,z) </m> by <em>not</em> using the procedure
 			(though of course the result will not be in disjunctive normal form).
 		</p><p>
-		Notice that we want the third row to have output value <m>0</m>.
+		Notice that we want the third row to have output value <m> 0 </m>.
 		In logic terms, we want that combination (and only that combination) of input values to result in an output that is <q><em>not</em> true</q>.
 		So the Boolean polynomial
 		<md>
@@ -620,74 +620,74 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 <problem>
 	<title>Converting a polynomial into disjunctive normal form</title>
 	<statement><p>
-		Rewrite the Boolean polynomial <m>p(x,y,z) = (x \lgcand z)' \lgcor (x'\lgcand y)</m> in disjunctive normal form.
+		Rewrite the Boolean polynomial <m> p(x,y,z) = (x \lgcand z)' \lgcor (x'\lgcand y) </m> in disjunctive normal form.
 	</p></statement>
 	<solution>
 		<p> First, produce the truth table. </p>
 		<tabular halign="center">
 			<col /><col /><col right="minor"/><col /><col right="minor"/><col />
 			<row bottom="minor">
-				<cell><m>x</m></cell>
-				<cell><m>y</m></cell>
-				<cell><m>z</m></cell>
-				<cell><m>x\lgcand z</m></cell>
-				<cell><m>x' \lgcand y</m></cell>
-				<cell><m>p(x,y,z)</m></cell>
+				<cell><m> x </m></cell>
+				<cell><m> y </m></cell>
+				<cell><m> z </m></cell>
+				<cell><m> x\lgcand z </m></cell>
+				<cell><m> x' \lgcand y </m></cell>
+				<cell><m> p(x,y,z) </m></cell>
 			</row><row>
 				<cell>1</cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 				<cell>0</cell>
 			</row><row>
 				<cell>1</cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 				<cell>1</cell>
 			</row><row>
 				<cell>1</cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
 				<cell>0</cell>
 			</row><row>
 				<cell>1</cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 				<cell>1</cell>
 			</row><row>
 				<cell>0</cell>
-				<cell><m>1</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 				<cell>1</cell>
 			</row><row>
 				<cell>0</cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
 				<cell>1</cell>
 			</row><row>
 				<cell>0</cell>
-				<cell><m>0</m></cell>
-				<cell><m>1</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 1 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 				<cell>1</cell>
 			</row><row>
 				<cell>0</cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
-				<cell><m>0</m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
+				<cell><m> 0 </m></cell>
 				<cell>1</cell>
 			</row>
 		</tabular>

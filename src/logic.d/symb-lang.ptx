@@ -152,28 +152,28 @@ respective owners.
 			</li>
 		</dl></p>
 		<p>
-		Given statements <m>A</m> and <m>B</m>,
+		Given statements <m> A </m> and <m> B </m>,
 		we use these connectives to construct new statements:
 		<dl width="narrow">
 			<li>
-				<title>negation of <m>A</m></title>
-				<p> not <m>A</m> </p>
+				<title>negation of <m> A </m></title>
+				<p> not <m> A </m> </p>
 			</li>
 			<li>
-				<title>conjuction of <m>A</m> and <m>B</m></title>
-				<p> <m>A</m> and <m>B</m> </p>
+				<title>conjuction of <m> A </m> and <m> B </m></title>
+				<p> <m> A </m> and <m> B </m> </p>
 			</li>
 			<li>
-				<title>disjunction of <m>A</m> and <m>B</m></title>
-				<p> <m>A</m> or <m>B</m> </p>
+				<title>disjunction of <m> A </m> and <m> B </m></title>
+				<p> <m> A </m> or <m> B </m> </p>
 			</li>
 			<li>
-				<title>conditional where <m>A</m> implies <m>B</m></title>
-				<p> if <m>A</m> then <m>B</m> </p>
+				<title>conditional where <m> A </m> implies <m> B </m></title>
+				<p> if <m> A </m> then <m> B </m> </p>
 			</li>
 			<li>
-				<title>biconditional involving <m>A</m> and <m>B</m></title>
-				<p> <m>A</m> if and only if <m>B</m> </p>
+				<title>biconditional involving <m> A </m> and <m> B </m></title>
+				<p> <m> A </m> if and only if <m> B </m> </p>
 			</li>
 		</dl>
 		</p>
@@ -186,12 +186,12 @@ respective owners.
 	</li>
 	<li xml:id="remark-symb-lang-connectives-inclusive-exclusive-or">
 	<!-- old label NOTE::inclusive.exclusive.or -->
-		<em>Always</em> take <q><m>A</m> or <m>B</m></q> to mean <q><m>A</m> or <m>B</m> or both</q>
+		<em>Always</em> take <q><m> A </m> or <m> B </m></q> to mean <q><m> A </m> or <m> B </m> or both</q>
 		(known as <term>inclusive or</term><idx>inclusive or</idx>).
 		However, in everyday language it may be reasonable to take
-		<q><em>either</em> <m>A</m> or <m>B</m></q>
+		<q><em>either</em> <m> A </m> or <m> B </m></q>
 		to mean
-		<q>(<m>A</m> or <m>B</m>) and not (<m>A</m> and <m>B</m>)</q>
+		<q>(<m> A </m> or <m> B </m>) and not (<m> A </m> and <m> B </m>)</q>
 		(known as <term>exclusive or</term><idx>exclusive or</idx>).
 	</li>
 	<li>
@@ -242,8 +242,8 @@ respective owners.
 	<idx><h>statement(s) (in logic)</h><h>Test</h></idx>
 	<idx><h>logical</h><h>statement(s)</h><h>Test</h></idx>
 	<statement><p>
-		If <m>S</m> is an English language sentence and the phrase <q>It is true that <m>S</m></q> makes sense as an English language sentence,
-		then <m>S</m> is a logical statement.
+		If <m> S </m> is an English language sentence and the phrase <q>It is true that <m> S </m></q> makes sense as an English language sentence,
+		then <m> S </m> is a logical statement.
 	</p></statement>
 </claim>
 
@@ -257,13 +257,13 @@ for a different reason then the one used in the test above.
 	<!-- old label EXAMPLE::free.variable.not.a.statement -->
 	<title>An ambiguous mathematical statement</title>
 	<p>
-	The phrase <q><m>f</m> is a differentiable function</q> is not a logical statement,
-	since whether it is true or false depends on the <term>free variable</term> <m>f</m>.
+	The phrase <q><m> f </m> is a differentiable function</q> is not a logical statement,
+	since whether it is true or false depends on the <term>free variable</term> <m> f </m>.
 	For example,
-	if we substitute the function <m>f(x) = x</m> into this statement,
+	if we substitute the function <m> f(x) = x </m> into this statement,
 	the statement becomes true.
 	However,
-	if we substitute the function <m>f(x) = \abs{x}</m>,
+	if we substitute the function <m> f(x) = \abs{x} </m>,
 	the statement becomes false.
 	We will deal with this issue in <xref ref="chapter-pred-logic" />.
 	</p>
@@ -281,61 +281,61 @@ To complete the conversion from verbose language to compact symbolism,
 we will introduce symbols to represent the <term><xref ref="definition-symb-lang-connectives" text="title" /></term>.
 <dl width="narrow">
 	<li>
-		<title>negation of <m>A</m></title>
+		<title>negation of <m> A </m></title>
 		<idx><h>negation</h><h>notation for</h></idx>
 		<idx><h>not (logical connective)</h><h>notation for</h></idx>
 		<idx><h>logical</h><h>negation</h><h>notation for</h></idx>
 		<notation>
-			<usage><m>\lgcnot A</m></usage>
-			<description>logical negation of statement <m>A</m></description>
+			<usage><m> \lgcnot A </m></usage>
+			<description>logical negation of statement <m> A </m></description>
 		</notation>
-		<p> <m>\lgcnot A</m> </p>
+		<p> <m> \lgcnot A </m> </p>
 	</li>
 	<li>
-		<title>conjuction of <m>A</m> and <m>B</m></title>
+		<title>conjuction of <m> A </m> and <m> B </m></title>
 		<idx><h>conjuction</h><h>notation for</h></idx>
 		<idx><h>and (logical connective)</h><h>notation for</h></idx>
 		<idx><h>logical</h><h>conjuction</h><h>notation for</h></idx>
 		<notation>
-			<usage><m>A \lgcand B</m></usage>
-			<description>logical conjunction of statements <m>A</m> and <m>B</m></description>
+			<usage><m> A \lgcand B </m></usage>
+			<description>logical conjunction of statements <m> A </m> and <m> B </m></description>
 		</notation>
-		<p> <m>A \lgcand B</m> </p>
+		<p> <m> A \lgcand B </m> </p>
 	</li>
 	<li>
-		<title>disjunction of <m>A</m> and <m>B</m></title>
+		<title>disjunction of <m> A </m> and <m> B </m></title>
 		<idx><h>disjunction</h><h>notation for</h></idx>
 		<idx><h>or (logical connective)</h><h>notation for</h></idx>
 		<idx><h>logical</h><h>disjunction</h><h>notation for</h></idx>
 		<notation>
-			<usage><m>A \lgcor B</m></usage>
-			<description>logical disjunction of statements <m>A</m> and <m>B</m></description>
+			<usage><m> A \lgcor B </m></usage>
+			<description>logical disjunction of statements <m> A </m> and <m> B </m></description>
 		</notation>
-		<p> <m>A \lgcor B</m> </p>
+		<p> <m> A \lgcor B </m> </p>
 	</li>
 	<li>
-		<title>conditional where <m>A</m> implies <m>B</m></title>
+		<title>conditional where <m> A </m> implies <m> B </m></title>
 		<idx><h>conditional</h><h>notation for</h></idx>
 		<idx><h>if <ellipsis /> then <ellipsis /> (logical connective)</h><h>notation for</h></idx>
 		<idx><h>logical</h><h>conditional</h><h>notation for</h></idx>
 		<notation>
-			<usage><m>A \lgccond B</m></usage>
-			<description>logical conditional where statement <m>A</m> implies statement <m>B</m></description>
+			<usage><m> A \lgccond B </m></usage>
+			<description>logical conditional where statement <m> A </m> implies statement <m> B </m></description>
 		</notation>
-		<p> <m>A \lgccond B</m> </p>
+		<p> <m> A \lgccond B </m> </p>
 	</li>
 	<li>
-		<title>biconditional involving <m>A</m> and <m>B</m></title>
+		<title>biconditional involving <m> A </m> and <m> B </m></title>
 		<idx><h>biconditional</h><h>notation for</h></idx>
 		<idx><h>if and only if (logical connective)</h><h>notation for</h></idx>
 		<idx><h>logical</h><h>biconditional</h><h>notation for</h></idx>
 		<notation>
-			<usage><m>A \lgcbicond B</m></usage>
+			<usage><m> A \lgcbicond B </m></usage>
 			<description>
-				logical biconditional where each of statements <m>A</m> and <m>B</m> implies the other
+				logical biconditional where each of statements <m> A </m> and <m> B </m> implies the other
 			</description>
 		</notation>
-		<p> <m>A \lgcbicond B</m> </p>
+		<p> <m> A \lgcbicond B </m> </p>
 	</li>
 </dl>
 </p>
@@ -346,7 +346,7 @@ without being distracted or influenced by the content of the statements.
 </p>
 
 <warning><p>
-	In mathematics, the symbol <m>\to</m> is also used in function notation;
+	In mathematics, the symbol <m> \to </m> is also used in function notation;
 	<!-- (see TODO-XREF); \S\zref{CHAPTER::funcs} -->
 	you will need to determine from the context which role this symbol is playing.
 </p></warning>
@@ -422,8 +422,8 @@ Arrange this analysis in a table with all possibilities for the input variables 
 <note xml:id="note-symb-lang-num-rows-truth-table"><p>
 <!-- \label{NOTE::num.rows.truth.table} -->
 	In fact,
-	if there are <m>n</m> variables,
-	then there are exactly <m>2^n</m> different combinations of truth values for the variables.
+	if there are <m> n </m> variables,
+	then there are exactly <m> 2^n </m> different combinations of truth values for the variables.
 	<!--
 	(see TODO-XREF).
 		Exercise \ref{EXERCISE::counting::num.truth.tables} of \S\zref{CHAPTER::counting}
@@ -462,14 +462,14 @@ First, let's establish the truth tables of the basic connectives
 			</row>
 			<row><cell colspan="2" /></row>
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>\lgcnot p</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> \lgcnot p </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
 
@@ -480,25 +480,25 @@ First, let's establish the truth tables of the basic connectives
 			</row>
 			<row><cell colspan="3" /></row>
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgcand q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgcand q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
 
@@ -509,25 +509,25 @@ First, let's establish the truth tables of the basic connectives
 			</row>
 			<row><cell colspan="3" /></row>
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgcor q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgcor q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
 
@@ -538,25 +538,25 @@ First, let's establish the truth tables of the basic connectives
 			</row>
 			<row><cell colspan="3" /></row>
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgccond q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgccond q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
 
@@ -567,25 +567,25 @@ First, let's establish the truth tables of the basic connectives
 			</row>
 			<row><cell colspan="3" /></row>
 			<row bottom="minor">
-				<cell><m>p</m></cell>
-				<cell><m>q</m></cell>
-				<cell><m>p \lgcbicond q</m></cell>
+				<cell><m> p </m></cell>
+				<cell><m> q </m></cell>
+				<cell><m> p \lgcbicond q </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row><row>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
-				<cell><m>\lgcfalse</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
+				<cell><m> \lgcfalse </m></cell>
 			</row><row>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgcfalse</m></cell>
-				<cell><m>\lgctrue</m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgcfalse </m></cell>
+				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
 
@@ -594,9 +594,9 @@ First, let's establish the truth tables of the basic connectives
 </figure>
 
 <note><p><ol>
-	<li> Conjunction <m>p \lgcand q</m> is true <em>only</em> when <em>both</em> <m>p</m> and <m>q</m> are true. </li>
+	<li> Conjunction <m> p \lgcand q </m> is true <em>only</em> when <em>both</em> <m> p </m> and <m> q </m> are true. </li>
 	<li>
-		<p> Disjunction <m>p \lgcor q</m> is true when <em>at least one</em> of <m>p</m> and <m>q</m> is true. </p>
+		<p> Disjunction <m> p \lgcor q </m> is true when <em>at least one</em> of <m> p </m> and <m> q </m> is true. </p>
 		<!-- <aside><title>See</title><p>
 			<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or" text="type-local">Statement</xref>
 			of <xref ref="remark-symb-lang-connectives" />
@@ -608,25 +608,25 @@ First, let's establish the truth tables of the basic connectives
 		</p></aside>
 	</li>
 	<li>
-		The first two rows of the truth table for <m>p \lgccond q</m> are consistent with the reading <q>if <m>p</m> is true then <m>q</m> is also true.</q>
-		Really, this reading of the conditional says <em>nothing</em> in the case that <m>p</m> is actually false,
-		but we cannot leave the <q>output</q> column of the truth table blank for the corresponding rows where <m>p = \lgcfalse</m>.
-		Instead, the outputs in the last two rows of the truth table for <m>p \lgccond q</m> are <q>default</q> values chosen to avoid inconsistencies.
+		The first two rows of the truth table for <m> p \lgccond q </m> are consistent with the reading <q>if <m> p </m> is true then <m> q </m> is also true.</q>
+		Really, this reading of the conditional says <em>nothing</em> in the case that <m> p </m> is actually false,
+		but we cannot leave the <q>output</q> column of the truth table blank for the corresponding rows where <m> p = \lgcfalse </m>.
+		Instead, the outputs in the last two rows of the truth table for <m> p \lgccond q </m> are <q>default</q> values chosen to avoid inconsistencies.
 		(See <xref ref="exercise-symb-lang-choices-for-implies" />.)
 	</li>
 	<li>
-		Looking at all four rows of the truth table for <m>p \lgccond q</m>,
-		we can succinctly say that <m>p \lgccond q</m> is true <em>except</em> when <m>p</m> is true but <m>q</m> is false.
+		Looking at all four rows of the truth table for <m> p \lgccond q </m>,
+		we can succinctly say that <m> p \lgccond q </m> is true <em>except</em> when <m> p </m> is true but <m> q </m> is false.
 	</li>
 	<li>
-		Biconditional <m>p \lgcbicond q</m> reads <q><m>p</m> is true when <m>q</m> is true, and <em>only</em> when <m>q</m> is true.</q>
-		But this means that when <m>q</m> is false,
-		<m>p</m> cannot be true, hence must by false,
+		Biconditional <m> p \lgcbicond q </m> reads <q><m> p </m> is true when <m> q </m> is true, and <em>only</em> when <m> q </m> is true.</q>
+		But this means that when <m> q </m> is false,
+		<m> p </m> cannot be true, hence must by false,
 		which explains the fourth row of the truth table.
 	</li>
 	<li>
-		Looking at all four rows of the truth table for <m>p \lgcbicond q</m>,
-		we can succinctly say that <m>p \lgcbicond q</m> is true when <m>p</m> and <m>q</m> have the <em>same truth value</em>.
+		Looking at all four rows of the truth table for <m> p \lgcbicond q </m>,
+		we can succinctly say that <m> p \lgcbicond q </m> is true when <m> p </m> and <m> q </m> have the <em>same truth value</em>.
 	</li>
 </ol></p></note>
 
@@ -636,199 +636,199 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 </p>
 
 <problem xml:id="wexample-symb-lang-neg-bicond"> <!-- worked example -->
-	<statement><p> Analyze <m>\lgcnot (p \lgcbicond q)</m>. </p></statement>
+	<statement><p> Analyze <m> \lgcnot (p \lgcbicond q) </m>. </p></statement>
 	<solution><tabular halign="center">
 		<col /><col right="minor" /><col right="minor" /><col />
 		<row bottom="minor">
-			<cell><m>p</m></cell>
-			<cell><m>q</m></cell>
-			<cell><m>p \lgcbicond q</m></cell>
-			<cell><m>\lgcnot (p \lgcbicond q)</m></cell>
+			<cell><m> p </m></cell>
+			<cell><m> q </m></cell>
+			<cell><m> p \lgcbicond q </m></cell>
+			<cell><m> \lgcnot (p \lgcbicond q) </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
 		</row>
 	</tabular></solution>
 </problem>
 
 <note><p>
-	The logical statement <m>\lgcnot (p \lgcbicond q)</m> analyzed in <xref ref="wexample-symb-lang-neg-bicond" /> is one way to realize <em>exclusive or</em>:
-	<m>p</m> or <m>q</m> but not both.
+	The logical statement <m> \lgcnot (p \lgcbicond q) </m> analyzed in <xref ref="wexample-symb-lang-neg-bicond" /> is one way to realize <em>exclusive or</em>:
+	<m> p </m> or <m> q </m> but not both.
 </p></note>
 
 <problem>
-	<statement><p> Analyze <m>(p \lgcand q) \lgccond (p \lgcbicond r)</m>. </p></statement>
+	<statement><p> Analyze <m> (p \lgcand q) \lgccond (p \lgcbicond r) </m>. </p></statement>
 	<solution><tabular halign="center">
 		<col /><col /><col right="minor" /><col /><col right="minor" /><col />
 		<row bottom="minor">
-			<cell><m>p</m></cell>
-			<cell><m>q</m></cell>
-			<cell><m>r</m></cell>
-			<cell><m>p \lgcand q</m></cell>
-			<cell><m>p \lgcbicond r</m></cell>
-			<cell><m>(p \lgcand q) \lgccond (p \lgcbicond r)</m></cell>
+			<cell><m> p </m></cell>
+			<cell><m> q </m></cell>
+			<cell><m> r </m></cell>
+			<cell><m> p \lgcand q </m></cell>
+			<cell><m> p \lgcbicond r </m></cell>
+			<cell><m> (p \lgcand q) \lgccond (p \lgcbicond r) </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row>
 	</tabular></solution>
 </problem>
 
 <problem>
-	<statement><p> Analyze <m>\bbrac{(p\lgccond q) \lgccond r} \lgcbicond \bbrac{p \lgccond (q \lgccond r)}</m>. </p></statement>
+	<statement><p> Analyze <m> \bbrac{(p\lgccond q) \lgccond r} \lgcbicond \bbrac{p \lgccond (q \lgccond r)} </m>. </p></statement>
 	<solution><tabular halign="center">
 		<col /><col /><col right="minor" /><col /><col right="minor" /><col /><col right="minor" /><col />
 		<row bottom="minor">
-			<cell><m>p</m></cell>
-			<cell><m>q</m></cell>
-			<cell><m>r</m></cell>
-			<cell><m>p \lgccond q</m></cell>
-			<cell><m>q \lgccond r</m></cell>
-			<cell><m>A</m></cell>
-			<cell><m>B</m></cell>
-			<cell><m>A \lgcbicond B</m></cell>
+			<cell><m> p </m></cell>
+			<cell><m> q </m></cell>
+			<cell><m> r </m></cell>
+			<cell><m> p \lgccond q </m></cell>
+			<cell><m> q \lgccond r </m></cell>
+			<cell><m> A </m></cell>
+			<cell><m> B </m></cell>
+			<cell><m> A \lgcbicond B </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
 		</row><row>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
-			<cell><m>\lgctrue</m></cell>
-			<cell><m>\lgcfalse</m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
 		</row>
 	</tabular></solution>
 </problem>
@@ -853,8 +853,8 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 <example xml:id="example-symb-lang-basic-tauts">
 	<title>Basic tautologies</title>
 	<p><ol>
-		<li> <m>p \lgccond p</m>. </li>
-		<li> <m>p \lgcbicond p</m>. </li>
+		<li> <m> p \lgccond p </m>. </li>
+		<li> <m> p \lgcbicond p </m>. </li>
 		<li xml:id="example-symb-lang-basic-tauts-law-excl-mid">
 			<p>
 			<!-- \label{EXAMPLE::law.excl.mid} -->
@@ -867,20 +867,20 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 			<tabular halign="center">
 				<col right="minor" /><col right="minor" /><col />
 				<row bottom="minor">
-					<cell><m>p</m></cell>
-					<cell><m>\lgcnot p</m></cell>
-					<cell><m>p \lgcor \lgcnot p</m></cell>
+					<cell><m> p </m></cell>
+					<cell><m> \lgcnot p </m></cell>
+					<cell><m> p \lgcor \lgcnot p </m></cell>
 				</row><row>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
 				</row><row>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgctrue</m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgctrue </m></cell>
 				</row>
 			</tabular>
-			<p> The table verifies that the statement is a tautology as the last column consists only of <m>\lgctrue</m> values. </p>
+			<p> The table verifies that the statement is a tautology as the last column consists only of <m> \lgctrue </m> values. </p>
 		</li>
 		<li xml:id="example-symb-lang-basic-tauts-law-contra">
 			<!-- \label{EXAMPLE::law.contra} -->
@@ -888,29 +888,29 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 			<term>Law of Contradiction</term>:
 			<idx><h>Law</h><h>of Contradiction</h></idx>
 			<idx>Contradiction, Law of</idx>
-			<m>\lgcnot \bbrac{p \lgcand \lgcnot p}</m>.
+			<m> \lgcnot \bbrac{p \lgcand \lgcnot p} </m>.
 			</p>
 			<p>Verification:</p>
 			<tabular halign="center">
 				<col right="minor" /><col right="minor" /><col right="minor" /><col />
 				<row bottom="minor">
-					<cell><m>p</m></cell>
-					<cell><m>\lgcnot p</m></cell>
-					<cell><m>p \lgcand \lgcnot p</m></cell>
-					<cell><m>\lgcnot \bbrac{p \lgcand \lgcnot p}</m></cell>
+					<cell><m> p </m></cell>
+					<cell><m> \lgcnot p </m></cell>
+					<cell><m> p \lgcand \lgcnot p </m></cell>
+					<cell><m> \lgcnot \bbrac{p \lgcand \lgcnot p} </m></cell>
 				</row><row>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
 				</row><row>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
 				</row>
 			</tabular>
-			<p> The table verifies that the statement is a tautology as the last column consists only of <m>\lgctrue</m> values. </p>
+			<p> The table verifies that the statement is a tautology as the last column consists only of <m> \lgctrue </m> values. </p>
 		</li>
 	</ol></p>
 </example>
@@ -918,8 +918,8 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 <example>
 	<title>Not a tautology</title>
 	<p>
-	Is <m>p \lgcor p</m> a tautology?
-	No, since it is false when <m>p</m> is false.
+	Is <m> p \lgcor p </m> a tautology?
+	No, since it is false when <m> p </m> is false.
 	</p>
 </example>
 
@@ -940,59 +940,59 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 	<p><ol>
 		<li> Negation of a tautology is always a contradiction (and negation of a contradiction is always a tautology). </li>
 		<li>
-			<p>Statement <m>(p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q)</m> is a contradiction: </p>
+			<p>Statement <m> (p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q) </m> is a contradiction: </p>
 			<tabular halign="center">
 				<col /><col right="minor" /><col /><col right="minor" /><col /><col right="minor" /><col />
 				<row bottom="minor">
-					<cell><m>p</m></cell>
-					<cell><m>q</m></cell>
-					<cell><m>\lgcnot p</m></cell>
-					<cell><m>\lgcnot q</m></cell>
-					<cell><m>p \lgcor \lgcnot p</m></cell>
-					<cell><m>q \lgcand \lgcnot q</m></cell>
-					<cell><m>(p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q)</m></cell>
+					<cell><m> p </m></cell>
+					<cell><m> q </m></cell>
+					<cell><m> \lgcnot p </m></cell>
+					<cell><m> \lgcnot q </m></cell>
+					<cell><m> p \lgcor \lgcnot p </m></cell>
+					<cell><m> q \lgcand \lgcnot q </m></cell>
+					<cell><m> (p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q) </m></cell>
 				</row><row>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgcfalse</m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgcfalse </m></cell>
 				</row><row>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgcfalse</m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgcfalse </m></cell>
 				</row><row>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgcfalse</m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgcfalse </m></cell>
 				</row><row>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgctrue</m></cell>
-					<cell><m>\lgcfalse</m></cell>
-					<cell><m>\lgcfalse</m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgctrue </m></cell>
+					<cell><m> \lgcfalse </m></cell>
+					<cell><m> \lgcfalse </m></cell>
 				</row>
 			</tabular>
-			<p> The table verifies that the statement is a contradiction as the last column consists only of <m>\lgcfalse</m> values. </p>
+			<p> The table verifies that the statement is a contradiction as the last column consists only of <m> \lgcfalse </m> values. </p>
 		</li>
 	</ol></p>
 </example>
 
 <example>
 	<title>Conditional versus contradiction</title>
-	<p> Implication <m>A\lgccond B</m> can <em>only</em> be a contradiction if <m>A</m> is a tautology and <m>B</m> is a contradiction. </p>
+	<p> Implication <m> A\lgccond B </m> can <em>only</em> be a contradiction if <m> A </m> is a tautology and <m> B </m> is a contradiction. </p>
 </example>
 
 <!-- TODO should I just call this a "fact" instead ? -->
@@ -1001,10 +1001,10 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 	<idx><h>Rule(s)</h><h>Substitution</h><h>into a tautology or contradiction</h></idx>
 	<idx><h>Substitution Rule</h><h>into a tautology or contradiction</h></idx>
 	<statement>
-		Suppose <m>A</m> is a logical statement involving substatement variables <m>p_1, p_2, \dotsc, p_m</m>.
-		If <m>A</m> is logically true or logically false,
-		then so is every statement obtained from <m>A</m> by replacing each statement variable <m>p_i</m> by some logical statement <m>B_i</m>,
-		for every possible collection of logical statements <m>B_1, B_2, \dotsc, B_m</m>.
+		Suppose <m> A </m> is a logical statement involving substatement variables <m> p_1, p_2, \dotsc, p_m </m>.
+		If <m> A </m> is logically true or logically false,
+		then so is every statement obtained from <m> A </m> by replacing each statement variable <m> p_i </m> by some logical statement <m> B_i </m>,
+		for every possible collection of logical statements <m> B_1, B_2, \dotsc, B_m </m>.
 	</statement>
 </theorem>
 
@@ -1012,14 +1012,14 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 	<title>Using the <xref ref="theorem-symb-lang-subst-in-tauts-contras" text="title" /></title>
 	<p><ol>
 		<li>
-			We know <m>p \lgcor \lgcnot p</m> is a tautology, therefore so is
+			We know <m> p \lgcor \lgcnot p </m> is a tautology, therefore so is
 			<md>
 				\bbrac{q \lgccond (r \lgcand \lgcnot s)} \lgcor
 				\lgcnot \bbrac{q \lgccond (r \lgcand \lgcnot s)}
 			</md>
-			using substitution <m>p = \bbrac{q \lgccond (r \lgcand \lgcnot s)}</m>.
+			using substitution <m> p = \bbrac{q \lgccond (r \lgcand \lgcnot s)} </m>.
 		</li><li>
-			We know <m>(p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q)</m> is a contradiction,
+			We know <m> (p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q) </m> is a contradiction,
 			therefore so are
 			<md>
 				<mrow>
@@ -1040,7 +1040,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 </example>
 
 <p>
-In mathematics, we often wish to prove that a condition <m>A \lgccond B</m> is actually a tautology.
+In mathematics, we often wish to prove that a condition <m> A \lgccond B </m> is actually a tautology.
 (See <xref ref="chapter-proof-methods" />.)
 </p>
 
@@ -1048,13 +1048,13 @@ In mathematics, we often wish to prove that a condition <m>A \lgccond B</m> is a
 	<li xml:id="definition-symb-lang-logically-implies">
 		<title>logically implies</title>
 		<idx><h>logically</h><h>implies</h></idx>
-		<p> if the conditional <m>A \lgccond B</m> is a tautology, we say that <m>A</m> <term>logically implies</term> <m>B</m> </p>
+		<p> if the conditional <m> A \lgccond B </m> is a tautology, we say that <m> A </m> <term>logically implies</term> <m> B </m> </p>
 	</li>
 	<li>
-		<title><m>A \lgcimplies B</m></title>
+		<title><m> A \lgcimplies B </m></title>
 		<notation>
-			<usage><m>A \lgcimplies B</m></usage>
-			<description>statement <m>A</m> logically implies statement <m>B</m>, so that conditional <m>A \lgccond B</m> is a tautology</description>
+			<usage><m> A \lgcimplies B </m></usage>
+			<description>statement <m> A </m> logically implies statement <m> B </m>, so that conditional <m> A \lgccond B </m> is a tautology</description>
 		</notation>
 		<p> notation for logical implication </p>
 	</li>
@@ -1063,20 +1063,20 @@ In mathematics, we often wish to prove that a condition <m>A \lgccond B</m> is a
 <example>
 	<title>Logical implication</title>
 	<p><ol>
-		<li> If <m>A = p</m> and <m>B = p \lgcor q</m>, then <m>A \lgcimplies B</m>. </li>
-		<li> If <m>A = p \lgcand q</m> and <m>B = p</m>, then <m>A \lgcimplies B</m>. </li>
+		<li> If <m> A = p </m> and <m> B = p \lgcor q </m>, then <m> A \lgcimplies B </m>. </li>
+		<li> If <m> A = p \lgcand q </m> and <m> B = p </m>, then <m> A \lgcimplies B </m>. </li>
 	</ol></p>
 </example>
 
 <remark><p>
 	As we will see in <xref ref="chapter-proof-methods" />,
 	verifying logical implications in mathematical contexts is one of the main tasks of mathematical proof.
-	And to verify a logical implication <m>A \lgcimplies B</m>,
+	And to verify a logical implication <m> A \lgcimplies B </m>,
 	we want to focus on the idea of conditional as expressing
-	<q>If <m>A</m> is true then <m>B</m> is true,</q>
-	and we really don't want to concern ourselves with what happens in the case that <m>A</m> is false.
-	Here is where our <q>default</q> values in the rows of the truth table for the conditional <m>A \lgccond B</m> where <m>A</m> is false help out <mdash />
-	as the conditional <m>A \lgccond B</m> is automatically true when <m>A</m> is false, regardless of the truth value of <m>B</m>, we really only need to consider what happens when <m>A</m> is true to verify <m>A \lgcimplies B</m>.
+	<q>If <m> A </m> is true then <m> B </m> is true,</q>
+	and we really don't want to concern ourselves with what happens in the case that <m> A </m> is false.
+	Here is where our <q>default</q> values in the rows of the truth table for the conditional <m> A \lgccond B </m> where <m> A </m> is false help out <mdash />
+	as the conditional <m> A \lgccond B </m> is automatically true when <m> A </m> is false, regardless of the truth value of <m> B </m>, we really only need to consider what happens when <m> A </m> is true to verify <m> A \lgcimplies B </m>.
 </p></remark>
 
 </section>

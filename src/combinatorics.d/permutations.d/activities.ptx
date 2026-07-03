@@ -21,16 +21,16 @@ respective owners.
 </p></introduction>
 
 <activity><p>
-	Write down all permutations of the set <m>A = \{c,a,t\}</m>.
-	Express your permutations as <em>functions</em> from <m>A</m> to itself.
+	Write down all permutations of the set <m> A = \{c,a,t\} </m>.
+	Express your permutations as <em>functions</em> from <m> A </m> to itself.
 </p></activity>
 
-<activity><p> Write down some example permutations of size <m>3</m> from the set <m>A = \{t,r,u,c,k\}</m>. </p></activity>
+<activity><p> Write down some example permutations of size <m> 3 </m> from the set <m> A = \{t,r,u,c,k\} </m>. </p></activity>
 
 <activity><p> Verify the equality <md> \frac{(n+1)!}{(k+1)!(n-k)!} = \frac{n!}{k!(n-k)!} + \frac{n!}{(k+1)!(n-k-1)!} </md>. </p></activity>
 
 <activity>
-	<introduction><p> A child has the following set of refrigerator magnets: <m>\{A,B,C,D,E,F,G,H,I,J\}</m>. </p></introduction>
+	<introduction><p> A child has the following set of refrigerator magnets: <m> \{A,B,C,D,E,F,G,H,I,J\} </m>. </p></introduction>
 	<task><p>
 		How many four-letter words can the child form?
 		(Nonsense words allowed.)
@@ -54,12 +54,12 @@ respective owners.
 </activity>
 
 <activity>
-	<task><p> How many binary words of length <m>10</m> contain at least two zeros? </p></task>
-	<task><p> How many binary words of length <m>10</m> contain at least at least three ones? </p></task>
+	<task><p> How many binary words of length <m> 10 </m> contain at least two zeros? </p></task>
+	<task><p> How many binary words of length <m> 10 </m> contain at least at least three ones? </p></task>
 </activity>
 
 <activity>
-	<introduction><p> Consider the letters in the word <m>PEANUT</m>. </p></introduction>
+	<introduction><p> Consider the letters in the word <m> PEANUT </m>. </p></introduction>
 	<task><p> How many six-letter words can be formed using these letters? (Each letter can only appear once.) </p></task>
 	<task><p> How about if the vowels must be at the beginning? </p></task>
 	<task><p> How about if no consonant may be isolated between two vowels? </p></task>
@@ -99,11 +99,11 @@ respective owners.
 
 <activity>
 	<task><p> How many ways are there to arrange three professors and three students in a circle so that professors and students alternate? </p></task>
-	<task><p> Answer the same question for <m>n</m> professors and <m>n</m> students. </p></task>
+	<task><p> Answer the same question for <m> n </m> professors and <m> n </m> students. </p></task>
 </activity>
 
 <activity><p>
-	How many ways could you choose numbers <m>a,b,c</m> from the set <m>\natnumlt{11}</m>, allowing repetition, so that the sum a+b+c is at least 5?
+	How many ways could you choose numbers <m> a,b,c </m> from the set <m> \natnumlt{11} </m>, allowing repetition, so that the sum a+b+c is at least 5?
 </p></activity>
 
 </worksheet>

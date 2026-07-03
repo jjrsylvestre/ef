@@ -18,7 +18,7 @@ respective owners.
 <title>Exercises</title>
 
 <exercise><p>
-	Choose numbers <m>x,y</m> so that the equality in the <xref ref="theorem-multinomial-binomial" text="title" /> becomes
+	Choose numbers <m> x,y </m> so that the equality in the <xref ref="theorem-multinomial-binomial" text="title" /> becomes
 	<md> \sum_{k=0}^n \binom{n}{k}\, 2^k = 3^n </md>.
 </p></exercise>
 
@@ -26,7 +26,7 @@ respective owners.
 <!-- \label{EXERCISE::multinomial::binomial.formula.counting.subsets} -->
 	<task xml:id="exercise-multinomial-binomial-formula-counting-subsets-choose-numbers"><p>
 	<!-- \label{EXERCISE::multinomial::binomial.formula.counting.subsets::choose.numbers} -->
-		Choose numbers <m>x,y</m> so that the equality in the <xref ref="theorem-multinomial-binomial" text="title" /> becomes
+		Choose numbers <m> x,y </m> so that the equality in the <xref ref="theorem-multinomial-binomial" text="title" /> becomes
 		<md>
 			\binom{n}{0} \;\;-\;\;
 			\binom{n}{1} \;\;+\;\;
@@ -72,7 +72,7 @@ respective owners.
 				\end{cases}
 			</mrow></md>
 			</p><p>
-			What does this rearranged formula tell you about the subsets of a set of size <m>n</m>?
+			What does this rearranged formula tell you about the subsets of a set of size <m> n </m>?
 			</p>
 		</statement>
 		<hint><p> What is the sum on the left counting? What is the sum on the right counting? </p></hint>

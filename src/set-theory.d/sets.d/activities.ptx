@@ -22,15 +22,15 @@ respective owners.
 	What is the intersection of these sets for your group?
 </p></activity>
 
-<activity><p> Is it possible to have two sets <m>A</m> and <m>B</m> with <m>A \union B = A \intersection B</m>? </p></activity>
+<activity><p> Is it possible to have two sets <m> A </m> and <m> B </m> with <m> A \union B = A \intersection B </m>? </p></activity>
 
 <activity>
 	<title>Cancellation is not always valid</title>
 	<task><p>
-		Demonstrate using an example that <m>(A \union B) \relcmplmnt B = A</m> is <em>not</em> a valid simplification in set theory.
+		Demonstrate using an example that <m> (A \union B) \relcmplmnt B = A </m> is <em>not</em> a valid simplification in set theory.
 	</p></task>
 	<task><p>
-		Demonstrate using an example that <m>A \union B = A \union C \lgcimplies A = B</m> is <em>not</em> a valid simplification in set theory.
+		Demonstrate using an example that <m> A \union B = A \union C \lgcimplies A = B </m> is <em>not</em> a valid simplification in set theory.
 	</p></task>
 </activity>
 
@@ -42,7 +42,7 @@ respective owners.
 <activity>
 	<task><p>
 		Write a definition in <xref ref="subsection-sets-defining-candidate-condition" text="title" />
-		for the set of all points on the graph of the parabola <m>f(x) = x^2</m>.
+		for the set of all points on the graph of the parabola <m> f(x) = x^2 </m>.
 	</p></task>
 	<task><p>
 		Write a definition in <xref ref="subsection-sets-defining-form-parameter" text="title" />
@@ -53,10 +53,10 @@ respective owners.
 <activity>
 	<introduction>
 		<p>
-		Recall that <m>\matrixring_n(\R)</m> is the set of all <m>n \times n</m> matrices.
-		Let <m>V</m> be the subset of <term>invertible</term> <m>n \times n</m> matrices,
-		and <m>S</m> the set of <term>scalar</term> <m>n \times n</m> matrices.
-		Write <m>\zerovec</m> for the <m>n \times n</m> zero matrix.
+		Recall that <m> \matrixring_n(\R) </m> is the set of all <m> n \times n </m> matrices.
+		Let <m> V </m> be the subset of <term>invertible</term> <m> n \times n </m> matrices,
+		and <m> S </m> the set of <term>scalar</term> <m> n \times n </m> matrices.
+		Write <m> \zerovec </m> for the <m> n \times n </m> zero matrix.
 		</p>
 		<aside><title>Recall</title>
 			<p><term>Scalar matrix</term> means a scalar multiple of the identity matrix.</p>
@@ -74,10 +74,10 @@ respective owners.
 		</md>
 		</p>
 	</introduction>
-	<task><p> <m>\zerovec</m> is a scalar matrix. </p></task>
-	<task><p> <m>\zerovec</m> is scalar and singular. </p></task>
-	<task><p> <m>\zerovec</m> is the <em>only</em> scalar, singular matrix. </p></task>
-	<task><p> Every scalar matrix besides <m>\zerovec</m> is invertible. </p></task>
+	<task><p> <m> \zerovec </m> is a scalar matrix. </p></task>
+	<task><p> <m> \zerovec </m> is scalar and singular. </p></task>
+	<task><p> <m> \zerovec </m> is the <em>only</em> scalar, singular matrix. </p></task>
+	<task><p> Every scalar matrix besides <m> \zerovec </m> is invertible. </p></task>
 	<task><p> Every matrix is either invertible or singular. </p></task>
 </activity>
 
@@ -88,19 +88,19 @@ respective owners.
 
 <activity><p>
 	List the elements of the power set of your group.
-	Make sure you have all the <m>\{\ \}</m>-pairs you need in all the right places.
+	Make sure you have all the <m> \{\ \} </m>-pairs you need in all the right places.
 </p></activity>
 
 <activity><p>
-	What is <m>A \cartprod \emptyset</m>?
-	What about <m>\emptyset \cartprod B</m>?
+	What is <m> A \cartprod \emptyset </m>?
+	What about <m> \emptyset \cartprod B </m>?
 </p></activity>
 
 <activity>
-	<p> For alphabet <m>\Sigma = \{\mathrm{a},\mathrm{b},\mathrm{c}\}</m>, describe the elements of <m>\words{\Sigma}</m> and <m>\words{(\words{\Sigma})}</m>: </p>
-	<p> Elements of <m>\words{\Sigma}</m> are <fillin characters="20" />. </p>
-	<p> Elements of <m>\words{(\words{\Sigma})}</m> are <fillin characters="20" />. </p>
-	<p> Is the equality of sets <m>\words{(\words{\Sigma})} = \words{\Sigma}</m> true? </p>
+	<p> For alphabet <m> \Sigma = \{\mathrm{a},\mathrm{b},\mathrm{c}\} </m>, describe the elements of <m> \words{\Sigma} </m> and <m> \words{(\words{\Sigma})} </m>: </p>
+	<p> Elements of <m> \words{\Sigma} </m> are <fillin characters="20" />. </p>
+	<p> Elements of <m> \words{(\words{\Sigma})} </m> are <fillin characters="20" />. </p>
+	<p> Is the equality of sets <m> \words{(\words{\Sigma})} = \words{\Sigma} </m> true? </p>
 </activity>
 
 <activity>
@@ -116,10 +116,10 @@ respective owners.
 
 <activity>
 	<introduction><p>
-		The equality of sets <m>(A \cartprod B) \union (C \cartprod D) = (A \union C) \cartprod (B \union D)</m> is false in general.
+		The equality of sets <m> (A \cartprod B) \union (C \cartprod D) = (A \union C) \cartprod (B \union D) </m> is false in general.
 	</p></introduction>
-	<task><p> Write down definitions for example sets <m>A,B,C,D</m> that form a counterexample. </p></task>
-	<task><p> Can you come up with some conditions on <m>A,B,C,D</m> that make this equality true? </p></task>
+	<task><p> Write down definitions for example sets <m> A,B,C,D </m> that form a counterexample. </p></task>
+	<task><p> Can you come up with some conditions on <m> A,B,C,D </m> that make this equality true? </p></task>
 </activity>
 
 <activity>
@@ -132,6 +132,6 @@ respective owners.
 	</p>
 </activity>
 
-<activity><p> Informally explain why the set equality <m>\powset{A \union B} = \powset{A} \union \powset{B}</m> is not true in general. </p></activity>
+<activity><p> Informally explain why the set equality <m> \powset{A \union B} = \powset{A} \union \powset{B} </m> is not true in general. </p></activity>
 
 </worksheet>

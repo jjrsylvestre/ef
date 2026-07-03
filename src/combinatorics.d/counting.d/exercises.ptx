@@ -34,17 +34,17 @@ respective owners.
 <!-- \label{EXERCISE::counting::num.truth.tables} -->
 	<task><p>
 		Use the <xref ref="theorem-counting-mult-rule" text="title" />
-		to demonstrate that the truth table of a logical statement with <m>n</m> statement variables requires <m>2^n</m> rows.
-		That is, demonstrate that there are <m>2^n</m> different possible combinations of input truth values for <m>n</m> statement variables.
+		to demonstrate that the truth table of a logical statement with <m> n </m> statement variables requires <m> 2^n </m> rows.
+		That is, demonstrate that there are <m> 2^n </m> different possible combinations of input truth values for <m> n </m> statement variables.
 	</p></task>
-	<task><p> How many different truth tables involving <m>n</m> statement variables exist? </p></task>
+	<task><p> How many different truth tables involving <m> n </m> statement variables exist? </p></task>
 </exercise>
 
 <exercise><p>
-	Recall that if <m>A</m> is a finite set with <m>\card{A} = n</m>,
-	then <m>\card{\powset{A}} = 2^n</m>.
+	Recall that if <m> A </m> is a finite set with <m> \card{A} = n </m>,
+	then <m> \card{\powset{A}} = 2^n </m>.
 	Use the <xref ref="theorem-counting-mult-rule" text="title" />
-	to verify this formula by considering the construction of an arbitrary subset of <m>A</m> as a process of making <m>n</m> <q>either-or</q> decisions.
+	to verify this formula by considering the construction of an arbitrary subset of <m> A </m> as a process of making <m> n </m> <q>either-or</q> decisions.
 </p></exercise>
 
 <exercise>
@@ -54,16 +54,16 @@ respective owners.
 		The King decrees that the kingdom's citizens will all be assigned a hexadecimal ID.
 		That is, using alphabet
 		<md> \Sigma = \{ 0,1,2,3,4,5,6,7,8,9,\mathrm{a},\mathrm{b},\mathrm{c},\mathrm{d},\mathrm{e},\mathrm{f} \}, </md>
-		IDs will be words from <m>\words{\Sigma}</m>.
-		However, the king is vain and doesn't want any such ID to contain his initials, <m>\mathrm{jk}</m>.
+		IDs will be words from <m> \words{\Sigma} </m>.
+		However, the king is vain and doesn't want any such ID to contain his initials, <m> \mathrm{jk} </m>.
 		</p>
-		<p> For each <m>n \ge 1</m>, let <m>s_n</m> represent number of allowable IDs of length <m>n</m>. </p>
+		<p> For each <m> n \ge 1 </m>, let <m> s_n </m> represent number of allowable IDs of length <m> n </m>. </p>
 	</introduction>
-	<task><p> Compute <m>s_1</m>, <m>s_2</m>, and <m>s_3</m>. </p></task>
+	<task><p> Compute <m> s_1 </m>, <m> s_2 </m>, and <m> s_3 </m>. </p></task>
 	<task>
-		<statement><p> Determine a recurrence relation for <m>s_n</m> which is valid (at least) for <m>n \ge 3</m>. </p></statement>
+		<statement><p> Determine a recurrence relation for <m> s_n </m> which is valid (at least) for <m> n \ge 3 </m>. </p></statement>
 		<hint><p>
-			For each allowable word of length <m>n - 1</m> you can create a word of length <m>n</m> by adding a new letter onto the end.
+			For each allowable word of length <m> n - 1 </m> you can create a word of length <m> n </m> by adding a new letter onto the end.
 			But you want your new word to also be allowable, so be careful about what you add onto the end!
 		</p></hint>
 	</task>

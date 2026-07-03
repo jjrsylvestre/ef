@@ -31,7 +31,7 @@ respective owners.
 		<title>graph (formal definition)</title>
 		<idx><h>graph</h><h>formal definition</h></idx>
 		<p>
-		an ordered pair <m>(V,E)</m>, where <m>V</m> is a finite set and <m>E</m> is a finite, unordered list of <em>subsets</em> of <m>V</m>, each of which has exactly <m>1</m> or <m>2</m> elements
+		an ordered pair <m> (V,E) </m>, where <m> V </m> is a finite set and <m> E </m> is a finite, unordered list of <em>subsets</em> of <m> V </m>, each of which has exactly <m> 1 </m> or <m> 2 </m> elements
 		</p>
 	</li>
 
@@ -40,7 +40,7 @@ respective owners.
 		<idx>vertex</idx>
 		<idx><h>vertices</h><see>vertex</see></idx>
 		<idx><h>graph</h><h>vertex</h></idx>
-		<p> a point in a graph (<ie /> an element of <m>V</m>) </p>
+		<p> a point in a graph (<ie /> an element of <m> V </m>) </p>
 	</li>
 
 	<li>
@@ -54,33 +54,33 @@ respective owners.
 		<title>edge</title>
 		<idx>edge</idx>
 		<idx><h>graph</h><h>edge</h></idx>
-		<p> a line or arc linking two vertices (<ie /> an element of <m>E</m>) </p>
+		<p> a line or arc linking two vertices (<ie /> an element of <m> E </m>) </p>
 	</li>
 
 	<li>
 		<title>empty graph</title>
 		<idx><h>empty</h><h>graph</h></idx>
 		<idx><h>graph</h><h>empty</h></idx>
-		<p> the graph <m>(\emptyset,\emptyset)</m>, with no vertices and no edges </p>
+		<p> the graph <m> (\emptyset,\emptyset) </m>, with no vertices and no edges </p>
 	</li>
 
 </dl></p>
 
 <warning><p>
-	The list <m>E</m> is not a set, since duplicate entries in this list have a graphical meaning; see below.
+	The list <m> E </m> is not a set, since duplicate entries in this list have a graphical meaning; see below.
 </p></warning>
 
 <p>
-An element <m>e \in E</m> represents an edge as follows.
-If <m>e</m> consists of exactly two elements of <m>V</m>, draw a line between these two vertices.
-If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this vertex to itself.
+An element <m> e \in E </m> represents an edge as follows.
+If <m> e </m> consists of exactly two elements of <m> V </m>, draw a line between these two vertices.
+If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from this vertex to itself.
 </p>
 
 <example xml:id="example-graphs-basic-graph-1">
 <!-- \label{EXAMPLE::basic.graph.1} -->
 	<title>A very basic graph</title>
 	<p>
-	The graph <m>G = (V,E)</m>, where
+	The graph <m> G = (V,E) </m>, where
 	<md><mrow>
 		V \amp = \{ v_1, v_2, v_3 \}, \amp
 		E \amp = \bigl\{ \{v_1,v_2\}, \{v_1,v_3\}, \{v_2,v_3\} \bigr\},
@@ -88,7 +88,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 	has three vertices and three edges.
 	</p>
 	<figure>
-		<caption>Diagram of the graph <m>G = (V,E)</m>.</caption>
+		<caption>Diagram of the graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-example" width="25.5%">
 			<description>Diagram illustrating a basic example graph.</description>
 			<latex-image><xi:include href="graphs.d/basic-example.tex" parse="text" /></latex-image>
@@ -100,7 +100,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 <!-- \label{EXAMPLE::basic.graph.2} -->
 	<title>A slightly more complicated example graph</title>
 	<p>
-	The graph <m>G = (V,E)</m>, where
+	The graph <m> G = (V,E) </m>, where
 	<md><mrow>
 		V \amp = \{ v_1, v_2, v_3, v_4 \}, \amp
 		E \amp = \bigl\{ \{v_1, v_2\}, \{v_1, v_2\}, \{v_1, v_2\}, \{ v_3 \}, \{ v_3 \} \bigr\},
@@ -108,7 +108,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 	has four vertices and five edges.
 	</p>
 	<figure>
-		<caption>Diagram of the graph <m>G = (V,E)</m>.</caption>
+		<caption>Diagram of the graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-complicated-example" width="37.9%">
 			<description>Diagram illustrating a slightly more complicated example graph.</description>
 			<latex-image><xi:include href="graphs.d/basic-complicated-example.tex" parse="text" /></latex-image>
@@ -119,14 +119,14 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 <problem> <!-- worked example -->
 	<title>Using a graph to solve a problem</title>
 	<statement><p>
-		Suppose we have jugs <m>A,B,C</m> with capacities <m>8,5,3</m> litres, respectively.
-		Jug <m>A</m> is full of water and jugs <m>B,C</m> are empty.
+		Suppose we have jugs <m> A,B,C </m> with capacities <m> 8,5,3 </m> litres, respectively.
+		Jug <m> A </m> is full of water and jugs <m> B,C </m> are empty.
 		Can we divide the water into two <em>exactly</em> equal parts?
 		If so, find the most efficient pouring sequence.
 	</p></statement>
 	<solution>
 		<p>
-		Construct a graph with points labelled by elements <m>(a,b,c) \in \N \times \N \times \N</m>, where <m>a,b,c</m> are the volumes of water in jugs <m>A,B,C</m>, respectively.
+		Construct a graph with points labelled by elements <m> (a,b,c) \in \N \times \N \times \N </m>, where <m> a,b,c </m> are the volumes of water in jugs <m> A,B,C </m>, respectively.
 		Join two points with a line segment if we can obtain one set of volumes from the other in a single pour.
 		We will ignore pours that return us to a configuration previously achievable by fewer pours.
 		</p>
@@ -139,7 +139,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 				<latex-image><xi:include href="graphs.d/jugs.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
-		<p> Following the left leg of the graph gets us to the desired configuration in <m>7</m> pours. </p>
+		<p> Following the left leg of the graph gets us to the desired configuration in <m> 7 </m> pours. </p>
 	</solution>
 </problem>
 
@@ -224,12 +224,12 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 	</li>
 
 	<li>
-		<title><m>\deg v</m></title>
+		<title><m> \deg v </m></title>
 		<notation>
-			<usage><m>\deg v</m></usage>
-			<description>degree of vertex <m>v</m></description>
+			<usage><m> \deg v </m></usage>
+			<description>degree of vertex <m> v </m></description>
 		</notation>
-		<p> degree of vertex <m>v</m> </p>
+		<p> degree of vertex <m> v </m> </p>
 	</li>
 
 </dl></p>
@@ -254,7 +254,7 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 		<li> Each pair of vertices is adjacent. </li>
 		<li> Each pair of edges is adjacent but not parallel. </li>
 		<li> There are no loops. </li>
-		<li> Each vertex is incident to two non-loop edges, so each vertex has degree <m>2</m>. </li>
+		<li> Each vertex is incident to two non-loop edges, so each vertex has degree <m> 2 </m>. </li>
 	</ul>
 	</p>
 </example>
@@ -265,12 +265,12 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 	The graph of <xref ref="example-graphs-basic-graph-2" /> has the following properties.
 	<ul>
 		<li> It is not a simple graph. </li>
-		<li> There are three parallel edges linking <m>v_1</m> and <m>v_2</m>. </li>
-		<li> There are two loops at vertex <m>v_3</m> (and these are also parallel edges). </li>
-		<li> The parallel edges between <m>v_1</m> and <m>v_2</m> are adjacent, as are the two loops at <m>v_3</m>. </li>
-		<li> Vertices <m>v_1</m> and <m>v_2</m> are adjacent, and vertex <m>v_3</m> is adjacent to itself. </li>
-		<li> Vertices <m>v_1</m> and <m>v_2</m> are incident to the three edges running between them, and vertex <m>v_3</m> is incident to its two loops. </li>
-		<li> Vertex <m>v_4</m> is isolated </li>
+		<li> There are three parallel edges linking <m> v_1 </m> and <m> v_2 </m>. </li>
+		<li> There are two loops at vertex <m> v_3 </m> (and these are also parallel edges). </li>
+		<li> The parallel edges between <m> v_1 </m> and <m> v_2 </m> are adjacent, as are the two loops at <m> v_3 </m>. </li>
+		<li> Vertices <m> v_1 </m> and <m> v_2 </m> are adjacent, and vertex <m> v_3 </m> is adjacent to itself. </li>
+		<li> Vertices <m> v_1 </m> and <m> v_2 </m> are incident to the three edges running between them, and vertex <m> v_3 </m> is incident to its two loops. </li>
+		<li> Vertex <m> v_4 </m> is isolated </li>
 		<li>
 			For degrees we have
 			<md><mrow>
@@ -287,12 +287,12 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 The number of edges in a graph is an important measure both of how <q>connected</q> the graph is,
 as well as how much <q>redundancy</q> the graph contains.
 <dl width="narrow"><li>
-	<title><m>\card{E}</m></title>
+	<title><m> \card{E} </m></title>
 	<notation>
-		<usage><m>\card{E}</m></usage>
-		<description>the number of edges in the graph <m>G = (V,E)</m></description>
+		<usage><m> \card{E} </m></usage>
+		<description>the number of edges in the graph <m> G = (V,E) </m></description>
 	</notation>
-	<p> the number of edges in the graph <m>G = (V,E)</m> </p>
+	<p> the number of edges in the graph <m> G = (V,E) </m> </p>
 </li></dl>
 </p>
 
@@ -300,15 +300,15 @@ as well as how much <q>redundancy</q> the graph contains.
 <!-- \label{THEOREM::sum.of.degrees.in.graph} -->
 	<title>Sum of degrees is twice the number of edges</title>
 	<statement><p>
-		Suppose <m>G = (V,E)</m> is a graph with vertex set <m>V = \{ v_1, v_2, \dotsc, v_n \}</m>.
+		Suppose <m> G = (V,E) </m> is a graph with vertex set <m> V = \{ v_1, v_2, \dotsc, v_n \} </m>.
 		Then,
 		<md> \deg v_1 + \deg v_2 + \dotsc \deg v_n = 2\card{E}. </md>
 	</p></statement>
 	<proof><title>Proof idea</title><p>
-		If an edge <m>e</m> is a loop at vertex <m>v_i</m>, then it contributes <m>2</m> to <m>\deg v_i</m>.
-		Otherwise, if edge <m>e</m> links vertices <m>v_i</m> and <m>v_j</m> (<m>v_i \neq v_j</m>),
-		then it contributes <m>1</m> to each of <m>\deg v_i</m>  and <m>\deg v_j</m>.
-		In every case, each edge contributes exactly <m>2</m> to the sum of the vertex degrees.
+		If an edge <m> e </m> is a loop at vertex <m> v_i </m>, then it contributes <m> 2 </m> to <m> \deg v_i </m>.
+		Otherwise, if edge <m> e </m> links vertices <m> v_i </m> and <m> v_j </m> (<m> v_i \neq v_j </m>),
+		then it contributes <m> 1 </m> to each of <m> \deg v_i </m>  and <m> \deg v_j </m>.
+		In every case, each edge contributes exactly <m> 2 </m> to the sum of the vertex degrees.
 	</p></proof>
 </theorem>
 
@@ -351,27 +351,27 @@ as well as how much <q>redundancy</q> the graph contains.
 	</li>
 
 	<li xml:id="notationdef-graphs-subgraph">
-		<title><m>G' \subgraph G</m></title>
+		<title><m> G' \subgraph G </m></title>
 		<notation>
-			<usage><m>G' \subgraph G</m></usage>
-			<description>graph <m>G'</m> is a subgraph of graph <m>G</m></description>
+			<usage><m> G' \subgraph G </m></usage>
+			<description>graph <m> G' </m> is a subgraph of graph <m> G </m></description>
 		</notation>
-		<p> graph <m>G'</m> is a subgraph of graph <m>G</m> </p>
+		<p> graph <m> G' </m> is a subgraph of graph <m> G </m> </p>
 	</li>
 
 </dl></p>
 
 <remark><p>
-	Without a diagram, how can we tell if a graph <m>G' = (V',E')</m> is a subgraph of another graph <m>G = (V,E)</m>?
-	First, each vertex of <m>G'</m> should also be a vertex of <m>G</m>, so that <m>V' \subseteq V</m>.
-	And also, each edge of <m>G'</m> should also appear as an edge in <m>G</m>.
-	(Though we shouldn't just write <m>E' \subseteq E</m>, and not only because <m>E'</m> and <m>E</m> are actually sets <mdash />
+	Without a diagram, how can we tell if a graph <m> G' = (V',E') </m> is a subgraph of another graph <m> G = (V,E) </m>?
+	First, each vertex of <m> G' </m> should also be a vertex of <m> G </m>, so that <m> V' \subseteq V </m>.
+	And also, each edge of <m> G' </m> should also appear as an edge in <m> G </m>.
+	(Though we shouldn't just write <m> E' \subseteq E </m>, and not only because <m> E' </m> and <m> E </m> are actually sets <mdash />
 	see <xref ref="activity-graphs-subgraphs-by-arbitrary-subsets" />.)
 </p></remark>
 
 <note><p>
-	Just as <m>\emptyset \subseteq A</m> and <m>A \subseteq A</m> for every set <m>A</m>,
-	we consider <m>(\emptyset,\emptyset) \subgraph G</m> and <m>G \subgraph G</m> for every graph <m>G</m>.
+	Just as <m> \emptyset \subseteq A </m> and <m> A \subseteq A </m> for every set <m> A </m>,
+	we consider <m> (\emptyset,\emptyset) \subgraph G </m> and <m> G \subgraph G </m> for every graph <m> G </m>.
 </p></note>
 
 <problem> <!-- worked example -->
@@ -384,7 +384,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		First, every graph contains the empty graph as a subgraph.
 		Next, a nonempty subgraph of this particular graph can contain one, two, or all three vertices.
 		We can write out all nonempty possibilities in a general way based on the number of vertices in the subgraph.
-		In each graph below we require the vertex indices <m>i, j, k</m> to all be distinct and to satisfy <m>1 \le i,j,k \le 3</m>.
+		In each graph below we require the vertex indices <m> i, j, k </m> to all be distinct and to satisfy <m> 1 \le i,j,k \le 3 </m>.
 		</p>
 		<figure xml:id="figure-graphs-basic-subgraphs">
 			<caption>All possible subgraphs of our basic example graph from <xref ref="example-graphs-basic-graph-1" />.</caption>
@@ -394,9 +394,9 @@ as well as how much <q>redundancy</q> the graph contains.
 			</image>
 		</figure>
 		<p>
-		There are <m>3</m> subgraphs of each of the first three types in <xref ref="figure-graphs-basic-subgraphs" />.
-		There are also <m>3</m> subgraphs of the fourth and fifth types.
-		Therefore, including the empty graph, there are <m>18</m> subgraphs of this example graph.
+		There are <m> 3 </m> subgraphs of each of the first three types in <xref ref="figure-graphs-basic-subgraphs" />.
+		There are also <m> 3 </m> subgraphs of the fourth and fifth types.
+		Therefore, including the empty graph, there are <m> 18 </m> subgraphs of this example graph.
 		</p>
 	</solution>
 </problem>
@@ -424,22 +424,22 @@ as well as how much <q>redundancy</q> the graph contains.
 
 		<li>
 			<p>
-			For each <m>n \ge 0</m>,
+			For each <m> n \ge 0 </m>,
 			there is a <em>unique</em> complete graph
-			<m>K_n = (V,E)</m> with <m>\card{V} = n</m>.
+			<m> K_n = (V,E) </m> with <m> \card{V} = n </m>.
 			<idx>complete graph</idx>
 			<idx><h>graph</h><h>complete</h></idx>
 			<notation>
-				<usage><m>K_n</m></usage>
-				<description>the unique complete graph with <m>n</m> vertices</description>
+				<usage><m> K_n </m></usage>
+				<description>the unique complete graph with <m> n </m> vertices</description>
 			</notation>
 			</p>
 		</li>
 
-		<li> If <m>n \ge 1</m>, then every vertex in <m>K_n</m> has degree <m>n-1</m>. </li>
+		<li> If <m> n \ge 1 </m>, then every vertex in <m> K_n </m> has degree <m> n-1 </m>. </li>
 
 		<li xml:id="proposition-graphs-complete-simple-subgraph">
-			Every simple graph with <m>n</m> or fewer vertices is a subgraph of <m>K_n</m>.
+			Every simple graph with <m> n </m> or fewer vertices is a subgraph of <m> K_n </m>.
 		</li>
 
 	</ol></p>
@@ -447,25 +447,25 @@ as well as how much <q>redundancy</q> the graph contains.
 
 <!-- TODO These diagrams used to be inside the proposition. Are they better here? -->
 <figure xml:id="figure-graphs-complete-diagrams">
-	<caption>Complete graphs with <m>1</m>, <m>2</m>, <m>3</m>, and <m>6</m> vertices.</caption>
+	<caption>Complete graphs with <m> 1 </m>, <m> 2 </m>, <m> 3 </m>, and <m> 6 </m> vertices.</caption>
 	<sbsgroup>
 		<sidebyside widths="17.3% 17.3% 18.8%">  <!-- all three images are fudged to have same dimensions ?? -->
 			<figure>
-				<caption><m>K_1</m>.</caption>
+				<caption><m> K_1 </m>.</caption>
 				<image xml:id="image-graphs-K1">
 					<description>Complete graph with one vertex</description>
 					<latex-image><xi:include href="graphs.d/K1.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
 			<figure>
-				<caption><m>K_2</m>.</caption>
+				<caption><m> K_2 </m>.</caption>
 				<image xml:id="image-graphs-K2">
 					<description>Complete graph with two vertices</description>
 					<latex-image><xi:include href="graphs.d/K2.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
 			<figure>
-				<caption><m>K_3</m>.</caption>
+				<caption><m> K_3 </m>.</caption>
 				<image xml:id="image-graphs-K3">
 					<description>Complete graph with three vertices</description>
 					<latex-image><xi:include href="graphs.d/K3.tex" parse="text" /></latex-image>
@@ -474,7 +474,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		</sidebyside>
 		<sidebyside width="35.5%">
 			<figure>
-				<caption><m>K_6</m>.</caption>
+				<caption><m> K_6 </m>.</caption>
 				<image xml:id="image-graphs-K6">
 					<description>Complete graph with six vertices</description>
 					<latex-image><xi:include href="graphs.d/K6.tex" parse="text" /></latex-image>
@@ -484,8 +484,8 @@ as well as how much <q>redundancy</q> the graph contains.
 	</sbsgroup>
 </figure>
 
-<exercise><p> Draw the complete graphs <m>K_4</m> and <m>K_5</m>. </p></exercise>
-<exercise><p> Is there a complete graph <m>K_0</m>? </p></exercise>
+<exercise><p> Draw the complete graphs <m> K_4 </m> and <m> K_5 </m>. </p></exercise>
+<exercise><p> Is there a complete graph <m> K_0 </m>? </p></exercise>
 
 </subsection>
 
@@ -511,14 +511,14 @@ as well as how much <q>redundancy</q> the graph contains.
 		<idx><h>weighted graph</h><h>formal definition</h></idx>
 		<idx><h>graph</h><h>weighted</h><h>formal definition</h></idx>
 		<p>
-		an ordered triple <m>(V,E,w)</m>,
-		where <m>(V,E)</m> is an ordinary graph and <m>\funcdef{w}{E}{W}</m> is a function with some set <m>W</m> as codomain
+		an ordered triple <m> (V,E,w) </m>,
+		where <m> (V,E) </m> is an ordinary graph and <m> \funcdef{w}{E}{W} </m> is a function with some set <m> W </m> as codomain
 		</p>
 	</li>
 
 	<li>
 		<title>weights</title>
-		<p> elements of the image <m>w(E) \subseteq W</m> </p>
+		<p> elements of the image <m> w(E) \subseteq W </m> </p>
 	</li>
 
 </dl></p>
@@ -545,17 +545,17 @@ as well as how much <q>redundancy</q> the graph contains.
 			<caption>Table of values for distance weight function.</caption>
 			<tabular>
 				<col right="minor" /><col />
-				<row bottom="minor"><cell><m>e</m></cell><cell><m>w(e)</m></cell></row>
-				<row><cell>{Camrose, Edmonton}</cell><cell><m>94</m></cell></row>
-				<row><cell>{Edmonton, Leduc}</cell><cell><m>35</m></cell></row>
-				<row><cell>{Leduc, Wetaskiwin}</cell><cell><m>35</m></cell></row>
-				<row><cell>{Wetaskiwin, Camrose}</cell><cell><m>40</m></cell></row>
+				<row bottom="minor"><cell><m> e </m></cell><cell><m> w(e) </m></cell></row>
+				<row><cell>{Camrose, Edmonton}</cell><cell><m> 94 </m></cell></row>
+				<row><cell>{Edmonton, Leduc}</cell><cell><m> 35 </m></cell></row>
+				<row><cell>{Leduc, Wetaskiwin}</cell><cell><m> 35 </m></cell></row>
+				<row><cell>{Wetaskiwin, Camrose}</cell><cell><m> 40 </m></cell></row>
 			</tabular>
 		</figure>
 	</sidebyside>
 	<p>
 	The edges in the graph are weighted by the (rounded) highway distances between cities.
-	Formally, this is a function <m>w</m> from the edge set to the natural numbers.
+	Formally, this is a function <m> w </m> from the edge set to the natural numbers.
 	The input-output relationship defining this function is tabulated above right.
 	</p>
 </example>
@@ -582,18 +582,18 @@ as well as how much <q>redundancy</q> the graph contains.
 		<idx><h>directed graph</h><h>formal definition</h></idx>
 		<idx><h>graph</h><h>directed</h><h>formal definition</h></idx>
 		<p>
-		an ordered pair <m>(V,E)</m>,
-		where <m>V</m> is a finite set and <m>E</m> is an unordered, possibly empty list of elements of <m>V \times V</m>
+		an ordered pair <m> (V,E) </m>,
+		where <m> V </m> is a finite set and <m> E </m> is an unordered, possibly empty list of elements of <m> V \times V </m>
 		</p>
 	</li>
 </dl></p>
 
 <p>
-Again, elements of <m>V</m> are the vertices and elements of <m>E</m> are the edges of the graph.
-For an ordinary graph, edges were represented by subsets of <m>V</m> because when specifying an edge, the order of the vertices which are to be incident to the edge is irrelevant.
+Again, elements of <m> V </m> are the vertices and elements of <m> E </m> are the edges of the graph.
+For an ordinary graph, edges were represented by subsets of <m> V </m> because when specifying an edge, the order of the vertices which are to be incident to the edge is irrelevant.
 For a directed graph, the order of the vertices incident to an edge now matters, so we use ordered pairs of vertices to specify an edge.
-If <m>e = (v,v') \in E</m> for some <m>v,v' \in V</m>,
-consider the direction of <m>e</m> to be <m>v \to v'</m>.
+If <m> e = (v,v') \in E </m> for some <m> v,v' \in V </m>,
+consider the direction of <m> e </m> to be <m> v \to v' </m>.
 </p>
 
 <example>
@@ -604,10 +604,10 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 		<mrow> V = \{ v_1, v_2, v_3, v_4 \}, </mrow>
 		<mrow> E = \{ (v_1,v_2), (v_1,v_2), (v_2,v_3), (v_3,v_2), (v_4,v_3), (v_4,v_4) \}. </mrow>
 	</md>
-	We draw the graph <m>G = (V,E)</m> with arrows to indicate the direction of edges.
+	We draw the graph <m> G = (V,E) </m> with arrows to indicate the direction of edges.
 	</p>
 	<figure>
-		<caption>Diagram of the directed graph <m>G = (V,E)</m>.</caption>
+		<caption>Diagram of the directed graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-directed" width="59.1%">
 			<description>Diagram for a basic directed graph.</description>
 			<latex-image><xi:include href="graphs.d/basic-directed.tex" parse="text" /></latex-image>
@@ -628,35 +628,35 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 <!-- \label{EXAMPLE::pow.set.graph} -->
 	<title>A power set graph</title>
 	<p>
-	We can use a graph to visualize the power set of a finite set <m>A</m>:
-	let <m>(\powset{A},E)</m> be the directed graph where, for vertices <m>B,C \in \powset{A}</m>
-	(that is, subsets <m>B,C \subseteq A</m>),
-	the ordered pair <m>(B,C)</m> is an edge in <m>E</m> if the following two conditions are satisfied:
+	We can use a graph to visualize the power set of a finite set <m> A </m>:
+	let <m> (\powset{A},E) </m> be the directed graph where, for vertices <m> B,C \in \powset{A} </m>
+	(that is, subsets <m> B,C \subseteq A </m>),
+	the ordered pair <m> (B,C) </m> is an edge in <m> E </m> if the following two conditions are satisfied:
 	<ol marker="(i)">
-		<li> <m>B \subsetneqq C</m>; and </li>
-		<li> there <em>does not</em> exist a subset <m>D \subseteq A</m> such that <m>B \subsetneqq D \subsetneqq C</m>. </li>
+		<li> <m> B \subsetneqq C </m>; and </li>
+		<li> there <em>does not</em> exist a subset <m> D \subseteq A </m> such that <m> B \subsetneqq D \subsetneqq C </m>. </li>
 	</ol>
 	<em>Note:</em> The second condition is to avoid cluttering the graph with extra edges that do not add any extra information.
 	</p><p>
-	For example, consider <m>A = \{a,b,c\}</m> and
+	For example, consider <m> A = \{a,b,c\} </m> and
 	<md>
 		\powset{A} = \left\{
 			\, \emptyset, \, \{a\}, \, \{b\}, \, \{c\},\,
 			\{a,b\},\, \{a,c\},\, \{b,c\},\, \{a,b,c\} \,
 		\right\}.
 	</md>
-	So we can draw a graph to represent the subset relationships of <m>\powset{A}</m>,
+	So we can draw a graph to represent the subset relationships of <m> \powset{A} </m>,
 	with arrows to point from subset to superset.
 	</p>
 	<figure xml:id="figure-graphs-pow-set">
-		<caption>Directed graph to represent the subset relationships between elements of <m>\powset{A}</m>.</caption>
+		<caption>Directed graph to represent the subset relationships between elements of <m> \powset{A} </m>.</caption>
 		<image xml:id="image-graphs-powset" width="47%">
 			<description>Directed graph representing subset relationships in a power set.</description>
 			<latex-image><xi:include href="graphs.d/powset.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
 	<p>
-	It is somewhat natural to draw the graph with the largest subsets of <m>A</m> at the top (or at the bottom).
+	It is somewhat natural to draw the graph with the largest subsets of <m> A </m> at the top (or at the bottom).
 	If we decide that arrows will always point <em>upwards</em>,
 	we can unclutter our graph by just drawing lines instead of arrows for edges.
 	</p>
@@ -678,26 +678,26 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 <!-- \label{EXAMPLE::divides.graph} -->
 	<title>A division graph</title>
 	<p>
-	For integers <m>m,n</m>, write <m>m \mid n</m> if <m>m</m> divides <m>n</m>;
-	that is, if <m>n/m</m> is also an integer.
-	In this case, we say that <m>m</m> <term>divides</term> <m>n</m>.
+	For integers <m> m,n </m>, write <m> m \mid n </m> if <m> m </m> divides <m> n </m>;
+	that is, if <m> n/m </m> is also an integer.
+	In this case, we say that <m> m </m> <term>divides</term> <m> n </m>.
 	</p><p>
 	Set <md> V = \{2,3,4,5,6,7,8,9,10,11,12,13,14\} </md>.
-	Let <m>G = (V,E)</m> be the directed graph where, for integers <m>m,n \in V</m> with <m>m \lt n</m>,
-	the ordered pair <m>(m,n)</m> is an edge in <m>E</m> if the following two conditions are satisfied:
+	Let <m> G = (V,E) </m> be the directed graph where, for integers <m> m,n \in V </m> with <m> m \lt n </m>,
+	the ordered pair <m> (m,n) </m> is an edge in <m> E </m> if the following two conditions are satisfied:
 	<ol marker="(i)">
-		<li> <m>m \mid n</m>; </li>
+		<li> <m> m \mid n </m>; </li>
 		<li>
-			there <em>does not</em> exist an integer <m>\ell \in V</m> such that <m>m \mid \ell</m> and <m>\ell \mid n</m>,
-			but <m>\ell \ne m,n</m>.
+			there <em>does not</em> exist an integer <m> \ell \in V </m> such that <m> m \mid \ell </m> and <m> \ell \mid n </m>,
+			but <m> \ell \ne m,n </m>.
 		</li>
 	</ol>
-	We can use this directed graph to visualize the set <m>V</m> with respect to the <term>divides</term> relationship.
+	We can use this directed graph to visualize the set <m> V </m> with respect to the <term>divides</term> relationship.
 	Again, we agree that arrows will always point <em>up</em>,
 	but do not actually draw them. Note that the prime numbers all appear at the bottom.
 	</p>
 	<figure xml:id="figure-graphs-divides">
-		<caption>Directed graph to represent the relationship of division between elements of <m>V</m>.</caption>
+		<caption>Directed graph to represent the relationship of division between elements of <m> V </m>.</caption>
 		<image xml:id="image-graphs-divides" width="52%">
 			<description>Directed graph representing division relationships in a set of integers.</description>
 			<latex-image><xi:include href="graphs.d/divides.tex" parse="text" /></latex-image>

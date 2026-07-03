@@ -26,7 +26,7 @@ respective owners.
 </li></dl></p>
 
 <example><title>Some objects</title><p><ul>
-	<li> The number <m>2</m>. </li>
+	<li> The number <m> 2 </m>. </li>
 	<li> The real number line. </li>
 	<li> A chicken. </li>
 	<li> A basket of tennis balls. </li>
@@ -41,14 +41,14 @@ respective owners.
 <example><title>Some sets</title><p>
 	From our list of example objects above, we would intuitively consider
 	<ul>
-		<li> the number <m>2</m> to not be a set; </li>
+		<li> the number <m> 2 </m> to not be a set; </li>
 		<li> the real number line to be a set as it is a collection of points, each representing a different real number; </li>
 		<li> a chicken to not be a set; and </li>
 		<li> a basket of tennis balls to be a set as it is a collection of tennis balls (though the basket itself is not part of this set, just the container for the objects making up the set). </li>
 	</ul>
 	However, the answers above may depend on your point of view.
 	For example, a chicken could be considered a collection of cells.
-	Even the number <m>2</m> is sometimes <em>defined</em> to be a set!
+	Even the number <m> 2 </m> is sometimes <em>defined</em> to be a set!
 	(See <xref ref="example-recur-induct-construct-nat-nums" />.)
 </p></example>
 
@@ -81,8 +81,8 @@ We need one more primitive term to make set theory workable.
 		<idx><h>set(s)</h><h>membership</h></idx>
 		<p>
 		a property of sets relative to other objects:
-		given object <m>x</m> and set <m>S</m>,
-		exactly <em>one</em> of the statements <q><m>x</m> is a member of <m>S</m></q> and <q><m>x</m> is not a member of <m>S</m></q> is true
+		given object <m> x </m> and set <m> S </m>,
+		exactly <em>one</em> of the statements <q><m> x </m> is a member of <m> S </m></q> and <q><m> x </m> is not a member of <m> S </m></q> is true
 		</p>
 	</li>
 	<li>
@@ -92,12 +92,12 @@ We need one more primitive term to make set theory workable.
 		<p> an object that is a member of a set </p>
 	</li>
 	<li>
-		<title><m>x \in S</m></title>
+		<title><m> x \in S </m></title>
 		<notation>
-			<usage><m>x \in S</m></usage>
-			<description>object <m>x</m> is an element of set <m>S</m></description>
+			<usage><m> x \in S </m></usage>
+			<description>object <m> x </m> is an element of set <m> S </m></description>
 		</notation>
-		<p> object <m>x</m> is an element of set <m>S</m> </p>
+		<p> object <m> x </m> is an element of set <m> S </m> </p>
 		</li>
 </dl>
 </p>
@@ -123,7 +123,7 @@ One way to communicate the details of a set definition is to <em>explicitly</em>
 Such a list should be enclosed in
 <term>braces</term>
 <notation>
-  <usage><m>\{a,b,c,\dotsc\}</m></usage>
+  <usage><m> \{a,b,c,\dotsc\} </m></usage>
   <description>a set defined by listing its elements, enclosed in braces</description>
 </notation>
 to indicate that the objects in the list are being collected into a set.
@@ -131,10 +131,10 @@ to indicate that the objects in the list are being collected into a set.
 
 <example><title>Listing the elements of a set</title><p>
 	If we write <md> A = \{ \text{chicken, tennis ball, the number } 2 \} </md>,
-	then we intend for the letter <m>A</m> to become a label representing the set consisting of
+	then we intend for the letter <m> A </m> to become a label representing the set consisting of
 	some specific chicken,
 	some specific tennis ball,
-	and the number <m>2</m>.
+	and the number <m> 2 </m>.
 </p></example>
 
 <p>
@@ -143,41 +143,41 @@ Notice how in the first two examples we <q>list</q> the elements by providing a 
 and in the second two examples we merely describe what the elements are in words.
 <dl width="narrow">
 	<li>
-		<title><m>\N</m></title>
+		<title><m> \N </m></title>
 		<idx><h>natural</h><h>numbers, set of</h></idx>
 		<idx><h>numbers</h><h>natural</h></idx>
 		<notation>
-		  <usage><m>\N</m></usage>
+		  <usage><m> \N </m></usage>
 		  <description>the set of natural numbers</description>
 		</notation>
-		<p> the set <m>\{ 0, 1, 2, \dotsc \}</m> of <term>natural numbers</term> </p>
+		<p> the set <m> \{ 0, 1, 2, \dotsc \} </m> of <term>natural numbers</term> </p>
 	</li>
 	<li>
-		<title><m>\Z</m></title>
+		<title><m> \Z </m></title>
 		<idx>integers, set of</idx>
 		<idx><h>numbers</h><h>integers</h></idx>
 		<notation>
-		  <usage><m>\Z</m></usage>
+		  <usage><m> \Z </m></usage>
 		  <description>the set of integers</description>
 		</notation>
-		<p> the set <m>\{ \dotsc, -2, -1, 0, 1, 2, \dotsc \}</m> of <term>integers</term> </p>
+		<p> the set <m> \{ \dotsc, -2, -1, 0, 1, 2, \dotsc \} </m> of <term>integers</term> </p>
 	</li>
 	<li>
-		<title><m>\Q</m></title>
+		<title><m> \Q </m></title>
 		<idx>rational numbers, set of</idx>
 		<idx><h>numbers</h><h>rational</h></idx>
 		<notation>
-		  <usage><m>\Q</m></usage>
+		  <usage><m> \Q </m></usage>
 		  <description>the set of rational numbers</description>
 		</notation>
 		<p> the set of all fractions, call the set of <term>rational numbers</term> </p>
 	</li>
 	<li>
-		<title><m>\R</m></title>
+		<title><m> \R </m></title>
 		<idx>real numbers, set of</idx>
 		<idx><h>numbers</h><h>real</h></idx>
 		<notation>
-		  <usage><m>\R</m></usage>
+		  <usage><m> \R </m></usage>
 		  <description>the set of real numbers</description>
 		</notation>
 		<p> the set of all decimal numbers, called the set of <term>real numbers</term> </p>
@@ -189,11 +189,11 @@ and in the second two examples we merely describe what the elements are in words
 	<ul>
 		<li>
 			<em>Order does not matter</em>.
-			For example, <m>\{a,b\}</m> and <m>\{b,a\}</m> are the same set because they consist of precisely the same member elements.
+			For example, <m> \{a,b\} </m> and <m> \{b,a\} </m> are the same set because they consist of precisely the same member elements.
 		</li>
 		<li>
 			<em>Repetition does not matter</em>.
-			For example, <m>\{a,a,b\}</m> and <m>\{a,b\}</m> are the same set because they consist of precisely the same member elements.
+			For example, <m> \{a,a,b\} </m> and <m> \{a,b\} </m> are the same set because they consist of precisely the same member elements.
 		</li>
 	</ul>
 </p></note>
@@ -210,15 +210,15 @@ Another way to define a set is <term>candidate-condition notation</term>:
 <md> \text{set} = \setdef{\text{candidate domain}}{\text{condition(s) on candidates}} </md>.
 This notation provides a means to decide whether an object is a member of the set by first using an already-defined set as a pool of <q>member candidates</q> as well a condition or a list of conditions each candidate must satisfy in order to actually be a member.
 </p><p>
-If we write <m>S</m> for the set being defined,
-<m>C</m> for the set of candidates, and <m>T</m> for the test those candidates must satisfy to be included in <m>S</m>
-(that is, <m>T</m> is a predicate with domain <m>C</m>),
+If we write <m> S </m> for the set being defined,
+<m> C </m> for the set of candidates, and <m> T </m> for the test those candidates must satisfy to be included in <m> S </m>
+(that is, <m> T </m> is a predicate with domain <m> C </m>),
 then the candidate-condition notation takes the form
 <md> S = \setdef{x \in C}{T(x)} </md>,
 and can be read as
 </p>
 <blockquote><p>
-	<m>S</m> is the set of those elements <m>x</m> in <m>C</m> for which <m>T(x)</m> is true.
+	<m> S </m> is the set of those elements <m> x </m> in <m> C </m> for which <m> T(x) </m> is true.
 </p></blockquote>
 
 <example>
@@ -228,11 +228,11 @@ and can be read as
 	We could define this set in a more precise manner
 	(<ie /> without resorting to using dots) as follows.
 	<md> A = \setdef{ n \in \N }{ n \text{ divisible by } 3 } </md>
-	The <q><m>n\in\N</m></q> part to the left of the divider tells us that the pool of <q>member candidates</q> for <m>A</m> is the set of natural numbers, and the test to the right of the divider tells us how to decide when a given candidate natural number <m>n</m> is actually a member of <m>A</m>.
+	The <q><m> n\in\N </m></q> part to the left of the divider tells us that the pool of <q>member candidates</q> for <m> A </m> is the set of natural numbers, and the test to the right of the divider tells us how to decide when a given candidate natural number <m> n </m> is actually a member of <m> A </m>.
 	In words, you should think of the above definition as saying the following.
 	</p>
 	<blockquote><p>
-		Set <m>A</m> consists of those elements of <m>\N</m> which are divisible by <m>3</m>.
+		Set <m> A </m> consists of those elements of <m> \N </m> which are divisible by <m> 3 </m>.
 	</p></blockquote>
 </example>
 
@@ -256,19 +256,19 @@ Usually the <q>form</q> is based on parameter variables that can range over a se
 	Again consider the set <md> A = \{ 0, 3, 6, 9, 12, \dotsc \} </md>.
 	We could also define this set as
 	<md> A = \setdef{3n}{n\in \N} </md>.
-	Here, the <term>form</term> of the elements of <m>A</m> is given to the left of the divider as <q><m>3</m> times a number</q>, where the number is represented by the <term>parameter</term> <m>n</m>.
-	Then the allowed range of the number parameter <m>n</m> is given to the right of the divider.
+	Here, the <term>form</term> of the elements of <m> A </m> is given to the left of the divider as <q><m> 3 </m> times a number</q>, where the number is represented by the <term>parameter</term> <m> n </m>.
+	Then the allowed range of the number parameter <m> n </m> is given to the right of the divider.
 	In words, you should think of the above definition as saying the following.
 	</p>
-	<blockquote><p> The elements of set <m>A</m> are precisely those objects that are <m>3</m> times a natural number. </p></blockquote>
+	<blockquote><p> The elements of set <m> A </m> are precisely those objects that are <m> 3 </m> times a natural number. </p></blockquote>
 </example>
 
 <example>
 	<title>Defining the set of fractions</title>
 	<p>
-	We could define the set <m>\Q</m> of <term>rational numbers</term> in this way:
+	We could define the set <m> \Q </m> of <term>rational numbers</term> in this way:
 	<md> \Q = \setdef{\frac{m}{n}}{ m,n\in \Z,\, n\ne 0} </md>.
-	This says that the set <m>\Q</m> consists of all symbols of the form <q>number over number</q>,
+	This says that the set <m> \Q </m> consists of all symbols of the form <q>number over number</q>,
 	where the numbers can be any integers, as long as the bottom number is not zero.
 	However, we need to be a little bit careful here, since we allow different symbols of this form to represent the same element.
 	For example,
@@ -300,9 +300,9 @@ There is one special set, the elements of which are very easy to list.
 	</li>
 
 	<li>
-		<title><m>\emptyset</m></title>
+		<title><m> \emptyset </m></title>
 		<notation>
-			<usage><m>\emptyset</m></usage>
+			<usage><m> \emptyset </m></usage>
 			<description>the empty set</description>
 		</notation>
 		<p> the empty set </p>
@@ -312,7 +312,7 @@ There is one special set, the elements of which are very easy to list.
 </p>
 
 <remark><p>
-	The empty set is defined by requiring that the statement <q><m>x</m> is an element of <m>\emptyset</m></q> is <em>always</em> false, for every object <m>x</m>.
+	The empty set is defined by requiring that the statement <q><m> x </m> is an element of <m> \emptyset </m></q> is <em>always</em> false, for every object <m> x </m>.
 </p></remark>
 
 <warning><p>
@@ -341,12 +341,12 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	</li>
 
 	<li>
-		<title><m>A \subseteq B</m></title>
+		<title><m> A \subseteq B </m></title>
 		<notation>
-			<usage><m>A \subseteq B</m></usage>
-			<description>set <m>A</m> is a subset of set <m>B</m></description>
+			<usage><m> A \subseteq B </m></usage>
+			<description>set <m> A </m> is a subset of set <m> B </m></description>
 		</notation>
-		<p> set <m>A</m> is a <term>subset of</term> or is <term>contained in</term> set <m>B</m> </p>
+		<p> set <m> A </m> is a <term>subset of</term> or is <term>contained in</term> set <m> B </m> </p>
 	</li>
 
 </dl>
@@ -366,24 +366,24 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	<idx><h>Test</h><h>subset</h></idx>
 	<idx><h>subset</h><h>Test</h></idx>
 	<idx><h>set(s)</h><h>sub-</h><h>Test</h></idx>
-	<statement><p> To demonstrate <m>A\subseteq B</m>, prove <m>(\forall x)(x \in A \lgcimplies x \in B)</m>. </p></statement>
+	<statement><p> To demonstrate <m> A\subseteq B </m>, prove <m> (\forall x)(x \in A \lgcimplies x \in B) </m>. </p></statement>
 </claim>
 
 <example xml:id="example-sets-number-subsets">
 	<title>Basic examples involving familiar sets of numbers</title>
 	<p><ul>
 		<li>
-			Every natural number is an integer, so <m>\N \subseteq \Z</m>.
-			To emphasize this, we could write <m>\N = \inlinesetdef{m \in \Z}{m \ge 0}</m>.
+			Every natural number is an integer, so <m> \N \subseteq \Z </m>.
+			To emphasize this, we could write <m> \N = \inlinesetdef{m \in \Z}{m \ge 0} </m>.
 		</li>
 		<li>
 			Every integer can be considered to be a rational number,
-			since for every <m>m\in\Z</m> we can write <m>m = \frac{a}{b}</m> with <m>a=m</m> and <m>b=1</m>.
-			Thus <m>\Z \subseteq \Q</m>.
+			since for every <m> m\in\Z </m> we can write <m> m = \frac{a}{b} </m> with <m> a=m </m> and <m> b=1 </m>.
+			Thus <m> \Z \subseteq \Q </m>.
 		</li>
 		<li>
 			Every rational number can be considered to be a real number if we identify fractions with their decimal expansions via long division.
-			Thus <m>\Q \subseteq \R</m>.
+			Thus <m> \Q \subseteq \R </m>.
 		</li>
 	</ul></p>
 </example>
@@ -398,34 +398,34 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	so our defined set must be a subset of the candidate set.
 	</p><p>
 	For example, in <xref ref="example-sets-number-subsets" />,
-	we provided a definition for the set <m>\N</m> in candidate-condition form where the pool of candidates is the set <m>\Z</m>.
-	This definition makes it explicit that <m>\N \subseteq \Z</m>.
+	we provided a definition for the set <m> \N </m> in candidate-condition form where the pool of candidates is the set <m> \Z </m>.
+	This definition makes it explicit that <m> \N \subseteq \Z </m>.
 	</p>
 </example>
 
 <problem xml:id="wexample-sets-subset"> <!-- worked example -->
 	<statement><p>
-		Prove that <m>A \subseteq B</m> for
+		Prove that <m> A \subseteq B </m> for
 		<md><mrow>
 			A \amp = \setdef{3m + 1}{m \in \Z}, \amp
 			B \amp = \setdef{x \in \R}{\sin\left(\frac{\pi(x-1)}{3}\right) = 0}.
 		</mrow></md>
 	</p></statement>
 	<solution><p>
-		There are an infinite number of elements of <m>A</m>, so we cannot check that all elements of <m>A</m> are also elements of <m>B</m> one-by-one.
-		Instead, we let a variable <m>x</m> represent an <em>arbitrary</em> but unspecified element of <m>A</m>.
-		Since all elements of <m>A</m> have the form <m>3m+1</m> for some <m>m \in \Z</m>,
-		we have <m>x = 3m+1</m> for some <m>m \in \Z</m>.
-		Check the condition for being an element of <m>B</m> by calculating
+		There are an infinite number of elements of <m> A </m>, so we cannot check that all elements of <m> A </m> are also elements of <m> B </m> one-by-one.
+		Instead, we let a variable <m> x </m> represent an <em>arbitrary</em> but unspecified element of <m> A </m>.
+		Since all elements of <m> A </m> have the form <m> 3m+1 </m> for some <m> m \in \Z </m>,
+		we have <m> x = 3m+1 </m> for some <m> m \in \Z </m>.
+		Check the condition for being an element of <m> B </m> by calculating
 		<md>
 			\sin\left(\frac{\pi(x-1)}{3}\right)
 			= \sin\left(\frac{\pi\bbrac{(3m+1)-1}}{3}\right)
 			= \sin (m\pi)
 			= 0.
 		</md>
-		Therefore, <m>x \in B</m>.
-		Since the above calculation works for every <m>m \in \Z</m>,
-		all elements of <m>A</m> are elements of <m>B</m>.
+		Therefore, <m> x \in B </m>.
+		Since the above calculation works for every <m> m \in \Z </m>,
+		all elements of <m> A </m> are elements of <m> B </m>.
 	</p></solution>
 </problem>
 
@@ -434,16 +434,16 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	<ol>
 		<li>
 			Every set has an empty set as a subset.
-			That is, <m>\emptyset \subseteq S</m> is always true for a set <m>S</m>.
+			That is, <m> \emptyset \subseteq S </m> is always true for a set <m> S </m>.
 		</li>
 		<li>
 			Every set is a subset of itself.
-			That is, <m>S \subseteq S</m> is always true for a set <m>S</m>.
+			That is, <m> S \subseteq S </m> is always true for a set <m> S </m>.
 		</li>
 		<li>
 			The subset relation is <term>transitive</term>.
-			That is, whenever <m>A \subseteq B</m> and <m>B \subseteq C</m> are true,
-			then <m>A \subseteq C</m> is true as well.
+			That is, whenever <m> A \subseteq B </m> and <m> B \subseteq C </m> are true,
+			then <m> A \subseteq C </m> is true as well.
 		</li>
 	</ol>
 </proposition>
@@ -457,7 +457,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	<title>set equality</title>
 	<idx><h>equality</h><h>of sets</h></idx>
 	<idx><h>set(s)</h><h>equality</h></idx>
-	<p> write <m>A = B</m> if both sets consist of precisely the same elements </p>
+	<p> write <m> A = B </m> if both sets consist of precisely the same elements </p>
 </li></dl></p>
 
 <claim xml:id="test-sets-equality">
@@ -466,12 +466,12 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	<idx><h>equality</h><h>of sets</h><h>test</h></idx>
 	<idx><h>set(s)</h><h>equality</h><h>test</h></idx>
 	<statement>
-		<p> To demonstrate <m>A = B</m>, check that both <m>A \subseteq B</m> and <m>B \subseteq A</m>. </p>
+		<p> To demonstrate <m> A = B </m>, check that both <m> A \subseteq B </m> and <m> B \subseteq A </m>. </p>
 		<p>
 		This requires two applications of the <xref ref="test-sets-subset" text="custom">Subset Test</xref>:
 		<ol marker="(i)">
-			<li> begin with the assumption <m>x \in A</m> and proceed to the conclusion <m>x \in B</m>; </li>
-			<li> begin with the assumption <m>x \in B</m> and proceed to the conclusion <m>x \in A</m>. </li>
+			<li> begin with the assumption <m> x \in A </m> and proceed to the conclusion <m> x \in B </m>; </li>
+			<li> begin with the assumption <m> x \in B </m> and proceed to the conclusion <m> x \in A </m>. </li>
 		</ol>
 	</p></statement>
 </claim>
@@ -480,31 +480,31 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	One could combine both applications of
 	the <xref ref="test-sets-subset" text="custom">Subset Test</xref>
 	described in the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref> above into one biconditional:
-	<m>A = B</m> is true if <md>(\forall x)(x \in A \lgcequiv x \in B)</md> is true.
-	If the logic of <m>x \in A \lgcimplies x \in B</m> is easily reversed,
-	then it makes sense to argue <m>x \in A \lgcequiv x \in B</m> instead of separately arguing
-	<m>x \in A \lgcimplies x \in B</m> and <m>x \in B \lgcimplies x \in A</m>.
+	<m> A = B </m> is true if <md>(\forall x)(x \in A \lgcequiv x \in B)</md> is true.
+	If the logic of <m> x \in A \lgcimplies x \in B </m> is easily reversed,
+	then it makes sense to argue <m> x \in A \lgcequiv x \in B </m> instead of separately arguing
+	<m> x \in A \lgcimplies x \in B </m> and <m> x \in B \lgcimplies x \in A </m>.
 	However, in most cases separate arguments of these logical implications is preferred.
 </p></remark>
 
 <problem> <!-- worked example -->
 	<statement><p>
-		Let <m>A</m> and <m>B</m> be as in <xref ref="wexample-sets-subset" />.
-		Prove that <m>A = B</m>.
+		Let <m> A </m> and <m> B </m> be as in <xref ref="wexample-sets-subset" />.
+		Prove that <m> A = B </m>.
 	</p></statement>
 	<solution>
-		<case><title>Show <m>A\subseteq B</m></title><p> See <xref ref="wexample-sets-subset" />. </p> </case>
+		<case><title>Show <m> A\subseteq B </m></title><p> See <xref ref="wexample-sets-subset" />. </p> </case>
 		<case>
-			<title>Show <m>B \subseteq A</m></title>
+			<title>Show <m> B \subseteq A </m></title>
 			<p>
-			Let <m>x</m> represent an arbitrary element of <m>B</m>.
+			Let <m> x </m> represent an arbitrary element of <m> B </m>.
 			This means that
 			<md> \sin\left(\frac{\pi(x-1)}{3}\right) = 0. </md>
-			However, we know from trigonometry that <m>\sin \theta = 0</m> if and only if <m>\theta</m> is an integer multiple of <m>\pi</m>;
-			<ie /> <m>\theta = m\pi</m> for some <m>m \in \Z</m>.
+			However, we know from trigonometry that <m> \sin \theta = 0 </m> if and only if <m> \theta </m> is an integer multiple of <m> \pi </m>;
+			<ie /> <m> \theta = m\pi </m> for some <m> m \in \Z </m>.
 			If we set
 			<md> \frac{\pi(x-1)}{3} = m\pi </md>
-			and solve for <m>x</m>, we get <m>x = 3m+1 \in A</m>.
+			and solve for <m> x </m>, we get <m> x = 3m+1 \in A </m>.
 			</p>
 		</case>
 	</solution>
@@ -519,17 +519,17 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<p> a set contained in <em>but not equal to</em> another set </p>
 	</li>
 	<li>
-		<title><m>A \subsetneqq B</m></title>
+		<title><m> A \subsetneqq B </m></title>
 		<notation>
-			<usage><m>A \subsetneqq B</m></usage>
-			<description>set <m>A</m> is a proper subset of set <m>B</m></description>
+			<usage><m> A \subsetneqq B </m></usage>
+			<description>set <m> A </m> is a proper subset of set <m> B </m></description>
 		</notation>
-		<p> set <m>A</m> is a proper subset of set <m>B</m> </p>
+		<p> set <m> A </m> is a proper subset of set <m> B </m> </p>
 	</li>
 </dl></p>
 
 <note><p>
-	Some people exclude <m>\emptyset</m> from the definition of proper subset.
+	Some people exclude <m> \emptyset </m> from the definition of proper subset.
 </p></note>
 
 <claim>
@@ -538,27 +538,27 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	<idx><h>proper</h><h>subset</h><h>Test</h></idx>
 	<idx><h>subset</h><h>proper</h><h>Test</h></idx>
 	<statement><p>
-		To demonstrate <m>A \subsetneqq B</m>,
-		first test <m>A \subseteq B</m> as usual (<xref ref="test-sets-subset" />),
-		but also demonstrate that there exists some <m>x \in B</m> such that <m>x \notin A</m>.
+		To demonstrate <m> A \subsetneqq B </m>,
+		first test <m> A \subseteq B </m> as usual (<xref ref="test-sets-subset" />),
+		but also demonstrate that there exists some <m> x \in B </m> such that <m> x \notin A </m>.
 	</p></statement>
 </claim>
 
 <example>
 	<title>Proper subsets of number sets</title>
 	<p>
-		We already know that <m> \N \subseteq \Z \subseteq \Q \subseteq \R</m>, but we have
+		We already know that <m> \N \subseteq \Z \subseteq \Q \subseteq \R </m>, but we have
 		<ol>
-			<li> <m>\N \subsetneqq \Z</m>, since, for example, <m>-1 \in \Z</m> but <m>-1 \notin \N</m>; </li>
-			<li> <m>\Z \subsetneqq \Q</m>, since, for example, <m>\frac{1}{2} \in \Q</m> but <m>\frac{1}{2} \notin \Z</m>; and </li>
-			<li> <m>\Q \subsetneqq \R</m>, since, for example, <m>\sqrt{2} \in \R</m> but <m>\sqrt{2} \notin \Q</m>. </li>
+			<li> <m> \N \subsetneqq \Z </m>, since, for example, <m> -1 \in \Z </m> but <m> -1 \notin \N </m>; </li>
+			<li> <m> \Z \subsetneqq \Q </m>, since, for example, <m> \frac{1}{2} \in \Q </m> but <m> \frac{1}{2} \notin \Z </m>; and </li>
+			<li> <m> \Q \subsetneqq \R </m>, since, for example, <m> \sqrt{2} \in \R </m> but <m> \sqrt{2} \notin \Q </m>. </li>
 		</ol>
 	</p>
 </example>
 
 <remark><p>
-	To show the <m>A \neq B</m> part of <m>A\subsetneqq B</m>, you only need to exhibit <em>one</em> example element of <m>B</m> which is not in <m>A</m>;
-	<ie /> you need to find a <term>counterexample</term> for the logical implication <m>x \in B \lgcimplies x \in A</m>.
+	To show the <m> A \neq B </m> part of <m> A\subsetneqq B </m>, you only need to exhibit <em>one</em> example element of <m> B </m> which is not in <m> A </m>;
+	<ie /> you need to find a <term>counterexample</term> for the logical implication <m> x \in B \lgcimplies x \in A </m>.
 </p></remark>
 
 </section>
@@ -575,8 +575,8 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<idx><h>set(s)</h><h>universal</h></idx>
 		<p> a set that contains all objects currently under consideration </p>
 	</li></dl>
-	We will consider all of the following set operations to be performed within a universal set <m>U</m>.
-	In particular, suppose <m>A,B\subseteq U</m>.
+	We will consider all of the following set operations to be performed within a universal set <m> U </m>.
+	In particular, suppose <m> A,B\subseteq U </m>.
 </p></introduction>
 
 <subsection>
@@ -587,16 +587,16 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title>complement</title>
 		<idx><h>complement</h><h>set</h></idx>
 		<idx><h>set(s)</h><h>complement</h></idx>
-		<p> the set of elements of <m>U</m> which are <em>not</em> in <m>A</m> </p>
+		<p> the set of elements of <m> U </m> which are <em>not</em> in <m> A </m> </p>
 	</li>
 	<li>
-		<title><m>\cmplmnt{A}</m></title>
+		<title><m> \cmplmnt{A} </m></title>
 		<notation>
-			<usage><m>\cmplmnt{A}</m></usage>
-			<description>the complement of <m>A</m> relative to some universal set</description>
+			<usage><m> \cmplmnt{A} </m></usage>
+			<description>the complement of <m> A </m> relative to some universal set</description>
 		</notation>
 		<p>
-		the complement of <m>A</m> (in <m>U</m>), so that
+		the complement of <m> A </m> (in <m> U </m>), so that
 		<md> \cmplmnt{A} = \setdef{ x \in U }{ x \notin A } </md>
 		</p>
 	</li>
@@ -606,17 +606,17 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<idx>relative complement</idx>
 		<idx><h>complement</h><h>set</h><h>relative</h></idx>
 		<p>
-		if <m>A,B \subseteq U</m>, the <term>complement of <m>A</m> in <m>B</m></term> is the set of elements of <m>B</m> which are not in <m>A</m>
+		if <m> A,B \subseteq U </m>, the <term>complement of <m> A </m> in <m> B </m></term> is the set of elements of <m> B </m> which are not in <m> A </m>
 		</p>
 	</li>
 	<li>
-		<title><m>B \relcmplmnt A</m></title>
+		<title><m> B \relcmplmnt A </m></title>
 		<notation>
-			<usage><m>B \relcmplmnt A</m></usage>
-			<description>the complement of <m>A</m> relative to some universal set</description>
+			<usage><m> B \relcmplmnt A </m></usage>
+			<description>the complement of <m> A </m> relative to some universal set</description>
 		</notation>
 		<p>
-		the complement of <m>A</m> in <m>B</m>, so that
+		the complement of <m> A </m> in <m> B </m>, so that
 		<md> B \relcmplmnt A = \setdef{ x \in B }{ x \notin A } </md>
 		</p>
 	</li>
@@ -637,19 +637,19 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 </figure>
 
 <note><p>
-	Another common notation for relative complement is <m>B - A</m>.
-	However, this conflicts with the notation for the algebraic operation of subtraction in certain contexts, so we will prefer the notation <m>B \relcmplmnt A</m>.
+	Another common notation for relative complement is <m> B - A </m>.
+	However, this conflicts with the notation for the algebraic operation of subtraction in certain contexts, so we will prefer the notation <m> B \relcmplmnt A </m>.
 </p></note>
 
 <example>
 	<title>Some examples of relative complement involving number sets</title>
 	<p><ul>
 		<li>
-			Suppose <m>B = \{ 1, 2, 3, 4, 5, 6 \}</m> and <m>A = \{ 1, 3, 5 \}</m>.
-			Then <m>B \relcmplmnt A = \{ 2, 4, 6 \}</m>.
+			Suppose <m> B = \{ 1, 2, 3, 4, 5, 6 \} </m> and <m> A = \{ 1, 3, 5 \} </m>.
+			Then <m> B \relcmplmnt A = \{ 2, 4, 6 \} </m>.
 		</li>
 		<li>
-			The complement of the set of rational numbers <m>\Q</m> inside the set of real numbers <m>\R</m> is called the
+			The complement of the set of rational numbers <m> \Q </m> inside the set of real numbers <m> \R </m> is called the
 			<term>set of irrational numbers</term>,
 			<idx><h>set(s)</h><h>of irrational numbers</h></idx>
 			<idx><h>irrational number(s)</h><h>set of</h></idx>
@@ -657,7 +657,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 			<m> \I = \R \relcmplmnt \Q </m>
 			for this set.
 			<notation>
-				<usage><m>\I</m></usage>
+				<usage><m> \I </m></usage>
 				<description> the set of irrational real numbers </description>
 			</notation>
 			If you are thinking of real numbers in terms of their decimal expanions,
@@ -679,13 +679,13 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<p> the combined collection of all elements in a pair of sets </p>
 	</li>
 	<li>
-		<title><m>A \union B</m></title>
+		<title><m> A \union B </m></title>
 		<notation>
-			<usage><m>A \union B</m></usage>
-			<description>the union of sets <m>A</m> and <m>B</m></description>
+			<usage><m> A \union B </m></usage>
+			<description>the union of sets <m> A </m> and <m> B </m></description>
 		</notation>
 		<p>
-			the union of sets <m>A</m> and <m>B</m>, so that
+			the union of sets <m> A </m> and <m> B </m>, so that
 			<md> A \union B = \setdef{x\in U}{x\in A \text{ or } x\in B \text{ (or both)}} </md>
 		</p>
 	</li>
@@ -696,13 +696,13 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<p> the collection of only those elements common to a pair of sets </p>
 	</li>
 	<li>
-		<title><m>A \intersection B</m></title>
+		<title><m> A \intersection B </m></title>
 		<notation>
-			<usage><m>A \intersection B</m></usage>
-			<description>the intersection of <m>A</m> and <m>B</m></description>
+			<usage><m> A \intersection B </m></usage>
+			<description>the intersection of <m> A </m> and <m> B </m></description>
 		</notation>
 		<p>
-			the intersection of <m>A</m> and <m>B</m>, so that
+			the intersection of <m> A </m> and <m> B </m>, so that
 			<md> A \intersection B = \setdef{x\in U}{x\in A \text{ and } x\in B} </md>
 		</p>
 	</li>
@@ -730,13 +730,13 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 </p></note>
 
 <example><p>
-	For subsets <m>A = \{1,2,3,4\}</m> and <m>B = \{3,4,5,6\}</m> of <m>\N</m>,
+	For subsets <m> A = \{1,2,3,4\} </m> and <m> B = \{3,4,5,6\} </m> of <m> \N </m>,
 	we have
 	<md><mrow> A \union B \amp = \{1,2,3,4,5,6\}, \amp A \intersection B \amp = \{3,4\}. </mrow></md>
 </p></example>
 
 <example xml:id="example-sets-union-intersection-number-sets"><p>
-	Consider the following subsets of <m>\N</m>.
+	Consider the following subsets of <m> \N </m>.
 	<md><mrow>
 		\mathscr{E} \amp = \setdef{n\in\N}{n\text{ even}} \amp
 		\mathscr{P} \amp = \setdef{n\in\N}{n\text{ prime, } n\ne 0} \\
@@ -759,22 +759,22 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title>disjoint sets</title>
 		<idx><h>disjoint</h><h>sets</h></idx>
 		<idx><h>set(s)</h><h>disjoint</h></idx>
-		<p> sets that have no elements in common, <ie /> sets <m>A,B</m> such that <m>A\intersection B = \emptyset</m> </p>
+		<p> sets that have no elements in common, <ie /> sets <m> A,B </m> such that <m> A\intersection B = \emptyset </m> </p>
 	</li>
 	<li xml:id="definition-sets-disjoint-union">
 		<title>disjoint union</title>
 		<idx><h>disjoint</h><h>union</h></idx>
 		<idx><h>set(s)</h><h>disjoint</h><h>union</h></idx>
 		<idx><h>union</h><h>of sets</h><h>disjoint</h></idx>
-		<p> a union <m>A \union B</m> where <m>A</m> and <m>B</m> are disjoint </p>
+		<p> a union <m> A \union B </m> where <m> A </m> and <m> B </m> are disjoint </p>
 	</li>
 	<li>
-		<title><m>A \disjunion B</m></title>
+		<title><m> A \disjunion B </m></title>
 		<notation>
-			<usage><m>A \disjunion B</m></usage>
-			<description>the disjoint union of sets <m>A</m> and <m>B</m></description>
+			<usage><m> A \disjunion B </m></usage>
+			<description>the disjoint union of sets <m> A </m> and <m> B </m></description>
 		</notation>
-		<p> the disjoint union of sets <m>A</m> and <m>B</m> </p>
+		<p> the disjoint union of sets <m> A </m> and <m> B </m> </p>
 	</li>
 </dl></p>
 
@@ -787,12 +787,12 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 </figure>
 
 <example><p>
-	Sets <m>\mathscr{E},\mathscr{O}</m> from <xref ref="example-sets-union-intersection-number-sets" /> are disjoint,
-	and <m>\N = \mathscr{E} \disjunion \mathscr{O}</m>.
+	Sets <m> \mathscr{E},\mathscr{O} </m> from <xref ref="example-sets-union-intersection-number-sets" /> are disjoint,
+	and <m> \N = \mathscr{E} \disjunion \mathscr{O} </m>.
 </p></example>
 
 <remark><p>
-	If <m>A \subseteq U</m>, then we can express <m>U</m> as a disjoint union <m>U = A \disjunion \cmplmnt{A}</m>. Similarly, if <m>U = A \disjunion B</m>, then we must have <m>B = \cmplmnt{A}</m>.
+	If <m> A \subseteq U </m>, then we can express <m> U </m> as a disjoint union <m> U = A \disjunion \cmplmnt{A} </m>. Similarly, if <m> U = A \disjunion B </m>, then we must have <m> B = \cmplmnt{A} </m>.
 </p></remark>
 
 </subsection>
@@ -807,7 +807,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	<idx><h>set operations</h><h>rules for</h></idx> <!-- TODO should have a <idx>set operations</idx> for the section or chapter or something... -->
 	<statement><p>
 		<!-- Don't really know what the heck this is:  \label{RULES::set.ops::inside.statement} -->
-		Suppose <m>A,B,C</m> are subsets of a universal set <m>U</m>.
+		Suppose <m> A,B,C </m> are subsets of a universal set <m> U </m>.
 		Then the following set equalities hold.
 		<ol>
 			<li>
@@ -907,19 +907,19 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 			\cmplmnt{A} \intersection \cmplmnt{B} \amp \subseteq \cmplmnt{(A \union B)} \text{.}
 		</mrow></md>
 		</p>
-		<case><title>Show <m>\cmplmnt{(A \union B)} \subseteq \cmplmnt{A} \intersection \cmplmnt{B}</m></title><p>
+		<case><title>Show <m> \cmplmnt{(A \union B)} \subseteq \cmplmnt{A} \intersection \cmplmnt{B} </m></title><p>
 			We need to show
 			<md> x \in \cmplmnt{(A \union B)} \lgcimplies x \in \cmplmnt{A} \intersection \cmplmnt{B} </md>.
-			If <m>x \in \cmplmnt{(A \union B)}</m> then by definition of complement, <m>x\in U</m> but <m>x \notin A \union B</m>.
-			Then <m>x \notin A</m> must be true, since if <m>x</m> were in <m>A</m> then it would also be in <m>A \union B</m>.
-			Similarly, <m>x \notin B</m> must also be true.
-			So <m>x \in \cmplmnt{A}</m> and <m>x\in\cmplmnt{B}</m>; <ie /> <m>x\in \cmplmnt{A} \intersection \cmplmnt{B}</m>.
+			If <m> x \in \cmplmnt{(A \union B)} </m> then by definition of complement, <m> x\in U </m> but <m> x \notin A \union B </m>.
+			Then <m> x \notin A </m> must be true, since if <m> x </m> were in <m> A </m> then it would also be in <m> A \union B </m>.
+			Similarly, <m> x \notin B </m> must also be true.
+			So <m> x \in \cmplmnt{A} </m> and <m> x\in\cmplmnt{B} </m>; <ie /> <m> x\in \cmplmnt{A} \intersection \cmplmnt{B} </m>.
 		</p></case>
-		<case><title>Show <m>\cmplmnt{A} \intersection \cmplmnt{B} \subseteq \cmplmnt{(A \union B)} </m></title><p>
+		<case><title>Show <m> \cmplmnt{A} \intersection \cmplmnt{B} \subseteq \cmplmnt{(A \union B)} </m></title><p>
 			We need to show
 			<md> x \in \cmplmnt{A} \intersection \cmplmnt{B} \lgcimplies x \in \cmplmnt{(A \union B)} </md>.
-			If <m>x \in \cmplmnt{A} \intersection \cmplmnt{B}</m> then by definition of intersection, both <m>x \in \cmplmnt{A}</m> and <m>x \in \cmplmnt{B}</m> are true.; <ie /> <m>x \notin A</m> and <m>x \notin B</m>.
-			Since <m>A \union B</m> is all elements of <m>U</m> which are in one (or both) of <m>A,B</m>, we must have <m>x \notin A \union B</m>. Thus <m>x \in \cmplmnt{(A \union B)}</m>.
+			If <m> x \in \cmplmnt{A} \intersection \cmplmnt{B} </m> then by definition of intersection, both <m> x \in \cmplmnt{A} </m> and <m> x \in \cmplmnt{B} </m> are true.; <ie /> <m> x \notin A </m> and <m> x \notin B </m>.
+			Since <m> A \union B </m> is all elements of <m> U </m> which are in one (or both) of <m> A,B </m>, we must have <m> x \notin A \union B </m>. Thus <m> x \in \cmplmnt{(A \union B)} </m>.
 		</p></case>
 	</proof>
 
@@ -952,19 +952,19 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<idx>Cartesian product</idx>
 		<idx><h>set(s)</h><h>Cartesian product</h></idx>
 		<p>
-		the set of all possible ordered pairs of elements from two given sets <m>A</m> and <m>B</m>,
-		where the first element in a pair is from <m>A</m> and the second is from <m>B</m>
+		the set of all possible ordered pairs of elements from two given sets <m> A </m> and <m> B </m>,
+		where the first element in a pair is from <m> A </m> and the second is from <m> B </m>
 		</p>
 	</li>
 
 	<li>
-		<title><m>A \cartprod B</m></title>
+		<title><m> A \cartprod B </m></title>
 		<notation>
-			<usage><m>A \cartprod B</m></usage>
-			<description>the Cartesian product of <m>A</m> and <m>B</m></description>
+			<usage><m> A \cartprod B </m></usage>
+			<description>the Cartesian product of <m> A </m> and <m> B </m></description>
 		</notation>
 		<p>
-		the Cartesian product of <m>A</m> and <m>B</m>:
+		the Cartesian product of <m> A </m> and <m> B </m>:
 		<m> A \cartprod B = \setdef{(a,b)}{a\in A,\; b\in B} </m>
 		</p>
 	</li>
@@ -977,23 +977,23 @@ we can list the elements of the Cartesian product by listing all ways of combini
 </p>
 
 <example><title>A Cartesian product of <q>small</q> sets</title><p>
-	Suppose <m>A = \{ 1, 2 \}</m> and <m>B = \{ a, b, c \}</m>.
+	Suppose <m> A = \{ 1, 2 \} </m> and <m> B = \{ a, b, c \} </m>.
 	Then <md> A \cartprod B = \{ (1,a), (1,b), (1,c), (2,a), (2,b), (2,c) \} </md>.
 </p></example>
 
 <example><title>A special subset of a certain Cartesian product</title><p>
-	Let <m>\N^+</m> represent the positive natural numbers: <m>\N^+ = \N \relcmplmnt \{0\}</m>.
-	Then we can describe the Cartesian product <m>\Z \cartprod \N^+</m> as
+	Let <m> \N^+ </m> represent the positive natural numbers: <m> \N^+ = \N \relcmplmnt \{0\} </m>.
+	Then we can describe the Cartesian product <m> \Z \cartprod \N^+ </m> as
 	<md> \Z \cartprod \N^+ = \setdef{(m,n)}{m,n \in \Z, \; n>0} \subseteq \Z \cartprod \Z </md>.
 	Consider the subset
 	<md> A = \setdef{(m,n) \in \Z \cartprod \N^+}{n \text{ has no divisors in common with } \abs{m}} \subseteq \Z \cartprod \N^+</md>.
-	Does <m>A</m> resemble some more familiar set <ellipsis />?
+	Does <m> A </m> resemble some more familiar set <ellipsis />?
 </p></example>
 
 <paragraphs><title>Extend</title>
-	<p> Define <m>A \cartprod B \cartprod C = \setdef{(a,b,c)}{a \in A\text{, } b\in B\text{, } c\in C}</m>. </p>
+	<p> Define <m> A \cartprod B \cartprod C = \setdef{(a,b,c)}{a \in A\text{, } b\in B\text{, } c\in C} </m>. </p>
 	<example>
-		Suppose <m>A = \{ 1, 2 \}</m>, <m>B = \{ a, b, c \}</m>, <m>C = \{ \alpha, \beta \}</m>. Then,
+		Suppose <m> A = \{ 1, 2 \} </m>, <m> B = \{ a, b, c \} </m>, <m> C = \{ \alpha, \beta \} </m>. Then,
 		<md>
 			<mrow>
 				A \cartprod B \cartprod C = \{ \;\;
@@ -1021,17 +1021,17 @@ we can list the elements of the Cartesian product by listing all ways of combini
 	<p>
 	We use special notation for Cartesian products of a set with itself.
 	<dl width="narrow">
-		<li><title><m>A^2</m></title><p>notation to mean <m>A \cartprod A</m></p></li>
-		<li><title><m>A^3</m></title><p>notation to mean <m>A \cartprod A \cartprod A</m></p></li>
+		<li><title><m> A^2 </m></title><p>notation to mean <m> A \cartprod A </m></p></li>
+		<li><title><m> A^3 </m></title><p>notation to mean <m> A \cartprod A \cartprod A </m></p></li>
 		<li>
-			<title><m>A^n</m></title>
+			<title><m> A^n </m></title>
 			<notation>
-				<usage><m>A^n</m></usage>
+				<usage><m> A^n </m></usage>
 				<description>
-					the Cartesian product <m>A \cartprod A \cartprod \dotsb \cartprod A</m> involving <m>n</m> copies of <m>A</m>
+					the Cartesian product <m> A \cartprod A \cartprod \dotsb \cartprod A </m> involving <m> n </m> copies of <m> A </m>
 				</description>
 			</notation>
-			<p>notation to mean <m>A \cartprod A \cartprod \dotsb \cartprod A</m> involving <m>n</m> <q>factors</q> of <m>A</m></p>
+			<p>notation to mean <m> A \cartprod A \cartprod \dotsb \cartprod A </m> involving <m> n </m> <q>factors</q> of <m> A </m></p>
 		</li>
 	</dl>
 	And so on.
@@ -1045,7 +1045,7 @@ we can list the elements of the Cartesian product by listing all ways of combini
 			<mrow>\R^n \amp = \setdef{(x_1,x_2,\dotsc,x_n)}{x_j \in \R} \text{,}</mrow>
 			<mrow> \amp \vdots </mrow>
 		</md>
-		used to represent <m>2</m>-, <m>3</m>-, and higher-dimensional (real) vector spaces.
+		used to represent <m> 2 </m>-, <m> 3 </m>-, and higher-dimensional (real) vector spaces.
 	</p></example>
 </paragraphs>
 
@@ -1061,32 +1061,32 @@ So how should we visualize them?
 
 <p>
 The example we are probably most familiar with is that of the <term>Cartesian plane</term>,
-<m>\R^2 = \R \cartprod \R</m>,
-where each element <m>(x,y)</m> is visualized as a point in a two-dimensional diagram,
-plotted according to the <m>x</m>- and <m>y</m>-coordinates of the element relative to a central set of <m>xy</m>-axes.
+<m> \R^2 = \R \cartprod \R </m>,
+where each element <m> (x,y) </m> is visualized as a point in a two-dimensional diagram,
+plotted according to the <m> x </m>- and <m> y </m>-coordinates of the element relative to a central set of <m> xy </m>-axes.
 </p>
 
 <figure>
-	<caption>Visualizing elements of <m>\R \cartprod \R</m> as points in a plane relative to a set of perpendicular axes.</caption>
+	<caption>Visualizing elements of <m> \R \cartprod \R </m> as points in a plane relative to a set of perpendicular axes.</caption>
 	<image xml:id="image-sets-cartesian-R-squared" width="33.8%">
-		<description>A point in the Cartesian plane as a set of <m>xy</m>-coordinates.</description>
+		<description>A point in the Cartesian plane as a set of <m> xy </m>-coordinates.</description>
 		<latex-image><xi:include href="sets.d/cartesian-R-squared.tex" parse="text" /></latex-image>
 	</image>
 </figure>
 
 <p>
 To produce this visualization,
-we imagine the elements of the <q>first</q> <m>\R</m> arrayed along the <m>x</m>-axis,
-and the elements of the <q>second</q> <m>\R</m> as arrayed along the <m>y</m>-axis,
-and then imagine each element of the Cartesian product <m>\R \cartprod \R</m> as a point located at a position that <q>lines up</q> with the corresponding positions on the <m>x</m>- and <m>y</m>-axes of the element's coordinates.
-This is possible because the concepts of <q>less than</q> and <q>greater than</q> allow us to think of elements of <m>\R</m> as <q>progressing</q> from left to right along the <m>x</m>-axis and from bottom to top along the <m>y</m>-axis.
+we imagine the elements of the <q>first</q> <m> \R </m> arrayed along the <m> x </m>-axis,
+and the elements of the <q>second</q> <m> \R </m> as arrayed along the <m> y </m>-axis,
+and then imagine each element of the Cartesian product <m> \R \cartprod \R </m> as a point located at a position that <q>lines up</q> with the corresponding positions on the <m> x </m>- and <m> y </m>-axes of the element's coordinates.
+This is possible because the concepts of <q>less than</q> and <q>greater than</q> allow us to think of elements of <m> \R </m> as <q>progressing</q> from left to right along the <m> x </m>-axis and from bottom to top along the <m> y </m>-axis.
 </p>
 
 <p>
 Even though other types of sets may not have readily available notions of <q>less than</q> and <q>greater than</q>,
-we may still visualize a Cartesian product <m>A \cartprod B</m> as <q>points</q> in a <q>plane</q> plotted relative to a central set of <m>AB</m>-axes.
-In the particular case that <m>A</m> and <m>B</m> are finite,
-it doesn't really matter in what <q>order</q> we place the elements of <m>A</m> along the <m>A</m>-axis or the elements of <m>B</m> along the <m>B</m>-axis.
+we may still visualize a Cartesian product <m> A \cartprod B </m> as <q>points</q> in a <q>plane</q> plotted relative to a central set of <m> AB </m>-axes.
+In the particular case that <m> A </m> and <m> B </m> are finite,
+it doesn't really matter in what <q>order</q> we place the elements of <m> A </m> along the <m> A </m>-axis or the elements of <m> B </m> along the <m> B </m>-axis.
 </p>
 
 <aside>
@@ -1097,50 +1097,50 @@ it doesn't really matter in what <q>order</q> we place the elements of <m>A</m> 
 <example xml:id="example-sets-visualize-cartesian-prod">
 	<title>Visualizing a Cartesian product between finite sets</title>
 	<p>
-	Consider the sets <m>A = \{a, \alpha, \phi, z\}</m> and <m>B = \{1,2,3\}</m>.
-	Instead of listing the elements of <m>A \cartprod B</m>,
+	Consider the sets <m> A = \{a, \alpha, \phi, z\} </m> and <m> B = \{1,2,3\} </m>.
+	Instead of listing the elements of <m> A \cartprod B </m>,
 	we will place them in a grid.
 	In <xref ref="figure-sets-visualize-cartesian-prod" />,
-	you might imagine that the elements of <m>A</m> listed along the bottom row make up a horizontal axis and the elements of <m>B</m> along the leftmost column make up a vertical axis.
+	you might imagine that the elements of <m> A </m> listed along the bottom row make up a horizontal axis and the elements of <m> B </m> along the leftmost column make up a vertical axis.
 	But take care that these <q>axes</q> are not a continuum of values <mdash />
 	there are no other <q>values</q> between these <q>coordinate values</q> along the <q>axes</q>.
-	For example, there is no <m>1.5</m> along the <q>horizontal axis.</q>
-	Similarly, there are no other <q>points</q> between the elements of <m>A \cartprod B</m>.
+	For example, there is no <m> 1.5 </m> along the <q>horizontal axis.</q>
+	Similarly, there are no other <q>points</q> between the elements of <m> A \cartprod B </m>.
 	</p>
 	<figure xml:id="figure-sets-visualize-cartesian-prod">
-		<caption>Visualizing elements of <m>A \cartprod B</m> as <q>points</q> in a grid relative to a set of perpendicular <q>axes.</q></caption>
+		<caption>Visualizing elements of <m> A \cartprod B </m> as <q>points</q> in a grid relative to a set of perpendicular <q>axes.</q></caption>
 		<sidebyside>
 			<tabular halign="center">
 				<col /><col /><col /><col /><col /><col />
-				<row><cell><m>B</m></cell></row>
+				<row><cell><m> B </m></cell></row>
 				<row>
-					<cell right="medium"><m>3</m></cell>
-					<cell><m>(a,3)</m></cell>
-					<cell><m>(\alpha,3)</m></cell>
-					<cell><m>(\phi,3)</m></cell>
-					<cell><m>(z,3)</m></cell>
+					<cell right="medium"><m> 3 </m></cell>
+					<cell><m> (a,3) </m></cell>
+					<cell><m> (\alpha,3) </m></cell>
+					<cell><m> (\phi,3) </m></cell>
+					<cell><m> (z,3) </m></cell>
 				</row>
 				<row>
-					<cell right="medium"><m>2</m></cell>
-					<cell><m>(a,2)</m></cell>
-					<cell><m>(\alpha,2)</m></cell>
-					<cell><m>(\phi,2)</m></cell>
-					<cell><m>(z,2)</m></cell>
+					<cell right="medium"><m> 2 </m></cell>
+					<cell><m> (a,2) </m></cell>
+					<cell><m> (\alpha,2) </m></cell>
+					<cell><m> (\phi,2) </m></cell>
+					<cell><m> (z,2) </m></cell>
 				</row>
 				<row bottom="medium">
-					<cell right="medium"><m>1</m></cell>
-					<cell><m>(a,1)</m></cell>
-					<cell><m>(\alpha,1)</m></cell>
-					<cell><m>(\phi,1)</m></cell>
-					<cell><m>(z,1)</m></cell>
+					<cell right="medium"><m> 1 </m></cell>
+					<cell><m> (a,1) </m></cell>
+					<cell><m> (\alpha,1) </m></cell>
+					<cell><m> (\phi,1) </m></cell>
+					<cell><m> (z,1) </m></cell>
 				</row>
 				<row>
 					<cell right="medium" />
-					<cell><m>a</m></cell>
-					<cell><m>\alpha</m></cell>
-					<cell><m>\phi</m></cell>
-					<cell><m>z</m></cell>
-					<cell><m>A</m></cell>
+					<cell><m> a </m></cell>
+					<cell><m> \alpha </m></cell>
+					<cell><m> \phi </m></cell>
+					<cell><m> z </m></cell>
+					<cell><m> A </m></cell>
 				</row>
 			</tabular>
 		</sidebyside>
@@ -1173,38 +1173,38 @@ it doesn't really matter in what <q>order</q> we place the elements of <m>A</m> 
 		<p>a finite-length, ordered list of letters</p>
 	</li>
 	<li>
-		<title><m>\words{\Sigma}</m></title>
+		<title><m> \words{\Sigma} </m></title>
 		<idx><h>set(s)</h><h>of words</h></idx>
 		<notation>
-			<usage><m>\words{\Sigma}</m></usage>
-			<description>the set of words using alphabet set <m>\Sigma</m></description>
+			<usage><m> \words{\Sigma} </m></usage>
+			<description>the set of words using alphabet set <m> \Sigma </m></description>
 		</notation>
-		<p> the set of words using <term>alphabet</term> set <m>\Sigma</m> </p>
+		<p> the set of words using <term>alphabet</term> set <m> \Sigma </m> </p>
 	</li>
 </dl></p>
 
 <remark><p>
-	Even if the alphabet set <m>\Sigma</m> is the usual English-language alphabet,
+	Even if the alphabet set <m> \Sigma </m> is the usual English-language alphabet,
 	we do not restrict ourselves to <em>actual</em> English-language words <mdash />
 	nonsense words are allowed.
 </p></remark>
 
 <example><title>English is not a full set of words</title><p>
-	Using <m>\Sigma = \EngAlphabet</m>, words
+	Using <m> \Sigma = \EngAlphabet </m>, words
 	<md> \mathrm{math}, \; \mathrm{qwerty}, \; \mathrm{aabbccddijzuuu} </md>
-	are examples of elements in <m>\words{\Sigma}</m>.
-	So, ignoring punctuation, hyphenation, and capitalization, the English language is a <em>proper</em> subset of <m>\words{\Sigma}</m>.
+	are examples of elements in <m> \words{\Sigma} </m>.
+	So, ignoring punctuation, hyphenation, and capitalization, the English language is a <em>proper</em> subset of <m> \words{\Sigma} </m>.
 </p></example>
 
 <example xml:id="example-sets-natural-numbers-as-words">
 	<title>If digits are letters then numbers are words</title>
 	<p>
-	Using alphabet <m>\Sigma = \{ 0,\, 1,\, 2,\, \dotsc,\, 9 \}</m>,
-	then <m>\N \subsetneqq \words{\Sigma}</m>.
+	Using alphabet <m> \Sigma = \{ 0,\, 1,\, 2,\, \dotsc,\, 9 \} </m>,
+	then <m> \N \subsetneqq \words{\Sigma} </m>.
 	</p>
 </example>
 
-<exercise><p> Why is <m>\N \neq \words{\Sigma}</m> in <xref ref="example-sets-natural-numbers-as-words" />? </p></exercise>
+<exercise><p> Why is <m> \N \neq \words{\Sigma} </m> in <xref ref="example-sets-natural-numbers-as-words" />? </p></exercise>
 
 <p>
 In computing science, a certain set of words is of particular importance.
@@ -1212,7 +1212,7 @@ In computing science, a certain set of words is of particular importance.
 	<li>
 		<title>binary word</title>
 		<idx><h>binary</h><h>word</h></idx>
-		<p>a word using alphabet <m>\{0,1\}</m></p>
+		<p>a word using alphabet <m> \{0,1\} </m></p>
 	</li>
 	<li>
 		<title>binary string</title>
@@ -1225,7 +1225,7 @@ In computing science, a certain set of words is of particular importance.
 <warning><p>
 	Order matters!
 	For example, using the alphabet <md>\Sigma = \EngAlphabet</md>,
-	the words <m>\mathrm{ab}</m> and <m>\mathrm{ba}</m> are <em>different</em> words in <m>\words{\Sigma}</m>.
+	the words <m> \mathrm{ab} </m> and <m> \mathrm{ba} </m> are <em>different</em> words in <m> \words{\Sigma} </m>.
 </p></warning>
 
 <p><dl width="narrow">
@@ -1235,52 +1235,52 @@ In computing science, a certain set of words is of particular importance.
 		<idx><h>word</h><h>length</h></idx>
 		<idx>length, of a word</idx>
 		<p>
-			given <m>w \in \words{\Sigma}</m>, the <term>length of <m>w</m></term> is the number of elements from <m>\Sigma</m> used to form <m>w</m>, counting repetition
+			given <m> w \in \words{\Sigma} </m>, the <term>length of <m> w </m></term> is the number of elements from <m> \Sigma </m> used to form <m> w </m>, counting repetition
 		</p>
 	</li>
 
 	<li>
-		<title><m>\length{w}</m></title>
+		<title><m> \length{w} </m></title>
 		<notation>
-			<usage><m>\length{w}</m></usage>
-			<description>length of the word <m>w \in \words{\Sigma}</m></description>
+			<usage><m> \length{w} </m></usage>
+			<description>length of the word <m> w \in \words{\Sigma} </m></description>
 		</notation>
-		<p> length of the word <m>w \in \words{\Sigma}</m> </p>
+		<p> length of the word <m> w \in \words{\Sigma} </m> </p>
 	</li>
 
 </dl></p>
 
 <example><p>
-	Using alphabet <m>\Sigma = \EngAlphabet</m>,
+	Using alphabet <m> \Sigma = \EngAlphabet </m>,
 	we have
 	<md><mrow> \length{\mathrm{qwerty}} \amp = 6 \text{,} \amp \length{\mathrm{aabab}} \amp = 5 </mrow></md>.
 </p></example>
 
 <p>
-The concept of <term>length</term> allows us to identify some special subsets and a special element of <m>\words{\Sigma}</m>.
+The concept of <term>length</term> allows us to identify some special subsets and a special element of <m> \words{\Sigma} </m>.
 <dl width="narrow">
 
 	<li>
 		<!-- \label{DEFN::subset.words.length.n} -->
-		<title><m>\words{\Sigma}_n</m></title>
+		<title><m> \words{\Sigma}_n </m></title>
 		<notation>
-			<usage><m>\words{\Sigma}_n</m></usage>
-			<description>for <m>n \in \N</m>, the subset of <m>\words{\Sigma}</m> consisting of all words of length <m>n</m></description>
+			<usage><m> \words{\Sigma}_n </m></usage>
+			<description>for <m> n \in \N </m>, the subset of <m> \words{\Sigma} </m> consisting of all words of length <m> n </m></description>
 		</notation>
-		<p> for <m>n \in \N</m>, the subset of <m>\words{\Sigma}</m> consisting of all words of length <m>n</m> </p>
+		<p> for <m> n \in \N </m>, the subset of <m> \words{\Sigma} </m> consisting of all words of length <m> n </m> </p>
 	</li>
 
 	<li>
 		<title>empty word</title>
 		<idx><h>empty</h><h>word</h></idx>
 		<idx><h>word</h><h>empty</h></idx>
-		<p> given an alphabet <m>\Sigma</m>, we always consider <m>\words{\Sigma}</m> to contain a unique word of length <m>0</m> </p>
+		<p> given an alphabet <m> \Sigma </m>, we always consider <m> \words{\Sigma} </m> to contain a unique word of length <m> 0 </m> </p>
 	</li>
 
 	<li>
-		<title><m>\emptyword</m></title>
+		<title><m> \emptyword </m></title>
 		<notation>
-			<usage><m>\emptyword</m></usage>
+			<usage><m> \emptyword </m></usage>
 			<description>the empty word</description>
 		</notation>
 		<p> the empty word </p>
@@ -1305,10 +1305,10 @@ The concept of <term>length</term> allows us to identify some special subsets an
 		X \amp = \setdef{A\subset \N}{A\intersection\mathscr{T} = \emptyset} \text{,} \amp
 		Y \amp = X \union \mathscr{T} \text{.}
 	</mrow></md>
-	Elements of <m>\mathscr{T}</m> are numbers.
-	Elements of <m>X</m> are <em>subsets</em> of <m>\N</m> <mdash />
-	that is, <m>X</m> is a set of subsets of <m>\N</m>, but <em>is not</em> itself a subset of <m>\N</m>.
-	Elements of <m>Y</m> are either from <m>X</m> or from <m>\mathscr{T}</m>, so some elements of <m>Y</m> are numbers, and some elements of <m>Y</m> are sets of numbers.
+	Elements of <m> \mathscr{T} </m> are numbers.
+	Elements of <m> X </m> are <em>subsets</em> of <m> \N </m> <mdash />
+	that is, <m> X </m> is a set of subsets of <m> \N </m>, but <em>is not</em> itself a subset of <m> \N </m>.
+	Elements of <m> Y </m> are either from <m> X </m> or from <m> \mathscr{T} </m>, so some elements of <m> Y </m> are numbers, and some elements of <m> Y </m> are sets of numbers.
 </p></example>
 
 <p><dl width="narrow">
@@ -1317,16 +1317,16 @@ The concept of <term>length</term> allows us to identify some special subsets an
 		<title>power set</title>
 		<idx>power set</idx>
 		<idx><h>set(s)</h><h>power</h></idx>
-		<p> given a set <m>A</m>, the <term>power set of <m>A</m></term> is the set <m>\{ B \subseteq A \}</m> of all subsets of <m>A</m> </p>
+		<p> given a set <m> A </m>, the <term>power set of <m> A </m></term> is the set <m> \{ B \subseteq A \} </m> of all subsets of <m> A </m> </p>
 	</li>
 
 	<li>
-		<title><m>\powset{A}</m></title>
+		<title><m> \powset{A} </m></title>
 		<notation>
-			<usage><m>\powset{A}</m></usage>
-			<description>the power set of the set <m>A</m></description>
+			<usage><m> \powset{A} </m></usage>
+			<description>the power set of the set <m> A </m></description>
 		</notation>
-		<p> the power set of the set <m>A</m> </p>
+		<p> the power set of the set <m> A </m> </p>
 	</li>
 
 </dl></p>
@@ -1337,17 +1337,17 @@ The concept of <term>length</term> allows us to identify some special subsets an
 
 <fact>
 	<title>A power set is never empty</title>
-	<statement><p> For every set <m>A</m>, <m>\powset{A} \ne \emptyset</m>. </p></statement>
+	<statement><p> For every set <m> A </m>, <m> \powset{A} \ne \emptyset </m>. </p></statement>
 	<proof><p>
-		Both <m>\emptyset</m> and <m>A</m> are <em>subsets</em> of <m>A</m>,
-		so both are <em>elements</em> of <m>\powset{A}</m>.
-		Even if <m>A = \emptyset</m>, we still have
+		Both <m> \emptyset </m> and <m> A </m> are <em>subsets</em> of <m> A </m>,
+		so both are <em>elements</em> of <m> \powset{A} </m>.
+		Even if <m> A = \emptyset </m>, we still have
 		<md> \powset{\emptyset} = \{\emptyset\} \ne \emptyset </md>.
 	</p></proof>
 </fact>
 
 <example><title>Power set of a <q>small</q> set</title><p>
-	For <m>A = \{a,b,c\}</m>, we have
+	For <m> A = \{a,b,c\} </m>, we have
 	<md>
 		\powset{A} = \left\{
 			\; \emptyset, \; \{a\}, \; \{b\}, \; \{c\},\;
@@ -1355,12 +1355,12 @@ The concept of <term>length</term> allows us to identify some special subsets an
 		\right\}
 	</md>.
 	Note the use of curly braces here.
-	In particular, note that <m>\emptyset</m> has <em>not</em> been placed in its own set of curly braces because it is already a set itself.
+	In particular, note that <m> \emptyset </m> has <em>not</em> been placed in its own set of curly braces because it is already a set itself.
 </p></example>
 
 <example><title>A set of sets as a subset of a power set</title><p>
-	For <m>X</m> as in <xref ref="example-sets-of-sets" />,
-	we have <m>X \subseteq \powset{\N}</m>.
+	For <m> X </m> as in <xref ref="example-sets-of-sets" />,
+	we have <m> X \subseteq \powset{\N} </m>.
 </p></example>
 
 <warning xml:id="warning-sets-russell-para"><p> <!-- \label{WARNING::russell.para} -->
@@ -1378,16 +1378,16 @@ The concept of <term>length</term> allows us to identify some special subsets an
 			X \text{ is not an element of itself.}
 		}
 	</md>.
-	First note that there exist sets which satisfy the condition for membership in <m>R</m>;
+	First note that there exist sets which satisfy the condition for membership in <m> R </m>;
 	for example, the empty set.
-	So <m>R</m> should not be not empty.
-	If <m>R</m> is a set, then it is a <q>candidate</q> for membership in itself!
+	So <m> R </m> should not be not empty.
+	If <m> R </m> is a set, then it is a <q>candidate</q> for membership in itself!
 	Break into cases.
 	</p>
-	<case><title>Case <m>R \in R</m></title><p> Then <m>R\notin R</m>, which contradicts the case assumption. </p></case>
-	<case><title>Case <m>R \notin R</m></title><p> Then <m>R\in R</m>, which contradicts the case assumption. </p></case>
+	<case><title>Case <m> R \in R </m></title><p> Then <m> R\notin R </m>, which contradicts the case assumption. </p></case>
+	<case><title>Case <m> R \notin R </m></title><p> Then <m> R\in R </m>, which contradicts the case assumption. </p></case>
 	<p>
-	Since all cases lead to a contradiction, <m>R</m> is <em>cannot be a set</em>!
+	Since all cases lead to a contradiction, <m> R </m> is <em>cannot be a set</em>!
 	This is called <term>Russell's Paradox</term>,<idx>Russell's Paradox</idx>
 	and is one of the reasons we rely upon <q>naive set theory</q> in this course.
 	</p>
@@ -1398,11 +1398,11 @@ The concept of <term>length</term> allows us to identify some special subsets an
 	similar to how variables in a computer language can be declared to have a type.
 	In such a scheme, a <term>set</term> is never just a set <mdash />
 	it is always a <term>set of a certain kind of object</term>.
-	Then an operation such as <m>\N \union \powset{\N}</m> would not be allowed,
-	as <m>\N</m> is a <term>set of numbers</term> while <m>\powset{\N}</m> is a <term>set of sets of numbers</term>,
+	Then an operation such as <m> \N \union \powset{\N} </m> would not be allowed,
+	as <m> \N </m> is a <term>set of numbers</term> while <m> \powset{\N} </m> is a <term>set of sets of numbers</term>,
 	and we have a type mismatch.
-	And, more importantly, asking a question like <q>Is <m>R \in R</m>?</q> becomes nonsensical,
-	as on the left of the <m>{} \in {}</m> symbol <m>R</m> is required to be some type of object while on the right <m>R</m> is required to be a <em>set</em> of that type of object, and again we have a type mismatch.
+	And, more importantly, asking a question like <q>Is <m> R \in R </m>?</q> becomes nonsensical,
+	as on the left of the <m> {} \in {} </m> symbol <m> R </m> is required to be some type of object while on the right <m> R </m> is required to be a <em>set</em> of that type of object, and again we have a type mismatch.
 </p></remark>
 
 </section>

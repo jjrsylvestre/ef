@@ -53,9 +53,9 @@ respective owners.
 	Instead, argue that the argument fulfills the equivalent definition for <term>valid argument</term> that you created in
 	<xref ref="activity-arg-valid-arg-contrapos" />.
 	<tabular halign="left">
-		<row><cell><m>p \lgccond \lgcnot q</m></cell></row>
-		<row bottom="minor"><cell><m>r \lgccond (p \lgcand q)</m></cell></row>
-		<row><cell><m>\lgcnot r</m></cell></row>
+		<row><cell><m> p \lgccond \lgcnot q </m></cell></row>
+		<row bottom="minor"><cell><m> r \lgccond (p \lgcand q) </m></cell></row>
+		<row><cell><m> \lgcnot r </m></cell></row>
 	</tabular>
 </p></activity>
 

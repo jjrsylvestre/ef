@@ -16,7 +16,7 @@ respective owners.
 <worksheet xml:id="activities-graphs" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <activity>
-	<statement><p> Draw all possible simple graphs with <m>4</m> vertices. </p></statement>
+	<statement><p> Draw all possible simple graphs with <m> 4 </m> vertices. </p></statement>
 	<hint><p>
 		See <xref ref="proposition-graphs-complete-simple-subgraph" text="local">Statement</xref>
 		of <xref ref="proposition-graphs-complete" />.
@@ -25,12 +25,12 @@ respective owners.
 
 <activity xml:id="activity-graphs-subgraphs-by-arbitrary-subsets">
 	<p>
-	Suppose <m>G = (V,E)</m> is a graph.
+	Suppose <m> G = (V,E) </m> is a graph.
 	Decide the truth of the following statement.
 	</p>
 	<blockquote><p>
-		Every pair of a subset <m>V' \subseteq V</m> and a subcollection <m>E' \subseteq E</m>
-		defines a subgraph <m>G' = (V',E')</m> of <m>G</m>.
+		Every pair of a subset <m> V' \subseteq V </m> and a subcollection <m> E' \subseteq E </m>
+		defines a subgraph <m> G' = (V',E') </m> of <m> G </m>.
 	</p></blockquote>
 </activity>
 

@@ -18,8 +18,8 @@ respective owners.
 <activity xml:id="activity-partial-orders-compare-Hasse">
 	<introduction>
 		<p>
-		Let <m>F \subseteq \N</m> represent the set of all divisors of <m>30</m>.
-		Let <m>A = \{a,b,c\}</m>.
+		Let <m> F \subseteq \N </m> represent the set of all divisors of <m> 30 </m>.
+		Let <m> A = \{a,b,c\} </m>.
 		</p><p>
 		<em>Note:</em>
 		In <xref ref="activity-partial-orders-compare-Hasse-compare" text="type-local" />
@@ -30,22 +30,22 @@ respective owners.
 		</p>
 	</introduction>
 	<task xml:id="activity-partial-orders-compare-Hasse-draw-1"><p>
-		Draw the Hasse diagram for the subset partial order <m>\mathord{\subseteq}</m> on <m>\powset{A}</m>.
+		Draw the Hasse diagram for the subset partial order <m> \mathord{\subseteq} </m> on <m> \powset{A} </m>.
 	</p></task>
 	<task xml:id="activity-partial-orders-compare-Hasse-draw-2"><p>
-		Draw the Hasse diagram for the <q>divides</q> partial order <m>\mathord{\mid}</m> on <m>F</m>.
+		Draw the Hasse diagram for the <q>divides</q> partial order <m> \mathord{\mid} </m> on <m> F </m>.
 	</p></task>
 	<task xml:id="activity-partial-orders-compare-Hasse-compare"><p>
 		Compare your two Hasse diagrams.
-		Can you devise a function <m>\funcdef{f}{F}{\powset{A}}</m> that would deserve to be called an
-		<term>order-preserving correspondence</term> between <m>F</m> and <m>\powset{A}</m>?
+		Can you devise a function <m> \funcdef{f}{F}{\powset{A}} </m> that would deserve to be called an
+		<term>order-preserving correspondence</term> between <m> F </m> and <m> \powset{A} </m>?
 	</p></task>
 </activity>
 
 <activity><p>
-		Suppose <m>\mathord{\partorder}</m> is a partial order on a set <m>A</m>.
+		Suppose <m> \mathord{\partorder} </m> is a partial order on a set <m> A </m>.
 		Verify that the <xref ref="definition-relations-inverse" text="custom">inverse relation</xref>
-		<m>\inv{\partorder}</m> is also a partial order on <m>A</m> by verifying that it is
+		<m> \inv{\partorder} </m> is also a partial order on <m> A </m> by verifying that it is
 		<term><xref ref="definition-relations-reflexive" text="title" /></term>,
 		<term><xref ref="definition-relations-antisymmetric" text="title" /></term>,
 		and <term><xref ref="definition-relations-transitive" text="title" /></term>.
@@ -53,30 +53,30 @@ respective owners.
 
 <activity>
 	<introduction><p>
-		Let <m>A = \{a,b,c,d,e\}</m>.
+		Let <m> A = \{a,b,c,d,e\} </m>.
 		Carry out the following steps for each of the scenarios below.
 		<ol marker="(i)">
-			<li> Draw the Hasse diagram for a partial order on <m>A</m> with the requested features. </li>
+			<li> Draw the Hasse diagram for a partial order on <m> A </m> with the requested features. </li>
 			<li> In your diagram, identify all maximal/minimal elements. </li>
 			<li> Identify all pairs of incomparable elements. </li>
 		</ol>
 	</p></introduction>
-	<task><p> <m>A</m> has both a maximum and a minimum. </p></task>
-	<task><p> <m>A</m> has a maximum but no minimum. </p></task>
-	<task><p> <m>A</m> has a minimum but no maximum. </p></task>
- 	<task><p> <m>A</m> has neither a maximum nor a minimum. </p></task>
+	<task><p> <m> A </m> has both a maximum and a minimum. </p></task>
+	<task><p> <m> A </m> has a maximum but no minimum. </p></task>
+	<task><p> <m> A </m> has a minimum but no maximum. </p></task>
+ 	<task><p> <m> A </m> has neither a maximum nor a minimum. </p></task>
 </activity>
 
 <activity><p>
-	Suppose <m>\mathord{\preceq}</m> is a partial order on the set <m>A = \{0,1,2\}</m> such that <m>1</m> is a maximal element.
-	What are the possibilities for the Hasse diagram of <m>\mathord{\preceq}</m>?
+	Suppose <m> \mathord{\preceq} </m> is a partial order on the set <m> A = \{0,1,2\} </m> such that <m> 1 </m> is a maximal element.
+	What are the possibilities for the Hasse diagram of <m> \mathord{\preceq} </m>?
 </p></activity>
 
 <activity xml:id="activity-partial-orders-prove-maximum-unique">
 	<p>
 	Using the proper strategy for proving uniqueness
 	(see <xref ref="procedure-proof-methods-proving-unique" />),
-	prove that if a partially ordered set <m>A</m> has a maximum element,
+	prove that if a partially ordered set <m> A </m> has a maximum element,
 	then that element is the <em>unique</em> maximum element.
 	</p><p>
 	How can your proof be modified to show that a minimum element is also unique?
@@ -85,14 +85,14 @@ respective owners.
 
 <activity>
 	<p>
-	Recall that <m>(a,b)\subseteq \R</m> means an <term>open interval</term> on the real number line:
+	Recall that <m> (a,b)\subseteq \R </m> means an <term>open interval</term> on the real number line:
 	<md> (a,b) = \setdef{x \in \R}{a \lt x \lt b} </md>.
-	Let <m>\mathord{\le}</m> be the usual <q>less than or equal to</q> total order on the set
+	Let <m> \mathord{\le} </m> be the usual <q>less than or equal to</q> total order on the set
 	<md> A = (-2,0)\cup(0,2) </md>.
 	Consider the subset
 	<md> B = \setdef{-\frac{1}{n}}{n \in \N, \, n \ge 1} \subseteq A </md>.
-	Determine an upper bound for <m>B</m> in <m>A</m>.
-	Then formally prove that <m>B</m> has no <em>least</em> upper bound in <m>A</m> by arguing that every element of <m>A</m> fails the criteria in the definition of <term><xref ref="definition-partial-orders-least-upper-bound" text="title" /></term>.
+	Determine an upper bound for <m> B </m> in <m> A </m>.
+	Then formally prove that <m> B </m> has no <em>least</em> upper bound in <m> A </m> by arguing that every element of <m> A </m> fails the criteria in the definition of <term><xref ref="definition-partial-orders-least-upper-bound" text="title" /></term>.
 	</p>
 </activity>
 

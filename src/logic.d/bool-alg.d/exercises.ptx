@@ -29,7 +29,7 @@ respective owners.
 </exercisegroup>
 
 <exercise><p>
-	Explain why the boolean polynomial <m>p(x,y) = x \lgcor y \lgcor y'</m> is <em>not</em> in disjunctive form.
+	Explain why the boolean polynomial <m> p(x,y) = x \lgcor y \lgcor y' </m> is <em>not</em> in disjunctive form.
 </p></exercise>
 
 <exercisegroup xml:id="exercisegroup-bool-alg-table-to-poly" cols="2">
@@ -41,98 +41,98 @@ respective owners.
 	<exercise><tabular halign="center">
 		<col /><col right="minor" /><col />
 		<row bottom="minor">
-			<cell><m>x</m></cell>
-			<cell><m>y</m></cell>
-			<cell><m>p(x,y)</m></cell>
+			<cell><m> x </m></cell>
+			<cell><m> y </m></cell>
+			<cell><m> p(x,y) </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row>
 	</tabular></exercise>
 	<exercise><tabular halign="center">
 		<col /><col right="minor" /><col />
 		<row bottom="minor">
-			<cell><m>x</m></cell>
-			<cell><m>y</m></cell>
-			<cell><m>p(x,y)</m></cell>
+			<cell><m> x </m></cell>
+			<cell><m> y </m></cell>
+			<cell><m> p(x,y) </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row>
 	</tabular></exercise>
 	<exercise><tabular halign="center">
 		<col /><col /><col right="minor" /><col />
 		<row bottom="minor">
-			<cell><m>x</m></cell>
-			<cell><m>y</m></cell>
-			<cell><m>z</m></cell>
-			<cell><m>p(x,y,z)</m></cell>
+			<cell><m> x </m></cell>
+			<cell><m> y </m></cell>
+			<cell><m> z </m></cell>
+			<cell><m> p(x,y,z) </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row><row>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>1</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 1 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>1</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row><row>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
-			<cell><m>0</m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 0 </m></cell>
 		</row>
 		</tabular></exercise>
 </exercisegroup>

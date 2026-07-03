@@ -26,15 +26,15 @@ respective owners.
 </activity>
 
 <activity>
-	<introduction><p> From the alphabet <m>\Sigma = \{0,1\}</m>: </p></introduction>
-	<task><p> How many words of length <m>10</m> contain exactly six <m>0</m>s? </p></task>
-	<task><p> How many contain at least three <m>1</m>s? </p></task>
+	<introduction><p> From the alphabet <m> \Sigma = \{0,1\} </m>: </p></introduction>
+	<task><p> How many words of length <m> 10 </m> contain exactly six <m> 0 </m>s? </p></task>
+	<task><p> How many contain at least three <m> 1 </m>s? </p></task>
 </activity>
 
 <activity>
-	<introduction><p> From the alphabet <m>\Sigma = \{0,1,2\}</m>: </p></introduction>
-	<task><p> How many words of length <m>10</m> contain exactly four <m>2</m>s? </p></task>
-	<task><p> How many contain at most seven <m>0</m>s? </p></task>
+	<introduction><p> From the alphabet <m> \Sigma = \{0,1,2\} </m>: </p></introduction>
+	<task><p> How many words of length <m> 10 </m> contain exactly four <m> 2 </m>s? </p></task>
+	<task><p> How many contain at most seven <m> 0 </m>s? </p></task>
 </activity>
 
 <activity xml:id="activity-combinations-plinko">
@@ -85,29 +85,29 @@ respective owners.
 	How many different course outcomes are there?
 </p></activity>
 
-<activity><p> How many ways are there to split <m> m n </m> people into <m>m</m> groups of equal size? </p></activity>
+<activity><p> How many ways are there to split <m> m n </m> people into <m> m </m> groups of equal size? </p></activity>
 
 <activity>
 	<statement><p>
-		Suppose you have <m>2 n</m> teddy bears that are identical except for a number stitched into the paw of the right foot.
-		Of these bears, <m>n</m> have the number <m>0</m> on their foot,
-		and the remaining <m>n</m> bears have a unique number from <m>1, 2, 3, \dotsc, n</m>.
-		How many ways can you choose <m>n</m> of the bears, with the understanding that any of the bears labelled <m>0</m> are interchangeable?
+		Suppose you have <m> 2 n </m> teddy bears that are identical except for a number stitched into the paw of the right foot.
+		Of these bears, <m> n </m> have the number <m> 0 </m> on their foot,
+		and the remaining <m> n </m> bears have a unique number from <m> 1, 2, 3, \dotsc, n </m>.
+		How many ways can you choose <m> n </m> of the bears, with the understanding that any of the bears labelled <m> 0 </m> are interchangeable?
 	</p></statement>
-	<hint><p> Break into cases based on how many bears labelled <m>0</m> will be in your collection. </p></hint>
+	<hint><p> Break into cases based on how many bears labelled <m> 0 </m> will be in your collection. </p></hint>
 </activity>
 
 <activity><p>
-	Consider the set <m>\{ 1, 2, 3, \dotsc, 2n \}</m>.
-	How many subsets of size <m>2</m> are there such that the two elements therein have an even sum?
+	Consider the set <m> \{ 1, 2, 3, \dotsc, 2n \} </m>.
+	How many subsets of size <m> 2 </m> are there such that the two elements therein have an even sum?
 </p></activity>
 
 <activity>
 	<statement><p>
-		Consider the set <m>\{ 1, 2, 3, \dotsc, n \}</m>.
-		How many subsets of size <m>3</m> are there such that no two of the three elements therein are consecutive?
+		Consider the set <m> \{ 1, 2, 3, \dotsc, n \} </m>.
+		How many subsets of size <m> 3 </m> are there such that no two of the three elements therein are consecutive?
 	</p></statement>
-	<hint><p> It might be easier to count the subsets of size <m>3</m> that <em>do</em> contain (at least) two consecutive numbers. </p></hint>
+	<hint><p> It might be easier to count the subsets of size <m> 3 </m> that <em>do</em> contain (at least) two consecutive numbers. </p></hint>
 </activity>
 
 </worksheet>

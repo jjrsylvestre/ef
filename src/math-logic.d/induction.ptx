@@ -25,13 +25,13 @@ respective owners.
 	<idx>Mathematical Induction</idx>
 	<idx>Induction, Mathematical</idx>
 	<p>
-	Suppose <m>P(n)</m> is a predicate where the variable <m>n</m> has domain the positive, whole numbers.
+	Suppose <m> P(n) </m> is a predicate where the variable <m> n </m> has domain the positive, whole numbers.
 	If
 	<ol marker="(i)">
-		<li> <m>P(1)</m> is true, and </li>
-		<li> <m>(\forall k)\bbrac{P(k) \lgccond P(k+1)}</m> is true, </li>
+		<li> <m> P(1) </m> is true, and </li>
+		<li> <m> (\forall k)\bbrac{P(k) \lgccond P(k+1)} </m> is true, </li>
 	</ol>
-	then <m>(\forall n)P(n)</m> is true.
+	then <m> (\forall n)P(n) </m> is true.
 	</p>
 </axiom>
 
@@ -50,42 +50,42 @@ However, this outline does not constitute a proof since it technically uses math
 <paragraphs>
 	<title>Idea</title>
 	<p>
-	Suppose <m>n</m> is fixed.
+	Suppose <m> n </m> is fixed.
 	We have a sequence of valid arguments:
 	</p>
 	<sidebyside>
 		<tabular halign="left">
-			<row><cell><m>P(1) \lgccond P(2)</m></cell></row>
-			<row bottom="minor"><cell><m>P(1)</m></cell></row>
-			<row><cell><m>P(2)</m></cell></row>
+			<row><cell><m> P(1) \lgccond P(2) </m></cell></row>
+			<row bottom="minor"><cell><m> P(1) </m></cell></row>
+			<row><cell><m> P(2) </m></cell></row>
 		</tabular>
 		<tabular halign="left">
-			<row><cell><m>P(2) \lgccond P(3)</m></cell></row>
-			<row bottom="minor"><cell><m>P(2)</m></cell></row>
-			<row><cell><m>P(3)</m></cell></row>
+			<row><cell><m> P(2) \lgccond P(3) </m></cell></row>
+			<row bottom="minor"><cell><m> P(2) </m></cell></row>
+			<row><cell><m> P(3) </m></cell></row>
 		</tabular>
 		<p><md>\cdots</md></p>
 		<tabular halign="left">
-			<row><cell><m>P(n-1) \lgccond P(n)</m></cell></row>
-			<row bottom="minor"><cell><m>P(n-1)</m></cell></row>
-			<row><cell><m>P(n)</m></cell></row>
+			<row><cell><m> P(n-1) \lgccond P(n) </m></cell></row>
+			<row bottom="minor"><cell><m> P(n-1) </m></cell></row>
+			<row><cell><m> P(n) </m></cell></row>
 		</tabular>
 	</sidebyside>
 	<p>
 	Each is valid (modus ponens).
 	So if we make the two assumptions stated in the principles
-	(<ie /> that <m>P(1)</m> is true and that <m>P(k) \lgccond P(k+1)</m> is always true)
+	(<ie /> that <m> P(1) </m> is true and that <m> P(k) \lgccond P(k+1) </m> is always true)
 	we can trace the flow of truth from premises to conclusion in each argument in turn:
 	<dl width="narrow">
 		<li><title>First argument</title> <p> Premises true so conclusion is true. </p></li>
 		<li><title>Second argument</title> <p> Premises true (using conclusion of the first argument) so conclusion is true. </p></li>
 		<li><title>Third argument</title> <p><ellipsis /></p> </li>
 		<li>
-			<title><m>\nth[(n-1)]</m> argument</title>
-			<p> Premises true (using conclusion of the <m>\nth[(n-2)]</m> argument) so conclusion is true. </p>
+			<title><m> \nth[(n-1)] </m> argument</title>
+			<p> Premises true (using conclusion of the <m> \nth[(n-2)] </m> argument) so conclusion is true. </p>
 		</li>
 	</dl>
-	The conclusion of <m>\nth[(n-1)]</m> argument is <m>P(n)</m>, so <m>P(n)</m> is true.
+	The conclusion of <m> \nth[(n-1)] </m> argument is <m> P(n) </m>, so <m> P(n) </m> is true.
 	</p>
 </paragraphs>
 
@@ -95,18 +95,18 @@ Now, here is some specific terminology associated to proofs by induction.
 	<li>
 		<title>base case</title>
 		<idx><h>base</h><h>case (in mathematical induction)</h></idx>
-		<p> the statement <m>P(1)</m> in a proof by mathematical induction </p>
+		<p> the statement <m> P(1) </m> in a proof by mathematical induction </p>
 	</li>
 	<li>
 		<title>induction step</title>
 		<idx><h>induction</h><h>step</h></idx>
-		<p>the portion of a proof by mathematical induction that establishes the statement <m>(\forall k) \bbrac{ P(k) \lgccond P(k+1) }</m></p>
+		<p>the portion of a proof by mathematical induction that establishes the statement <m> (\forall k) \bbrac{ P(k) \lgccond P(k+1) } </m></p>
 	</li>
 	<li>
 		<title>induction hypothesis</title>
 		<idx><h>induction</h><h>hypothesis</h></idx>
 		<idx><h>hypothesis</h><h>induction</h></idx>
-		<p>the assumption <m>P(k)</m> made as the first step in the induction step of a proof by mathematical induction</p>
+		<p>the assumption <m> P(k) </m> made as the first step in the induction step of a proof by mathematical induction</p>
 	</li>
 </dl>
 </p>
@@ -117,19 +117,19 @@ Now, here is some specific terminology associated to proofs by induction.
 	<idx><h>proof</h><h>by induction</h></idx>
 	<p> To prove a universal statement indexed by whole numbers: </p>
 	<case><title>Base case</title><p>
-		Start by proving the statement obtained from the universally quantified predicate for the base case <m>n = 1</m>.
+		Start by proving the statement obtained from the universally quantified predicate for the base case <m> n = 1 </m>.
 	</p></case>
 	<case><title>Induction step</title><p>
-		Next, assume that <m>k</m> is a fixed number such that <m>k \ge 1</m>, and that the statement obtained from the universally quantified predicate is true for <m>n = k</m>.
-		Based on this assumption, try to prove that the next case, <m>n=k+1</m>, is also true.
+		Next, assume that <m> k </m> is a fixed number such that <m> k \ge 1 </m>, and that the statement obtained from the universally quantified predicate is true for <m> n = k </m>.
+		Based on this assumption, try to prove that the next case, <m> n=k+1 </m>, is also true.
 	</p></case>
 </identity>
 
 <problem> <!-- worked example -->
-	<statement><p> Prove that the sum of the first <m>n</m> positive integers is <md> \frac{n(n+1)}{2}</md>. </p></statement>
+	<statement><p> Prove that the sum of the first <m> n </m> positive integers is <md> \frac{n(n+1)}{2}</md>. </p></statement>
 	<solution>
 		<p>
-		We want to prove <m>(\forall n)P(n)</m>, where <m>P(n)</m> is as follows.
+		We want to prove <m> (\forall n)P(n) </m>, where <m> P(n) </m> is as follows.
 		<md>
 			<mrow>
 				P(1) \colon \:\: 1 = \frac{1\cdot 2}{2}, \qquad
@@ -143,10 +143,10 @@ Now, here is some specific terminology associated to proofs by induction.
 		</md>
 		We will prove this by induction.
 		</p>
-		<case><title>Base case</title><p> <m>1 = (1\cdot2)/2</m> is obviously true. </p></case>
+		<case><title>Base case</title><p> <m> 1 = (1\cdot2)/2 </m> is obviously true. </p></case>
 		<case><title>Induction step</title><p>
-			Assume the statement is true for <m>n=k</m>; <ie /> assume that <md> 1 + 2 + \dotsb + k = k(k+1)/2 </md>.
-			We want to show that this implies the statement is true for <m>n = k+1</m>;
+			Assume the statement is true for <m> n=k </m>; <ie /> assume that <md> 1 + 2 + \dotsb + k = k(k+1)/2 </md>.
+			We want to show that this implies the statement is true for <m> n = k+1 </m>;
 			<ie /> show <md> 1 + 2 + \dotsb + k + (k+1) = (k+1)(k+2)/2</md>.
 			We have
 			<md>
@@ -160,10 +160,10 @@ Now, here is some specific terminology associated to proofs by induction.
 </problem>
 
 <problem> <!-- worked example -->
-	<statement><p> Prove that <m>n^3 + (n+1)^3 + (n+2)^3</m> is always divisible by <m>9</m> for every <m>n \ge 1</m>. </p></statement>
+	<statement><p> Prove that <m> n^3 + (n+1)^3 + (n+2)^3 </m> is always divisible by <m> 9 </m> for every <m> n \ge 1 </m>. </p></statement>
 	<solution>
 		<p>
-		We want to prove <m>(\forall n)P(n)</m>, where <m>P(n)</m> is as follows.
+		We want to prove <m> (\forall n)P(n) </m>, where <m> P(n) </m> is as follows.
 		<md>
 			<mrow> P(1) \amp \colon \quad 1^3 + 2^3 + 3^3 \text{ is divisible by } 9 </mrow>
 			<mrow> P(2) \amp \colon \quad 2^3 + 3^3 + 4^3 \text{ is divisible by } 9 </mrow>
@@ -174,33 +174,33 @@ Now, here is some specific terminology associated to proofs by induction.
 		</md>
 		We will prove this by induction.
 		</p>
-		<case><title>Base case</title><p> For <m>n=1</m>, <m>n^3 + (n+1)^3 + (n+2)^3 = 36 = 9\cdot 4</m>. </p></case>
+		<case><title>Base case</title><p> For <m> n=1 </m>, <m> n^3 + (n+1)^3 + (n+2)^3 = 36 = 9\cdot 4 </m>. </p></case>
 		<case><title>Induction step</title><p>
-			Assume <m>k^3 + (k+1)^3 + (k+2)^3</m> is divisible by <m>9</m>.
-			This means that there exists some whole number <m>m</m> so that
+			Assume <m> k^3 + (k+1)^3 + (k+2)^3 </m> is divisible by <m> 9 </m>.
+			This means that there exists some whole number <m> m </m> so that
 			<md> k^3 + (k+1)^3 + (k+2)^3 = 9 m </md>.
-			We want to show that <m>(k+1)^3 + (k+2)^3 + (k+3)^3</m> is also divisible by <m>9</m>.
+			We want to show that <m> (k+1)^3 + (k+2)^3 + (k+3)^3 </m> is also divisible by <m> 9 </m>.
 			To make the connection between this sum of cubes and the <q>previous case</q> sum of cubes above,
-			we can add in (and simultaneously subtract out) a <m>k^3</m> term:
+			we can add in (and simultaneously subtract out) a <m> k^3 </m> term:
 			<md>
 				<mrow> (k+1)^3 + (k+2)^3 + (k+3)^3 \amp = \bbrac{k^3 + (k+1)^3 + (k+2)^3} + (k+3)^3 - k^3 </mrow>
 				<mrow> \amp = 9m + (k+3)^3 - k^3 </mrow>
 				<mrow> \amp = 9m + (k^3 + 9k^2 + 27k + 27) - k^3 </mrow>
 				<mrow> \amp = 9(m + k^2 + 3k + 3) </mrow>
 			</md>.
-			Since we have factored our sum of cubes into a product involving <m>9</m>,
-			that sum of cubes is divisible by <m>9</m>.
+			Since we have factored our sum of cubes into a product involving <m> 9 </m>,
+			that sum of cubes is divisible by <m> 9 </m>.
 		</p></case>
 	</solution>
 </problem>
 
 <problem> <!-- worked example -->
-	<statement><p> Prove that <m>3^{3n} + 1</m> is divisible by <m>7</m> whenever <m>n</m> is odd. </p></statement>
+	<statement><p> Prove that <m> 3^{3n} + 1 </m> is divisible by <m> 7 </m> whenever <m> n </m> is odd. </p></statement>
 	<solution>
 		<p>
-		We do not want to use <m>n</m> as our induction index, since it jumps by twos.
-		But <m>n</m> odd means that <m>n = 2m - 1</m> for some <m>m\ge 1</m>,
-		so we want to prove <m>(\forall m)P(m)</m>, where  <m>P(m)</m> is as follows.
+		We do not want to use <m> n </m> as our induction index, since it jumps by twos.
+		But <m> n </m> odd means that <m> n = 2m - 1 </m> for some <m> m\ge 1 </m>,
+		so we want to prove <m> (\forall m)P(m) </m>, where  <m> P(m) </m> is as follows.
 		<md>
 			<mrow> P(1) \amp \colon \quad 3^3 + 1 \text{ is divisible by } 7 </mrow>
 			<mrow> P(2) \amp \colon \quad 3^9 + 1 \text{ is divisible by } 7 </mrow>
@@ -211,12 +211,12 @@ Now, here is some specific terminology associated to proofs by induction.
 		</md>
 		We will prove this by induction.
 		</p>
-		<case><title>Base case</title><p> For <m>m=1</m>, <m>3^3+1 = 28 = 7\cdot 4</m>. </p></case>
+		<case><title>Base case</title><p> For <m> m=1 </m>, <m> 3^3+1 = 28 = 7\cdot 4 </m>. </p></case>
 		<case><title>Induction step</title><p>
-			Assume <m>3^{6k-3} + 1</m> is divisible by <m>7</m>.
-			This means that there exists some whole number <m>\ell</m> so that
+			Assume <m> 3^{6k-3} + 1 </m> is divisible by <m> 7 </m>.
+			This means that there exists some whole number <m> \ell </m> so that
 			<md> 3^{6k-3} + 1 = 7 \ell </md>.
-			We want to show <m>3^{6(k+1)-3} + 1</m> is divisible by <m>7</m>.
+			We want to show <m> 3^{6(k+1)-3} + 1 </m> is divisible by <m> 7 </m>.
 			We have
 			<md>
 				<mrow> 3^{6 (k + 1) - 3} + 1 \amp = (3^{6k - 3}) (3^6) + 1 </mrow>
@@ -225,26 +225,26 @@ Now, here is some specific terminology associated to proofs by induction.
 				<mrow> \amp = (7 \ell) (3^6) - 728 </mrow>
 				<mrow> \amp = 7 (3^6 \ell - 104) </mrow>
 			</md>.
-			Since we have our expression factored into a product involving <m>7</m>,
-			our expression is divisible by <m>7</m> as desired.
+			Since we have our expression factored into a product involving <m> 7 </m>,
+			our expression is divisible by <m> 7 </m> as desired.
 		</p></case>
 	</solution>
 </problem>
 
-<remark><p> Indexing of statements does not have to start at <m>1</m>. </p></remark>
+<remark><p> Indexing of statements does not have to start at <m> 1 </m>. </p></remark>
 
 <problem> <!-- worked example -->
 	<statement>
-		<p> Prove <m>2^n \lt n!</m> whenever <m>n \ge 4</m>. </p>
+		<p> Prove <m> 2^n \lt n! </m> whenever <m> n \ge 4 </m>. </p>
 		<aside><title>Note</title><p>
-			This statement is actually false for <m>n=1,2,3</m>.
+			This statement is actually false for <m> n=1,2,3 </m>.
 		</p></aside>
 	</statement>
 	<solution>
-		<case><title>Base case</title><p> For <m>n=4</m>, <m>2^4 = 16</m> and <m>4! = 24</m>. </p></case>
+		<case><title>Base case</title><p> For <m> n=4 </m>, <m> 2^4 = 16 </m> and <m> 4! = 24 </m>. </p></case>
 		<case><title>Induction step</title><p>
-			Assume <m>2^k \lt k!</m> for some <m>k \ge 4</m>.
-			We want to show <m>2^{k+1} \lt (k+1)!</m>.
+			Assume <m> 2^k \lt k! </m> for some <m> k \ge 4 </m>.
+			We want to show <m> 2^{k+1} \lt (k+1)! </m>.
 			We have
 			<md> 2^{k+1} = 2(2^k) \lt 2(k!) \lt (k+1)(k!) = (k+1)! </md>.
 		</p></case>
@@ -265,48 +265,48 @@ Now, here is some specific terminology associated to proofs by induction.
 	</p></statement>
 	<proof>
 		<p> By mathematical induction. </p>
-		<case><title>Base case <m>n=3</m></title><p> This is just the ordinary <xref ref="definition-arg-law-of-syllogism" text="title" />. </p></case>
+		<case><title>Base case <m> n=3 </m></title><p> This is just the ordinary <xref ref="definition-arg-law-of-syllogism" text="title" />. </p></case>
 		<case><title>Induction step</title>
 			<p>
-			Let <m>k \ge 3</m>.
-			Consider the <m>n = k</m> version (below left) and the <m>n = k+1</m> version (below right) of the
+			Let <m> k \ge 3 </m>.
+			Consider the <m> n = k </m> version (below left) and the <m> n = k+1 </m> version (below right) of the
 			<xref ref="definition-arg-extended-law-of-syllogism" text="title" />.
 			</p>
 			<sidebyside>
 				<tabular halign="right">
-					<row><cell><m>p_1 \lgccond p_2</m></cell></row>
-					<row><cell><m>p_2 \lgccond p_3</m></cell></row>
-					<row><cell><m>\vdots \phantom{\lgccond p_n}</m></cell></row>
-					<row bottom="minor"><cell><m>p_{k-1} \lgccond p_k</m></cell></row>
-					<row><cell><m>p_1 \lgccond p_k</m></cell></row>
+					<row><cell><m> p_1 \lgccond p_2 </m></cell></row>
+					<row><cell><m> p_2 \lgccond p_3 </m></cell></row>
+					<row><cell><m> \vdots \phantom{\lgccond p_n} </m></cell></row>
+					<row bottom="minor"><cell><m> p_{k-1} \lgccond p_k </m></cell></row>
+					<row><cell><m> p_1 \lgccond p_k </m></cell></row>
 				</tabular>
 				<tabular halign="center">
-					<row><cell><m>p_1 \lgccond p_2</m></cell></row>
-					<row><cell><m>p_2 \lgccond p_3</m></cell></row>
-					<row><cell><m>\vdots</m></cell></row>
-					<row><cell><m>p_{k-1} \lgccond p_k</m></cell></row>
-					<row bottom="minor"><cell><m>p_k \lgccond p_{k+1}</m></cell></row>
-					<row><cell><m>p_1 \lgccond p_{k+1}</m></cell></row>
+					<row><cell><m> p_1 \lgccond p_2 </m></cell></row>
+					<row><cell><m> p_2 \lgccond p_3 </m></cell></row>
+					<row><cell><m> \vdots </m></cell></row>
+					<row><cell><m> p_{k-1} \lgccond p_k </m></cell></row>
+					<row bottom="minor"><cell><m> p_k \lgccond p_{k+1} </m></cell></row>
+					<row><cell><m> p_1 \lgccond p_{k+1} </m></cell></row>
 				</tabular>
 			</sidebyside>
 			<p>
-			Assume the <m>n = k</m> version of the argument is valid.
-			We want to show that the <m>n = k + 1</m> version is also valid.
+			Assume the <m> n = k </m> version of the argument is valid.
+			We want to show that the <m> n = k + 1 </m> version is also valid.
 			So suppose that premises of that latter version are all true.
-			We need to show that the conclusion <m>p_1 \lgccond p_{k+1}</m> must then also be true.
+			We need to show that the conclusion <m> p_1 \lgccond p_{k+1} </m> must then also be true.
 			</p><p>
-			But each premise of the <m>n = k</m> version is also a premise of the <m>n = k + 1</m> version,
-			so we can say that we have assumed that every premise of the <m>n = k</m> version is true.
+			But each premise of the <m> n = k </m> version is also a premise of the <m> n = k + 1 </m> version,
+			so we can say that we have assumed that every premise of the <m> n = k </m> version is true.
 			But we have also assumed that version to be valid,
-			so we may take its conclusion <m>p_1 \lgccond p_k</m> to be true.
+			so we may take its conclusion <m> p_1 \lgccond p_k </m> to be true.
 			</p>
 			<p> Consider the following syllogism. </p>
 			<tabular halign="left">
-				<row><cell><m>p_1 \lgccond p_k</m></cell></row>
-				<row bottom="minor"><cell><m>p_k \lgccond p_{k+1}</m></cell></row>
-				<row><cell><m>p_1 \lgccond p_{k+1}</m></cell></row>
+				<row><cell><m> p_1 \lgccond p_k </m></cell></row>
+				<row bottom="minor"><cell><m> p_k \lgccond p_{k+1} </m></cell></row>
+				<row><cell><m> p_1 \lgccond p_{k+1} </m></cell></row>
 			</tabular>
-			<p> Since this is valid (base case <m>n=2</m>) and its premises are all true, the conclusion is true. </p>
+			<p> Since this is valid (base case <m> n=2 </m>) and its premises are all true, the conclusion is true. </p>
 		</case>
 	</proof>
 </theorem>
@@ -322,13 +322,13 @@ Now, here is some specific terminology associated to proofs by induction.
 	<idx><h>Mathematical Induction</h><h>strong form</h></idx>
 	<idx><h>Induction, Mathematical</h><h>strong form</h></idx>
 	<p>
-	Suppose <m>P(n)</m> is a predicate where the variable <m>n</m> has domain the positive, whole numbers.
+	Suppose <m> P(n) </m> is a predicate where the variable <m> n </m> has domain the positive, whole numbers.
 	If
 	<ol marker="(i)">
-		<li> <m>P(1)</m> is true, and </li>
-		<li> <m>(\forall k)\Bbrac{ \bbrac{ P(1) \lgcand P(2) \lgcand \dotsb \lgcand P(k) } \lgccond P(k+1)}</m> is true, </li>
+		<li> <m> P(1) </m> is true, and </li>
+		<li> <m> (\forall k)\Bbrac{ \bbrac{ P(1) \lgcand P(2) \lgcand \dotsb \lgcand P(k) } \lgccond P(k+1)} </m> is true, </li>
 	</ol>
-	then <m>(\forall n)P(n)</m> is true.
+	then <m> (\forall n)P(n) </m> is true.
 	</p>
 </axiom>
 
@@ -338,10 +338,10 @@ Now, here is some specific terminology associated to proofs by induction.
 	The idea here is the same as for regular mathematical induction.
 	However, in the strong form, we allow ourselves more than just the immediately preceding case to justify the current case.
 	</p><p>
-	If the first case <m>P(1)</m> is true, and <m>P(1) \lgccond P(2)</m>, then <m>P(2)</m> must be true as well.
-	Now, if <m>P(1) \lgcand P(2) \lgccond P(3)</m>, and we already have <m>P(1)</m> and <m>P(2)</m> both true, then <m>P(3)</m> must be true as well.
-	Furthermore, if <m>P(1) \lgcand P(2) \lgcand P(3) \lgccond P(4)</m>, and we already have <m>P(1)</m>, <m>P(2)</m>, and <m>P(3)</m> all true, then <m>P(4)</m> must be true as well.
-	And so on, until we have reached <m>P(n)</m>, for <m>n</m> whatever value we wish.
+	If the first case <m> P(1) </m> is true, and <m> P(1) \lgccond P(2) </m>, then <m> P(2) </m> must be true as well.
+	Now, if <m> P(1) \lgcand P(2) \lgccond P(3) </m>, and we already have <m> P(1) </m> and <m> P(2) </m> both true, then <m> P(3) </m> must be true as well.
+	Furthermore, if <m> P(1) \lgcand P(2) \lgcand P(3) \lgccond P(4) </m>, and we already have <m> P(1) </m>, <m> P(2) </m>, and <m> P(3) </m> all true, then <m> P(4) </m> must be true as well.
+	And so on, until we have reached <m> P(n) </m>, for <m> n </m> whatever value we wish.
 	</p>
 </paragraphs>
 
@@ -349,37 +349,37 @@ Now, here is some specific terminology associated to proofs by induction.
 	<title>Proof by strong induction</title>
 	<idx><h>Procedure</h><h>proof by strong induction</h></idx>
 	<idx><h>proof</h><h>by strong induction</h></idx>
-	<case><title>Base case</title><p> Start by proving the statement for the base case <m>n = 1</m>. </p></case>
+	<case><title>Base case</title><p> Start by proving the statement for the base case <m> n = 1 </m>. </p></case>
 	<case><title>Induction step</title><p>
-		Next, assume that <m>k</m> is a fixed number such that <m>k \ge 1</m>, and that the statement is true for all <m>n \le k</m>.
-		Based on this assumption, try to prove that the next case, <m>n=k+1</m>, is also true.
+		Next, assume that <m> k </m> is a fixed number such that <m> k \ge 1 </m>, and that the statement is true for all <m> n \le k </m>.
+		Based on this assumption, try to prove that the next case, <m> n=k+1 </m>, is also true.
 	</p></case>
 </identity>
 
 <problem> <!-- worked example -->
-	<statement><p> Prove that each whole number greater than <m>1</m> can be factored into a product of (one or more) primes. </p></statement>
+	<statement><p> Prove that each whole number greater than <m> 1 </m> can be factored into a product of (one or more) primes. </p></statement>
 	<solution>
 		<case><title>Base case</title>
 			<p>
-			The first number greater than <m>1</m> is <m>n = 2</m>, and it is prime.
+			The first number greater than <m> 1 </m> is <m> n = 2 </m>, and it is prime.
 			So it can be considered a product of <em>one</em> prime.
 			</p>
 			<aside><title>Note</title><p>
-				Our base case is at <m>n = 2</m> because our original statement only concerns numbers <em>greater</em> than <m>1</m>.
+				Our base case is at <m> n = 2 </m> because our original statement only concerns numbers <em>greater</em> than <m> 1 </m>.
 			</p></aside>
 		</case>
 		<case><title>Induction step</title>
 			<p>
-			Let <m>k</m> represent a whole number that is greater than <m>1</m>.
-			Assume that <m>2,3,4,\dotsc,k</m> can each be factored into primes.
-			We want to show <m>k + 1</m> can also be factored into primes.
+			Let <m> k </m> represent a whole number that is greater than <m> 1 </m>.
+			Assume that <m> 2,3,4,\dotsc,k </m> can each be factored into primes.
+			We want to show <m> k + 1 </m> can also be factored into primes.
 			</p>
 			<p> Break into cases. </p>
-			<case><title>Case <m>k + 1</m> prime</title><p> In this case <m>k+1</m> is already a product of a single prime, itself. </p></case>
-			<case><title>Case <m>k + 1</m> not prime</title><p>
-				If <m>k + 1</m> is not prime, then it has nontrivial divisors.
-				So there exist integers <m>m_1,m_2</m>, with <m>2\le m_1, m_2 \le k</m>, such that <m>k+1 = m_1 m_2</m>.
-				By our induction hypothesis, each of <m>m_1,m_2</m> can be factored into a product of primes, so their product <m>k+1</m> can as well.
+			<case><title>Case <m> k + 1 </m> prime</title><p> In this case <m> k+1 </m> is already a product of a single prime, itself. </p></case>
+			<case><title>Case <m> k + 1 </m> not prime</title><p>
+				If <m> k + 1 </m> is not prime, then it has nontrivial divisors.
+				So there exist integers <m> m_1,m_2 </m>, with <m> 2\le m_1, m_2 \le k </m>, such that <m> k+1 = m_1 m_2 </m>.
+				By our induction hypothesis, each of <m> m_1,m_2 </m> can be factored into a product of primes, so their product <m> k+1 </m> can as well.
 			</p></case>
 		</case>
 	</solution>
@@ -387,7 +387,7 @@ Now, here is some specific terminology associated to proofs by induction.
 
 <warning><p>
 	If your proof of the induction step requires knowing a very specific number of previous cases are true, you may need to use a variant of the strong form of mathematical induction where <em>several</em> base cases are first proved.
-	For example, if, in the induction step, proving that <m>P(k+1)</m> is true relies specifically on knowing that both <m>P(k-1)</m> and <m>P(k)</m> are true, then this argument does <em>not</em> prove that <m>P(1)\lgccond P(2)</m>, and so you must prove both base cases of <m>P(1)</m> <em>and</em> <m>P(2)</m> explicitly.
+	For example, if, in the induction step, proving that <m> P(k+1) </m> is true relies specifically on knowing that both <m> P(k-1) </m> and <m> P(k) </m> are true, then this argument does <em>not</em> prove that <m> P(1)\lgccond P(2) </m>, and so you must prove both base cases of <m> P(1) </m> <em>and</em> <m> P(2) </m> explicitly.
 </p></warning>
 
 </section>

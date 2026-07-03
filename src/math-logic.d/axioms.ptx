@@ -91,26 +91,26 @@ but we can actually prove things from it.
 		<p> (In this proof, all references to axioms refer to the axioms of <xref ref="example-axioms-woozles-dorples" />.) </p>
 		<p>
 		By <xref ref="example-axioms-woozles-dorples-triple-woozles">Axiom</xref>,
-		there exists a trio <m>w_1,w_2,w_3</m> of distinct woozles that snarf no dorple in common.
+		there exists a trio <m> w_1,w_2,w_3 </m> of distinct woozles that snarf no dorple in common.
 		Breaking this trio into various pairs and applying
 		<xref ref="example-axioms-woozles-dorples-unique-dorple">Axiom</xref>,
-		we see that there exists a dorple <m>d_1</m> that <m>w_1</m> and <m>w_2</m> both snarf in common,
-		there also exists a dorple <m>d_2</m> that <m>w_1</m> and <m>w_3</m> both snarf in common,
-		and there also exists a dorple <m>d_3</m> that <m>w_2</m> and <m>w_3</m> both snarf in common.
+		we see that there exists a dorple <m> d_1 </m> that <m> w_1 </m> and <m> w_2 </m> both snarf in common,
+		there also exists a dorple <m> d_2 </m> that <m> w_1 </m> and <m> w_3 </m> both snarf in common,
+		and there also exists a dorple <m> d_3 </m> that <m> w_2 </m> and <m> w_3 </m> both snarf in common.
 		These snarfing relationships are illustrated in the diagram below.
 		</p>
 		<image xml:id="image-axioms-woozles-snarf-dorples-1" width="35.2%">
 			<description>A diagram of woozles snarfing dorples.</description>
 			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-1.tex" parse="text" /></latex-image>
 		</image>
-		<p> Now, suppose <m>d_1</m> and <m>d_2</m> were actually the same dorple <mdash /> then all three woozles would snarf it in common. </p>
+		<p> Now, suppose <m> d_1 </m> and <m> d_2 </m> were actually the same dorple <mdash /> then all three woozles would snarf it in common. </p>
 		<image xml:id="image-axioms-woozles-snarf-dorples-2" width="32.6%">
 			<description>A diagram of woozles snarfing dorples, assuming two of the dorples coincide.</description>
 			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-2.tex" parse="text" /></latex-image>
 		</image>
 		<p>
-		As this would contradict our initial assumption, it must be the case that <m>d_1</m> and <m>d_2</m> are distinct.
-		Similar arguments allow us to also conclude that <m>d_1 \ne d_3</m> and <m>d_2 \ne d_3</m>.
+		As this would contradict our initial assumption, it must be the case that <m> d_1 </m> and <m> d_2 </m> are distinct.
+		Similar arguments allow us to also conclude that <m> d_1 \ne d_3 </m> and <m> d_2 \ne d_3 </m>.
 		</p>
 	</proof>
 </theorem>
@@ -148,11 +148,11 @@ but we can actually prove things from it.
 		snarf a <em>unique</em> woozle in common.
 	</p></statement>
 	<proof><p>
-		Suppose <m>d_1,d_2</m> are snarf buddies.
+		Suppose <m> d_1,d_2 </m> are snarf buddies.
 		By contradiction, suppose they snarf <em>more than one</em> woozle in common:
-		let <m>w_1,w_2</m> be distinct woozles both snarfed by <m>d_1</m> and <m>d_2</m>.
+		let <m> w_1,w_2 </m> be distinct woozles both snarfed by <m> d_1 </m> and <m> d_2 </m>.
 		By <xref ref="example-axioms-woozles-dorples-symmetry">Axiom</xref>,
-		each of <m>w_1,w_2</m> snarfs each of <m>d_1,d_2</m>.
+		each of <m> w_1,w_2 </m> snarfs each of <m> d_1,d_2 </m>.
 		But this contradicts <xref ref="example-axioms-woozles-dorples-unique-dorple">Axiom</xref>,
 		as two distinct woozles cannot snarf more than one dorple in common.
 	</p></proof>
@@ -208,7 +208,7 @@ then any theorems proved under the abstract system are still valid in the new mo
 	<p>
 	Again consider the axiomatic system of <xref ref="example-axioms-woozles-dorples" />,
 	still using the modified version of <xref ref="example-axioms-woozles-dorples-new-exists-three-woozles">Axiom</xref>.
-	Let the three distinct woozles be the points <m>(0,0)</m>, <m>(1,1)</m>, and <m>(2,0)</m> in the Cartesian plane.
+	Let the three distinct woozles be the points <m> (0,0) </m>, <m> (1,1) </m>, and <m> (2,0) </m> in the Cartesian plane.
 	Let <term>dorple</term> now mean <term>line in the plane</term>,
 	and let <term>snarf</term> now mean <term>lies on</term>.
 	Convince yourself that the axioms of the system are all true with this interpretation of the primitive terms.

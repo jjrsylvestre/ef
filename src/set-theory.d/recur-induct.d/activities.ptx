@@ -19,9 +19,9 @@ respective owners.
 <activity>
 	<statement>
 		<p>
-		Develop an inductive definition of the set of words <m>\words{\Sigma}</m> from the alphabet <m>\Sigma = \{ \mathrm{a},\mathrm{b},\mathrm{c} \}</m>.
+		Develop an inductive definition of the set of words <m> \words{\Sigma} </m> from the alphabet <m> \Sigma = \{ \mathrm{a},\mathrm{b},\mathrm{c} \} </m>.
 		</p><p>
-		Then verify that the word <m>\mathrm{ccababb}</m> is in the set by tracing it back to the base clause.
+		Then verify that the word <m> \mathrm{ccababb} </m> is in the set by tracing it back to the base clause.
 		</p>
 	</statement>
 	<hint><p>
@@ -37,8 +37,8 @@ respective owners.
 </activity>
 
 <activity><p>
-	Let <m>\Sigma = \{\mathrm{a},\mathrm{z}\}</m>.
-	Write an inductive definition for the set of words in <m>\words{\Sigma}</m> that have the same number of <m>\mathrm{a}</m> letters as <m>\mathrm{z}</m> letters.
+	Let <m> \Sigma = \{\mathrm{a},\mathrm{z}\} </m>.
+	Write an inductive definition for the set of words in <m> \words{\Sigma} </m> that have the same number of <m> \mathrm{a} </m> letters as <m> \mathrm{z} </m> letters.
 </p></activity>
 
 </worksheet>

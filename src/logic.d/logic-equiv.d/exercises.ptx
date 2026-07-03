@@ -34,16 +34,16 @@ respective owners.
 <exercise xml:id="exercise-logic-equiv-taut-contra-2">
 	<!-- TODO why is this -2 ? -->
 	<!-- \label{EXERCISE::logic.equiv::taut.contra.2} -->
-	<introduction><p> Suppose <m>U</m> is a tautology and <m>E</m> is a contradiction. </p></introduction>
-	<task><p> Show that <m>P \lgcand U \lgcequiv P</m> for every statement <m>P</m>. </p></task>
-	<task><p> Show that <m>P \lgcor E \lgcequiv P</m> for every statement <m>P</m>. </p></task>
+	<introduction><p> Suppose <m> U </m> is a tautology and <m> E </m> is a contradiction. </p></introduction>
+	<task><p> Show that <m> P \lgcand U \lgcequiv P </m> for every statement <m> P </m>. </p></task>
+	<task><p> Show that <m> P \lgcor E \lgcequiv P </m> for every statement <m> P </m>. </p></task>
 </exercise>
 
 <exercise xml:id="exercise-logic-equiv-neg-and-or">
 	<!-- \label{EXERCISE::logic.equiv::equiv.neg.wedge.vee} -->
 	<introduction><p>
 		Consider the equivalence of statements
-		<m>p \lgccond (q_1 \lgcor q_2) \lgcequiv (p \lgcand \lgcnot q_1) \lgccond q_2</m>.
+		<m> p \lgccond (q_1 \lgcor q_2) \lgcequiv (p \lgcand \lgcnot q_1) \lgccond q_2 </m>.
 	</p></introduction>
 	<task><p> Use a truth table to verify the equivalence. </p></task>
 	<task><p> Use propositional calculus to demonstrate the equivalence. </p></task>
