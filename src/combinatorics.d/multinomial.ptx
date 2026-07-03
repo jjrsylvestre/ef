@@ -237,7 +237,7 @@ let's extract the binomial coefficients from those expressions.
 		<p>
 		Similarly to the proof of the <xref ref="theorem-multinomial-binomial" text="title" />,
 		write
-		<md><mrow xml:id="equation-multinomial-trinomial" tag="star"> (x + y + z)^n = (x + y + z) (x + y + z) \dotsm (x + y + z) </mrow></md>,
+		<md xml:id="equation-multinomial-trinomial" tag="star"> (x + y + z)^n = (x + y + z) (x + y + z) \dotsm (x + y + z) </md>,
 		with <m>n</m> factors.
 		To expand this out, we generalize the FOIL method:
 		from each factor, choose either <m>x</m>, <m>y</m>, or <m>z</m>,
