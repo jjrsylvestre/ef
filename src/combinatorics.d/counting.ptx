@@ -26,14 +26,23 @@ But efficiently counting large collections can be difficult!
 
 <example>
 	<title>Examples of counting large collections</title>
+
 	<p><ul>
+
 		<li> How many different ways can you choose your winning numbers for the lottery? </li>
+
 		<li> How many different possible seating charts could be made for the students in this course in the assigned classroom? </li>
+
 		<li> How many different ways are there for you to choose courses to satisfy your degree requirements? </li>
+
 		<li> How many bijections between the sets <m> \{0,1,2,3,4,5\} </m> and <m> \{a,b,c,d,e,f\} </m> exist? </li>
+
 		<li> How many total orders on the set <m> \{0,1,2,3,4,5\} </m> exist? </li>
+
 		<li> How many partial orders on the set <m> \{0,1,2,3,4,5\} </m> exist? </li>
+
 	</ul></p>
+
 </example>
 
 </section>
@@ -47,17 +56,23 @@ But efficiently counting large collections can be difficult!
 	<title>Addition Rule</title>
 	<idx><h>Rule(s)</h><h>Addition</h></idx>
 	<idx>Addition Rule</idx>
+
 	<statement><p>
 		Assume <m> U </m> is a finite set.
 		<ol>
+
 			<li xml:id="theorem-counting-add-rule-disj">
 				If <m> U = A_1 \disjunion A_2 </m>, then <m> \card{U} = \card{A_1} + \card{A_2} </m>.
 			</li>
+
 			<li xml:id="theorem-counting-add-rule-general">
 				If <m> U = A_1 \union A_2 </m>, then <m> \card{U} = \card{A_1} + \card{A_2} - \card{A_1 \intersection A_2} </m>.
 			</li>
+
 		</ol>
+
 	</p></statement>
+
 	<proof><title>Proof idea</title><p>
 		After recalling the definition of
 		<term><xref ref="definition-sets-disjoint-sets" text="custom">disjoint</xref> <xref ref="definition-sets-disjoint-union" text="custom">union</xref></term>,
@@ -70,6 +85,7 @@ But efficiently counting large collections can be difficult!
 		</mrow></md>
 		Then combine the resulting equalities of cardinalities.
 	</p></proof>
+
 </theorem>
 
 <remark><p>
@@ -80,38 +96,48 @@ But efficiently counting large collections can be difficult!
 
 <problem>  <!-- worked example -->
 	<title>Counting by breaking into cases</title>
+
 	<statement><p> How many words of length <m> 3 </m> or less are there using alphabet <m> \Sigma = \{ \alpha, \omega \} </m>? </p></statement>
+
 	<solution>
+
 		<p>
 		Write <m> \leset{\words{\Sigma}}{3} </m> to mean the set of words in alphabet <m> \Sigma </m> of length <m> 3 </m> or less.
 		Then <md> \leset{\words{\Sigma}}{3} = \words{\Sigma}_0 \disjunion \words{\Sigma}_1 \disjunion \words{\Sigma}_2 \disjunion \words{\Sigma}_3 </md>,
 		so we can break into cases based on length and then apply the <xref ref="theorem-counting-add-rule" text="title" />.
 		</p>
+
 		<case><title>Count <m> \words{\Sigma}_0 </m></title><p>
 			There is only one word of length <m> 0 </m>: the empty word.
 			So <m> \card{\words{\Sigma}_0} = 1 </m>.
 		</p></case>
+
 		<case><title>Count <m> \words{\Sigma}_1 </m></title><p>
 			There are only two words of length <m> 1 </m>: the single-letter words <m> w_\alpha = \alpha </m> and <m> w_\omega = \omega </m>.
 			So <m> \card{\words{\Sigma}_1} = 2 </m>.
 		</p></case>
+
 		<case><title>Count <m> \words{\Sigma}_2 </m></title><p>
 			We can count be simply listing the elements:
 			<md> \words{\Sigma}_2 = \{ \alpha \alpha, \alpha \omega, \omega \alpha, \omega \omega \} </md>.
 			So <m> \card{\words{\Sigma}_2} = 4 </m>.
 		</p></case>
+
 		<case><title>Count <m> \words{\Sigma}_3 </m></title><p>
 			This time we will just use inductive reasoning.
 			Each word in <m> \words{\Sigma}_2 </m> may be extended to a word in <m> \words{\Sigma}_3 </m> by appending either an <m> \alpha </m> or an <m> \omega </m> onto the end.
 			So there must be twice as many words in <m> \words{\Sigma}_3 </m> as in <m> \words{\Sigma}_2 </m>,
 			<ie /> <m> \card{\words{\Sigma}_3} = 8 </m>.
 		</p></case>
+
 		<case><title>Total count</title><p>
 			Using the <xref ref="theorem-counting-add-rule" text="title" />,
 			we obtain the total by adding up our preliminary results:
 			<md> \card{\leset{\words{\Sigma}}{3}} = 1 + 2 + 4 + 8 = 15 </md>.
 		</p></case>
+
 	</solution>
+
 </problem>
 
 <p> Another common strategy in mathematics is to consider the opposite. </p>
@@ -120,11 +146,13 @@ But efficiently counting large collections can be difficult!
 	<title>Subtraction Rule</title>
 	<idx><h>Rule(s)</h><h>Subtraction</h></idx>
 	<idx>Subtraction Rule</idx>
+
 	<statement><p>
 		Assume <m> U </m> is a finite set.
 		For every subset <m> A \subseteq U </m>,
 		we have <m> \card{A} = \card{U} - \card{\cmplmnt{A}} </m>.
 	</p></statement>
+
 	<proof><title>Proof idea</title><p>
 		Since <m> U = A \disjunion \cmplmnt{A} </m> is always true,
 		simply apply
@@ -132,16 +160,20 @@ But efficiently counting large collections can be difficult!
 		of <xref ref="theorem-counting-add-rule" />
 		to this disjoint union and rearrange to isolate <m> \card{A} </m>.
 	</p></proof>
+
 </theorem>
 
 <example>
 	<title>Counting by counting the complement</title>
+
 	<p>
 	For alphabet <m> \Sigma = \EngAlphabet </m>,
 	how many words in <m> \words{\Sigma}_2 </m> do <em>not</em> begin with the letter <m> \mathrm{a} </m>?
 	It's much easier to count the number of words in <m> \words{\Sigma}_2 </m> that <em>do</em> begin with <m> \mathrm{a} </m>,
 	as there are only <m> 26 </m> possibilities for the second letter.
-	</p><p>
+	</p>
+
+	<p>
 	Later in this chapter we will learn a rule that will allow us to easily calculate the total number of words in <m> \words{\Sigma}_2 </m> to be <m> 26^2 </m>
 	(see <xref ref="wexample-counting-words-fixed-length" />).
 	Accepting this fact for the moment,
@@ -156,6 +188,7 @@ But efficiently counting large collections can be difficult!
 		<mrow> \amp = 26 \cdot 25 </mrow>
 	</md>.
 	</p>
+
 </example>
 
 </section>
@@ -167,7 +200,9 @@ But efficiently counting large collections can be difficult!
 
 <problem xml:id="wexample-counting-small-cartesian"> <!-- worked example -->
 	<title>Counting a small Cartesian product</title>
+
 	<statement><p> What is <m> \card{A \cartprod B} </m> for <m> A = \{ 0, 1, 2, 3 \} </m> and <m> B = \{ -1, 0, 1 \} </m>? </p></statement>
+
 	<solution><p>
 		We can solve this by just writing out the elements of <m> A \cartprod B </m> and counting them.
 		<md>
@@ -182,11 +217,14 @@ But efficiently counting large collections can be difficult!
 		</md>
 		So <m> \card{A \cartprod B} = 12 </m>.
 	</p></solution>
+
 </problem>
 
 <problem xml:id="wexample-counting-large-cartesian"> <!-- worked example -->
 	<title>Counting a large Cartesian product</title>
+
 	<statement><p> What is <m> \card{C \cartprod D} </m> for <m> C = \{ a,b,c,\dotsc,z \} </m> and <m> D = \{0,1,2,\cdots,99 \} </m>? </p></statement>
+
 	<solution><p>
 		Writing out all the elements of <m> C \cartprod D </m> and then counting them all seems like a lot of work.
 		Instead, using our experience from <xref ref="wexample-counting-small-cartesian" />,
@@ -196,6 +234,7 @@ But efficiently counting large collections can be difficult!
 		and there are <m> \card{C} </m> such groupings of elements from <m> C \cartprod D </m>.
 		So we arrive at <md>\card{C \cartprod D} = \card{C} \cdot \card{D} = 26 \cdot 100 = 2600 </md>.
 	</p></solution>
+
 </problem>
 
 <exercise><p>
@@ -207,10 +246,12 @@ But efficiently counting large collections can be difficult!
 	<title>Multiplication Rule</title>
 	<idx><h>Rule(s)</h><h>Multiplication</h></idx>
 	<idx>Multiplication Rule</idx>
+
 	<p>
 	If there are <m> m </m> ways to perform task <m> S </m> and <m> n </m> ways to perform task <m> T </m>,
 	then there are <m> m n </m> ways to perform task <m> S </m> followed by task <m> T </m>.
 	</p>
+
 </theorem>
 
 <warning><p>
@@ -220,6 +261,7 @@ But efficiently counting large collections can be difficult!
 
 <example>
 	<title>Counting Cartesian product elements by constructing an arbitrary element</title>
+
 	<p>
 	To create a specific example of an element from <m> A \cartprod B </m>,
 	we must first choose an element of <m> A </m> to be the first coordinate (task <m> S </m>),
@@ -228,20 +270,25 @@ But efficiently counting large collections can be difficult!
 	Therefore, the <xref ref="theorem-counting-mult-rule" text="title" /> says
 	there are <m> m n </m> ways to construct an element of <m> A \cartprod B </m>, which means <m> \card{A\cartprod B} = m n </m>.
 	</p>
+
 </example>
 
 <example xml:id="example-counting-candidates">
 	<title>Choosing candidates</title>
+
 	<p>
 	Suppose you are a casting director and need to select both a primary actor and an understudy for the lead role in a play.
 	If <m> n </m> actors audition for the role,
 	then there are <m> n </m> different ways to select the primary actor.
 	Once this choice is made, there remain <m> n-1 </m> different ways to the select the understudy.
 	Hence there are <m> n (n - 1) </m> ways to cast the role.
-	</p><p>
+	</p>
+
+	<p>
 	Now, the actual pool of candidates for understudy will differ based on which actor is offered the lead role.
 	However, no matter who is chosen for the lead, the <em>number</em> of remaining candidates for understudy is the same.
 	</p>
+
 </example>
 
 <note><p> We may extend the <xref ref="theorem-counting-mult-rule" text="title" /> to any (finite) number of consecutive tasks. </p></note>
@@ -253,11 +300,13 @@ But efficiently counting large collections can be difficult!
 
 <problem xml:id="wexample-counting-words-fixed-length"> <!-- worked example -->
 	<title>Words of a given length</title>
+
 	<statement><p>
 		Recall that, given alphabet <m> \Sigma </m> and number <m> n \in \N </m>,
 		<m> \words{\Sigma}_n </m> is the set of words of length <m> n </m>.
 		If <m> \card{\Sigma} = m </m>, what is <m> \card{\words{\Sigma}_n} </m>?
 	</p></statement>
+
 	<solution><p>
 		To construct a specific example word <m> w \in \words{\Sigma}_n </m>, there are:
 		<ul>
@@ -271,16 +320,20 @@ But efficiently counting large collections can be difficult!
 		ways to construct <m> w </m>.
 		We conclude <m> \card{\words{\Sigma}_n} = m^n </m>.
 	</p></solution>
+
 </problem>
 
 <problem xml:id="wexample-counting-words-no-repeats"> <!-- worked example -->
 	<title>Words with no repeated letters</title>
+
 	<statement><p>
 		Suppose <m> \card{\Sigma} = 5 </m>.
 		How many words in <m> \card{\words{\Sigma}_5} </m> have no repeated letters?
 		(That is, in which no two letters are the same?)
 	</p></statement>
+
 	<solution>
+
 		<p>
 		To construct a specific example word <m> w \in \words{\Sigma}_5 </m>
 		in which no two letters are the same,
@@ -295,39 +348,51 @@ But efficiently counting large collections can be difficult!
 		So there are
 		<md> 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 </md>
 		ways to construct <m> w </m>.
-		</p><p>
+		</p>
+
+		<p>
 		Similar to <xref ref="example-counting-candidates" />,
 		while the actual pool of candidates for the next letter at each step will differ based on which letters have been chosen already,
 		the <em>number</em> of remaining letters is always independent of which letters have actually been chosen so far.
 		So the <xref ref="theorem-counting-mult-rule" text="title" /> can be applied to this problem exactly as we have applied it.
 		</p>
+
 	</solution>
+
 </problem>
 
 <problem> <!-- worked example -->
 	<title>Palindromes</title>
+
 	<statement><p>
 		Let <m> \Sigma = \EngAlphabet </m>.
 		How many palindromes <m> w </m> with <m> 3 \le \length{w} \le 6 </m> are there in <m> \words{\Sigma} </m>?
 	</p></statement>
+
 	<solution>
+
 		<p> Break into cases based on the length of <m> w </m>. </p>
+
 		<case><title>Case <m> \length{w} = 3 </m></title><p>
 			Once we choose the first letter, the last is chosen for us, but we are still free to choose the middle letter.
 			So there are <m> 26^2 </m> palindromes of length <m> 3 </m>.
 		</p></case>
+
 		<case><title>Case <m> \length{w} = 4 </m></title><p>
 			Once we choose the first two letters, the last two are chosen for us.
 			So there are also <m> 26^2 </m> palindromes of length <m> 4 </m>.
 		</p></case>
+
 		<case><title>Case <m> \length{w} = 5 </m></title><p>
 			Once we choose the first two letters, the last two are chosen for us, but we are still free to choose the middle letter.
 			So there are <m> 26^3 </m> palindromes of length <m> 5 </m>.
 		</p></case>
+
 		<case><title>Case <m> \length{w} = 6 </m></title><p>
 			Once we choose the first three letters, the last three are chosen for us.
 			So there are also <m> 26^3 </m> palindromes of length <m> 6 </m>.
 		</p></case>
+
 		<case><title>Total</title><p>
 			Applying the <xref ref="theorem-counting-add-rule" text="title" /> to these non-overlapping cases, we obtain
 			<md>
@@ -337,25 +402,31 @@ But efficiently counting large collections can be difficult!
 			</md>
 			as the number of palindromes length <m> 3 </m> to <m> 6 </m>.
 		</p></case>
+
 	</solution>
+
 </problem>
 
 <problem xml:id="wexample-counting-functions"> <!-- worked example -->
-<!-- \label{WEXAMPLE::counting.functions} -->
+
 	<statement><p>
 		Set <m> A = \{a,b,c\} </m> and <m> B = \{0,1,2,3,4\} </m>.
 		How many functions <m> A \to B </m> exist?
 		How many of these are injections?
 		How many are surjections?
 	</p></statement>
+
 	<solution>
+
 		<case><title>Number of functions</title><p>
 			A function <m> \funcdef{f}{A}{B} </m> can be constructed in three steps:
 			choose <m> f(a) </m>, then choose <m> f(b) </m>, then choose <m> f(c) </m>.
 			Each of the steps can be carried out in <m> \card{B} = 5 </m> ways.
 			So the number of functions is <m> 5^3 = 125 </m>.
 		</p></case>
+
 		<case><title>Number of injections</title>
+
 			<p>
 			An injection <m> \ifuncdef{f}{A}{B} </m> can be constructed in three steps:
 			choose <m> f(a) </m>,
@@ -366,19 +437,24 @@ But efficiently counting large collections can be difficult!
 			Third step has <m> \card{ B \relcmplmnt \{f(a),f(b)\} } = 3 </m> choices.
 			So the number of injections is <m> 5 \cdot 4 \cdot 3 = 60 </m>.
 			</p>
+
 			<aside><title>A look ahead</title><p>
 				Notice that the number of injections has turned out to be
 				<md> \frac{\card{B}!}{(\card{B} - \card{A})!} </md>.
 				We will understand better how this formula arises in <xref ref="section-permutations-subsets" />.
 			</p></aside>
+
 		</case>
+
 		<case><title>Number of surjections</title><p>
 			Suppose <m> \funcdef{f}{A}{B} </m>.
 			Since <m> \card{A} = 3 </m>, the <em>largest</em> that <m> \card{f(A)} </m> can be is <m> 3 </m>, which occurs when <m> f </m> is injective.
 			However, even in such a largest case it is still smaller then <m> \card{B} </m>, so no surjections exist.
 			That is, the number of surjections is <m> 0 </m>.
 		</p></case>
+
 	</solution>
+
 </problem>
 
 </section>
@@ -395,6 +471,7 @@ where the collection we actually want to count corresponds to equivalence classe
 	<title>Division Rule</title>
 	<idx><h>Rule(s)</h><h>Division</h></idx>
 	<idx>Division Rule</idx>
+
 	<statement><p>
 		Suppose <m> \mathord{\equiv} </m> is an equivalence relation on a finite set <m> A </m> so that the equivalence classes
 		<alert>all have the same number of elements</alert>.
@@ -404,6 +481,7 @@ where the collection we actually want to count corresponds to equivalence classe
 		<md> \card{A / \mathord{\equiv}} = \frac{\card{A}}{\card{\eqclass{a}}} </md>,
 		where <m> a </m> is an arbitrary element of <m> A </m>.
 	</p></statement>
+
 	<proof><p>
 		Write <m> N </m> for the number of equivalence classes,
 		and write <m> C </m> for the common cardinality of the classes.
@@ -417,19 +495,25 @@ where the collection we actually want to count corresponds to equivalence classe
 		which leads to <md> N = \frac{\card{A}}{C} </md>,
 		as desired.
 	</p></proof>
+
 </theorem>
 
 <problem>  <!-- worked example -->
 	<title>Equivalent words</title>
+
 	<statement><p>
 		Let <m> \Sigma = \{ \alpha, \beta, \gamma \} </m>.
 		How many words in <m> \words{\Sigma}_4 </m> contain exactly two <m> \alpha </m>s, one <m> \beta </m> and one <m> \gamma </m>?
 	</p></statement>
+
 	<solution>
+
 		<p>
 		Write <m> \Lambda </m> for the collection of words in <m> \words{\Sigma}_4 </m> of the type described.
 		Instead of trying to count <m> \Lambda </m> directly, consider the following more structured collection.
-		</p><p>
+		</p>
+
+		<p>
 		Write <m> \Sigma' = \{\alpha_1, \alpha_2, \beta, \gamma\} </m>,
 		and let <m> \Lambda' </m> be the set of words in <m> \words{(\Sigma')}_4 </m> that have no repeated letters.
 		Similar to <xref ref="wexample-counting-words-no-repeats" />,
@@ -437,14 +521,17 @@ where the collection we actually want to count corresponds to equivalence classe
 		<md> \card{\Lambda'} = 4 \cdot 3 \cdot 2 \cdot 1 = 24 </md>.
 		For each pair of these words, write <m> w_1 \equiv w_2 </m> if the following two conditions hold.
 		<ol marker="(i)">
+
 			<li>
 				At whatever position <m> w_1 </m> contains <m> \alpha_1 </m>,
 				<m> w_2 </m> contains either <m> \alpha_1 </m> or <m> \alpha_2 </m> at that same position.
 			</li>
+
 			<li>
 				At whatever position <m> w_1 </m> contains <m> \alpha_2 </m>,
 				<m> w_2 </m> contains either <m> \alpha_1 </m> or <m> \alpha_2 </m> at that same position.
 			</li>
+
 		</ol>
 		You may check that <m> \mathord{\equiv} </m> defines an equivalence relation on <m> \Lambda' </m>.
 		Each class consists of exactly two words <m> \{w_1,w_2\} </m>,
@@ -456,7 +543,10 @@ where the collection we actually want to count corresponds to equivalence classe
 		In other words, there is a bijective correspondence between the classes in <m> \Lambda' / \mathord{\equiv} </m> and the words in <m> \Lambda </m>.
 		Using the <xref ref="theorem-counting-div-rule" text="title" />, we have
 		<md> \card{\Lambda} = \card{\Lambda' / \mathord{\equiv}} = \frac{\card{\Lambda'}}{2} = \frac{24}{2} = 12 </md>.
-	</p></solution>
+		</p>
+
+	</solution>
+
 </problem>
 
 </section>
@@ -471,22 +561,27 @@ where the collection we actually want to count corresponds to equivalence classe
 	<title>Pigeonhole Principle (formal version)</title>
 	<idx><h>Principle</h><h>Pigeonhole</h><h>formal version</h></idx>
 	<idx><h>Pigeonhole Principle</h><h>formal version</h></idx>
+
 	<statement><p> If <m> A,B </m> are finite sets with <m> \card{B} \lt \card{A} </m>, then no function <m> A \to B </m> can be an injection. </p></statement>
+
 	<proof><p>
 		This principle is just the contrapositive of
 		<xref ref="fact-cardinality-subset-of-finite-inj-image" text="local">Statement</xref>
 		of <xref ref="fact-cardinality-subset-of-finite" />.
 	</p></proof>
+
 </theorem>
 
 <corollary xml:id="corollary-counting-pigeon">
 	<title>Pigeonhole Principle</title>
 	<idx><h>Principle</h><h>Pigeonhole</h></idx>
 	<idx>Pigeonhole Principle</idx>
+
 	<statement><p>
 		If <m> m </m> objects are placed in <m> n </m> containers, where <m> m \gt n </m>,
 		then at least one container must contain more than one object.
 	</p></statement>
+
 	<proof><p>
 		Let <m> A </m> be the set of objects and <m> B </m> the set of containers,
 		so that <md> \card{B} = n \lt m = \card{A} </md>.
@@ -494,45 +589,57 @@ where the collection we actually want to count corresponds to equivalence classe
 		Then the <xref ref="theorem-counting-pigeon" /> tells us that <m> f </m> cannot be an injection,
 		which means that there is at least one pair of distinct objects <m> a_1,a_2 </m> with <m> f(a_1) = f(a_2) </m>.
 	</p></proof>
+
 </corollary>
 
 <problem> <!-- worked example -->
 	<title>Too few seats</title>
+
 	<statement><p>
 		Your car has five seats, but you also have five friends who need a ride home.
 		How will everyone fit?
 	</p></statement>
+
 	<solution><p>
 		Using the people who need to get home (<ie /> your friends <em>and</em> you) as objects and car seats as containers,
 		<xref ref="corollary-counting-pigeon" text="title" /> says that someone will have to sit on someone else's lap.
 	</p></solution>
+
 </problem>
 
 <problem> <!-- worked example -->
 	<title>Dessert logistics</title>
+
 	<statement><p>
 		The cafeteria puts out <m> 200 </m> chocolate puddings and <m> 200 </m> tapioca puddings.
 		If <m> 201 </m> students each grab a bowl of pudding,
 		what is the <em>minimum</em> number of tapioca puddings that have been taken?
 	</p></statement>
+
 	<solution>
+
 		<p>
 		Since <m> 201 \gt 200 </m>, there is no injection
 		<md> \{\text{students who took a pudding}\} \ifuncto \{\text{bowls of chocolate pudding}\} </md>.
 		(<em>Or:</em> use students as objects, bowls of chocolate pudding as containers.)
-		</p><p>
+		</p>
+
+		<p>
 		But we can't actually have two students take the same bowl of pudding,
 		so at least one student must eat tapioca.
 		</p>
+
 	</solution>
 </problem>
 
 <problem> <!-- worked example -->
 	<title>Matching pairs</title>
+
 	<statement><p>
 		Suppose <m> A \subseteq \{1,2,\dotsc, 20\} </m>.
 		How big must <m> \card{A} </m> be to ensure that there exist two elements of <m> A </m> whose sum is <m> 21 </m>?
 	</p></statement>
+
 	<solution><p>
 		Collect together the (unordered) pairs of numbers that add to <m> 21 </m>:
 		<md> B = \bigl\{ \{1,20\}, \{2,19\}, \dotsc, \{10,11\} \bigr\} \subseteq \powset{\{1,2,\dotsc, 20\}} </md>.
@@ -541,23 +648,31 @@ where the collection we actually want to count corresponds to equivalence classe
 		place object <m> a </m> into container <m> b </m> if <m> a \in b </m>.
 		We need one more object than container to ensure some container receives two objects, so the answer is <m> \card{A} \ge 11 </m>.
 	</p></solution>
+
 </problem>
 
 <problem>
 	<title>Matching modulo <m> m </m></title>
+
 	<statement><p>
 		Suppose <m> m \in \N </m> and <m> A \subseteq \N </m> such that <m> 0 \lt m \lt \card{A} \lt \infty </m>.
 		Show that there exist distinct <m> a_1,a_2 \in A </m> that have the same remainder when divided by <m> m </m>.
 	</p></statement>
+
 	<solution>
+
 		<p>
 		The set of possible remainders is <m> \natnumlt{m} = \{0,1,2,\cdots,m-1\} </m>.
 		Computing remainder after division by <m> m </m> defines a function <m> A \to \natnumlt{m} </m>.
 		Since <m> \card{\natnumlt{m}} = m \lt \card{A} </m>, this function cannot be an injection.
-		</p><p>
+		</p>
+
+		<p>
 		(<em>Or:</em> use elements of <m> A </m> as objects, possible remainders when dividing a number by <m> m </m> as containers.)
 		</p>
+
 	</solution>
+
 </problem>
 
 </subsection>
@@ -576,24 +691,34 @@ so that object <m> a \in A </m> is <q>placed</q> in container <m> b \in B </m> w
 	<title>Pigeonhole Principle (strong form, formal version)</title>
 	<idx><h>Principle</h><h>Pigeonhole</h><h>strong form (formal version)</h></idx>
 	<idx><h>Pigeonhole Principle</h><h>strong form (formal version)</h></idx>
+
 	<statement>
+
 		<p>
 		Suppose <m> \funcdef{f}{A}{B} </m>, with <m> A,B </m> finite,
 		and let <m> \mathord{\equiv} </m> be the equivalence relation on <m> A </m> where <m> a_1 \equiv a_2 </m> means <m> f(a_1) = f(a_2) </m>.
-		</p><p>
+		</p>
+
+		<p>
 		If <m> \card{A} \gt \ell \cdot \card{B} </m> for some <m> \ell \in \N </m>,
 		then at least one of the equivalence classes of <m> A </m> with respect to <m> \mathord{\equiv} </m> has more than <m> \ell </m> elements.
 		</p>
+
 	</statement>
+
 	<proof>
+
 		<p> Consider the contrapositive: </p>
+
 		<blockquote><p>
-			if <em>every</em> equivalence class of <m> A </m> has <em>no more</em> than <m> \ell </m> elements, then <m> \card{A} \le \ell \cdot \card{B} </m>.
+			If <em>every</em> equivalence class of <m> A </m> has <em>no more</em> than <m> \ell </m> elements, then <md> \card{A} \le \ell \cdot \card{B} </md>.
 		</p></blockquote>
+
 		<p>
 		Since <m> B </m> is finite and <m> f(A) \subseteq B </m>, then also <m> f(A) </m> is finite and we can enumerate its elements.
 		Write <m> f(A) = \{ b_1, b_2, \dotsc, b_n \} </m>. Each element of <m> f(A) </m> corresponds to an equivalence class of <m> A </m>.
 		</p>
+
 		<figure xml:id="figure-counting-strong-pigeon">
 			<caption>Diagram of equivalence classes under the <q>have same image</q> equivalence.</caption>
 			<image xml:id="image-counting-strong-pigeon" width="67.9%">
@@ -601,10 +726,13 @@ so that object <m> a \in A </m> is <q>placed</q> in container <m> b \in B </m> w
 				<latex-image><xi:include href="counting.d/strong-pigeon.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
+
 		<p>
 		In this diagram, the <m> a_i </m> are representative elements of the class of elements of <m> A </m> that are mapped to <m> b_i </m> by <m> f </m>.
 		In particular, we must have <m> f(a_i) = b_i </m> for each index <m> i </m>.
-		</p><p>
+		</p>
+
+		<p>
 		We are assuming that each class <m> [a_i] </m> contains no more than <m> \ell </m> elements;
 		<ie /> <m> \card{[a_i]} \le \ell </m>.
 		Since an equivalence relation always partitions a set <m> A </m> into the disjoint union of its equivalence classes, we have
@@ -617,22 +745,27 @@ so that object <m> a \in A </m> is <q>placed</q> in container <m> b \in B </m> w
 		But <m> f(A) </m> is a subset of the finite set <m> B </m>, and so <m> \card{f(A)} \le \card{B} </m>.
 		Combining this with the calculation above gives <md> \card{A} \le \ell \cdot \card{f(A)} \le \ell \cdot \card{B} </md>.
 		</p>
+
 	</proof>
+
 </theorem>
 
 <corollary xml:id="corollary-counting-strong-pigeon">
 	<title>Pigeonhole Principle (strong form, informal version)</title>
 	<idx><h>Principle</h><h>Pigeonhole</h><h>strong form (informal version)</h></idx>
 	<idx><h>Pigeonhole Principle</h><h>strong form (informal version)</h></idx>
+
 	<statement><p>
 		If <m> m </m> objects are placed in <m> n </m> containers, with <m> m \gt \ell n </m> for some <m> \ell \in \N </m>,
 		then at least one container contains more than <m> \ell </m> objects.
 	</p></statement>
+
 	<proof><title>Proof idea</title><p>
 		Again, let <m> A </m> be the set of objects and <m> B </m> the set of containers,
 		so that <md> \card{A} = m \gt \ell n = \ell \cdot \card{B} </md>.
 		Then apply the <xref ref="theorem-counting-strong-pigeon" text="title" />.
 	</p></proof>
+
 </corollary>
 
 <note><p>
@@ -645,16 +778,19 @@ so that object <m> a \in A </m> is <q>placed</q> in container <m> b \in B </m> w
 
 <problem> <!-- worked example -->
 	<title>Handing out coins</title>
+
 	<statement><p>
 		Show that if thirteen coins are distributed to six children,
 		then at least one child will receive at least three coins.
 	</p></statement>
+
 	<solution><p>
 		Using coins as objects and children as containers, the given statement is just the <xref ref="theorem-counting-strong-pigeon" text="title" />
 		with <m> \ell = 2 </m>:
 		we have <m> 13 </m> objects and <m> 6 </m> containers, and <m> 13 \gt 2 \cdot 6 </m>.
 		(<em>Note:</em> Since coins are discrete objects, <q>more than two</q> and <q>at least three</q> are the same thing.)
 	</p></solution>
+
 </problem>
 
 <remark><p>
@@ -669,15 +805,18 @@ so that object <m> a \in A </m> is <q>placed</q> in container <m> b \in B </m> w
 
 <problem> <!-- worked example -->
 	<title>Handing out pudding</title>
+
 	<statement><p>
 		The cafeteria puts out <m> 100 </m> chocolate, <m> 100 </m> tapioca, and <m> 100 </m> butterscotch puddings.
 		How many students must grab a pudding before we can be certain that at least one of the flavours has at least half of the bowls taken?
 	</p></statement>
+
 	<solution><title>Using <q>tipping point</q> thinking</title><p>
 		The <q>tipping point</q> is exactly <m> 49 </m> bowls of <em>each</em> flavour taken,
 		which requires <m> 3\cdot 49 = 147 </m> students.
 		After the <m> \nth[148] </m> student, we will definitely have <m> 50 </m> bowls of one of the flavours taken.
 	</p></solution>
+
 	<solution><title>Direct use of the Pigeonhole Principle</title><p>
 		Consider students as objects (<m> m </m> of them <mdash /> this is the unknown to be determined) and flavours as containers (<m> 3 </m> of them).
 		To determine the appropriate value of <m> \ell </m> to use, consider that <q>at least half</q> in this problem means <q>at least <m> 50 </m></q>,
@@ -685,6 +824,7 @@ so that object <m> a \in A </m> is <q>placed</q> in container <m> b \in B </m> w
 		So choose <m> \ell = 49 </m>.
 		In that case, we need <m> m \gt 49 \cdot 3 = 147 </m>, bringing us to the answer of <m> m = 147 + 1 = 148 </m> students.
 	</p></solution>
+
 </problem>
 
 </subsection>

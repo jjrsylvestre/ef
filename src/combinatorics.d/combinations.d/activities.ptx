@@ -18,33 +18,51 @@ respective owners.
 <worksheet xml:id="activities-combinations" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <activity>
+
 	<introduction><p> From a pool of eleven students (five first-year, six senior), how many ways are there to form: </p></introduction>
+
 	<task><p> A committee of three students? </p></task>
+
 	<task><p> A committee consisting of three first-year students and four senior students? </p></task>
+
 	<task><p> A committee of six students if two of the senior students refuse to be together on the committee? </p></task>
+
 	<task><p> A committee consisting of four first-year students and three senior students if two of the first-year students refuse to be together on the team? </p></task>
+
 </activity>
 
 <activity>
+
 	<introduction><p> From the alphabet <m> \Sigma = \{0,1\} </m>: </p></introduction>
+
 	<task><p> How many words of length <m> 10 </m> contain exactly six <m> 0 </m>s? </p></task>
+
 	<task><p> How many contain at least three <m> 1 </m>s? </p></task>
+
 </activity>
 
 <activity>
+
 	<introduction><p> From the alphabet <m> \Sigma = \{0,1,2\} </m>: </p></introduction>
+
 	<task><p> How many words of length <m> 10 </m> contain exactly four <m> 2 </m>s? </p></task>
+
 	<task><p> How many contain at most seven <m> 0 </m>s? </p></task>
+
 </activity>
 
 <activity xml:id="activity-combinations-plinko">
-<!-- \label{EXERCISE::combinations::plinko} -->
-	<introduction><p>
+
+	<introduction>
+
+		<p>
 		<xref ref="figure-combinations-plinko" /> contains a diagram in a pyramid shape.
 		The unfilled circles represent <q>positions</q> in the pyramid,
 		and the smaller dots represent <q>dividers</q> between positions.
 		Consider <q>paths</q> through this pyramid that begin at the peak position and end on the lowest level.
 		The filled circles joined by line segments represent <em>one</em> such path.
+		</p>
+
 		<figure xml:id="figure-combinations-plinko">
 			<caption>A Plinko<trademark />-style pyramid.</caption>
 			<image xml:id="image-combinations-plinko" width="50%">
@@ -52,30 +70,42 @@ respective owners.
 				<latex-image><xi:include href="activities.d/plinko.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
-	</p></introduction>
+
+	</introduction>
+
 	<task><p> How many such paths are there? </p></task>
+
 	<task xml:id="activity-combinations-plinko-change-once">
+
 		<p>
 		How many paths are there that change direction exactly once?
 		Exactly twice?
 		At every step?
 		</p>
-		<p> (For each case described in this task, you should be able to arrive at an answer without explicitly determining all such paths.) </p>
+
+		<p><alert>Note.</alert> For each case described in this task, you should be able to arrive at an answer without explicitly determining all such paths. </p>
+
 	</task>
+
 </activity>
 
 <activity>
+
 	<introduction><p>
 		You get to the final exam of one your courses and are faced with twelve questions.
 		In how many ways can you fulfill the requirements exam if the instructions ask you to:
 	</p></introduction>
+
 	<task><p> Answer any ten of the questions? </p></task>
+
 	<task><p> Answer any seven of the first eight questions and any three of the last four questions? </p></task>
+
 	<task><p>
 		Answer ten of the questions,
 		at least five of which must be from the first eight questions
 		and at least three of which must be from the last four questions?
 	</p></task>
+
 </activity>
 
 <activity><p>
@@ -88,13 +118,16 @@ respective owners.
 <activity><p> How many ways are there to split <m> m n </m> people into <m> m </m> groups of equal size? </p></activity>
 
 <activity>
+
 	<statement><p>
 		Suppose you have <m> 2 n </m> teddy bears that are identical except for a number stitched into the paw of the right foot.
 		Of these bears, <m> n </m> have the number <m> 0 </m> on their foot,
 		and the remaining <m> n </m> bears have a unique number from <m> 1, 2, 3, \dotsc, n </m>.
 		How many ways can you choose <m> n </m> of the bears, with the understanding that any of the bears labelled <m> 0 </m> are interchangeable?
 	</p></statement>
+
 	<hint><p> Break into cases based on how many bears labelled <m> 0 </m> will be in your collection. </p></hint>
+
 </activity>
 
 <activity><p>
@@ -103,11 +136,14 @@ respective owners.
 </p></activity>
 
 <activity>
+
 	<statement><p>
 		Consider the set <m> \{ 1, 2, 3, \dotsc, n \} </m>.
 		How many subsets of size <m> 3 </m> are there such that no two of the three elements therein are consecutive?
 	</p></statement>
+
 	<hint><p> It might be easier to count the subsets of size <m> 3 </m> that <em>do</em> contain (at least) two consecutive numbers. </p></hint>
+
 </activity>
 
 </worksheet>

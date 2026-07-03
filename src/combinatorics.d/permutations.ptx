@@ -37,17 +37,12 @@ In counting, factorials come up a lot.
 </dl>
 </p>
 
-<example>
-	<title>Two factorial calculations</title>
-	<p><md><mrow>
-		3! \amp = 3 \cdot 2 \cdot 1 = 6, \amp
-		7! = 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5,040.
-	</mrow></md></p>
-</example>
+<example><title>Two factorial calculations</title><p><md><mrow>
+	3! \amp = 3 \cdot 2 \cdot 1 = 6, \amp
+	7! = 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5,040.
+</mrow></md></p></example>
 
-<example>
-	<title>Factorial factors</title>
-	<p>
+<example><title>Factorial factors</title><p>
 	A factorial contains every smaller factorial as a factor.
 	For example,
 	<md>
@@ -59,11 +54,11 @@ In counting, factorials come up a lot.
 		}
 		= 7 \cdot 6 \cdot 5 \cdot 4 = 840
 	</md>.
-	</p>
-</example>
+</p></example>
 
 <convention xml:id="convention-permutations-0-factorial"><p>
-	To avoid division by zero in certain formulas, define <m> 0! = 1 </m>.
+	To avoid division by zero in certain formulas,
+	we define <m> 0! = 1 </m>.
 	This choice is also made to be consistent with the methods for counting permutations we will explore in this chapter.
 </p></convention>
 
@@ -89,6 +84,7 @@ In counting, factorials come up a lot.
 
 <example>
 	<title>Permutations of three objects</title>
+
 	<p>
 	<xref ref="figure-permutations-all-on-three-objects" />
 	contains tables of values for all six possible permutations of the set <m> A = \{a,b,c\} </m>.
@@ -97,9 +93,12 @@ In counting, factorials come up a lot.
 	one element fixed and two mixed;
 	all elements mixed.
 	</p>
+
 	<figure xml:id="figure-permutations-all-on-three-objects">
 		<caption>All possible permutations on three objects.</caption>
+
 		<sidebyside>
+
 			<tabular top="medium" bottom="medium" halign="center">
 				<col right="minor" /><col /><col /><col />
 				<row bottom="minor">
@@ -115,6 +114,7 @@ In counting, factorials come up a lot.
 					<cell><m> c </m></cell>
 				</row>
 			</tabular>
+
 			<tabular top="medium" bottom="medium" halign="center">
 				<col right="minor" /><col /><col /><col />
 				<row bottom="minor">
@@ -142,6 +142,7 @@ In counting, factorials come up a lot.
 					<cell><m> c </m></cell>
 				</row>
 			</tabular>
+
 			<tabular top="medium" bottom="medium" halign="center">
 				<col right="minor" /><col /><col /><col />
 				<row bottom="minor">
@@ -163,8 +164,11 @@ In counting, factorials come up a lot.
 					<cell><m> a </m></cell>
 				</row>
 			</tabular>
+
 		</sidebyside>
+
 	</figure>
+
 </example>
 
 </section>
@@ -173,7 +177,9 @@ In counting, factorials come up a lot.
 <title>Counting permutations</title>
 
 <theorem xml:id="theorem-permutations-counting">
+
 	<statement><p> For <m> \card{A} = n </m>, there are <m> n! </m> permutations on <m> A </m>. </p></statement>
+
 	<proof><title>Informal proof</title><p>
 		We want to count the number of ways of constructing an ordered list of the <m> n </m> elements of <m> A </m>.
 		There are <m> n </m> ways to choose the first element in the list,
@@ -185,21 +191,28 @@ In counting, factorials come up a lot.
 		<md> n \cdot (n - 1) \cdot (n - 2) \cdot \dotsb \cdot 1 = n! </md>
 		ways to construct such a list.
 	</p></proof>
+
 	<proof><title>Formal proof</title>
+
 		<p> By induction. </p>
+
 		<case><title>Base case <m> n=1 </m></title><p>
 			If <m> \card{A} = 1 </m>, then <m> A </m> consists of a single element, say <m> A = \{a\} </m>.
 			There is only one possible permutation of <m> A </m>, and that is the identity function <m> \funcdef{\id_A}{A}{A} </m> defined by <m> \id_A(a) = a </m>.
 			Thus, we have verified that there is <m> 1! = 1 </m> permutation of <m> A </m>.
 		</p></case>
+
 		<case><title>Induction step</title>
+
 			<p>
 			Let <m> k \ge 1 </m> be a fixed integer.
 			Our induction hypothesis is to assume that if <m> B </m> is any set with <m> \card{B} = k </m> elements,
 			then there are <m> k! </m> permutations on <m> B </m>.
 			We want to use this hypothesis to prove that if <m> A </m> is a set with <m> \card{A} = k+1 </m> elements,
 			then there are <m> (k+1)! </m> permutations on <m> A </m>.
-			</p><p>
+			</p>
+
+			<p>
 			Write <m> A = \{ a_0, a_1, \dotsc, a_k \} </m> and <m> B = \{ a_1, a_2, \dotsc, a_k \} </m>.
 			Then <m> B </m> is a subset of <m> A </m> that contains <m> k </m> elements,
 			and so by our induction hypothesis there are <m> k! </m> permutations on <m> B </m>.
@@ -207,9 +220,12 @@ In counting, factorials come up a lot.
 			For example, consider how the identity permutation on <m> B </m> can be turned into <m> k+1 </m> different permutations on <m> A </m> <mdash />
 			see <xref ref="figure-permutations-induction-insert" />.
 			</p>
+
 			<figure xml:id="figure-permutations-induction-insert">
 				<caption>Inserting an extra element at various positions of a permutation to create new, longer permutations.</caption>
+
 				<sidebyside><stack>
+
 					<tabular top="medium" halign="center">
 						<col right="minor" /><col /><col /><col /><col /><col /><col />
 						<row bottom="minor">
@@ -231,7 +247,9 @@ In counting, factorials come up a lot.
 							<cell><m> a_k </m></cell>
 						</row>
 					</tabular>
+
 					<p><md>\downarrow</md></p>
+
 					<tabular top="medium" bottom="minor" halign="center">
 						<col right="minor" /><col /><col /><col /><col /><col /><col /><col />
 						<!-- <row bottom="minor"> -->
@@ -316,14 +334,20 @@ In counting, factorials come up a lot.
 							<cell><m> a_0 </m></cell>
 						</row>
 					</tabular>
+
 				</stack></sidebyside>
+
 			</figure>
+
 			<p>
 			<em>Each</em> of the <m> k! </m> permutations of <m> B </m> can be used to construct <m> k+1 </m> permutations of <m> A </m>, in the same fashion as we have above for the identity permutation of <m> B </m>.
 			So we have in total <m> (k+1) \cdot k! = (k+1)! </m> permutations of <m> A </m>, as required.
 			</p>
+
 		</case>
+
 	</proof>
+
 </theorem>
 
 <remark><p>
@@ -340,6 +364,7 @@ In counting, factorials come up a lot.
 <p>
 Each of the provided proofs for <xref ref="theorem-permutations-counting" /> above contains an idea that is of practical use in counting collections.
 <ul>
+
 	<li>
 		In the informal proof,
 		we used the <xref ref="theorem-counting-mult-rule" text="title" />
@@ -348,14 +373,17 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 		(We used this similar thinking often in <xref ref="chapter-counting" />,
 		though we didn't explicitly connect the <xref ref="theorem-counting-mult-rule" text="title" /> to ordered lists.)
 	</li>
+
 	<li>
 		In the formal proof, we used the idea of <q>inserting</q> an object into an existing ordered list to create a new ordered list.
 	</li>
+
 </ul>
 </p>
 
 <problem>  <!-- worked example -->
 	<title>Distributing items</title>
+
 	<statement><p>
 		For a class of twenty students,
 		in how many different orders can a professor hand back marked tests:
@@ -365,17 +393,21 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 			<li> If Elizabeth's and Ruijing's tests cannot immediately follow one another? </li>
 		</ol>
 	</p></statement>
+
 	<solution><p><ol>
+
 		<li>
 			A test distribution order is the same thing as a permutation of the students in the class,
 			so there are <m> 20! </m> different handback orders
 			(approximately <m> 2.4 </m> quintillion).
 		</li>
+
 		<li>
 			This is just the number of ways of ordering the remaining nineteen students' papers,
 			which is <m> 19! </m>
 			(approximately <m> 122 </m> quadrillion).
 		</li>
+
 		<li>
 			It is easier to count the ways that they <em>do</em> follow each other.
 			One way to do this is as follows.
@@ -392,19 +424,24 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 				= 18 \cdot 19!
 			</md>.
 		</li>
+
 	</ol></p></solution>
+
 </problem>
 
 <problem xml:id="wexample-permutations-counting-words">  <!-- worked example -->
 	<title>Words using the entire alphabet</title>
+
 	<statement><p>
 		For an alphabet <m> \Sigma </m> with <m> \card{\Sigma} = n </m>,
 		how many words in <m> \words{\Sigma} </m> contain each element of the alphabet exactly once?
 	</p></statement>
+
 	<solution>
 		<p> Here we just want to order all the elements of <m> \Sigma </m> into a word, so the answer is <m> n! </m>. </p>
 		<aside><title>Compare</title><p> See <xref ref="wexample-counting-words-no-repeats" />. </p></aside>
 	</solution>
+
 </problem>
 
 <remark><p>
@@ -416,21 +453,25 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 
 <problem>  <!-- worked example -->
 	<title>Counting total orders</title>
+
 	<statement><p> If <m> \card{A} = n </m>, how many different total orders on <m> A </m> exist? </p></statement>
+
 	<solution><p>
 		Specifying a total order on <m> A </m> really just means ordering the elements of <m> A </m>:
 		<md> a_1 \le a_2 \le a_3 \le \dotsb \le a_n. </md>
 		So there are <m> n! </m> possible total orders.
 	</p></solution>
+
 </problem>
 
 <problem xml:id="wexample-permutations-bottle-colour-patterns">  <!-- worked example -->
-<!-- \label{WEXAMPLE::bottle.colour.patterns.1} -->
 	<title>Counting colour patterns</title>
+
 	<statement><p>
 		How many different colour patterns can we obtain by placing three red bottles and five blue bottles on a shelf?
 		(Assume the bottles are indistinguishable except by colour.)
 	</p></statement>
+
 	<solution><p>
 		Let's use the <xref ref="theorem-counting-div-rule" text="title" />,
 		where first we will count a more structured collection.
@@ -450,14 +491,17 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 		<md> \frac{8!}{3! \cdot 5!} = \frac{8\cdot 7 \cdot 6}{3 \cdot 2} = 56 </md>
 		possible colour patterns.
 	</p></solution>
+
 </problem>
 
 <problem>  <!-- worked example -->
 	<title>Circular orderings</title>
+
 	<statement><p>
 		How many different seating arrangements of ten people around a round table are possible,
 		if no one is considered to be at the <q>head</q> or <q>foot</q> of the table?
 	</p></statement>
+
 	<solution><p>
 		Let's use the <xref ref="theorem-counting-div-rule" text="title" />,
 		where first we will count a more structured collection.
@@ -466,12 +510,14 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 		But <q>rotating</q> around the line (<m> 10 </m> possible rotations) yields an equivalent circular seating arrangement.
 		So the answer is <md> \frac{10!}{10} = 9! </md>.
 	</p></solution>
+
 	<solution><p>
 		Force one particular person to <em>always</em> be the <q>start</q> of the seating arrangement,
 		no matter what physical seat they are sitting in,
 		and ignoring the fact that a circular arrangement really has no <q>start.</q>
 		Then there are <m> 9! </m> ways to arrange the remaining <m> 9 </m> people around the table starting from the seat to the left of the <q>start</q> person.
 	</p></solution>
+
 </problem>
 
 </section>
@@ -482,11 +528,13 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 <p>
 Sometimes we want to create an ordered list of a certain length from a larger pool of candidates.
 <dl width="narrow">
+
 	<li>
 		<title>permutation of size <m> k </m></title>
 		<idx><h>permutation</h><h>of size <m> k </m></h></idx>
 		<p> an ordered list of <m> k </m> elements from a given set <m> A </m>, with <m> \card{A} \ge k </m> </p>
 	</li>
+
 	<li>
 		<title><m> \permutation{n}{k} </m></title>
 		<notation>
@@ -495,6 +543,7 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 		</notation>
 		<p> the number of permutations of size <m> k </m> taken from a set of size <m> n </m> </p>
 	</li>
+
 	<li>
 		<title> <m> \permutationalt{n}{k} </m>, <m> \permutationaltalt{n}{k} </m></title>
 		<notation>
@@ -507,18 +556,23 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 		</notation>
 		<p>alternative notation choices for <m> \permutation{n}{k} </m></p>
 	</li>
+
 </dl>
 </p>
 
 <example xml:id="example-permutations-size-2-from-4">
 	<title>Visualizing <m> \permutation{4}{2} </m></title>
+
 	<p>
 	Consider <m> A = \{1,2,3,4\} </m>, so that <m> n = \card{A} = 4 </m>.
 	There are <m> 4! = 24 </m> permutations of <m> A </m>.
 	</p>
+
 	<figure>
 		<caption>Permutations of a set of size <m> 4 </m>.</caption>
+
 		<sidebyside>
+
 			<tabular top="medium" halign="center">
 				<col right="minor" /><col /><col /><col /><col />
 				<row bottom="minor">
@@ -613,6 +667,7 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 					<cell><m> 1 </m></cell>
 				</row>
 			</tabular>
+
 			<tabular top="medium" halign="center">
 				<col right="minor" /><col /><col /><col /><col />
 				<row bottom="minor">
@@ -707,19 +762,24 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 					<cell><m> 1 </m></cell>
 				</row>
 			</tabular>
+
 		</sidebyside>
+
 	</figure>
+
 	<p>
 	Notice that the permutations above have been grouped into pairs,
 	where the two permutations in a given pair have the same two first elements in the same order.
 	From this, we can conclude that there are only <m> 24/2 = 12 </m> permutations of size <m> k=2 </m> from <m> A </m>.
 	</p>
+
 </example>
 
 <theorem xml:id="theorem-permutations-size-k-formula">
-<!-- \label{THEOREM::permutation.formula} -->
 	<title>Computing <m> \permutation{n}{k} </m></title>
+
 	<statement><p> We have <md> \permutation{n}{k} = \frac{n!}{(n-k)!} = n (n-1) (n-2) \dotsm (n-k+1) </md>. </p></statement>
+
 	<proof><p>
 		One way to construct an ordered list of <m> k </m> elements from a set <m> A </m>, where <m> \card{A} = n </m>,
 		is as in <xref ref="example-permutations-size-2-from-4" />.
@@ -736,6 +796,7 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 			= \frac{n!}{(n - k)!}
 		</md>.
 	</p></proof>
+
 </theorem>
 
 <remark><p>
@@ -747,10 +808,12 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 
 <problem>  <!-- worked example -->
 	<title>Elections</title>
+
 	<statement><p>
 		A class of twenty discrete mathematics students decides to elect a class president and vice-president.
 		How many possible outcomes to the election process are there?
 	</p></statement>
+
 	<solution><p>
 		An arbitrary way to elect students to these offices would be to line all the students up and choose the first two students in line to be the president and vice-president, respectively.
 		Therefore, there are
@@ -762,49 +825,65 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 		</md>
 		possible outcomes to the election.
 	</p></solution>
+
 </problem>
 
 <problem>  <!-- worked example -->
 	<title>Ranking choices</title>
+
 	<statement><p>
 		You go to the horsetrack to bet on a race.
 		From a field of nine horses, how many ways are there to make a <q>Trifecta</q> bet
 		(<ie /> specify the first three finishers in order)?
 	</p></statement>
+
 	<solution><p> There are <md> \permutation{9}{3} = \frac{9!}{(9 - 3)!} = 9 \cdot 8 \cdot 7 = 504 </md> possible such bets. </p></solution>
+
 </problem>
 
 <problem>  <!-- worked example -->
 	<title>Words with no repeated letters</title>
+
 	<statement>
+
 		<p>
 		For alphabet <m> \Sigma = \EngAlphabet </m>,
 		how many four-letter words made up of distinct letters are there in <m> \words{\Sigma} </m>?
 		</p>
+
 		<aside><title>Compare</title><p> See <xref ref="wexample-counting-words-no-repeats" />. </p></aside>
+
 	</statement>
+
 	<solution><p>
 		A four-letter word with no repeated letters is the same as a permutation of size <m> 4 </m>,
 		so the number of such words is
 		<md> \permutation{26}{4} = \frac{26!}{(26 - 4)!} = 26 \cdot 25 \cdot 24 \cdot 23 = 358,800 </md>.
 	</p></solution>
+
 </problem>
 
 <problem xml:id="wexample-counting-injections-1">  <!-- worked example -->
-<!-- \label{WEXAMPLE::counting.injections.1} -->
+
 	<statement>
+
 		<p>
 		If <m> \card{A} = k </m> and <m> \card{B} = n </m>,
 		with <m> k \le n </m>, how many injective functions <m> \funcdef{f}{A}{B} </m> exist?
 		</p>
+
 		<aside><title>Compare</title><p> See <xref ref="wexample-counting-functions" />. </p></aside>
+
 	</statement>
+
 	<solution>
+
 		<p>
 		Fix an ordering <m> a_1,a_2,\dotsc,a_k </m> of the elements of <m> A </m>.
 		Then from any ordering <m> b_1, b_2, \dotsc, b_k </m> of size <m> k </m> from <m> B </m>,
 		we get an injective function <m> \ifuncdef{f}{A}{B} </m> by the following table of values.
 		</p>
+
 		<tabular top="medium" bottom="medium" halign="center">
 			<col right="minor" /><col /><col /><col /><col />
 			<row bottom="minor">
@@ -822,11 +901,14 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 				<cell><m> b_k </m></cell>
 			</row>
 		</tabular>
+
 		<p>
 		That is, every permutation of <m> B </m> of size <m> k </m> corresponds to an injection <m> \ifuncdef{f}{A}{B} </m>,
 		and so the number of such injections is <m> \permutation{n}{k} </m>.
 		</p>
+
 	</solution>
+
 </problem>
 
 </section>
