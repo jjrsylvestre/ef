@@ -77,8 +77,8 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 </p>
 
 <example xml:id="example-graphs-basic-graph-1">
-<!-- \label{EXAMPLE::basic.graph.1} -->
 	<title>A very basic graph</title>
+
 	<p>
 	The graph <m> G = (V,E) </m>, where
 	<md><mrow>
@@ -87,6 +87,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 	</mrow></md>
 	has three vertices and three edges.
 	</p>
+
 	<figure>
 		<caption>Diagram of the graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-example" width="25.5%">
@@ -94,11 +95,12 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 			<latex-image><xi:include href="graphs.d/basic-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 <example xml:id="example-graphs-basic-graph-2">
-<!-- \label{EXAMPLE::basic.graph.2} -->
 	<title>A slightly more complicated example graph</title>
+
 	<p>
 	The graph <m> G = (V,E) </m>, where
 	<md><mrow>
@@ -107,6 +109,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 	</mrow></md>
 	has four vertices and five edges.
 	</p>
+
 	<figure>
 		<caption>Diagram of the graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-complicated-example" width="37.9%">
@@ -114,22 +117,27 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 			<latex-image><xi:include href="graphs.d/basic-complicated-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 <problem> <!-- worked example -->
 	<title>Using a graph to solve a problem</title>
+
 	<statement><p>
 		Suppose we have jugs <m> A,B,C </m> with capacities <m> 8,5,3 </m> litres, respectively.
 		Jug <m> A </m> is full of water and jugs <m> B,C </m> are empty.
 		Can we divide the water into two <em>exactly</em> equal parts?
 		If so, find the most efficient pouring sequence.
 	</p></statement>
+
 	<solution>
+
 		<p>
 		Construct a graph with points labelled by elements <m> (a,b,c) \in \N \times \N \times \N </m>, where <m> a,b,c </m> are the volumes of water in jugs <m> A,B,C </m>, respectively.
 		Join two points with a line segment if we can obtain one set of volumes from the other in a single pour.
 		We will ignore pours that return us to a configuration previously achievable by fewer pours.
 		</p>
+
 		<figure>
 			<caption>Graph to track possible jug fill states.</caption>
 			<image xml:id="image-graphs-jugs" width="54.1%">
@@ -139,8 +147,11 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 				<latex-image><xi:include href="graphs.d/jugs.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
+
 		<p> Following the left leg of the graph gets us to the desired configuration in <m> 7 </m> pours. </p>
+
 	</solution>
+
 </problem>
 
 
@@ -245,9 +256,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 	</md>
 </p></note>
 
-<example>
-	<title>Properties of our very basic example graph</title>
-	<p>
+<example><title>Properties of our very basic example graph</title><p>
 	The graph of <xref ref="example-graphs-basic-graph-1" /> has the following properties.
 	<ul>
 		<li> It is a simple graph. </li>
@@ -256,12 +265,9 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 		<li> There are no loops. </li>
 		<li> Each vertex is incident to two non-loop edges, so each vertex has degree <m> 2 </m>. </li>
 	</ul>
-	</p>
-</example>
+</p></example>
 
-<example>
-	<title>Properties of our slightly more complicated example graph</title>
-	<p>
+<example><title>Properties of our slightly more complicated example graph</title><p>
 	The graph of <xref ref="example-graphs-basic-graph-2" /> has the following properties.
 	<ul>
 		<li> It is not a simple graph. </li>
@@ -280,8 +286,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 			</mrow></md>.
 		</li>
 	</ul>
-	</p>
-</example>
+</p></example>
 
 <p>
 The number of edges in a graph is an important measure both of how <q>connected</q> the graph is,
@@ -297,33 +302,40 @@ as well as how much <q>redundancy</q> the graph contains.
 </p>
 
 <theorem xml:id="theorem-graphs-sum-of-degrees">
-<!-- \label{THEOREM::sum.of.degrees.in.graph} -->
 	<title>Sum of degrees is twice the number of edges</title>
+
 	<statement><p>
 		Suppose <m> G = (V,E) </m> is a graph with vertex set <m> V = \{ v_1, v_2, \dotsc, v_n \} </m>.
 		Then,
 		<md> \deg v_1 + \deg v_2 + \dotsc \deg v_n = 2\card{E}. </md>
 	</p></statement>
+
 	<proof><title>Proof idea</title><p>
 		If an edge <m> e </m> is a loop at vertex <m> v_i </m>, then it contributes <m> 2 </m> to <m> \deg v_i </m>.
 		Otherwise, if edge <m> e </m> links vertices <m> v_i </m> and <m> v_j </m> (<m> v_i \neq v_j </m>),
 		then it contributes <m> 1 </m> to each of <m> \deg v_i </m>  and <m> \deg v_j </m>.
 		In every case, each edge contributes exactly <m> 2 </m> to the sum of the vertex degrees.
 	</p></proof>
+
 </theorem>
 
 <corollary>
 	<title>Odd degrees are even</title>
+
 	<statement><p> In every graph, the number of vertices of odd degree is even. </p></statement>
+
 	<proof><title>Proof idea</title><p> Otherwise, the sum of the degrees of all vertices would be odd, which contradicts the theorem above. </p></proof>
+
 </corollary>
 
 <problem> <!-- worked example -->
+
 	<statement><p>
 		An odd fellow throws an odd party and invites an even number of other equally-odd people.
 		Each odd person at the party is friends with an odd number of other odd people at the party.
 		Is this odd party even possible?
 	</p></statement>
+
 	<solution><p>
 		Create a simple graph with the people at the party as vertices,
 		where two vertices are linked by a single edge if and only if the two people are friends.
@@ -334,6 +346,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		So we have an odd number of vertices each with odd degree,
 		which the corollary above says is not possible.
 	</p></solution>
+
 </problem>
 
 </subsection>
@@ -375,17 +388,21 @@ as well as how much <q>redundancy</q> the graph contains.
 </p></note>
 
 <problem> <!-- worked example -->
+
 	<statement><p>
 		Determine all possible subgraphs of the graph in
 		<xref ref="example-graphs-basic-graph-1" />.
 	</p></statement>
+
 	<solution>
+
 		<p>
 		First, every graph contains the empty graph as a subgraph.
 		Next, a nonempty subgraph of this particular graph can contain one, two, or all three vertices.
 		We can write out all nonempty possibilities in a general way based on the number of vertices in the subgraph.
 		In each graph below we require the vertex indices <m> i, j, k </m> to all be distinct and to satisfy <m> 1 \le i,j,k \le 3 </m>.
 		</p>
+
 		<figure xml:id="figure-graphs-basic-subgraphs">
 			<caption>All possible subgraphs of our basic example graph from <xref ref="example-graphs-basic-graph-1" />.</caption>
 			<image xml:id="image-graphs-basic-subgrphs" width="96.4%">
@@ -393,12 +410,15 @@ as well as how much <q>redundancy</q> the graph contains.
 				<latex-image><xi:include href="graphs.d/basic-subgraphs.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
+
 		<p>
 		There are <m> 3 </m> subgraphs of each of the first three types in <xref ref="figure-graphs-basic-subgraphs" />.
 		There are also <m> 3 </m> subgraphs of the fourth and fifth types.
 		Therefore, including the empty graph, there are <m> 18 </m> subgraphs of this example graph.
 		</p>
+
 	</solution>
+
 </problem>
 
 </subsection>
@@ -408,7 +428,6 @@ as well as how much <q>redundancy</q> the graph contains.
 
 <p><dl width="narrow">
 	<li xml:id="definition-graphs-complete">
-	<!-- \label{DEFN::complete.graph} -->
 		<title>complete graph</title>
 		<idx>complete graph</idx>
 		<idx><h>graph</h><h>complete</h></idx>
@@ -418,23 +437,22 @@ as well as how much <q>redundancy</q> the graph contains.
 
 <proposition xml:id="proposition-graphs-complete">
 	<title>Properties of complete graphs</title>
+
 	<p><ol>
 
 		<!-- <li> Complete graphs are simple. </li> -->
 
-		<li>
-			<p>
+		<li><p>
 			For each <m> n \ge 0 </m>,
 			there is a <em>unique</em> complete graph
-			<m> K_n = (V,E) </m> with <m> \card{V} = n </m>.
+			<m> K_n </m> with <m> n </m> vertices.
 			<idx>complete graph</idx>
 			<idx><h>graph</h><h>complete</h></idx>
 			<notation>
 				<usage><m> K_n </m></usage>
 				<description>the unique complete graph with <m> n </m> vertices</description>
 			</notation>
-			</p>
-		</li>
+		</p></li>
 
 		<li> If <m> n \ge 1 </m>, then every vertex in <m> K_n </m> has degree <m> n-1 </m>. </li>
 
@@ -448,8 +466,11 @@ as well as how much <q>redundancy</q> the graph contains.
 <!-- TODO These diagrams used to be inside the proposition. Are they better here? -->
 <figure xml:id="figure-graphs-complete-diagrams">
 	<caption>Complete graphs with <m> 1 </m>, <m> 2 </m>, <m> 3 </m>, and <m> 6 </m> vertices.</caption>
+
 	<sbsgroup>
+
 		<sidebyside widths="17.3% 17.3% 18.8%">  <!-- all three images are fudged to have same dimensions ?? -->
+
 			<figure>
 				<caption><m> K_1 </m>.</caption>
 				<image xml:id="image-graphs-K1">
@@ -457,6 +478,7 @@ as well as how much <q>redundancy</q> the graph contains.
 					<latex-image><xi:include href="graphs.d/K1.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
+
 			<figure>
 				<caption><m> K_2 </m>.</caption>
 				<image xml:id="image-graphs-K2">
@@ -464,6 +486,7 @@ as well as how much <q>redundancy</q> the graph contains.
 					<latex-image><xi:include href="graphs.d/K2.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
+
 			<figure>
 				<caption><m> K_3 </m>.</caption>
 				<image xml:id="image-graphs-K3">
@@ -471,8 +494,11 @@ as well as how much <q>redundancy</q> the graph contains.
 					<latex-image><xi:include href="graphs.d/K3.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
+
 		</sidebyside>
+
 		<sidebyside width="35.5%">
+
 			<figure>
 				<caption><m> K_6 </m>.</caption>
 				<image xml:id="image-graphs-K6">
@@ -480,11 +506,15 @@ as well as how much <q>redundancy</q> the graph contains.
 					<latex-image><xi:include href="graphs.d/K6.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
+
 		</sidebyside>
+
 	</sbsgroup>
+
 </figure>
 
 <exercise><p> Draw the complete graphs <m> K_4 </m> and <m> K_5 </m>. </p></exercise>
+
 <exercise><p> Is there a complete graph <m> K_0 </m>? </p></exercise>
 
 </subsection>
@@ -527,13 +557,16 @@ as well as how much <q>redundancy</q> the graph contains.
 
 <example xml:id="example-graphs-camrose-road-map">
 	<title>A road map weighted by distances</title>
+
 	<p>
 	A road map with distances as weights is a weighted graph.
 	Below is a simplified road map of the area around Camrose, Alberta.
 	The vertex set is the set of cities, and the edge set is the set of highways.
 	For example, the two-city set {Camrose, Edmonton} represents the edge on the graph between Camrose and Edmonton, and corresponds to Highway 21.
 	</p>
+
 	<sidebyside widths="53.2% 37%">
+
 		<figure>
 			<caption>Road map of the area around Camrose, Alberta.</caption>
 			<image xml:id="image-graphs-camrose-highways">
@@ -541,6 +574,7 @@ as well as how much <q>redundancy</q> the graph contains.
 				<latex-image><xi:include href="graphs.d/camrose-highways.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
+
 		<figure>
 			<caption>Table of values for distance weight function.</caption>
 			<tabular>
@@ -552,12 +586,15 @@ as well as how much <q>redundancy</q> the graph contains.
 				<row><cell>{Wetaskiwin, Camrose}</cell><cell><m> 40 </m></cell></row>
 			</tabular>
 		</figure>
+
 	</sidebyside>
+
 	<p>
 	The edges in the graph are weighted by the (rounded) highway distances between cities.
 	Formally, this is a function <m> w </m> from the edge set to the natural numbers.
 	The input-output relationship defining this function is tabulated above right.
 	</p>
+
 </example>
 
 <example><p>
@@ -571,12 +608,14 @@ as well as how much <q>redundancy</q> the graph contains.
 </p></example>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>directed graph (working definition)</title>
 		<idx><h>directed graph</h><h>working definition</h></idx>
 		<idx><h>graph</h><h>directed</h><h>working definition</h></idx>
 		<p> a graph in which each edge can be given a direction, <q>pointing</q> to one of its incident vertices </p>
 	</li>
+
 	<li xml:id="definition-graphs-directed-formal">
 		<title>directed graph (formal definition)</title>
 		<idx><h>directed graph</h><h>formal definition</h></idx>
@@ -586,6 +625,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		where <m> V </m> is a finite set and <m> E </m> is an unordered, possibly empty list of elements of <m> V \times V </m>
 		</p>
 	</li>
+
 </dl></p>
 
 <p>
@@ -598,6 +638,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 
 <example>
 	<title>A basic directed graph</title>
+
 	<p>
 	Consider
 	<md alignment="gather">
@@ -606,6 +647,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 	</md>
 	We draw the graph <m> G = (V,E) </m> with arrows to indicate the direction of edges.
 	</p>
+
 	<figure>
 		<caption>Diagram of the directed graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-directed" width="59.1%">
@@ -613,6 +655,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 			<latex-image><xi:include href="graphs.d/basic-directed.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 <exercise><p>
@@ -625,8 +668,8 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 <title>Important examples</title>
 
 <example xml:id="example-graphs-pow-set">
-<!-- \label{EXAMPLE::pow.set.graph} -->
 	<title>A power set graph</title>
+
 	<p>
 	We can use a graph to visualize the power set of a finite set <m> A </m>:
 	let <m> (\powset{A},E) </m> be the directed graph where, for vertices <m> B,C \in \powset{A} </m>
@@ -637,7 +680,9 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 		<li> there <em>does not</em> exist a subset <m> D \subseteq A </m> such that <m> B \subsetneqq D \subsetneqq C </m>. </li>
 	</ol>
 	<em>Note:</em> The second condition is to avoid cluttering the graph with extra edges that do not add any extra information.
-	</p><p>
+	</p>
+
+	<p>
 	For example, consider <m> A = \{a,b,c\} </m> and
 	<md>
 		\powset{A} = \left\{
@@ -648,6 +693,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 	So we can draw a graph to represent the subset relationships of <m> \powset{A} </m>,
 	with arrows to point from subset to superset.
 	</p>
+
 	<figure xml:id="figure-graphs-pow-set">
 		<caption>Directed graph to represent the subset relationships between elements of <m> \powset{A} </m>.</caption>
 		<image xml:id="image-graphs-powset" width="47%">
@@ -655,11 +701,13 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 			<latex-image><xi:include href="graphs.d/powset.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p>
 	It is somewhat natural to draw the graph with the largest subsets of <m> A </m> at the top (or at the bottom).
 	If we decide that arrows will always point <em>upwards</em>,
 	we can unclutter our graph by just drawing lines instead of arrows for edges.
 	</p>
+
 <!-- % 	\begin{jsgraph}
 % 		\lvertex{0,0}{e}{below:$\scriptstyle \emptyset$}
 % 		\lvertexlinefrom{-2,1}{a}{below left:{$\scriptstyle \{a\}$}}{e}
@@ -670,6 +718,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 % 		\lvertexlinefrom{2,2}{bc}{above right:{$\scriptstyle \{b,c\}$}}{b,c}
 % 		\lvertexlinefrom{0,3}{abc}{above:{$\scriptstyle \{a,b,c\}$}}{ab,ac,bc}
 % 	\end{jsgraph} -->
+
 </example>
 
 <p> We can use graphs to visualize other kinds of mathematical relationships. </p>
@@ -677,11 +726,14 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 <example xml:id="example-graphs-divides">
 <!-- \label{EXAMPLE::divides.graph} -->
 	<title>A division graph</title>
+
 	<p>
 	For integers <m> m,n </m>, write <m> m \mid n </m> if <m> m </m> divides <m> n </m>;
 	that is, if <m> n/m </m> is also an integer.
 	In this case, we say that <m> m </m> <term>divides</term> <m> n </m>.
-	</p><p>
+	</p>
+
+	<p>
 	Set <md> V = \{2,3,4,5,6,7,8,9,10,11,12,13,14\} </md>.
 	Let <m> G = (V,E) </m> be the directed graph where, for integers <m> m,n \in V </m> with <m> m \lt n </m>,
 	the ordered pair <m> (m,n) </m> is an edge in <m> E </m> if the following two conditions are satisfied:
@@ -696,6 +748,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 	Again, we agree that arrows will always point <em>up</em>,
 	but do not actually draw them. Note that the prime numbers all appear at the bottom.
 	</p>
+
 	<figure xml:id="figure-graphs-divides">
 		<caption>Directed graph to represent the relationship of division between elements of <m> V </m>.</caption>
 		<image xml:id="image-graphs-divides" width="52%">
@@ -703,10 +756,12 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 			<latex-image><xi:include href="graphs.d/divides.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 <example>
 	<title>Travelling salesman problem</title>
+
 	<p>
 	You get a summer job with the Prospective Student Office at the University of Alberta's Augustana Campus in Camrose, Alberta.
 	In May and June, your job is to visit Alberta high schools and meet with students who are thinking of applying to Augustana.
@@ -714,6 +769,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 	To save on gas, you would like to visit each city and town <em>exactly</em> once,
 	and do so while travelling the shortest distance possible.
 	</p>
+
 	<figure>
 		<caption>Road map of major centres in Alberta as a weighted graph.</caption>
 		<image xml:id="image-graphs-travelling" width="100%">
@@ -721,7 +777,9 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 			<latex-image><xi:include href="graphs.d/travelling.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p> This is a difficult problem, and gets more difficult as the number of cities and roads increases. </p>
+
 </example>
 
 </section>

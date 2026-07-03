@@ -16,40 +16,50 @@ respective owners.
 <worksheet xml:id="activities-trees" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <activity xml:id="activity-trees-draw-bridges">
+
 	<task xml:id="activity-trees-draw-bridges-draw"><p>
 		Draw two different connected graphs with five vertices each in which every edge is a bridge.
 	</p></task>
+
 	<task><p>
 		How many edges are in each of the examples that you drew in
 		<xref ref="activity-trees-draw-bridges-draw" text="type-local" />?
 	</p></task>
+
 	<task><p>
 		Would it be possible to add an edge to either of the examples that you drew in
 		<xref ref="activity-trees-draw-bridges-draw" text="type-local" />
 		<em>without</em> creating a cycle?
 	</p></task>
+
 </activity>
 
 <activity xml:id="activity-trees-draw-single-paths">
+
 	<task xml:id="activity-trees-draw-single-paths-draw"><p>
 		Draw two different simple graphs with <m> 5 </m> vertices in which every pair of vertices has a single path between them.
 	</p></task>
+
 	<task><p>
 		How many edges are in each of the examples that you drew in
 		<xref ref="activity-trees-draw-single-paths-draw" text="type-local" />?
 	</p></task>
+
 	<task><p>
 		Would it be possible to add an edge to either of the examples that you drew in
 		<xref ref="activity-trees-draw-single-paths-draw" text="type-local" />
 		<em>without</em> creating a cycle?
 	</p></task>
+
 </activity>
 
 <activity xml:id="activity-trees-remove-edge-from-just-a-cycle">
+
 	<p>
 	Suppose that <m> G </m> is a connected graph that <em>consists entirely of</em> a proper cycle.
 	(See <xref ref="figure-trees-only-proper-cycle" />.)
 	</p>
+
 	<figure xml:id="figure-trees-only-proper-cycle">
 		<caption>A graph that consists entirely of a proper cycle.</caption>
 		<image xml:id="image-trees-only-cycle" width="17.9%">
@@ -57,36 +67,37 @@ respective owners.
 			<latex-image><xi:include href="activities.d/only-cycle.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p>
 	Let <m> G' </m> represent the subgraph of <m> G </m> that results by removing a single edge.
 	Argue that <m> G' </m> remains connected.
 	</p>
+
 </activity>
 
 <activity xml:id="activity-trees-remove-edge-from-contains-a-cycle">
-	<statement>
-		<p>
-		Suppose that <m> H </m> is a connected graph that <em>contains</em> a proper cycle.
-		Let <m> H' </m> represent the subgraph of <m> H </m> that results by removing a single edge from <m> H </m>,
-		where the edge removed is part of the proper cycle that <m> H </m>contains.
-		Argue that <m> H' </m> remains connected.
-		</p>
-		<paragraphs><title>Notes</title><p>
-		<ul>
-			<li>
-				Your argument here needs to be (slightly) different from your argument in
-				<xref ref="activity-trees-remove-edge-from-just-a-cycle" />.
-			</li>
-			<li>
-				Make sure you are using the technical definition of
-				<term><xref ref="definition-paths-connected-graph" text="title" /></term>
-				in your argument.
-				What are you assuming about <m> H </m>,
-				and what do you need to verify about <m> H' </m>?
-			</li>
-		</ul>
-		</p></paragraphs>
-	</statement>
+
+	<p>
+	Suppose that <m> H </m> is a connected graph that <em>contains</em> a proper cycle.
+	Let <m> H' </m> represent the subgraph of <m> H </m> that results by removing a single edge from <m> H </m>,
+	where the edge removed is part of the proper cycle that <m> H </m>contains.
+	Argue that <m> H' </m> remains connected.
+	</p>
+
+	<paragraphs><title>Notes</title><p><ul>
+		<li>
+			Your argument here needs to be (slightly) different from your argument in
+			<xref ref="activity-trees-remove-edge-from-just-a-cycle" />.
+		</li>
+		<li>
+			Make sure you are using the technical definition of
+			<term><xref ref="definition-paths-connected-graph" text="title" /></term>
+			in your argument.
+			What are you assuming about <m> H </m>,
+			and what do you need to verify about <m> H' </m>?
+		</li>
+	</ul></p></paragraphs>
+
 </activity>
 
 </worksheet>

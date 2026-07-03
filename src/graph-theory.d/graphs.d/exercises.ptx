@@ -21,38 +21,53 @@ respective owners.
 
 <figure xml:id="figure-graphs-basics-exercise">
 	<caption>An example graph.</caption>
+
 	<image xml:id="image-graphs-basics" width="38.2%">
 		<description>An example graph.</description>
 		<latex-image><xi:include href="exercises.d/basics.tex" parse="text" /></latex-image>
 	</image>
+
 </figure>
 
 <exercise>
+
 	<introduction>
 		<p> Consider the graph in <xref ref="figure-graphs-basics-exercise" />. </p>
 	</introduction>
+
 	<task><p> Are vertices 1 and 2 incident? </p></task>
+
 	<task><p> Are any vertices adjacent to themselves? </p></task>
+
 	<task><p> Is vertex 3 adjacent to vertex 6? </p></task>
+
 	<task><p> Is this a simple graph? </p></task>
+
 	<task><p>
 		Compute the degree of each vertex in the graph.
 		Then verify that the sum of the degrees is equal to twice the number of edges.
 		(See <xref ref="theorem-graphs-sum-of-degrees" />.)
 	</p></task>
+
 </exercise>
 
 <exercise>
+
 	<task>
 		<statement><p> How many edges does the complete graph with ten vertices have? </p></statement>
 		<hint><p> See <xref ref="theorem-graphs-sum-of-degrees" />. </p></hint>
 	</task>
+
 	<task><p> Generalize your result to a formula for the number of edges in the complete graph with <m> n </m> vertices. </p></task>
+
 </exercise>
 
 <exercise>
+
 	<task><p> Draw an example of a simple graph that has no vertices of odd degree. </p></task>
+
 	<task><p> Draw an example of a simple graph that has no vertices of even degree. </p></task>
+
 </exercise>
 
 <exercise><p>
@@ -70,6 +85,7 @@ respective owners.
 
 <exercisegroup xml:id="exercisegroup-graphs-complement">
 	<title>Complement of a graph</title>
+
 	<introduction><p>
 		<xref ref="exercisegroup-graphs-complement" text="type-local">Exercises</xref>
 		concern the following definition.
@@ -83,8 +99,11 @@ respective owners.
 			</p>
 		</li></dl>
 	</p></introduction>
+
 	<exercise>
+		
 		<p> Draw the complement of the simple graph in <xref ref="figure-graphs-complement-basic" />. </p>
+		
 		<figure xml:id="figure-graphs-complement-basic">
 			<caption>A simple graph.</caption>
 			<image xml:id="image-graphs-complement" width="17.3%">
@@ -92,19 +111,26 @@ respective owners.
 				<latex-image><xi:include href="exercises.d/complement.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
+	
 	</exercise>
+
 	<exercise><p>
 		What is the complement of a complete graph?
 	</p></exercise>
+
 	<exercise>
+
 		<statement><p>
 			Suppose <m> G </m> is a simple graph with <m> n </m> vertices.
 			Determine a relationship between the number of edges in <m> G </m>,
 			the number of edges in the complement of <m> G </m>,
 			and the number of edges in the complete graph <m> K_n </m> with <m> n </m> vertices.
 		</p></statement>
+
 		<hint><p> Recall that every simple graph with <m> n </m> vertices is a subgraph of <m> K_n </m>. </p></hint>
+
 	</exercise>
+
 </exercisegroup>
 
 </exercises>

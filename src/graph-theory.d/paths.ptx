@@ -21,12 +21,14 @@ respective owners.
 
 <example xml:id="example-paths-motivating">
 	<title>Driving routes on a graph</title>
+
 	<p>
 	Looking at a map of Alberta, you might decide that there are three reasonable driving routes from Camrose to Red Deer and three reasonable driving routes from Red Deer to Drumheller.
 	Define a graph <m> G = (V,E) </m> with cities as vertices and routes as edges.
 	If we travel between Camrose, Red Deer, and Drumheller on these routes,
 	we find that any multi-city trip is a finite sequence from <m> V \cup E </m> which starts and ends at a vertex and alternates between vertices and edges.
 	</p>
+
 	<figure xml:id="figure-paths-driving-routes">
 		<caption>Driving routes between Camrose, Red Deer, and Drumheller.</caption>
 		<image xml:id="image-paths-driving" width="42%">
@@ -34,6 +36,7 @@ respective owners.
 			<latex-image><xi:include href="paths.d/driving.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p>
 	For example,
 	<md> C, r_1, R, r_4, D, r_5, R, r_2, C, r_3, R, r_6, D </md>
@@ -41,6 +44,7 @@ respective owners.
 	and that never uses the same route twice.
 	Notice that we cannot extend this trip without repeating a route.
 	</p>
+
 </example>
 
 </section>
@@ -109,7 +113,9 @@ respective owners.
 
 <example xml:id="example-paths-and-trails">
 	<title>Paths and trails</title>
+
 	<p> Consider the following graph. </p>
+
 	<figure xml:id="figure-paths-illustrative-example">
 		<caption>A example graph to illustrate paths and trails.</caption>
 		<image xml:id="image-paths-paths-and-trails" width="33.8%">
@@ -117,9 +123,11 @@ respective owners.
 			<latex-image><xi:include href="paths.d/paths-and-trails.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p>
 	This graph has the following properties.
 	<ol>
+
 		<li><p>
 			Every path or trail passing through <m> v_1 </m> must start or end there but cannot be closed,
 			<em>except</em> for the closed paths:
@@ -129,14 +137,17 @@ respective owners.
 				<li> <m> v_2, e_1, v_1, e_1, v_2 </m>; </li>
 			</ul>
 		</p></li>
+
 		<li> Walk <m> v_1, e_1, v_2, e_5, v_3, e_4, v_4, </m> is both a trail and a path. </li>
+
 		<li> Walk <m> v_1, e_1, v_2, e_5, v_3, e_6, v_3, e_4, v_4, </m> is a trail but not a path. </li>
+
 	</ol>
 	</p>
+
 </example>
 
 <problem xml:id="wexample-path-num-trails"> <!-- worked example -->
-<!-- \label{WEXAMPLE::num.trails} -->
 
 	<statement><p>
 		Consider again the graph in <xref ref="figure-paths-illustrative-example" />
@@ -194,13 +205,18 @@ respective owners.
 </problem>
 
 <proposition xml:id="proposition-paths-open-is-trail">
+
 	<statement><p> Every open path is a trail. </p></statement>
+
 	<proof>
+
 		<p>
 		We will prove the contrapositive: a walk that is not a trail cannot be an open path.
 		So suppose <m> W </m> is a walk in a graph, and that <m> W </m> traverses edge <m> e </m> twice.
 		</p>
+
 		<case><title>Case <m> e </m> is a loop</title><p> Then <m> W </m> passes through the vertex incident to <m> e </m> at least three times, hence is not a path. </p></case>
+
 		<case><title>Case <m> e </m> is not a loop</title><p>
 			Write <m> e=\{v,v'\} </m>.
 			Initially, there are two possibilities to consider.
@@ -210,7 +226,9 @@ respective owners.
 			If <m> W </m> is open and traverses <m> v </m> twice, then <m> W </m> is not a path.
 			So in any case, <m> W </m> is not an open path.
 		</p></case>
+
 	</proof>
+
 </proposition>
 
 <note><p>
@@ -224,6 +242,7 @@ respective owners.
 <title>Connected vertices, graphs, and components</title>
 
 <p><dl width="narrow">
+
 	<li xml:id="definition-paths-connected-vertices">
 		<title>connected vertices</title>
 		<idx><h>connected</h><h>vertices (in a graph)</h></idx>
@@ -231,6 +250,7 @@ respective owners.
 		<idx><h>graph</h><h>connected</h><h>vertices</h></idx>
 		<p> a pair of vertices <m> v,v' </m> such that there exists a walk beginning at <m> v </m> and ending at <m> v' </m> </p>
 	</li>
+
 	<li xml:id="definition-paths-connected-graph">
 		<title>connected graph</title>
 		<idx><h>connected</h><h>graph</h></idx>
@@ -238,6 +258,7 @@ respective owners.
 		<idx><h>nonconnected graph</h><see>connected graph</see></idx>
 		<p> every pair of vertices is connected </p>
 	</li>
+
 </dl></p>
 
 <example><title>A connected graph</title><image xml:id="image-paths-connected" width="30.8%">
@@ -254,6 +275,7 @@ respective owners.
 
 <proposition xml:id="proposition-paths-connected-vertices">
 	<title>Characterizations of connected vertices</title>
+
 	<statement><p>
 		Assume <m> v,v' </m> are vertices in a graph.
 		Then the following are equivalent.
@@ -265,8 +287,11 @@ respective owners.
 			<li xml:id="proposition-paths-connected-vertices-path-backward"> There exists a path beginning at <m> v' </m> and ending at <m> v </m>. </li>
 		</ol>
 	</p></statement>
+
 	<proof><title>Proof idea</title>
+
 		<p> As usual, we prove the equivalence of multiple statements using a cycle of logical implications. </p>
+
 		<case>
 			<title>
 				<xref ref="proposition-paths-connected-vertices-connected" text="local">Statement</xref>
@@ -275,6 +300,7 @@ respective owners.
 			</title>
 			<p> This is the definition of <term><xref ref="definition-paths-connected-vertices" text="title" /></term>. </p>
 		</case>
+
 		<case>
 			<title>
 				<xref ref="proposition-paths-connected-vertices-walk-forward" text="local">Statement</xref>
@@ -291,6 +317,7 @@ respective owners.
 			Keep removing repeated vertices in this way until a path is obtained.
 			</p>
 		</case>
+
 		<case>
 			<title>
 				<xref ref="proposition-paths-connected-vertices-path-forward" text="local">Statement</xref>
@@ -299,6 +326,7 @@ respective owners.
 			</title>
 			<p> Just reverse the order of the vertices and edges in the path from <m> v </m> to <m> v' </m> to obtain a walk in the other direction. </p>
 		</case>
+
 		<case>
 			<title>
 				<xref ref="proposition-paths-connected-vertices-walk-backward" text="local">Statement</xref>
@@ -307,6 +335,7 @@ respective owners.
 			</title>
 			<p> As before, if the walk from <m> v' </m> to <m> v </m> is not a path, each pair of repeated vertices can be eliminated by <q>snipping out</q> the portion of the walk between them. </p>
 		</case>
+
 		<case>
 			<title>
 				<xref ref="proposition-paths-connected-vertices-path-backward" text="local">Statement</xref>
@@ -318,18 +347,22 @@ respective owners.
 			thereby satisfying the definition of <term><xref ref="definition-paths-connected-vertices" text="title" /></term>.
 			</p>
 		</case>
+
 	</proof>
+
 </proposition>
 
 <p>
 A nonconnected graph can be considered to simply be a collection of connected subgraphs.
 <dl width="narrow">
+
 	<li xml:id="definition-paths-connected-component-working">
 		<title>connected component (working definition)</title>
 		<idx><h>connected</h><h>component of a graph, working definition</h></idx>
 		<idx><h>graph</h><h>connected</h><h>component (working definition)</h></idx>
 		<p> a connected subgraph of a graph which is not contained in any larger connected subgraph of that graph </p>
 	</li>
+
 	<li xml:id="definition-paths-connected-component-formal">
 		<title>connected component (formal definition)</title>
 		<idx><h>connected</h><h>component of a graph, formal definition</h></idx>
@@ -342,14 +375,18 @@ A nonconnected graph can be considered to simply be a collection of connected su
 		</ol>
 		</p>
 	</li>
+
 </dl>
+
 </p>
 
 <example><title>Breaking a nonconnected graph into connected components</title>
+
 	<p>
 	Considering <xref ref="figure-paths-components" /> below as a single graph,
 	we have placed the connected components (of which there are three) into boxes.
 	</p>
+
 	<figure xml:id="figure-paths-components">
 		<caption>A nonconnected graph as a collection of connected subgraphs.</caption>
 		<image xml:id="image-paths-components" width="42.6%">
@@ -357,15 +394,18 @@ A nonconnected graph can be considered to simply be a collection of connected su
 			<latex-image><xi:include href="paths.d/components.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p>
 	This nonconnected graph has other connected subgraphs.
 	For example, the subgraph that contains only the left-most two vertices joined by a single edge is a connected subgraph.
 	But that connected graph is not a connected component because it is a subgraph of a larger connected subgraph.
 	</p>
+
 </example>
 
 <example>
 	<title>Connected components do not depend on how the graph is represented diagrammatically</title>
+
 	<figure xml:id="figure-paths-components-overlap-or-not">
 		<caption>Two different representations of the same nonconnected graph.</caption>
 		<sbsgroup>
@@ -385,17 +425,21 @@ A nonconnected graph can be considered to simply be a collection of connected su
 			</figure></sidebyside>
 		</sbsgroup>
 	</figure>
+
 	<p>
 	The two graphs in <xref ref="figure-paths-components-overlap-or-not" /> are in fact the same graph,
 	just with different diagrammatic representations.
 	In the second version of the graph,
 	we have again identified connected components by placing each of them in a box.
 	</p>
+
 </example>
 
 <example>
 	<title>A connected graph has one component</title>
+
 	<p> If a graph is connected, then the entire graph is a largest connected subgraph possible. </p>
+
 	<figure>
 		<caption>A connected graph with one connected component.</caption>
 		<image xml:id="image-paths-components-connected-graph" width="33.5%">
@@ -403,6 +447,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 			<latex-image><xi:include href="paths.d/components-connected-graph.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 <note><p>
@@ -421,29 +466,44 @@ A nonconnected graph can be considered to simply be a collection of connected su
 
 <theorem xml:id="theorem-paths-min-edges-connected-graph">
 	<title>A lower bound for the number of edges in a connected graph</title>
-<!-- \label{THEOREM::min.edges.connected.graph} -->
-	<statement><p> If <m> G = (V,E) </m> is connected and <m> \abs{V} = n </m>, then <m> \abs{E} \ge n - 1 </m>. </p></statement>
+
+	<statement><p>
+		The number of edges in a connected graph with <m> n </m> vertices must be at least <m> n - 1 </m>.
+	</p></statement>
+
 	<proof>
+
 		<p> By (strong) induction. </p>
-		<case><title>Base case <m> n=1 </m></title><p>
-			Every graph with only one vertex is connected and satisfies <m> \abs{E} \ge 0 </m>.
+
+		<case><title>Base case <m> n = 1 </m></title><p>
+			Every graph with only <m> 1 </m> vertex is connected and has at least <m> 0 </m> edges,
+			which matches the predicted lower bound of <m> 1 - 1 = 0 </m>.
 		</p></case>
+
 		<case><title>Induction step</title>
+
 		 	<p>
 			Assume <m> k \ge 1 </m> and the statement is true for all <m> n \le k </m>.
-			Let <m> G = (V,E) </m> be a connected graph with <m> k + 1 </m> vertices.
-			We must show <m> \abs{E} \ge k </m>.
-			</p><p>
-			Arbitrarily choose some vertex <m> v_0 \in V </m>, and let <m> G' = (V', E') </m> be the graph obtained from <m> G </m> by removing <m> v_0 </m> and all edges incident to it.
+			Let <m> G </m> be a connected graph with <m> k + 1 </m> vertices.
+			We must show that <m> G </m> has at least <m> (k + 1) - 1 = k </m> vertices.
+			</p>
+
+			<p>
+			Arbitrarily choose some vertex <m> v_0 </m>,
+			and let <m> G' </m> be the graph obtained from <m> G </m> by removing <m> v_0 </m> and all edges incident to it.
 			Unfortunately, <m> G' </m> might not be connected.
-			Let <m> G_1', \dotsc, G_\ell' </m> be its connected components.
-			Write <m> G_i' = (V_i',E_i') </m>, and let <m> n_i = \abs{V_i'} </m>.
-			Then each <m> G_i' </m> is connected and has at most <m> k </m> vertices, so the induction hypothesis applies.
+			Let <m> G_1', \dotsc, G_\ell' </m> be its connected components,
+			and for each index <m> i </m> let <m> n_i </m> represent the number of vertices of <m> G_i' </m>.
+			Then each <m> G_i' </m> is connected and has at most <m> k </m> vertices,
+			so that <m> n_i \le k </m> and the induction hypothesis applies.
 			Also note that <m> n_1 + \dotsb + n_\ell = k </m>, since every vertex of <m> G </m> except <m> v_0 </m> is part of exactly one subgraph <m> G_i' </m>.
 			</p>
+
 			<figure>
 				<caption>Removing <q>extra</q> vertex <m> v_0 </m>, splitting remaining subgraph into connected components.</caption>
+
 				<sidebyside widths="30.2% 30.2%">
+
 					<figure>
 						<caption><q>Extra</q> vertex <m> v_0 </m> and the remaining subgraph <m> G' </m>.</caption>
 						<image xml:id="image-paths-remove-v0">
@@ -451,6 +511,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 							<latex-image><xi:include href="paths.d/remove-v0.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 					<figure>
 						<caption>Subgraph <m> G' </m> split into connected components.</caption>
 						<image xml:id="image-paths-remove-v0-components">
@@ -458,27 +519,49 @@ A nonconnected graph can be considered to simply be a collection of connected su
 							<latex-image><xi:include href="paths.d/remove-v0-components.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 				</sidebyside>
+
 			</figure>
+
 			<p>
-			Therefore, using our induction hypothesis we may calculate
+			For convenience,
+			let <m> E </m> represent the set of edges in <m> G </m> and let <m> E' </m> represent the set of edges in <m> G' </m>.
+			The difference between <m> \card{E} </m> and <m> \card{E'} </m> is precisely the number of edges in <m> G </m> that are incident to <m> v_0 </m> and were removed along with <m> v_0 </m> to form <m> G' </m>.
+			Let <m> \tilde{v}_0 </m> represent this set of removed edges,
+			so that
+			<md> \card{E} = \card{E'} + \card{\tilde{v}_0} </md>.
+			For each index <m> i </m>,
+			let <m> E_i' </m> represent the set of edges in <m> G_i' </m>.
+			Since <m> G' </m> is disjointly divided into its connected components,
+			we also have
+			<md> \card{E'} = \card{E_1'} + \dotsb + \card{E_\ell'} </md>.
+			Combining the last two formulas and then applying our induction hypothesis to each <m> G_i' </m>,
+			we may calculate
 			<md>
-				<mrow> \abs{E} \amp = \abs{E'} + \abs{\{\text{edges in } G \text{ incident to } v_0\}} </mrow>
-				<mrow> \amp = \abs{E_1'} + \dotsb \abs{E_\ell'} + \abs{\{\text{edges in } G \text{ incident to } v_0\}} </mrow>
-				<mrow> \amp \ge (n_1 - 1) + \dotsb + (n_\ell - 1) + \abs{\{\text{edges in } G \text{ incident to } v_0\}} </mrow>
-				<mrow> \amp = k - \ell + \abs{\{\text{edges in } G \text{ incident to } v_0\}}. </mrow>
+				<mrow> \card{E} \amp = \card{E'} + \card{\tilde{v}_0} </mrow>
+				<mrow> \amp = \card{E_1'} + \dotsb + \card{E_\ell'} + \card{\tilde{v}_0} </mrow>
+				<mrow> \amp \ge (n_1 - 1) + \dotsb + (n_\ell - 1) + \card{\tilde{v}_0} </mrow>
+				<mrow> \amp \ge (n_1 + \dotsb + n_\ell) - \ell \cdot 1 + \card{\tilde{v}_0} </mrow>
+				<mrow> \amp = k - \ell + \card{\tilde{v}_0} \text{.} </mrow>
 			</md>
-			However, since <m> G </m> is connected, <m> v_0 </m> must be the glue keeping the subgraphs <m> \{G_i'\} </m> together.
+			However, since <m> G </m> is connected,
+			<m> v_0 </m> must be the glue keeping the otherwise-disjoint collection of subgraphs <m> \{G_i'\} </m> together within <m> G </m>.
 			That is, for each <m> i </m> there must be at least one edge between <m> v_0 </m> and some vertex of <m> G_i' </m>.
+			Each of these edges is incident to <m> v_0 </m> and is therefore part of the collection <m> \tilde{v}_0 </m>,
+			so we have <m> \card{\tilde{v}_0} \ge \ell </m>.
 			Therefore,
 			<md>
-				<mrow> \abs{E} \amp \ge k - \ell + \abs{\{\text{edges in } G \text{ incident to } v_0\}} </mrow>
+				<mrow> \abs{E} \amp \ge k - \ell + \card{\tilde{v}_0} </mrow>
 				<mrow> \amp \ge k - \ell + \ell </mrow>
-				<mrow> \amp = k. </mrow>
+				<mrow> \amp = k \text{.} </mrow>
 			</md>
 			</p>
+
 		</case>
+
 	</proof>
+
 </theorem>
 
 </section>
@@ -487,6 +570,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 <title>Articulation vertices, bridges, and edge connectivity</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>articulation vertex</title>
 		<idx>articulation vertex</idx>
@@ -497,6 +581,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 		the resulting subgraph would have more connected components than the original
 		</p>
 	</li>
+
 	<li>
 		<title>bridge</title>
 		<idx>bridge</idx>
@@ -507,15 +592,18 @@ A nonconnected graph can be considered to simply be a collection of connected su
 		the resulting subgraph would have more connected components than the original
 		</p>
 	</li>
+
 </dl></p>
 
 <example>
 	<title>An articulation vertex</title>
+
 	<p>
 	In the graph of <xref ref="figure-paths-two-diamonds" />,
 	the central vertex that is common to both diamond-shaped subgraphs is an articulation vertex,
 	as removing it and all edges incident to it would leave two unconnected <q>ears</q> on the outside of the two diamond shapes.
 	</p>
+
 	<figure xml:id="figure-paths-two-diamonds">
 		<caption>A graph featuring a single, central articulation vertex.</caption>
 		<image xml:id="image-paths-two-diamonds" width="35.5%">
@@ -523,15 +611,18 @@ A nonconnected graph can be considered to simply be a collection of connected su
 			<latex-image><xi:include href="paths.d/two-diamonds.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 <example>
 	<title>A bridge between two articulation vertices</title>
+
 	<p>
 	In the graph of <xref ref="figure-paths-bridge-two-diamonds" />,
 	edge <m> e </m> is a bridge,
 	and each of <m> v </m> and <m> v' </m> are articulation vertices.
 	</p>
+
 	<figure xml:id="figure-paths-bridge-two-diamonds">
 		<caption>A graph featuring a bridge between two articulation vertices.</caption>
 		<image xml:id="image-paths-bridge-two-diamonds" width="52.3%">
@@ -539,6 +630,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 			<latex-image><xi:include href="paths.d/bridge-two-diamonds.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 <remark><p>
@@ -564,39 +656,50 @@ A nonconnected graph can be considered to simply be a collection of connected su
 
 <example><p> The edge connectivity of the graph in <xref ref="figure-paths-two-diamonds" /> is <m> 2 </m>. </p></example>
 
-<example>
-	<title>Edge connectivity in a graph with a bridge</title>
-	<p>
+<example><title>Edge connectivity in a graph with a bridge</title><p>
 	A bridge represents a <q>single point of failure,</q>
 	and every graph that contains a bridge has edge connectivity <m> 1 </m>.
 	For example, removing the single edge <m> e </m> in the graph of <xref ref="figure-paths-bridge-two-diamonds" />
 	breaks the graph into two nonconnected subgraphs.
-	</p>
-</example>
+</p></example>
 
 <proposition xml:id="proposition-paths-edge-connectivity-upperbd">
 	<title>Two upper bounds for edge connectivity</title>
+
 	<statement><p>
-		Suppose <m> G = (V,E) </m> is a connected graph.
-		Let <m> n = \abs{V} </m>, <m> e = \abs{E} </m>, and let <m> d </m> be the smallest degree of any of the vertices of <m> G </m>.
+		Suppose <m> G </m> is a connected graph with <m> n </m> vertices and <m> e </m> edges,
+		and let <m> d </m> represent the smallest degree of any of the vertices of <m> G </m>.
 		Then the edge connectivity of <m> G </m> cannot be greater than either of the integers <m> d </m> or <m> \floor{2 e / n} </m>.
 	</p></statement>
+
 	<proof>
+
 		<p>
 		First, if <m> v </m> is a vertex of <m> G </m> with <m> \deg v = d </m>,
 		then removing all of the edges incident to <m> v </m> will cause <m> v </m> to become isolated and <m> G </m> to become nonconnected.
 		So the edge connectivity of <m> G </m> cannot be greater than <m> d </m>.
-		</p><p>
-		Next, recall that the sum of the degrees of the vertices of <m> G </m> is equal to <m> 2e </m>
+		</p>
+
+		<p>
+		Next, recall that the sum of the degrees of the vertices of <m> G </m> is equal to <m> 2 e </m>
 		(<xref ref="theorem-graphs-sum-of-degrees" />).
 		Using this, we have
-		<md> 2e = \deg v_1 + \deg v_2 + \dotsb + \deg v_n \ge d + d + \dotsb + d = nd </md>.
+		<md>
+			2 e
+			= \deg v_1 + \deg v_2 + \dotsb + \deg v_n
+			\ge d + d + \dotsb + d
+			= n d
+		</md>.
 		So <m> d \le 2 e / n </m>.
-		The number <m> 2e/n </m> is rational, but may not be an integer.
+		The number <m> 2 e / n </m> is rational,
+		but might not be an integer.
 		However, <m> d </m> is definitely an integer, so we must have <m> d \le \floor{2e/n} </m>.
 		Since we have already concluded that the edge connectivity of <m> G </m> is no greater than <m> d </m>,
 		it also can be no greater than <m> \floor{2 e / n} </m>.
-	</p></proof>
+		</p>
+
+	</proof>
+
 </proposition>
 
 <remark><p>
@@ -607,12 +710,15 @@ A nonconnected graph can be considered to simply be a collection of connected su
 </p></remark>
 
 <problem xml:id="wexample-paths-treefort-commnet"> <!-- worked example -->
+
 	<statement>
+
 		<p>
 		Your tree fort rivals have set up a communication system of tin cans and strings.
 		You have mapped out their network as in <xref ref="figure-paths-comm-network" />.
 		To minimize the risk of crab apple welts, what is the minimum number of strings you must cut to disrupt their communications?
 		</p>
+
 		<figure xml:id="figure-paths-comm-network">
 			<caption>TreeFort CommNet.</caption>
 			<image xml:id="image-paths-treefort-commnet" width="56.4%">
@@ -620,13 +726,16 @@ A nonconnected graph can be considered to simply be a collection of connected su
 				<latex-image><xi:include href="paths.d/treefort-commnet.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
+
 	</statement>
+
 	<solution><p>
 		There are <m> 6 </m> nodes and <m> 10 </m> edges,
 		so <xref ref="proposition-paths-edge-connectivity-upperbd" /> tells that the edge connectivity must be no greater than <m> \floor{20/6} = 3 </m>.
 		By inspection, the edge connectivity is not <m> 1 </m> as there are no bridges.
 		However, we may isolate either fort ALPHA or ECHO with two snips.
 	</p></solution>
+
 </problem>
 
 </section>

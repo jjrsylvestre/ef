@@ -21,6 +21,7 @@ respective owners.
 
 <example>
 	<title>Reducing redundancy</title>
+
 	<p>
 	You have set up your own tree-fort communication system out of tin cans and strings.
 	(See <xref ref="wexample-paths-treefort-commnet" />.)
@@ -28,6 +29,7 @@ respective owners.
 	To address the crippling tin-can-and-string stilts shortage,
 	you want to dismantle as much of your network as possible without disrupting communications.
 	</p>
+
 	<figure xml:id="figure-trees-comm-network-full">
 		<caption>TreeFort CommNet.</caption>
 		<image xml:id="image-trees-treefort-commnet-full" width="56.4%">
@@ -35,13 +37,17 @@ respective owners.
 			<latex-image><xi:include href="trees.d/treefort-commnet-full.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p>
 	Closed paths are redundant, as communication could be routed around such a path in two directions.
 	So try to eliminate closed all paths; two possible solutions appear in <xref ref="figure-trees-comm-network-reduced" />.
 	</p>
+
 	<figure xml:id="figure-trees-comm-network-reduced">
 		<caption>TreeFort CommNet (after removing redundant communication paths).</caption>
+
 		<sidebyside widths="45% 45%">
+
 			<figure>
 				<caption>One possible result of removing redundancy.</caption>
 				<image xml:id="image-trees-treefort-commnet-reduced-1" width="56.4%">
@@ -49,6 +55,7 @@ respective owners.
 					<latex-image><xi:include href="trees.d/treefort-commnet-reduced-1.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
+
 			<figure>
 				<caption>Another possible result of removing redundancy.</caption>
 				<image xml:id="image-trees-treefort-commnet-reduced-2" width="56.4%">
@@ -56,8 +63,11 @@ respective owners.
 					<latex-image><xi:include href="trees.d/treefort-commnet-reduced-2.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
+
 		</sidebyside>
+
 	</figure>
+
 </example>
 
 <remark><p>
@@ -71,18 +81,21 @@ respective owners.
 <title>Basics</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>trivial path</title>
 		<idx><h>path</h><h>trivial</h></idx>
 		<idx><h>graph</h><h>path</h><h>trivial</h></idx>
 		<p> a path that consists of a single vertex </p>
 	</li>
+
 	<li>
 		<title>cycle</title>
 		<idx>cycle</idx>
 		<idx><h>graph</h><h>cycle</h></idx>
 		<p> a closed path </p>
 	</li>
+
 	<li>
 		<title>proper cycle</title>
 		<idx><h>proper</h><h>cycle</h></idx>
@@ -90,40 +103,46 @@ respective owners.
 		<idx><h>graph</h><h>cycle</h><h>proper</h></idx>
 		<p> a nontrivial cycle that is also a trail </p>
 	</li>
+
 </dl></p>
 
-<note><p>
-	If <m> G </m> contains vertices <m> v,v' </m> and edge <m> e = \{v,v'\} </m>,
-	then <m> v,e,v',e,v </m> is a nontrivial cycle which is not proper.
-</p></note>
+<example><title>A nontrivial cycle that is not proper.</title><p>
+	The cycle <m> v,e,v',e,v </m> in any graph <m> G </m> that contains distinct vertices <m> v,v' </m> and edge <m> e = \{v,v'\} </m>.
+</p></example>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>acyclic graph</title>
 		<idx>acyclic graph</idx>
 		<idx><h>graph</h><h>acyclic</h></idx>
 		<p> contains no proper cycles </p>
 	</li>
+
 	<li>
 		<title>forest</title>
 		<idx>forest</idx>
 		<idx><h>graph</h><h>forest</h></idx>
 		<p> synonym for <term>acyclic graph</term> </p>
 	</li>
+
 	<li>
 		<title>tree</title>
 		<idx>tree</idx>
 		<idx><h>graph</h><h>tree</h></idx>
 		<p> a connected, acyclic graph </p>
 	</li>
+
 </dl></p>
 
 <example>
 	<title>A forest of trees</title>
+
 	<p>
 	The graph in <xref ref="figure-trees-basic-example" /> is acyclic.
 	Each of its connected components is a tree.
 	</p>
+
 	<figure xml:id="figure-trees-basic-example">
 		<caption>A nonconnected acyclic graph.</caption>
 		<image xml:id="image-trees-basic-acyclic" width="43.8%">
@@ -131,27 +150,30 @@ respective owners.
 			<latex-image><xi:include href="trees.d/basic-acyclic.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
-<example>
-	<title>Decision trees are trees</title>
-	<p>
+<example><title>Decision trees are trees</title><p>
 	In <xref ref="wexample-path-num-trails" />, we attempted to determine all possible trails from one node to another in a given graph.
 	The graph in <xref ref="figure-paths-mapping-trails" /> that we used to explore possible trails in the given graph is an example of a <term>decision tree</term> <mdash />
 	at each node we <q>branched out</q> to new possibilities in continuing the trail.
 	As the name suggested, the connected graph we ended up with is a tree.
-	</p>
-</example>
+</p></example>
 
 <proposition xml:id="proposition-trees-forest-subgraphs">
 	<title>Subgraphs of forests</title>
+
 	<p><ol>
+
 		<li> Every subgraph of an acyclic graph is acyclic. </li>
+
 		<li xml:id="proposition-trees-forest-subgraphs-connected">
 			Every connected subgraph of an acyclic graph is a tree.
 			In particular, each connected component of an acyclic graph is a tree.
 		</li>
+
 	</ol></p>
+
 </proposition>
 
 </section>
@@ -160,39 +182,42 @@ respective owners.
 <title>Identifying trees</title>
 
 <theorem xml:id="theorem-trees-characterizations">
-	<title>Characterizations of trees</title>
+	<title>Characterizations of trees by properties of edges</title>
+
 	<statement><p>
-		The following are equivalent for a graph <m> G = (V,E) </m> with <m> \card{V} = n </m> vertices.
+		The following are equivalent for a graph <m> G </m>.
 		<ol>
+
 			<li xml:id="theorem-trees-characterizations-tree"> Graph <m> G </m> is a tree. </li>
-			<li xml:id="theorem-trees-characterizations-new-edge"> <!-- \label{THEOREM::tree.thms.new.edge} -->
+
+			<li xml:id="theorem-trees-characterizations-new-edge">
 				Graph <m> G </m> is acyclic but the addition of any new edge would create a cycle.
 			</li>
-			<li xml:id="theorem-trees-characterizations-one-path"> <!-- \label{THEOREM::tree.thms.one.path} -->
+
+			<li xml:id="theorem-trees-characterizations-one-path">
 				Graph <m> G </m> contains no loops and contains exactly one path between each pair of distinct vertices.
 			</li>
-			<li xml:id="theorem-trees-characterizations-bridges"> <!-- \label{THEOREM::tree.thms.bridges} -->
+
+			<li xml:id="theorem-trees-characterizations-bridges">
 				Graph <m> G </m> is connected but every edge of <m> G </m> is a bridge.
 			</li>
-			<li xml:id="theorem-trees-characterizations-connected-num-edges"> <!-- \label{THEOREM::tree.thms.num.edges} -->
-				Graph <m> G </m> is connected and has <em>exactly</em> <m> \card{E} = n-1 </m> edges.
-			</li>
-			<li xml:id="theorem-trees-characterizations-acyclic-num-edges"> <!-- \label{THEOREM::tree.thms.num.edges} -->
-				Graph <m> G </m> is acyclic and has <em>exactly</em> <m> \card{E} = n-1 </m> edges.
-			</li>
+
 		</ol>
+
 	</p></statement>
+
 	<proof>
-		<title>
+		<!-- <title>
 			Proof of the equivalence of
 			<xref first="theorem-trees-characterizations-tree" last="theorem-trees-characterizations-bridges" text="local">Statements</xref>
-		</title>
-		<case>
-			<title>
+		</title> -->
+
+		<case direction="cycle">
+			<!-- <title>
 				<xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref>
 				implies
 				<xref ref="theorem-trees-characterizations-new-edge" text="local">Statement</xref>
-			</title>
+			</title> -->
 			<p>
 			Suppose <m> G </m> is a tree.
 			By definition, it is acyclic.
@@ -201,16 +226,20 @@ respective owners.
 			Traversing the new edge from <m> v' </m> back to <m> v </m> closes that path to a cycle.
 			</p>
 		</case>
-		<case>
-			<title>
+
+		<case direction="cycle">
+			<!-- <title>
 				<xref ref="theorem-trees-characterizations-new-edge" text="local">Statement</xref>
 				implies
 				<xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref>
-			</title>
+			</title> -->
+
 			<p>
 			Considering the contrapositive, we will assume that <xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref> is false,
 			and prove that this implies that <xref ref="theorem-trees-characterizations-new-edge" text="local">Statement</xref> must also be false.
-			</p><p>
+			</p>
+
+			<p>
 			For <xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref> to be false, one of the following must be true.
 			<ol marker="(i)">
 				<li> Loops exist in <m> G </m>. </li>
@@ -220,23 +249,30 @@ respective owners.
 			In the first case, <m> G </m> would not be acyclic, as a loop is the most basic form of cycle.
 			In the second case, adding an edge between these two vertices that were previously unconnected by a path would <em>not</em> create a cycle, as the rest of that cycle other than the new edge would have been a path between the two vertices.
 			And in the third case, if a pair of vertices is connected by more than one path then the parts of two such paths that are different could be concatenated (one forward, one reversed) to create a cycle, so that <m> G </m> must be not be acyclic.
-			</p><p>
+			</p>
+
+			<p>
 			Thus, in all cases that make
 			<xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref> false,
 			<xref ref="theorem-trees-characterizations-new-edge" text="local">Statement</xref> is also false.
 			</p>
+
 		</case>
-		<case>
-			<title>
+
+		<case direction="cycle">
+			<!-- <title>
 				<xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref>
 				implies
 				<xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref>
-			</title>
+			</title> -->
+
 			<p>
 			Again, we will consider the contrapositive,
 			assuming that <xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref> is false
 			and proving that <xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref> is also false.
-			</p><p>
+			</p>
+
+			<p>
 			For <xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref> to be false, one of the following is true.
 			<ol marker="(i)">
 				<li> Graph <m> G </m> is not connected. </li>
@@ -251,58 +287,97 @@ respective owners.
 			So this subgraph (and hence <m> G </m>) must contain a path between <m> v </m> and <m> v' </m> that does not involve <m> e </m>.
 			On the other hand, <m> v, e, v' </m> is also a path between <m> v </m> and <m> v' </m>.
 			So <m> v,v' </m> is a pair of distinct vertices in <m> G </m> for which there is more than one path between them.
-			</p><p>
+			</p>
+
+			<p>
 			Thus, in all cases that make
 			<xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref> false,
 			<xref ref="theorem-trees-characterizations-one-path" text="local">Statement</xref> is also false.
 			</p>
+
 		</case>
-		<case>
-			<title>
+
+		<case direction="cycle">
+			<!-- <title>
 				<xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref>
 				implies
 				<xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref>
-			</title>
+			</title> -->
+
 			<p>
 			Again, we consider the contrapositive of this logical implication,
 			assuming that <xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref> is false
 			and proving that <xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref> is also false.
 			However, since both statements contain the substatement that <m> G </m> is connected, we will not negate that part.
-			</p><p>
+			</p>
+
+			<p>
 			So assume that <m> G </m> is connected but contains a proper cycle.
 			We aim to prove that <em>at least one</em> edge in <m> G </m> is not a bridge.
 			In <xref ref="activity-trees-remove-edge-from-contains-a-cycle" />,
 			you are asked to prove that none of the edges in the proper cycle that <m> G </m> contains is a bridge, which will complete the proof.
 			</p>
+
 		</case>
 	</proof>
+
+</theorem>
+
+<theorem xml:id="theorem-trees-n-edges-characterizations">
+	<title>Characterizations of trees by number of edges</title>
+
+	<statement><p>
+		The following are equivalent for a graph <m> G </m> with <m> n </m> vertices.
+		<ol>
+
+			<li xml:id="theorem-trees-n-edges-characterizations-tree"> Graph <m> G </m> is a tree. </li>
+
+			<li xml:id="theorem-trees-n-edges-characterizations-connected-num-edges">
+				Graph <m> G </m> is connected and has <em>exactly</em> <m> n - 1 </m> edges.
+			</li>
+
+			<li xml:id="theorem-trees-n-edges-characterizations-acyclic-num-edges">
+				Graph <m> G </m> is acyclic and has <em>exactly</em> <m> n - 1 </m> edges.
+			</li>
+
+		</ol>
+
+	</p></statement>
+
 	<proof>
-		<title>
+		<!-- <title>
 			Proof of the equivalence of
 			<xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref>,
 			<xref ref="theorem-trees-characterizations-connected-num-edges" text="local">Statement</xref>,
 			and
 			<xref ref="theorem-trees-characterizations-acyclic-num-edges" text="local">Statement</xref>
-		</title>
-		<case>
-			<title>
+		</title> -->
+
+		<case direction="cycle">
+\			<!-- <title>
 				<xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref>
 				implies
 				<xref ref="theorem-trees-characterizations-connected-num-edges" text="local">Statement</xref>
-			</title>
+			</title> -->
+
 			<p>
 			Assume that <m> G </m> is a tree.
 			Then it is connected.
 			To prove that the number of edges is <m> \card{E} = n - 1 </m>, we proceed by (strong) induction on <m> n </m>,
 			the number of vertices in <m> G </m>.
-			</p><p>
+			</p>
+
+			<p>
 			For the base base case of <m> n = 1 </m>,
 			<m> \card{E} = 0 </m> is the only possibility, as loops are not allowed in a tree.
-			</p><p>
+			</p>
+
+			<p>
 			Now the induction step.
 			Assume that every tree with <m> k \lt n </m> vertices has <m> k - 1 </m> edges.
 			Choose some edge in <m> G </m>.
-			By <xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref>,
+			By <xref ref="theorem-trees-characterizations-bridges" text="local">Statement</xref>
+			of <xref ref="theorem-trees-characterizations" />,
 			removing that edge creates two connected components, <m> G_1 </m> and <m> G_2 </m>.
 			As <m> G </m> is acyclic, these connected components are both trees
 			(<xref ref="proposition-trees-forest-subgraphs-connected" text="local">Statement</xref>
@@ -313,6 +388,7 @@ respective owners.
 			we may apply our indution hypothesis to each of <m> G_1 </m> and <m> G_2 </m>,
 			so that <m> G_1 </m> has exactly <m> k_1 - 1 </m> edges and <m> G_2 </m> has exactly <m> k_2 - 1 </m> edges.
 			</p>
+
 			<figure>
 				<caption>Tree <m> G </m> splits into subtrees <m> G_1,G_2 </m> after removal of an edge.</caption>
 				<image xml:id="image-trees-num-edges" width="58.5%">
@@ -320,25 +396,31 @@ respective owners.
 					<latex-image><xi:include href="trees.d/num-edges.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
+
 			<p>
 			Adding up the number of edges in <m> G_1 </m> and <m> G_2 </m>, along with the single edge in <m> G </m> that was removed to create these two connected components,
 			we obtain
 			<m> \card{E} = (k_1 - 1) + (k_2 - 1) + 1 = (k_1 + k_2) - 1 = n - 1, </m>
 			as desired.
 			</p>
+
 		</case>
-		<case>
-			<title>
+
+		<case direction="cycle">
+			<!-- <title>
 				<xref ref="theorem-trees-characterizations-connected-num-edges" text="local">Statement</xref>
 				implies
 				<xref ref="theorem-trees-characterizations-acyclic-num-edges" text="local">Statement</xref>
-			</title>
+			</title> -->
+
 			<p>
 			Consider the contrapositive of this logical implication,
-			assuming that <xref ref="theorem-trees-characterizations-acyclic-num-edges" text="local">Statement</xref> is false
-			and proving that <xref ref="theorem-trees-characterizations-connected-num-edges" text="local">Statement</xref> is also false.
+			assuming that <xref ref="theorem-trees-n-edges-characterizations-acyclic-num-edges" text="local">Statement</xref> is false
+			and proving that <xref ref="theorem-trees-n-edges-characterizations-connected-num-edges" text="local">Statement</xref> is also false.
 			However, since both statements contain the substatement that <m> \card{E} = n - 1 </m>, we will not negate that part.
-			</p><p>
+			</p>
+
+			<p>
 			So assume that <m> G </m> has <m> n - 1 </m> edges, but contains a proper cycle.
 			We must prove that <m> G </m> cannot be connected in this case.
 			Choose an edge <m> e </m> in the proper cycle and create a subgraph <m> G' </m> by removing <m> e </m>.
@@ -353,19 +435,24 @@ respective owners.
 			hence there also can be no walk between them in <m> G </m>.
 			Thus, <m> G </m> is not connected.
 			</p>
+
 		</case>
-		<case>
-			<title>
+
+		<case direction="cycle">
+			<!-- <title>
 				<xref ref="theorem-trees-characterizations-acyclic-num-edges" text="local">Statement</xref>
 				implies
 				<xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref>
-			</title>
+			</title> -->
+
 			<p>
 			Again, consider the contrapositive of this logical implication,
-			assuming that <xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref> is false
-			and proving that <xref ref="theorem-trees-characterizations-acyclic-num-edges" text="local">Statement</xref> is also false.
+			assuming that <xref ref="theorem-trees-n-edges-characterizations-tree" text="local">Statement</xref> is false
+			and proving that <xref ref="theorem-trees-n-edges-characterizations-acyclic-num-edges" text="local">Statement</xref> is also false.
 			However, since both statements contain the substatement that <m> G </m> is acyclic (part of the definition of <term>tree</term>), we will not negate that part.
-			</p><p>
+			</p>
+
+			<p>
 			So assume that <m> G </m> is acyclic but not a tree, <ie /> that <m> G </m> is not connected.
 			We must prove that the number of edges in <m> G </m> is different from <m> n - 1 </m>, where <m> n </m> is the number of vertices in <m> G </m>.
 			Let <m> G_1,G_2,\dotsc,G_\ell </m> be the connected components of <m> G </m>.
@@ -373,23 +460,29 @@ respective owners.
 			(<xref ref="proposition-trees-forest-subgraphs-connected" text="local">Statement</xref>
 			of <xref ref="proposition-trees-forest-subgraphs" />).
 			We have already proved above that
-			<xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref>
+			<xref ref="theorem-trees-n-edges-characterizations-tree" text="local">Statement</xref>
 			implies
-			<xref ref="theorem-trees-characterizations-connected-num-edges" text="local">Statement</xref>,
+			<xref ref="theorem-trees-n-edges-characterizations-connected-num-edges" text="local">Statement</xref>,
 			so if we write <m> k_i </m> for the number of vertices in component <m> G_i </m>,
 			then we may conclude that the number of edges in component <m> G_i </m> is <m> k_i - 1 </m>.
 			As the components make up the entire graph <m> G </m>,
 			we may add up the vertices and edges in each component to get the totals in the full graph:
-			<md> n = k_1 + k_2 + \dotsb + k_\ell, </md>
 			<md>
-				<mrow> \card{E} \amp = (k_1 - 1) + (k_2 - 1) + \dotsb + (k_\ell - 1) </mrow>
-				<mrow> \amp = (k_1 + k_2 + \dotsb + k_\ell) - \ell </mrow>
-				<mrow> \amp = n - \ell </mrow>
-			</md>.
+				<mrow>
+					n \amp = k_1 + k_2 + \dotsb + k_\ell \text{,}
+					\amp
+					\card{E} \amp = (k_1 - 1) + (k_2 - 1) + \dotsb + (k_\ell - 1)
+				</mrow>
+				<mrow> \amp \amp \amp = (k_1 + k_2 + \dotsb + k_\ell) - \ell \cdot 1 </mrow>
+				<mrow> \amp \amp \amp = n - \ell \text{.} </mrow>
+			</md>
 			Since we assume <m> G </m> is not connected, we have <m> \ell \ge 2 </m>, and so <m> \card{E} \neq n - 1 </m> as desired.
 			</p>
+
 		</case>
+
 	</proof>
+
 </theorem>
 
 </section>
@@ -405,34 +498,34 @@ We can do this by constructing a tree <m> T \preceq G </m>.
 </p>
 
 <algorithm xml:id="algorithm-trees-depth-first-search">
-<!-- \label{ALGO::depth.first} -->
 	<title>Depth-first search</title>
 	<idx><h>depth-first</h><h>search</h></idx>
 	<idx><h>Algorithm</h><h>depth-first search</h></idx>
 	<idx><h>graph</h><h>depth-first</h><h>search</h></idx>
+
 	<p>
 	To create a tree <m> T </m> that is a subgraph of a graph <m> G </m> wherein a path (in <m> G </m>) from <m> v </m> to <m> v' </m> is evident,
 	begin with <m> T </m> containing the single vertex <m> v </m> and no edges.
 	Set <m> x=v </m>.
 	<ol>
+
 		<li xml:id="algorithm-trees-depth-first-search-look-adjacent">
-		<!-- \label{ALGO::depth.first::look.adjacent} -->
 			Look for a vertex <m> y </m> of <m> G </m> which is adjacent to <m> x </m> but not already in <m> T </m>.
 			If such a <m> y </m> is found, go to
 			<xref ref="algorithm-trees-depth-first-search-join-w-edge" text="local">Step</xref>.
 			Otherwise, go to
 			<xref ref="algorithm-trees-depth-first-search-stop-or-continue" text="local">Step</xref>.
 		</li>
+
 		<li xml:id="algorithm-trees-depth-first-search-join-w-edge">
-		<!-- \label{ALGO::depth.first::join.w.edge} -->
 			Adjoin <m> y </m> and a single edge between <m> x </m> and <m> y </m> to <m> T </m>.
 			If <m> y = v' </m>, stop <mdash />
 			a path from <m> v </m> to <m> v' </m> exists and is now contained in <m> T </m>.
 			Otherwise, set <m> x=y </m> and return to
 			<xref ref="algorithm-trees-depth-first-search-look-adjacent" text="local">Step</xref>.
 		</li>
+
 		<li xml:id="algorithm-trees-depth-first-search-stop-or-continue">
-		<!-- \label{ALGO::depth.first::stop.or.continue} -->
 			If you have arrived here immediately after beginning the algorithm
 			(<ie /> with <m> x </m> still set to be <m> v </m>),
 			stop <mdash /> there is no path from <m> v </m> to <m> v' </m>.
@@ -440,8 +533,10 @@ We can do this by constructing a tree <m> T \preceq G </m>.
 			Set <m> x = z </m> and return to
 			<xref ref="algorithm-trees-depth-first-search-look-adjacent" text="local">Step</xref>.
 		</li>
+
 	</ol>
 	</p>
+
 </algorithm>
 
 <note><p>
@@ -452,8 +547,8 @@ We can do this by constructing a tree <m> T \preceq G </m>.
 </p></note>
 
 <example xml:id="example-trees-depth-first-search">
-<!-- \label{EXAMPLE::search.trees} -->
 	<title>Carrying out a depth-first search</title>
+
 	<p>
 	We perform a <xref ref="algorithm-trees-depth-first-search" text="title" />
 	on the graph in <xref ref="figure-trees-depth-first-example" />,
@@ -464,6 +559,7 @@ We can do this by constructing a tree <m> T \preceq G </m>.
 	The graph in <xref ref="figure-trees-depth-first-result-largest" />
 	is the result of always choosing the vertex with the largest label.
 	</p>
+
 	<figure xml:id="figure-trees-depth-first-example">
 		<caption>An example graph to illustrate depth-first search.</caption>
 		<image xml:id="image-trees-depth-first-example" width="52.6%">
@@ -471,6 +567,7 @@ We can do this by constructing a tree <m> T \preceq G </m>.
 			<latex-image><xi:include href="trees.d/depth-first-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<figure xml:id="figure-trees-depth-first-result">
 		<caption>Results of two different implementation choices in a depth-first search.</caption>
 		<sbsgroup> <!-- TODO sbsgroup can also take widths ... -->
@@ -490,6 +587,7 @@ We can do this by constructing a tree <m> T \preceq G </m>.
 			</figure></sidebyside>
 		</sbsgroup>
 	</figure>
+
 </example>
 
 <p>
@@ -498,17 +596,17 @@ The following algorithm will.
 </p>
 
 <algorithm xml:id="algorithm-trees-breadth-first-search">
-<!-- \label{ALGO::breadth.first} -->
 	<title>Breadth-first search</title>
 	<idx><h>breadth-first</h><h>search</h></idx>
 	<idx><h>Algorithm</h><h>breadth-first search</h></idx>
 	<idx><h>graph</h><h>breadth-first</h><h>search</h></idx>
+
 	<p>
 	To create a tree <m> T </m> that is a subgraph of a graph <m> G </m> wherein the <em>shortest</em> path in <m> G </m> from <m> v </m> to <m> v' </m> is evident,
 	begin with <m> T </m> containing the single vertex <m> v </m> and no edges.
 	<ol>
+
 		<li xml:id="algorithm-trees-breadth-first-search-adjoin-adjacent">
-		<!-- \label{ALGO::breadth.first::adjoin.adjacent} -->
 			For each vertex <m> x </m> in <m> T </m> added in the last application of this step
 			(or, in the case of the first application of this step, for <m> x = v </m>),
 			adjoin <em>all</em> vertices of <m> G </m> that are adjacent to <m> x </m> and not already in <m> T </m>,
@@ -517,6 +615,7 @@ The following algorithm will.
 			<xref ref="algorithm-trees-breadth-first-search-stop-or-go" text="local">Step</xref>.
 			Otherwise, stop <mdash /> there is no path from <m> v </m> to <m> v' </m> in <m> G </m>.
 		</li>
+
 		<li xml:id="algorithm-trees-breadth-first-search-stop-or-go">
 			If <m> v' </m> was one of the vertices adjoined in
 			<xref ref="algorithm-trees-breadth-first-search-adjoin-adjacent" text="local">Step</xref>,
@@ -524,18 +623,22 @@ The following algorithm will.
 			Otherwise, return to
 			<xref ref="algorithm-trees-breadth-first-search-adjoin-adjacent" text="local">Step</xref>.
 		</li>
+
 	</ol>
 	</p>
+
 </algorithm>
 
 <example xml:id="example-trees-breadth-first-search">
 	<title>Carrying out a breadth-first search</title>
+
 	<p>
 	Below is the result of the breadth-first algorithm,
 	carried out to find a path from <m> 1 </m> to <m> 9 </m> in the graph
 	in <xref ref="figure-trees-depth-first-example" />
 	from <xref ref="example-trees-depth-first-search" />.
 	</p>
+
 	<figure xml:id="figure-trees-breadth-first-result">
 		<caption>The result of a breadth-first search.</caption>
 		<image xml:id="image-trees-breadth-first-results" width="64.7%">
@@ -543,6 +646,7 @@ The following algorithm will.
 			<latex-image><xi:include href="trees.d/breadth-first-result.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 </section>
@@ -551,38 +655,47 @@ The following algorithm will.
 <title>Spanning trees</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>spanning subgraph</title>
 		<idx><h>spanning</h><h>subgraph</h></idx>
 		<idx><h>subgraph</h><h>spanning</h></idx>
 		<p> a subgraph that contains <em>all</em> the vertices of the parent graph </p>
 	</li>
+
 	<li>
 		<title>spanning tree</title>
 		<idx><h>spanning</h><h>tree</h></idx>
 		<idx><h>tree</h><h>spanning</h></idx>
 		<p> a spanning subgraph that is a tree </p>
 	</li>
+
 </dl></p>
 
 <example>
 	<title>Spanning trees for the complete graph <m> K_4 </m></title>
+
 	<p> Here is the complete graph with four vertices. </p>
+
 	<image xml:id="image-trees-K4" width="10.5%">
 		<description>The complete graph with four vertices.</description>
 		<latex-image><xi:include href="trees.d/K4.tex" parse="text" /></latex-image>
 	</image>
+
 	<p> And here are ten different spanning trees for <m> K_4 </m>. </p>
+
 	<image xml:id="image-trees-K4-spanning" width="77.3%">
 		<description>Ten spanning trees for the complete graph with four vertices.</description>
 		<latex-image><xi:include href="trees.d/K4-spanning.tex" parse="text" /></latex-image>
 	</image>
+
 </example>
 
 <p>
 If we carry out either of the depth-first or breadth-first search algorithms,
 but aren't looking for a path between specific vertices, the end result will be a spanning tree for the original graph.
 <dl width="narrow">
+
 	<li>
 		<title>depth-first spanning tree</title>
 		<idx><h>depth-first</h><h>spanning tree</h></idx>
@@ -592,6 +705,7 @@ but aren't looking for a path between specific vertices, the end result will be 
 		continuing until all vertices in the original graph appear in the search tree
 		</p>
 	</li>
+
 	<li>
 		<title>breadth-first spanning tree</title>
 		<idx><h>breadth-first</h><h>spanning tree</h></idx>
@@ -601,11 +715,13 @@ but aren't looking for a path between specific vertices, the end result will be 
 		continuing until all vertices in the original graph appear in the search tree
 		</p>
 	</li>
+
 </dl>
 </p>
 
 <example>
 	<title>Depth-first and breadth-first spanning trees</title>
+
 	<p>
 	<xref ref="figure-trees-depth-breadth-spanning" /> contains depth-first and breadth-first spanning trees for the graph
 	in <xref ref="figure-trees-depth-first-example" />,
@@ -613,6 +729,7 @@ but aren't looking for a path between specific vertices, the end result will be 
 	for depth-first search (<xref ref="example-trees-depth-first-search" />)
 	and breadth-first search (<xref ref="example-trees-breadth-first-search" />).
 	</p>
+
 	<figure xml:id="figure-trees-depth-breadth-spanning">
 		<caption>Examples of depth- and breadth-first spanning trees.</caption>
 		<sbsgroup> <!-- TODO sbsgroup can also take widths... -->
@@ -632,6 +749,7 @@ but aren't looking for a path between specific vertices, the end result will be 
 			</figure></sidebyside>
 		</sbsgroup>
 	</figure>
+
 </example>
 
 </section>
@@ -640,12 +758,14 @@ but aren't looking for a path between specific vertices, the end result will be 
 <title>Binary searches</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>binary search tree</title>
 		<idx><h>tree</h><h>binary search</h></idx>
 		<idx><h>graph</h><h>binary search tree</h></idx>
 		<p> a tree in which every node has degree <m> 1 </m> or <m> 3 </m>, except for a single node of degree <m> 2 </m> </p>
 	</li>
+
 	<li>
 		<title>initial node</title>
 		<idx>initial node (in a binary search tree)</idx>
@@ -653,6 +773,7 @@ but aren't looking for a path between specific vertices, the end result will be 
 		<idx><h>vertex</h><h>initial (in a binary search tree)</h></idx>
 		<p> the unique node of degree <m> 2 </m> in a binary search tree </p>
 	</li>
+
 	<li>
 		<title>terminal node</title>
 		<idx>terminal node (in a binary search tree)</idx>
@@ -660,23 +781,29 @@ but aren't looking for a path between specific vertices, the end result will be 
 		<idx><h>vertex</h><h>terminal (in a binary search tree)</h></idx>
 		<p> a node of degree <m> 1 </m> in a binary search tree </p>
 	</li>
+
 	<li>
 		<title>binary search</title>
 		<idx><h>binary</h><h>search</h></idx>
 		<p> the construction of a binary search tree through a series of <q>either-or</q> decisions </p>
 	</li>
+
 </dl></p>
 
 <problem> <!-- worked example -->
+
 	<statement><p> Estimate the root of <m> f(x) = 4x^3  + 6x^2  + 3x - 1 </m> that lies in <m> (0,1) </m> to <m> 2 </m> decimal places. </p></statement>
+
 	<solution>
+
 		<p>
-		The Intermediate Value Theorem from first-year calculus says that if <m> f </m> is continuous on the closed interval <m> [a,b] </m> and <m> f(a),f(b) </m> are nonzero and opposite signs,
+		The Intermediate Value Theorem from calculus says that if <m> f </m> is continuous on the closed interval <m> [a,b] </m> and <m> f(a),f(b) </m> are nonzero and opposite signs,
 		then <m> f </m> has a root in the open interval <m> (a,b) </m>.
 		We have <m> f(0) = -1 \lt 0 </m> and <m> f(1) = 12 \gt 0 </m>,
 		so there is indeed a root in <m> (0,1) </m>.
 		The graph in <xref ref="figure-trees-binary-search-example" /> was obtained by performing a binary search by splitting into subintervals.
 		</p>
+
 		<figure xml:id="figure-trees-binary-search-example">
 			<caption>A binary search tree search for the root of a polynomial.</caption>
 			<image xml:id="image-trees-binary-search" width="90.5%">
@@ -684,12 +811,15 @@ but aren't looking for a path between specific vertices, the end result will be 
 				<latex-image><xi:include href="trees.d/binary-search.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
+
 		<p>
 		Since <m> f(0.225) \gt 0 </m>, the root must be in the subinterval <m> (0.22,0.225) </m>.
 		This tells us to round down to <m> 0.22 </m> instead of rounding up to <m> 0.23 </m>,
 		so we conclude that the root is approximately <m> 0.22 </m>.
 		</p>
+
 	</solution>
+
 </problem>
 
 </section>

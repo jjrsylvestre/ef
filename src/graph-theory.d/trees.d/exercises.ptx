@@ -20,23 +20,28 @@ respective owners.
 
 <exercisegroup xml:id="exercisegroup-trees-spanning-by-inspection">
 	<title>Spanning trees</title>
+
 	<introduction><p>
 		For each of the graphs in
 		<xref ref="exercisegroup-trees-spanning-by-inspection" text="type-local">Exercises</xref>,
 		draw a spanning tree by inspection.
 	</p></introduction>
+
 	<exercise xml:id="exercise-trees-spanning-by-inspection-1"><image xml:id="image-trees-spanning-by-inspection-1" width="17.6%">
 		<description>An example graph for a spanning tree exercise.</description>
 		<latex-image><xi:include href="exercises.d/spanning-by-inspection-1.tex" parse="text" /></latex-image>
 	</image></exercise>
+
 	<exercise xml:id="exercise-trees-spanning-by-inspection-2"><image xml:id="image-trees-spanning-by-inspection-2" width="30.8%">
 		<description>An example graph for a spanning tree exercise.</description>
 		<latex-image><xi:include href="exercises.d/spanning-by-inspection-2.tex" parse="text" /></latex-image>
 	</image></exercise>
+
 </exercisegroup>
 
 <exercisegroup xml:id="exercisegroup-trees-spanning-by-removal">
 	<title>Reducing to a spanning tree</title>
+
 	<introduction><p>
 		For each of the graphs in
 		<xref ref="exercisegroup-trees-spanning-by-removal" text="type-local">Exercises</xref>,
@@ -49,36 +54,44 @@ respective owners.
 			<li> Continue until there are no proper cycles left. </li>
 		</ul>
 	</p></introduction>
+
 	<exercise><image xml:id="image-trees-spanning-by-removal-1" width="22.9%">
 		<description>An example graph for a spanning tree exercise.</description>
 		<latex-image><xi:include href="exercises.d/spanning-by-removal-1.tex" parse="text" /></latex-image>
 	</image></exercise>
+
 	<exercise><image xml:id="image-trees-spanning-by-removal-2" width="65.8%">
 		<description>An example graph for a spanning tree exercise.</description>
 		<latex-image><xi:include href="exercises.d/spanning-by-removal-2.tex" parse="text" /></latex-image>
 	</image></exercise>
+
 </exercisegroup>
 
 <exercisegroup xml:id="exercisegroup-trees-spanning-by-depth-breadth">
 	<title>Depth-first and breadth-first spanning trees</title>
+
 	<introduction><p>
 		For each of the graphs in
 		<xref ref="exercisegroup-trees-spanning-by-depth-breadth" text="type-local">Exercises</xref>,
 		determine both a depth-first and breadth-first spanning tree.
 		Use any vertex you like as the starting node.
 	</p></introduction>
+
 	<exercise><image xml:id="image-trees-spanning-by-depth-breadth-1" width="46.1%">
 		<description>An example graph for a spanning tree exercise.</description>
 		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-1.tex" parse="text" /></latex-image>
 	</image></exercise>
+
 	<exercise><image xml:id="image-trees-spanning-by-depth-breadth-2" width="46.1%">
 		<description>An example graph for a spanning tree exercise.</description>
 		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-2.tex" parse="text" /></latex-image>
 	</image></exercise>
+
 	<exercise><image xml:id="image-trees-spanning-by-depth-breadth-3" width="40.8%">
 		<description>An example graph for a spanning tree exercise.</description>
 		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-3.tex" parse="text" /></latex-image>
 	</image></exercise>
+
 </exercisegroup>
 
 </exercises>
