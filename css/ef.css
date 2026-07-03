@@ -1,3 +1,9 @@
+/******************************************************************************/
+/*                                   FONTS                                    */
+/******************************************************************************/
+
+/* Faces */
+
 @font-face {
   font-family: "STIX Two Text";
   src: url(./fonts/STIXTwoText-Regular.woff2) format("woff2");
@@ -47,41 +53,283 @@
   font-style: italic;
 }
 
-body.pretext {
-  font-family: "STIX Two Text", "Times New Roman", Times, serif;
+/* Main body font */
+.ptx-content
+{ font-family: "STIX Two Text", "Times New Roman", Times, serif; }
+
+/* TOC Part titles */
+:is(.toc-part, .toc-frontmatter, .toc-backmatter) > .toc-title-box > .internal
+{
+  font-family: var(--font-headings);
+  font-weight: bold;
 }
 
+/* Introduction assemblage secondary links */
+.introduction > .assemblage .emphasis > a.internal { font-weight: normal; }
+
+/* italics for definitions */
 dt {
   font-style: italic;
 }
 
-header.ptx-masthead span.title,
-header.ptx-masthead span.subtitle {
-  color: #09AB0D;
+/* Chapter root pages: section titles */
+.ptx-content .summary-links li:hover .title {
+  font-weight: normal;
 }
 
-.ptx-toc.parts:not(.depth2) > ul.structural > li > ul.structural > li > .toc-item > a
+/* Decrease font size for <case> headings */
+article.case > .heading {
+  font-size: 1.125em;
+}
+
+article:has(.case)>*:not(:first-child):has(.heading) {
+  margin-top: 1.25em;
+}
+
+/******************************************************************************/
+/*                                  COLOURS                                   */
+/******************************************************************************/
+
+/*
+ *   primary:    #275d38 = 26% white  (UofA green)
+ *   secondary:  #f2cd00 = 47% white  (UofA gold)
+ *   (white percentages from https://www.w3schools.com/colors/colors_picker.asp)
+ */
+:root {
+  --uofa-green: #275d38;
+  --mono-green-complement: #36814E;
+  --analogous-blue: #275D53;
+  --complementary-mauve: #5D274C;
+  --complementary-mauve-white-10: #6d3b5c;
+  --lighter-green: #4bb46c;
+  --uofa-gold: #f2cd00;
+  --dark-gold: #4d4100;
+  --darker-gold: #332b00;
+  --darkest-gold: #1a1600;
+}
+
+/* Light mode colour overrides */
+:root:not(.dark-mode) {
+  --primary-color: var(--uofa-green);
+  --secondary-color: var(--uofa-gold);
+  --banner-background: var(--primary-color-white-95);
+  --navbar-background: var(--primary-color-white-90);
+  --link-active-background: var(--primary-color-white-90);
+  --tocitem-active-text-color: var(--primary-color-black-20);
+  --toclevel1-background: var(--primary-color-white-10);
+  --toclevel2-background: var(--primary-color-white-90);
+  --toclevel3-background: var(--primary-color-white-90);
+  --toclevel2-text-color: black;
+  --toclevel4-text-color: black;
+  --toclevel4-background: var(--primary-color-white-80);
+  --summary-link-text-color: var(--primary-color);
+  --summary-link-hover-text-color: var(--primary-color);
+  --summary-link-hover-background: var(--secondary-color-white-50);
+  --button-hover-background: var(--secondary-color-white-50);
+}
+
+/* Dark mode colour overrides */
+:root.dark-mode {
+  --primary-color: var(--lighter-green);
+  --body-title-color: var(--primary-color-white-85);
+  --toclevel3-background: var(--background-color-gray-20);
+  --toclevel4-text-color: white;
+  --toclevel4-background: var(--background-color-black-10);
+  --block-border-color: var(--primary-color-black-40);
+}
+
+/* NOT NEEDED ANY MORE? */
+/* fillin in math mode */
+/* :root.dark-mode mjx-mpadded {
+  background-color: #808080 !important;
+} */
+
+
+/* COPIED FROM DLA, BUT NO SUCH CONSTRUCT IN CCM... */
+/* "In this section" title links */
+/* .introduction > .assemblage .emphasis > a.internal { color: var(--body-text-color); } */
+
+/* knowl link background */
+:root:not(.dark-mode) .knowl__link:is(:hover, :focus, [open]) {
+  background-color: var(--secondary-color-white-80);
+}
+:root.dark-mode .knowl__link:is(:hover, :focus, [open]) {
+  background-color: var(--dark-gold);
+}
+/* TODO dark mode version? */
+
+/* Adjust logo colour in dark mode */
+:root.dark-mode .ptx-banner img {
+  filter: grayscale(1) invert(1);
+}
+
+/*
+ * TOC tweaks
+*/
+
+/* change colors of active chapter */
+:root:not(.dark-mode) .toc-item.toc-chapter.contains-active {
+  /* Surrounding toclevel2 items have background-color: var(--primary-color-white-10) */
+  background-color: var(--complementary-mauve-white-10);
+  color: white;
+}
+:root:not(.dark-mode) .toc-item.toc-part.contains-active {
+  /* Surrounding toclevel2 items have background-color: var(--primary-color-white-10) */
+  background-color: var(--primary-color-black-20);
+}
+:root.dark-mode .toc-item.toc-chapter.contains-active {
+  /*
+   * Surrounding toclevel2 items have background-color: var(--background-color-gray-10)
+   * And following toclevel3 items have background-color: var(--background-color-gray-20);
+   *   (set above)
+   */
+  background-color: var(--background-color-gray-40);
+}
+:root.dark-mode .toc-item.toc-part.contains-active {
+  background-color: var(--background-color-black-10);
+}
+
+/* Get entire toc item bar to highlight (including chevron) on hover */
+:root:not(.dark-mode) .ptx-toc.focused .toc-item > .toc-title-box:hover,
+:root:not(.dark-mode) .ptx-toc.focused .toc-title-box > a:is(:hover, :focus)
 {
-  background-color: #09AB0D;
+  color: var(--primary-color-black-20);
+  background-color: var(--secondary-color-white-50);
 }
-
-.ptx-toc ul.structural li a, .ptx-toc ul.structural li a:link,
-.ptx-toc.parts:not(.depth2) > ul.structural > li > ul.structural > li > .toc-item > a:hover
+:root.dark-mode .ptx-toc.focused .toc-item > .toc-title-box:hover,
+:root.dark-mode .ptx-toc.focused .toc-title-box > a:is(:hover, :focus)
 {
-  background-color: #0D09AB;
+  color: var(--toclevel1-text-color);
+  background-color: var(--dark-gold);
 }
 
-.ptx-toc ul.structural li ul.structural a.active,
-.ptx-toc ul.structural li ul.structural a:hover
-{
-  background-color: #AB0D09;
+/* use drop-down arrows for expand/collapse instead of chevrons */
+.ptx-toc.focused .toc-item > .toc-title-box > .toc-expander > .icon:before { content: "arrow_drop_down"; }
+.ptx-toc.focused .toc-item.expanded > .toc-title-box > .toc-expander > .icon:before { content: "arrow_drop_up"; }
+.ptx-toc.focused .toc-item.expanded > .toc-title-box > .toc-expander > .icon { transform: none; }
+
+/* fourth level toc background */
+.ptx-toc .toc-item .toc-item .toc-item .toc-item {
+  color: var(--toclevel4-text-color);
+  background-color: var(--toclevel4-background);
 }
 
-.ptx-toc ul.structural li ul.structural a {
-  color: #0D09AB;
-  font-family: "STIX Two Text", "Times New Roman", Times, serif;
+/******************************************************************************/
+/*                                  SPACING                                   */
+/******************************************************************************/
+
+.ptx-banner img {
+  margin: 5px;
 }
 
-.ptx-toc.parts:not(.depth2) > ul.structural > li:first-child > ul.structural > li > .toc-item > a {
-  color: #0D09AB;
+/* this should match the first para under a li that has a title */
+li > .para:first-of-type:not(:first-child) {
+  margin-top: 0px;
 }
+
+
+/******************************************************************************/
+/*                              ASIDE HEADINGS                                */
+/******************************************************************************/
+
+.aside-like .heading .type,
+.aside-like .heading .space {
+  visibility: hidden;
+  width: 0;
+  display: inline-block;
+}
+
+
+/******************************************************************************/
+/*                          DEFINITION/THEOREM BOXES                          */
+/******************************************************************************/
+
+/* undo bottom of Greg's L */
+.ptx-content article.definition-like::after,
+.ptx-content article.theorem-like::after,
+.ptx-content article.remark-like::after {
+    content:'';
+    border-bottom: none;
+    display: none;
+    margin: 0px;
+    padding-top: 0px;
+    width: 0px;
+}
+
+/* increase thickness of left border */
+/* increase padding                  */
+.ptx-content article.definition-like,
+.ptx-content article.theorem-like,
+.ptx-content article.remark-like,
+.ptx-content section.chapter article.exercise.exercise-like {
+  border-left: 10px solid var(--block-border-color);
+  padding: 10px;
+}
+
+/* colours */
+:root:not(.dark-mode) .ptx-content article.definition-like,
+:root:not(.dark-mode) .ptx-content article.theorem-like {
+  background: var(--secondary-color-white-90);
+}
+:root.dark-mode .ptx-content article.definition-like,
+:root.dark-mode .ptx-content article.theorem-like {
+  background: color-mix(in oklab, var(--page-color), var(--primary-color) 10%);
+}
+:root:not(.dark-mode) .ptx-content section.chapter article.exercise.exercise-like {
+  border-left-color: var(--secondary-color);
+  background: var(--primary-color-white-95);
+}
+:root.dark-mode .ptx-content section.chapter article.exercise.exercise-like {
+  border-left-color: color-mix(in oklab, var(--uofa-gold), black 20%);
+  background: color-mix(in oklab, var(--page-color), var(--uofa-gold) 10%);
+}
+.ptx-content article.remark-like {
+  border-left-color: var(--complementary-mauve);
+}
+:root:not(.dark-mode) .ptx-content article.remark-like {
+  background: color-mix(in oklab, var(--complementary-mauve), white 90%);
+}
+:root.dark-mode .ptx-content article.remark-like {
+  background: color-mix(in oklab, var(--page-color), var(--complementary-mauve) 20%);
+}
+:root:not(.dark-mode) .ptx-content article.warning.remark-like {
+  border-left-color: red;
+  background: color-mix(in oklab, red, white 90%);
+}
+:root.dark-mode .ptx-content article.warning.remark-like {
+  border-left-color: color-mix(in oklab, red, black 20%);
+  background: color-mix(in oklab, var(--page-color), red 15%);
+}
+.ptx-content article.convention.remark-like,
+.ptx-content article.insight.remark-like {
+  border-left-color: var(--block-border-color);
+}
+:root:not(.dark-mode) .ptx-content article.convention.remark-like,
+:root:not(.dark-mode) .ptx-content article.insight.remark-like {
+  background: var(--secondary-color-white-90);
+}
+:root.dark-mode .ptx-content article.convention.remark-like,
+:root.dark-mode .ptx-content article.insight.remark-like {
+  background: color-mix(in oklab, var(--page-color), var(--primary-color) 10%);
+}
+
+
+
+
+/******************************************************************************/
+/*                                  MATHJAX                                   */
+/******************************************************************************/
+
+/*
+ * attempt at increasing inter-line space in mathjax displays
+ * but has side:effect: equation tags/numbers get out of alignment
+ */
+/* div.displaymath
+  > mjx-container
+  > mjx-math
+  > mjx-mtable
+  > mjx-table
+  > mjx-itable
+  > mjx-mtr:not(:last-child)
+  > mjx-mtd
+{ padding-bottom: 0.5em !important; } */
