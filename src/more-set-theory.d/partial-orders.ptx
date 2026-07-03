@@ -84,7 +84,7 @@ that can be thought of as expressing <q>is smaller than or equal in size to.</q>
 </ul>
 Notice that these are the same properties as for an equivalence relation, <alert>except</alert> that we have flipped <term>symmetric</term> to <term>antisymmetric</term>.
 Make sure to keep this straight!
-<dl width="narrow">
+<dl width="wide">
 
 	<li>
 		<title>partial order</title>
@@ -338,7 +338,7 @@ Make sure to keep this straight!
 <section xml:id="section-partial-orders-graph">
 <title>Graph for a partial order</title>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium"><li>
 	<title>Hasse diagram</title>
 	<idx>Hasse diagram</idx>
 	<p>
@@ -392,7 +392,7 @@ Make sure to keep this straight!
 <section xml:id="section-partial-orders-total">
 <title>Total orders</title>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>comparable elements</title>
@@ -429,7 +429,7 @@ Make sure to keep this straight!
 	As long as each of a pair of subsets contains an element that the other doesn't, then the two will be incomparable by <m> \mathord{\subseteq} </m>.
 </p></example>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li xml:id="definition-partial-orders-total">
 		<title>total order</title>
@@ -535,7 +535,7 @@ Make sure to keep this straight!
 
 <p>
 Each of the following definitions are for a subset <m> B </m> of a partially ordered set <m> A </m>.
-<dl width="narrow">
+<dl width="wide">
 
 	<li>
 		<title>upper bound</title>
@@ -650,7 +650,7 @@ Each of the following definitions are for a subset <m> B </m> of a partially ord
 <p>
 The next two definitions are stated for elements in a partially ordered set,
 but could also be understood for elements in a subset of a partially ordered set, as every subset of a partially ordered set is also a partially ordered set.
-<dl width="narrow">
+<dl width="medium">
 
 	<li xml:id="definition-partial-orders-maximal">
 		<title>maximal element</title>
@@ -853,7 +853,7 @@ because we risk contradicting the required properties of a partial order
 
 <p>
 The following definitions apply to a partial order <m> \mathord{\partorder} </m> on a set <m> A </m>.
-<dl width="narrow">
+<dl width="medium">
 
 	<li xml:id="definition-partial-orders-compatible-total-order">
 		<title>compatible total order</title>

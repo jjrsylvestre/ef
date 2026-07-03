@@ -21,7 +21,7 @@ respective owners.
 <section xml:id="section-relations-basics">
 <title>Basics</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>relation (working definition)</title>
@@ -72,7 +72,7 @@ respective owners.
 Just as with functions, we want to avoid the use of the undefinable word <q>rule</q>.
 Notice that a relation just pairs elements of a set <m> A </m> with elements of a set <m> B </m>;
 we have seen this before.
-<dl width="narrow"><li>
+<dl width="medium"><li>
 	<title>relation (formal definition)</title>
 	<idx><h>relation(s)</h><h>formal definition</h></idx>
 	<p> a subset of a Cartesian product </p>
@@ -127,7 +127,7 @@ A relation between pairs of objects, such as the ones we have considered so far,
 <idx><h>binary</h><h>relation</h></idx>
 <idx><h>relation(s)</h><h>binary</h></idx>
 But we can consider relationships between collections of more than two objects.
-<dl width="narrow"><li>
+<dl width="medium"><li>
 	<title>ternary relation</title>
 	<idx>ternary relation</idx>
 	<idx><h>relation(s)</h><h>ternary</h></idx>
@@ -149,7 +149,7 @@ But we can consider relationships between collections of more than two objects.
 
 <p>
 Viewing relations as subsets of Cartesian products suggests ways to build new relations from old.
-<dl width="narrow">
+<dl width="wide">
 
 	<li>
 		<title>union (of relations <m> R_1,R_2 </m>)</title>
@@ -239,7 +239,7 @@ Viewing relations as subsets of Cartesian products suggests ways to build new re
 <p>
 Unlike functions, which can only be reversed if bijective,
 every relation can be reversed by simply stating the relationship in the reverse order.
-<dl width="narrow"><li xml:id="definition-relations-inverse">
+<dl width="wide"><li xml:id="definition-relations-inverse">
 	<title>inverse (of a relation <m> R </m>)</title>
 	<idx><h>inverse</h><h>relation</h></idx>
 	<idx><h>relation(s)</h><h>inverse</h></idx>
@@ -291,7 +291,7 @@ every relation can be reversed by simply stating the relationship in the reverse
 
 <p>
 There are two more set-theoretic ideas we can reinterpret as relations.
-<dl width="narrow">
+<dl width="medium">
 
 	<li xml:id="definition-relations-empty">
 		<title>empty relation</title>
@@ -389,7 +389,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 	</p></statement>
 </claim>
 
-<p><dl width="narrow"><li xml:id="definition-relations-antisymmetric">
+<p><dl width="medium"><li xml:id="definition-relations-antisymmetric">
 	<title>antisymmetric</title>
 	<idx>antisymmetric relation</idx>
 	<idx><h>relation(s)</h><h>antisymmetric</h></idx>

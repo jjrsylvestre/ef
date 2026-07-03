@@ -227,6 +227,13 @@ li > .para:first-of-type:not(:first-child) {
   margin-top: 0px;
 }
 
+/* mash consecutive dl's together */
+dl.description-list:has(+ dl.description-list) {
+  margin-bottom: 0;
+}
+dl.description-list + dl.description-list {
+  margin-top: 0;
+}
 
 /******************************************************************************/
 /*                              ASIDE HEADINGS                                */
@@ -261,18 +268,22 @@ li > .para:first-of-type:not(:first-child) {
 .ptx-content article.definition-like,
 .ptx-content article.theorem-like,
 .ptx-content article.remark-like,
-.ptx-content section.chapter article.exercise.exercise-like {
+.ptx-content section.chapter article.exercise.exercise-like,
+.ptx-content section > .para > .description-list
+{
   border-left: 10px solid var(--block-border-color);
   padding: 10px;
 }
 
 /* colours */
 :root:not(.dark-mode) .ptx-content article.definition-like,
-:root:not(.dark-mode) .ptx-content article.theorem-like {
+:root:not(.dark-mode) .ptx-content article.theorem-like,
+:root:not(.dark-mode) .ptx-content section > .para > .description-list {
   background: var(--secondary-color-white-90);
 }
 :root.dark-mode .ptx-content article.definition-like,
-:root.dark-mode .ptx-content article.theorem-like {
+:root.dark-mode .ptx-content article.theorem-like,
+:root.dark-mode .ptx-content section > .para > .description-list {
   background: color-mix(in oklab, var(--page-color), var(--primary-color) 10%);
 }
 :root:not(.dark-mode) .ptx-content section.chapter article.exercise.exercise-like {

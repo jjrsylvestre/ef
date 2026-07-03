@@ -21,20 +21,25 @@ respective owners.
 <idx>sequence</idx>
 
 <p>
-<dl width="narrow"><li xml:id="definition-recur-induct-counting-set">
+<dl width="medium"><li xml:id="definition-recur-induct-counting-set">
 	<title>counting set</title>
 	<notation>
 		<usage><m> \natnumlt{m} </m></usage>
 		<description>the set of natural numbers that are less than <m> m </m></description>
 	</notation>
-	<p> the set <md> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0,\, 1,\, \dotsc,\, m-1\} </md> </p>
+	<p>
+	a set <m> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0,\, 1,\, \dotsc,\, m-1\} </m>
+	for some <m> m \in \N </m>
+	</p>
 </li></dl>
 The set <m> \natnumlt{m} </m> has exactly <m> m </m> elements in it.
 In <xref ref="chapter-cardinality" /> we will use these counting sets to, well, <em>count</em> the elements in other sets.
 For now, we will use them to index the objects in an ordered list.
 </p>
 
-<p><dl width="narrow">
+<p>
+
+<dl width="medium">
 
 	<li xml:id="definition-recur-induct-finite-seq">
 		<title>finite sequence (from a set <m> A </m>)</title>
@@ -54,6 +59,10 @@ For now, we will use them to index the objects in an ordered list.
 		<title>term in a sequence</title>
 		<p> one of the image elements of the function defining the sequence </p>
 	</li>
+
+</dl>
+
+<dl width="narrow">
 
 	<li>
 		<title><m> a_k </m></title>
@@ -98,7 +107,9 @@ For now, we will use them to index the objects in an ordered list.
 		<p> the collection of all terms in a sequence, where we are explicit that it is an infinite sequence </p>
 	</li>
 
-</dl></p>
+</dl>
+
+</p>
 
 <remark><p><ul>
 
@@ -131,7 +142,7 @@ For now, we will use them to index the objects in an ordered list.
 <section xml:id="section-recur-induct-recur-relation">
 <title>Recurrence relations</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>recursively-defined sequence</title>

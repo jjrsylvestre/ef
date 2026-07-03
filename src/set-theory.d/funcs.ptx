@@ -22,7 +22,7 @@ respective owners.
 <subsection>
 <title>Terminology and basic concepts</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li xml:id="definition-funcs-working">
 		<title>function (working definition)</title>
@@ -281,7 +281,7 @@ for example, by:
 <subsection xml:id="subsection-funcs-graph">
 <title>Graph of a function</title>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li xml:id="definition-funcs-graph">
 		<title>graph (of a function)</title>
@@ -458,7 +458,7 @@ what is a <q>rule</q>?
 Rather than chasing some circle of definitions, we can come up with a better definition by noticing that the graph of a function contains all the necessary information about the function.
 </p>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 	<li xml:id="definition-funcs-formal">
 		<title>function (formal definition)</title>
 		<idx><h>function</h><h>definition</h><h>formal</h></idx>
@@ -549,7 +549,6 @@ sometimes what we think is a function turns out to not be a function.
 
 <p><dl width="narrow"><li xml:id="definition-funcs-equality">
 	<title>equality of functions</title>
-	<!-- \label{DEFN::func.equality} -->
 	<idx><h>equality</h><h>of functions</h></idx>
 	<idx><h>function</h><h>equality</h></idx>
 	<p>
@@ -567,11 +566,10 @@ sometimes what we think is a function turns out to not be a function.
 <subsection>
 <title>Image of a function</title>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>image of a function</title>
-		<!-- \label{DEFN::image} -->
 		<idx><h>image</h><h>of a function</h></idx>
 		<idx><h>function</h><h>image</h></idx>
 		<p> the set of all possible outputs of the function </p>
@@ -659,29 +657,29 @@ sometimes what we think is a function turns out to not be a function.
 
 </problem>
 
-<p><dl width="narrow">
+<p>
 
-	<li xml:id="definition-funcs-image-on-subset">
-		<title>image of a function on a subset</title>
-		<idx><h>image</h><h>of a function on a subset</h></idx>
-		<idx><h>subset</h><h>image under a function</h></idx>
-		<idx><h>function</h><h>image</h><h>on a subset</h></idx>
-		<p> the set of all outputs of a function when only fed inputs from a given subset </p>
-	</li>
+<dl width="wide"><li xml:id="definition-funcs-image-on-subset">
+	<title>image of a function on a subset</title>
+	<idx><h>image</h><h>of a function on a subset</h></idx>
+	<idx><h>subset</h><h>image under a function</h></idx>
+	<idx><h>function</h><h>image</h><h>on a subset</h></idx>
+	<p> the set of all outputs of a function when only fed inputs from a given subset </p>
+</li></dl>
 
-	<li>
-		<title><m> f(A') </m></title>
-		<notation>
-			<usage><m> f(A') </m></usage>
-			<description>the image of function <m> \funcdef{f}{A}{B} </m> on a subset <m> A' \subseteq A </m></description>
-		</notation>
-		<p>
-		the image of the subset <m> A' \subseteq A </m> under a function <m> \funcdef{f}{A}{B} </m>,
-		so that <md> f(A') = \setdef{f(a)}{a \in A'} \subseteq B </md>
-		</p>
-	</li>
+<dl width="narrow"><li>
+	<title><m> f(A') </m></title>
+	<notation>
+		<usage><m> f(A') </m></usage>
+		<description>the image of function <m> \funcdef{f}{A}{B} </m> on a subset <m> A' \subseteq A </m></description>
+	</notation>
+	<p>
+	the image of the subset <m> A' \subseteq A </m> under a function <m> \funcdef{f}{A}{B} </m>,
+	so that <md> f(A') = \setdef{f(a)}{a \in A'} \subseteq B </md>
+	</p>
+</li></dl>
 
-</dl></p>
+</p>
 
 <example><p>
 	We saw in <xref ref="wexample-funcs-verify-function-image" /> that for
@@ -697,14 +695,14 @@ sometimes what we think is a function turns out to not be a function.
 <section xml:id="section-funcs-properties">
 <title>Properties of functions</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>surjective function</title>
 		<idx><h>function</h><h>surjective</h></idx>
 		<p>
 		a function whose image is all of its codomain <mdash />
-		that is, every element of the codomain is an output for the function;
+		that is, every element of the codomain is an output for the function
 		</p>
 	</li>
 
@@ -785,7 +783,7 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 
 </problem>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>injective function</title>
@@ -913,7 +911,7 @@ by considering <m> f(A) \subseteq B </m>.
 
 </example>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li xml:id="definition-funcs-bijective">
 		<title>bijective function</title>
@@ -1016,7 +1014,7 @@ by considering <m> f(A) \subseteq B </m>.
 	Etc.
 -->
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>identity function (on a set <m> A </m>)</title>
@@ -1038,32 +1036,36 @@ by considering <m> f(A) \subseteq B </m>.
 
 <note><p> An identity function is always a bijection. </p></note>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium">
+
+	<li>
 	<title>inclusion function (on subset <m> A \subseteq X </m>)</title>
 	<idx><h>function</h><h>inclusion</h></idx>
 	<idx>inclusion function</idx>
 	<p> the function <m> A \to X </m> defined by <m> a \mapsto a </m> </p>
-</li></dl></p>
+	</li>
 
-<aside><title>Check your understanding</title><p>
-	Do you understand the difference between the definitions of <term>identity function</term> and <term>inclusion function</term>?
-</p></aside>
-
-<p><dl width="narrow"><li>
+	<li>
 	<title><m> \funcdef{\inclfunc{A}{X}}{A}{X} </m></title>
 	<notation>
 		<usage><m> \funcdef{\inclfunc{A}{X}}{A}{X} </m></usage>
 		<description>the inclusion function on subset <m> A \subseteq X </m></description>
 	</notation>
 	<p>the inclusion function on subset <m> A \subseteq X </m></p>
-</li></dl></p>
+	</li>
+
+</dl></p>
+
+<aside valign="top"><title>Check your understanding</title><p>
+	Do you understand the difference between the definitions of <term>identity function</term> and <term>inclusion function</term>?
+</p></aside>
 
 <note><p> An inclusion function is always an injection. </p></note>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
-		<title>projection functions (on a Cartesian product <m> A \cartprod B </m>)</title>
+		<title>projection functions (on Cartesian product <m> A \cartprod B </m>)</title>
 		<idx><h>function</h><h>projection</h></idx>
 		<idx><h>projection</h><h>function</h></idx>
 		<p>
@@ -1116,17 +1118,19 @@ by considering <m> f(A) \subseteq B </m>.
 	(except possibly when one or more of the factors in the Cartesian product is the empty set).
 </p></note>
 
-<p><dl width="narrow">
+<p>
 
-	<li xml:id="definition-funcs-restricting-domain">
-		<title>restricting the domain</title>
-		<idx><h>restriction</h><h sortby="domain of a function">of the domain of a function</h></idx>
-		<idx><h>function</h><h>restriction (of the domain)</h></idx>
-		<p>
-		the <q>induced</q> function <m> A \to Y </m> created from function <m> \funcdef{f}{X}{Y} </m> and subset <m> A \subseteq X </m>
-		by <q>forgetting</q> about all elements of <m> X </m> that do not lie in <m> A </m>
-		</p>
-	</li>
+<dl width="wide"><li xml:id="definition-funcs-restricting-domain">
+	<title>restricting the domain</title>
+	<idx><h>restriction</h><h sortby="domain of a function">of the domain of a function</h></idx>
+	<idx><h>function</h><h>restriction (of the domain)</h></idx>
+	<p>
+	the <q>induced</q> function <m> A \to Y </m> created from function <m> \funcdef{f}{X}{Y} </m> and subset <m> A \subseteq X </m>
+	by <q>forgetting</q> about elements of <m> X </m> that do not lie in <m> A </m>
+	</p>
+</li></dl>
+
+<dl width="narrow">
 
 	<li>
 		<title><m> \funcres{f}{A} </m></title>
@@ -1155,7 +1159,9 @@ by considering <m> f(A) \subseteq B </m>.
 		<p> alternative domain restriction notation </p>
 	</li>
 
-</dl></p>
+</dl>
+
+</p>
 
 <figure>
 	<caption>A Venn diagram of restricting the domain of a function.</caption>
@@ -1189,13 +1195,13 @@ by considering <m> f(A) \subseteq B </m>.
 	the image of <m> f </m> on <m> A </m> is the same as the image of the restriction <m> \funcres{f}{A} </m>.
 </p></remark>
 
-<p><dl width="narrow"><li xml:id="definition-funcs-restrict-codomain">
+<p><dl width="medium"><li xml:id="definition-funcs-restrict-codomain">
 	<title>restricting the codomain</title>
 	<idx><h>restriction</h><h sortby="codomain of a function">of the codomain of a function</h></idx>
 	<idx><h>function</h><h>restricting the codomain</h></idx>
 	<p>
 	the <q>induced</q> function <m> X \to B </m> created from function <m> \funcdef{f}{X}{Y} </m> and subset <m> B \subseteq Y </m>
-	by <q>forgetting</q> about all elements of <m> Y </m> that do not lie in <m> B </m>,
+	by <q>forgetting</q> about elements of <m> Y </m> that do not lie in <m> B </m>,
 	<em>where <m> B </m> must contain the image of <m> f </m></em>
 	</p>
 </li></dl></p>
@@ -1220,7 +1226,7 @@ by considering <m> f(A) \subseteq B </m>.
 	In particular, if <m> \ifuncdef{f}{X}{Y} </m> is injective, then by restricting the codomain we can obtain a <em>bijection</em> <m> \funcdef{f}{X}{f(X)} </m>.
 </p></note>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium"><li>
 	<title>extension of a function</title>
 	<idx>extension (of a function)</idx>
 	<idx><h>function</h><h>extension</h></idx>
@@ -1256,7 +1262,7 @@ by considering <m> f(A) \subseteq B </m>.
 One of the most common ways to extend a function to a larger domain is to pick an appropriate constant value in the codomain to assign to all <q>new</q> inputs in the enlarged domain.
 </p>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium"><li>
 	<title>extenstion by zero</title>
 	<idx><h>extension (of a function)</h><h>by zero</h></idx>
 	<idx><h>function</h><h>extension</h><h>by zero</h></idx>
@@ -1302,16 +1308,15 @@ One of the most common ways to extend a function to a larger domain is to pick a
 <section xml:id="section-funcs-composition">
 <title>Composition of functions</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>composition function</title>
 		<idx>composition (of functions)</idx>
 		<idx><h>function</h><h>composition</h></idx>
 		<p>
-		a function <m> A \to C </m> created from given functions <m> \funcdef{f}{A}{B} </m> and <m> \funcdef{g}{B}{C} </m>
+		a function <m> A \to C </m> created from functions <m> \funcdef{f}{A}{B} </m> and <m> \funcdef{g}{B}{C} </m>
 		by <m> a \mapsto g\bbrac{f(a)} </m>
-
 		</p>
 	</li>
 
@@ -1459,34 +1464,34 @@ One of the most common ways to extend a function to a larger domain is to pick a
 <title>Inverses</title>
 
 <p>
+
 Suppose <m> \funcdef{f}{A}{B} </m> is a function.
 By definition, <m> f </m> associates an element of <m> B </m> to each element of <m> A </m>.
 Sometimes we want to reverse this process: given an element <m> b \in B </m>, can we determine an element <m> a \in A </m> such that <m> f(a) = b </m>?
 We'll begin to answer this question by first finding all possible <q>reverse results</q> from elements in subsets of <m> B </m>.
-<dl width="narrow">
 
-	<li xml:id="definition-funcs-inverse-set-image">
-		<title>inverse image (of a subset <m> C </m> of the codomain <m> B </m>)</title>
-		<idx><h>inverse</h><h>image</h><h>of a set</h></idx>
-		<idx><h>image</h><h>inverse</h><h>of a set</h></idx>
-		<p>
-		the set of all domain elements <m> a \in A </m> for function <m> \funcdef{f}{A}{B} </m> for which the corresponding output element <m> f(a) </m> lies in the subset <m> C </m> of the codomain
-		</p>
-	</li>
+<dl width="wide"><li xml:id="definition-funcs-inverse-set-image">
+	<title>inverse image (of a subset <m> C </m> of the codomain <m> B </m>)</title>
+	<idx><h>inverse</h><h>image</h><h>of a set</h></idx>
+	<idx><h>image</h><h>inverse</h><h>of a set</h></idx>
+	<p>
+	the set of all domain elements <m> a \in A </m> for function <m> \funcdef{f}{A}{B} </m> for which the corresponding output element <m> f(a) </m> lies in the subset <m> C </m> of the codomain
+	</p>
+</li></dl>
 
-	<li>
-		<title><m> \funcinvimg{f}{C} </m></title>
-		<notation>
-			<usage><m> \funcinvimg{f}{C} </m></usage>
-			<description>the inverse image of the subset <m> C \subseteq B </m> under the function <m> \funcdef{f}{A}{B} </m></description>
-		</notation>
-		<p>
-		the inverse image of the subset <m> C \subseteq B </m> under the function <m> \funcdef{f}{A}{B} </m>,
-		so that <md> \funcinvimg{f}{C} = \setdef{a \in A}{f(a) \in C} </md>
-		</p>
-	</li>
+<dl width="narrow"><li>
+	<title><m> \funcinvimg{f}{C} </m></title>
+	<notation>
+		<usage><m> \funcinvimg{f}{C} </m></usage>
+		<description>the inverse image of the subset <m> C \subseteq B </m> under the function <m> \funcdef{f}{A}{B} </m></description>
+	</notation>
+	<p>
+	the inverse image of the subset <m> C \subseteq B </m> under the function <m> \funcdef{f}{A}{B} </m>,
+	so that <md> \funcinvimg{f}{C} = \setdef{a \in A}{f(a) \in C} </md>
+	</p>
+</li></dl>
 
-</dl></p>
+</p>
 
 <figure>
 	<caption>A Venn diagram of a function inverse image.</caption>
@@ -1527,27 +1532,27 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 </example>
 
 <p>
+
 Now let's return to the question of trying to reverse an input-output relationship <m> f(a) = b </m>:
 the set <m> \inv{f}\bbrac{\{b\}} </m> collects together all possible candidates for the inverse image of <m> b </m>.
-<dl width="narrow">
 
-	<li xml:id="definition-funcs-inverse-element-image">
-		<title>inverse image (of an element <m> b </m> of the codomain <m> B </m>)</title>
-		<idx><h>inverse</h><h>image</h><h>of an element</h></idx>
-		<idx><h>image</h><h>inverse</h><h>of an element</h></idx>
-		<p>
-		the inverse image <m> \inv{f}\bbrac{\{b\}} </m>,
-		which consists of all domain elements <m> a \in A </m> for which <m> f(a) = b </m>
-		</p>
-	</li>
+<dl width="wide"><li xml:id="definition-funcs-inverse-element-image">
+	<title>inverse image (of an element <m> b </m> of the codomain <m> B </m>)</title>
+	<idx><h>inverse</h><h>image</h><h>of an element</h></idx>
+	<idx><h>image</h><h>inverse</h><h>of an element</h></idx>
+	<p>
+	the inverse image <m> \inv{f}\bbrac{\{b\}} </m>,
+	which consists of all domain elements <m> a \in A </m> for which <m> f(a) = b </m>
+	</p>
+</li></dl>
 
-	<li>
-		<title><m> \funcinvimg{f}{b} </m></title>
-		<p> simplified notation to mean the inverse image of element <m> b </m> </p>
-	</li>
+<dl width="narrow"><li>
+	<title><m> \funcinvimg{f}{b} </m></title>
+	<p> simplified notation to mean the inverse image of element <m> b </m> </p>
+</li></dl>
 
-</dl>
 This gives us a way to associate to an element <m> b \in B </m> a set <m> \funcinvimg{f}{b} </m> of elements of <m> A </m>.
+
 </p>
 
 <insight><p>
@@ -1576,30 +1581,30 @@ There are two possible ways that this will fail to give us a function.
 So it seems we will need a function to be <em>bijective</em> in order to be able to reverse the input-output rule to obtain an inverse function.
 </p>
 
-<p><dl width="narrow">
+<p>
 
-	<li>
-		<title>inverse function</title>
-		<idx><h>function</h><h>inverse</h></idx>
-		<idx><h>inverse</h><h>function</h></idx>
-		<p>
-		for a bijective function <m> f </m>, the <term>inverse function</term> associates to each codomain element of <m> f </m> the corresponding unique domain element that produces it through <m> f </m>
-		</p>
-	</li>
+<dl width="medium"><li>
+	<title>inverse function</title>
+	<idx><h>function</h><h>inverse</h></idx>
+	<idx><h>inverse</h><h>function</h></idx>
+	<p>
+	for a bijective function <m> f </m>, the <term>inverse function</term> associates to each codomain element of <m> f </m> the corresponding unique domain element that produces it through <m> f </m>
+	</p>
+</li></dl>
 
-	<li>
-		<title><m> \inv{f} </m></title>
-		<notation>
-			<usage><m> \funcdef{\inv{f}}{B}{A} </m></usage>
-			<description>the inverse function associate to bijective function <m> \funcdef{f}{A}{B} </m></description>
-		</notation>
-		<p>
-		the inverse function <m> \funcdef{\inv{f}}{B}{A} </m> for bijective function <m> \funcdef{f}{A}{B} </m>,
-		so that for <m> b \in B </m> we have <m> \funcinvimg{f}(b) </m> defined to be the unique element <m> a \in A </m> such that <m> f(a) = b </m>
-		</p>
-	</li>
+<dl width="narrow"><li>
+	<title><m> \inv{f} </m></title>
+	<notation>
+		<usage><m> \funcdef{\inv{f}}{B}{A} </m></usage>
+		<description>the inverse function associate to bijective function <m> \funcdef{f}{A}{B} </m></description>
+	</notation>
+	<p>
+	the inverse function <m> \funcdef{\inv{f}}{B}{A} </m> for bijective function <m> \funcdef{f}{A}{B} </m>,
+	so that for <m> b \in B </m> we have <m> \funcinvimg{f}(b) </m> defined to be the unique element <m> a \in A </m> such that <m> f(a) = b </m>
+	</p>
+</li></dl>
 
-</dl></p>
+</p>
 
 <example><title>An invertible single-variable, real-valued function</title><p>
 	The function <m> \funcdef{f}{\R}{\R} </m>, <m> f(x) = x^3 </m>, is bijective and has inverse <m> \inv{f}(x) = x^{\frac{1}{3}} </m>.

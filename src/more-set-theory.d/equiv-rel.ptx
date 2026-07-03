@@ -37,6 +37,7 @@ respective owners.
 
 <p>
 What properties should a relation on a set have to be useful as a notion of <q>equivalence</q>?
+
 <ul>
 
 	<li>
@@ -56,36 +57,34 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 	</li>
 
 </ul>
-<dl width="narrow">
 
-	<li>
-		<title>equivalence relation</title>
-		<idx><h>equivalence</h><h>relation</h></idx>
-		<idx><h>relation(s)</h><h>equivalence</h></idx>
-		<p>
-		a relation on a set that is
-		<term><xref ref="definition-relations-reflexive" text="title" /></term>,
-		<term><xref ref="definition-relations-symmetric" text="title" /></term>, and
-		<term><xref ref="definition-relations-transitive" text="title" /></term>
-		</p>
-	</li>
+<dl width="wide"><li>
+	<title>equivalence relation</title>
+	<idx><h>equivalence</h><h>relation</h></idx>
+	<idx><h>relation(s)</h><h>equivalence</h></idx>
+	<p>
+	a relation on a set that is
+	<term><xref ref="definition-relations-reflexive" text="title" /></term>,
+	<term><xref ref="definition-relations-symmetric" text="title" /></term>, and
+	<term><xref ref="definition-relations-transitive" text="title" /></term>
+	</p>
+</li></dl>
 
-	<li>
-		<title><m> \mathord{\equiv} </m></title>
-		<notation>
-			<usage><m> a \equiv b </m></usage>
-			<description>
-				<m> a </m> is related to <m> b </m> by the equivalence relation <m> \mathord{\equiv} </m>;
-				in other words, <m> a </m> is somehow equivalent to <m> b </m>
-			</description>
-		</notation>
-		<p>
-		symbol for an abstract equivalence relation
-		(instead of the letter <m> R </m> that we've been using for abstract relations up until now)
-		</p>
-	</li>
+<dl width="narrow"><li>
+	<title><m> \mathord{\equiv} </m></title>
+	<notation>
+		<usage><m> a \equiv b </m></usage>
+		<description>
+			<m> a </m> is related to <m> b </m> by the equivalence relation <m> \mathord{\equiv} </m>;
+			in other words, <m> a </m> is somehow equivalent to <m> b </m>
+		</description>
+	</notation>
+	<p>
+	symbol for an abstract equivalence relation
+	(instead of the letter <m> R </m> that we've been using for abstract relations up until now)
+	</p>
+</li></dl>
 
-</dl>
 </p>
 
 <problem> <!-- worked example -->
@@ -122,28 +121,27 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 
 <p>
 Here is an important equivalence relation on <m> \N </m> or on <m> \Z </m>.
-<dl width="narrow">
 
-	<li>
-		<title>equivalence modulo <m> n </m></title>
-		<idx>modulo</idx>
-		<idx><h>equivalence</h><h>modulo</h></idx>
-		<p>
-		an equivalence of integers,
-		where two integers are equivalent if they have the same remainder when divided by <m> n </m>
-		</p>
-	</li>
+<dl width="wide"><li>
+	<title>equivalence modulo <m> n </m></title>
+	<idx>modulo</idx>
+	<idx><h>equivalence</h><h>modulo</h></idx>
+	<p>
+	an equivalence of integers,
+	where two integers are equivalent if they have the same remainder when divided by <m> n </m>
+	</p>
+</li></dl>
 
-	<li>
-		<title><m> m_1 \equiv_n m_2 </m></title>
-		<notation>
-			<usage><m> m_1 \equiv_n m_2 </m></usage>
-			<description>integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m></description>
-		</notation>
-		<p> integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m> </p>
-	</li>
+<dl width="narrow"><li>
+	<title><m> m_1 \equiv_n m_2 </m></title>
+	<notation>
+		<usage><m> m_1 \equiv_n m_2 </m></usage>
+		<description>integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m></description>
+	</notation>
+	<p> integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m> </p>
+</li></dl>
 
-</dl></p>
+</p>
 
 <exercise><p> Verify that equivalence modulo <m> n </m> is an equivalence relation. </p></exercise>
 
@@ -189,29 +187,29 @@ an equivalence relation can be used to group equivalent objects together.
 
 </example>
 
-<p><dl width="narrow">
+<p>
 
-	<li>
-		<title>equivalence class (of an element <m> a </m>)</title>
-		<idx><h>equivalence</h><h>class</h></idx>
-		<idx>class (for an equivalence relation)</idx>
-		<p>
-			the subset of <m> A </m> consisting of all elements that are equivalent to the given element <m> a \in A </m>,
-			relative to a specific equivalence relation <m> \mathord{\equiv} </m> on <m> A </m>;
-			<ie /> the set <md> \setdef{x\in A}{ x \equiv a } </md>
-		</p>
-	</li>
+<dl width="wide"><li>
+	<title>equivalence class (of an element <m> a </m>)</title>
+	<idx><h>equivalence</h><h>class</h></idx>
+	<idx>class (for an equivalence relation)</idx>
+	<p>
+		the subset of <m> A </m> consisting of all elements that are equivalent to the given element <m> a \in A </m>,
+		relative to a specific equivalence relation <m> \mathord{\equiv} </m> on <m> A </m>;
+		<ie /> the set <md> \setdef{x\in A}{ x \equiv a } </md>
+	</p>
+</li></dl>
 
-	<li>
-		<title><m> \eqclass{a} </m></title>
-		<notation>
-			<usage><m> \eqclass{a} </m></usage>
-			<description>the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m></description>
-		</notation>
-		<p> the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m> </p>
-	</li>
+<dl width="narrow"><li>
+	<title><m> \eqclass{a} </m></title>
+	<notation>
+		<usage><m> \eqclass{a} </m></usage>
+		<description>the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m></description>
+	</notation>
+	<p> the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m> </p>
+</li></dl>
 
-</dl></p>
+</p>
 
 <example xml:id="example-equiv-rel-classes-mod-5">
 	<title>Equivalence classes of natural numbers modulo <m> 5 </m></title>
@@ -326,7 +324,7 @@ an equivalence relation can be used to group equivalent objects together.
 <xref ref="proposition-equiv-rel-properties-equal-classes" text="type-local">Statement</xref>
 of <xref ref="proposition-equiv-rel-properties" />
 tells us that any member of an equivalence class may be used to define the class.
-<dl width="narrow">
+<dl width="wide">
 
 	<li>
 		<title>equivalence class representative</title>
@@ -393,7 +391,7 @@ we are deciding to always interchange an element for the chosen representative o
 The definition of <term><xref ref="definition-equiv-rel-complete-rep-set" text="title" /></term>
 implicitly assumes that the equivalence classes <q>fill up</q> the whole set <m> A </m>.
 But that is always precisely the case.
-<dl width="narrow">
+<dl width="medium">
 
 	<li>
 		<title>partition</title>
@@ -540,29 +538,29 @@ But that is always precisely the case.
 
 </problem>
 
-<p><dl width="narrow">
+<p>
 
-	<li>
-		<title>quotient (of a set <m> A </m> relative to an equivalence relation <m> \mathord{\equiv} </m>)</title>
-		<idx>quotient</idx>
-		<idx><h>equivalence</h><h>relation</h><h>quotient</h></idx>
-		<idx><h>relation(s)</h><h>equivalence</h><h>quotient</h></idx>
-		<p> the subset of <m> \powset{A} </m> whose elements are the equivalence classes of <m> \mathord{\equiv} </m> </p>
-	</li>
+<dl width="wide"><li>
+	<title>quotient (of a set <m> A </m> relative to an equivalence relation <m> \mathord{\equiv} </m>)</title>
+	<idx>quotient</idx>
+	<idx><h>equivalence</h><h>relation</h><h>quotient</h></idx>
+	<idx><h>relation(s)</h><h>equivalence</h><h>quotient</h></idx>
+	<p> the subset of <m> \powset{A} </m> whose elements are the equivalence classes of <m> \mathord{\equiv} </m> </p>
+</li></dl>
 
-	<li>
-		<title><m> A / \mathord{\equiv} </m></title>
-		<notation>
-			<usage><m> A / \mathord{\equiv} </m></usage>
-			<description>the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m></description>
-		</notation>
-		<p>
-		the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m>,
-		so that <md> (A / \mathord{\equiv}) = \setdef{\eqclass{a}}{a \in A} </md>
-		</p>
-	</li>
+<dl width="narrow"><li>
+	<title><m> A / \mathord{\equiv} </m></title>
+	<notation>
+		<usage><m> A / \mathord{\equiv} </m></usage>
+		<description>the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m></description>
+	</notation>
+	<p>
+	the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m>,
+	so that <md> (A / \mathord{\equiv}) = \setdef{\eqclass{a}}{a \in A} </md>
+	</p>
+</li></dl>
 
-</dl></p>
+</p>
 
 <example><title>A quotient described by class representatives</title><p>
 	Consider the partition of <m> \Z </m> from <xref ref="wexample-equiv-rel-equivrel-from-partition" />,
@@ -615,7 +613,7 @@ But that is always precisely the case.
 
 </problem>
 
-<p><dl width="narrow"><li>
+<p><dl width="wide"><li>
 	<title>natural projection (on a set <m> A </m> relative to an equivalence relation <m> \mathord{\equiv} </m>)</title>
 	<idx><h>natural</h><h>projection</h></idx>
 	<idx><h>projection</h><h>natural (onto a quotient)</h></idx>

@@ -275,7 +275,7 @@ we have
 </mrow></md>
 </p>
 
-<p><dl width="narrow"><li>
+<p><dl width="wide"><li>
 	<title>Boolean polynomial</title>
 	<idx><h>Boolean</h><h>polynomial</h></idx>
 	<p>
@@ -288,7 +288,7 @@ we have
 
 <p>
 There are two special constant Boolean polynomials.
-<dl width="narrow">
+<dl width="medium">
 
 	<li>
 		<title>zero polynomial</title>
@@ -363,10 +363,10 @@ There are two special constant Boolean polynomials.
 
 </example>
 
-<p><dl width="narrow"><li>
+<p><dl width="wide"><li>
 		<title>equivalent polynomials</title>
 		<idx><h>equivalent</h><h>polynomials</h></idx>
-		<p> Boolean polynomials which represent equivalent logical statements </p>
+		<p> Boolean polynomials that represent equivalent logical statements </p>
 </li></dl></p>
 
 <fact>
@@ -440,7 +440,7 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	then we know we must be either in the input state of the first row <em>or</em> of the fourth row.
 </p></remark>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium"><li>
 	<title>disjunctive normal form</title>
 	<idx>disjunctive normal form</idx>
 	<p>

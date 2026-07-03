@@ -80,7 +80,7 @@ respective owners.
 <section xml:id="section-trees-basics">
 <title>Basics</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>trivial path</title>
@@ -110,7 +110,7 @@ respective owners.
 	The cycle <m> v,e,v',e,v </m> in any graph <m> G </m> that contains distinct vertices <m> v,v' </m> and edge <m> e = \{v,v'\} </m>.
 </p></example>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>acyclic graph</title>
@@ -654,7 +654,7 @@ The following algorithm will.
 <section xml:id="section-trees-spanning">
 <title>Spanning trees</title>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>spanning subgraph</title>
@@ -694,7 +694,7 @@ The following algorithm will.
 <p>
 If we carry out either of the depth-first or breadth-first search algorithms,
 but aren't looking for a path between specific vertices, the end result will be a spanning tree for the original graph.
-<dl width="narrow">
+<dl width="wide">
 
 	<li>
 		<title>depth-first spanning tree</title>
@@ -757,7 +757,7 @@ but aren't looking for a path between specific vertices, the end result will be 
 <section xml:id="section-trees-binary-search">
 <title>Binary searches</title>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>binary search tree</title>

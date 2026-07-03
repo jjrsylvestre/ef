@@ -59,7 +59,7 @@ respective owners.
 
 <p>
 We will not discuss any axiomatic basis for set theory, but instead rely on <term>naive set theory</term>.
-<dl width="narrow"><li>
+<dl width="medium"><li>
 	<title>naive set theory</title>
 	<idx>naive set theory</idx>
 	<p>
@@ -484,7 +484,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	<xref ref="chapter-relations" />.
 </p></aside>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium"><li>
 	<title>set equality</title>
 	<idx><h>equality</h><h>of sets</h></idx>
 	<idx><h>set(s)</h><h>equality</h></idx>
@@ -547,7 +547,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	</solution>
 </problem>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li xml:id="definition-sets-proper-subset">
 		<title>proper subset</title>
@@ -608,7 +608,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 
 <introduction><p>
 	First, it is often convenient to restrict the scope of the discussion.
-	<dl width="narrow"><li>
+	<dl width="medium"><li>
 		<title>universal set</title>
 		<idx><h>universal</h><h>set</h></idx>
 		<idx><h>set(s)</h><h>universal</h></idx>
@@ -621,14 +621,27 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 <subsection>
 <title>Universal and relative complement</title>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>complement</title>
 		<idx><h>complement</h><h>set</h></idx>
 		<idx><h>set(s)</h><h>complement</h></idx>
-		<p> the set of elements of <m> U </m> which are <em>not</em> in <m> A </m> </p>
+		<p> the set of elements of <m> U </m> thar are <em>not</em> in <m> A </m> </p>
 	</li>
+
+	<li>
+		<title>relative complement</title>
+		<idx>relative complement</idx>
+		<idx><h>complement</h><h>set</h><h>relative</h></idx>
+		<p>
+		if <m> A,B \subseteq U </m>, the <term>complement of <m> A </m> in <m> B </m></term> is the set of elements of <m> B </m> that are not in <m> A </m>
+		</p>
+	</li>
+
+</dl>
+
+<dl width="narrow">
 
 	<li>
 		<title><m> \cmplmnt{A} </m></title>
@@ -637,17 +650,8 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 			<description>the complement of <m> A </m> relative to some universal set</description>
 		</notation>
 		<p>
-		the complement of <m> A </m> (in <m> U </m>), so that
-		<md> \cmplmnt{A} = \setdef{ x \in U }{ x \notin A } </md>
-		</p>
-	</li>
-
-	<li>
-		<title>relative complement</title>
-		<idx>relative complement</idx>
-		<idx><h>complement</h><h>set</h><h>relative</h></idx>
-		<p>
-		if <m> A,B \subseteq U </m>, the <term>complement of <m> A </m> in <m> B </m></term> is the set of elements of <m> B </m> which are not in <m> A </m>
+		the complement of <m> A </m> (in <m> U </m>),
+		so that <m> \cmplmnt{A} = \setdef{ x \in U }{ x \notin A } </m>
 		</p>
 	</li>
 
@@ -658,8 +662,8 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 			<description>the complement of <m> A </m> relative to some universal set</description>
 		</notation>
 		<p>
-		the complement of <m> A </m> in <m> B </m>, so that
-		<md> B \relcmplmnt A = \setdef{ x \in B }{ x \notin A } </md>
+		the complement of <m> A </m> in <m> B </m>,
+		so that <m> B \relcmplmnt A = \setdef{ x \in B }{ x \notin A } </m>
 		</p>
 	</li>
 
@@ -808,7 +812,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	</mrow></md>
 </p></example>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li xml:id="definition-sets-disjoint-sets">
 		<title>disjoint sets</title>
@@ -1016,7 +1020,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 <subsection xml:id="subsection-sets-cartesian-product-def-exmps">
 <title>Definition and examples</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>Cartesian product</title>
@@ -1036,7 +1040,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		</notation>
 		<p>
 		the Cartesian product of <m> A </m> and <m> B </m>:
-		<m> A \cartprod B = \setdef{(a,b)}{a\in A,\; b\in B} </m>
+		<md> A \cartprod B = \setdef{(a,b)}{a\in A,\; b\in B} </md>
 		</p>
 	</li>
 
@@ -1297,7 +1301,7 @@ it doesn't really matter in what <q>order</q> we place the elements of <m> A </m
 
 <p>
 In computing science, a certain set of words is of particular importance.
-<dl width="narrow">
+<dl width="medium">
 
 	<li>
 		<title>binary word</title>
@@ -1320,7 +1324,7 @@ In computing science, a certain set of words is of particular importance.
 	the words <m> \mathrm{ab} </m> and <m> \mathrm{ba} </m> are <em>different</em> words in <m> \words{\Sigma} </m>.
 </p></warning>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>length (of a word)</title>
@@ -1350,10 +1354,9 @@ In computing science, a certain set of words is of particular importance.
 
 <p>
 The concept of <term>length</term> allows us to identify some special subsets and a special element of <m> \words{\Sigma} </m>.
-<dl width="narrow">
+<dl width="medium">
 
 	<li>
-		<!-- \label{DEFN::subset.words.length.n} -->
 		<title><m> \words{\Sigma}_n </m></title>
 		<notation>
 			<usage><m> \words{\Sigma}_n </m></usage>

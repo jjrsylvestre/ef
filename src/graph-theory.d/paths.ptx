@@ -54,7 +54,7 @@ respective owners.
 
 <p> Suppose <m> G = (V,E) </m> is a graph. </p>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>walk</title>
@@ -71,7 +71,7 @@ respective owners.
 		<title>closed walk</title>
 		<idx><h>walk (in a graph)</h><h>closed</h></idx>
 		<idx><h>graph</h><h>walk</h><h>closed</h></idx>
-		<p> a walk that ends at the same vertex at which it started (that is, <m> v_n = v_0 </m>) </p>
+		<p> a walk that ends where it started (that is, <m> v_n = v_0 </m>) </p>
 	</li>
 
 	<li>
@@ -241,7 +241,7 @@ respective owners.
 <section xml:id="section-paths-connected">
 <title>Connected vertices, graphs, and components</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li xml:id="definition-paths-connected-vertices">
 		<title>connected vertices</title>
@@ -354,7 +354,7 @@ respective owners.
 
 <p>
 A nonconnected graph can be considered to simply be a collection of connected subgraphs.
-<dl width="narrow">
+<dl width="wide">
 
 	<li xml:id="definition-paths-connected-component-working">
 		<title>connected component (working definition)</title>
@@ -642,7 +642,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 	if subgraph <m> G' </m> is connected.)
 </p></remark>
 
-<p><dl width="narrow"><li>
+<p><dl width="wide"><li>
 	<title>edge connectivity</title>
 	<idx><h>edge</h><h>connectivity</h></idx>
 	<idx><h>graph</h><h>edge</h><h>connectivity</h></idx>

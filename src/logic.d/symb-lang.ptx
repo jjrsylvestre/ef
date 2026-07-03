@@ -62,7 +62,7 @@ respective owners.
 	<xref ref="example-symb-lang-basic-statements" />.
 </p></example>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>simple statement</title>
@@ -119,7 +119,7 @@ respective owners.
 	<idx><h>logical</h><h>connectives</h></idx>
 	<statement>
 
-		<p><dl width="narrow">
+		<p><dl width="medium">
 
 			<li>
 				<title>negation</title>
@@ -166,7 +166,7 @@ respective owners.
 		<p>
 		Given statements <m> A </m> and <m> B </m>,
 		we use these connectives to construct new statements:
-		<dl width="narrow">
+		<dl width="wide">
 
 			<li>
 				<title>negation of <m> A </m></title>
@@ -303,7 +303,7 @@ As we have already begun to do,
 we will use letters to represent (possibly variable) logical statements and substatements.
 To complete the conversion from verbose language to compact symbolism,
 we will introduce symbols to represent the <term><xref ref="definition-symb-lang-connectives" text="title" /></term>.
-<dl width="narrow">
+<dl width="wide">
 
 	<li>
 		<title>negation of <m> A </m></title>
@@ -425,7 +425,7 @@ view the variables as <em>inputs</em> and the truth value of the entire statemen
 We would like a systematic way to determine how the truth value of the output changes as we vary the truth values of the inputs.
 </p>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>logical analysis</title>
@@ -885,7 +885,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 <section xml:id="section-symb-lang-taut-contra">
 <title>Tautologies and contradictions</title>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>tautology</title>
@@ -984,7 +984,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 	No, since it is false when <m> p </m> is false.
 </p></example>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>contradiction</title>
@@ -1120,7 +1120,7 @@ In mathematics, we often wish to prove that a condition <m> A \lgccond B </m> is
 (See <xref ref="chapter-proof-methods" />.)
 </p>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li xml:id="definition-symb-lang-logically-implies">
 		<title>logically implies</title>

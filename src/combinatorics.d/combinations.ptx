@@ -64,12 +64,14 @@ respective owners.
 <title>Basics</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>combination</title>
 		<idx>combination</idx>
 		<idx><h>set(s)</h><h>combination</h></idx>
 		<p> a finite subset of a given set </p>
 	</li>
+
 	<li>
 		<title><m> \combination{n}{k} </m></title>
 		<notation>
@@ -78,25 +80,35 @@ respective owners.
 		</notation>
 		<p> the number of combinations of size <m> k </m> taken from a set of size <m> n </m> </p>
 	</li>
+
 	<li>
-		<title> <m> \combinationalt{n}{k} </m>, <m> \combinationaltalt{n}{k} </m></title>
+		<title><m> \combinationalt{n}{k} </m></title>
 		<notation>
 			<usage><m> \combinationalt{n}{k} </m></usage>
 			<description>alternative notation for <m> \combination{n}{k} </m></description>
 		</notation>
+		<p>alternative notation for <m> \combination{n}{k} </m></p>
+	</li>
+
+	<li>
+		<title><m> \combinationaltalt{n}{k} </m></title>
 		<notation>
 			<usage><m> \combinationaltalt{n}{k} </m></usage>
 			<description>alternative notation for <m> \combination{n}{k} </m></description>
 		</notation>
-		<p>alternative notation choices for <m> \combination{n}{k} </m></p>
+		<p>another alternative notation for <m> \combination{n}{k} </m></p>
 	</li>
+
 	<li>
 		<title>choose function</title>
 		<idx>choose function</idx>
 		<idx><h>function</h><h>choose</h></idx>
 		<p> the function <m> (n,k) \mapsto \combination{n}{k} </m> </p>
 	</li>
-</dl></p>
+
+</dl>
+
+</p>
 
 <exercise><p> What are the domain and codomain of the choose function? </p></exercise>
 

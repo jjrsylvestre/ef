@@ -19,7 +19,7 @@ respective owners.
 <section xml:id="section-graphs-basics">
 <title>Basics and examples</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>graph (working definition)</title>
@@ -163,7 +163,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 <subsection>
 <title>Properties of vertices and edges</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>adjacent vertices</title>
@@ -240,7 +240,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 			<usage><m> \deg v </m></usage>
 			<description>degree of vertex <m> v </m></description>
 		</notation>
-		<p> degree of vertex <m> v </m> </p>
+		<p> notation for degree of vertex <m> v </m> </p>
 	</li>
 
 </dl></p>
@@ -426,7 +426,7 @@ as well as how much <q>redundancy</q> the graph contains.
 <subsection>
 <title>Complete graphs</title>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 	<li xml:id="definition-graphs-complete">
 		<title>complete graph</title>
 		<idx>complete graph</idx>
@@ -524,7 +524,7 @@ as well as how much <q>redundancy</q> the graph contains.
 <section xml:id="section-graphs-adding-info">
 <title>Adding information to graphs</title>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>weighted graph (working definition)</title>
@@ -607,7 +607,7 @@ as well as how much <q>redundancy</q> the graph contains.
 	<etc />.
 </p></example>
 
-<p><dl width="narrow">
+<p><dl width="wide">
 
 	<li>
 		<title>directed graph (working definition)</title>

@@ -26,7 +26,7 @@ but ultimately we will need to analyze how statements can be combined into an <t
 that tries to convince others that some particular <term>conclusion</term> is true.
 </p>
 
-<p><dl width="narrow">
+<p><dl width="medium">
 
 	<li>
 		<title>argument</title>
@@ -46,7 +46,7 @@ that tries to convince others that some particular <term>conclusion</term> is tr
 			<usage><m> A_1, A_2, \dotsc, A_m \therefore C </m></usage>
 			<description> an argument with premises <m> A_1, A_2, \dotsc, A_m </m> and conclusion <m> C </m> </description>
 		</notation>
-		<p> an argument with premises <m> A_1, A_2, \dotsc, A_m </m> and conclusion <m> C </m> </p>
+		<p> argument with premises <m> A_1, A_2, \dotsc, A_m </m> and conclusion <m> C </m> </p>
 	</li>
 
 	<li>
@@ -55,7 +55,7 @@ that tries to convince others that some particular <term>conclusion</term> is tr
 			<usage><m> \begin{array}{c} A_1 \\ A_2 \\ \vdots \\ A_m \\ \hline C \end{array} </m></usage>
 			<description> an argument with premises <m> A_1, A_2, \dotsc, A_m </m> and conclusion <m> C </m> </description>
 		</notation>
-		<p> an argument with premises <m> A_1, A_2, \dotsc, A_m </m> and conclusion <m> C </m> </p>
+		<p> argument with premises <m> A_1, A_2, \dotsc, A_m </m> and conclusion <m> C </m> </p>
 	</li>
 
 </dl></p>
@@ -145,7 +145,7 @@ regardless of the content and truth/falsity of the individual statements making 
 	Is there a difference?
 </p></insight>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium"><li>
 	<title>valid argument</title>
 	<idx>valid argument</idx>
 	<idx><h>argument</h><h>valid</h></idx>
@@ -495,17 +495,21 @@ regardless of the content and truth/falsity of the individual statements making 
 <subsection>
 <title>Modus ponens</title>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium"><li>
 	<title>modus ponens</title>
 	<idx>modus ponens</idx>
 
-	<p> standard argument with form </p>
+	<sidebyside widths="55% 20%" margins="0% 25%">
 
-	<tabular halign="left">
-		<row><cell><m> p \lgccond q </m></cell></row>
-		<row bottom="minor"><cell><m> p </m></cell></row>
-		<row><cell><m> q </m></cell></row>
-	</tabular>
+		<p> standard argument with form </p>
+
+		<tabular halign="left">
+			<row><cell><m> p \lgccond q </m></cell></row>
+			<row bottom="minor"><cell><m> p </m></cell></row>
+			<row><cell><m> q </m></cell></row>
+		</tabular>
+
+	</sidebyside>
 
 </li></dl></p>
 
@@ -541,17 +545,21 @@ regardless of the content and truth/falsity of the individual statements making 
 <subsection>
 <title>Modus tollens</title>
 
-<p><dl width="narrow"><li>
+<p><dl width="medium"><li>
 	<title>modus tollens</title>
 	<idx><h>modus tollens</h><h>standard argument</h></idx>
 
-	<p> standard argument with form </p>
+	<sidebyside widths="55% 20%" margins="0% 25%">
 
-	<tabular halign="left">
-		<row><cell><m> p \lgccond q </m></cell></row>
-		<row bottom="minor"><cell><m> \lgcnot q </m></cell></row>
-		<row><cell><m> \lgcnot p </m></cell></row>
-	</tabular>
+		<p> standard argument with form </p>
+
+		<tabular halign="left">
+			<row><cell><m> p \lgccond q </m></cell></row>
+			<row bottom="minor"><cell><m> \lgcnot q </m></cell></row>
+			<row><cell><m> \lgcnot p </m></cell></row>
+		</tabular>
+
+	</sidebyside>
 
 </li></dl></p>
 
@@ -590,18 +598,22 @@ regardless of the content and truth/falsity of the individual statements making 
 <subsection>
 <title>Law of Syllogism</title>
 
-<p><dl width="narrow"><li xml:id="definition-arg-law-of-syllogism">
+<p><dl width="medium"><li xml:id="definition-arg-law-of-syllogism">
 	<title>Law of Syllogism</title>
 	<idx><h>Law</h><h>of Syllogism</h></idx>
 	<idx>Syllogism, Law of</idx>
 
-	<p> standard argument with form </p>
+	<sidebyside widths="55% 20%" margins="0% 25%">
 
-	<tabular halign="left">
-		<row><cell><m> p \lgccond q </m></cell></row>
-		<row bottom="minor"><cell><m> q \lgccond r </m></cell></row>
-		<row><cell><m> p \lgccond r </m></cell></row>
-	</tabular>
+		<p> standard argument with form </p>
+
+		<tabular halign="left">
+			<row><cell><m> p \lgccond q </m></cell></row>
+			<row bottom="minor"><cell><m> q \lgccond r </m></cell></row>
+			<row><cell><m> p \lgccond r </m></cell></row>
+		</tabular>
+
+	</sidebyside>
 
 </li></dl></p>
 
@@ -609,20 +621,24 @@ regardless of the content and truth/falsity of the individual statements making 
 
 <p> The Law of Syllogism may be extended to chains of conditionals of arbitrary (finite) length. </p>
 
-<p><dl width="narrow"><li xml:id="definition-arg-extended-law-of-syllogism">
+<p><dl width="medium"><li xml:id="definition-arg-extended-law-of-syllogism">
 	<title>Extended Law of Syllogism</title>
 	<idx><h>Law</h><h>of Syllogism</h><h>extended</h></idx>
 	<idx><h>Syllogism, Law of</h><h>extended</h></idx>
 
-	<p> standard argument with form </p>
+	<sidebyside widths="55% 25%" margins="0% 20%">
 
-	<tabular halign="right">
-		<row><cell><m> p_1 \lgccond p_2 </m></cell></row>
-		<row><cell><m> p_2 \lgccond p_3 </m></cell></row>
-		<row><cell><m> \vdots \phantom{\lgccond p_n} </m></cell></row>
-		<row bottom="minor"><cell><m> p_{n-1} \lgccond p_n </m></cell></row>
-		<row><cell><m> p_1 \lgccond p_n </m></cell></row>
-	</tabular>
+		<p> standard argument with form </p>
+
+		<tabular halign="right">
+			<row><cell><m> p_1 \lgccond p_2 </m></cell></row>
+			<row><cell><m> p_2 \lgccond p_3 </m></cell></row>
+			<row><cell><m> \vdots \phantom{\lgccond p_n} </m></cell></row>
+			<row bottom="minor"><cell><m> p_{n-1} \lgccond p_n </m></cell></row>
+			<row><cell><m> p_1 \lgccond p_n </m></cell></row>
+		</tabular>
+
+	</sidebyside>
 
 </li></dl></p>
 

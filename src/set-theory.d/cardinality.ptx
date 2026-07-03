@@ -66,14 +66,16 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 
 <exercise><p> Prove <xref ref="fact-cardinality-is-unique" /> in the case of non-empty <m> A </m>. </p></exercise>
 
-<p><dl width="narrow">
+<p>
 
-	<li xml:id="definition-cardinality-itself">
-		<title>cardinality (of a finite set <m> A </m>)</title>
-		<idx>cardinality</idx>
-		<idx><h>set(s)</h><h>cardinality</h></idx>
-		<p> the unique natural number <m> m </m> for which a bijection <m> \natnumlt{m} \to A </m> exists </p>
-	</li>
+<dl width="medium"><li xml:id="definition-cardinality-itself">
+	<title>cardinality (of a finite set <m> A </m>)</title>
+	<idx>cardinality</idx>
+	<idx><h>set(s)</h><h>cardinality</h></idx>
+	<p> the unique natural number <m> m </m> for which a bijection <m> \natnumlt{m} \to A </m> exists </p>
+</li></dl>
+
+<dl width="narrow">
 
 	<li>
 		<title><m> \card{A} </m></title>
@@ -102,7 +104,9 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 		<p> alternative notation for the cardinality of the set defined by <m> \{\dots\} </m> </p>
 	</li>
 
-</dl></p>
+</dl>
+
+</p>
 
 <example>
 
@@ -166,7 +170,7 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 	as well.
 	</p>
 
-	<p><dl width="narrow"><li xml:id="definition-cardinality-empty-function">
+	<p><dl width="medium"><li xml:id="definition-cardinality-empty-function">
 		<title>empty function</title>
 		<idx><h>empty</h><h>function</h></idx>
 		<p> a function with domain <m> \emptyset </m> </p>

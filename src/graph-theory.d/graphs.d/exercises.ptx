@@ -89,7 +89,7 @@ respective owners.
 	<introduction><p>
 		<xref ref="exercisegroup-graphs-complement" text="type-local">Exercises</xref>
 		concern the following definition.
-		<dl width="narrow"><li>
+		<dl width="wide"><li>
 			<title>complement (of a simple graph <m> G </m>)</title>
 			<idx><h>graph</h><h>complement</h></idx>
 			<idx><h>complement</h><h>of a simple graph</h></idx>
@@ -101,9 +101,9 @@ respective owners.
 	</p></introduction>
 
 	<exercise>
-		
+
 		<p> Draw the complement of the simple graph in <xref ref="figure-graphs-complement-basic" />. </p>
-		
+
 		<figure xml:id="figure-graphs-complement-basic">
 			<caption>A simple graph.</caption>
 			<image xml:id="image-graphs-complement" width="17.3%">
@@ -111,7 +111,7 @@ respective owners.
 				<latex-image><xi:include href="exercises.d/complement.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
-	
+
 	</exercise>
 
 	<exercise><p>

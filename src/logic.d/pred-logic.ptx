@@ -116,15 +116,17 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 	The second statement is true; this statement basically says that even integers exist.
 </p></example>
 
-<p><dl width="narrow">
+<p>
 
-	<li>
-		<title>quantifier</title>
-		<idx>quantifier</idx>
-		<p>
-		the sentence fragments <q>for every</q> and <q>there exists</q> <term>quantify</term> whether a predicate should apply to <em>all</em> or only <em>some</em> of the objects in the domain of one of its variables.
-		</p>
-	</li>
+<dl width="narrow"><li>
+	<title>quantifier</title>
+	<idx>quantifier</idx>
+	<p>
+	the sentence fragments <q>for every</q> and <q>there exists</q> <term>quantify</term> whether a predicate should apply to <em>all</em> or only <em>some</em> of the objects in the domain of one of its variables
+	</p>
+</li></dl>
+
+<dl width="wide">
 
 	<li>
 		<title>universal quantifier</title>
@@ -158,7 +160,9 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 		<p> symbol for the existential quantifier </p>
 	</li>
 
-</dl></p>
+</dl>
+
+</p>
 
 <example><p>
 	As before, let <m> A(f) </m> represent the predicate <q><m> f </m> is differentiable.</q>
@@ -622,7 +626,7 @@ in <xref ref="example-symb-lang-basic-tauts" />).
 	So you should avoid altogether making claims about things that do not exist.
 </p></example>
 
-<p><dl width="narrow"><li xml:id="definition-pred-logic-vac-true">
+<p><dl width="medium"><li xml:id="definition-pred-logic-vac-true">
 	<!-- \label{DEFN::vac.true} -->
 	<title>vacuously true</title>
 	<idx>vacuously true</idx>
