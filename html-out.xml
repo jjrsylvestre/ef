@@ -17,7 +17,7 @@ respective owners.
 
 	<html>
 		<analytics google-gst="G-TFKF0FWVZ3"/>
-		<knowl example="no" exercise-inline="no" />
+		<knowl example="no" exercise-inline="no" proof="no" />
 	</html>
 
 	<numbering>
