@@ -380,7 +380,7 @@ respective owners.
 			then we may conclude that the number of edges in component <m>G_i</m> is <m>k_i - 1</m>.
 			As the components make up the entire graph <m>G</m>,
 			we may add up the vertices and edges in each component to get the totals in the full graph:
-			<me> n = k_1 + k_2 + \dotsb + k_\ell, </me>
+			<md> n = k_1 + k_2 + \dotsb + k_\ell, </md>
 			<md>
 				<mrow> \card{E} \amp = (k_1 - 1) + (k_2 - 1) + \dotsb + (k_\ell - 1) </mrow>
 				<mrow> \amp = (k_1 + k_2 + \dotsb + k_\ell) - \ell </mrow>

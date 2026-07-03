@@ -130,7 +130,7 @@ to indicate that the objects in the list are being collected into a set.
 </p>
 
 <example><title>Listing the elements of a set</title><p>
-	If we write <me> A = \{ \text{chicken, tennis ball, the number } 2 \} </me>,
+	If we write <md> A = \{ \text{chicken, tennis ball, the number } 2 \} </md>,
 	then we intend for the letter <m>A</m> to become a label representing the set consisting of
 	some specific chicken,
 	some specific tennis ball,
@@ -207,14 +207,14 @@ and in the second two examples we merely describe what the elements are in words
 
 <p>
 Another way to define a set is <term>candidate-condition notation</term>:
-<me> \text{set} = \setdef{\text{candidate domain}}{\text{condition(s) on candidates}} </me>.
+<md> \text{set} = \setdef{\text{candidate domain}}{\text{condition(s) on candidates}} </md>.
 This notation provides a means to decide whether an object is a member of the set by first using an already-defined set as a pool of <q>member candidates</q> as well a condition or a list of conditions each candidate must satisfy in order to actually be a member.
 </p><p>
 If we write <m>S</m> for the set being defined,
 <m>C</m> for the set of candidates, and <m>T</m> for the test those candidates must satisfy to be included in <m>S</m>
 (that is, <m>T</m> is a predicate with domain <m>C</m>),
 then the candidate-condition notation takes the form
-<me> S = \setdef{x \in C}{T(x)} </me>,
+<md> S = \setdef{x \in C}{T(x)} </md>,
 and can be read as
 </p>
 <blockquote><p>
@@ -224,10 +224,10 @@ and can be read as
 <example>
 	<title>Using candidate-condition notation to define a set</title>
 	<p>
-	Consider the set <me> A = \{ 0, 3, 6, 9, 12, \dotsc \} </me>.
+	Consider the set <md> A = \{ 0, 3, 6, 9, 12, \dotsc \} </md>.
 	We could define this set in a more precise manner
 	(<ie /> without resorting to using dots) as follows.
-	<me> A = \setdef{ n \in \N }{ n \text{ divisible by } 3 } </me>
+	<md> A = \setdef{ n \in \N }{ n \text{ divisible by } 3 } </md>
 	The <q><m>n\in\N</m></q> part to the left of the divider tells us that the pool of <q>member candidates</q> for <m>A</m> is the set of natural numbers, and the test to the right of the divider tells us how to decide when a given candidate natural number <m>n</m> is actually a member of <m>A</m>.
 	In words, you should think of the above definition as saying the following.
 	</p>
@@ -245,7 +245,7 @@ and can be read as
 
 <p>
 Finally, sets can be defined by <term>form-parameter notation</term>:
-<me> \text{set} = \setdef{\text{form involving parameter}}{\text{parameter domain}} </me>.
+<md> \text{set} = \setdef{\text{form involving parameter}}{\text{parameter domain}} </md>.
 This notation describes the members of a set by providing a <q>form</q> to which the members must conform.
 Usually the <q>form</q> is based on parameter variables that can range over a set of possibilities.
 </p>
@@ -253,9 +253,9 @@ Usually the <q>form</q> is based on parameter variables that can range over a se
 <example>
 	<title>Using form-parameter notation to define a set</title>
 	<p>
-	Again consider the set <me> A = \{ 0, 3, 6, 9, 12, \dotsc \} </me>.
+	Again consider the set <md> A = \{ 0, 3, 6, 9, 12, \dotsc \} </md>.
 	We could also define this set as
-	<me> A = \setdef{3n}{n\in \N} </me>.
+	<md> A = \setdef{3n}{n\in \N} </md>.
 	Here, the <term>form</term> of the elements of <m>A</m> is given to the left of the divider as <q><m>3</m> times a number</q>, where the number is represented by the <term>parameter</term> <m>n</m>.
 	Then the allowed range of the number parameter <m>n</m> is given to the right of the divider.
 	In words, you should think of the above definition as saying the following.
@@ -267,7 +267,7 @@ Usually the <q>form</q> is based on parameter variables that can range over a se
 	<title>Defining the set of fractions</title>
 	<p>
 	We could define the set <m>\Q</m> of <term>rational numbers</term> in this way:
-	<me> \Q = \setdef{\frac{m}{n}}{ m,n\in \Z,\, n\ne 0} </me>.
+	<md> \Q = \setdef{\frac{m}{n}}{ m,n\in \Z,\, n\ne 0} </md>.
 	This says that the set <m>\Q</m> consists of all symbols of the form <q>number over number</q>,
 	where the numbers can be any integers, as long as the bottom number is not zero.
 	However, we need to be a little bit careful here, since we allow different symbols of this form to represent the same element.
@@ -417,12 +417,12 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		Since all elements of <m>A</m> have the form <m>3m+1</m> for some <m>m \in \Z</m>,
 		we have <m>x = 3m+1</m> for some <m>m \in \Z</m>.
 		Check the condition for being an element of <m>B</m> by calculating
-		<me>
+		<md>
 			\sin\left(\frac{\pi(x-1)}{3}\right)
 			= \sin\left(\frac{\pi\bbrac{(3m+1)-1}}{3}\right)
 			= \sin (m\pi)
 			= 0.
-		</me>
+		</md>
 		Therefore, <m>x \in B</m>.
 		Since the above calculation works for every <m>m \in \Z</m>,
 		all elements of <m>A</m> are elements of <m>B</m>.
@@ -480,7 +480,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 	One could combine both applications of
 	the <xref ref="test-sets-subset" text="custom">Subset Test</xref>
 	described in the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref> above into one biconditional:
-	<m>A = B</m> is true if <me>(\forall x)(x \in A \lgcequiv x \in B)</me> is true.
+	<m>A = B</m> is true if <md>(\forall x)(x \in A \lgcequiv x \in B)</md> is true.
 	If the logic of <m>x \in A \lgcimplies x \in B</m> is easily reversed,
 	then it makes sense to argue <m>x \in A \lgcequiv x \in B</m> instead of separately arguing
 	<m>x \in A \lgcimplies x \in B</m> and <m>x \in B \lgcimplies x \in A</m>.
@@ -499,11 +499,11 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 			<p>
 			Let <m>x</m> represent an arbitrary element of <m>B</m>.
 			This means that
-			<me> \sin\left(\frac{\pi(x-1)}{3}\right) = 0. </me>
+			<md> \sin\left(\frac{\pi(x-1)}{3}\right) = 0. </md>
 			However, we know from trigonometry that <m>\sin \theta = 0</m> if and only if <m>\theta</m> is an integer multiple of <m>\pi</m>;
 			<ie /> <m>\theta = m\pi</m> for some <m>m \in \Z</m>.
 			If we set
-			<me> \frac{\pi(x-1)}{3} = m\pi </me>
+			<md> \frac{\pi(x-1)}{3} = m\pi </md>
 			and solve for <m>x</m>, we get <m>x = 3m+1 \in A</m>.
 			</p>
 		</case>
@@ -597,7 +597,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		</notation>
 		<p>
 		the complement of <m>A</m> (in <m>U</m>), so that
-		<me> \cmplmnt{A} = \setdef{ x \in U }{ x \notin A } </me>
+		<md> \cmplmnt{A} = \setdef{ x \in U }{ x \notin A } </md>
 		</p>
 	</li>
 
@@ -617,7 +617,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		</notation>
 		<p>
 		the complement of <m>A</m> in <m>B</m>, so that
-		<me> B \relcmplmnt A = \setdef{ x \in B }{ x \notin A } </me>
+		<md> B \relcmplmnt A = \setdef{ x \in B }{ x \notin A } </md>
 		</p>
 	</li>
 </dl></p>
@@ -686,7 +686,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		</notation>
 		<p>
 			the union of sets <m>A</m> and <m>B</m>, so that
-			<me> A \union B = \setdef{x\in U}{x\in A \text{ or } x\in B \text{ (or both)}} </me>
+			<md> A \union B = \setdef{x\in U}{x\in A \text{ or } x\in B \text{ (or both)}} </md>
 		</p>
 	</li>
 	<li>
@@ -703,7 +703,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		</notation>
 		<p>
 			the intersection of <m>A</m> and <m>B</m>, so that
-			<me> A \intersection B = \setdef{x\in U}{x\in A \text{ and } x\in B} </me>
+			<md> A \intersection B = \setdef{x\in U}{x\in A \text{ and } x\in B} </md>
 		</p>
 	</li>
 </dl></p>
@@ -724,9 +724,9 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 
 <note><p>
 	A union contains every element from both sets, so it contains both sets as subsets:
-	<me> A, B \subseteq A \union B </me>.
+	<md> A, B \subseteq A \union B </md>.
 	On the other hand, every element in an intersection is in both sets, so the intersection is a subset of both sets:
-	<me> A \intersection B \subseteq A, B </me>.
+	<md> A \intersection B \subseteq A, B </md>.
 </p></note>
 
 <example><p>
@@ -909,7 +909,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		</p>
 		<case><title>Show <m>\cmplmnt{(A \union B)} \subseteq \cmplmnt{A} \intersection \cmplmnt{B}</m></title><p>
 			We need to show
-			<me> x \in \cmplmnt{(A \union B)} \lgcimplies x \in \cmplmnt{A} \intersection \cmplmnt{B} </me>.
+			<md> x \in \cmplmnt{(A \union B)} \lgcimplies x \in \cmplmnt{A} \intersection \cmplmnt{B} </md>.
 			If <m>x \in \cmplmnt{(A \union B)}</m> then by definition of complement, <m>x\in U</m> but <m>x \notin A \union B</m>.
 			Then <m>x \notin A</m> must be true, since if <m>x</m> were in <m>A</m> then it would also be in <m>A \union B</m>.
 			Similarly, <m>x \notin B</m> must also be true.
@@ -917,7 +917,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		</p></case>
 		<case><title>Show <m>\cmplmnt{A} \intersection \cmplmnt{B} \subseteq \cmplmnt{(A \union B)} </m></title><p>
 			We need to show
-			<me> x \in \cmplmnt{A} \intersection \cmplmnt{B} \lgcimplies x \in \cmplmnt{(A \union B)} </me>.
+			<md> x \in \cmplmnt{A} \intersection \cmplmnt{B} \lgcimplies x \in \cmplmnt{(A \union B)} </md>.
 			If <m>x \in \cmplmnt{A} \intersection \cmplmnt{B}</m> then by definition of intersection, both <m>x \in \cmplmnt{A}</m> and <m>x \in \cmplmnt{B}</m> are true.; <ie /> <m>x \notin A</m> and <m>x \notin B</m>.
 			Since <m>A \union B</m> is all elements of <m>U</m> which are in one (or both) of <m>A,B</m>, we must have <m>x \notin A \union B</m>. Thus <m>x \in \cmplmnt{(A \union B)}</m>.
 		</p></case>
@@ -978,15 +978,15 @@ we can list the elements of the Cartesian product by listing all ways of combini
 
 <example><title>A Cartesian product of <q>small</q> sets</title><p>
 	Suppose <m>A = \{ 1, 2 \}</m> and <m>B = \{ a, b, c \}</m>.
-	Then <me> A \cartprod B = \{ (1,a), (1,b), (1,c), (2,a), (2,b), (2,c) \} </me>.
+	Then <md> A \cartprod B = \{ (1,a), (1,b), (1,c), (2,a), (2,b), (2,c) \} </md>.
 </p></example>
 
 <example><title>A special subset of a certain Cartesian product</title><p>
 	Let <m>\N^+</m> represent the positive natural numbers: <m>\N^+ = \N \relcmplmnt \{0\}</m>.
 	Then we can describe the Cartesian product <m>\Z \cartprod \N^+</m> as
-	<me> \Z \cartprod \N^+ = \setdef{(m,n)}{m,n \in \Z, \; n>0} \subseteq \Z \cartprod \Z </me>.
+	<md> \Z \cartprod \N^+ = \setdef{(m,n)}{m,n \in \Z, \; n>0} \subseteq \Z \cartprod \Z </md>.
 	Consider the subset
-	<me> A = \setdef{(m,n) \in \Z \cartprod \N^+}{n \text{ has no divisors in common with } \abs{m}} \subseteq \Z \cartprod \N^+</me>.
+	<md> A = \setdef{(m,n) \in \Z \cartprod \N^+}{n \text{ has no divisors in common with } \abs{m}} \subseteq \Z \cartprod \N^+</md>.
 	Does <m>A</m> resemble some more familiar set <ellipsis />?
 </p></example>
 
@@ -1191,7 +1191,7 @@ it doesn't really matter in what <q>order</q> we place the elements of <m>A</m> 
 
 <example><title>English is not a full set of words</title><p>
 	Using <m>\Sigma = \EngAlphabet</m>, words
-	<me> \mathrm{math}, \; \mathrm{qwerty}, \; \mathrm{aabbccddijzuuu} </me>
+	<md> \mathrm{math}, \; \mathrm{qwerty}, \; \mathrm{aabbccddijzuuu} </md>
 	are examples of elements in <m>\words{\Sigma}</m>.
 	So, ignoring punctuation, hyphenation, and capitalization, the English language is a <em>proper</em> subset of <m>\words{\Sigma}</m>.
 </p></example>
@@ -1224,7 +1224,7 @@ In computing science, a certain set of words is of particular importance.
 
 <warning><p>
 	Order matters!
-	For example, using the alphabet <me>\Sigma = \EngAlphabet</me>,
+	For example, using the alphabet <md>\Sigma = \EngAlphabet</md>,
 	the words <m>\mathrm{ab}</m> and <m>\mathrm{ba}</m> are <em>different</em> words in <m>\words{\Sigma}</m>.
 </p></warning>
 
@@ -1342,18 +1342,18 @@ The concept of <term>length</term> allows us to identify some special subsets an
 		Both <m>\emptyset</m> and <m>A</m> are <em>subsets</em> of <m>A</m>,
 		so both are <em>elements</em> of <m>\powset{A}</m>.
 		Even if <m>A = \emptyset</m>, we still have
-		<me> \powset{\emptyset} = \{\emptyset\} \ne \emptyset </me>.
+		<md> \powset{\emptyset} = \{\emptyset\} \ne \emptyset </md>.
 	</p></proof>
 </fact>
 
 <example><title>Power set of a <q>small</q> set</title><p>
 	For <m>A = \{a,b,c\}</m>, we have
-	<me>
+	<md>
 		\powset{A} = \left\{
 			\; \emptyset, \; \{a\}, \; \{b\}, \; \{c\},\;
 			\{a,b\},\; \{a,c\},\; \{b,c\},\; \{a,b,c\} \;
 		\right\}
-	</me>.
+	</md>.
 	Note the use of curly braces here.
 	In particular, note that <m>\emptyset</m> has <em>not</em> been placed in its own set of curly braces because it is already a set itself.
 </p></example>
@@ -1370,14 +1370,14 @@ The concept of <term>length</term> allows us to identify some special subsets an
 <example>
 	<p>
 	Let
-	<me>
+	<md>
 		R =
 		\setdef{
 			\text{any set } X
 		}{
 			X \text{ is not an element of itself.}
 		}
-	</me>.
+	</md>.
 	First note that there exist sets which satisfy the condition for membership in <m>R</m>;
 	for example, the empty set.
 	So <m>R</m> should not be not empty.

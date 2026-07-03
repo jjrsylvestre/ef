@@ -111,7 +111,7 @@ and writing <m>(a,b) \in R</m> becomes the same as writing <m>a \mathrel{R} b</m
 <example>
 	<title>Identity relation</title>
 	<p>
-	Consider <me> R = \setdef{(a,a)}{a \in A} \subseteq A \cartprod A </me>.
+	Consider <md> R = \setdef{(a,a)}{a \in A} \subseteq A \cartprod A </md>.
 	Then <m>a_1 \mathrel{R} a_2</m> means <m>a_1 = a_2</m>.
 	This relation is the same as the identity function <m>\funcdef{\id_A}{A}{A}</m>.
 	</p>
@@ -120,7 +120,7 @@ and writing <m>(a,b) \in R</m> becomes the same as writing <m>a \mathrel{R} b</m
 <example>
 	<title>Element relation</title>
 	<p>
-	Consider <me> R = \setdef{(a,C)}{a \in C} \subseteq A \cartprod \powset{A} </me>.
+	Consider <md> R = \setdef{(a,C)}{a \in C} \subseteq A \cartprod \powset{A} </md>.
 	Then <m>a \mathrel{R} C</m> means <m>a \in C</m>.
 	This relation is in general not a function, since it is not well-defined:
 	an element of <m>A</m> can be contained in several subsets of <m>A</m>.
@@ -400,7 +400,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 	<statement><p>
 		To verify that relation <m>R</m> on set <m>A</m> is symmetric,
 		prove that
-		<me> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \mathrel{R} a_2} \lgcimplies {a_2 \mathrel{R} a_1}) </me>.
+		<md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \mathrel{R} a_2} \lgcimplies {a_2 \mathrel{R} a_1}) </md>.
 	</p></statement>
 </claim>
 
@@ -431,7 +431,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 	<title>A relation can be <em>neither</em> antisymmetric nor symmetric</title>
 	<p>
 	On <m>A = \{a,b,c\}</m>, the relation
-	<me> R = \{(a,b),(b,a),(a,c)\} \subseteq A \cartprod A </me>
+	<md> R = \{(a,b),(b,a),(a,c)\} \subseteq A \cartprod A </md>
 	is neither antisymmetric nor symmetric.
 	</p>
 </example>
@@ -479,8 +479,8 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 In symbolic language,
 the definition of <term><xref ref="definition-relations-antisymmetric" text="title" /> relation</term>
 is
-<!-- <me> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1 \not\mathrel{R} a_2} \lgcor {a_2 \not\mathrel{R} a_1}}) </me>. -->
-<me> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1\ \not R\ a_2} \lgcor {a_2\ \not R\ a_1}}) </me>.
+<!-- <md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1 \not\mathrel{R} a_2} \lgcor {a_2 \not\mathrel{R} a_1}}) </md>. -->
+<md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1\ \not R\ a_2} \lgcor {a_2\ \not R\ a_1}}) </md>.
 However, in practise we usually prove antisymmetry using one of two logically equivalent formulations.
 </p>
 
@@ -546,7 +546,7 @@ However, in practise we usually prove antisymmetry using one of two logically eq
 		<p>
 		To verify that relation <m>R</m> on set <m>A</m> is transitive,
 		prove that
-		<me> (\forall a_1 \in A)(\forall a_2 \in A)(\forall a_3 \in A)({{a_1 \mathrel{R} a_2} \lgcand {a_2 \mathrel{R} a_3}} \lgcimplies {a_1 \mathrel{R} a_3}) </me>.
+		<md> (\forall a_1 \in A)(\forall a_2 \in A)(\forall a_3 \in A)({{a_1 \mathrel{R} a_2} \lgcand {a_2 \mathrel{R} a_3}} \lgcimplies {a_1 \mathrel{R} a_3}) </md>.
 		</p>
 	</statement>
 </claim>
@@ -621,7 +621,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 	<example xml:id="example-relations-graph-symmetric">
 		<title>Graph of a symmetric relation</title>
 		<p>
-		On the set <m>A = \{a,b,c,d\}</m>, the relation <me> R = \{(a,b),(b,a),(b,c),(c,b)\} </me> is symmetric,
+		On the set <m>A = \{a,b,c,d\}</m>, the relation <md> R = \{(a,b),(b,a),(b,c),(c,b)\} </md> is symmetric,
 		and we see this property reflected in the graph in <xref ref="figure-relations-graph-symmetric-1" />,
 		as each pair of related (distinct) nodes has an arrow in each direction between them.
 		</p>
@@ -665,7 +665,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 		<title>Graph of an antisymmetric relation</title>
 		<p>
 		On the set <m>A = \{a,b,c,d\}</m>,
-		the relation <me> R = \{(a,a),(a,b),(c,b)\} </me> is antisymmetric,
+		the relation <md> R = \{(a,a),(a,b),(c,b)\} </md> is antisymmetric,
 		and we see this property reflected in the graph in <xref ref="figure-relations-graph-antisymmetric" />,
 		as each pair of distinct nodes has <em>at most</em> one arrow between them.
 		</p>
@@ -690,7 +690,7 @@ we draw an arrow from <m>a_1</m> to <m>a_2</m> if <m>a_1 \mathrel{R} a_2</m> is 
 		<title>Graph of an transitive relation</title>
 		<p>
 		On the set <m> A = \{a,b,c,d,e\} </m>,
-		the relation <me> R = \{(a,b),(b,c),(a,c),(d,e),(e,d),(d,d),(e,e)\} </me>
+		the relation <md> R = \{(a,b),(b,c),(a,c),(d,e),(e,d),(d,d),(e,e)\} </md>
 		is transitive,
 		and we see this property reflected in the graph in <xref ref="figure-relations-graph-transitive" />,
 		as each pair of arrows forming a <q>chain</q> between three nodes has a corresponding <q>composite</q> arrow from the first node in the chain to the third.

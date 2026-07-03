@@ -27,7 +27,7 @@ respective owners.
 		<usage><m>\natnumlt{m}</m></usage>
 		<description>the set of natural numbers that are less than <m>m</m></description>
 	</notation>
-	<p> the set <me> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0,\, 1,\, \dotsc,\, m-1\} </me> </p>
+	<p> the set <md> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0,\, 1,\, \dotsc,\, m-1\} </md> </p>
 </li></dl>
 The set <m>\natnumlt{m}</m> has exactly <m>m</m> elements in it.
 In <xref ref="chapter-cardinality" /> we will use these counting sets to, well, <em>count</em> the elements in other sets.
@@ -111,7 +111,7 @@ For now, we will use them to index the objects in an ordered list.
 
 <example><title>Sequence of definite integral values</title><p>
 	The sequence
-	<me> \left\{ (-1)^k\int_1^{k+1} \frac{dx}{x} \right\} </me>
+	<md> \left\{ (-1)^k\int_1^{k+1} \frac{dx}{x} \right\} </md>
 	has terms
 	<m> 0, \, -\ln 2, \, \ln 3, \, -\ln 4, \, \dotsc, \, (-1)^k\,\ln (k+1), \, \dotsc </m>.
 </p></example>
@@ -154,7 +154,7 @@ For now, we will use them to index the objects in an ordered list.
 	Then <m>h_0 = 100</m> and the recurrence relation is
 	<md><mrow> h_k \amp = \frac{3h_{k-1}}{4} \text{,} \amp k \amp \ge 1 \text{.} </mrow></md>
 	The terms of the sequence are
-	<me> 100, \, 75, \, 56.25, \, 42.1875, \, \dotsc </me>.
+	<md> 100, \, 75, \, 56.25, \, 42.1875, \, \dotsc </md>.
 	</p>
 </example>
 
@@ -164,14 +164,14 @@ For now, we will use them to index the objects in an ordered list.
 	<p>
 	Set <m>a_0 = 1</m>, and let <m>a_k = k a_{k-1}</m> for <m>k \ge 1</m>.
 	Then the terms of the sequence are
-	<me> 1, \, 1, \, 2, \, 6, \, 24, \, 120, \, \dotsc </me>.
+	<md> 1, \, 1, \, 2, \, 6, \, 24, \, 120, \, \dotsc </md>.
 	</p>
 </example>
 
 <example xml:id="example-recur-induct-Fibonacci"><title>Fibonacci sequence</title>
 	<p>
 	The sequence
-	<me> 0, \, 1, \, 1, \, 2, \, 3, \, 5, \, 8, \, 13, \, 21, \, 34, \dotsc </me>
+	<md> 0, \, 1, \, 1, \, 2, \, 3, \, 5, \, 8, \, 13, \, 21, \, 34, \dotsc </md>
 	can be defined recursively by
 	<m>a_0 = 0</m>, <m>a_1 = 1</m>, and
 	<md><mrow> a_k \amp = a_{k-1} + a_{k-2} \text{,} \amp k \amp \ge 2 \text{.} </mrow></md>
@@ -187,7 +187,7 @@ For now, we will use them to index the objects in an ordered list.
 	and take the recurrence relation to be
 	<md><mrow> A_k \amp = A_{k-1} \cup \{k\} \text{,} \amp k \amp \ge 1 \text{.} </mrow></md>
 	Then the terms of the sequence are
-	<me> \emptyset, \, \{1\}, \, \{1,2\}, \, \{1,2,3\}, \, \dotsc, \, \{1, 2, \dotsc, k \}, \, \dotsc </me>.
+	<md> \emptyset, \, \{1\}, \, \{1,2\}, \, \{1,2,3\}, \, \dotsc, \, \{1, 2, \dotsc, k \}, \, \dotsc </md>.
 	</p>
 </example>
 
@@ -235,14 +235,14 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 		(Note that this formula is also valid for <m>k=0</m>.)
 		</p><p>
 		We can verify our formula by substituting it into the original recurrence relation:
-		<me>
+		<md>
 			\mathrm{RHS}
 			= \frac{3}{4}\,h_{k-1}
 			= \frac{3}{4}\,\left(\frac{3}{4}\right)^{k-1} h_0
 			= \left(\frac{3}{4}\right)^k h_0
 			= h_k
 			= \mathrm{LHS}
-		</me>.
+		</md>.
 		We could also prove our formula is correct by induction.
 		</p>
 	</solution>
@@ -260,14 +260,14 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 	</statement>
 	<solution><p>
 		Through iteration, we obtain
-		<me>
+		<md>
 			a_k
 			= r a_{k-1}
 			= r (r a_{k-2})
 			= r\bbrac{r(r a_{n-3})}
 			= \dotsb
 			= r^k a_0
-		</me>.
+		</md>.
 	</p></solution>
 </problem>
 
@@ -291,7 +291,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 			<mrow> \amp = k(k-1)(k-2)\dotsm \bbrac{k - (k-1)} a_{k-k} </mrow>
 		</md>.
 		Simplifying this last expression leads to
-		<me> a_k = k(k-1)(k-2)\dotsm 1 \cdot a_0 = k! </me>.
+		<md> a_k = k(k-1)(k-2)\dotsm 1 \cdot a_0 = k! </md>.
 		Note that the formula <m>a_k = k!</m> is also valid for <m>k=0</m> when we adopt the convention <m>0! = 1</m>.
 		<!-- TODO XREF (See \lecsectitleref{SECTION::permutations::factorials} in \S\zref{CHAPTER::permutations}.) -->
 	</p></solution>
@@ -320,7 +320,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 			<mrow> \amp = \frac{k}{2^{k-1} \bbrac{k-(k-1)}} \, a_{k-(k-1)} </mrow>
 		</md>.
 		Simplifying this last expression, we obtain
-		<me> a_k = \frac{k}{2^{k-1}} \, a_1 = \frac{k}{2^k} </me>.
+		<md> a_k = \frac{k}{2^{k-1}} \, a_1 = \frac{k}{2^k} </md>.
 	</p></solution>
 </problem>
 
@@ -371,7 +371,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 	<case><title>Inductive clause</title><p>
 		Given statements <m>A,B \in \mathscr{L}</m>,
 		the statements
-		<me> \lgcnot A, \quad A \lgcand B, \quad A \lgcor B, \quad A \lgccond B, \quad A \lgcbicond B </me>
+		<md> \lgcnot A, \quad A \lgcand B, \quad A \lgcor B, \quad A \lgccond B, \quad A \lgcbicond B </md>
 		are also elements of <m>\mathscr{L}</m>.
 	</p></case>
 	<case><title>Limiting clause</title><p>
@@ -379,11 +379,11 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 	</p></case>
 	<p>
 	For example, the logical statement <m>\lgcnot p_2 \lgcand (p_1 \lgccond p_2)</m> is in <m>\mathscr{L}</m> by the following construction.
-	<me>
+	<md>
 		p_1, p_2 \in \mathscr{L}
 		\quad \lgcimplies \quad \lgcnot p_2 \in \mathscr{L}, \;\; p_1 \lgccond p_2 \in \mathscr{L}
 		\quad \lgcimplies \quad \lgcnot p_2 \lgcand (p_1 \lgccond p_2) \in \mathscr{L}
-	</me>
+	</md>
 	</p>
 </example>
 
@@ -434,7 +434,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 	<case><title>Inductive clause</title><p>
 		For <m>n \in \N</m> such that <m>s_m(n)</m> is already defined,
 		set
-		<me> s_m(n^+) = s_m(n)^+ = s_m(n) \cup \{s_m(n)\} </me>.
+		<md> s_m(n^+) = s_m(n)^+ = s_m(n) \cup \{s_m(n)\} </md>.
 		That is, if <m>s_m(n)</m> is defined and <m>n^+</m> is the next natural number after <m>n</m> in the inductive definition of <m>\N</m>,
 		then define <m>s_m(n^+)</m> to be the next natural number after <m>s_m(n)</m>.
 	</p></case>

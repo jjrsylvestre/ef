@@ -94,7 +94,7 @@ let's extract the binomial coefficients from those expressions.
 			</mrow>
 			<mrow> \vdots </mrow>
 		</md></p>
-		<p><me>\longrightarrow</me></p>
+		<p><md>\longrightarrow</md></p>
 		<p><md alignment="gather">
 			<mrow> \;1\; </mrow>
 			<mrow> \;1\; \quad \;1\; </mrow>
@@ -130,14 +130,14 @@ let's extract the binomial coefficients from those expressions.
 	<p>
 	For every <m>x,y\in\R</m> and every <m>n \in \N</m>,
 	we have
-	<me>
+	<md>
 		(x+y)^n
 		= \sum_{k=0}^n \binom{n}{k}\,x^{n-k}y^k
 		= \binom{n}{0}\,x^n + \binom{n}{1}\,x^{n-1}y + \binom{n}{2}\,x^{n-2}y^2
 		  + \dotsb + \binom{n}{n-1}\,xy^{n-1} + \binom{n}{n}\,y^n,
-	</me>
+	</md>
 	where
-	<me> \binom{n}{k} = \combinationalt{n}{k} = \choosefuncformula{n}{k}{(n-k)} </me>.
+	<md> \binom{n}{k} = \combinationalt{n}{k} = \choosefuncformula{n}{k}{(n-k)} </md>.
 	</p>
 	<proof>
 		<title>Informal direct proof outline</title>
@@ -204,7 +204,7 @@ let's extract the binomial coefficients from those expressions.
 	<title>Determining a specific coefficient in a binomial expansion</title>
 	<statement><p> What is the coefficient on the <m>x^4 y^9</m> term in the expansion of <m> (3 x + y)^{13} </m>? </p></statement>
 	<solution><p>
-		Considering <me> (3 x + y)^{13} = \bbrac{(3 x) + y}^{13} </me>,
+		Considering <md> (3 x + y)^{13} = \bbrac{(3 x) + y}^{13} </md>,
 		the <m>x^4 y^9</m> term is
 		<md>
 			<mrow>
@@ -229,7 +229,7 @@ let's extract the binomial coefficients from those expressions.
 	<idx>Trinomial Theorem</idx>
 	<statement><p>
 		The expansion of the trinomial <m>(x + y + z)^n</m> is the sum of all possible products
-		<me> \frac{n!}{i! \, j!\, k!}\,x^i y^j z^k, </me>
+		<md> \frac{n!}{i! \, j!\, k!}\,x^i y^j z^k, </md>
 		where <m>0 \le i,j,k \le n</m> such that <m>i + j + k = n</m>.
 	</p></statement>
 	<proof>
@@ -253,11 +253,11 @@ let's extract the binomial coefficients from those expressions.
 		But now from all remaining factors we must choose <m>z</m>,
 		and there is only <m>1</m> way to do this.
 		So the coefficient on <m>x^i y^j z^k</m> is
-		<me>
+		<md>
 			\binom{n}{i} \binom{n-i}{j}
 			= \left(\choosefuncformula{n}{i}{(n-i)}\right) \:\: \left(\choosefuncformula{(n-i)}{j}{(n-i-j)}\right)
 			= \frac{n!}{i! \, j! \, k!}
-		</me>.
+		</md>.
 	</p></proof>
 	<proof>
 		<title>Alternative proof idea</title>
@@ -275,9 +275,9 @@ let's extract the binomial coefficients from those expressions.
 	<solution>
 		<p>
 		First, rewrite
-		<me> (2 x + y - 3 z)^3 = \bbrac{(2 x) + y + (-3 z)}^3 </me>.
+		<md> (2 x + y - 3 z)^3 = \bbrac{(2 x) + y + (-3 z)}^3 </md>.
 		So the terms in the expansion involve products
-		<me> (2 x)^i y^j (-3 z)^k </me>.
+		<md> (2 x)^i y^j (-3 z)^k </md>.
 		We need to account for all triples of exponents <m>i, j, k</m> that sum to <m>3</m>.
 		</p>
 		<tabular halign="center">
@@ -345,13 +345,13 @@ let's extract the binomial coefficients from those expressions.
 		Here we don't have any extra contributions to the coefficient from constants inside the trinomial,
 		so using <m>n=14</m>, <m>i = 5</m>, <m>j = 2</m>, <m>k = 7</m>,
 		the coefficient is simply
-		<me>
+		<md>
 			\frac{14!}{5! \, 2! \, 7!}
 			= \frac{14 \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8}
 					{5 \cdot 4 \cdot 3 \cdot 2 \cdot 2}
 			= 14 \cdot 13 \cdot 11 \cdot 9 \cdot 4
 			= 72,072
-		</me>.
+		</md>.
 	</p></solution>
 </problem>
 
@@ -368,7 +368,7 @@ continues.
 	<idx>Multinomial Theorem</idx>
 	<statement><p>
 		The expansion of <m>(x_1 + x_2 + \dotsb + x_m)^n</m> is the sum of all possible products
-		<me> \frac{n!}{i_1! \, i_2! \, \dotsm \, i_m!} \, x_1^{i_1} x_2^{i_2} \dotsm x_m^{i_m} </me>,
+		<md> \frac{n!}{i_1! \, i_2! \, \dotsm \, i_m!} \, x_1^{i_1} x_2^{i_2} \dotsm x_m^{i_m} </md>,
 		where the exponents <m>i_1, i_2, \dotsc, i_n</m> sum to <m>n</m>.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
@@ -382,15 +382,15 @@ continues.
 	<statement><p> Determine the coefficient on <m>x^2 y z^6</m> in the expansion of <m>(3 x + 2 y + z^2 + 6)^8</m>. </p></statement>
 	<solution><p>
 		Rewriting
-		<me> (3 x + 2 y + z^2 + 6)^8 = \bbrac{(3 x) + (2 y) + (z^2) + 6}^8 </me>,
-		we see that the four terms in this multinomial are <me> 3 x, \quad 2 y, \quad z^2, \quad 6 \text{.} </me>
+		<md> (3 x + 2 y + z^2 + 6)^8 = \bbrac{(3 x) + (2 y) + (z^2) + 6}^8 </md>,
+		we see that the four terms in this multinomial are <md> 3 x, \quad 2 y, \quad z^2, \quad 6 \text{.} </md>
 		So what we really want to know is the total coefficient on the term involving
-		<me> (3 x)^2 (2 y)^1 (z^2)^3 6^2 </me>.
+		<md> (3 x)^2 (2 y)^1 (z^2)^3 6^2 </md>.
 		The <xref ref="theorem-multinomial-multinomial" text="title" /> tells us that there will be
-		<me> \frac{8!}{2! \, 1! \, 3! \, 2!} = 1,680 </me>
+		<md> \frac{8!}{2! \, 1! \, 3! \, 2!} = 1,680 </md>
 		such terms in the expansion of the multinomial.
 		Therefore, we obtain the term
-		<me> (1,680) (3 x)^2 (2 y)^1 (z^2)^3 6^2 = (1,088,640) x^2 y z^6 </me>
+		<md> (1,680) (3 x)^2 (2 y)^1 (z^2)^3 6^2 = (1,088,640) x^2 y z^6 </md>
 		with a total coefficient of <m>1,088,640</m>.
 	</p></solution>
 </problem>
@@ -426,10 +426,10 @@ continues.
 	In the case of a binomial expansion <m>(x_1 + x_2)^n</m>,
 	the term <m>x_1^{i_1} x_2^{i_2}</m> must have <m>i_1 + i_2 = n</m>, or <m>i_2 = n - i_1</m>.
 	The <xref ref="theorem-multinomial-multinomial" text="title" /> tells us that the coefficient on this term is
-	<me>
+	<md>
 		\binom{n}{i_1,i_2} = \choosefuncformula{n}{i_1}{i_2}
 		= \choosefuncformula{n}{i_1}{(n - i_1)} = \binom{n}{i_1}.
-	</me>
+	</md>
 	Therefore, in the case <m>m=2</m>, the <xref ref="theorem-multinomial-multinomial" text="title" /> reduces to the <xref ref="theorem-multinomial-binomial" text="title" />.
 	</li>
 </ul></p></note>
@@ -444,7 +444,7 @@ continues.
 	<statement><p>
 		If <m>\abs{A} = n</m>, then the number of ways to partition <m>A</m> into <m>m</m> disjoint subsets <m>A_1, A_2, \dotsc, A_m</m>,
 		with each subset of predetermined size <m>\abs{A_j} = i_j</m>, is
-		<me> \binom{n}{i_1,i_2,\dotsc,i_m} </me>.
+		<md> \binom{n}{i_1,i_2,\dotsc,i_m} </md>.
 	</p></statement>
 	<proof>
 		<title>Proof idea</title>
@@ -477,7 +477,7 @@ continues.
 		Suppose <m>x_1, x_2, \dotsc, x_m</m> are distinct letters in the alphabet <m>\Sigma</m>.
 		For <m>i_1 + i_2 + \dotsb + i_m = n</m>,
 		the number of words in <m>\words{\Sigma}</m> of length <m>n</m> which consist of exactly <m>i_1</m> <m>x_1</m>'s, <m>i_2</m> <m>x_2</m>'s, <m>\dotsc</m>, and <m>i_m</m> <m>x_m</m>'s is the multinomial coefficient
-		<me> \binom{n}{i_1,i_2,\dotsc,i_m} </me>.
+		<md> \binom{n}{i_1,i_2,\dotsc,i_m} </md>.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
 		If we view each letter <m>x_i</m> as a variable and each word made up of the letters <m>x_1,\dotsc,x_m</m> as a product of these variables,
@@ -490,13 +490,13 @@ continues.
 	<statement><p> How many different <m>9</m>-digit integers can we form from three <m>3</m>s, four <m>6</m>s and two <m>9</m>s? </p></statement>
 	<solution><p>
 		The number of integers of the desired digit composition is the multinomial coefficient
-		<me>
+		<md>
 			\binom{9}{3,4,2}
 			= \frac{9!}{3!4!2!}
 			= \frac{9 \cdot 8 \cdot 7 \cdot 6 \cdot  5}{3 \cdot 2 \cdot 2}
 			= 9 \cdot 4 \cdot 7 \cdot 5
 			= 1,260
-		</me>.
+		</md>.
 	</p></solution>
 </problem>
 

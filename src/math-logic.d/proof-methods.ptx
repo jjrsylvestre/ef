@@ -57,12 +57,12 @@ You should view a definition as a <em>technical test</em> or <em>collection of t
 			<li> Yes, <m>17 \gt 1</m>. </li>
 			<li>
 				None of the numbers in the following list is an integer:
-				<me>
+				<md>
 					\frac{17}{2}, \frac{17}{3}, \frac{17}{4},
 					\dotsc,
 					\frac{17}{16}, \frac{17}{18}, \frac{17}{19},
 					\dotsc
-				</me>.
+				</md>.
 			</li>
 		</ol>
 		So <m>17</m> is prime since it passes the technical tests that define the concept of <term>prime</term>.
@@ -99,11 +99,11 @@ The proof is left to you as
 	<statement><p> Demonstrate that <m>17</m> is prime. </p></statement>
 	<solution><title>(Sketch)</title><p>
 		By the proposition, to check that <m>17</m> is prime we now only need to note that none of the numbers in the following shorter list is an integer:
-		<me>
+		<md>
 			\frac{17}{2}, \frac{17}{3}, \frac{17}{4},
 			\dotsc
 			\frac{17}{8}
-		</me>.
+		</md>.
 	</p></solution>
 </problem>
 
@@ -137,10 +137,10 @@ Therefore, we (almost always) <alert>begin a proof by assuming that <m>P</m> is 
 
 <paragraphs><title>Recall</title><p>
 	The argument
-	<me>
+	<md>
 		A \lgccond C_1, C_1 \lgccond C_2, \dotsc, C_{m-1} \lgccond C_m, C_m \lgccond B
 		\therefore A \lgccond B
-	</me>
+	</md>
 	is valid
 	(<xref ref="definition-arg-extended-law-of-syllogism" text="title" />).
 </p></paragraphs>
@@ -193,11 +193,11 @@ Therefore, we (almost always) <alert>begin a proof by assuming that <m>P</m> is 
 <fact xml:id="fact-proof-methods-distrib-cond-disj">
 	<statement><p>
 		The following logical equivalence holds:
-		<me>
+		<md>
 			(s_1 \lgcor s_2 \lgcor \dotsb \lgcor s_m) \lgccond t
 			\; \lgcequiv \;
 			(s_1 \lgccond t) \lgcand (s_2 \lgccond t) \lgcand \dotsb \lgcand (s_m \lgccond t)
-		</me>.
+		</md>.
 	</p></statement>
 	<proof><title>Proof idea</title><p>
 		This is just an extended version of
@@ -206,23 +206,23 @@ Therefore, we (almost always) <alert>begin a proof by assuming that <m>P</m> is 
 </fact>
 
 <p>
-If <me> C_1 \lgcor C_2 \lgcor \dotsb \lgcor C_m </me> is a tautology, then
-<me>
+If <md> C_1 \lgcor C_2 \lgcor \dotsb \lgcor C_m </md> is a tautology, then
+<md>
 	P
 	\; \lgcequiv \;
 	P \lgcand (C_1 \lgcor \dotsb \lgcor C_m)
 	\; \lgcequiv \;
 	(P \lgcand C_1) \lgcor \dotsb \lgcor (P \lgcand C_m)
-</me>.
+</md>.
 By substitution and <xref ref="fact-proof-methods-distrib-cond-disj" />,
-<me>
+<md>
 	P \lgccond Q \; \lgcequiv \;
 	(P \lgcand C_1 \lgccond Q) \lgcand \dotsb \lgcand (P \lgcand C_m \lgccond Q).
-</me>
+</md>
 A conjunction is only true if each <q>factor</q> in the conjunction is true,
 so the conjunction on the right above can only be a tautology if each conditional <m>P \lgcand C_1 \lgccond Q</m> is a tautology.
 Therefore, when we have a collection of statements <m>C_1,\dotsc,C_m</m> so that
-<me> C_1 \lgcor C_2 \lgcor \dotsb \lgcor C_m </me>
+<md> C_1 \lgcor C_2 \lgcor \dotsb \lgcor C_m </md>
 is a tautology,
 we can prove <m> P \lgccond Q </m> by instead proving each of <m>P \lgcand C_i \lgcimplies Q</m> one at a time.
 This is also valid for universal statements, since <m>\forall</m> distributes over <m>\lgcand</m>
@@ -249,7 +249,7 @@ why would we want to go to all this extra effort?
 		<li>
 			To prove <m>(\forall x)\bbrac{P(x)\lgcimplies Q(x)}</m>,
 			determine a set of cases <m>C_1(x), C_2(x), \dotsc, C_m(x)</m> such that
-			<me> (\forall x) \bbrac{C_1(x) \lgcor C_2(x) \lgcor \dotsb \lgcor C_m(x)} </me>
+			<md> (\forall x) \bbrac{C_1(x) \lgcor C_2(x) \lgcor \dotsb \lgcor C_m(x)} </md>
 			is true, then provide a separate proof of each universally quantified logical implication <m>(\forall x)\bbrac{P(x) \lgcand C_i(x) \lgcimplies Q(x)}</m>.
 		</li>
 	</ul></p>
@@ -267,11 +267,11 @@ why would we want to go to all this extra effort?
 		</p>
 		<case><title>Case <m>n</m> even</title><p>
 			If <m>n</m> is even, then there exists an integer <m>m</m> such that <m>n = 2m</m>.
-			Then, <me> n^2 - n = n(n-1) = 2m(2m - 1) </me> is also even.
+			Then, <md> n^2 - n = n(n-1) = 2m(2m - 1) </md> is also even.
 		</p></case>
 		<case><title>Case <m>n</m> odd</title><p>
 			If <m>n</m> is odd, then <m>n - 1</m> is even, so there exists an integer <m>m</m> such that <m>n - 1 = 2m</m>, or <m>n = 2m + 1</m>.
-			Then, <me> n^2 - n = n(n-1) = (2m+1)(2m) </me> is even.
+			Then, <md> n^2 - n = n(n-1) = (2m+1)(2m) </md> is even.
 		</p></case>
 	</solution>
 </problem>
@@ -291,7 +291,7 @@ why would we want to go to all this extra effort?
 First, let's consider a conditional statement with a disjunction on the hypothesis side.
 To prove a statement of the form <m>(P_1 \lgcor P_2) \lgcimplies Q</m>,
 we can use <xref ref="fact-proof-methods-distrib-cond-disj" /> to decompose into two conditionals:
-<me> (P_1 \lgcor P_2) \lgccond Q \lgcequiv (P_1 \lgccond Q) \lgcand (P_2 \lgccond Q) </me>.
+<md> (P_1 \lgcor P_2) \lgccond Q \lgcequiv (P_1 \lgccond Q) \lgcand (P_2 \lgccond Q) </md>.
 Appealing to the properties of conjunction, as in our discussion of reduction to cases,
 we see that we can prove <m>P_1 \lgcimplies Q</m> and <m>P_2 \lgcimplies Q</m> by separate proofs.
 </p>
@@ -307,17 +307,17 @@ Apply this fact to one of the statements we are trying to prove.
 
 <!-- %Applying this fact to one of our desired conclusions, say <m>Q_1</m>, leads to two separate cases: regardless of <m>P</m>, exactly one of the two cases <m>Q_1=\true</m>, <m>Q_1=\false</m>, is true.
 %Recall that <m>C \lgcor \lgcnot C</m> is a tautology, so we can use this in a reduction to cases:
-%<me>
+%<md>
 %	P \lgccond (Q_1 \lgcor Q_2)
 %	\lgcequiv \bigl[(P \lgcand C) \lgccond (Q_1 \lgcor Q_2) \bigr]
 %		\lgcand \bigl[(P \lgcand \lgcnot C) \lgccond (Q_1 \lgcor Q_2) \bigr].
-%</me>
+%</md>
 %Let's see what happens when we substitute <m>C = Q_1</m> into the above equivalence:
-%<me>
+%<md>
 %	P \lgccond (Q_1 \lgcor Q_2)
 %	\lgcequiv \bigl[(P \lgcand Q_1) \lgccond (Q_1 \lgcor Q_2) \bigr]
 %		\lgcand \bigl[(P \lgcand \lgcnot Q_1) \lgccond (Q_1 \lgcor Q_2) \bigr].
-%</me>
+%</md>
 %Now, <m>(P \lgcand Q_1) \lgccond (Q_1 \lgcor Q_2)</m> is a tautology. \begin{inlinenote}[See]Exercise \ref{EXERCISE::disjunctive tautology} of \S\zref{CHAPTER::symb.lang}.\end{inlinenote} Therefore,
 %<md><mrow>
 %	P \lgccond (Q_1 \lgcor Q_2)
@@ -377,7 +377,7 @@ Apply this fact to one of the statements we are trying to prove.
 		However, since <m>n</m> is <em>not</em> <m>1</m> more than a multiple of <m>4</m>, <m>2m</m> cannot be a multiple of <m>4</m>, and so <m>m</m> cannot be a multiple of <m>2</m>.
 		Therefore, <m>m</m> is also odd, and so there exists another number <m>\ell</m> such that <m>m = 2\ell + 1</m>.
 		Then
-		<me> n = 2m + 1 = 2(2\ell + 1) + 1 = 4\ell + 3 </me>,
+		<md> n = 2m + 1 = 2(2\ell + 1) + 1 = 4\ell + 3 </md>,
 		which says that <m>n</m> is <m>3</m> more than a multiple of <m>4</m>, as desired.
 	</p></solution>
 </problem>
@@ -440,7 +440,7 @@ Apply this fact to one of the statements we are trying to prove.
 
 <paragraphs><title>Recall</title><p>
 	The equivalence
-	<me> P \lgccond Q \lgcequiv (P \lgcand C_1 \lgccond Q) \lgcand \dotsb \lgcand (P \lgcand C_m \lgccond Q) </me>
+	<md> P \lgccond Q \lgcequiv (P \lgcand C_1 \lgccond Q) \lgcand \dotsb \lgcand (P \lgcand C_m \lgccond Q) </md>
 	holds for any set of cases <m>C_1, C_2, \dotsc, C_m</m> such that <m>C_1 \lgcor \dotsb \lgcor C_m</m> is a tautology.
 	(See <xref ref="section-proof-methods-cases" />.)
 </p></paragraphs>
@@ -473,7 +473,7 @@ Again, this also works in the universal case since <m>\forall</m> distributes ov
 	<solution><p>
 		The converse statement is <q>If <m>n</m> is prime, then <m>2^n - 1</m> is prime.</q>
 		But the case <m>n=11</m> is a <term>counterexample</term>:
-		<me> 2^{11} - 1 = 2047 = 23 \cdot 89 </me> is not prime even though <m>n = 11</m> is prime.
+		<md> 2^{11} - 1 = 2047 = 23 \cdot 89 </md> is not prime even though <m>n = 11</m> is prime.
 	</p></solution>
 </problem>
 
@@ -494,7 +494,7 @@ We also often want to prove that two statements <m>P,Q</m> are equivalent;
 <fact>
 	<statement><p>
 		The equivalence
-		<me> P \lgcbicond Q \; \lgcequiv \; (P \lgccond Q) \lgcand (Q \lgccond P) </me>
+		<md> P \lgcbicond Q \; \lgcequiv \; (P \lgccond Q) \lgcand (Q \lgccond P) </md>
 		holds;
 		<ie /> a biconditional is equivalent to the conjunction of the corresponding conditional <m>P\lgccond Q</m> <em>and</em> its converse.
 	</p></statement>
@@ -553,7 +553,7 @@ As usual, this also works in the universal case since <m>\forall</m> distributes
 	<statement><p>
 		For any logically false statement <m>e</m>,
 		we have
-		<me> s \lgccond t \; \lgcequiv \; (s \lgcand \lgcnot t) \lgccond e </me>.
+		<md> s \lgccond t \; \lgcequiv \; (s \lgcand \lgcnot t) \lgccond e </md>.
 	</p></statement>
 	<proof><p>
 		First, <m>s\lgccond t</m> is false precisely when <m>s</m> is true and <m>t</m> is false.
@@ -646,7 +646,7 @@ Conceptually, this is easy to do: just find an example!
 	<statement><p> Prove that <m>851</m> is not prime. </p></statement>
 	<solution><p>
 		We want to prove the quantified statement
-		<me> (\exists n)\bbrac{ (n \ne 1) \lgcand (n \ne 851) \lgcand (n \text{ divides } 851)} </me>,
+		<md> (\exists n)\bbrac{ (n \ne 1) \lgcand (n \ne 851) \lgcand (n \text{ divides } 851)} </md>,
 		with domain the positive, whole numbers.
 		Testing each number, one by one, starting at <m>n = 2</m>, we find that using <m>n=23</m> fits the bill.
 	</p></solution>

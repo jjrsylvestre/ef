@@ -175,7 +175,7 @@ an equivalence relation can be used to group equivalent objects together.
 		<p>
 			the subset of <m>A</m> consisting of all elements that are equivalent to the given element <m>a \in A</m>,
 			relative to a specific equivalence relation <m>\mathord{\equiv}</m> on <m>A</m>;
-			<ie /> the set <me> \setdef{x\in A}{ x \equiv a } </me>
+			<ie /> the set <md> \setdef{x\in A}{ x \equiv a } </md>
 		</p>
 	</li>
 	<li>
@@ -193,11 +193,11 @@ an equivalence relation can be used to group equivalent objects together.
 	<p>
 	If we divide <m>8</m> by <m>5</m>, we get <m>1</m> with <m>3</m> remainder.
 	So the equivalence class of <m>8</m> relative to <m>\mathord{\equiv_5}</m> consists of all natural numbers that have remainder <m>3</m> when divided by <m>5</m>:
-	<me> \eqclass{8} = \{ 3, 8, 13, 18, \dotsc \} </me>.
+	<md> \eqclass{8} = \{ 3, 8, 13, 18, \dotsc \} </md>.
 	Now, <m>3</m> is in this class because when we divide <m>3</m> by <m>5</m> we get <m>0</m> with <m>3</m> remainder.
 	But if we had started with <m>3</m> instead of <m>8</m>,
 	we would have also said that the equivalence class of <m>3</m> relative to <m>\mathord{\equiv_5}</m> consists of all natural numbers that have remainder <m>3</m> when divided by <m>5</m>:
-	<me> \eqclass{3} = \{ 3, 8, 13, 18, \dotsc \} </me>.
+	<md> \eqclass{3} = \{ 3, 8, 13, 18, \dotsc \} </md>.
 	</p>
 </example>
 
@@ -270,7 +270,7 @@ an equivalence relation can be used to group equivalent objects together.
 		<case direction="forward"><p>
 			Suppose <m>a_1 \equiv a_2</m>.
 			Then <m>\eqclass{a_1} = \eqclass{a_2}</m> by <xref ref="proposition-equiv-rel-properties-equal-classes" text="local">Statement</xref>,
-			so <me> \eqclass{a_1} \intersection \eqclass{a_2} = \eqclass{a_1} \intersection \eqclass{a_1} = \eqclass{a_1} </me>.
+			so <md> \eqclass{a_1} \intersection \eqclass{a_2} = \eqclass{a_1} \intersection \eqclass{a_1} = \eqclass{a_1} </md>.
 			But <m>\eqclass{a_1}</m> is nonempty by <xref ref="proposition-equiv-rel-properties-element-in-own-class" text="local">Statement</xref>.
 		</p></case>
 		<case direction="backward"><p>
@@ -293,7 +293,7 @@ tells us that any member of an equivalence class may be used to define the class
 		<idx><h>class (for an equivalence relation)</h><h>representative</h></idx>
 		<p>
 		an element <m>a \in A</m> used to define the equivalence class
-		<me> \eqclass{a} = \setdef{x\in A}{ x \equiv a } </me>
+		<md> \eqclass{a} = \setdef{x\in A}{ x \equiv a } </md>
 		</p>
 	</li>
 	<li xml:id="definition-equiv-rel-complete-rep-set">
@@ -318,9 +318,9 @@ we are deciding to always interchange an element for the chosen representative o
 	<p>
 	Continuing <xref ref="example-equiv-rel-classes-mod-5" />,
 	we <em>could</em> represent the class of numbers that have remainder <m>3</m> by the number <m>8</m>:
-	<me> \eqclass{8} = \{ 3, 8, 13, 18, \dotsc \} </me>.
+	<md> \eqclass{8} = \{ 3, 8, 13, 18, \dotsc \} </md>.
 	But it seems more <q>natural</q> to represent this class by the number <m>3</m>:
-	<me> \eqclass{3} = \{ 3, 8, 13, 18, \dotsc \} </me>.
+	<md> \eqclass{3} = \{ 3, 8, 13, 18, \dotsc \} </md>.
 	</p><p>
 	Notice that each of the numbers <m>0,1,2,3,4</m> has a different remainder when divided by <m>5</m>,
 	so no two of them are equivalent.
@@ -423,19 +423,19 @@ But that is always precisely the case.
 	<p>
 	Recall that for alphabet <m>\Sigma</m>,
 	<m>\words{\Sigma}_n</m> is the subset of <m>\words{\Sigma}</m> consisting of all words whose length is exactly <m>n</m>.
-	Then <me>\words{\Sigma}_0, \words{\Sigma}_1, \words{\Sigma}_2, \dotsc</me>
+	Then <md>\words{\Sigma}_0, \words{\Sigma}_1, \words{\Sigma}_2, \dotsc</md>
 	is a partition of <m>\words{\Sigma}</m>.
 	(See <xref ref="exercise-sets-words-disjoint-union-of-lengths" />.)
 	</p><p>
 	Recall that a relation on <m>\words{\Sigma}</m> can be defined as a subset of <m>\words{\Sigma} \cartprod \words{\Sigma}</m>.
 	So consider the relation <m>R</m> on <m>\words{\Sigma}</m> defined by
-	<me>
+	<md>
 		R \;\; =\;\;
 		(\words{\Sigma}_0 \cartprod \words{\Sigma}_0)
 		\;\; \sqcup \;\; (\words{\Sigma}_1 \cartprod \words{\Sigma}_1)
 		\;\; \sqcup \;\; (\words{\Sigma}_2 \cartprod \words{\Sigma}_2)
 		\;\; \sqcup \;\; \dotsb
-	</me>
+	</md>
 	Then <m>R</m> is the equivalence relation on <m>\words{\Sigma}</m> where <m>w \mathrel{R} y</m> if <m>\length{w} = \length{y}</m>,
 	and its equivalence classes are precisely the sets <m>\words{\Sigma}_n</m>, <m>n\ge 0</m>.
 	</p>
@@ -457,20 +457,20 @@ But that is always precisely the case.
 <remark><p>
 	<xref ref="theorem-equiv-rel-classes-form-partition" /> and <xref ref="theorem-equiv-rel-from-partition" />
 	combine to provide, for each set <m>A</m>, a bijective correspondence
-	<me> \{ \text{equivalence relations on } A \} \;\; \longleftrightarrow \;\; \{ \text{partitions of } A \}. </me>
+	<md> \{ \text{equivalence relations on } A \} \;\; \longleftrightarrow \;\; \{ \text{partitions of } A \}. </md>
 </p></remark>
 
 <problem xml:id="wexample-equiv-rel-equivrel-from-partition">
 	<title>Determining an equivalence relation from a partition</title>
 	<statement><p>
 		Determine an explicit equivalence relation <m>\mathord{\equiv}</m> on <m>\Z</m> for which the equivalence classes give the following partition.
-		<me>
+		<md>
 			\Z \;\; = \;\; \dotsb
 			\;\; \sqcup \;\; \{ -3, -2, -1 \}
 			\;\; \sqcup \;\; \{ 0, 1, 2 \}
 			\;\; \sqcup \;\; \{ 3, 4, 5 \}
 			\;\; \sqcup \;\; \dotsb
-		</me>
+		</md>
 	</p></statement>
 	<solution><p>
 		Notice that each cell in the partition contains a multiple of <m>3</m> along with the next two consecutive integers.
@@ -496,7 +496,7 @@ But that is always precisely the case.
 		</notation>
 		<p>
 		the quotient of <m>A</m> relative to equivalence relation <m>\mathord{\equiv}</m>,
-		so that <me> (A / \mathord{\equiv}) = \setdef{\eqclass{a}}{a \in A} </me>
+		so that <md> (A / \mathord{\equiv}) = \setdef{\eqclass{a}}{a \in A} </md>
 		</p>
 	</li>
 </dl></p>
@@ -507,7 +507,7 @@ But that is always precisely the case.
 	Consider the partition of <m>\Z</m> from <xref ref="wexample-equiv-rel-equivrel-from-partition" />,
 	and the corresponding equivalence relation <m>\mathrel{\equiv}</m>.
 	To describe <m>\Z / \equiv</m>, we just need to pick a representative of each class.
-	The most obvious way in this case is <me> (\Z / \mathord{\equiv}) = \{ \dotsc, \eqclass{-3}, \eqclass{0}, \eqclass{3}, \eqclass{6}, \dotsc \} </me>.
+	The most obvious way in this case is <md> (\Z / \mathord{\equiv}) = \{ \dotsc, \eqclass{-3}, \eqclass{0}, \eqclass{3}, \eqclass{6}, \dotsc \} </md>.
 	</p>
 </example>
 
@@ -536,16 +536,16 @@ But that is always precisely the case.
 		and all negative numbers will be in the same equivalence class.
 		It now makes sense that <m>0</m> is in a class by itself, since <m>0</m> is neither positive nor negative.
 		The partition of <m>\Z</m> corresponding to <m>\mathord{\equiv}</m> is then
-		<me>
+		<md>
 			\Z \;\; = \;\; \{ \dotsc, -3, -2, -1 \}
 			\;\; \sqcup \;\; \{ 0 \}
 			\;\; \sqcup \;\; \{ 1, 2, 3, \dotsc \}
-		</me>.
+		</md>.
 		To describe <m>\Z / \mathord{\equiv}</m>, we just need to pick a representative of each equivalence class.
 		One possibility is
-		<me> \Z = \eqclass{-1} \sqcup \eqclass{0} \sqcup \eqclass{1} </me>,
+		<md> \Z = \eqclass{-1} \sqcup \eqclass{0} \sqcup \eqclass{1} </md>,
 		so that
-		<me> (\Z / \mathord{\equiv}) = \{ \eqclass{-1}, \eqclass{0}, \eqclass{1} \} </me>.
+		<md> (\Z / \mathord{\equiv}) = \{ \eqclass{-1}, \eqclass{0}, \eqclass{1} \} </md>.
 	</p></solution>
 </problem>
 
@@ -564,7 +564,7 @@ But that is always precisely the case.
 	Recall that <m>\mathord{\equiv}_5</m> represents the modulo-<m>5</m> equivalence relation on <m>\N</m>.
 	In <xref ref="example-equiv-rel-class-reps-mod-5" /> we determined that there are five equivalence classes,
 	represented by elements <m>0,1,2,3,4</m>,
-	so that <me> (\N / \mathord{\equiv}_5) = \{\eqclass{0},\eqclass{1},\eqclass{2},\eqclass{3},\eqclass{4}\} </me>.
+	so that <md> (\N / \mathord{\equiv}_5) = \{\eqclass{0},\eqclass{1},\eqclass{2},\eqclass{3},\eqclass{4}\} </md>.
 	Below are some examples of images of elements under the natural projection.
 	<md><mrow>
 		2 \amp \mapsto \eqclass{2} \amp
@@ -599,10 +599,10 @@ But that is always precisely the case.
 	<p>
 	We can partition <m>\N</m> into the subsets of even and odd numbers.
 	This is the same partition obtained from the modulo-<m>2</m> equivalance relation <m>\mathord{\equiv}_2</m>,
-	and we have quotient <me> (\N / \mathord{\equiv}_2) = \{ \eqclass{0}, \eqclass{1} \} </me>.
+	and we have quotient <md> (\N / \mathord{\equiv}_2) = \{ \eqclass{0}, \eqclass{1} \} </md>.
 	This quotient is how we construct <em>boolean algebra</em> (see <xref ref="chapter-bool-alg" />).
 	The convention <m> 1 + 1 = 0 </m> in boolean algebra comes from defining addition in the quotient so that
-	<me> \eqclass{1} + \eqclass{1} = \eqclass{1 + 1} = \eqclass{2} = \eqclass{0} </me>.
+	<md> \eqclass{1} + \eqclass{1} = \eqclass{1 + 1} = \eqclass{2} = \eqclass{0} </md>.
 	</p>
 </example>
 
@@ -612,15 +612,15 @@ But that is always precisely the case.
 	Similarly to <xref ref="example-equiv-rel-even-and-odd-mod-2" />,
 	if we consider the modulo-<m>n</m> equivalence relation <m>\mathord{\equiv}_n</m> on <m>\N</m>,
 	we have
-	<me> (\N / \mathord{\equiv}_n) = \{ \eqclass{0}, \eqclass{1}, \eqclass{2}, \dotsc, \eqclass{n-1} \} </me>.
+	<md> (\N / \mathord{\equiv}_n) = \{ \eqclass{0}, \eqclass{1}, \eqclass{2}, \dotsc, \eqclass{n-1} \} </md>.
 	We can transfer the arithmetic of <m>\N</m> to <m>\N / \mathord{\equiv}_n</m> by defining
 	<md><mrow>
 		\eqclass{m} + \eqclass{n} \amp = \eqclass{m + n} \text{,} \amp
 		\eqclass{m} \cdot \eqclass{n} \amp = \eqclass{m n} \text{.}
 	</mrow></md>
 	For example, in modulo-<m>5</m> arithmetic,
-	<me> \eqclass{2} + \eqclass{4} = \eqclass{6} = \eqclass{1} </me>
-	and <me> \eqclass{2} \cdot \eqclass{4} = \eqclass{8} = \eqclass{3} </me>.
+	<md> \eqclass{2} + \eqclass{4} = \eqclass{6} = \eqclass{1} </md>
+	and <md> \eqclass{2} \cdot \eqclass{4} = \eqclass{8} = \eqclass{3} </md>.
 	</p>
 </example>
 

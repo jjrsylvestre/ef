@@ -496,12 +496,12 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 			<li><title>eigth row</title><p><m>x' \lgcand y' \lgcand z'</m>.</p></li>
 		</dl>
 		Therefore, the Boolean polynomial
-		<me>
+		<md>
 			p(x,y,z) = (x \lgcand y' \lgcand z')
 			  \lgcor (x' \lgcand y \lgcand z)
 			  \lgcor (x' \lgcand y' \lgcand z)
 			  \lgcor (x' \lgcand y' \lgcand z')
-		</me>
+		</md>
 		is both in disjunctive normal form and will have the desired truth table.
 	</p></solution>
 </problem>
@@ -597,11 +597,11 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 		Notice that we want the third row to have output value <m>0</m>.
 		In logic terms, we want that combination (and only that combination) of input values to result in an output that is <q><em>not</em> true</q>.
 		So the Boolean polynomial
-		<me>
+		<md>
 		q(x,y,z)
 		= (x \lgcand y' \lgcand z)'
 		= x' \lgcor y \lgcor z'
-		</me>
+		</md>
 		will produce the desired truth table.
 		</p>
 	</solution>

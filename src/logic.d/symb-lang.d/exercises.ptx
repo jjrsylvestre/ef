@@ -93,7 +93,7 @@ respective owners.
 	<introduction><p>
 		The wizard Hatty Porrer is studying logic at Cowpimples School for Second-Rate Wizards.
 		As an exercise, he is filling out the truth table for the conditional
-		<me> (r \lgcand s) \lgccond (r \lgcor s) </me>.
+		<md> (r \lgcand s) \lgccond (r \lgcor s) </md>.
 		But he forgets what to do for the lines where the <q>if</q> part of the conditional evaluates to false,
 		so he only gets this far:
 		</p>

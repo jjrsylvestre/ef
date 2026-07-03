@@ -31,7 +31,7 @@ In counting, factorials come up a lot.
 		</notation>
 		<p>
 		for natural number <m>n</m>,
-		notation for the computation formula <me> n (n - 1) (n - 2) \dotsm 2 \cdot 1 </me>
+		notation for the computation formula <md> n (n - 1) (n - 2) \dotsm 2 \cdot 1 </md>
 		</p>
 	</li>
 </dl>
@@ -50,7 +50,7 @@ In counting, factorials come up a lot.
 	<p>
 	A factorial contains every smaller factorial as a factor.
 	For example,
-	<me>
+	<md>
 		\frac{7!}{3!}
 		= \frac{
 			7 \cdot 6 \cdot 5 \cdot 4 \cdot \cancel{(3!)}
@@ -58,7 +58,7 @@ In counting, factorials come up a lot.
 			\cancel{3!}
 		}
 		= 7 \cdot 6 \cdot 5 \cdot 4 = 840
-	</me>.
+	</md>.
 	</p>
 </example>
 
@@ -182,7 +182,7 @@ In counting, factorials come up a lot.
 		and so on,
 		ending at a single way to choose the <m>\nth</m>.
 		By the <xref ref="theorem-counting-mult-rule" text="title" />, there are
-		<me> n \cdot (n - 1) \cdot (n - 2) \cdot \dotsb \cdot 1 = n! </me>
+		<md> n \cdot (n - 1) \cdot (n - 2) \cdot \dotsb \cdot 1 = n! </md>
 		ways to construct such a list.
 	</p></proof>
 	<proof><title>Formal proof</title>
@@ -231,7 +231,7 @@ In counting, factorials come up a lot.
 							<cell><m>a_k</m></cell>
 						</row>
 					</tabular>
-					<p><me>\downarrow</me></p>
+					<p><md>\downarrow</md></p>
 					<tabular top="medium" bottom="minor" halign="center">
 						<col right="minor" /><col /><col /><col /><col /><col /><col /><col />
 						<!-- <row bottom="minor"> -->
@@ -386,11 +386,11 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 			So there are <m>2 \cdot 19!</m> orderings we <em>do not</em> want.
 			Therefore, applying the <xref ref="theorem-counting-subtr-rule" text="title" />
 			yields answer
-			<me>
+			<md>
 				20! - 2 \cdot 19!
 				= 20 \cdot 19! - 2 \cdot 19!
 				= 18 \cdot 19!
-			</me>.
+			</md>.
 		</li>
 	</ol></p></solution>
 </problem>
@@ -419,7 +419,7 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 	<statement><p> If <m>\card{A} = n</m>, how many different total orders on <m>A</m> exist? </p></statement>
 	<solution><p>
 		Specifying a total order on <m>A</m> really just means ordering the elements of <m>A</m>:
-		<me> a_1 \le a_2 \le a_3 \le \dotsb \le a_n. </me>
+		<md> a_1 \le a_2 \le a_3 \le \dotsb \le a_n. </md>
 		So there are <m>n!</m> possible total orders.
 	</p></solution>
 </problem>
@@ -447,7 +447,7 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 		so each equivalence class inside the collection of orderings of <em>distinguishable</em> bottles contains <m>3! \cdot 5!</m> equivalent orderings.
 		Applying the <xref ref="theorem-counting-div-rule" text="title" />,
 		we arrive at
-		<me> \frac{8!}{3! \cdot 5!} = \frac{8\cdot 7 \cdot 6}{3 \cdot 2} = 56 </me>
+		<md> \frac{8!}{3! \cdot 5!} = \frac{8\cdot 7 \cdot 6}{3 \cdot 2} = 56 </md>
 		possible colour patterns.
 	</p></solution>
 </problem>
@@ -464,7 +464,7 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 		There are <m>10!</m> ways to line the <m>10</m> people up.
 		Wrapping the end of the line around to meet the beginning forms a circular seating arrangement.
 		But <q>rotating</q> around the line (<m>10</m> possible rotations) yields an equivalent circular seating arrangement.
-		So the answer is <me> \frac{10!}{10} = 9! </me>.
+		So the answer is <md> \frac{10!}{10} = 9! </md>.
 	</p></solution>
 	<solution><p>
 		Force one particular person to <em>always</em> be the <q>start</q> of the seating arrangement,
@@ -719,7 +719,7 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 <theorem xml:id="theorem-permutations-size-k-formula">
 <!-- \label{THEOREM::permutation.formula} -->
 	<title>Computing <m>\permutation{n}{k}</m></title>
-	<statement><p> We have <me> \permutation{n}{k} = \frac{n!}{(n-k)!} = n (n-1) (n-2) \dotsm (n-k+1) </me>. </p></statement>
+	<statement><p> We have <md> \permutation{n}{k} = \frac{n!}{(n-k)!} = n (n-1) (n-2) \dotsm (n-k+1) </md>. </p></statement>
 	<proof><p>
 		One way to construct an ordered list of <m>k</m> elements from a set <m>A</m>, where <m>\card{A} = n</m>,
 		is as in <xref ref="example-permutations-size-2-from-4" />.
@@ -730,11 +730,11 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 		As there are <m>(n-k)!</m> different ways the last <m>n - k</m> elements could be ordered while keeping the first <m>k</m> elements the same,
 		each equivalence class has size <m>(n - k)!</m>.
 		Applying the <xref ref="theorem-counting-div-rule" text="title" />, we obtain the desired formula
-		<me>
+		<md>
 			\permutation{n}{k}
 			= \frac{\ncardop \{ \text{orderings of all } n \text{ elements} \} }{\ncardop \{ \text{reorderings of the last } n - k \text{ elements} \} }
 			= \frac{n!}{(n - k)!}
-		</me>.
+		</md>.
 	</p></proof>
 </theorem>
 
@@ -754,12 +754,12 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 	<solution><p>
 		An arbitrary way to elect students to these offices would be to line all the students up and choose the first two students in line to be the president and vice-president, respectively.
 		Therefore, there are
-		<me>
+		<md>
 			\permutation{20}{2}
 			= \frac{20!}{(20 - 2)!}
 			= 20 \cdot 19
 			= 380
-		</me>
+		</md>
 		possible outcomes to the election.
 	</p></solution>
 </problem>
@@ -771,7 +771,7 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 		From a field of nine horses, how many ways are there to make a <q>Trifecta</q> bet
 		(<ie /> specify the first three finishers in order)?
 	</p></statement>
-	<solution><p> There are <me> \permutation{9}{3} = \frac{9!}{(9 - 3)!} = 9 \cdot 8 \cdot 7 = 504 </me> possible such bets. </p></solution>
+	<solution><p> There are <md> \permutation{9}{3} = \frac{9!}{(9 - 3)!} = 9 \cdot 8 \cdot 7 = 504 </md> possible such bets. </p></solution>
 </problem>
 
 <problem>  <!-- worked example -->
@@ -786,7 +786,7 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 	<solution><p>
 		A four-letter word with no repeated letters is the same as a permutation of size <m>4</m>,
 		so the number of such words is
-		<me> \permutation{26}{4} = \frac{26!}{(26 - 4)!} = 26 \cdot 25 \cdot 24 \cdot 23 = 358,800 </me>.
+		<md> \permutation{26}{4} = \frac{26!}{(26 - 4)!} = 26 \cdot 25 \cdot 24 \cdot 23 = 358,800 </md>.
 	</p></solution>
 </problem>
 

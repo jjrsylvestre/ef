@@ -85,8 +85,8 @@ respective owners.
 <activity xml:id="activity-funcs-bij-from-restricted-codomain">
 	<introduction><p>
 		Suppose <m>A</m> is a set that definitely does not contain any cats,
-		and let <me> \funcdef{f}{\powset{A}}{\powset{A \union \{\text{Grumpy Cat}\}}} </me>
-		represent the function defined by <me> f(X) = X \union \{\text{Grumpy Cat}\} </me>.
+		and let <md> \funcdef{f}{\powset{A}}{\powset{A \union \{\text{Grumpy Cat}\}}} </md>
+		represent the function defined by <md> f(X) = X \union \{\text{Grumpy Cat}\} </md>.
 	</p></introduction>
 	<task><p> Verify that <m>f</m> is injective. </p></task>
 	<task><p> Verify that <m>f</m> is <em>not</em> surjective. </p></task>
@@ -126,7 +126,7 @@ respective owners.
 	<task>
 		<p>
 		Draw a Venn diagram illustrating that
-		<me> \funcinvimg{f}{B_1 \intersection B_2} = \funcinvimg{f}{B_1} \intersection \funcinvimg{f}{B_2} </me>.
+		<md> \funcinvimg{f}{B_1 \intersection B_2} = \funcinvimg{f}{B_1} \intersection \funcinvimg{f}{B_2} </md>.
 		</p><p>
 		Include all of the sets
 		<md alignment="gather">

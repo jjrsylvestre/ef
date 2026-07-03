@@ -558,7 +558,7 @@ regardless of the content and truth/falsity of the individual statements making 
 	<p>
 	Since modus tollens is a valid argument,
 	using the substitution rule with the equivalences
-	<me> r \lgcand p \lgcequiv \lgcnot (\lgcnot r \lgcor \lgcnot p) \lgcequiv \lgcnot (r\lgccond \lgcnot p) </me>,
+	<md> r \lgcand p \lgcequiv \lgcnot (\lgcnot r \lgcor \lgcnot p) \lgcequiv \lgcnot (r\lgccond \lgcnot p) </md>,
 	demonstrates that the following argument is also valid.
 	</p>
 	<tabular halign="left">

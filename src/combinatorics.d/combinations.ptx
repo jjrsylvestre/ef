@@ -104,7 +104,7 @@ respective owners.
 
 <theorem xml:id="theorem-combinations-size-k-formula">
 	<title>Computing <m>\combination{n}{k}</m></title>
-	<statement><p> We have <me> \combination{n}{k} = \frac{\permutation{n}{k}}{k!} = \choosefuncformula{n}{k}{(n-k)} </me>. </p></statement>
+	<statement><p> We have <md> \combination{n}{k} = \frac{\permutation{n}{k}}{k!} = \choosefuncformula{n}{k}{(n-k)} </md>. </p></statement>
 	<proof><p>
 		Suppose <m>\card{A} = n</m>.
 		Using the solution to <xref ref="wexample-combinations-motivation" /> as a model for our proof,
@@ -129,12 +129,12 @@ respective owners.
 	<statement><p> We also have <m>\combination{n}{n-k} = \combination{n}{k}</m>. </p></statement>
 	<proof><p>
 		Calculate
-		<me>
+		<md>
 			\combination{n}{n-k}
 			= \choosefuncformula{n}{(n-k)}{\bbrac{n-(n-k)}}
 			= \choosefuncformula{n}{(n-k)}{k}
 			= \combination{n}{k}
-		</me>.
+		</md>.
 	</p></proof>
 </corollary>
 
@@ -155,10 +155,10 @@ respective owners.
 	</p></statement>
 	<solution><p>
 		From thirty-one flavours, there are
-		<me> \combination{31}{2} = \choosefuncformula{31}{2}{29} = \frac{31 \cdot 30}{2} = 31 \cdot 15 = 465 </me>
+		<md> \combination{31}{2} = \choosefuncformula{31}{2}{29} = \frac{31 \cdot 30}{2} = 31 \cdot 15 = 465 </md>
 		possibilities for double-scoop cones with <em>two distinct</em> flavours.
 		However, there are an additional <m>31</m> possibilities for double-scoop cones with two scoops the same flavour.
-		So the answer is <me> 465 + 31 = 496 </me>.
+		So the answer is <md> 465 + 31 = 496 </md>.
 	</p></solution>
 </problem>
 
@@ -173,7 +173,7 @@ respective owners.
 		There are <m>8</m> possible positions in which to place a bottle.
 		To create an arbitrary colour pattern, we can choose <m>3</m> of the positions to be filled by red bottles, then place blue in the remaining positions.
 		So the answer is
-		<me> \combination{8}{3} = \choosefuncformula{8}{3}{5} = 56 </me>.
+		<md> \combination{8}{3} = \choosefuncformula{8}{3}{5} = 56 </md>.
 	</p></solution>
 </problem>
 
@@ -190,11 +190,11 @@ respective owners.
 	<solution><p>
 		Choose the seniors for team, then the first-years (or vice-versa).
 		Applying the <xref ref="theorem-counting-mult-rule" text="title" /> to these independent, consecutive tasks yields answer
-		<me>
+		<md>
 			\combination{4}{2} \cdot \combination{6}{3}
 			= \left( \choosefuncformula{4}{2}{2} \right) \left( \choosefuncformula{6}{3}{3} \right)
 			= 120
-		</me>.
+		</md>.
 	</p></solution>
 </problem>
 
@@ -210,36 +210,36 @@ respective owners.
 		then the third team (<m>\combination{12}{4}</m> ways).
 		Applying the <xref ref="theorem-counting-mult-rule" text="title" />
 		yields a total of
-		<me>
+		<md>
 			\combination{20}{4} \cdot \combination{16}{4} \cdot \combination{12}{4}
 			= \left( \frac{20!}{4! \, \cancel{16!}} \right)
 			  \left( \frac{\cancel{16!}}{4! \, \bcancel{12!}} \right)
 			  \left( \frac{\bcancel{12!}}{4! \, 8!} \right)
 			= \frac{20!}{8! \, (4!)^3}.
-		</me>
+		</md>
 		possible teams.
 		However, the way in which we have constructed our teams has imposed an order on the collection of teams (first, second, and third team),
 		when there is no reason to assume such structure.
 		Given a collection of teams, re-ordering the teams themselves (not the people within each team) produces an equivalent collection of teams by membership.
 		As there are <m>3!</m> ways to reorder the three teams,
 		applying the <xref ref="theorem-counting-div-rule" text="title" /> gives us a final answer of
-		<me> \frac{20!}{3! \, 8! \, (4!)^3} </me>.
+		<md> \frac{20!}{3! \, 8! \, (4!)^3} </md>.
 	</p></solution>
 	<solution><p>
 		Initially choose the twelve people who will make up the three teams, but without yet assigning anyone to a particular team (<m>\combination{20}{12}</m> ways).
 		Then, from this reduced pool of candidates, choose the first team (<m>\combination{12}{4}</m> ways) and the second team (<m>\combination{8}{4}</m> ways).
 		The third team will now consist of the remaining four people from the twelve initially chosen.
 		The <xref ref="theorem-counting-mult-rule" text="title" /> gives a preliminary total of
-		<me>
+		<md>
 			\combination{20}{12} \cdot \combination{12}{4} \cdot \combination{8}{4}
 			= \left( \frac{20!}{\cancel{12!} \, 8!} \right)
 				\left( \frac{\cancel{12!}}{4! \, \bcancel{8!}} \right)
 				\left( \frac{\bcancel{8!}}{4! \, 4!} \right)
 			= \frac{20!}{8! \, (4!)^3}.
-		</me>
+		</md>
 		But as in the first solution above, we need to account for the fact that we have artificially ranked teams as first, second, and third.
 		Applying the <xref ref="theorem-counting-div-rule" text="title" /> gives us a final answer of
-		<me> \frac{20!}{3! \, 8! \, (4!)^3}. </me>
+		<md> \frac{20!}{3! \, 8! \, (4!)^3}. </md>
 	</p></solution>
 </problem>
 
@@ -263,13 +263,13 @@ respective owners.
 		Line the children up in some order.
 		(There is no need to count the number of ways to do this <mdash /> see the end of the solution.)
 		Also lay out the coins in a line:
-		<me> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} </me>.
+		<md> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} </md>.
 		Now grab two Hickory Sticks<trademark /> from the snack table to act as dividers to split the coins up into three groups.
 		For example,
-		<me> \mathord{\circ} \mathord{\mid} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\circ} \mathord{\circ} </me>
+		<md> \mathord{\circ} \mathord{\mid} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\circ} \mathord{\circ} </md>
 		means that the first child will receive one coin, the second will receive four, and the third child will receive two,
 		whereas
-		<me> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\mid} </me>
+		<md> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\mid} </md>
 		means that the first child gets all seven coins.
 		</p><p>
 		We are now back to the red bottle, blue bottle problem
@@ -282,11 +282,11 @@ respective owners.
 		Let <m>c_1, c_2, c_3</m> represent the three children.
 		Relative to that ordering of children,
 		the symbol pattern
-		<me> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\mid} </me>
+		<md> \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\mid} \mathord{\mid} </md>
 		means that the child <m>c_1</m> gets all seven coins, as above.
 		But relative to the ordering <m>c_3,c_2,c_1</m>,
 		the different symbol pattern
-		<me> \mathord{\mid} \mathord{\mid} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} </me>
+		<md> \mathord{\mid} \mathord{\mid} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} \mathord{\circ} </md>
 		<em>also</em> means that child <m>c_1</m> gets all seven coins, which is the same result.
 		So if we allow both symbol patterns and orderings of children to vary,
 		we will end up over-counting.
@@ -320,7 +320,7 @@ respective owners.
 		In this way, we may assume that the cans are initially indistinguishable and remain so <em>until</em> they are placed in the appropriate box,
 		at which time they magically become the variety specified by the box's label.
 		The previous theorem now tells us that there are
-		<me> \combination{10+4-1}{4-1} = \combination{13}{3} = 286 </me>
+		<md> \combination{10+4-1}{4-1} = \combination{13}{3} = 286 </md>
 		ways to do this.
 	</p></solution>
 </problem>
@@ -434,7 +434,7 @@ see <xref ref="figure-combinations-pascal" /> below.
 			</mrow>
 			<mrow> \vdots </mrow>
 		</md></p>
-		<p><me>\longrightarrow</me></p>
+		<p><md>\longrightarrow</md></p>
 		<p><md alignment="gather">
 			<mrow> 1^{\phantom{0}}_{\phantom{0}} </mrow>
 			<mrow> 1^{\phantom{1}}_{\phantom{0}} \quad 1^{\phantom{1}}_{\phantom{1}} </mrow>
@@ -486,7 +486,7 @@ The next two propositions confirm that the other two observed patterns continue 
 		We could prove this equality just by comparing the factorial formulas involved on the left-hand and right-hand sides.
 		But instead we will consider each of these combination values as representing the number of subsets of a certain size.
 		</p><p>
-		Write <me> A = \natnumlt{n} = \{0,1,2,\dotsc,n - 1\} </me>
+		Write <md> A = \natnumlt{n} = \{0,1,2,\dotsc,n - 1\} </md>
 		so that <m>\card{A} = n</m>.
 		Then the left-hand side of the equality in the statement of the proposition represents the number of subsets of <m>A</m> of size <m>k</m>.
 		Let's break that collection of subsets into two subcollections.
@@ -514,7 +514,7 @@ The next two propositions confirm that the other two observed patterns continue 
 	<proof>
 		<p>
 		First, recall that the notation on the left-hand side is <term>summation notation</term>:
-		<me> \sum_{k=0}^n \combinationalt{n}{k} = \combinationalt{n}{0} + \combinationalt{n}{1} + \dotsb + \combinationalt{n}{n} </me>.
+		<md> \sum_{k=0}^n \combinationalt{n}{k} = \combinationalt{n}{0} + \combinationalt{n}{1} + \dotsb + \combinationalt{n}{n} </md>.
 		</p><p>
 		Let <m>A = \natnumlt{n}</m>, so that <m>\card{A} = n</m>.
 		Then <m>\card{\powset{A}} = 2^n</m> (<xref ref="theorem-cardinality-power-set" />).
@@ -534,7 +534,7 @@ The next two propositions confirm that the other two observed patterns continue 
 <!-- \label{THEOREM::extra.binom.formula} -->
 	<statement><p>
 		For <m>0 \le m \le n</m>,
-		we have <me> \combinationalt{n+1}{m+1} = \sum_{k=m}^n \combinationalt{k}{m} </me>.
+		we have <md> \combinationalt{n+1}{m+1} = \sum_{k=m}^n \combinationalt{k}{m} </md>.
 	</p></statement>
 	<proof>
 		<p>
@@ -544,19 +544,19 @@ The next two propositions confirm that the other two observed patterns continue 
 		Then the left-hand side of the equality is the number of subsets of <m>A</m> of size <m>m + 1</m>.
 		Here is a systematic way we could create that those subsets.
 		</p><p>
-		Choose an ordering of the elements of <m>A</m>, so that <me> A = \{a_1,a_2,\dotsc,a_{n+1}\} </me>,
+		Choose an ordering of the elements of <m>A</m>, so that <md> A = \{a_1,a_2,\dotsc,a_{n+1}\} </md>,
 		though we will not count this choice of ordering.
 		Then, proceed as follows.
 		<ol>
 			<li><p>
-				Write <me>B_1 = \{a_1,a_2,\dotsc,a_{m+1}\}</me>,
+				Write <md>B_1 = \{a_1,a_2,\dotsc,a_{m+1}\}</md>,
 				so that <m>B_1 \subseteq A</m> with <m>\card{B_1} = m + 1</m>.
 				Then there is exactly <m>1 = \combinationalt{m+1}{m+1}</m> subset of <m>B_1</m> of size <m>m + 1</m>,
 				which is <m>B_1</m> itself.
 				And this subset of <m>B_1</m> is also a subset of <m>A</m>.
 			</p></li>
 			<li><p>
-				Write <me>B_2 = \{a_1,a_2,\dotsc,a_{m+1},a_{m+2}\}</me>,
+				Write <md>B_2 = \{a_1,a_2,\dotsc,a_{m+1},a_{m+2}\}</md>,
 				so that <m>B_1 \subseteq B_2 \subseteq A</m> with <m>\card{B_2} = m + 2</m>.
 				Using only the elements of <m>B_2</m>,
 				to create a new subset <m>X \subseteq A</m> of size <m>m + 1</m> that we have not already counted we must include the new element <m>a_{m+2}</m>,
@@ -564,7 +564,7 @@ The next two propositions confirm that the other two observed patterns continue 
 				So we get <m>\combinationalt{m+1}{m}</m> new subsets of <m>A</m> of size <m>m+1</m> from <m>B_2</m>.
 			</p></li>
 			<li><p>
-				Write <me>B_3 = \{a_1,a_2,\dotsc,a_{m+1},a_{m+2},a_{m+3}\}</me>,
+				Write <md>B_3 = \{a_1,a_2,\dotsc,a_{m+1},a_{m+2},a_{m+3}\}</md>,
 				so that <m>B_2 \subseteq B_3 \subseteq A</m> with <m>\card{B_3} = m + 3</m>.
 				Using only the elements of <m>B_3</m>,
 				to create a new subset of <m>X \subseteq A</m> of size <m>m + 1</m> that we have not already counted we must include the new element <m>a_{m+3}</m>,
@@ -587,7 +587,7 @@ The next two propositions confirm that the other two observed patterns continue 
 		(since both are equal to <m>1</m>)
 		to match the pattern of the subsequent steps,
 		we obtain
-		<me> \combinationalt{n+1}{m+1} = \combinationalt{m}{m} + \combinationalt{m+1}{m} + \dotsb + \combinationalt{n}{m} </me>,
+		<md> \combinationalt{n+1}{m+1} = \combinationalt{m}{m} + \combinationalt{m+1}{m} + \dotsb + \combinationalt{n}{m} </md>,
 		as desired.
 		</p>
 	</proof>

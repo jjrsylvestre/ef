@@ -87,7 +87,7 @@ respective owners.
 	<p>
 	Let <m>n</m> be a fixed natural number.
 	Determine the smallest number <m>M</m> for which the following statement is true:
-	every subset of <me> \natnumlt{2n + 1} = \{0,1,2,3,\dotsc,2n\} </me>
+	every subset of <md> \natnumlt{2n + 1} = \{0,1,2,3,\dotsc,2n\} </md>
 	of size <m>M</m> contains at least one odd number.
 </p></activity>
 
@@ -102,7 +102,7 @@ respective owners.
 	<task>
 		<statement><p>
 			Now suppose that the number of toys <m>T</m> satisfies
-			<me> T \lt \frac{n (n - 1)}{2} </me>.
+			<md> T \lt \frac{n (n - 1)}{2} </md>.
 			Prove that when you are done cleaning up, there will be (at least) one pair of boxes that contain the same number of toys.
 		</p></statement>
 		<hint><p>

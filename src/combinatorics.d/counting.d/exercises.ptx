@@ -53,7 +53,7 @@ respective owners.
 		It is the year 2030, and Alberta has succeeded in seceding from Canada and has become the landlocked Kingdom of Albertania.
 		The King decrees that the kingdom's citizens will all be assigned a hexadecimal ID.
 		That is, using alphabet
-		<me> \Sigma = \{ 0,1,2,3,4,5,6,7,8,9,\mathrm{a},\mathrm{b},\mathrm{c},\mathrm{d},\mathrm{e},\mathrm{f} \}, </me>
+		<md> \Sigma = \{ 0,1,2,3,4,5,6,7,8,9,\mathrm{a},\mathrm{b},\mathrm{c},\mathrm{d},\mathrm{e},\mathrm{f} \}, </md>
 		IDs will be words from <m>\words{\Sigma}</m>.
 		However, the king is vain and doesn't want any such ID to contain his initials, <m>\mathrm{jk}</m>.
 		</p>

@@ -36,7 +36,7 @@ respective owners.
 	</figure>
 	<p>
 	For example,
-	<me> C, r_1, R, r_4, D, r_5, R, r_2, C, r_3, R, r_6, D </me>
+	<md> C, r_1, R, r_4, D, r_5, R, r_2, C, r_3, R, r_6, D </md>
 	is a trip that travels back and forth between Camrose and Drumheller, via Red Deer each time,
 	and that never uses the same route twice.
 	Notice that we cannot extend this trip without repeating a route.
@@ -286,7 +286,7 @@ respective owners.
 			If this walk is not a path, then there is a repeated vertex.
 			Suppose <m>v_j = v_i</m> with <m>j \gt i</m>.
 			Then
-			<me> v_0, e_1, v_1, \dotsc, v_{i-1}, e_i, v_j, e_{j+1}, \dotsc, v_{n - 1}, e_n, v_n </me>
+			<md> v_0, e_1, v_1, \dotsc, v_{i-1}, e_i, v_j, e_{j+1}, \dotsc, v_{n - 1}, e_n, v_n </md>
 			is also a walk from <m>v</m> to <m>v'</m>.
 			Keep removing repeated vertices in this way until a path is obtained.
 			</p>
@@ -590,7 +590,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 		Next, recall that the sum of the degrees of the vertices of <m>G</m> is equal to <m>2e</m>
 		(<xref ref="theorem-graphs-sum-of-degrees" />).
 		Using this, we have
-		<me> 2e = \deg v_1 + \deg v_2 + \dotsb + \deg v_n \ge d + d + \dotsb + d = nd </me>.
+		<md> 2e = \deg v_1 + \deg v_2 + \dotsb + \deg v_n \ge d + d + \dotsb + d = nd </md>.
 		So <m>d \le 2 e / n</m>.
 		The number <m>2e/n</m> is rational, but may not be an integer.
 		However, <m>d</m> is definitely an integer, so we must have <m>d \le \floor{2e/n}</m>.

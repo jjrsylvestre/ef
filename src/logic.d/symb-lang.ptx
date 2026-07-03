@@ -362,7 +362,7 @@ without being distracted or influenced by the content of the statements.
 		B \amp = \text{ “we get wet,”} \amp
 		C \amp = \text{ “it is raining.”}
 	</mrow></md>
-	Then symbolically, the statement can be written <me>A \lgcand B \lgccond C</me>.
+	Then symbolically, the statement can be written <md>A \lgcand B \lgccond C</md>.
 	</p>
 </example>
 
@@ -1013,10 +1013,10 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 	<p><ol>
 		<li>
 			We know <m>p \lgcor \lgcnot p</m> is a tautology, therefore so is
-			<me>
+			<md>
 				\bbrac{q \lgccond (r \lgcand \lgcnot s)} \lgcor
 				\lgcnot \bbrac{q \lgccond (r \lgcand \lgcnot s)}
-			</me>
+			</md>
 			using substitution <m>p = \bbrac{q \lgccond (r \lgcand \lgcnot s)}</m>.
 		</li><li>
 			We know <m>(p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q)</m> is a contradiction,

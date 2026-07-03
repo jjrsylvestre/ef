@@ -238,11 +238,11 @@ If <m>e</m> consists of exactly one element of <m>V</m>, draw a line from this v
 	In a <em>simple</em> graph, the degree of each vertex is equal to the number of incident edges.
 	However, in a <em>non</em>-simple graph, a loop is incident to its vertex <em>twice</em>,
 	and we count that in the degree:
-	<me>
+	<md>
 		\deg v
 		= \ncardop \{\text{ edges that are incident to } v \text{ but not loops at } v\}
 		+ 2 \cdot \ncardop \{\text{ loops at } v\}.
-	</me>
+	</md>
 </p></note>
 
 <example>
@@ -302,7 +302,7 @@ as well as how much <q>redundancy</q> the graph contains.
 	<statement><p>
 		Suppose <m>G = (V,E)</m> is a graph with vertex set <m>V = \{ v_1, v_2, \dotsc, v_n \}</m>.
 		Then,
-		<me> \deg v_1 + \deg v_2 + \dotsc \deg v_n = 2\card{E}. </me>
+		<md> \deg v_1 + \deg v_2 + \dotsc \deg v_n = 2\card{E}. </md>
 	</p></statement>
 	<proof><title>Proof idea</title><p>
 		If an edge <m>e</m> is a loop at vertex <m>v_i</m>, then it contributes <m>2</m> to <m>\deg v_i</m>.
@@ -639,12 +639,12 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 	<em>Note:</em> The second condition is to avoid cluttering the graph with extra edges that do not add any extra information.
 	</p><p>
 	For example, consider <m>A = \{a,b,c\}</m> and
-	<me>
+	<md>
 		\powset{A} = \left\{
 			\, \emptyset, \, \{a\}, \, \{b\}, \, \{c\},\,
 			\{a,b\},\, \{a,c\},\, \{b,c\},\, \{a,b,c\} \,
 		\right\}.
-	</me>
+	</md>
 	So we can draw a graph to represent the subset relationships of <m>\powset{A}</m>,
 	with arrows to point from subset to superset.
 	</p>
@@ -682,7 +682,7 @@ consider the direction of <m>e</m> to be <m>v \to v'</m>.
 	that is, if <m>n/m</m> is also an integer.
 	In this case, we say that <m>m</m> <term>divides</term> <m>n</m>.
 	</p><p>
-	Set <me> V = \{2,3,4,5,6,7,8,9,10,11,12,13,14\} </me>.
+	Set <md> V = \{2,3,4,5,6,7,8,9,10,11,12,13,14\} </md>.
 	Let <m>G = (V,E)</m> be the directed graph where, for integers <m>m,n \in V</m> with <m>m \lt n</m>,
 	the ordered pair <m>(m,n)</m> is an edge in <m>E</m> if the following two conditions are satisfied:
 	<ol marker="(i)">

@@ -69,7 +69,7 @@ respective owners.
 	</task>
 	<task>
 		<p> What proof method do you think you would use to prove the following statement? </p>
-		<blockquote><p> If <m>A_1, A_2, \dotsc, A_n</m> are all countable, then so is <me> A_1\times A_2 \times \dotsb \times A_n </me>. </p></blockquote>
+		<blockquote><p> If <m>A_1, A_2, \dotsc, A_n</m> are all countable, then so is <md> A_1\times A_2 \times \dotsb \times A_n </md>. </p></blockquote>
 	</task>
 </activity>
 
@@ -83,7 +83,7 @@ respective owners.
 	<statement><p>
 		Prove that if <m>A_0,A_1,A_2,\dotsc</m> is an infinite collection of sets, each of which is countably infinite,
 		then the union
-		<me> \bigcup_{n=0}^\infty A_n = A_0 \cup A_1 \cup A_2 \cup \dotsb </me>
+		<md> \bigcup_{n=0}^\infty A_n = A_0 \cup A_1 \cup A_2 \cup \dotsb </md>
 		is also countably infinite.
 	</p></statement>
 	<hint><p> What if each set was an apple tree? </p></hint>

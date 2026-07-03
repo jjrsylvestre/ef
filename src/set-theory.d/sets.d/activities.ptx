@@ -64,14 +64,14 @@ respective owners.
 		</aside>
 		<p>
 		Express each of the following statements using the symbols of set theory:
-		<me>
+		<md>
 			\in, \;\;\;
 			\subseteq, \;\;\;
 			\union, \;\;\;
 			\intersection, \;\;\;
 			\emptyset, \;\;\;
 			\text{etc.}
-		</me>
+		</md>
 		</p>
 	</introduction>
 	<task><p> <m>\zerovec</m> is a scalar matrix. </p></task>
@@ -106,7 +106,7 @@ respective owners.
 <activity>
 	<p>
 	The equality of sets
-	<me> A \cartprod (B \relcmplmnt C) = (A \cartprod B) \relcmplmnt (A \cartprod C) </me>
+	<md> A \cartprod (B \relcmplmnt C) = (A \cartprod B) \relcmplmnt (A \cartprod C) </md>
 	is true in general.
 	</p><p>
 	Write a <alert>formal</alert> proof of this equality,
@@ -125,7 +125,7 @@ respective owners.
 <activity>
 	<p>
 	Write a <alert>formal</alert> proof of the equality
-	<me> \powset{A \intersection B} = \powset{A} \intersection \powset{B} </me>
+	<md> \powset{A \intersection B} = \powset{A} \intersection \powset{B} </md>
 	using the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref>.
 	</p><p>
 	Keep <xref ref="warning-sets-power-set-elements" /> in mind as you do this!

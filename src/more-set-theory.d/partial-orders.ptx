@@ -454,10 +454,10 @@ Make sure to keep this straight!
 	(see <xref ref="example-partial-order-total-pull-back" />).
 	</p><p>
 	Another point of view on this is that our bijection <m>f</m> creates an infinite sequence
-	<me> a_0, a_1, a_2, \dotsc </me>,
+	<md> a_0, a_1, a_2, \dotsc </md>,
 	where each element of <m>A</m> appears exactly once.
 	This sequence can be turned into a specification of the total order on <m>A</m> by just turning the commas into <m>\mathord{\le}</m> symbols:
-	<me> a_0 \le a_1 \le a_2 \le \dotsb </me>.
+	<md> a_0 \le a_1 \le a_2 \le \dotsb </md>.
 	</p>
 </example>
 
@@ -465,9 +465,9 @@ Make sure to keep this straight!
 	The pattern of <xref ref="example-partial-orders-countable-can-be-totally-ordered" /> becomes even simpler when we apply it to a <em>finite</em> set:
 	a total order on a finite set is no different than an ordering of the set elements into a list,
 	as
-	<me> a_0, a_1, a_2, \dotsc, a_n </me>
+	<md> a_0, a_1, a_2, \dotsc, a_n </md>
 	can simply be turned into
-	<me> a_0 \le a_1 \le a_2 \le \dotsb \le a_n </me>,
+	<md> a_0 \le a_1 \le a_2 \le \dotsb \le a_n </md>,
 	and vice versa.
 </p></remark>
 
@@ -653,15 +653,15 @@ but could also be understood for elements in a subset of a partially ordered set
 		<li xml:id="test-partial-orders-maximal-minimal-maximal">
 		<!-- \label{TEST::maximal.element} -->
 			To verify that <m>\overline{m} \in A</m> is maximal, prove either the original definition
-			<me> (\forall x \in A)({x \neq \overline{m}} \lgcimplies {\overline{m} \npartorder x}) </me>,
+			<md> (\forall x \in A)({x \neq \overline{m}} \lgcimplies {\overline{m} \npartorder x}) </md>,
 			or prove the equivalent contrapositive formulation
-			<me> (\forall x \in A)({\overline{m} \partorder x} \lgcimplies {x = \overline{m}}) </me>.
+			<md> (\forall x \in A)({\overline{m} \partorder x} \lgcimplies {x = \overline{m}}) </md>.
 		</li>
 		<li>
 			To verify that <m>\underline{m} \in A</m> is minimal, prove either the original definition
-			<me> (\forall x \in A)({x \neq \underline{m}} \lgcimplies {x \npartorder \underline{m}}) </me>,
+			<md> (\forall x \in A)({x \neq \underline{m}} \lgcimplies {x \npartorder \underline{m}}) </md>,
 			or prove the equivalent contrapositive formulation
-			<me> (\forall x \in A)({x \partorder \underline{m}} \lgcimplies {x = \underline{m}}) </me>.
+			<md> (\forall x \in A)({x \partorder \underline{m}} \lgcimplies {x = \underline{m}}) </md>.
 		</li>
 	</ol></p>
 </claim>
@@ -763,7 +763,7 @@ but could also be understood for elements in a subset of a partially ordered set
 	<title>A partially ordered set with exactly one maximal element but no maximum element</title>
 	<p>
 	Consider
-	<me> A = \{3\} \union \{2,4,8,16,32,64,\dotsc,2^n,\dotsc\}, </me>
+	<md> A = \{3\} \union \{2,4,8,16,32,64,\dotsc,2^n,\dotsc\}, </md>
 	partially ordered by <m>\mathord{\mid}</m>, the <q>divides</q> relation.
 	There is no element of <m>A</m> that is divisible by <m>3</m> (except <m>3</m> itself),
 	so there is no element of <m>A</m> that is larger than <m>3</m>.
@@ -776,7 +776,7 @@ but could also be understood for elements in a subset of a partially ordered set
 <example>
 	<title>A partially ordered set with infinitely many maximal/minimal elements but no maximum/minimum element</title>
 	<p>
-	Consider <m>\mathscr{A} \subsetneqq \powset{\N}</m>, where <me> \mathscr{A} = \powset{\N} \relcmplmnt \{\emptyset,\N\} </me>.
+	Consider <m>\mathscr{A} \subsetneqq \powset{\N}</m>, where <md> \mathscr{A} = \powset{\N} \relcmplmnt \{\emptyset,\N\} </md>.
 	So <m>\mathscr{A}</m> is the set of all nonempty, proper subsets of <m>\N</m>.
 	Under the partial order <m>\mathord{\subseteq}</m>, <m>\mathscr{A}</m> has neither a maximum nor a minimum element,
 	but for every <m>n \in \N</m>, <m>\{n\}</m> is a minimal element and <m>\N \relcmplmnt \{n\}</m> is a maximal element of <m>\mathscr{A}</m>.
@@ -856,7 +856,7 @@ The following definitions apply to a partial order <m>\mathord{\partorder}</m> o
 	<p>
 	If <m>A</m> is a <em>finite</em> partially ordered set with respect to <m>\mathord{\partorder}</m>,
 	we can specify a compatible total order <m>\mathord{\leq}</m> on <m>A</m> by writing the elements of <m>A</m> in a list
-	<me> a_0 \leq a_1 \leq \dotsb \leq a_{n-1} </me> as follows, where <m>n = \card{A}</m>.
+	<md> a_0 \leq a_1 \leq \dotsb \leq a_{n-1} </md> as follows, where <m>n = \card{A}</m>.
 	<ol>
 		<li> Initialize <m>i = 0</m> and <m>A_0 = A</m>. </li>
 		<li xml:id="algorithm-partial-orders-top-sorting-choice-step">
@@ -886,10 +886,10 @@ The following definitions apply to a partial order <m>\mathord{\partorder}</m> o
 <problem> <!-- worked example -->
 	<statement><p>
 		Consider
-		<me>
+		<md>
 			A = \powset{\{0,1,2\}}
 			= \bigl\{ \emptyset, \{0\}, \{1\}, \{2\}, \{0,1\}, \{0,2\}, \{1,2\}, \{0,1,2\} \bigr\}
-		</me>.
+		</md>.
 		Apply <xref ref="algorithm-partial-orders-top-sorting" /> to determine a total order <m>\mathord{\leq}</m> on <m>A</m> that is compatible with <m>\mathord{\subseteq}</m>.
 	</p></statement>
 	<solution>
@@ -897,19 +897,19 @@ The following definitions apply to a partial order <m>\mathord{\partorder}</m> o
 		<p>
 		In <m>A_0 = A</m>, we must choose <m>a_0 = \emptyset</m>, since it is the minimum.
 		Now remove <m>a_0</m> so that
-		<me> A_1 = \bigl\{ \{0\}, \{1\}, \{2\}, \{0,1\}, \{0,2\}, \{1,2\}, \{0,1,2\} \bigr\}. </me>
+		<md> A_1 = \bigl\{ \{0\}, \{1\}, \{2\}, \{0,1\}, \{0,2\}, \{1,2\}, \{0,1,2\} \bigr\}. </md>
 		Choose a minimal element from <m>A_1</m>: let <m>a_1 = \{2\}</m>.
 		Now remove <m>a_1</m>; set
-		<me> A_2 = \bigl\{ \{0\}, \{1\}, \{0,1\}, \{0,2\}, \{1,2\}, \{0,1,2\} \bigr\}. </me>
+		<md> A_2 = \bigl\{ \{0\}, \{1\}, \{0,1\}, \{0,2\}, \{1,2\}, \{0,1,2\} \bigr\}. </md>
 		Choose a minimal element from <m>A_2</m>: let <m>a_2 = \{0\}</m>.
 		Now remove <m>a_2</m>; set
-		<me> A_3 = \bigl\{ \{1\}, \{0,1\}, \{0,2\}, \{1,2\}, \{0,1,2\} \bigr\}. </me>
+		<md> A_3 = \bigl\{ \{1\}, \{0,1\}, \{0,2\}, \{1,2\}, \{0,1,2\} \bigr\}. </md>
 		Choose a minimal element from <m>A_3</m>: let <m>a_3 = \{0,2\}</m>.
 		Now remove <m>a_3</m>; set
-		<me> A_4 = \bigl\{ \{1\}, \{0,1\}, \{1,2\}, \{0,1,2\} \bigr\}. </me>
+		<md> A_4 = \bigl\{ \{1\}, \{0,1\}, \{1,2\}, \{0,1,2\} \bigr\}. </md>
 		We must choose <m>a_4 = \{1\}</m>, since it is the minimum in <m>A_4</m>.
 		Now remove <m>a_4</m>; set
-		<me> A_5 = \bigl\{ \{0,1\}, \{1,2\}, \{0,1,2\} \bigr\}. </me>
+		<md> A_5 = \bigl\{ \{0,1\}, \{1,2\}, \{0,1,2\} \bigr\}. </md>
 		Choose a minimal element from <m>A_5</m>:
 		let <m>a_5 = \{1,2\}</m>.
 		Now remove <m>a_5</m>; set
@@ -917,10 +917,10 @@ The following definitions apply to a partial order <m>\mathord{\partorder}</m> o
 		We must choose <m>a_6 = \{0,1\}</m>, since it is the minimum in <m>A_6</m>.
 		There is only one element left; set <m>A_7 = \bigl\{ \{0,1,2\} \bigr\}</m> and choose <m>a_7 = \{0,1,2\}</m>.
 		So we have
-		<me>
+		<md>
 			\emptyset \leq \{2\} \leq \{0\} \leq \{0,2\}
 			\leq \{1\} \leq \{1,2\} \leq \{0,1\} \leq \{0,1,2\}.
-		</me>
+		</md>
 		Notice that the maximum element of <m>A</m> ended up at the <q>top</q> of the total order and the minimum element was forced to the <q>bottom.</q>
 	</p></solution>
 	<solution>
@@ -932,10 +932,10 @@ The following definitions apply to a partial order <m>\mathord{\partorder}</m> o
 		(See <xref ref="figure-partial-orders-topo-sorting-graphically" />.)
 		</p><p>
 		Our end result is a list of our choices, in order:
-		<me>
+		<md>
 			\emptyset \leq \{2\} \leq \{0\} \leq \{0,2\}
 			\leq \{1\} \leq \{1,2\} \leq \{0,1\} \leq \{0,1,2\}.
-		</me>
+		</md>
 		Notice that the maximum element of <m>A</m> ended up at the <q>top</q> of the total order and the minimum element was forced to the <q>bottom</q>.
 		</p>
 		<figure xml:id="figure-partial-orders-topo-sorting-graphically">
@@ -1014,7 +1014,7 @@ The following definitions apply to a partial order <m>\mathord{\partorder}</m> o
 
 <note><p>
 	Compatible total orders are not unique: in the previous worked example, the order in which the elements of <m>A</m> were originally written represents another compatible total order:
-	<me> \emptyset \leq \{0\} \leq \{1\} \leq \{2\} \leq \{0,1\} \leq \{0,2\} \leq \{1,2\} \leq \{0,1,2\} </me>.
+	<md> \emptyset \leq \{0\} \leq \{1\} \leq \{2\} \leq \{0,1\} \leq \{0,2\} \leq \{1,2\} \leq \{0,1,2\} </md>.
 </p></note>
 
 </section>

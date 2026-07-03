@@ -33,7 +33,7 @@ respective owners.
 <activity xml:id="activity-symb-lang-if-decompose">
 	<introduction><p>
 		Consider the logical statement
-		<me> (p \lgccond q) \lgccond (\lgcnot p \lgcor q) </me>.
+		<md> (p \lgccond q) \lgccond (\lgcnot p \lgcor q) </md>.
 	</p></introduction>
 	<task><p>
 		Make up an English language statement that has the same logical structure as this symbolic statement.
@@ -65,7 +65,7 @@ respective owners.
 <activity>
 	<introduction><p>
 		Consider the logical statement
-		<me> (p \lgcand \lgcnot r) \lgccond \bigl[ (p \lgccond q) \lgccond (p \lgcand \lgcnot r) \bigr] </me>.
+		<md> (p \lgcand \lgcnot r) \lgccond \bigl[ (p \lgccond q) \lgccond (p \lgcand \lgcnot r) \bigr] </md>.
 	</p></introduction>
 	<task><p>
 		Make the statement simpler by assigning new variables to represent compound statements and rewriting the statement in terms of the new variables.

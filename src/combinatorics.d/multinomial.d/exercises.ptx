@@ -19,7 +19,7 @@ respective owners.
 
 <exercise><p>
 	Choose numbers <m>x,y</m> so that the equality in the <xref ref="theorem-multinomial-binomial" text="title" /> becomes
-	<me> \sum_{k=0}^n \binom{n}{k}\, 2^k = 3^n </me>.
+	<md> \sum_{k=0}^n \binom{n}{k}\, 2^k = 3^n </md>.
 </p></exercise>
 
 <exercise xml:id="exercise-multinomial-binomial-formula-counting-subsets">
@@ -27,7 +27,7 @@ respective owners.
 	<task xml:id="exercise-multinomial-binomial-formula-counting-subsets-choose-numbers"><p>
 	<!-- \label{EXERCISE::multinomial::binomial.formula.counting.subsets::choose.numbers} -->
 		Choose numbers <m>x,y</m> so that the equality in the <xref ref="theorem-multinomial-binomial" text="title" /> becomes
-		<me>
+		<md>
 			\binom{n}{0} \;\;-\;\;
 			\binom{n}{1} \;\;+\;\;
 			\binom{n}{2} \;\;-\;\;
@@ -35,7 +35,7 @@ respective owners.
 			\dotsb \;\;+\;\;
 			(-1)^n \binom{n}{n} \;\;=\;\;
 			0
-		</me>.
+		</md>.
 	</p></task>
 	<task>
 		<statement>

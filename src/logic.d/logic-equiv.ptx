@@ -64,7 +64,7 @@ respective owners.
 		<p>
 		Let <m>p</m> represent the substatement <q>it's nice outside,</q>
 		and let <m>q</m> represent the substatement <q>I will ride my bike.</q>
-		Then the equivalence we want to establish is <me>p \lgccond q \lgcequiv \lgcnot p \lgcor q</me>.
+		Then the equivalence we want to establish is <md>p \lgccond q \lgcequiv \lgcnot p \lgcor q</md>.
 		We can analyze the truth tables of both statements in the same table.
 		</p>
 		<tabular halign="center">
@@ -387,10 +387,10 @@ in logical calculations.
 	of <xref ref="proposition-logic-equiv-rules-prop-calculus" />)
 	says that <m>\lgcnot (p \lgcor q) \lgcequiv \lgcnot p \lgcand \lgcnot q</m>.
 	Therefore,
-	<me>
+	<md>
 		\lgcnot \bbrac{ (r \lgccond t) \lgcor (t \lgccond r) } \lgcequiv
 		\lgcnot (r \lgccond t) \lgcand \lgcnot (t \lgccond r),
-	</me>
+	</md>
 	using <xref ref="theorem-logic-equiv-subst-equiv-into-variables">Rule</xref>
 	of our new <xref ref="theorem-logic-equiv-subst-equiv" text="title" />,
 	with substitutions <m>p = r \lgccond t</m>, <m>q = t \lgccond r</m>.

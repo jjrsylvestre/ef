@@ -108,7 +108,7 @@ respective owners.
 		</p></statement>
 		<hint><p>
 			You may find the following <q>difference of powers</q> factorization formula useful:
-			<me> a^m - b^m = (a-b)(a^{m-1} + a^{m-2}b + a^{m-3}b^2 + \dotsb + a^2b^{m-3} + ab^{m-2} + b^{m-1}) </me>.
+			<md> a^m - b^m = (a-b)(a^{m-1} + a^{m-2}b + a^{m-3}b^2 + \dotsb + a^2b^{m-3} + ab^{m-2} + b^{m-1}) </md>.
 		</p></hint>
 	</task>
 </activity>

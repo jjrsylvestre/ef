@@ -27,7 +27,7 @@ respective owners.
 
 <activity><p> Write down some example permutations of size <m>3</m> from the set <m>A = \{t,r,u,c,k\}</m>. </p></activity>
 
-<activity><p> Verify the equality <me> \frac{(n+1)!}{(k+1)!(n-k)!} = \frac{n!}{k!(n-k)!} + \frac{n!}{(k+1)!(n-k-1)!} </me>. </p></activity>
+<activity><p> Verify the equality <md> \frac{(n+1)!}{(k+1)!(n-k)!} = \frac{n!}{k!(n-k)!} + \frac{n!}{(k+1)!(n-k-1)!} </md>. </p></activity>
 
 <activity>
 	<introduction><p> A child has the following set of refrigerator magnets: <m>\{A,B,C,D,E,F,G,H,I,J\}</m>. </p></introduction>

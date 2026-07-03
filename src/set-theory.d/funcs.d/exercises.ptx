@@ -24,7 +24,7 @@ respective owners.
 <exercise><p> <!-- TODO \refAdapt{hunter+discrete}{2.3}{5} -->
 	Let <m>A</m> represent the set of all university students and let <m>C</m> be the set of all university courses.
 	Does the rule <m>\funcdef{f}{A}{C}</m> given by
-	<me> f(a) = c \text{ if student <m>a</m> is registered in course <m>c</m>} </me>
+	<md> f(a) = c \text{ if student <m>a</m> is registered in course <m>c</m>} </md>
 	define a function?
 	Justify your answer.
 </p></exercise>
@@ -101,10 +101,10 @@ respective owners.
 		Fill in the right-hand side of the
 		set definition in <xref ref="subsection-sets-defining-candidate-condition" text="title" />
 		for the image of <m>D</m> below.
-		<me>
+		<md>
 			D(\R)
 			= \setdef{(x_1,x_2,\dotsc,x_m) \in \R^m}{<fillin characters="10" />}
-		</me>
+		</md>
 	</p></task>
 	<task><p>
 		Provide a set definition for the graph <m>\funcgraph{D}</m>
@@ -214,7 +214,7 @@ respective owners.
 			<p> Draw a Venn diagram illustrating that <m>A_1 \subseteq \inv{f}\bbrac{f(A_1)}</m>. </p>
 			<p>
 			Include all of the sets
-			<me> A, \;\; B, \;\; A_1, \;\; f(A_1), \text{ and } \;\; \inv{f}\bbrac{f(A_1)} </me>
+			<md> A, \;\; B, \;\; A_1, \;\; f(A_1), \text{ and } \;\; \inv{f}\bbrac{f(A_1)} </md>
 			in your diagram.
 			</p>
 		</task>
@@ -229,10 +229,10 @@ respective owners.
 			<p> Draw a diagram illustrating that <m>f\bbrac{\inv{f}(B_1)} \subseteq B_1</m>. </p>
 			<p>
 			Include all of the sets
-			<me>
+			<md>
 				A, \;\; B, \;\; B_1, \;\; \inv{f}(B_1),
 				\;\; \text{ and } \;\; f\bbrac{\inv{f}(B_1)}
-			</me>
+			</md>
 			in your diagram.
 			</p>
 		</task>
@@ -264,7 +264,7 @@ respective owners.
 		<task>
 			<p>
 			Draw a diagram illustrating that
-			<me> \funcinvimg{f}{B_1 \intersection B_2} = \funcinvimg{f}{B_1} \intersection \funcinvimg{f}{B_2} </me>.
+			<md> \funcinvimg{f}{B_1 \intersection B_2} = \funcinvimg{f}{B_1} \intersection \funcinvimg{f}{B_2} </md>.
 			</p>
 			<p>
 			Include all of the sets

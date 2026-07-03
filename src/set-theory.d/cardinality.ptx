@@ -25,7 +25,7 @@ respective owners.
 	<p>
 	For <m>m\in\N</m> we have defined the
 	<term><xref ref="definition-recur-induct-counting-set" text="title" /></term>
-	<me> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0, \, 1, \, \dotsc, \, m-1\} </me>.
+	<md> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0, \, 1, \, \dotsc, \, m-1\} </md>.
 	</p><p>
 	Clearly, <m>\natnumlt{m}</m> contains exactly <m>m</m> elements.
 	In fact, we have <em>defined</em> the number <m>m</m> to be the set <m>\natnumlt{m}</m>.
@@ -148,7 +148,7 @@ then <m>A</m> must also contain exactly <m>m</m> elements.
 	By definition,
 	to verify <m>\card{\emptyset} = 0</m> we require a bijection <m>\natnumlt{0} \to \emptyset</m>,
 	but
-	<me> \natnumlt{0} = \setdef{n \in \N}{n \lt 0} = \emptyset </me>
+	<md> \natnumlt{0} = \setdef{n \in \N}{n \lt 0} = \emptyset </md>
 	as well.
 	</p>
 	<p><dl width="narrow"><li xml:id="definition-cardinality-empty-function">
@@ -239,7 +239,7 @@ which leads to the following.
 		<m>\funcdef{f}{\natnumlt{n}}{A}</m> is a corresponding bijection,
 		and we create sequence <m>\{a_k\}_{k=0}^m</m> with <m>a_k = f(k)</m> as above,
 		then we are able to list the elements of <m>A</m> in sequence:
-		<me> A = \{a_0, a_1, \dotsc, a_{n-1} \} </me>.
+		<md> A = \{a_0, a_1, \dotsc, a_{n-1} \} </md>.
 		In turn, writing the elements of <m>A</m> in sequence is really just a way of <em>counting</em> them,
 		in a manner that is roughly equivalent to counting on your fingers (if you had a lot of fingers).
 		In fact, counting the elements of <m>A</m> <term>totally orders</term> the elements of <m>A</m>
@@ -378,14 +378,14 @@ This fact lets us relate finite sets to each other.
 		<m> N_k = \card{\powset{A_k}}</m> recursively.
 		First, <m>N_0 = 1</m>.
 		Then, since
-		<me> A_{k-1} = \{ 1, 2, \dotsc, k-1 \} \subsetneqq \{1,2,\dotsc,k-1,k\} = A_k, </me>
+		<md> A_{k-1} = \{ 1, 2, \dotsc, k-1 \} \subsetneqq \{1,2,\dotsc,k-1,k\} = A_k, </md>
 		we can consider <m>\powset{A_{k-1}} \subseteq \powset{A_k}</m>.
 		(See <xref ref="exercise-sets-investigate-pow-set-ops-subset" />.)
 		In doing so, we can break <m>\powset{A_k}</m> into the disjoint union
-		<me> \powset{A_k} = \powset{A_{k-1}} \sqcup \cmplmnt{\powset{A_{k-1}}}. </me>
+		<md> \powset{A_k} = \powset{A_{k-1}} \sqcup \cmplmnt{\powset{A_{k-1}}}. </md>
 		Notice that the elements of <m>\powset{A_{k-1}}</m> are precisely those subsets of <m>A_k</m> that <em>do not</em> contain the element <m>k</m>, and therefore the elements of <m>\cmplmnt{\powset{A_{k-1}}}</m>  are precisely those subsets of <m>A_k</m> that <em>do</em> contain the element <m>k</m>.
 		So
-		<me> B \in \powset{A_{k-1}} \quad \lgcimplies \quad B \cup \{k\} \in \cmplmnt{\powset{A_{k-1}}} </me>.
+		<md> B \in \powset{A_{k-1}} \quad \lgcimplies \quad B \cup \{k\} \in \cmplmnt{\powset{A_{k-1}}} </md>.
 		This correspondence actually gives us a bijection
 		<md>
 			<mrow> \powset{A_{k-1}} \amp \to \cmplmnt{\powset{A_{k-1}}}, </mrow>
@@ -394,14 +394,14 @@ This fact lets us relate finite sets to each other.
 		(Check!)
 		</p><p>
 		Now we have
-		<me> N_{k-1} = \card{\powset{A_{k-1}}} = \card{\cmplmnt{\powset{A_{k-1}}}} </me>.
+		<md> N_{k-1} = \card{\powset{A_{k-1}}} = \card{\cmplmnt{\powset{A_{k-1}}}} </md>.
 		Since
-		<me> \powset{A_k} = \powset{A_{k-1}} \sqcup \cmplmnt{\powset{A_{k-1}}} </me>,
+		<md> \powset{A_k} = \powset{A_{k-1}} \sqcup \cmplmnt{\powset{A_{k-1}}} </md>,
 		we then have
-		<me> N_k = N_{k-1} + N_{k-1} = 2 N_{k-1} </me>,
+		<md> N_k = N_{k-1} + N_{k-1} = 2 N_{k-1} </md>,
 		a recursively defined sequence.
 		Solving this recurrence relation by iteration yields
-		<me> N_k = 2^k </me>.
+		<md> N_k = 2^k </md>.
 	</p></solution>
 </problem>
 
@@ -425,7 +425,7 @@ This fact lets us relate finite sets to each other.
 		In <xref ref="exercise-cardinality-same-card-induces-same-power-set-card" />,
 		you are asked to prove that two sets of the same cardinality also have power sets of the same cardinality.
 		Using this fact and the result of <xref ref="wexample-cardinality-pow-set" />,
-		we have <me> \card{\powset{A}} = \card{\powset{\{1,2,3,\dots,n\}}} = 2^n </me>.
+		we have <md> \card{\powset{A}} = \card{\powset{\{1,2,3,\dots,n\}}} = 2^n </md>.
 	</p></proof>
 </theorem>
 
@@ -441,10 +441,10 @@ This fact lets us relate finite sets to each other.
 % 			\cmplmnt{\powset{A'}} &= \setdef{B\in\powset{A}}{a_k\in B},
 % 		</mrow></md>
 % 		and <m>\powset{A}</m> is the disjoint union of <m>\powset{A'}</m> and <m>\cmplmnt{\powset{A'}}</m>. Moreover, there is a bijection <m>\powset{A'} \to \cmplmnt{\powset{A'}}</m> by <m>B \mapsto B\cup\{a_k\}</m>. Therefore, if <m>B_0, B_1, B_2, \dotsc, B_{2^k}</m> is a sequence which contains each element of <m>\powset{A'}</m> exactly once, then the sequence
-% 		<me>
+% 		<md>
 % 			B_0, \, B_0 \cup \{a_k\}, \, B_1, \, B_1 \cup \{a_k\}, \, B_2, \, B_2 \cup \{a_k\},
 % 			\, \dotsc, \, B_{2^k}, B_{2^k} \cup \{a_k\},
-% 		</me>
+% 		</md>
 % 		contains each element of <m>\powset{A}</m> exactly once. Since there are <m>2(2^k) = 2^{k+1}</m> elements in this sequence, we have <m>\card{\powset{A}} = 2^{k+1}</m>, as desired.
 % 		\qedhere
 % 	</dl>
@@ -493,7 +493,7 @@ Therefore, one must demonstrate that no <em>surjection</em> <m>\natnumlt{m} \sfu
 	<p>
 	Suppose we have an alphabet consisting of a single letter <m>\Sigma = \{\mathrm{x}\}</m>.
 	Then the set of words
-	<me> \words{\Sigma} = \{x,\, xx,\, xxx,\, \dotsc \} </me>
+	<md> \words{\Sigma} = \{x,\, xx,\, xxx,\, \dotsc \} </md>
 	is infinite.
 	</p><p>
 	To verify this, we will argue that no function <m>\natnumlt{m} \to \words{\Sigma}</m> can be surjective,
@@ -506,7 +506,7 @@ Therefore, one must demonstrate that no <em>surjection</em> <m>\natnumlt{m} \sfu
 	Function <m>f</m> defines a
 	<xref ref="definition-recur-induct-finite-seq" text="custom">finite sequence</xref>
 	of words from <m>\words{\Sigma}</m>:
-	<me> w_0, w_1, w_2, \dotsc, w_{m-1}, </me>
+	<md> w_0, w_1, w_2, \dotsc, w_{m-1}, </md>
 	where each <m>w_j</m> is the image <m>f(j)</m>.
 	We have two cases.
 	</p>
@@ -515,7 +515,7 @@ Therefore, one must demonstrate that no <em>surjection</em> <m>\natnumlt{m} \sfu
 	</p></case>
 	<case><title>Otherwise</title><p>
 		In this case, consider the word we get by concatenating the words <m>w_0, w_1, \dotsc, w_{m-1}</m> together <em>twice over</em>:
-		<me> w = w_0 w_1 w_2 \dotsm w_{m-1} w_0 w_1 w_2 \dotsm w_{m-1} </me>.
+		<md> w = w_0 w_1 w_2 \dotsm w_{m-1} w_0 w_1 w_2 \dotsm w_{m-1} </md>.
 		(Note that this is not multiplication, we are just writing the words one after the other to create one big word.)
 		Then this word is certainly longer than any of the individual words <m>w_j</m>,
 		and so cannot be equal to one of those words.
@@ -667,13 +667,13 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 	</tabular>
 	<p>
 	This bijection can be expressed by the formula
-	<me>
+	<md>
 		f(n) =
 		\begin{cases}
 			\frac{m}{2}, \amp m \text{ even}, \\
 			-\frac{m+1}{2}, \amp m \text{ odd}.
 		\end{cases}
-	</me>
+	</md>
 	</p>
 </example>
 
@@ -692,7 +692,7 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 	<p>
 	Recall from first-year calculus that for <m>a,b \in \R</m> with <m>a \lt b</m>,
 	we define the <term>open interval</term> from <m>a</m> to <m>b</m> to be the set of all real numbers <em>strictly</em> between <m>a</m> and <m>b</m>:
-	<me> (a,b) = \setdef{x \in \R}{a \lt x \lt b} </me>.
+	<md> (a,b) = \setdef{x \in \R}{a \lt x \lt b} </md>.
 	</p>
 	<figure>
 		<caption>An interval on the real number line.</caption>
@@ -757,7 +757,7 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 		<li>
 			<p>
 			Let <m>X</m> represent the <m>x</m>-axis in the plane,
-			<ie /> <me> X = \setdef{(x,0)}{x \in \R} \subseteq \R^2 </me>.
+			<ie /> <md> X = \setdef{(x,0)}{x \in \R} \subseteq \R^2 </md>.
 			Let <m>\funcdef{f}{\hat{S}}{X}</m> be defined as follows:
 			for <m>(x,y)\in \hat{S}</m>, let <m>f(x,y)</m> be the <m>x</m>-intercept of the line through points <m>(0,1),(x,y)</m>.
 			</p>
@@ -834,7 +834,7 @@ In this section, we look at how to count collections by finding a collection of 
 	later in the course,
 	<!-- TODO <xref ref="chapter-counting" />, -->
 	you will be able to come back to this example to verify that
-	<me> \card{P} = \card{W} = 715 </me>.
+	<md> \card{P} = \card{W} = 715 </md>.
 	</p>
 </example>
 

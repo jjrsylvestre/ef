@@ -120,7 +120,7 @@ respective owners.
 		and let <m>E(f,g)</m> represent the predicate <m>g = f</m>,
 		where <m>f</m> and <m>g</m> are free variables in the domain of functions in the real variable <m>x</m>.
 		Consider the statement
-		<me> (\forall f)(\forall g)\Bbrac{(\exists h)\bbrac{P(f,h) \lgcand P(g,h)} \lgccond E(f,g)} </me>.
+		<md> (\forall f)(\forall g)\Bbrac{(\exists h)\bbrac{P(f,h) \lgcand P(g,h)} \lgccond E(f,g)} </md>.
 	</p></introduction>
 	<task xml:id="exercise-pred-logic-multivar-predicate-to-english-to-english"><p>
 		<!-- \label{EXERCISE::pred.logic::multivar.predicate.to.english::to.english} -->

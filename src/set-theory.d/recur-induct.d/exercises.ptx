@@ -19,7 +19,7 @@ respective owners.
 <!-- BEGIN TODO CHECK WHERE THESE ARE FROM... ROMAN? -->
 <exercise><p>
 	Compute each of the terms <m>s_2,s_3,s_4,s_5,s_6</m> for the sequence defined recursively by
-	<me> s_n = \sqrt{s_{n-2}^2 + s_{n-1}^2}, \quad n \ge 2, </me>
+	<md> s_n = \sqrt{s_{n-2}^2 + s_{n-1}^2}, \quad n \ge 2, </md>
 	with initial terms <m>s_0 = 3</m> and <m> s_1 = 4</m>.
 </p></exercise>
 
@@ -92,10 +92,10 @@ respective owners.
 	Explicitly describe how to construct the following logical statement in a finite number of steps using the inductive definition for <m>\mathscr{L}</m>,
 	the set of all possible logical statements,
 	given in <xref ref="example-recur-induct-construct-logical-statements" />.
-	<me>
+	<md>
 		(p_1 \lgcand p_2) \lgccond
 		\bbrac{ (\lgcnot p_3 \lgcor p_1) \lgcbicond (p_3 \lgcand \lgcnot p_2 ) }
-	</me>
+	</md>
 </p></exercise>
 
 <exercise>
@@ -105,7 +105,7 @@ respective owners.
 		<li>
 			Whenever <m>a,b \in \mathscr{C}</m>,
 			then so are
-			<me> a+b, \quad ab, \quad a/b, \quad \sqrt{a} </me>.
+			<md> a+b, \quad ab, \quad a/b, \quad \sqrt{a} </md>.
 		</li>
 		<li> Whenever <m>a,b \in \mathscr{C}</m> with <m>a>b</m>, then <m>a-b</m> is also in <m>\mathscr{C}</m>. </li>
 	</ol></p></case>

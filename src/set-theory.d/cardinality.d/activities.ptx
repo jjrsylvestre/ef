@@ -17,7 +17,7 @@ respective owners.
 
 <activity><p>
 	Use the definition of <term><xref ref="definition-cardinality-itself" text="custom">cardinality</xref></term>
-	to verify that <m>\card{A} = 8</m> for <me> A = \{1,2,4,8,16,32,64,128\} </me>.
+	to verify that <m>\card{A} = 8</m> for <md> A = \{1,2,4,8,16,32,64,128\} </md>.
 </p></activity>
 
 <activity xml:id="activity-cardinality-subset-of-finite">

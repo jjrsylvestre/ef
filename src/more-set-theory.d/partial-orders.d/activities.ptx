@@ -86,11 +86,11 @@ respective owners.
 <activity>
 	<p>
 	Recall that <m>(a,b)\subseteq \R</m> means an <term>open interval</term> on the real number line:
-	<me> (a,b) = \setdef{x \in \R}{a \lt x \lt b} </me>.
+	<md> (a,b) = \setdef{x \in \R}{a \lt x \lt b} </md>.
 	Let <m>\mathord{\le}</m> be the usual <q>less than or equal to</q> total order on the set
-	<me> A = (-2,0)\cup(0,2) </me>.
+	<md> A = (-2,0)\cup(0,2) </md>.
 	Consider the subset
-	<me> B = \setdef{-\frac{1}{n}}{n \in \N, \, n \ge 1} \subseteq A </me>.
+	<md> B = \setdef{-\frac{1}{n}}{n \in \N, \, n \ge 1} \subseteq A </md>.
 	Determine an upper bound for <m>B</m> in <m>A</m>.
 	Then formally prove that <m>B</m> has no <em>least</em> upper bound in <m>A</m> by arguing that every element of <m>A</m> fails the criteria in the definition of <term><xref ref="definition-partial-orders-least-upper-bound" text="title" /></term>.
 	</p>

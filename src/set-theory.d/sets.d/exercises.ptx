@@ -49,7 +49,7 @@ respective owners.
 				<mrow> P \amp = \text{ the set of Augustana students who will pass all their courses. } </mrow>
 			</md>
 			Symbols:
-			<me>
+			<md>
 				A, \quad
 				R, \quad
 				S, \quad
@@ -64,7 +64,7 @@ respective owners.
 				\subseteq, \quad
 				\subsetneqq, \quad
 				\emptyset
-			</me>.
+			</md>.
 		</p></introduction>
 		<task><p> All Augustana students who attend class regularly and study diligently will pass all their courses. </p></task>
 		<task><p> Some Augustana students attend class regularly but do not study diligently. </p></task>
@@ -87,7 +87,7 @@ respective owners.
 				<mrow> S \amp = \text{ the set of square numbers. } </mrow>
 			</md>
 			Symbols:
-			<me>
+			<md>
 				2, \quad
 				\N, \quad
 				P, \quad
@@ -106,7 +106,7 @@ respective owners.
 				\subsetneqq, \quad
 				\emptyset, \quad
 				\{\phantom{x}\}.
-			</me>
+			</md>
 			</p>
 
 		</introduction>
@@ -136,7 +136,7 @@ respective owners.
 				f_3(x) \amp = \tan x
 			</mrow></md>
 			Symbols:
-			<me>
+			<md>
 				\mathscr{F}, \;\;\;
 				\mathscr{C}, \;\;\;
 				\mathscr{D}, \;\;\;
@@ -156,7 +156,7 @@ respective owners.
 				\subseteq, \;\;\;
 				\subsetneqq, \;\;\;
 				\emptyset.
-			</me>
+			</md>
 		</p></introduction>
 		<task><p> The function <m>f_1(x)</m> is differentiable and nonnegative. </p></task>
 		<task><p> The function <m>f_2(x)</m> is continuous and nonnegative, but not differentiable. </p></task>
@@ -195,7 +195,7 @@ respective owners.
 <exercise xml:id="exercise-sets-words-disjoint-union-of-lengths"><p> <!-- \label{EXERCISE::sets::words.disjoint.union.of.lengths} -->
 	Suppose <m>\Sigma</m> is an alphabet.
 	Prove that <m>\words{\Sigma}</m> is the disjoint union of the subsets
-	<me> \words{\Sigma}_0, \words{\Sigma}_1, \words{\Sigma}_2, \dotsc, \words{\Sigma}_n, \dotsc </me>.
+	<md> \words{\Sigma}_0, \words{\Sigma}_1, \words{\Sigma}_2, \dotsc, \words{\Sigma}_n, \dotsc </md>.
 </p></exercise>
 
 <exercise>
@@ -210,7 +210,7 @@ respective owners.
 	Make sure you have all the pairs of braces <m>\{\phantom{x}\}</m> you should have.
 	</p><p>
 	Without computing it, make a conjecture about the number of elements in the set
-	<me> \powset{ \, \powset{ \, \powset{ \, \powset{ \, \powset{ \emptyset } \, } \, } \, } \, }. </me>
+	<md> \powset{ \, \powset{ \, \powset{ \, \powset{ \, \powset{ \emptyset } \, } \, } \, } \, }. </md>
 	</p>
 </exercise>
 

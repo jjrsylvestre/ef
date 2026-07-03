@@ -70,7 +70,7 @@ respective owners.
 		<xref ref="proposition-logic-equiv-rules-prop-calculus-cond-bicond-bicond">Rule</xref>
 		from <xref ref="proposition-logic-equiv-rules-prop-calculus" />,
 		use propositional calculus to prove the equivalence
-		<me> p \lgcbicond q \lgcequiv (\lgcnot p \lgcor q) \lgcand (p \lgcor \lgcnot q) </me>.
+		<md> p \lgcbicond q \lgcequiv (\lgcnot p \lgcor q) \lgcand (p \lgcor \lgcnot q) </md>.
 	</p></task>
 </exercise>
 
@@ -78,8 +78,8 @@ respective owners.
 	<p>
 	Use <xref ref="exercise-logic-equiv-biconditional-constructed" text="type-local" />
 	to demonstrate that
-	<term>exclusive or</term> <me>(p \lgcor q) \lgcand \lgcnot (p \lgcand q)</me>
-	is equivalent to <me>p \lgcbicond \lgcnot q</me>.
+	<term>exclusive or</term> <md>(p \lgcor q) \lgcand \lgcnot (p \lgcand q)</md>
+	is equivalent to <md>p \lgcbicond \lgcnot q</md>.
 	</p>
 	<aside><title>See</title><p>
 		<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or">Statement</xref>

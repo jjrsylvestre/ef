@@ -67,7 +67,7 @@ respective owners.
 	<statement><p><em>Prove by proving the contrapositive:</em> if <m>2^n - 1</m> is prime, then <m>n</m> is prime. </p></statement>
 	<hint><p>
 		You may find the following <q>difference of powers</q> factorization formula useful:
-		<me> x^m - y^m = (x-y)(x^{m-1} + x^{m-2}y + x^{m-3}y^2 + \dotsb + x^2y^{m-3} + x y^{m-2} + y^{m-1}). </me>
+		<md> x^m - y^m = (x-y)(x^{m-1} + x^{m-2}y + x^{m-3}y^2 + \dotsb + x^2y^{m-3} + x y^{m-2} + y^{m-1}). </md>
 	</p></hint>
 </exercise>
 

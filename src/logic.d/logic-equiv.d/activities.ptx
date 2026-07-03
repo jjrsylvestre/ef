@@ -63,7 +63,7 @@ respective owners.
 <activity xml:id="activity-logic-equiv-construct-bicond">
 	<introduction><p>
 		In this activity, we will justify the equivalence
-		<me> p \lgcbicond q \lgcequiv (p\lgccond q) \lgcand (q \lgccond p) </me>.
+		<md> p \lgcbicond q \lgcequiv (p\lgccond q) \lgcand (q \lgccond p) </md>.
 		So consider the statements <m>A = p \lgcbicond q</m> and <m>B = (p\lgccond q) \lgcand (q \lgccond p)</m>.
 	</p></introduction>
 	<task xml:id="activity-logic-equiv-construct-bicond-1">

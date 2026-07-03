@@ -84,7 +84,7 @@ But efficiently counting large collections can be difficult!
 	<solution>
 		<p>
 		Write <m>\leset{\words{\Sigma}}{3}</m> to mean the set of words in alphabet <m>\Sigma</m> of length <m>3</m> or less.
-		Then <me> \leset{\words{\Sigma}}{3} = \words{\Sigma}_0 \disjunion \words{\Sigma}_1 \disjunion \words{\Sigma}_2 \disjunion \words{\Sigma}_3 </me>,
+		Then <md> \leset{\words{\Sigma}}{3} = \words{\Sigma}_0 \disjunion \words{\Sigma}_1 \disjunion \words{\Sigma}_2 \disjunion \words{\Sigma}_3 </md>,
 		so we can break into cases based on length and then apply the <xref ref="theorem-counting-add-rule" text="title" />.
 		</p>
 		<case><title>Count <m>\words{\Sigma}_0</m></title><p>
@@ -97,7 +97,7 @@ But efficiently counting large collections can be difficult!
 		</p></case>
 		<case><title>Count <m>\words{\Sigma}_2</m></title><p>
 			We can count be simply listing the elements:
-			<me> \words{\Sigma}_2 = \{ \alpha \alpha, \alpha \omega, \omega \alpha, \omega \omega \} </me>.
+			<md> \words{\Sigma}_2 = \{ \alpha \alpha, \alpha \omega, \omega \alpha, \omega \omega \} </md>.
 			So <m>\card{\words{\Sigma}_2} = 4</m>.
 		</p></case>
 		<case><title>Count <m>\words{\Sigma}_3</m></title><p>
@@ -109,7 +109,7 @@ But efficiently counting large collections can be difficult!
 		<case><title>Total count</title><p>
 			Using the <xref ref="theorem-counting-add-rule" text="title" />,
 			we obtain the total by adding up our preliminary results:
-			<me> \card{\leset{\words{\Sigma}}{3}} = 1 + 2 + 4 + 8 = 15 </me>.
+			<md> \card{\leset{\words{\Sigma}}{3}} = 1 + 2 + 4 + 8 = 15 </md>.
 		</p></case>
 	</solution>
 </problem>
@@ -194,7 +194,7 @@ But efficiently counting large collections can be difficult!
 		One-by-one we pick a single element of the first set <m>C</m>, and pair it up with <em>every</em> element of the second set <m>D</m>.
 		From this pattern we see that for each <m>c \in C</m>, there are <m>\card{D}</m> elements of <m>C \cartprod D</m> with <m>c</m> as the first coordinate,
 		and there are <m>\card{C}</m> such groupings of elements from <m>C \cartprod D</m>.
-		So we arrive at <me>\card{C \cartprod D} = \card{C} \cdot \card{D} = 26 \cdot 100 = 2600 </me>.
+		So we arrive at <md>\card{C \cartprod D} = \card{C} \cdot \card{D} = 26 \cdot 100 = 2600 </md>.
 	</p></solution>
 </problem>
 
@@ -248,7 +248,7 @@ But efficiently counting large collections can be difficult!
 
 <example><title>Cardinality of Cartesian product of many sets</title><p>
 	If <m>A_1,A_2,\dotsc,A_m</m> are finite sets with <m>\card{A_j} = m_j</m>,
-	then <me> \card{A_1 \cartprod A_2 \cartprod \dotsb \cartprod A_\ell} = m_1 m_2 \dotsm m_\ell </me>.
+	then <md> \card{A_1 \cartprod A_2 \cartprod \dotsb \cartprod A_\ell} = m_1 m_2 \dotsm m_\ell </md>.
 </p></example>
 
 <problem xml:id="wexample-counting-words-fixed-length"> <!-- worked example -->
@@ -267,7 +267,7 @@ But efficiently counting large collections can be difficult!
 			<li> <m>m</m> ways to choose the <m>\nth</m> letter. </li>
 		</ul>
 		So there are
-		<me> \underbrace{m \cdot m \cdot m \cdot \dotsb \cdot m}_{n \text{ factors}} = m^n </me>
+		<md> \underbrace{m \cdot m \cdot m \cdot \dotsb \cdot m}_{n \text{ factors}} = m^n </md>
 		ways to construct <m>w</m>.
 		We conclude <m>\card{\words{\Sigma}_n} = m^n</m>.
 	</p></solution>
@@ -293,7 +293,7 @@ But efficiently counting large collections can be difficult!
 			<li> only <m>1</m> remaining way to choose the last letter. </li>
 		</ul>
 		So there are
-		<me> 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 </me>
+		<md> 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120 </md>
 		ways to construct <m>w</m>.
 		</p><p>
 		Similar to <xref ref="example-counting-candidates" />,
@@ -368,7 +368,7 @@ But efficiently counting large collections can be difficult!
 			</p>
 			<aside><title>A look ahead</title><p>
 				Notice that the number of injections has turned out to be
-				<me> \frac{\card{B}!}{(\card{B} - \card{A})!} </me>.
+				<md> \frac{\card{B}!}{(\card{B} - \card{A})!} </md>.
 				We will understand better how this formula arises in <xref ref="section-permutations-subsets" />.
 			</p></aside>
 		</case>
@@ -399,9 +399,9 @@ where the collection we actually want to count corresponds to equivalence classe
 		Suppose <m>\mathord{\equiv}</m> is an equivalence relation on a finite set <m>A</m> so that the equivalence classes
 		<alert>all have the same number of elements</alert>.
 		Then
-		<me> \ncardop \{ \text{equivalence classes} \} = \frac{\card{A}}{\text{common size of classes}} </me>.
+		<md> \ncardop \{ \text{equivalence classes} \} = \frac{\card{A}}{\text{common size of classes}} </md>.
 		That is,
-		<me> \card{A / \mathord{\equiv}} = \frac{\card{A}}{\card{\eqclass{a}}} </me>,
+		<md> \card{A / \mathord{\equiv}} = \frac{\card{A}}{\card{\eqclass{a}}} </md>,
 		where <m>a</m> is an arbitrary element of <m>A</m>.
 	</p></statement>
 	<proof><p>
@@ -409,12 +409,12 @@ where the collection we actually want to count corresponds to equivalence classe
 		and write <m>C</m> for the common cardinality of the classes.
 		We know that the equivalence classes partition the set <m>A</m>,
 		so using the <xref ref="theorem-counting-add-rule" text="title" /> we have
-		<me> \card{A} = \card{\eqclass{a_1}} + \card{\eqclass{a_2}} + \dotsb + \card{\eqclass{a_N}} </me>,
+		<md> \card{A} = \card{\eqclass{a_1}} + \card{\eqclass{a_2}} + \dotsb + \card{\eqclass{a_N}} </md>,
 		where <m>a_1, a_2, \dotsc, a_N</m> are a <xref ref="definition-equiv-rel-complete-rep-set" text="title" />.
 		But we have assumed that these class cardinalities are all equal to each other,
 		with each class satisfying <m>\card{\eqclass{a_j}} = C</m>.
-		So <me> \card{A} = \underbrace{C + C + \dotsb + C}_{N \text{ terms}} = N C </me>,
-		which leads to <me> N = \frac{\card{A}}{C} </me>,
+		So <md> \card{A} = \underbrace{C + C + \dotsb + C}_{N \text{ terms}} = N C </md>,
+		which leads to <md> N = \frac{\card{A}}{C} </md>,
 		as desired.
 	</p></proof>
 </theorem>
@@ -434,7 +434,7 @@ where the collection we actually want to count corresponds to equivalence classe
 		and let <m>\Lambda'</m> be the set of words in <m>\words{(\Sigma')}_4</m> that have no repeated letters.
 		Similar to <xref ref="wexample-counting-words-no-repeats" />,
 		we have
-		<me> \card{\Lambda'} = 4 \cdot 3 \cdot 2 \cdot 1 = 24 </me>.
+		<md> \card{\Lambda'} = 4 \cdot 3 \cdot 2 \cdot 1 = 24 </md>.
 		For each pair of these words, write <m>w_1 \equiv w_2</m> if the following two conditions hold.
 		<ol marker="(i)">
 			<li>
@@ -450,12 +450,12 @@ where the collection we actually want to count corresponds to equivalence classe
 		Each class consists of exactly two words <m>\{w_1,w_2\}</m>,
 		where <m>w_2</m> has an <m>\alpha_2</m> where <m>w_1</m> has an <m>\alpha_1</m> and an <m>\alpha_1</m> where <m>w_1</m> has an <m>\alpha_2</m>.
 		For example, one class of <m>\Lambda' / \mathord{\equiv}</m> is
-		<me> \eqclass{\alpha_1 \beta \alpha_2 \gamma} = \{ \alpha_1 \beta \alpha_2 \gamma, \alpha_2 \beta \alpha_1 \gamma \} </me>.
+		<md> \eqclass{\alpha_1 \beta \alpha_2 \gamma} = \{ \alpha_1 \beta \alpha_2 \gamma, \alpha_2 \beta \alpha_1 \gamma \} </md>.
 		Effectively, the classes remove the distinction between <m>\alpha_1</m> and <m>\alpha_2</m>,
 		so that they might as well be the same letter, say, <m>\alpha</m>.
 		In other words, there is a bijective correspondence between the classes in <m>\Lambda' / \mathord{\equiv}</m> and the words in <m>\Lambda</m>.
 		Using the <xref ref="theorem-counting-div-rule" text="title" />, we have
-		<me> \card{\Lambda} = \card{\Lambda' / \mathord{\equiv}} = \frac{\card{\Lambda'}}{2} = \frac{24}{2} = 12 </me>.
+		<md> \card{\Lambda} = \card{\Lambda' / \mathord{\equiv}} = \frac{\card{\Lambda'}}{2} = \frac{24}{2} = 12 </md>.
 	</p></solution>
 </problem>
 
@@ -489,7 +489,7 @@ where the collection we actually want to count corresponds to equivalence classe
 	</p></statement>
 	<proof><p>
 		Let <m>A</m> be the set of objects and <m>B</m> the set of containers,
-		so that <me> \card{B} = n \lt m = \card{A} </me>.
+		so that <md> \card{B} = n \lt m = \card{A} </md>.
 		Also let <m>\funcdef{f}{A}{B}</m> represent the function where <m>f(a) = b</m> means that object <m>a</m> has been placed in container <m>b</m>.
 		Then the <xref ref="theorem-counting-pigeon" /> tells us that <m>f</m> cannot be an injection,
 		which means that there is at least one pair of distinct objects <m>a_1,a_2</m> with <m>f(a_1) = f(a_2)</m>.
@@ -518,7 +518,7 @@ where the collection we actually want to count corresponds to equivalence classe
 	<solution>
 		<p>
 		Since <m>201 \gt 200</m>, there is no injection
-		<me> \{\text{students who took a pudding}\} \ifuncto \{\text{bowls of chocolate pudding}\} </me>.
+		<md> \{\text{students who took a pudding}\} \ifuncto \{\text{bowls of chocolate pudding}\} </md>.
 		(<em>Or:</em> use students as objects, bowls of chocolate pudding as containers.)
 		</p><p>
 		But we can't actually have two students take the same bowl of pudding,
@@ -535,7 +535,7 @@ where the collection we actually want to count corresponds to equivalence classe
 	</p></statement>
 	<solution><p>
 		Collect together the (unordered) pairs of numbers that add to <m>21</m>:
-		<me> B = \bigl\{ \{1,20\}, \{2,19\}, \dotsc, \{10,11\} \bigr\} \subseteq \powset{\{1,2,\dotsc, 20\}} </me>.
+		<md> B = \bigl\{ \{1,20\}, \{2,19\}, \dotsc, \{10,11\} \bigr\} \subseteq \powset{\{1,2,\dotsc, 20\}} </md>.
 		Notice that <m>\card{B} = 10</m>.
 		Thinking of the elements of <m>B</m> as containers and elements of <m>A</m> as objects,
 		place object <m>a</m> into container <m>b</m> if <m>a \in b</m>.
@@ -615,7 +615,7 @@ so that object <m>a \in A</m> is <q>placed</q> in container <m>b \in B</m> when 
 			<mrow> \amp = \ell \cdot \card{f(A)}. </mrow>
 		</md>
 		But <m>f(A)</m> is a subset of the finite set <m>B</m>, and so <m>\card{f(A)} \le \card{B}</m>.
-		Combining this with the calculation above gives <me> \card{A} \le \ell \cdot \card{f(A)} \le \ell \cdot \card{B} </me>.
+		Combining this with the calculation above gives <md> \card{A} \le \ell \cdot \card{f(A)} \le \ell \cdot \card{B} </md>.
 		</p>
 	</proof>
 </theorem>
@@ -630,7 +630,7 @@ so that object <m>a \in A</m> is <q>placed</q> in container <m>b \in B</m> when 
 	</p></statement>
 	<proof><title>Proof idea</title><p>
 		Again, let <m>A</m> be the set of objects and <m>B</m> the set of containers,
-		so that <me> \card{A} = m \gt \ell n = \ell \cdot \card{B} </me>.
+		so that <md> \card{A} = m \gt \ell n = \ell \cdot \card{B} </md>.
 		Then apply the <xref ref="theorem-counting-strong-pigeon" text="title" />.
 	</p></proof>
 </corollary>

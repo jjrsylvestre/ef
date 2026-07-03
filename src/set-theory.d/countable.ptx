@@ -192,7 +192,7 @@ so we encapsulate it as the proof of a Lemma, rather than just a plain Example.
 		<p>
 		Suppose <m>\{a_k\}</m> is an infinite sequence of elements of <m>\mathscr{C}</m>.
 		We can create an element <m>r \in \mathscr{C}</m> which is not in the sequence as follows.
-		Set <me>r = 0.r_1 r_2 r_3 r_4 \dotsm</me>, where <m>r_k</m> is the digit in the <m>\nth[k]</m> decimal place of <m>r</m>,
+		Set <md>r = 0.r_1 r_2 r_3 r_4 \dotsm</md>, where <m>r_k</m> is the digit in the <m>\nth[k]</m> decimal place of <m>r</m>,
 		according to the following rules.
 		<ul>
 			<li> If the <m>\nth[k]</m> decimal place of <m>a_{k-1}</m> is <m>0</m>, set <m>r_k = 1</m>. </li>
@@ -295,7 +295,7 @@ They can be used to more easily prove that a set is countable or uncountable usi
 			Since <m>A</m> and <m>B</m> are countable, we can write their elements as sequences:
 			<md><mrow> A \amp = \{ \, a_0, \, a_1, \, a_2, \, \dotsc \, \}, \amp B \amp = \{ \, b_0, \, b_1, \, b_2, \, \dotsc \, \} </mrow></md>.
 			We can then write the elements of <m>A \sqcup B</m> in a sequence by interleaving these two sequences:
-			<me> A \sqcup B = \{ \, a_0, \, b_0, \, a_1, \, b_1, \, a_2, \, b_2, \, \dotsc \, \} </me>.
+			<md> A \sqcup B = \{ \, a_0, \, b_0, \, a_1, \, b_1, \, a_2, \, b_2, \, \dotsc \, \} </md>.
 			</p>
 		</li>
 	</ol></p></proof>
@@ -454,7 +454,7 @@ But <m>\R</m> is so large that it is <em>un</em>countable, so it seems like <m>\
 				being a power set element, is a <em>subset</em> of <m>A</m>.
 				So for each <m>a \in A</m> we can ask whether <m>a</m> is contained in the subset <m>f(a)</m> or not.
 				Collecting together the <q>or not</q> answers, set
-				<me> X = \setdef{a \in A}{a \notin f(a)}. </me>
+				<md> X = \setdef{a \in A}{a \notin f(a)}. </md>
 				Note that <m>X</m> is a subset of <m>A</m>,
 				so again this means that it is also an <em>element</em> of <m>\powset{A}</m>.
 				</p><p>

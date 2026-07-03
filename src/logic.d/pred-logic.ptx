@@ -273,7 +273,7 @@ Even more, the order of a <q>mixed</q> pair of quantifiers implies a dependence 
 	Suppose <m>A(x,y)</m> is a predicate statement,
 	where <m>x</m> and <m>y</m> are variables that can only take on the values <m>0</m>, <m>1</m>, or <m>2</m>.
 	Further suppose that it is known that <m>A(x,y)</m> is true in the specific instances
-	<me> A(0,1), A(1,0), A(1,1), A(1,2), A(2,2) </me>.
+	<md> A(0,1), A(1,0), A(1,1), A(1,2), A(2,2) </md>.
 	<ol>
 		<li><p>
 			Statement <m>(\forall x)(\exists y) A(x,y)</m> is true because for each value of <m>x</m> we can exhibit at least one value <m>y</m> for which <m>A(x,y)</m> is true:
@@ -406,7 +406,7 @@ but we will establish rules that make it easy in symbolic logic.
 	<statement>
 		<p>
 		Determine and <q>simplify</q> the negation of
-		<me>
+		<md>
 			(\forall x)\left(
 				A(x) \lgccond \Bbrac{
 					(\exists y)(\forall z)\bbrac{
@@ -414,7 +414,7 @@ but we will establish rules that make it easy in symbolic logic.
 					}
 				}
 			\right)
-		</me>.
+		</md>.
 		</p>
 	</statement>
 	<solution><p>
@@ -553,7 +553,7 @@ in <xref ref="example-symb-lang-basic-tauts" />).
 		<mrow> C(x) \amp = \text{ “} x \text{ is tall,”} </mrow>
 	</md>
 	and consider the statement
-	<me> (\forall x)\Bbrac{\bbrac{A(x) \lgcand B(x)} \lgccond C(x)}, </me>
+	<md> (\forall x)\Bbrac{\bbrac{A(x) \lgcand B(x)} \lgccond C(x)}, </md>
 	which says <q>every three-hundred-year-old Augustana student is tall</q>.
 	This statement is true, since a conditional <m>p \lgccond q</m> is true when <m>p</m> is false,
 	and <m>A(x) \lgcand B(x)</m> is false for each and every <m>x</m>:
