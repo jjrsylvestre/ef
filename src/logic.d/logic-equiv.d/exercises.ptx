@@ -18,53 +18,64 @@ respective owners.
 
 
 <exercise>
+
 	<introduction><p> Consider again the two collections of related conditional statements in <xref ref="example-logic-equiv-related-conditionals" />. </p></introduction>
+
 	<task><p>
 		For each of these collections,
 		determine which two of the four related statements are true and which two are false.
 		For the two false statements in each collection,
 		demonstrate it by providing examples where the statements are false.
 	</p></task>
+
 	<task><p>
 		Give an example of a conditional statement involving mathematical objects
 		for which all four of conditional, contrapositive, converse, and inverse are all true.
 	</p></task>
+
 </exercise>
 
 <exercise xml:id="exercise-logic-equiv-taut-contra-2">
 	<!-- TODO why is this -2 ? -->
-	<!-- \label{EXERCISE::logic.equiv::taut.contra.2} -->
+
 	<introduction><p> Suppose <m> U </m> is a tautology and <m> E </m> is a contradiction. </p></introduction>
+
 	<task><p> Show that <m> P \lgcand U \lgcequiv P </m> for every statement <m> P </m>. </p></task>
+
 	<task><p> Show that <m> P \lgcor E \lgcequiv P </m> for every statement <m> P </m>. </p></task>
+
 </exercise>
 
 <exercise xml:id="exercise-logic-equiv-neg-and-or">
-	<!-- \label{EXERCISE::logic.equiv::equiv.neg.wedge.vee} -->
+
 	<introduction><p>
 		Consider the equivalence of statements
 		<m> p \lgccond (q_1 \lgcor q_2) \lgcequiv (p \lgcand \lgcnot q_1) \lgccond q_2 </m>.
 	</p></introduction>
+
 	<task><p> Use a truth table to verify the equivalence. </p></task>
+
 	<task><p> Use propositional calculus to demonstrate the equivalence. </p></task>
+
 </exercise>
 
 <exercise xml:id="exercise-logic-equiv-basic-equivalences"><p>
-	<!-- \label{EXERCISE::logic.equiv::basic.equivalences} -->
 	Use truth tables to establish the double negation, idempotence, commutativity, associativity, distributivity, and DeMorgan's Law equivalences
 	presented in <xref ref="proposition-logic-equiv-rules-prop-calculus" />.
 </p></exercise>
 
 <exercise xml:id="exercise-logic-equiv-biconditional-constructed">
-	<!-- \label{EXERCISE::logic.equiv::biconditional.constructed} -->
+
 	<introduction><p>
 		This exercise asks you to demonstrate that the basic connective <q>if and only if</q> can be constructed out of the basic connectives <q>not</q>, <q>and</q>, and <q>or.</q>
 	</p></introduction>
+
 	<task xml:id="exercise-logic-equiv-biconditional-constructed-1"><p>
 		Use a truth table to prove
 		<xref ref="proposition-logic-equiv-rules-prop-calculus-cond-bicond-bicond">Rule</xref>
 		from <xref ref="proposition-logic-equiv-rules-prop-calculus" />.
 	</p></task>
+
 	<task><p>
 		Starting with
 		<xref ref="proposition-logic-equiv-rules-prop-calculus-cond-bicond-bicond">Rule</xref>
@@ -72,19 +83,22 @@ respective owners.
 		use propositional calculus to prove the equivalence
 		<md> p \lgcbicond q \lgcequiv (\lgcnot p \lgcor q) \lgcand (p \lgcor \lgcnot q) </md>.
 	</p></task>
+
 </exercise>
 
 <exercise>
+
 	<p>
 	Use <xref ref="exercise-logic-equiv-biconditional-constructed" text="type-local" />
-	to demonstrate that
-	<term>exclusive or</term> <md>(p \lgcor q) \lgcand \lgcnot (p \lgcand q)</md>
-	is equivalent to <md>p \lgcbicond \lgcnot q</md>.
+	to demonstrate that <term>exclusive or</term> is equivalent to a biconditional with one term negated:
+	<md> (p \lgcor q) \lgcand \lgcnot (p \lgcand q) \lgcequiv p \lgcbicond \lgcnot q </md>.
 	</p>
+
 	<aside><title>See</title><p>
 		<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or">Statement</xref>
 		of <xref ref="remark-symb-lang-connectives" /> for the difference between <term>inclusive or</term> and <term>exclusive or</term>.
 	</p></aside>
+
 </exercise>
 
 </exercises>

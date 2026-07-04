@@ -61,12 +61,24 @@ that tries to convince others that some particular <term>conclusion</term> is tr
 </dl></p>
 
 <example xml:id="example-arg-valid">
-	<!-- \label{EXAMPLE::valid.argument} -->
 	<title>Argument in English</title>
 	<tabular halign="left">
-		<row><cell>(premise)</cell><cell>If the world is flat, it has an edge.</cell></row>
-		<row bottom="minor"><cell>(premise)</cell><cell>The world does not have an edge.</cell></row>
-		<row><cell>(conclusion)</cell><cell>Therefore, the world is not flat.</cell></row>
+
+		<row>
+			<cell> (premise) </cell>
+			<cell> If the world is flat, it has an edge. </cell>
+		</row>
+
+		<row bottom="minor">
+			<cell> (premise) </cell>
+			<cell> The world does not have an edge. </cell>
+		</row>
+
+		<row>
+			<cell> (conclusion) </cell>
+			<cell> Therefore, the world is not flat. </cell>
+		</row>
+
 	</tabular>
 </example>
 
@@ -74,9 +86,22 @@ that tries to convince others that some particular <term>conclusion</term> is tr
 	<!-- \label{EXAMPLE::valid.but.false.argument} -->
 	<title>Another argument in English</title>
 	<tabular halign="left">
-		<row><cell>(premise)</cell><cell>If the world is round, there exists a Titan named Atlas who holds it aloft in the heavens.</cell></row>
-		<row bottom="minor"><cell>(premise)</cell><cell>The world is round.</cell></row>
-		<row><cell>(conclusion)</cell><cell>Therefore, the Titan Atlas exists.</cell></row>
+
+		<row>
+			<cell> (premise) </cell>
+			<cell> If the world is round, there exists a Titan named Atlas who holds it aloft in the heavens.</cell>
+		</row>
+
+		<row bottom="minor">
+			<cell> (premise) </cell>
+			<cell> The world is round. </cell>
+		</row>
+
+		<row>
+			<cell> (conclusion) </cell>
+			<cell> Therefore, the Titan Atlas exists. </cell>
+		</row>
+
 	</tabular>
 </example>
 
@@ -84,10 +109,27 @@ that tries to convince others that some particular <term>conclusion</term> is tr
 	<!-- \label{EXAMPLE::nonseq.argument} -->
 	<title>Yet another argument in English</title>
 	<tabular halign="left">
-		<row><cell>(premise)</cell><cell>Rectangles are geometric objects that have four sides.</cell></row>
-		<row><cell>(premise)</cell><cell>Parallelograms have four sides.</cell></row>
-		<row bottom="minor"><cell>(premise)</cell><cell>Tetrahedrons have four sides.</cell></row>
-		<row><cell>(conclusion)</cell><cell>Therefore, parallelograms and tetrahedrons are rectangles.</cell></row>
+
+		<row>
+			<cell> (premise) </cell>
+			<cell> Rectangles are geometric objects that have four sides. </cell>
+		</row>
+
+		<row>
+			<cell> (premise) </cell>
+			<cell> Parallelograms have four sides. </cell>
+		</row>
+
+		<row bottom="minor">
+			<cell> (premise) </cell>
+			<cell> Tetrahedrons have four sides. </cell>
+		</row>
+
+		<row>
+			<cell> (conclusion) </cell>
+			<cell> Therefore, parallelograms and tetrahedrons are rectangles. </cell>
+		</row>
+
 	</tabular>
 </example>
 
@@ -128,19 +170,25 @@ regardless of the content and truth/falsity of the individual statements making 
 
 <problem xml:id="wexample-arg-law-of-syllogism"> <!-- worked example -->
 	<statement>
+
 		<p> Test the validity of the following argument. </p>
+
 		<tabular halign="left">
 			<row><cell><m> p \lgccond q </m></cell></row>
 			<row bottom="minor"><cell><m> q \lgccond r </m></cell></row>
 			<row><cell><m> p \lgccond r </m></cell></row>
 		</tabular>
+
 	</statement>
+
 	<solution>
+
 		<p>
 		Let's write out the truth tables for the statements in the argument.
 		However, <em>we are only concerned with truth table rows where every premise is true</em>,
 		so we won't bother completing any rows where a premise ends up being false.
 		</p>
+
 		<tabular halign="center">
 			<col /><col /><col /><col /><col /><col /><col />
 			<row><cell /><cell /><cell /><cell>(pr)</cell><cell>(pr)</cell><cell>(c)</cell></row>
@@ -213,18 +261,23 @@ regardless of the content and truth/falsity of the individual statements making 
 				<cell><m> \correct </m></cell>
 			</row>
 		</tabular>
+
 		<p>
 		As every row that resulted in both premises true also resulted in the conclusion true (as indicated by <m> \correct </m>), the argument is valid.
 		(The <m> \ast </m> symbol indicates a truth value that we don't care about, since it is in a row with at least one premise false.)
 		</p>
+
 	</solution>
+
 	<solution xml:id="wexample-arg-law-of-syllogism-alt-sol">
 		<title>Alternative solution</title>
+
 		<p>
 		Rather than work out the whole truth table, let us consider the question:
 		is there any possible way for the conclusion to be false but all the premises true?
 		Start with the following partial truth table row.
 		</p>
+
 		<tabular halign="center">
 			<row><cell /><cell /><cell /><cell>(pr)</cell><cell>(pr)</cell><cell>(c)</cell></row>
 			<row bottom="minor">
@@ -237,10 +290,12 @@ regardless of the content and truth/falsity of the individual statements making 
 			</row>
 			<row><cell /><cell /><cell right="minor"/><cell><m> \lgctrue </m></cell><cell right="minor"><m> \lgctrue </m></cell><cell><m> \lgcfalse </m></cell></row>
 		</tabular>
+
 		<p>
 		The conclusion is only false when <m> p = \lgctrue </m> and <m> r = \lgcfalse </m>; fill these into the row.
 		Now since <m> p = \lgctrue </m>, the first premise can only be true if <m> q = \lgctrue </m>; fill this into the row.
 		</p>
+
 		<tabular halign="center">
 			<col /><col /><col /><col /><col /><col /><col />
 			<row><cell /><cell /><cell /><cell>(pr)</cell><cell>(pr)</cell><cell>(c)</cell></row>
@@ -262,13 +317,16 @@ regardless of the content and truth/falsity of the individual statements making 
 				<cell><m> \incorrect </m></cell>
 			</row>
 		</tabular>
+
 		<p>
 		We have marked this row as <q>incorrect,</q>
 		because <m> q=\lgctrue </m> and <m> r=\lgcfalse </m> should make the second premise false!
 		So the above truth table row is inconsistent, and therefore there is no way for conclusion to be false and all the premises true.
 		Conclude that the argument is valid.
 		</p>
+
 	</solution>
+
 </problem>
 
 <remark><p>
@@ -279,18 +337,26 @@ regardless of the content and truth/falsity of the individual statements making 
 </p></remark>
 
 <problem> <!-- worked example -->
+
 	<statement>
+
 		<p> Demonstrate that the following argument is <em>in</em>valid. </p>
+
 		<tabular halign="left">
 			<row><cell> If <m> n </m> is even, then <m> n </m> is divisible by <m> 2 </m>. </cell></row>
 			<row><cell> If <m> n </m> is odd, then <m> n+1 </m> is even. </cell></row>
 			<row bottom="minor"><cell> If <m> n </m> is not divisible by <m> 2 </m>, then <m> n </m> is not divisible by <m> 4 </m>. </cell></row>
 			<row><cell> Therefore, if <m> n </m> is not divisible by <m> 4 </m>, then <m> n+1 </m> is even. </cell></row>
 		</tabular>
+
 	</statement>
+
 	<solution>
+
 		<p> Introduce statement variables and write the argument in symbolic form. </p>
+
 		<sidebyside>
+
 			<p>
 			<!-- TODO these are actual unicode quote symbols in there, works OK for HTML but what about latex ? -->
 			<md>
@@ -300,14 +366,18 @@ regardless of the content and truth/falsity of the individual statements making 
 				<mrow> s \amp = \text{ “} n \text{ is divisble by } 4 \text{”} </mrow>
 			</md>
 			</p>
+
 			<tabular halign="left">
 				<row><cell><m> \phantom{\lgcnot}p \lgccond r </m></cell></row>
 				<row><cell><m> \lgcnot p \lgccond q </m></cell></row>
 				<row bottom="minor"><cell><m> \lgcnot r \lgccond \lgcnot s </m></cell></row>
 				<row><cell><m> \lgcnot s \lgccond q </m></cell></row>
 			</tabular>
+
 		</sidebyside>
+
 		<p> Try to construct a truth table row in which all the premises are true but the conclusion is false. </p>
+
 		<tabular halign="center">
 			<row><cell /><cell /><cell /><cell/><cell /><cell /><cell /><cell>(pr)</cell><cell>(pr)</cell><cell>(pr)</cell><cell>(c)</cell></row>
 			<row bottom="minor">
@@ -325,6 +395,7 @@ regardless of the content and truth/falsity of the individual statements making 
 			</row>
 			<row><cell /><cell /><cell /><cell right="minor"/><cell /><cell /><cell right="minor" /><cell><m> \lgctrue </m></cell><cell><m> \lgctrue </m></cell><cell right="minor"><m> \lgctrue </m></cell><cell><m> \lgcfalse </m></cell></row>
 		</tabular>
+
 		<p>
 		Start with the above partial truth table row.
 		The conditional in the conclusion can only be false when <m> \lgcnot s = \lgctrue </m> and <m> q = \lgcfalse </m>;
@@ -335,6 +406,7 @@ regardless of the content and truth/falsity of the individual statements making 
 		fill this and <m> \lgcnot r = \lgcfalse </m> into the row.
 		Finally, check that our choices of truth values for <m> p,q,r,s </m> are consistent with the imposed truth value for the third premise.
 		</p>
+
 		<tabular halign="center">
 			<row><cell /><cell /><cell /><cell /><cell /><cell /><cell /><cell>(pr)</cell><cell>(pr)</cell><cell>(pr)</cell><cell>(c)</cell></row>
 			<row bottom="minor">
@@ -364,43 +436,56 @@ regardless of the content and truth/falsity of the individual statements making 
 				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
+
 		<p>
 		Since there exists a choice of truth values for the statement variables which makes all premises true but the conclusion false, the argument is invalid.
 		</p>
+
 	</solution>
+
 </problem>
 
 <proposition>
 	<title>Some technicalities regarding argument validity</title>
+
 	<p><ol>
+
 		<li> If the conclusion is a tautology, the argument is automatically valid. </li>
+
 		<li> If the premises are all contradictions (<ie /> logically false), the argument is automatically valid. </li>
+
 		<li> If the argument is valid and the premises are all tautologies, then the conclusion must also be a tautology. </li>
+
 		<li>
 			If the argument is valid and the conclusion is a contradiction,
 			then the premises can't all be true at the same time.
 			(That is, in this situation the conjunction of all the premises must be a contradiction.)
 		</li>
+
 	</ol></p>
+
 </proposition>
 
 <remark><p><ol>
+
 	<li>
 		In the logical analysis of an argument, we don't care if the premises are <em>actually</em> true.
 		We only care that the conclusion follows from the premises.
 	</li>
+
 	<li>
 		<em>The order of the premises is irrelevant to the validity of the argument.</em>
 		For arguments written in English language, there may be a preferred order that best illuminates validity or invalidity, but this is  essentially only aesthetic from a logical-analysis point of view.
 	</li>
+
 </ol></p></remark>
 
-<paragraphs><title>Check your understanding</title><p>
+<exercise><p>
 	Verify that an argument
 	<m> A_1, A_2, \dotsc, A_m \therefore C </m>
 	is valid if and only if
 	<m> A_1 \lgcand A_2 \lgcand \dotsb \lgcand A_m \lgcimplies C </m>.
-</p></paragraphs>
+</p></exercise>
 
 </section>
 
@@ -413,18 +498,25 @@ regardless of the content and truth/falsity of the individual statements making 
 <p><dl width="narrow"><li>
 	<title>modus ponens</title>
 	<idx>modus ponens</idx>
+
 	<p> standard argument with form </p>
+
 	<tabular halign="left">
 		<row><cell><m> p \lgccond q </m></cell></row>
 		<row bottom="minor"><cell><m> p </m></cell></row>
 		<row><cell><m> q </m></cell></row>
 	</tabular>
+
 </li></dl></p>
 
 <problem><!-- worked example -->
+
 	<statement><p> Verify the validity of the modus ponens standard argument. </p></statement>
+
 	<solution>
+
 		<p> Verify the validity by ensuring that each row in the truth table with premises all true also has the conclusion true. </p>
+
 		<tabular halign="center">
 			<col /><col /><col /><col />
 			<row><cell>(pr)</cell><cell>(c)</cell><cell>(pr)</cell></row>
@@ -434,7 +526,9 @@ regardless of the content and truth/falsity of the individual statements making 
 			<row><cell><m> \lgcfalse </m></cell><cell right="minor"><m> \lgctrue </m></cell><cell><m> \ast </m></cell></row>
 			<row><cell><m> \lgcfalse </m></cell><cell right="minor"><m> \lgcfalse </m></cell><cell><m> \ast </m></cell></row>
 		</tabular>
+
 	</solution>
+
 </problem>
 
 <example><p>
@@ -450,18 +544,25 @@ regardless of the content and truth/falsity of the individual statements making 
 <p><dl width="narrow"><li>
 	<title>modus tollens</title>
 	<idx><h>modus tollens</h><h>standard argument</h></idx>
+
 	<p> standard argument with form </p>
+
 	<tabular halign="left">
 		<row><cell><m> p \lgccond q </m></cell></row>
 		<row bottom="minor"><cell><m> \lgcnot q </m></cell></row>
 		<row><cell><m> \lgcnot p </m></cell></row>
 	</tabular>
+
 </li></dl></p>
 
 <problem><!-- worked example -->
+
 	<statement><p> Verify the validity of the modus tollens standard argument. </p></statement>
+
 	<solution>
+
 		<p> Verify the validity by ensuring that each row in the truth table with premises all true also has the conclusion true. </p>
+
 		<tabular halign="center">
 			<col /><col /><col /><col /><col /><col />
 			<row><cell /><cell /><cell>(pr)</cell><cell>(pr)</cell><cell>(c)</cell></row>
@@ -477,7 +578,9 @@ regardless of the content and truth/falsity of the individual statements making 
 			<row><cell><m> \lgcfalse </m></cell><cell right="minor"><m> \lgctrue </m></cell><cell><m> \lgctrue </m></cell><cell><m> \lgcfalse </m></cell><cell><m> \ast </m></cell></row>
 			<row><cell><m> \lgcfalse </m></cell><cell right="minor"><m> \lgcfalse </m></cell><cell><m> \lgctrue </m></cell><cell><m> \lgctrue </m></cell><cell><m> \lgctrue </m></cell><cell><m> \correct </m> argument is valid</cell></row>
 		</tabular>
+
 	</solution>
+
 </problem>
 
 <example><p> The argument in <xref ref="example-arg-valid" /> has modus tollens form. </p></example>
@@ -491,12 +594,15 @@ regardless of the content and truth/falsity of the individual statements making 
 	<title>Law of Syllogism</title>
 	<idx><h>Law</h><h>of Syllogism</h></idx>
 	<idx>Syllogism, Law of</idx>
+
 	<p> standard argument with form </p>
+
 	<tabular halign="left">
 		<row><cell><m> p \lgccond q </m></cell></row>
 		<row bottom="minor"><cell><m> q \lgccond r </m></cell></row>
 		<row><cell><m> p \lgccond r </m></cell></row>
 	</tabular>
+
 </li></dl></p>
 
 <note><p> We already verified that the Law of Syllogism is valid in <xref ref="wexample-arg-law-of-syllogism" />. </p></note>
@@ -507,7 +613,9 @@ regardless of the content and truth/falsity of the individual statements making 
 	<title>Extended Law of Syllogism</title>
 	<idx><h>Law</h><h>of Syllogism</h><h>extended</h></idx>
 	<idx><h>Syllogism, Law of</h><h>extended</h></idx>
+
 	<p> standard argument with form </p>
+
 	<tabular halign="right">
 		<row><cell><m> p_1 \lgccond p_2 </m></cell></row>
 		<row><cell><m> p_2 \lgccond p_3 </m></cell></row>
@@ -515,22 +623,26 @@ regardless of the content and truth/falsity of the individual statements making 
 		<row bottom="minor"><cell><m> p_{n-1} \lgccond p_n </m></cell></row>
 		<row><cell><m> p_1 \lgccond p_n </m></cell></row>
 	</tabular>
+
 </li></dl></p>
 
 <note><p>
 	We will verify that the extended Law of Syllogism is a valid argument using mathematical induction in <xref ref="section-induction-syllogism" />.
 </p></note>
 
-<example>
-	<title>A syllogistic argument in English</title>
-	<tabular halign="left">
-		<row><cell> If I don't study hard this term, I won't master the course material. </cell></row>
-		<row><cell> If I don't master the course material, I will fail the course. </cell></row>
-		<row><cell> If I fail the course, I will have to take it again next year. </cell></row>
-		<row bottom="minor"><cell> If I take it again next year, I will have to study harder. </cell></row>
-		<row><cell> Therefore, if I don't study hard this term, I will have to study harder next year. </cell></row>
-	</tabular>
-</example>
+<example><title>A syllogistic argument in English</title><tabular halign="left">
+
+	<row><cell> If I don't study hard this term, I won't master the course material. </cell></row>
+
+	<row><cell> If I don't master the course material, I will fail the course. </cell></row>
+
+	<row><cell> If I fail the course, I will have to take it again next year. </cell></row>
+
+	<row bottom="minor"><cell> If I take it again next year, I will have to study harder. </cell></row>
+
+	<row><cell> Therefore, if I don't study hard this term, I will have to study harder next year. </cell></row>
+
+</tabular></example>
 
 </subsection>
 
@@ -545,27 +657,32 @@ regardless of the content and truth/falsity of the individual statements making 
 	<title>Substitution Rule</title> <!-- [for equivalent statements] -->
 	<idx><h>Rule(s)</h><h>Substitution</h><h>into an argument</h></idx>
 	<idx><h>Substitution Rule</h><h>into an argument</h></idx>
+
 	<p>
 	Suppose <m> A_1, A_2, \dotsc, A_m \therefore C </m> is a valid argument involving statement variables <m> p_1, p_2, \dotsc, p_\ell </m>.
 	If we apply substitution <m> p_i\to B_i </m> to each of <m> A_1, A_2, \dotsc, A_m, C </m>,
 	for some collections of statements <m> B_1, B_2, \dotsc, B_\ell </m>,
 	then the resulting argument is also valid.
 	</p>
+
 </theorem>
 
 <example>
 	<!-- <title>Substituting into an argument</title> -->  <!-- no title because section is so short and already titled this -->
+
 	<p>
 	Since modus tollens is a valid argument,
 	using the substitution rule with the equivalences
 	<md> r \lgcand p \lgcequiv \lgcnot (\lgcnot r \lgcor \lgcnot p) \lgcequiv \lgcnot (r\lgccond \lgcnot p) </md>,
 	demonstrates that the following argument is also valid.
 	</p>
+
 	<tabular halign="left">
 		<row><cell><m> (p \lgcbicond q) \lgccond  (r \lgccond \lgcnot p) </m></cell></row>
 		<row bottom="minor"><cell><m> r \lgcand p </m></cell></row>
 		<row><cell><m> \lgcnot (p \lgcbicond q) </m></cell></row>
 	</tabular>
+
 </example>
 
 </section>

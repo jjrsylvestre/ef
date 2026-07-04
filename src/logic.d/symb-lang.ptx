@@ -30,19 +30,20 @@ respective owners.
 <example xml:id="example-symb-lang-basic-statements">
 	<title>Logical statements</title>
 	<p><ol>
+
 		<li xml:id="example-symb-lang-basic-statements-simple">
-		<!-- old label EXAMPLE::basic.simple.statement.eg -->
 			All prime numbers are odd.
 		</li>
+
 		<li xml:id="example-symb-lang-basic-statements-compound">
-		<!-- old label EXAMPLE::basic.compound.statement.eg -->
 			Some trees have leaves and some trees have needles.
 		</li>
+
 		<li xml:id="example-symb-lang-basic-statements-conditional">
-		<!-- old label EXAMPLE::basic.conditional.statement.eg -->
 			If you pay attention in class and work through all the homework problems,
 			then you will do well in this course.
 		</li>
+
 	</ol>
 </p></example>
 
@@ -54,9 +55,7 @@ respective owners.
 	<p>	part of a logical statement that could be considered a statement on its own </p>
 </li></dl></p>
 
-<example>
-	<title>Substatements</title>
-	<p>
+<example><title>Substatements</title><p>
 	<q>Some trees have leaves</q> is a substatement of
 	<xref ref="example-symb-lang-basic-statements-compound">statement</xref>
 	in
@@ -64,48 +63,53 @@ respective owners.
 </p></example>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>simple statement</title>
 		<idx><h>simple</h><h>statement</h></idx>
 		<idx><h>statement (in logic)</h><h>simple</h></idx>
 		<p>	does not contain any proper substatements </p>
 	</li>
+
 	<li>
 		<title>compound statement</title>
 		<idx><h>compound</h><h>statement</h></idx> <!-- TODO will there be any other compound entries in the index? -->
 		<idx><h>statement (in logic)</h><h>compound</h></idx>
 		<p>	contains two or more substatements </p>
 	</li>
+
 	<li>
 		<title>connective</title>
 		<idx>connective(s)</idx>
 		<idx><h>statement (in logic)</h><h>connective</h></idx>
 		<p>	a connecting word between substatements in a compound statement </p>
 	</li>
+
 </dl></p>
 
-<example>
-	<title>Simple and compound statements</title>
-	<p>
+<example><title>Simple and compound statements</title><p>
 	Reconsidering the statements in <xref ref="example-symb-lang-basic-statements" />:
 	<ol>
+
 		<li>
 			<xref ref="example-symb-lang-basic-statements-simple">statement</xref>
 			is simple;
 		</li>
+
 		<li>
 			<xref ref="example-symb-lang-basic-statements-compound">statement</xref>
 			is a compound statement made up of two (simple) substatements linked by the connective <q>and</q>;
 			and
 		</li>
+
 		<li>
 			<xref ref="example-symb-lang-basic-statements-conditional">statement</xref>
 			is a compound statement made up of two substatements linked by the connective <q>if <ellipsis /> then <ellipsis /></q>,
 			where the substatement that constitutes the <q>if</q> part is itself a compound statement.
 		</li>
+
 	</ol>
-	</p>
-</example>
+</p></example>
 
 <p> The substatements in a compound statement can be related to each other by <term>connectives</term> in various ways.</p>
 
@@ -114,7 +118,9 @@ respective owners.
 	<idx>connective(s)</idx>
 	<idx><h>logical</h><h>connectives</h></idx>
 	<statement>
+
 		<p><dl width="narrow">
+
 			<li>
 				<title>negation</title>
 				<idx>negation</idx>
@@ -122,6 +128,7 @@ respective owners.
 				<idx><h>logical</h><h>negation</h></idx>
 				<p> <q>not</q> </p>
 			</li>
+
 			<li>
 				<title>conjuction</title>
 				<idx>conjuction</idx>
@@ -129,6 +136,7 @@ respective owners.
 				<idx><h>logical</h><h>conjuction</h></idx>
 				<p> <q>and</q> </p>
 			</li>
+
 			<li>
 				<title>disjunction</title>
 				<idx>disjunction</idx>
@@ -136,6 +144,7 @@ respective owners.
 				<idx><h>logical</h><h>disjunction</h></idx>
 				<p> <q>or</q> </p>
 			</li>
+
 			<li>
 				<title>conditional</title>
 				<idx>conditional</idx>
@@ -143,6 +152,7 @@ respective owners.
 				<idx><h>logical</h><h>conditional</h></idx>
 				<p> <q>if <ellipsis /> then <ellipsis /></q> </p>
 			</li>
+
 			<li>
 				<title>biconditional</title>
 				<idx>biconditional</idx>
@@ -150,42 +160,52 @@ respective owners.
 				<idx><h>logical</h><h>biconditional</h></idx>
 				<p> <q>if and only if</q> </p>
 			</li>
+
 		</dl></p>
+
 		<p>
 		Given statements <m> A </m> and <m> B </m>,
 		we use these connectives to construct new statements:
 		<dl width="narrow">
+
 			<li>
 				<title>negation of <m> A </m></title>
 				<p> not <m> A </m> </p>
 			</li>
+
 			<li>
 				<title>conjuction of <m> A </m> and <m> B </m></title>
 				<p> <m> A </m> and <m> B </m> </p>
 			</li>
+
 			<li>
 				<title>disjunction of <m> A </m> and <m> B </m></title>
 				<p> <m> A </m> or <m> B </m> </p>
 			</li>
+
 			<li>
 				<title>conditional where <m> A </m> implies <m> B </m></title>
 				<p> if <m> A </m> then <m> B </m> </p>
 			</li>
+
 			<li>
 				<title>biconditional involving <m> A </m> and <m> B </m></title>
 				<p> <m> A </m> if and only if <m> B </m> </p>
 			</li>
+
 		</dl>
 		</p>
+
 	</statement>
 </definition>
 
 <remark xml:id="remark-symb-lang-connectives"><p><ol>
+
 	<li>
 		All statements we will consider can be constructed starting from a finite number of simple statements and modifying/joining them using connectives as above.
 	</li>
+
 	<li xml:id="remark-symb-lang-connectives-inclusive-exclusive-or">
-	<!-- old label NOTE::inclusive.exclusive.or -->
 		<em>Always</em> take <q><m> A </m> or <m> B </m></q> to mean <q><m> A </m> or <m> B </m> or both</q>
 		(known as <term>inclusive or</term><idx>inclusive or</idx>).
 		However, in everyday language it may be reasonable to take
@@ -194,6 +214,7 @@ respective owners.
 		<q>(<m> A </m> or <m> B </m>) and not (<m> A </m> and <m> B </m>)</q>
 		(known as <term>exclusive or</term><idx>exclusive or</idx>).
 	</li>
+
 	<li>
 		The <term>conditional</term> and <term>biconditional</term> connectives are actually superfluous
 		<mdash /> they can be constructed from the first three.
@@ -204,10 +225,12 @@ respective owners.
 		and such constructions from other connectives obscure their meaning,
 		so it is more convenient to include these two connectives in our list of of basic connectives.
 	</li>
+
 </ol></p></remark>
 
 <example>
 	<title>Translating everyday English into logical statements</title>
+
 	<p>
 	A conversation.
 	<dl width="narrow">
@@ -221,6 +244,7 @@ respective owners.
 		<li><title>Alice (continuing<ellipsis />)</title><p> We'll get wet if it's raining, and this is the only way we'll get wet. </p> </li>
 	</dl>
 	</p>
+
 	<p>
 	Let us rewrite the above conversation to clearly identify the substatements and connectives.
 	<dl width="narrow">
@@ -234,6 +258,7 @@ respective owners.
 		<li><title>Alice</title><p> if (we are outside) then ((we get wet) if and only if (it is raining)) </p> </li>
 	</dl>
 	</p>
+
 </example>
 
 <claim> <!-- claim has been hijacked to Test -->
@@ -254,7 +279,6 @@ for a different reason then the one used in the test above.
 </p>
 
 <example xml:id="example-symb-lang-free-variable-not-a-statement">
-	<!-- old label EXAMPLE::free.variable.not.a.statement -->
 	<title>An ambiguous mathematical statement</title>
 	<p>
 	The phrase <q><m> f </m> is a differentiable function</q> is not a logical statement,
@@ -280,6 +304,7 @@ we will use letters to represent (possibly variable) logical statements and subs
 To complete the conversion from verbose language to compact symbolism,
 we will introduce symbols to represent the <term><xref ref="definition-symb-lang-connectives" text="title" /></term>.
 <dl width="narrow">
+
 	<li>
 		<title>negation of <m> A </m></title>
 		<idx><h>negation</h><h>notation for</h></idx>
@@ -291,6 +316,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		</notation>
 		<p> <m> \lgcnot A </m> </p>
 	</li>
+
 	<li>
 		<title>conjuction of <m> A </m> and <m> B </m></title>
 		<idx><h>conjuction</h><h>notation for</h></idx>
@@ -302,6 +328,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		</notation>
 		<p> <m> A \lgcand B </m> </p>
 	</li>
+
 	<li>
 		<title>disjunction of <m> A </m> and <m> B </m></title>
 		<idx><h>disjunction</h><h>notation for</h></idx>
@@ -313,6 +340,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		</notation>
 		<p> <m> A \lgcor B </m> </p>
 	</li>
+
 	<li>
 		<title>conditional where <m> A </m> implies <m> B </m></title>
 		<idx><h>conditional</h><h>notation for</h></idx>
@@ -324,6 +352,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		</notation>
 		<p> <m> A \lgccond B </m> </p>
 	</li>
+
 	<li>
 		<title>biconditional involving <m> A </m> and <m> B </m></title>
 		<idx><h>biconditional</h><h>notation for</h></idx>
@@ -337,6 +366,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		</notation>
 		<p> <m> A \lgcbicond B </m> </p>
 	</li>
+
 </dl>
 </p>
 
@@ -356,7 +386,6 @@ without being distracted or influenced by the content of the statements.
 	<p>
 	Consider the statement <q>if we are outside and we get wet then it is raining.</q>
 	Assign statement variables:
-	<!-- TODO these are actual unicode quote symbols in there, works OK for HTML but what about latex ? -->
 	<md><mrow>
 		A \amp = \text{ “we are outside,”} \amp
 		B \amp = \text{ “we get wet,”} \amp
@@ -384,13 +413,11 @@ Keep in mind that variables are not limited to representing simple statements;
 they can represent compound statements as well.
 </p>
 
-<p><dl width="narrow">
-	<li>
-		<title>truth value</title>
-		<idx><h>truth</h><h>value</h></idx>
-		<p> the property of being true or false </p>
-	</li>
-</dl></p>
+<p><dl width="narrow"><li>
+	<title>truth value</title>
+	<idx><h>truth</h><h>value</h></idx>
+	<p> the property of being true or false </p>
+</li></dl></p>
 
 <p>
 Given a logical statement,
@@ -399,16 +426,19 @@ We would like a systematic way to determine how the truth value of the output ch
 </p>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>logical analysis</title>
 		<idx><h>logical</h><h>analysis</h></idx>
 		<p> the process of determining the truth value of a statement based on the truth values of its variable substatements </p>
 	</li>
+
 	<li>
 		<title>truth table</title>
 		<idx><h>truth</h><h>table</h></idx>
 		<p> tabular method of carrying out logical analysis </p>
 	</li>
+
 </dl></p>
 
 <p>
@@ -420,7 +450,6 @@ Arrange this analysis in a table with all possibilities for the input variables 
 </p>
 
 <note xml:id="note-symb-lang-num-rows-truth-table"><p>
-<!-- \label{NOTE::num.rows.truth.table} -->
 	In fact,
 	if there are <m> n </m> variables,
 	then there are exactly <m> 2^n </m> different combinations of truth values for the variables.
@@ -437,7 +466,6 @@ First, let's establish the truth tables of the basic connectives
 </p>
 
 <figure xml:id="figure-symb-lang-connectives-truth-tables">
-<!-- \label{TABLE::basic.connectives} -->
 	<caption>The truth tables of the <term><xref ref="definition-symb-lang-connectives" text="title" /></term>.</caption>
 	<idx><h>connective(s)</h><h>truth tables for</h></idx>
 	<idx><h>statement (in logic)</h><h>connective</h><h>truth tables for</h></idx>
@@ -594,19 +622,25 @@ First, let's establish the truth tables of the basic connectives
 </figure>
 
 <note><p><ol>
+
 	<li> Conjunction <m> p \lgcand q </m> is true <em>only</em> when <em>both</em> <m> p </m> and <m> q </m> are true. </li>
+
 	<li>
 		<p> Disjunction <m> p \lgcor q </m> is true when <em>at least one</em> of <m> p </m> and <m> q </m> is true. </p>
+
 		<!-- <aside><title>See</title><p>
 			<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or" text="type-local">Statement</xref>
 			of <xref ref="remark-symb-lang-connectives" />
 			regarding inclusive versus exclusive or.
 		</p></aside> -->
+
 		<aside><title>See</title><p>
 			<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or">Statement</xref>
 			of <xref ref="remark-symb-lang-connectives" /> for the difference between <term>inclusive or</term> and <term>exclusive or</term>.
 		</p></aside>
+
 	</li>
+
 	<li>
 		The first two rows of the truth table for <m> p \lgccond q </m> are consistent with the reading <q>if <m> p </m> is true then <m> q </m> is also true.</q>
 		Really, this reading of the conditional says <em>nothing</em> in the case that <m> p </m> is actually false,
@@ -614,20 +648,24 @@ First, let's establish the truth tables of the basic connectives
 		Instead, the outputs in the last two rows of the truth table for <m> p \lgccond q </m> are <q>default</q> values chosen to avoid inconsistencies.
 		(See <xref ref="exercise-symb-lang-choices-for-implies" />.)
 	</li>
+
 	<li>
 		Looking at all four rows of the truth table for <m> p \lgccond q </m>,
 		we can succinctly say that <m> p \lgccond q </m> is true <em>except</em> when <m> p </m> is true but <m> q </m> is false.
 	</li>
+
 	<li>
 		Biconditional <m> p \lgcbicond q </m> reads <q><m> p </m> is true when <m> q </m> is true, and <em>only</em> when <m> q </m> is true.</q>
 		But this means that when <m> q </m> is false,
 		<m> p </m> cannot be true, hence must by false,
 		which explains the fourth row of the truth table.
 	</li>
+
 	<li>
 		Looking at all four rows of the truth table for <m> p \lgcbicond q </m>,
 		we can succinctly say that <m> p \lgcbicond q </m> is true when <m> p </m> and <m> q </m> have the <em>same truth value</em>.
 	</li>
+
 </ol></p></note>
 
 <p>
@@ -636,7 +674,9 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 </p>
 
 <problem xml:id="wexample-symb-lang-neg-bicond"> <!-- worked example -->
+
 	<statement><p> Analyze <m> \lgcnot (p \lgcbicond q) </m>. </p></statement>
+
 	<solution><tabular halign="center">
 		<col /><col right="minor" /><col right="minor" /><col />
 		<row bottom="minor">
@@ -666,6 +706,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 			<cell><m> \lgcfalse </m></cell>
 		</row>
 	</tabular></solution>
+
 </problem>
 
 <note><p>
@@ -674,7 +715,9 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 </p></note>
 
 <problem>
+
 	<statement><p> Analyze <m> (p \lgcand q) \lgccond (p \lgcbicond r) </m>. </p></statement>
+
 	<solution><tabular halign="center">
 		<col /><col /><col right="minor" /><col /><col right="minor" /><col />
 		<row bottom="minor">
@@ -742,10 +785,13 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 			<cell><m> \lgctrue </m></cell>
 		</row>
 	</tabular></solution>
+
 </problem>
 
 <problem>
+
 	<statement><p> Analyze <m> \bbrac{(p\lgccond q) \lgccond r} \lgcbicond \bbrac{p \lgccond (q \lgccond r)} </m>. </p></statement>
+
 	<solution><tabular halign="center">
 		<col /><col /><col right="minor" /><col /><col right="minor" /><col /><col right="minor" /><col />
 		<row bottom="minor">
@@ -831,6 +877,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 			<cell><m> \lgcfalse </m></cell>
 		</row>
 	</tabular></solution>
+
 </problem>
 
 </section>
@@ -839,31 +886,40 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 <title>Tautologies and contradictions</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>tautology</title>
 		<idx>tautology</idx>
 		<p> a logical statement that is always true for all possible truth values of its variable substatements </p>
-	</li><li>
+	</li>
+
+	<li>
 		<title>logically true statement</title>
 		<idx><h>logically</h><h>true</h><see>tautology</see></idx>
 		<p> synonym for <term>tautology</term> </p>
 	</li>
+
 </dl></p>
 
 <example xml:id="example-symb-lang-basic-tauts">
 	<title>Basic tautologies</title>
 	<p><ol>
+
 		<li> <m> p \lgccond p </m>. </li>
+
 		<li> <m> p \lgcbicond p </m>. </li>
+
 		<li xml:id="example-symb-lang-basic-tauts-law-excl-mid">
+
 			<p>
-			<!-- \label{EXAMPLE::law.excl.mid} -->
 			<term>Law of the Excluded Middle</term>: <!-- TODO check this output to see what colon does -->
 			<idx><h>Law</h><h>of the Excluded Middle</h></idx>
 			<idx>Excluded Middle, Law of the</idx>
 			<m> p \lgcor \lgcnot p </m>.
 			</p>
+
 			<p> Verification: </p>
+
 			<tabular halign="center">
 				<col right="minor" /><col right="minor" /><col />
 				<row bottom="minor">
@@ -880,17 +936,22 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 					<cell><m> \lgctrue </m></cell>
 				</row>
 			</tabular>
+
 			<p> The table verifies that the statement is a tautology as the last column consists only of <m> \lgctrue </m> values. </p>
+
 		</li>
+
 		<li xml:id="example-symb-lang-basic-tauts-law-contra">
-			<!-- \label{EXAMPLE::law.contra} -->
+
 			<p>
 			<term>Law of Contradiction</term>:
 			<idx><h>Law</h><h>of Contradiction</h></idx>
 			<idx>Contradiction, Law of</idx>
 			<m> \lgcnot \bbrac{p \lgcand \lgcnot p} </m>.
 			</p>
+
 			<p>Verification:</p>
+
 			<tabular halign="center">
 				<col right="minor" /><col right="minor" /><col right="minor" /><col />
 				<row bottom="minor">
@@ -910,37 +971,45 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 					<cell><m> \lgctrue </m></cell>
 				</row>
 			</tabular>
+
 			<p> The table verifies that the statement is a tautology as the last column consists only of <m> \lgctrue </m> values. </p>
+
 		</li>
+
 	</ol></p>
 </example>
 
-<example>
-	<title>Not a tautology</title>
-	<p>
+<example><title>Not a tautology</title><p>
 	Is <m> p \lgcor p </m> a tautology?
 	No, since it is false when <m> p </m> is false.
-	</p>
-</example>
+</p></example>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>contradiction</title>
 		<idx>contradiction</idx>
 		<p> a statement that must always be false, regardless of the truth values of its variable substatements </p>
-	</li><li>
+	</li>
+
+	<li>
 		<title>logically false statement</title>
 		<idx><h>logically</h><h>false</h><see>contradiction</see></idx>
 		<p> synonym for <term>contradiction</term> </p>
 	</li>
+
 </dl></p>
 
 <example>
 	<title>Contradictions</title>
 	<p><ol>
+
 		<li> Negation of a tautology is always a contradiction (and negation of a contradiction is always a tautology). </li>
+
 		<li>
+
 			<p>Statement <m> (p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q) </m> is a contradiction: </p>
+
 			<tabular halign="center">
 				<col /><col right="minor" /><col /><col right="minor" /><col /><col right="minor" /><col />
 				<row bottom="minor">
@@ -985,8 +1054,11 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 					<cell><m> \lgcfalse </m></cell>
 				</row>
 			</tabular>
+
 			<p> The table verifies that the statement is a contradiction as the last column consists only of <m> \lgcfalse </m> values. </p>
+
 		</li>
+
 	</ol></p>
 </example>
 
@@ -1011,6 +1083,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 <example>
 	<title>Using the <xref ref="theorem-symb-lang-subst-in-tauts-contras" text="title" /></title>
 	<p><ol>
+
 		<li>
 			We know <m> p \lgcor \lgcnot p </m> is a tautology, therefore so is
 			<md>
@@ -1018,7 +1091,9 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 				\lgcnot \bbrac{q \lgccond (r \lgcand \lgcnot s)}
 			</md>
 			using substitution <m> p = \bbrac{q \lgccond (r \lgcand \lgcnot s)} </m>.
-		</li><li>
+		</li>
+
+		<li>
 			We know <m> (p \lgcor \lgcnot p) \lgccond (q \lgcand \lgcnot q) </m> is a contradiction,
 			therefore so are
 			<md>
@@ -1036,6 +1111,7 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 				</mrow>
 			</md>
 		</li>
+
 	</ol></p>
 </example>
 
@@ -1045,11 +1121,13 @@ In mathematics, we often wish to prove that a condition <m> A \lgccond B </m> is
 </p>
 
 <p><dl width="narrow">
+
 	<li xml:id="definition-symb-lang-logically-implies">
 		<title>logically implies</title>
 		<idx><h>logically</h><h>implies</h></idx>
 		<p> if the conditional <m> A \lgccond B </m> is a tautology, we say that <m> A </m> <term>logically implies</term> <m> B </m> </p>
 	</li>
+
 	<li>
 		<title><m> A \lgcimplies B </m></title>
 		<notation>
@@ -1058,6 +1136,7 @@ In mathematics, we often wish to prove that a condition <m> A \lgccond B </m> is
 		</notation>
 		<p> notation for logical implication </p>
 	</li>
+
 </dl></p>
 
 <example>

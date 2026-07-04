@@ -24,17 +24,21 @@ We often let variables represent arbitrary mathematical objects.
 However, as we have seen, object variables or <term>free variables</term>
 (as opposed to <term>statement variables</term>) lead to problems in logic.
 For example, the phrase <q><m> f </m> is a differentiable function</q> can only be determined to be true or false when <m> f </m> represents a specific function.
-</p><p>
+</p>
+
+<p>
 In this section, we  deal with these problems by <term>quantifying</term> such free variables:
 restricting ourselves to discussing whether <q>statements</q> involving one or more free variables are always/sometimes/never true for objects of the type represented by the free variables.
 </p>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>predicate</title>
 		<idx>predicate</idx>
 		<p> a statement whose truth value depends on one or more free variables </p>
 	</li>
+
 	<li>
 		<title><m> A(x) </m></title>
 		<notation>
@@ -43,6 +47,7 @@ restricting ourselves to discussing whether <q>statements</q> involving one or m
 		</notation>
 		<p> a predicate statement <m> A </m> whose truth value depends on the free variable <m> x </m> </p>
 	</li>
+
 	<li>
 		<title><m> A(x,y) </m></title>
 		<notation>
@@ -51,17 +56,21 @@ restricting ourselves to discussing whether <q>statements</q> involving one or m
 		</notation>
 		<p> a predicate statement <m> A </m> whose truth value depends on the free variables <m> x </m> and <m> y </m> </p>
 	</li>
+
 </dl></p>
 
 <example xml:id="example-pred-logic-predicates"><p><ol>
+
 	<li>
 		Let <m> A(f) </m> represent the phrase <q><m> f </m> is differentiable</q>,
 		a predicate statement in one free variable <m> f </m>.
 	</li>
+
 	<li>
 		Let <m> B(m,n) </m> represent the phrase <q><m> m </m> is greater than <m> n </m></q>,
 		a predicate statement in two free variables <m> m </m> and <m> n </m>.
 	</li>
+
 </ol></p></example>
 
 <note><p>
@@ -108,6 +117,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 </p></example>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>quantifier</title>
 		<idx>quantifier</idx>
@@ -115,12 +125,14 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 		the sentence fragments <q>for every</q> and <q>there exists</q> <term>quantify</term> whether a predicate should apply to <em>all</em> or only <em>some</em> of the objects in the domain of one of its variables.
 		</p>
 	</li>
+
 	<li>
 		<title>universal quantifier</title>
 		<idx><h>universal</h><h>quantifier</h></idx>
 		<idx><h>quantifier</h><h>universal</h></idx>
 		<p> the quantifier <q>for every</q> </p>
 	</li>
+
 	<li>
 		<title><m> \forall </m></title>
 		<notation>
@@ -129,12 +141,14 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 		</notation>
 		<p> symbol for the universal quantifier </p>
 	</li>
+
 	<li>
 		<title>existential quantifier</title>
 		<idx><h>existential</h><h>quantifier</h></idx>
 		<idx><h>quantifier</h><h>existential</h></idx>
 		<p> the quantifier <q>there exists</q> </p>
 	</li>
+
 	<li>
 		<title><m> \exists </m></title>
 		<notation>
@@ -143,6 +157,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 		</notation>
 		<p> symbol for the existential quantifier </p>
 	</li>
+
 </dl></p>
 
 <example><p>
@@ -156,13 +171,14 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 	it is not necessary for there to be <em>one and only one</em> object in the implied domain that satisfies the conditions of the predicate <mdash />
 	there could be many such objects.
 	So, just as you should always read a disjunction <m> p \lgcor q </m> as <q>p or q <em>or both</em>,</q>
-	you should always read an existentially quantified statement <m> (\exists x) A(x) </m> as <q>there exists <em>at least one</em> <m> x </m> such that <m> A(x) </m> is true.</q>
+	you should always read an existentially quantified statement <m> (\exists x) A(x) </m> as <q>there exists <em>at least one</em> <m> x </m> such that <m> A(x) </m> is true</q>.
 </p></warning>
 
 <p> Mathematical statements often involve several quantified variables. </p>
 
 <problem xml:id="wexample-pred-logic-multiple-quants"> <!-- worked example -->
 	<title>Working with quantified statements of several variables</title>
+
 	<statement><p>
 		Let <m> B(m,n) </m> represent <q><m> m </m> divides <m> n </m></q>, where <m> m </m> and <m> n </m> are positive whole numbers.
 		Which of the following statements are true?
@@ -175,7 +191,9 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 			<li xml:id="wexample-pred-logic-multiple-quants-ex-n-all-m"> <m> (\exists n)(\forall m)B(m,n) </m> </li>
 		</ol>
 	</p></statement>
+
 	<solution><p><ol>
+
 		<li>
 			<title>False</title>
 			<p>
@@ -186,6 +204,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 			(such as <m> m=3 </m> and <m> n=2 </m>) suffices to show that it is not <em>always</em> true that one number <m> m </m> divides another number <m> n </m>.
 			</p>
 		</li>
+
 		<li>
 			<title>True</title>
 			<p>
@@ -193,6 +212,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 			To demonstrate that this statement is true, we have to explicitly show that at least one pair of values for <m> m </m> and <m> n </m> exists by giving an example (such as <m> m = n = 2 </m>).
 			</p>
 		</li>
+
 		<li>
 			<title>True</title>
 			<p>
@@ -208,6 +228,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 				then this third statement would actually be false, as demonstrated by the example <m> m = 0 </m>.
 			</p></aside>
 		</li>
+
 		<li>
 			<title>True</title>
 			<p>
@@ -216,6 +237,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 			(though it is the only example possible).
 			</p>
 		</li>
+
 		<li>
 			<title>True</title>
 			<p>
@@ -227,6 +249,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 			(Or, actually we could always choose <m> m=1 </m> as the example for each different value of <m> n </m>.)
 			</p>
 		</li>
+
 		<li>
 			<title>False</title>
 			<p>
@@ -234,7 +257,9 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 			However, there is no positive number that is divisible by every other positive number.
 			</p>
 		</li>
+
 	</ol></p></solution>
+
 </problem>
 
 <warning><p>
@@ -255,21 +280,23 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 <p>
 Even more, the order of a <q>mixed</q> pair of quantifiers implies a dependence of the second quantified variable on the first.
 <ol>
+
 	<li>
 		If the statement <m> (\forall x)(\exists y) A(x,y) </m> is true,
 		it means that, corresponding to <em>each and every</em> object <m> x </m> in the appropriate domain,
 		there will exist at least one example of an object <m> y </m> in the appropriate domain so that <m> A(x,y) </m> is true.
 		But the corresponding example <m> y </m> could be different for different examples of the object <m> x </m>.
 	</li>
+
 	<li>
 		If the statement <m> (\exists y)(\forall x) A(x,y) </m> is true,
 		it means that there is at least one <q>special</q> example object <m> y </m> that enjoys the property that <m> A(x,y) </m> will be true for <em>each and every</em> object <m> x </m> in the appropriate domain.
 	</li>
+
 </ol>
 </p>
 
-<example>
-	<p>
+<example><p>
 	Suppose <m> A(x,y) </m> is a predicate statement,
 	where <m> x </m> and <m> y </m> are variables that can only take on the values <m> 0 </m>, <m> 1 </m>, or <m> 2 </m>.
 	Further suppose that it is known that <m> A(x,y) </m> is true in the specific instances
@@ -298,12 +325,15 @@ Even more, the order of a <q>mixed</q> pair of quantifiers implies a dependence 
 <warning><p> Mathematicians are fond of using <q>any</q> or <q>for any</q> in place of <q>every</q> or <q>for every</q>. </p></warning>
 
 <problem> <!-- worked example -->
+
 	<statement><p> Prove that <m> n+1 </m> is an odd number for any even number <m> n </m>. </p></statement>
+
 	<solution><title>(Incorrect)</title><p>
 		It says to prove <m> n+1 </m> is odd for <em>any</em> even number <m> n </m>,
 		so I will choose my favourite even number <m> n = 8 </m>.
 		Then <m> 8+1 = 9 </m> is obviously odd.
 	</p></solution>
+
 	<solution><title>(Correct)</title><p>
 		The problem statement is really asking to prove that <em>every</em> even number has the property that the subsequent number is odd.
 		So let <m> n </m> represent an <em>arbitrary but unspecified</em> even number.
@@ -312,6 +342,7 @@ Even more, the order of a <q>mixed</q> pair of quantifiers implies a dependence 
 		is not a whole number.
 		Therefore, <m> n+1 </m> must be odd.
 	</p></solution>
+
 </problem>
 
 <note><p>
@@ -338,38 +369,53 @@ but we will establish rules that make it easy in symbolic logic.
 </p></warning>
 
 <example xml:id="example-pred-logic-cows-eat-grass">
+
 	<p>
 	What is the negation of the statement <q>all cows eat grass</q>?
 	To avoid making the mistake in the preceding warning,
 	consider the following question: what is the minimum number of cows that do not eat grass that can be used as evidence to demonstrate that the statement <q>all cows eat grass</q> is false?
 	</p>
+
 	<sidebyside widths="36.1% 50%" valign="middle">
+
 		<image xml:id="image-pred-logic-all-cows-eat-grass">
 			<description>A Venn diagram with the collection of cows completely inside the collection of things that eat grass.</description>
 			<latex-image><xi:include href="pred-logic.d/all-cows-eat-grass.tex" parse="text" /></latex-image>
 		</image>
+
 		<p>In this case, both <q>all cows eat grass</q> and <q>some cows eat grass</q> are true.</p>
+
 	</sidebyside>
+
 	<sidebyside widths="38.5% 50%" valign="middle">
+
 		<image xml:id="image-pred-logic-some-cows-eat-grass">
 			<description>A Venn diagram with the collection of cows only partially overlapping with the collection of things that eat grass.</description>
 			<latex-image><xi:include href="pred-logic.d/some-cows-eat-grass.tex" parse="text" /></latex-image>
 		</image>
+
 		<p>In this case, both <q>some cows eat grass</q> and <q>some cows do not eat grass</q> are true.</p>
+
 	</sidebyside>
+
 	<sidebyside widths="36.1% 50%" valign="middle">
+
 		<image xml:id="image-pred-logic-no-cows-eat-grass">
 			<description>A Venn diagram with the collection of cows not overlapping at all with the collection of things that eat grass.</description>
 			<latex-image><xi:include href="pred-logic.d/no-cows-eat-grass.tex" parse="text" /></latex-image>
 		</image>
+
 		<p>
 		In this case, each of <q>no cows eat grass</q>, <q>all cows do not eat grass</q>, and <q>some cows do not eat grass</q> are true.
 		</p>
+
 	</sidebyside>
+
 	<p>
 	It takes just <em>one</em> lasagna-eating cow to make <q>all cows eat grass</q> false,
 	so the negation of <q>all cows eat grass</q> is <q>some cows do not eat grass</q> or <q>at least one cow does not eat grass</q>.
 	</p>
+
 </example>
 
 <warning><p>
@@ -385,24 +431,28 @@ but we will establish rules that make it easy in symbolic logic.
 	<p>
 	Let <m> A(x) </m> represent a predicate in the variable <m> x </m>.
 	<ol>
+
 		<li>
 			<title>Universal negation</title>
 			<p> The negation of <m> (\forall x)A(x) </m> is <m> (\exists x)(\lgcnot A(x)) </m>. </p>
 		</li>
+
 		<li>
 			<title>Existential negation</title>
 			<p> The negation of <m> (\exists x)A(x) </m> is <m> (\forall x)(\lgcnot A(x)) </m>. </p>
 		</li>
+
 	</ol>
 	</p>
 </proposition>
 
-<paragraphs><title>Check your understanding</title><p>
+<exercise><p>
 	Use the <q>cows eat grass</q> diagrams in <xref ref="example-pred-logic-cows-eat-grass" /> to convince yourself that these negation rules are correct.
-</p></paragraphs>
+</p></exercise>
 
 <problem> <!-- worked example -->
 	<title>Negating a quantified statement</title>
+
 	<statement>
 		<p>
 		Determine and <q>simplify</q> the negation of
@@ -417,6 +467,7 @@ but we will establish rules that make it easy in symbolic logic.
 		</md>.
 		</p>
 	</statement>
+
 	<solution><p>
 		Using the rules of quantifier negation and known logical equivalences,
 		we can perform the following manipulations:
@@ -474,6 +525,7 @@ but we will establish rules that make it easy in symbolic logic.
 			<li> DeMorgan, double negation. </li>
 		</ol>
 	</p></solution>
+
 </problem>
 
 </subsection>
@@ -485,6 +537,7 @@ but we will establish rules that make it easy in symbolic logic.
 	<title>Rules for distributing quantifiers</title>
 	<idx><h>Rule(s)</h><h>of Predicate Calculus</h><h>distribution of quantifiers</h></idx>
 	<idx><h>quantifier</h><h>distribution of</h></idx>
+
 	<p>
 	Let <m> A(x),B(x) </m> represent predicates in the variable <m> x </m>.
 	<ol>
@@ -498,6 +551,7 @@ but we will establish rules that make it easy in symbolic logic.
 		</li>
 	</ol>
 	</p>
+
 </proposition>
 
 <example><p><ul>
@@ -510,24 +564,27 @@ but we will establish rules that make it easy in symbolic logic.
 	<li> The existential quantifier <m> \exists </m> does <em>not</em> distribute over conjunction <m> \lgcand </m>. </li>
 </ul></p></warning>
 
-<paragraphs><title>Check your understanding</title><p><ol>
-	<li>
+<exercise>
+
+	<task><p>
 		Create an example of predicates <m> A(x) </m> and <m> B(x) </m> such that, of the statements
 		<md><mrow>
 			(\forall x) \amp \bbrac{A(x) \lgcor B(x)} \text{,} \amp
 			(\forall x) A(x) \amp \lgcor (\forall x)B(x) \text{,}
 		</mrow></md>
 		the first is true but the second is false.
-	</li>
-	<li>
+	</p></task>
+
+	<task><p>
 		Create an example of predicates <m> A(x) </m> and <m> B(x) </m> such that, of the statements
 		<md><mrow>
 			(\exists x) \amp \bbrac{A(x) \lgcand B(x)} \text{,} \amp
 			(\exists x) A(x) \amp \lgcand (\exists x)B(x) \text{,}
 		</mrow></md>
 		the first is false but the second is true.
-	</li>
-</ol></p></paragraphs>
+	</p></task>
+
+</exercise>
 
 </subsection>
 
@@ -574,10 +631,10 @@ in <xref ref="example-symb-lang-basic-tauts" />).
 	</p>
 </li></dl></p>
 
-<paragraphs><title>Check your understanding</title><p>
+<exercise><p>
 	Determine the negation of <m> (\forall x)\bbrac{P(x) \lgccond Q(x)} </m>.
 	Is the negation of a vacuously true statement true or false?
-</p></paragraphs>
+</p></exercise>
 
 </section>
 

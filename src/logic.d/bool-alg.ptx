@@ -23,11 +23,14 @@ respective owners.
 
 <example>
 	<title>Boolean multiplication</title>
+
 	<p>
 	Comparing the two tables below,
 	we see that Boolean multiplication is equivalent to logical conjunction.
 	</p>
+
 	<sidebyside>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
@@ -52,6 +55,7 @@ respective owners.
 				<cell><m> 0 </m></cell>
 			</row>
 		</tabular>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
@@ -76,20 +80,26 @@ respective owners.
 				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
+
 	</sidebyside>
+
 </example>
 
 <example>
 	<title>Boolean addition</title>
+
 	<p>
 	Comparing the following two tables,
 	we see that Boolean addition is equivalent to <term>exclusive or</term>.
 	</p>
+
 	<aside><title>Boolean arithmetic</title><p>
 		Notice that in the first row for Boolean addition,
 		we use <term>mod <m> 2 </m> arithmetic</term> to define <m> 1+1 = 0 </m>.
 	</p></aside>
+
 	<sidebyside>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
@@ -114,6 +124,7 @@ respective owners.
 				<cell><m> 0 </m></cell>
 			</row>
 		</tabular>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
@@ -138,13 +149,18 @@ respective owners.
 				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
+
 	</sidebyside>
+
 </example>
 
 <example>
 	<title>Boolean disjunction</title>
+
 	<p> In Boolean arithmetic we may realize disjunction by combining both addition and multiplication. </p>
+
 	<sidebyside>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
@@ -169,6 +185,7 @@ respective owners.
 				<cell><m> 0 </m></cell>
 			</row>
 		</tabular>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
@@ -193,13 +210,18 @@ respective owners.
 				<cell><m> \lgcfalse </m></cell>
 			</row>
 		</tabular>
+
 	</sidebyside>
+
 </example>
 
 <example>
 	<title>Boolean negation</title>
+
 	<p> In Boolean algebra, negation is just a matter of <term>shifting</term> one value to the next. </p>
+
 	<sidebyside>
+
 		<tabular halign="center">
 			<col right="minor" /><col />
 			<row bottom="minor">
@@ -213,6 +235,7 @@ respective owners.
 				<cell><m> 1 </m></cell>
 			</row>
 		</tabular>
+
 		<tabular halign="center">
 			<col right="minor" /><col />
 			<row bottom="minor">
@@ -226,7 +249,9 @@ respective owners.
 				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
+
 	</sidebyside>
+
 </example>
 
 <p>
@@ -250,31 +275,41 @@ we have
 </mrow></md>
 </p>
 
-<p><dl width="narrow">
-	<li>
-		<title>Boolean polynomial</title>
-		<idx><h>Boolean</h><h>polynomial</h></idx>
-		<p>
-		an expression involving variables <m> x_1, x_2, \dotsc, x_m </m> representing Boolean values,
-		and operations <m> \lgcand, \lgcor, \boolnot{} </m>, often written in function notation
-		</p>
-	</li>
-</dl></p>
+<p><dl width="narrow"><li>
+	<title>Boolean polynomial</title>
+	<idx><h>Boolean</h><h>polynomial</h></idx>
+	<p>
+	an expression involving variables <m> x_1, x_2, \dotsc, x_m </m> representing Boolean values,
+	and operations <m> \lgcand, \lgcor, \boolnot{} </m>, often written in function notation
+	</p>
+</li></dl></p>
 
 <note><p> Every Boolean polynomial can be interpreted as a logical statement. </p></note>
 
-<!-- TODO turn this into a dl with proper indexing -->
-<example><p>
-	There are two special constant Boolean polynomials, the zero polynomial and the unit polynomial:
-	<md><mrow>
-		\boolzero(x_1,x_2,\dotsc,x_m) \amp = 0 \text{,}
-		\amp
-		\boolone(x_1,x_2,\dotsc,x_m) \amp = 1 \text{.}
-	</mrow></md>
-</p></example>
+<p>
+There are two special constant Boolean polynomials.
+<dl width="narrow">
+
+	<li>
+		<title>zero polynomial</title>
+		<idx><h>zero</h><h>polynomial</h></idx>
+		<idx><h>Boolean</h><h>zero polynomial</h></idx>
+		<p> the constant Boolean polynomial <m> \boolzero(x_1,x_2,\dotsc,x_m) = 0 </m> </p>
+	</li>
+
+	<li>
+		<title>unit polynomial</title>
+		<idx><h>unit</h><h>polynomial</h></idx>
+		<idx><h>Boolean</h><h>unit polynomial</h></idx>
+		<p> the constant Boolean polynomial <m> \boolone(x_1,x_2,\dotsc,x_m) = 1 </m> </p>
+	</li>
+
+</dl></p>
 
 <example>
+
 	<p> The Boolean polynomials <m> p(x,y) = x' \lgcor y </m> and <m> q(x,y) = (x \lgcand y')' </m> have the same truth table. </p>
+
 	<tabular halign="center">
 		<col /><col right="minor" /><col right="minor" /><col right="minor" /><col /><col right="minor" /><col />
 		<row bottom="minor">
@@ -319,20 +354,20 @@ we have
 			<cell><m> 1 </m></cell>
 		</row>
 	</tabular>
+
 	<p>
 		Using our knowledge of logical equivalence,
 		we see that the truth tables are the same because as logical statements,
 		<m> p </m> and <m> q </m> are equivalent by DeMorgan.
 	</p>
+
 </example>
 
-<p><dl width="narrow">
-	<li>
+<p><dl width="narrow"><li>
 		<title>equivalent polynomials</title>
 		<idx><h>equivalent</h><h>polynomials</h></idx>
 		<p> Boolean polynomials which represent equivalent logical statements </p>
-	</li>
-</dl></p>
+</li></dl></p>
 
 <fact>
 	<title>Recognizing equivalent Boolean polynomials</title>
@@ -350,8 +385,11 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 </p>
 
 <problem> <!-- worked example -->
+
 	<statement>
+
 		<p> Determine a Boolean polynomial <m> p(x,y) </m> that has the truth table below. </p>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
@@ -376,15 +414,19 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 				<cell><m> 1 </m></cell>
 			</row>
 		</tabular>
+
 	</statement>
+
 	<solution><p>
 		We want a <q>true</q> output when the inputs match the first or fourth rows, and only then.
 		The inputs match the first row precisely when both <m> x </m> and <m> y </m> are true
 		(<ie /> when the conjunction <m> x \lgcand y </m> is true),
 		and they match the fourth row precisely when both <m> x </m> is not true and <m> y </m> is not true
 		(<ie /> when the conjunction <m> x' \lgcand y' </m> is true).
-		So take the disjunction of these two conjunctions: <m> p(x,y) = (x \lgcand y) \lgcor (x' \lgcand y') </m>.
+		So take the disjunction of these two conjunctions:
+		<md> p(x,y) = (x \lgcand y) \lgcor (x' \lgcand y') </md>.
 	</p></solution>
+
 </problem>
 
 <remark><p>
@@ -398,17 +440,15 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	then we know we must be either in the input state of the first row <em>or</em> of the fourth row.
 </p></remark>
 
-<p><dl width="narrow">
-	<li>
-		<title>disjunctive normal form</title>
-		<idx>disjunctive normal form</idx>
-		<p>
-		a Boolean polynomial in variables <m> x_1,x_2,\dotsc,x_n </m> which is the disjunction of <em>distinct</em> terms of the form
-		<m> a_1 \lgcand a_2 \lgcand \dotsb \lgcand a_n </m>,
-		where each <m> a_i </m> is either <m> x_i </m> or <m> x_i' </m>.
-		</p>
-	</li>
-</dl></p>
+<p><dl width="narrow"><li>
+	<title>disjunctive normal form</title>
+	<idx>disjunctive normal form</idx>
+	<p>
+	a Boolean polynomial in variables <m> x_1,x_2,\dotsc,x_n </m> which is the disjunction of <em>distinct</em> terms of the form
+	<m> a_1 \lgcand a_2 \lgcand \dotsb \lgcand a_n </m>,
+	where each <m> a_i </m> is either <m> x_i </m> or <m> x_i' </m>.
+	</p>
+</li></dl></p>
 
 <!-- TODO Does this get numbered? Do I want it to? Maybe use paragraphs instead. -->
 <convention><p> The zero polynomial is also considered to be in disjunctive normal form. </p></convention>
@@ -434,8 +474,11 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 
 <problem xml:id="wexample-bool-alg-table-to-bool-poly-1"> <!-- worked example -->
 	<!-- <title>Using the disjunctive normal form procedure</title> -->
+
 	<statement>
+
 		<p> Determine a Boolean polynomial <m> p(x,y,z) </m> that has the truth table below. </p>
+
 		<tabular halign="center">
 			<col /><col /><col right="minor" /><col />
 			<row bottom="minor">
@@ -485,16 +528,23 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 				<cell><m> 1 </m></cell>
 			</row>
 		</tabular>
+
 	</statement>
+
 	<solution><p>
-		The fourth, fifth, seventh, and eigth rows have outcome <m> 1 </m>.
-		The corresponding conjunctions are
-		<dl width="narrow">
-			<li><title>fourth row</title><p><m> x \lgcand y' \lgcand z' </m>;</p></li>
-			<li><title>fifth row</title><p><m> x' \lgcand y \lgcand z </m>;</p></li>
-			<li><title>seventh row</title><p><m> x' \lgcand y' \lgcand z </m>; and</p></li>
-			<li><title>eigth row</title><p><m> x' \lgcand y' \lgcand z' </m>.</p></li>
-		</dl>
+		The fourth, fifth, seventh, and eighth rows have outcome <m> 1 </m>.
+		The corresponding conjunctions are as follows.
+		<md>
+			<mrow>
+				\text{fourth row:}  \amp \quad x  \lgcand y' \lgcand z'
+				\amp
+				\text{seventh row:} \amp \quad x' \lgcand y' \lgcand z
+			</mrow><mrow>
+				\text{fifth row:}   \amp \quad x' \lgcand y  \lgcand z
+				\amp
+				\text{eighth row:}  \amp \quad x' \lgcand y' \lgcand z'
+			</mrow>
+		</md>
 		Therefore, the Boolean polynomial
 		<md>
 			p(x,y,z) = (x \lgcand y' \lgcand z')
@@ -504,12 +554,16 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 		</md>
 		is both in disjunctive normal form and will have the desired truth table.
 	</p></solution>
+
 </problem>
 
 <problem xml:id="wexample-bool-alg-table-to-bool-poly-2"> <!-- worked example -->
 	<!-- <title>Using the disjunctive normal form procedure</title> -->
+
 	<statement>
+
 		<p> Determine a Boolean polynomial <m> q(x,y,z) </m> that has the truth table below. </p>
+
 		<tabular halign="center">
 			<col /><col /><col right="minor"/><col />
 			<row bottom="minor">
@@ -559,19 +613,29 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 				<cell><m> 1 </m></cell>
 			</row>
 		</tabular>
+
 	</statement>
+
 	<solution><p>
 		Every row <em>except</em> the third has outcome <m> 1 </m>,
-		so we must form conjunctions for all rows except that one:
-		<dl width="narrow">
-			<li><title>first row</title><p><m> x \lgcand y \lgcand z </m>;</p></li>
-			<li><title>second row</title><p><m> x \lgcand y \lgcand z' </m>;</p></li>
-			<li><title>fourth row</title><p><m> x \lgcand y' \lgcand z' </m>;</p></li>
-			<li><title>fifth row</title><p><m> x' \lgcand y \lgcand z </m>;</p></li>
-			<li><title>sixth row</title><p><m> x' \lgcand y \lgcand z' </m>;</p></li>
-			<li><title>seventh row</title><p><m> x' \lgcand y' \lgcand z </m>; and</p></li>
-			<li><title>eigth row</title><p><m> x' \lgcand y' \lgcand z' </m>.</p></li>
-		</dl>
+		so we must form conjunctions for all rows except that one.
+		<md>
+			<mrow>
+				\text{first row:}   \amp \quad x  \lgcand y  \lgcand z
+				\amp
+				\text{sixth row:}   \amp \quad x' \lgcand y  \lgcand z'
+			</mrow><mrow>
+				\text{second row:}  \amp \quad x  \lgcand y  \lgcand z'
+				\amp
+				\text{seventh row:} \amp \quad x' \lgcand y' \lgcand z
+			</mrow><mrow>
+				\text{fourth row:}  \amp \quad x  \lgcand y' \lgcand z'
+				\amp
+				\text{eighth row:}  \amp \quad x' \lgcand y' \lgcand z'
+			</mrow><mrow>
+				\text{fifth row:}   \amp \quad x' \lgcand y  \lgcand z
+			</mrow>
+		</md>
 		Therefore, the Boolean polynomial
 		<md>
 			<mrow>
@@ -589,6 +653,7 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 		</md>
 		is both in disjunctive normal form and will have the desired truth table.
 	</p></solution>
+
 	<solution xml:id="wexample-bool-alg-table-to-bool-poly-2-alt-sol"><title>Alternative solution</title>
 		<p>
 			We can get a much simpler expression for <m> q(x,y,z) </m> by <em>not</em> using the procedure
@@ -605,6 +670,7 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 		will produce the desired truth table.
 		</p>
 	</solution>
+
 </problem>
 
 <note><p>
@@ -619,11 +685,15 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 
 <problem>
 	<title>Converting a polynomial into disjunctive normal form</title>
+
 	<statement><p>
-		Rewrite the Boolean polynomial <m> p(x,y,z) = (x \lgcand z)' \lgcor (x'\lgcand y) </m> in disjunctive normal form.
+		Rewrite the Boolean polynomial <md> p(x,y,z) = (x \lgcand z)' \lgcor (x'\lgcand y) </md> in disjunctive normal form.
 	</p></statement>
+
 	<solution>
+
 		<p> First, produce the truth table. </p>
+
 		<tabular halign="center">
 			<col /><col /><col right="minor"/><col /><col right="minor"/><col />
 			<row bottom="minor">
@@ -691,6 +761,7 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 				<cell>1</cell>
 			</row>
 		</tabular>
+
 		<p>
 		Then apply the disjunctive normal form procedure to obtain
 		<md>
@@ -708,21 +779,26 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 			</mrow>
 		</md>.
 		</p>
+
 	</solution>
+
 </problem>
 
-<paragraphs><title>Check your understanding</title>
-	<p>
-	What do you think
-	<term>conjunctive normal form</term><idx>conjunctive normal form</idx>
-	should mean?
-	Can you come up with a procedure which takes a truth table and determines a Boolean polynomial in conjunctive normal form with the desired truth table?
-	</p>
-	<aside><title>Hint</title><p>
+<exercise>
+
+	<statement><p>
+		What do you think
+		<term>conjunctive normal form</term><idx>conjunctive normal form</idx>
+		should mean?
+		Can you come up with a procedure which takes a truth table and determines a Boolean polynomial in conjunctive normal form with the desired truth table?
+	</p></statement>
+
+	<hint><p>
 		Extend the idea of the <xref ref="wexample-bool-alg-table-to-bool-poly-2-alt-sol" text="title" />
 		for <xref ref="wexample-bool-alg-table-to-bool-poly-2" />.
-	</p></aside>
-</paragraphs>
+	</p></hint>
+
+</exercise>
 
 </section>
 

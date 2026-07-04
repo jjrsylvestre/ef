@@ -21,6 +21,7 @@ respective owners.
 <title>Equivalence</title>
 
 <p><dl width="narrow">
+
 	<li xml:id="definition-logic-equiv-equiv-statements">
 		<title>equivalent statements</title>
 		<idx><h>equivalent</h><h>logical statements</h></idx>
@@ -32,10 +33,12 @@ respective owners.
 		</notation>
 		<p> statements <m> A,B </m> such that <m> A \lgcbicond B </m> is a tautology </p>
 	</li>
+
 	<li>
 		<title><m> A \lgcequiv B </m></title>
 		<p> statements <m> A </m> and <m> B </m> are equivalent </p>
 	</li>
+
 </dl></p>
 
 <claim>
@@ -51,22 +54,25 @@ respective owners.
 </claim>
 
 <problem xml:id="wexample-logic-equiv-construct-conditional">
-	<!-- \label{WEXAMPLE::construct.conditional} -->
 	<title>Testing logical equivalence</title>
-	<statement>
-		<p> Demonstrate that the following are equivalent statements. </p>
-		<tabular halign="left">
-			<row><cell><m> A </m>:</cell><cell>If it's nice outside, I will ride my bike.</cell></row>
-			<row><cell><m> B </m>:</cell><cell>It's not nice outside, or I will ride my bike.</cell></row>
-		</tabular>
-	</statement>
+
+	<statement><p>
+		Demonstrate that the following are equivalent statements.
+		<md>
+			<mrow> A \amp \colon \quad \text{If it's nice outside, I will ride my bike.}     </mrow>
+			<mrow> B \amp \colon \quad \text{It's not nice outside, or I will ride my bike.} </mrow>
+		</md>
+	</p></statement>
+
 	<solution>
+
 		<p>
 		Let <m> p </m> represent the substatement <q>it's nice outside,</q>
 		and let <m> q </m> represent the substatement <q>I will ride my bike.</q>
 		Then the equivalence we want to establish is <md>p \lgccond q \lgcequiv \lgcnot p \lgcor q</md>.
 		We can analyze the truth tables of both statements in the same table.
 		</p>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col right="minor" /><col /><col />
 			<row bottom="minor">
@@ -101,11 +107,14 @@ respective owners.
 				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
+
 		<p>
 		We see that the two statements always have the same truth value in all rows of the truth table,
 		so they are equivalent.
 		</p>
+
 	</solution>
+
 </problem>
 
 <note><p>
@@ -113,10 +122,13 @@ respective owners.
 </p></note>
 
 <problem xml:id="wexample-logic-equiv-negate-biconditional">
-	<!-- \label{WEXAMPLE::negate.biconditional} -->
+
 	<statement><p> Demonstrate the equivalence <m> p \lgcbicond q \lgcequiv \lgcnot p \lgcbicond \lgcnot q </m>. </p></statement>
+
 	<solution>
+
 		<p> Again we build a truth table, and see that the <q>output</q> columns for the two statements are identical. </p>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col /><col right="minor" /><col /><col />
 			<row bottom="minor">
@@ -156,7 +168,9 @@ respective owners.
 				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
+
 	</solution>
+
 </problem>
 
 <!-- OLD... is this an exercise or activity now?
@@ -167,27 +181,33 @@ respective owners.
 <proposition xml:id="proposition-logic-equiv-properties"><p>
 	Logical equivalence has the following properties.
 	<ol>
+
 		<li>
 			It is <term>reflexive</term>.
 			That is, <m> A \lgcequiv A </m> is always true.
 		</li>
+
 		<li>
 			It is <term>symmetric</term>.
 			That is, whenever <m> A \lgcequiv B </m>, then also <m> B \lgcequiv A </m>.
 		</li>
+
 		<li>
 			It is <term>transitive</term>.
 			That is, whenever <m> A \lgcequiv B </m> and <m> B \lgcequiv C </m>, then also <m> A \lgcequiv C </m>.
 		</li>
+
 		<li> Every pair of tautologies is an equivalent pair of logical statements. </li>
+
 		<li> Every pair of contradictions is an equivalent pair of logical statements. </li>
+
 	</ol>
 </p></proposition>
 
-<paragraphs><title>Check your understanding</title><p>
+<exercise><p>
 	Thinking in terms of truth tables, consider why each of the statements of
 	<xref ref="proposition-logic-equiv-properties" /> holds.
-</p></paragraphs>
+</p></exercise>
 
 </section>
 
@@ -202,15 +222,16 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 </p>
 
 <proposition xml:id="proposition-logic-equiv-rules-prop-calculus">
-	<!-- \zlabel{RULES::prop.calculus} -->
 	<title>Rules of Propositional Calculus</title>
 	<idx><h>Rule(s)</h><h>of Propositional Calculus</h></idx>
 	<idx><h>propositional calculus</h><h>rules of</h></idx>
+
 	<statement><p>
 		Suppose <m> A,B,C,E,U </m> are logical statements,
 		where <m> E </m> is a contradiction and <m> U </m> is a tautology.
 		Then the following equivalences always hold.
 		<ol>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-tauts">
 				<title>Rules involving tautologies</title>
 				<idx><h>tautology</h><h>propositional calculus rules</h></idx>
@@ -221,6 +242,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 					<li> <m> A \lgcand U \lgcequiv A </m> </li>
 				</ol></p>
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-contras">
 				<title>Rules involving contradictions</title>
 				<idx><h>contradiction</h><h>propositional calculus rules</h></idx>
@@ -229,6 +251,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 					<li> <m> A \lgcand E \lgcequiv E </m> </li>
 				</ol></p>
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-duality">
 				<title>Duality of tautologies and contradictions</title>
 				<idx><h>duality</h><h>of truth/falsity</h></idx>
@@ -237,12 +260,14 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 					<li> <m> \lgcnot E \lgcequiv U </m> </li>
 				</ol></p>
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-dbl-negation">
 				<title>Double negation</title>
 				<idx><h>negation</h><h>double</h></idx>
 				<idx><h>double</h><h>negation</h></idx>
 				<p> <m> \lgcnot \lgcnot A \lgcequiv A </m> </p>
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-idempotence">
 				<title>Idempotence</title>
 				<idx><h>idempotence</h><h>of logical connectives</h></idx>
@@ -251,6 +276,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 					<li> <m> A \lgcand A \lgcequiv A </m> </li>
 				</ol></p>
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-commutativity">
 				<title>Commutativity</title>
 				<idx><h>commutativity</h><h>of logical connectives</h></idx>
@@ -259,6 +285,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 					<li> <m> A \lgcand B \lgcequiv B \lgcand A </m> </li>
 				</ol></p>
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-associativity">
 				<title>Associativity</title>
 				<idx><h>associativity</h><h>of logical connectives</h></idx>
@@ -267,6 +294,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 					<li> <m> (A \lgcand B) \lgcand C \lgcequiv A \lgcand (B \lgcand C) </m> </li>
 				</ol></p>
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-distributivity">
 				<title>Distributivity</title>
 				<idx><h>distributivity</h><h>of logical connectives</h></idx>
@@ -285,6 +313,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 					</li>
 				</ol></p>
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-demorgan">
 				<!-- <paragraphs xml:id="proposition-logic-equiv-rules-prop-calculus-demorgan-para"> -->
 				<title>DeMorgan's Laws</title>
@@ -300,6 +329,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 				</ol></p>
 				<!-- </paragraphs> -->
 			</li>
+
 			<li xml:id="proposition-logic-equiv-rules-prop-calculus-cond-bicond">
 				<title>Constructing the conditional and biconditional</title>
 				<idx><h>conditional</h><h>construction from negation and disjunction</h></idx>
@@ -312,8 +342,11 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 					</li>
 				</ol></p>
 			</li>
+
 		</ol>
+
 	</p></statement>
+
 </proposition>
 
 <remark><p>
@@ -321,9 +354,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 	See <xref ref="exercise-logic-equiv-basic-equivalences" />.
 </p></remark>
 
-<example>
-	<title>DeMorgan</title>
-	<p>
+<example><title>DeMorgan</title><p>
 	Using <xref ref="proposition-logic-equiv-rules-prop-calculus-demorgan-not-and">Rule</xref>
 	of <xref ref="proposition-logic-equiv-rules-prop-calculus" />,
 	the following are equivalent statements.
@@ -336,8 +367,7 @@ we first need a <q>tool chest</q> of basic logical equivalences to use therein.
 	let <m> q </m> represent the statement <q>the triangle is equilateral.</q>
 	Then the first statement above is <m> \lgcnot (p \lgcand q) </m>,
 	while the second statement above is <m> \lgcnot p \lgcor \lgcnot q </m>.
-	</p>
-</example>
+</p></example>
 
 <p>
 Now we need some new substitution rules to enable us to use the rules of
@@ -349,7 +379,9 @@ in logical calculations.
 	<title>Substitution Rules</title> <!-- [for equivalent statements] -->
 	<idx><h>Rule(s)</h><h>Substitution</h><h>for equivalent statements</h></idx>
 	<idx><h>Substitution Rule</h><h>for equivalent statements</h></idx>
+
 	<statement><p><ol>
+
 		<li xml:id="theorem-logic-equiv-subst-equiv-substatements">
 			<title>Replacing a substatement by an equivalent one</title>
 			<p>
@@ -359,6 +391,7 @@ in logical calculations.
 			That is, if <m> Y \lgcequiv X </m> then <m> A' \lgcequiv A </m>.
 			</p>
 		</li>
+
 		<li xml:id="theorem-logic-equiv-subst-equiv-into-variables">
 			<title>Substituting into a known equivalence</title>
 			<p>
@@ -369,16 +402,23 @@ in logical calculations.
 			then so are new statements <m> A' </m> and <m> B' </m> obtained by applying substitution <m> p_i = C_i </m> to <em>both</em> <m> A </m> and <m> B </m>, for every collection of statements <m> C_1, C_2, \dotsc, C_m </m>.
 			</p>
 		</li>
+
 	</ol></p></statement>
+
 	<proof><title>Proof idea</title><p><ol>
+
 		<li>
 			Think of <m> X </m> as an intermediate column in the calculation of the truth table of <m> A </m>.
 			Replacing <m> X </m> by <m> Y </m> does not change this column,
 			as the truth tables of <m> X </m> and <m> Y </m> are the same.
-		</li><li>
+		</li>
+
+		<li>
 			We leave this statement for you, the reader, to consider. (Again, think of the <m> C_i </m> as intermediate columns in the calculations of the truth tables of <m> A' </m> and <m> B' </m>.)
 		</li>
+
 	</ol></p></proof>
+
 </theorem>
 
 <example><p>
@@ -409,8 +449,8 @@ to manipulate an expression involving a conditional.
 	but note that it's referred to in section-proof-methods-cases
 -->
 <example xml:id="example-logic-equiv-conditional-demorgan">
-	<!-- \label{EXAMPLE::conditional.demorgan} -->
 	<title>DeMorgan with a conditional</title>
+
 	<p>
 	Consider the statement <m> (p_1 \lgcor p_2) \lgccond q </m>.
 	We may read it as <q>if either <m> p_1 </m> or <m> p_2 </m> is true, then <m> q </m> will be true as well.</q>
@@ -438,6 +478,7 @@ to manipulate an expression involving a conditional.
 	</md>
 	with justifications
 	<ol marker="(i)">
+
 		<li>
 			<xref ref="theorem-logic-equiv-subst-equiv-into-variables">Rule</xref>
 			of our new <xref ref="theorem-logic-equiv-subst-equiv" text="title" />,
@@ -445,6 +486,7 @@ to manipulate an expression involving a conditional.
 			(<xref ref="proposition-logic-equiv-rules-prop-calculus-cond-bicond-cond">Rule</xref>
 			of <xref ref="proposition-logic-equiv-rules-prop-calculus"/>);
 		</li>
+
 		<li>
 			<xref ref="theorem-logic-equiv-subst-equiv-substatements">Rule</xref>
 			of our new <xref ref="theorem-logic-equiv-subst-equiv" text="title" />,
@@ -453,11 +495,13 @@ to manipulate an expression involving a conditional.
 			of <xref ref="proposition-logic-equiv-rules-prop-calculus"/>)
 			on the substatement <m> \lgcnot (p_1 \lgcor p_2) </m>;
 		</li>
+
 		<li>
 			distributivity
 			(<xref ref="proposition-logic-equiv-rules-prop-calculus-distributivity-right-or-over-and">Rule</xref>
 			of <xref ref="proposition-logic-equiv-rules-prop-calculus"/>); and
 		</li>
+
 		<li>
 			<xref ref="theorem-logic-equiv-subst-equiv-substatements">Rule</xref>
 			of our new <xref ref="theorem-logic-equiv-subst-equiv" text="title" />,
@@ -466,14 +510,17 @@ to manipulate an expression involving a conditional.
 			of <xref ref="proposition-logic-equiv-rules-prop-calculus"/>)
 			on each of the two <q>factors</q> of the conjunction.
 		</li>
+
 	</ol>
 	So our intuition about the logic of a disjunction in a conditional in this way was correct.
 	</p>
+
 	<aside><title>A look ahead</title><p>
 		This observation will come in handy <mdash />
 		see <xref ref="section-proof-methods-cases" />
 		and <xref ref="section-proof-methods-disj" />.
 	</p></aside>
+
 </example>
 
 <!-- TODO negating a conditional ? Maybe as an exercise or activity? (Or is it there already?) -->
@@ -486,33 +533,41 @@ to manipulate an expression involving a conditional.
 <p>
 Related to the conditional <m> p \lgccond q </m> are three important variations.
 <dl width="narrow">
+
 	<li>
 		<title>converse</title>
 		<idx>converse</idx>
 		<idx><h>conditional</h><h>converse</h></idx>
 		<p> <m> q \lgccond p </m> </p>
 	</li>
+
 	<li>
 		<title>inverse</title>
 		<idx><h>inverse</h><h>conditional</h></idx>
 		<idx><h>conditional</h><h>inverse</h></idx>
 		<p> <m> \lgcnot p \lgccond \lgcnot q </m> </p>
 	</li>
+
 	<li xml:id="definition-logic-equiv-contrapositive">
 		<title>contrapositive</title>
 		<idx>contrapositive</idx>
 		<idx><h>conditional</h><h>contrapositive</h></idx>
 		<p> <m> \lgcnot q \lgccond \lgcnot p </m> </p>
 	</li>
+
 </dl>
 </p>
 
 <theorem xml:id="theorem-logic-equiv-modus-tollens">
 	<title>Modus tollens</title>
 	<idx>modus tollens</idx>
+
 	<statement><p> A conditional and its contrapositive are equivalent. </p></statement>
+
 	<proof>
+
 		<p> We simply compare the truth tables. </p>
+
 		<tabular halign="center">
 			<col /><col right="minor" /><col /><col right="minor" /><col /><col />
 			<row bottom="minor">
@@ -552,32 +607,40 @@ Related to the conditional <m> p \lgccond q </m> are three important variations.
 				<cell><m> \lgctrue </m></cell>
 			</row>
 		</tabular>
+
 		<p> As the two <q>output</q> columns are identical, we conclude that the statements are equivalent. </p>
+
 	</proof>
+
 </theorem>
 
 <corollary xml:id="corollary-logic-equiv-modus-tollens">
 	<title>Modus tollens for inverse and converse</title>
+
 	<statement><p> The inverse and converse of a conditional are equivalent. </p></statement>
+
 	<proof><p>
 		The inverse of the conditional <m> p \lgccond q </m> is <m> \lgcnot p \lgccond \lgcnot q </m>.
 		The contrapositive of this new conditional is <m> \lgcnot\lgcnot q \lgccond \lgcnot\lgcnot p </m>,
 		which is equivalent to <m> q \lgccond p </m> by double negation.
 	</p></proof>
+
 </corollary>
 
 <warning>
 	<title>Common mistakes</title>
+
 	<p><ul>
 		<li> Mixing up a conditional and its converse. </li>
 		<li> Assuming that a conditional and its converse are equivalent. </li>
 	</ul></p>
+
 </warning>
 
 <example xml:id="example-logic-equiv-related-conditionals">
 	<title>Related conditionals are not all equivalent</title>
-	<!-- \label{exmps::converse.not.equiv.cond} -->
 	<p><ol>
+
 		<li><p>
 			Suppose <m> m </m> is a fixed but unspecified whole number that is greater than <m> 2 </m>.
 			<dl width="narrow">
@@ -588,6 +651,7 @@ Related to the conditional <m> p \lgccond q </m> are three important variations.
 			</dl>
 			Only two of these four statements are true!
 		</p></li>
+
 		<li><p>
 			Suppose <m> f(x) </m> is a fixed but unspecified function.
 			<dl width="narrow">
@@ -598,6 +662,7 @@ Related to the conditional <m> p \lgccond q </m> are three important variations.
 			</dl>
 			Only two of these four statements are true!
 		</p></li>
+
 	</ol></p>
 </example>
 
