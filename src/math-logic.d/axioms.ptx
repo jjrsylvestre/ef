@@ -25,48 +25,61 @@ The starting point of a mathematical system (or any logical system, for that mat
 </p>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>primitive term</title>
 		<idx>primitive term</idx>
 		<idx><h>term</h><h>primitive</h></idx>
 		<p> a label for an object or action that is left <em>undefined</em> </p>
 	</li>
+
 	<li>
 		<title>axiom</title>
 		<idx>axiom</idx>
 		<p> a statement (usually involving primitive terms or terms defined in terms of primitive terms) that is held to be true <em>without proof</em> </p>
 	</li>
+
 	<li>
 		<title>axiomatic system</title>
 		<idx>axiomatic system</idx>
 		<p> a collection of primitive terms and axioms </p>
 	</li>
+
 </dl></p>
 
 <example xml:id="example-axioms-woozles-dorples">
 	<title>An axiomatic system</title>
+
 	<paragraphs><title>Primitive terms</title><p><ul>
-		<li> <term>woozle</term> (noun), </li>
-		<li> <term>dorple</term> (noun), </li>
-		<li> <term>snarf</term> (verb). </li>
+		<li> <term>woozle</term> (noun) </li>
+		<li> <term>dorple</term> (noun) </li>
+		<li> <term>snarf</term> (verb) </li>
 	</ul></p></paragraphs>
+
 	<paragraphs><title>Axioms</title><p><ol>
+
 		<li xml:id="example-axioms-woozles-dorples-exists-three-woozles">  <!-- \label{AXIOM::exists.three.woozles} -->
 			There exist at least three distinct woozles.
 		</li>
+
 		<li xml:id="example-axioms-woozles-dorples-symmetry">  <!-- \label{AXIOM::snarf.symmetry} -->
 			A woozle snarfs a dorple if and only if the dorple snarfs the woozle.
 		</li>
+
 		<li xml:id="example-axioms-woozles-dorples-unique-dorple">  <!-- \label{AXIOM::unique.dorple} -->
 			Each pair of distinct woozles snarfs exactly one dorple in common.
 		</li>
+
 		<li xml:id="example-axioms-woozles-dorples-triple-woozles">  <!-- \label{AXIOM::triple.woozles} -->
 			There is at least one trio of distinct woozles that snarf no dorple in common.
 		</li>
+
 		<li xml:id="example-axioms-woozles-dorples-snarf-pair">  <!-- \label{AXIOM::dorple.snarfs.pair} -->
 			Each dorple is snarfed by at least two distinct woozles.
 		</li>
+
 	</ol></p></paragraphs>
+
 </example>
 
 <remark><p>
@@ -85,10 +98,13 @@ but we can actually prove things from it.
 </p>
 
 <theorem xml:id="theorem-axioms-three-distinct-dorples">
-	<!-- \label{THEOREM::three.distinct.dorples} -->
+
 	<statement><p> There exist at least three distinct dorples. </p></statement>
+
 	<proof xml:id="proof-axioms-three-distinct-dorples">
+
 		<p> (In this proof, all references to axioms refer to the axioms of <xref ref="example-axioms-woozles-dorples" />.) </p>
+
 		<p>
 		By <xref ref="example-axioms-woozles-dorples-triple-woozles">Axiom</xref>,
 		there exists a trio <m> w_1,w_2,w_3 </m> of distinct woozles that snarf no dorple in common.
@@ -99,36 +115,45 @@ but we can actually prove things from it.
 		and there also exists a dorple <m> d_3 </m> that <m> w_2 </m> and <m> w_3 </m> both snarf in common.
 		These snarfing relationships are illustrated in the diagram below.
 		</p>
+
 		<image xml:id="image-axioms-woozles-snarf-dorples-1" width="35.2%">
 			<description>A diagram of woozles snarfing dorples.</description>
 			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-1.tex" parse="text" /></latex-image>
 		</image>
+
 		<p> Now, suppose <m> d_1 </m> and <m> d_2 </m> were actually the same dorple <mdash /> then all three woozles would snarf it in common. </p>
+
 		<image xml:id="image-axioms-woozles-snarf-dorples-2" width="32.6%">
 			<description>A diagram of woozles snarfing dorples, assuming two of the dorples coincide.</description>
 			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-2.tex" parse="text" /></latex-image>
 		</image>
+
 		<p>
 		As this would contradict our initial assumption, it must be the case that <m> d_1 </m> and <m> d_2 </m> are distinct.
 		Similar arguments allow us to also conclude that <m> d_1 \ne d_3 </m> and <m> d_2 \ne d_3 </m>.
 		</p>
+
 	</proof>
+
 </theorem>
 
 <p> It is often useful to give names to important properties of objects. </p>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>defined term</title>
 		<idx>defined term</idx>
 		<idx><h>term</h><h>defined</h></idx>
 		<p> a label for an object or action that is defined in terms of primitive terms, axioms, and/or other defined terms </p>
 	</li>
+
 	<li>
 		<title>definition</title>
 		<idx>definition</idx>
 		<p> an formal explanation of the meaning of a <term>defined term</term> </p>
 	</li>
+
 </dl></p>
 
 <example xml:id="example-axioms-making-a-definition"><title>Making a definition</title><p>
@@ -142,11 +167,12 @@ but we can actually prove things from it.
 <p> A definition allows us to more succinctly communicate ideas and facts about the objects of an axiomatic system. </p>
 
 <theorem xml:id="theorem-axioms-snarf-buddies-snarf-unique">
-	<!-- \label{THEOREM::snarf.buddies.snorf.unique} -->
+
 	<statement><p>
 		A pair of <term><xref ref="example-axioms-making-a-definition-snarf-buddies" text="title" /></term>
 		snarf a <em>unique</em> woozle in common.
 	</p></statement>
+
 	<proof><p>
 		Suppose <m> d_1,d_2 </m> are snarf buddies.
 		By contradiction, suppose they snarf <em>more than one</em> woozle in common:
@@ -156,6 +182,7 @@ but we can actually prove things from it.
 		But this contradicts <xref ref="example-axioms-woozles-dorples-unique-dorple">Axiom</xref>,
 		as two distinct woozles cannot snarf more than one dorple in common.
 	</p></proof>
+
 </theorem>
 
 <p>
@@ -174,22 +201,23 @@ But we can now also prove the following.
 </p>
 
 <theorem xml:id="theorem-axioms-exactly-three-dorples">
+
 	<statement><p>
 		In the axiomatic system of <xref ref="example-axioms-woozles-dorples" />
 		with the above modified version of <xref ref="example-axioms-woozles-dorples-new-exists-three-woozles">Axiom</xref>,
 		there exist exactly three distinct dorples.
 	</p></statement>
+
 	<proof><p>
 		You are asked to prove this in the exercises.
 	</p></proof>
+
 </theorem>
 
 <p>
 A nonsense system like the one in <xref ref="example-axioms-woozles-dorples" /> is just that <mdash />
 nonsense <mdash />
 and not much use unless there are actual examples to which the developed theory can be applied.
-</p>
-
 <dl width="narrow"><li>
 	<title>model</title>
 	<idx>model (for an axiomatic system)</idx>
@@ -197,6 +225,7 @@ and not much use unless there are actual examples to which the developed theory 
 	a system obtained by replacing the primitive terms in an axiomatic system with more <q>concrete</q> terms in such a way that all the axioms are true statements about the new terms
 	</p>
 </li></dl>
+</p>
 
 <p>
 If we agree that the axiom statements are still all true with the new terms,
@@ -205,6 +234,7 @@ then any theorems proved under the abstract system are still valid in the new mo
 
 <example>
 	<title>A model for the woozel-dorple system</title>
+
 	<p>
 	Again consider the axiomatic system of <xref ref="example-axioms-woozles-dorples" />,
 	still using the modified version of <xref ref="example-axioms-woozles-dorples-new-exists-three-woozles">Axiom</xref>.
@@ -213,14 +243,17 @@ then any theorems proved under the abstract system are still valid in the new mo
 	and let <term>snarf</term> now mean <term>lies on</term>.
 	Convince yourself that the axioms of the system are all true with this interpretation of the primitive terms.
 	</p>
+
 	<p>
 	<xref ref="theorem-axioms-exactly-three-dorples" /> now says that there exist exactly three distinct lines in the plane which fit into our axiomatic system;
 	can you find their equations?
 	</p>
+
 	<image xml:id="image-axioms-points-lines-model" width="28.2%">
 		<description>A diagram of woozles snarfing dorples.</description>
 		<latex-image><xi:include href="axioms.d/points-lines-model.tex" parse="text" /></latex-image>
 	</image>
+
 </example>
 
 <remark><p>

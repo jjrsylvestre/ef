@@ -24,22 +24,31 @@ Follow the steps of <xref ref="procedure-induction-activities" /> to create a pr
 <identity xml:id="procedure-induction-activities">
 	<title>Mathematical induction, step-by-step</title>
 	<p><ol>
+
 		<li> Write the statement with <m> n </m> replaced by <m> k </m>. </li>
+
 		<li> Write the statement with <m> n </m> replaced by <m> k+1 </m>. </li>
+
 		<li> Identify the connection between the <m> \nth[k] </m> statement and the <m> \nth[(k+1)] </m> statement. </li>
+
 		<li>
 			Complete the <term>induction step</term> by <em>assuming</em> that the <m> n = k </m> version of the statement is <em>true</em>,
 			and using this assumption to <em>prove</em> that the <m> n = k + 1 </m> version of the statement is <em>true</em>.
 		</li>
+
 		<li> Complete the induction proof by proving the <term>base case</term>. </li>
+
 	</ol></p>
 </identity>
 
 </introduction>
 
 <activity> <!-- TODO index? -->
+
 	<p> A <term>binary string</term> is a <q>word</q> in which each <q>letter</q> can only be <m> 0 </m> or <m> 1 </m>. </p>
+
 	<p> Prove that there are <m> 2^n </m> different binary strings of length <m> n </m>. </p>
+
 </activity>
 
 <activity><p>
@@ -47,7 +56,9 @@ Follow the steps of <xref ref="procedure-induction-activities" /> to create a pr
 </p></activity>
 
 <activity>
+
 	<p> Prove that the following argument is valid for all positive integers <m> n </m>. </p>
+
 	<tabular halign="left">
 		<row><cell><m> (p_1 \lgcand q_1) \lgccond r_1 </m></cell></row>
 		<row><cell><m> (p_2 \lgcand q_2) \lgccond r_2 </m></cell></row>
@@ -56,12 +67,16 @@ Follow the steps of <xref ref="procedure-induction-activities" /> to create a pr
 		<row bottom="minor"><cell><m> p_1 \lgcand p_2 \lgcand \dotsb \lgcand p_n </m></cell></row>
 		<row><cell><m> (q_1 \lgccond r_1) \lgcand (q_2 \lgccond r_2) \lgcand \dotsb \lgcand (q_n \lgccond r_n) </m></cell></row>
 	</tabular>
+
 	<paragraphs><title>Careful</title><p>
 		Recall that in this context, the words <term>valid</term> and <term>true</term> do not have the same meaning.
 	</p></paragraphs>
+
 </activity>
 
-<activity><p> Prove that a truth table involving <m> n </m> statement variables requires <m> 2^n </m> rows. </p></activity>
+<activity><p>
+	Prove that a truth table involving <m> n </m> statement variables requires <m> 2^n </m> rows.
+</p></activity>
 
 <activity><p>
 	Prove that a knight can be moved from any square to any other square on an <m> n \times n </m> chess board by some sequence of allowed moves,

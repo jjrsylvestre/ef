@@ -16,89 +16,104 @@ respective owners.
 <exercises xml:id="exercises-proof-methods">
 
 <exercise xml:id="exercise-proof-methods-prime-def-1"><p>
-	<!-- \label{EXERCISE::proof.methods::prime.def.1} -->
 	Let <m> n </m> represent an integer with <m> n \ge 2 </m>.
 	Prove that <m> n </m> is prime if and only if <m> n/m </m> is <em>not</em> an integer for every integer <m> m </m> with <m> 2 \le m \lt \frac{n}{2} </m>.
 </p></exercise>
 
-<exercise xml:id="exercise-proof-methods-prime-def-2"><p>
-	<!-- \label{EXERCISE::proof.methods::prime.def.2} -->
+<exercise xml:id="exercise-proof-methods-prime-def-2">
+
+	<p>
 	Let <m> n </m> represent an integer with <m> n \ge 2 </m>.
 	Suppose <m> p_1,p_2,\dotsc,p_\ell </m> is a complete list of prime numbers which are less than or equal to <m> n/2 </m>.
 	Prove that <m> n </m> is prime if and only if none of the <m> p_i </m> divide <m> n </m>.
-	<alert>Careful:</alert>
+	</p>
+
+	<p>
+	<alert>Careful.</alert>
 	Is the statement actually true in the case <m> n=2 </m>? <m> n=3 </m>?
 	(Why should these cases be given special consideration?)
-</p></exercise>
+	</p>
+
+</exercise>
 
 <exercise>
+
 	<introduction><p>
 		Call two people <term>twins</term> if they share the same mother and the same birthdate.
 		Consider the statement: <q>if two people are twins, then they share the same birthdate.</q>
 	</p></introduction>
+
 	<task><p> Is the statement true? </p></task>
+
 	<task><p> What is the converse of this statement? Is it true? </p></task>
+
 </exercise>
 
 <exercise xml:id="exercise-proof-methods-direct-1"><p>
-	<!-- \label{EXERCISE::proof.methods::direct.proof.1} -->
 	<em>Prove directly:</em> The sum of two rational numbers is a rational number.
 </p></exercise>
 
 <exercise xml:id="exercise-proof-methods-direct-2"><p>
-	<!-- \label{EXERCISE::proof.methods::direct.proof.2} -->
 	<em>Prove directly:</em> If <m> n </m> is even, then <m> n^2 </m> is divisible by <m> 4 </m>.
 </p></exercise>
 
 <exercise xml:id="exercise-proof-methods-direct-3">
-	<!-- \label{EXERCISE::proof.methods::direct.proof.3} -->
 	<p> Recall that the <term>triangle inequality</term> states that <m> \abs{x+y} \le \abs{x} + \abs{y} </m> for all numbers <m> x </m> and <m> y </m>. </p>
-	<p><em>Use the triangle inequality to prove directly:</em> <m> \abs{x+y+z} \le \abs{x} + \abs{y} + \abs{z} </m> for all numbers <m> x,y,z </m>. </p>
+	<p> <em>Use the triangle inequality to prove directly:</em> <m> \abs{x+y+z} \le \abs{x} + \abs{y} + \abs{z} </m> for all numbers <m> x,y,z </m>. </p>
 </exercise>
 
 <exercise xml:id="exercise-proof-methods-cases">
-	<!-- \label{EXERCISE::proof.methods::cases.proof} -->
+
 	<statement><p><em>Prove by reduction to cases:</em> <m> n^3 - n </m> is always divisible by <m> 3 </m>. </p></statement>
+
 	<hint><p>Use cases <m> n = 3m, 3m+1, 3m+2 </m>.</p></hint>
+
 </exercise>
 
 <exercise xml:id="exercise-proof-methods-contrapos">
-	<!-- \label{EXERCISE::proof.methods::contrapos.proof} -->
+
 	<statement><p><em>Prove by proving the contrapositive:</em> if <m> 2^n - 1 </m> is prime, then <m> n </m> is prime. </p></statement>
+
 	<hint><p>
 		You may find the following <q>difference of powers</q> factorization formula useful:
 		<md> x^m - y^m = (x-y)(x^{m-1} + x^{m-2}y + x^{m-3}y^2 + \dotsb + x^2y^{m-3} + x y^{m-2} + y^{m-1}). </md>
 	</p></hint>
+
 </exercise>
 
 <exercise xml:id="exercise-proof-methods-counterexample">
-	<!-- \label{EXERCISE::proof.methods::counterexample.proof} -->
+
 	<p>Prove by counterexample that the following statement is false.</p>
+
 	<blockquote><p> The sum of any two irrational numbers is irrational. </p></blockquote>
+
 	<p>(See <xref ref="exercise-proof-methods-direct-1" />.)</p>
+
 </exercise>
 
 <exercise xml:id="exercise-proof-methds-bicond">
-	<!-- \label{EXERCISE::proof.methods::bicond.proof} -->
+
 	<p><em>Prove the biconditional:</em> <m> n </m> is even if and only if <m> n^2 </m> is divisible by <m> 4 </m>.</p>
+
 	<p>(See <xref ref="exercise-proof-methods-direct-2" />.)</p>
+
 </exercise>
 
 <exercise xml:id="exercise-proof-methods-contradiction-1"><p>
-	<!-- \label{EXERCISE::proof.methods::contradiction.proof.1} -->
 	<em>Prove by contradiction:</em>
 	If <m> m </m> and <m> n </m> are integers such that <m> 11m + 19n </m> is odd, then either <m> m </m> or <m> n </m> (or both) must be odd.
 </p></exercise>
 
 <exercise xml:id="exercise-proof-methods-contradiction-2"><p>
-	<!-- \label{EXERCISE::proof.methods::contradiction.proof.2} -->
 	<em>Prove by contradiction:</em> For <m> x,y>0 </m>, <m> \sqrt{x+y} \ne \sqrt{x} + \sqrt{y} </m>.
 </p></exercise>
 
 <exercise xml:id="exercise-proof-methods-contradiction-3">
-	<!-- \label{EXERCISE::proof.methods::contradiction.proof.3} -->
+
 	<p><em>Prove by contradiction:</em> The sum of a rational number and an irrational number is irrational.</p>
+
 	<p>(See <xref ref="exercise-proof-methods-direct-1" /> and <xref ref="exercise-proof-methods-counterexample" />.)</p>
+
 </exercise>
 
 <exercise><p>
@@ -115,46 +130,77 @@ respective owners.
 </p></exercise>
 
 <exercisegroup xml:id="exercisegroup-proof-methods-square-number-square-free">
-	<!-- \label{EXERCISE::proof.methods::square.number.square.free} -->
 	<title>Working with a definition</title>
+
 	<introduction>
+
 		<p> <xref ref="exercisegroup-proof-methods-square-number-square-free" text="type-local">Exercises</xref> concern the following definitions. </p>
+
 		<p>
 		A <term>square number</term><idx><h>square</h><h>number</h></idx>
 		is an integer which is equal to the square of some integer.
 		An integer is <term>square free</term><idx><h>square</h><h>free</h></idx>
 		if it is not divisible by any square number other than <m> 1 </m>.
 		</p>
+
 	</introduction>
+
 	<exercise xml:id="exercise-proof-methods-square-number-square-free-1">
+
 		<introduction><p> For each of the following, provide a proof to justify your answer. </p></introduction>
+
 		<task><p> Is <m> 0 </m> a square number? Is it square free? </p></task>
+
 		<task><p> Does there exist a negative square number? </p></task>
+
 		<task><p> Is every negative number square free? </p></task>
+
 		<task><p> Is every prime number square free? </p></task>
+
 		<task><p> Is every square free number prime? </p></task>
+
 		<task><p> Does there exist an integer which is both a square number and square free? </p></task>
+
 	</exercise>
+
 	<exercise xml:id="exercise-proof-methods-square-number-square-free-2"><p>
 		Prove that a positive number <m> n </m> is square free if and only if for every factorization <m> n = ab </m>,
 		the integers <m> a </m> and <m> b </m> do not share a common factor other than <m> 1 </m>.
 	</p></exercise>
+
 	<exercise xml:id="exercise-proof-methods-square-number-square-free-3"><p>
 		Prove that a positive number is square free if and only if it is not divisible by the square of a prime number.
 	</p></exercise>
+
 </exercisegroup>
 
-<!-- TODO add link to a table of small primes ? -->
 <exercise>
-	<introduction><p>
+
+	<introduction>
+
+		<p>
 		A pair of prime numbers <m> p_1,p_2 </m> is called a <term>twin prime pair</term> if <m> p_2 = p_1 + 2 </m>.
 		A prime number is called an <term>isolated prime</term><idx><h>isolated</h><h>prime</h></idx>
 		if it is not part of a twin prime pair.
-	</p></introduction>
+		</p>
+
+		<p>
+		For some parts of this exercise,
+		you may wish to consult a table of small primes,
+		such as
+		<url href="https://en.wikipedia.org/wiki/List_of_prime_numbers" visual="wikipedia.org/wiki/List_of_prime_numbers">Wikipedia's list of prime numbers</url>.
+		</p>
+
+	</introduction>
+
 	<task><p> Determine the first (<ie /> smallest) four twin prime pairs. </p></task>
+
 	<task><p> Determine the first (<ie /> smallest) two isolated primes. </p></task>
+
 	<task><p> Prove that if <m> p, p+2 </m> is a twin prime pair with <m> p \ge 5 </m>, then <m> p+1 </m> is divisible by <m> 6 </m>. </p></task>
+
 	<task><p> Prove that if <m> p, p+2 </m> is a twin prime pair, then <m> p-2,p </m> and <m> p+2,p+4 </m> <em>cannot</em> be twin prime pairs. </p></task>
+
 </exercise>
 
 </exercises>
