@@ -46,16 +46,13 @@ respective owners.
 	See also <xref ref="example-partial-orders-smaller-set-cardinality-not-partial-order" />.
 </p></warning>
 
-<example>
-	<title>Subgraph relationship as a measure of relative size</title>
-	<p>
+<example><title>Subgraph relationship as a measure of relative size</title><p>
 	Similar to <xref ref="example-partial-orders-subset" />,
 	if <m> H </m> and <m> H' </m> are subgraphs of a graph <m> G </m> such that <m> H' </m> is a subgraph of <m> H </m>,
 	we might think of <m> H' </m> as being <q>less than or equal to</q> <m> H </m>.
 	That is, if we write <m> \subgraphset{G} </m> to mean the set of all subgraphs of <m> G </m>,
 	then we can use the subgraph relation <m> \mathord{\partorder} </m> to describe when one subgraph of <m> G </m> is <q>smaller than or equal to</q> another.
-	</p>
-</example>
+</p></example>
 
 </section>
 
@@ -68,22 +65,27 @@ the notion of <q>is smaller than</q> is defined via a relation.
 We will use <m> \mathord{\le} </m> on <m> \N </m> as our model for a relation on a set
 that can be thought of as expressing <q>is smaller than or equal in size to.</q>
 <ul>
+
 	<li>
 		Every element in the set should be <q>smaller than or equal to</q> itself,
 		so the relation should be <term><xref ref="definition-relations-reflexive" text="title" /></term>.
 	</li>
+
 	<li>
 		Relative size should <em>never</em> be bidirectional for distinct elements in the set,
 		so the relation should be <term><xref ref="definition-relations-antisymmetric" text="title" /></term>.
 	</li>
+
 	<li>
 		We should be able to infer size relationships from chains of them,
 		so the relation should be <term><xref ref="definition-relations-transitive" text="title" /></term>.
 	</li>
+
 </ul>
 Notice that these are the same properties as for an equivalence relation, <alert>except</alert> that we have flipped <term>symmetric</term> to <term>antisymmetric</term>.
 Make sure to keep this straight!
 <dl width="narrow">
+
 	<li>
 		<title>partial order</title>
 		<idx>partial order</idx>
@@ -91,12 +93,14 @@ Make sure to keep this straight!
 		<idx><h>order</h><h>partial</h></idx>
 		<p> a relation that is reflexive, <em>anti</em>symmetric, and transitive </p>
 	</li>
+
 	<li>
 		<title>partially ordered set</title>
 		<idx>partially ordered set</idx>
 		<idx><h>set(s)</h><h>partially ordered</h></idx>
 		<p> a set equipped with a particular partial order </p>
 	</li>
+
 	<li>
 		<title><m> \mathord{\partorder} </m></title>
 		<notation>
@@ -108,6 +112,7 @@ Make sure to keep this straight!
 		</notation>
 		<p> symbol for an abstract partial order </p>
 	</li>
+
 	<li>
 		<title>strictly less/smaller than</title>
 		<idx><h>partial order</h><h>strict relationship</h></idx>
@@ -115,6 +120,7 @@ Make sure to keep this straight!
 		<idx>strict partial order relationship</idx>
 		<p> <m> a \partorder b </m> and <m> a \neq b </m> </p>
 	</li>
+
 	<li>
 		<title><m> a \partorderstrict b </m></title>
 		<notation>
@@ -123,6 +129,7 @@ Make sure to keep this straight!
 		</notation>
 		<p> <m> a </m> is strictly less/smaller than <m> b </m> </p>
 	</li>
+
 </dl></p>
 
 <warning><p>
@@ -147,8 +154,8 @@ Make sure to keep this straight!
 </example>
 
 <example xml:id="example-partial-orders-smaller-set-cardinality-not-partial-order">
-<!-- \label{EXAMPLE::smaller.set.cardinality.not.partial.order} -->
 	<title>Comparing cardinalities</title>
+
 	<p>
 	Suppose <m> U </m> is a universal set, and consider the collection of <em>finite</em> subsets of <m> U </m>.
 	Then we have a natural way to compare sizes of these subsets: write <m> A \mathrel{R} B </m> to mean <m> \card{A} \le \card{B} </m>.
@@ -156,7 +163,9 @@ Make sure to keep this straight!
 	This is because it is possible to have both <m> A \mathrel{R} B </m> and <m> B \mathrel{R} A </m> with <m> A \neq B </m>, in the case that <m> \card{A} = \card{B} </m>.
 	Changing the relation to mean <m> \card{A} \lneqq \card{B} </m> doesn't help,
 	since then it wouldn't be reflexive.
-	</p><p>
+	</p>
+
+	<p>
 	Now suppose the universal set <m> U </m> is infinite and consider <em>all</em>
 	(hence possibly infinite) subsets of <m> U </m>.
 	In this case we have a more general idea of
@@ -164,14 +173,15 @@ Make sure to keep this straight!
 	where <m> A </m> is smaller than <m> B </m> if there exists an injection <m> A \ifuncto B </m> but no bijection <m> A \to B </m>.
 	This more general notion of size comparison via cardinality suffers the same flaws as in the finite set case,
 	as it is not reflexive, and if we try to fix that by adding <q>or same size as</q> then it will not be antisymmetric.
-	</p><p>
+	</p>
+
+	<p>
 	However, in both finite and (possibly) infinite cases, we <em>can</em> turn cardinality comparison into a partial order using <q>smaller than or <em>equal</em> to</q>, where <q>smaller</q> must mean strictly smaller in terms of cardinality, but <q>equal</q> means <em>equality of sets</em> rather than equality of cardinality.
 	</p>
+
 </example>
 
-<example>
-	<title>English alphabetic order</title>
-	<p>
+<example><title>English alphabetic order</title><p>
 	Let <m> \Sigma = \EngAlphabet </m>,
 	and consider
 	<term>alphabetic order</term>
@@ -185,8 +195,7 @@ Make sure to keep this straight!
 		\mathrm{aaa} \amp \partorder \mathrm{aaaa}.
 	</mrow></md>
 	Alphabetic ordering is a partial order on <m> \words{\Sigma} </m>.
-	</p>
-</example>
+</p></example>
 
 <example xml:id="example-partial-orders-lexicographic-on-words">
 	<title>Lexicographic order</title>
@@ -199,15 +208,18 @@ Make sure to keep this straight!
 	if <m> \Sigma </m> is a partially ordered alphabet set equipped with partial order <m> \mathord{\partorder} </m>,
 	then we may inductively define a partial order <m> \mathord{\words{\partorder}} </m> on <m> \words{\Sigma} </m> by:
 	<ul>
+
 		<li>
 			<m> \emptyword \words{\partorder} w </m> for every <m> w \in \words{\Sigma} </m>,
 			where <m> \emptyword </m> is the empty word;
 		</li>
+
 		<li>
 			for <m> a,b \in \Sigma </m>,
 			considering these letters as words of length <m> 1 </m> in <m> \words{\Sigma} </m>
 			take <m> a \words{\partorder} b </m> to mean <m> a \partorder b </m> in <m> \Sigma </m>;
 		</li>
+
 		<li><p>
 			for letters <m> a_1, a_2 \in \Sigma </m> and words <m> w_1, w_2 \in \words{\Sigma} </m>,
 			take <m> a_1 w_1 \words{\partorder} a_2 w_2 </m> to mean that either
@@ -216,9 +228,11 @@ Make sure to keep this straight!
 				<li> <m> a_1 = a_2 </m> and <m> w_1 \words{\partorder} w_2 </m>. </li>
 			</ol>
 		</p></li>
+
 	</ul>
 	This is called <term>lexicographic</term> or <term>dictionary order</term> on <m> \words{\Sigma} </m>.
 	</p>
+
 </example>
 
 <example>
@@ -242,11 +256,14 @@ Make sure to keep this straight!
 	<title>Larger/greater than is a partial order</title>
 	<idx>dual order</idx>
 	<idx><h>order</h><h>dual</h></idx>
+
 	<p>
 	We can flip <q>smaller/less than or equal to</q> around to <q>larger/greater than or equal to.</q>
 	For example, for elements <m> m,n \in \N </m>, write <m> m \partorder n </m> to mean <m> m \ge n </m>.
 	Then <m> \mathord{\partorder} </m> is a partial order on <m> \N </m>.
-	</p><p>
+	</p>
+
+	<p>
 	This is an instance of a more general pattern.
 	Given a partial order <m> \mathord{\partorder} </m> on a set <m> A </m>,
 	the <xref ref="definition-relations-inverse" text="custom">inverse relation</xref>
@@ -259,12 +276,15 @@ Make sure to keep this straight!
 	<idx><h>order</h><h>dual</h></idx>
 	</p>
 	<!-- TODO XREF to activity or exercise? -->
+
 </example>
 
 <!-- TODO should all this "pulling back" stuff be transferred to activities ? -->
 <example xml:id="example-partial-orders-encoded-powset-pull-back">
 	<title>Transferring <m> \le </m> on <m> \N </m> to a power set</title>
+
 	<p> Let <m> A = \{a,b,c,d\} </m>, and let us <q>encode</q> each element of <m> \powset{A} </m> by the following algorithm. </p>
+
 	<p> Given input element <m> X \in \powset{A} </m> (that is, given input <m> X </m> that is a subset of <m> A </m>):
 	<ol marker="(i)">
 		<li> Initialize encoded value <m> r = 0 </m>. </li>
@@ -285,16 +305,21 @@ Make sure to keep this straight!
 		</mrow>
 	</md>
 	This encoding process is one-to-one; that is, no two subsets of <m> A </m> will output the same encoded value.
-	</p><p>
+	</p>
+
+	<p>
 	Now define <m> \mathord{\partorder} </m> on <m> \powset{A} </m> by taking <m> X \partorder Y </m> to mean <m> \operatorname{encode}(X) \le \operatorname{encode}(Y) </m>.
 	For example,
 	<md><mrow> \{a,b,c\} \amp \partorder \{d\}, \amp \{a,d\} \amp \partorder \{b,d\}, </mrow></md>
 	and both
 	<md><mrow> \emptyset \amp \partorder X, \amp X \amp \partorder A </mrow></md>
 	are true for every subset <m> X \subseteq A </m>.
-	</p><p>
+	</p>
+
+	<p>
 	The facts that <m> \mathord{\le} </m> is a partial order on <m> \N </m> and that this encoding process is one-to-one will combine to make <m> \mathord{\partorder} </m> a partial order.
 	</p>
+
 </example>
 
 <example xml:id="example-partial-order-pull-back">
@@ -324,13 +349,14 @@ Make sure to keep this straight!
 </li></dl></p>
 
 <example xml:id="example-partial-orders-divides-hasse-diagram">
-<!-- \label{EXAMPLE::divides.hasse.diagram} -->
 	<title>Hasse diagram for division of integers</title>
+
 	<p>
 	Let <m> A = \{2,4,6,8,10,12\} </m>.
 	The Hasse diagram of the partial order <m> \mathord{\mid} </m> (<ie /> <q>divides</q>) on <m> A </m> appears in <xref ref="figure-partial-orders-hasse-divides" />.
 	Notice that <m> 2 </m> is not joined directly to either <m> 8 </m> or <m> 12 </m>, since we can use transitivity and the facts that <m> 2 \mid 4 </m> and <m> 2 \mid 6 </m> to infer <m> 2 \mid 8 </m> and <m> 2 \mid 12 </m>, respectively, from the diagram.
 	</p>
+
 	<figure xml:id="figure-partial-orders-hasse-divides">
 		<caption>The Hasse diagram for the <q>divides</q> partial order on a finite set of integers.</caption>
 		<image xml:id="image-partial-orders-hasse-divides" width="24.1%">
@@ -338,17 +364,19 @@ Make sure to keep this straight!
 			<latex-image><xi:include href="partial-orders.d/hasse-divides.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 <remark><p> See <xref ref="example-graphs-divides" /> for another example of a graph for the <q>divides</q> relation. </p></remark>
 
 <example xml:id="example-partial-orders-pow-set-graph">
-<!-- \label{EXAMPLE::pow.set.graph.copy} -->
 	<title>Hasse diagram for subset order</title>
+
 	<p>
 	The graph from <xref ref="example-graphs-pow-set" /> has been reproduced in <xref ref="figure-partial-orders-hasse-subset" /> as a Hasse diagram,
 	and represents the partial order <m> \mathord{\subseteq} </m> on <m> \powset{\{a,b,c\}} </m>.
 	</p>
+
 	<figure xml:id="figure-partial-orders-hasse-subset">
 		<caption>The Hasse diagram for the subset partial order on the power set of a finite set.</caption>
 		<image xml:id="image-partial-orders-hasse-subset" width="47%">
@@ -356,6 +384,7 @@ Make sure to keep this straight!
 			<latex-image><xi:include href="partial-orders.d/hasse-subset.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 </section>
@@ -364,6 +393,7 @@ Make sure to keep this straight!
 <title>Total orders</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>comparable elements</title>
 		<idx>comparable</idx>
@@ -372,7 +402,8 @@ Make sure to keep this straight!
 		<p>
 		elements <m> a,b </m> in a partially ordered set such that either <m> a \partorder b </m> or <m> b \partorder a </m>
 		</p>
-	</li>\mathord{
+	</li>
+
 	<li>
 		<title>incomparable elements</title>
 		<idx>incomparable</idx>
@@ -381,11 +412,10 @@ Make sure to keep this straight!
 		<idx><h>set(s)</h><h>partially ordered</h><h>incomparable elements</h></idx>
 		<p> elements that are not comparable </p>
 	</li>
+
 </dl></p>
 
-<example>
-	<title>Comparable and incomparable subsets</title>
-	<p>
+<example><title>Comparable and incomparable subsets</title><p>
 	Let <m> U </m> represent some universal set containing at least two elements,
 	and consider <m> \powset{U} </m> partially ordered by <m> \mathord{\subseteq} </m>.
 	<ul>
@@ -397,12 +427,11 @@ Make sure to keep this straight!
 	</ul>
 	However, do not let the second two points above lead you astray: it is not necessary for subsets to be disjoint in order to be incomparable.
 	As long as each of a pair of subsets contains an element that the other doesn't, then the two will be incomparable by <m> \mathord{\subseteq} </m>.
-	</p>
-</example>
+</p></example>
 
 <p><dl width="narrow">
+
 	<li xml:id="definition-partial-orders-total">
-	<!-- \label{DEFN::total.order} -->
 		<title>total order</title>
 		<idx>total order</idx>
 		<idx><h>partial order</h><h>total</h></idx>
@@ -410,12 +439,14 @@ Make sure to keep this straight!
 		<idx><h>order</h><h>total</h></idx>
 		<p> a partial order on a set such that <em>every</em> pair of elements is comparable </p>
 	</li>
+
 	<li>
 		<title>totally ordered set</title>
 		<idx>totally ordered set</idx>
 		<idx><h>set(s)</h><h>totally ordered</h></idx>
 		<p> a set equipped with a total order </p>
 	</li>
+
 </dl></p>
 
 <example>
@@ -428,13 +459,10 @@ Make sure to keep this straight!
 	<p> Our usual order for numbers, <m> \mathord{\leq} </m>, is a total order on <m> \N </m>, on <m> \Z </m>, on <m> \Q </m>, or on <m> \R </m>. </p>
 </example>
 
-<example>
-	<title>Total order on alphabet induces total order on words</title>
-	<p>
+<example><title>Total order on alphabet induces total order on words</title><p>
 	If <m> \mathord{\partorder} </m> is a total order on an alphabet <m> \Sigma </m>,
 	then the lexicographic order <m> \words{\partorder} </m> described in <xref ref="example-partial-orders-lexicographic-on-words" /> is a total order on the set of words <m> \words{\Sigma} </m>.
-	</p>
-</example>
+</p></example>
 
 <example xml:id="example-partial-order-total-pull-back">
 	<title>Pulling back a total order through an injection</title>
@@ -445,20 +473,23 @@ Make sure to keep this straight!
 </example>
 
 <example xml:id="example-partial-orders-countable-can-be-totally-ordered">
-<!-- \label{EXAMPLE::countable.set.can.be.totally.ordered} -->
 	<title>Countable can be totally ordered</title>
+
 	<p>
 	If <m> A </m> is a <term><xref ref="definition-countable-countably-infinite" text="title" /></term> set,
 	then there exists a bijection <m> \funcdef{f}{\N}{A} </m>.
 	We can use the inverse <m> \funcdef{\inv{f}}{A}{\N} </m> to <q>pull back</q> the usual total order <m> \mathord{\le} </m> on <m> \N </m> to a total order on <m> A </m>
 	(see <xref ref="example-partial-order-total-pull-back" />).
-	</p><p>
+	</p>
+
+	<p>
 	Another point of view on this is that our bijection <m> f </m> creates an infinite sequence
 	<md> a_0, a_1, a_2, \dotsc </md>,
 	where each element of <m> A </m> appears exactly once.
 	This sequence can be turned into a specification of the total order on <m> A </m> by just turning the commas into <m> \mathord{\le} </m> symbols:
 	<md> a_0 \le a_1 \le a_2 \le \dotsb </md>.
 	</p>
+
 </example>
 
 <remark xml:id="remark-partial-orders-finite-can-be-totally-ordered"><p>
@@ -480,12 +511,13 @@ Make sure to keep this straight!
 <fact><p> A partial order on a finite set is total if and only if its Hasse diagram forms a single vertical line. </p></fact>
 
 <example xml:id="example-partial-orders-totally-ordered-hasse-diagram">
-<!-- \label{EXAMPLE::totally.ordered.hasse.diagram} -->
 	<title>A totally ordered finite set</title>
+
 	<p>
 	<xref ref="figure-partial-orders-total-order-powers-of-two" /> exhibits the Hasse diagram for the total order <m> \mathord{\mid} </m> on the set <m> \{2,4,8,16,32\} </m>,
 	though we have drawn the diagram on a slant from the vertical to be make it easier to see the entire diagram at a glance.
 	</p>
+
 	<figure xml:id="figure-partial-orders-total-order-powers-of-two">
 		<caption>A Hasse diagram of a totally ordered set.</caption>
 		<image xml:id="image-partial-orders-hasse-total" width="40.5%">
@@ -493,6 +525,7 @@ Make sure to keep this straight!
 			<latex-image><xi:include href="partial-orders.d/hasse-total.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 </example>
 
 </section>
@@ -559,16 +592,22 @@ Each of the following definitions are for a subset <m> B </m> of a partially ord
 </p>
 
 <warning><p><ol>
+
 	<li> An upper or lower bound does <em>not</em> need to belong to the subset for which it is a bound. </li>
+
 	<li> A set (or subset) does not necessarily have either a maximum or minimum element. </li>
+
 </ol></p></warning>
 
 <fact>
+
 	<statement><p>
 		If a subset of a partially ordered set contains a maximum element, then that maximum element is unique.
 		And similarly for a minimum element.
 	</p></statement>
+
 	<proof><p> You are asked to prove this in <xref ref="activity-partial-orders-prove-maximum-unique" />. </p></proof>
+
 </fact>
 
 <example xml:id="example-partial-orders-max-min-bound-in-R">
@@ -576,7 +615,9 @@ Each of the following definitions are for a subset <m> B </m> of a partially ord
 	<p>
 	Consider the usual (total) order <m> \mathord{\leq} </m> on <m> \R </m>.
 	<ul>
+
 		<li> The full set <m> \R </m> has neither a maximum nor minimum element. </li>
+
 		<li>
 			The subset <m> (0,1) </m> has many upper bounds (anything <m> \geq 1 </m>) and many lower bounds (anything <m> \leq 0 </m>).
 			However, we would refer to <m> 1 </m> as the
@@ -585,17 +626,17 @@ Each of the following definitions are for a subset <m> B </m> of a partially ord
 			<term><xref ref="definition-partial-orders-greatest-lower-bound" text="title" /></term>
 			of <m> (0,1) </m>.
 		</li>
+
 		<li>
 			The subset <m> (0,1) </m> has no maximum or minimum element.
 			However, the subset <m> [0,1] </m> has maximum <m> 1 </m> and minimum <m> 0 </m>.
 		</li>
+
 	</ul>
 	</p>
 </example>
 
-<example>
-	<title>Maximums, minimums, and bounds in a power set</title>
-	<p>
+<example><title>Maximums, minimums, and bounds in a power set</title><p>
 	Suppose <m> U </m> is a universal set, and consider <m> \powset{U} </m> partially ordered by <m> \mathord{\subseteq} </m> as usual.
 	In the full set <m> \powset{U} </m>, the unique maximum element is <m> U </m>, which is just another way of saying that every element of <m> \powset{U} </m> is a subset of <m> U </m>.
 	And the unique minimum element is <m> \emptyset </m>, which is just another way of saying that the empty set is a subset of every subset of <m> U </m>.
@@ -604,15 +645,14 @@ Each of the following definitions are for a subset <m> B </m> of a partially ord
 	Because of the existence of maximum and minimum elements, these elements also serve as an upper and lower bound, respectively, for <m> \mathscr{A} </m>.
 	However, one can also find a <em>least</em> upper bound for <m> \mathscr{A} </m> by taking the union of all the subsets of <m> U </m> contained in <m> \mathscr{A} </m>,
 	and one can find a greatest lower bound by taking the intersection of all the subsets of <m> U </m> contained in <m> \mathscr{A} </m>.
-	</p>
-</example>
+</p></example>
 
 <p>
 The next two definitions are stated for elements in a partially ordered set,
 but could also be understood for elements in a subset of a partially ordered set, as every subset of a partially ordered set is also a partially ordered set.
 <dl width="narrow">
+
 	<li xml:id="definition-partial-orders-maximal">
-	<!-- \label{DEFN::maximal} -->
 		<title>maximal element</title>
 		<idx>maximal element</idx>
 		<idx><h>partially ordered set</h><h>maximal element</h></idx>
@@ -629,6 +669,7 @@ but could also be understood for elements in a subset of a partially ordered set
 		<idx><h>element</h><h>minimal</h></idx>
 		<p> an element for which no other element is smaller </p>
 	</li>
+
 </dl></p>
 
 <remark><p>
@@ -650,26 +691,29 @@ but could also be understood for elements in a subset of a partially ordered set
 	<idx><h>element</h><h>minimal</h><h>Test</h></idx>
 	<idx><h>element</h><h>maximal</h><h>Test</h></idx>
 	<p><ol>
+
 		<li xml:id="test-partial-orders-maximal-minimal-maximal">
-		<!-- \label{TEST::maximal.element} -->
 			To verify that <m> \overline{m} \in A </m> is maximal, prove either the original definition
 			<md> (\forall x \in A)({x \neq \overline{m}} \lgcimplies {\overline{m} \npartorder x}) </md>,
 			or prove the equivalent contrapositive formulation
 			<md> (\forall x \in A)({\overline{m} \partorder x} \lgcimplies {x = \overline{m}}) </md>.
 		</li>
+
 		<li>
 			To verify that <m> \underline{m} \in A </m> is minimal, prove either the original definition
 			<md> (\forall x \in A)({x \neq \underline{m}} \lgcimplies {x \npartorder \underline{m}}) </md>,
 			or prove the equivalent contrapositive formulation
 			<md> (\forall x \in A)({x \partorder \underline{m}} \lgcimplies {x = \underline{m}}) </md>.
 		</li>
+
 	</ol></p>
 </claim>
 
 <example xml:id="example-partial-orders-connected-components-are-maximal">
-<!-- \label{EXAMPLE::connected.components.are.maximal} -->
 	<title>Connected components are maximal</title>
+
 	<p> Consider the graph <m> G </m> in <xref ref="figure-partial-orders-example-connected-components-are-maximal" />. </p>
+
 	<figure xml:id="figure-partial-orders-example-connected-components-are-maximal">
 		<caption>An example non-connected graph.</caption>
 		<image xml:id="image-partial-orders-components-are-maximal" width="37.3%">
@@ -677,6 +721,7 @@ but could also be understood for elements in a subset of a partially ordered set
 			<latex-image><xi:include href="partial-orders.d/components-are-maximal.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p>
 	Let <m> \subgraphset{G} </m> represent the collection of subgraphs of <m> G </m>,
 	partially ordered by the subgraph relation.
@@ -689,6 +734,7 @@ but could also be understood for elements in a subset of a partially ordered set
 	However, a maximum element of <m> \connectedsubgraphset{G} </m> would be a connected subgraph of <m> G </m> which contains every other connected subgraph of <m> G </m>,
 	and the existence of multiple connected components in this example non-connected graph makes such a subgraph impossible.
 	</p>
+
 </example>
 
 <remark><p>
@@ -702,13 +748,16 @@ but could also be understood for elements in a subset of a partially ordered set
 </p></remark>
 
 <problem> <!-- worked example -->
+
 	<statement>
+
 		<p>
 		Let <m> A = \{a,b,c\} </m>.
 		Given the Hasse diagram for <m> \mathord{\subseteq} </m> on <m> P = \powset{A}\smallsetminus\{A\} </m>
 		in <xref ref="figure-partial-orders-snipped-subseteq-powset" />,
 		determine all maximal/maximum/minimal/minimum elements, if they exist.
 		</p>
+
 		<figure xml:id="figure-partial-orders-snipped-subseteq-powset">
 			<caption>The Hasse diagram for <m> \mathord{\subseteq} </m> on an <q>uncapped</q> power set.</caption>
 			<image xml:id="image-partial-orders-hasse-uncapped-powset" width="38.8%">
@@ -716,18 +765,26 @@ but could also be understood for elements in a subset of a partially ordered set
 				<latex-image><xi:include href="partial-orders.d/hasse-uncapped-powset.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
+
 	</statement>
+
 	<solution>
+
 		<p>
 		The element <m> \{a,b\} </m> is maximal, since each node in the Hasse diagram that is adjacent to <m> \{a,b\} </m> is below it.
 		The same reasoning confirms that <m> \{a,c\} </m>, and <m> \{b,c\} </m> of are also maximal.
 		However, none of them is a maximum, since none of them is larger than the other two.
-		</p><p>
+		</p>
+
+		<p>
 		The element <m> \emptyset </m> of <m> P </m> is a minimal element,
 		since each node that is adjacent to it is above it.
 		And it is the only minimal element.
 		Furthermore, <m> \emptyset </m> is the minimum element, since for every other node there is a walk upwards from <m> \emptyset </m> to that node.
-	</p></solution>
+		</p>
+
+	</solution>
+
 </problem>
 
 <warning><p>
@@ -739,11 +796,12 @@ but could also be understood for elements in a subset of a partially ordered set
 </p></warning>
 
 <fact xml:id="fact-partial-orders-maxmin-imum-is-the-only-maxmin-imal">
-<!-- \label{FACT::max.min.imum.is.only.max.min.imal} -->
+
 	<statement><p>
 		If the partially ordered set <m> A </m> has a maximum element, then that element is also the only maximal element of <m> A </m>.
 		Similarly, the minimum element, if it exists, is the only minimal element of <m> A </m>.
 	</p></statement>
+
 	<proof><title>Proof idea</title><p>
 		Assume <m> A </m> has a maximum element.
 		Then every element of <m> A </m> is both comparable to and smaller than that maximum element,
@@ -752,6 +810,7 @@ but could also be understood for elements in a subset of a partially ordered set
 		And no other element could be maximal, because to be maximal means there are no elements which are larger.
 		But our maximum element is always larger.
 	</p></proof>
+
 </fact>
 
 <warning><p>
@@ -759,9 +818,7 @@ but could also be understood for elements in a subset of a partially ordered set
 	But a maximal element, even if it is the only one, need not be the maximum.
 </p></warning>
 
-<example>
-	<title>A partially ordered set with exactly one maximal element but no maximum element</title>
-	<p>
+<example><title>A partially ordered set with exactly one maximal element but no maximum element</title><p>
 	Consider
 	<md> A = \{3\} \union \{2,4,8,16,32,64,\dotsc,2^n,\dotsc\}, </md>
 	partially ordered by <m> \mathord{\mid} </m>, the <q>divides</q> relation.
@@ -770,18 +827,14 @@ but could also be understood for elements in a subset of a partially ordered set
 	Therefore, <m> 3 </m> is maximal.
 	Moreover, <m> 3 </m> is the only maximal element in <m> A </m>, since every power of <m> 2 </m> divides the next power of <m> 2 </m>.
 	However, there is no maximum element in <m> A </m>, since there is no element of <m> A </m> which is divisible by every other element of <m> A </m>.
-	</p>
-</example>
+</p></example>
 
-<example>
-	<title>A partially ordered set with infinitely many maximal/minimal elements but no maximum/minimum element</title>
-	<p>
+<example><title>A partially ordered set with infinitely many maximal/minimal elements but no maximum/minimum element</title><p>
 	Consider <m> \mathscr{A} \subsetneqq \powset{\N} </m>, where <md> \mathscr{A} = \powset{\N} \relcmplmnt \{\emptyset,\N\} </md>.
 	So <m> \mathscr{A} </m> is the set of all nonempty, proper subsets of <m> \N </m>.
 	Under the partial order <m> \mathord{\subseteq} </m>, <m> \mathscr{A} </m> has neither a maximum nor a minimum element,
 	but for every <m> n \in \N </m>, <m> \{n\} </m> is a minimal element and <m> \N \relcmplmnt \{n\} </m> is a maximal element of <m> \mathscr{A} </m>.
-	</p>
-</example>
+</p></example>
 
 </section>
 
@@ -801,15 +854,15 @@ because we risk contradicting the required properties of a partial order
 <p>
 The following definitions apply to a partial order <m> \mathord{\partorder} </m> on a set <m> A </m>.
 <dl width="narrow">
+
 	<li xml:id="definition-partial-orders-compatible-total-order">
 		<title>compatible total order</title>
 		<idx><h>total order</h><h>compatible</h></idx>
 		<idx><h>partial order</h><h>total</h><h>compatible</h></idx>
 		<idx><h>order</h><h>total</h><h>compatible</h></idx>
-		<p>
-		a total order <m> \mathord{\le} </m> on <m> A </m> such that if <m> a_1 \partorder a_2 </m> then <m> a_1 \le a_2 </m>
-		</p>
+		<p> a total order <m> \mathord{\le} </m> on <m> A </m> such that if <m> a_1 \partorder a_2 </m> then <m> a_1 \le a_2 </m> </p>
 	</li>
+
 	<li>
 		<title>topological sorting</title>
 		<idx>topological sorting</idx>
@@ -824,14 +877,18 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 	The relation <m> \mathord{\subseteq} </m> on <m> \powset{\N} </m> is a partial order but not a total order.
 	Consider what happens when we begin trying to build a total order on <m> \powset{\N} </m> out of <m> \mathord{\subseteq} </m> by choosing relations between previously incomparable elements arbitrarily.
 	<ul>
+
 		<li>
 			Elements <m> \{1\},\{2,3\} </m> are <m> \mathord{\subseteq} </m>-incomparable;
 			choose <m> \{2,3\} \le \{1\} </m>.
 		</li>
+
 		<li>
 			Elements <m> \{1\},\{2\} </m> are <m> \mathord{\subseteq} </m>-incomparable; choose <m> \{1\} \le \{2\} </m>.
 		</li>
+
 		<li> <ellipsis /> </li>
+
 	</ul>
 	Now, <m> \{2\} \subseteq \{2,3\} </m> is already true, so to be compatible we must set <m> \{2\} \leq \{2,3\} </m> in the new total order.
 	But now <m> \{1\} \leq \{2\} \leq \{2,3\} </m> would dictate <m> \{1\} \leq \{2,3\} </m> to satisfy the transitive property,
@@ -848,7 +905,6 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 </p></note>
 
 <algorithm xml:id="algorithm-partial-orders-top-sorting">
-<!-- \label{ALGO::topological.sorting} -->
 	<title>Topological sorting</title>
 	<idx><h>partially ordered set</h><h>topological sorting</h></idx>
 	<idx><h>set(s)</h><h>partially ordered</h><h>topological sorting</h></idx>
@@ -858,21 +914,25 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 	we can specify a compatible total order <m> \mathord{\leq} </m> on <m> A </m> by writing the elements of <m> A </m> in a list
 	<md> a_0 \leq a_1 \leq \dotsb \leq a_{n-1} </md> as follows, where <m> n = \card{A} </m>.
 	<ol>
+
 		<li> Initialize <m> i = 0 </m> and <m> A_0 = A </m>. </li>
+
 		<li xml:id="algorithm-partial-orders-top-sorting-choice-step">
-		<!-- \label{ALGO::topological.sorting::choice.step} -->
 			Choose a minimal element of <m> A_i </m>;
 			let <m> a_i </m> represent the chosen element.
 		</li>
+
 		<li>
 			Set <m> A_{i+1} = A_i \relcmplmnt \{a_i\} </m>
 			(<ie /> create a smaller partially ordered set by discarding <m> a_i </m>).
 		</li>
+
 		<li>
 			Increment <m> i </m> by <m> 1 </m>.
 			If <m> i \lt n </m> then go back to <xref ref="algorithm-partial-orders-top-sorting-choice-step" text="type-local">Step</xref>.
 			Otherwise, if <m> i = n </m> then <m> A_i </m> should now be empty, so stop <mdash /> the desired compatible order has now been specified.
 		</li>
+
 	</ol>
 	</p>
 </algorithm>
@@ -884,6 +944,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 </p></note>
 
 <problem> <!-- worked example -->
+
 	<statement><p>
 		Consider
 		<md>
@@ -892,9 +953,8 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 		</md>.
 		Apply <xref ref="algorithm-partial-orders-top-sorting" /> to determine a total order <m> \mathord{\leq} </m> on <m> A </m> that is compatible with <m> \mathord{\subseteq} </m>.
 	</p></statement>
-	<solution>
-		<title>Algorithm solution</title>
-		<p>
+
+	<solution><title>Solution by the algorithm</title><p>
 		In <m> A_0 = A </m>, we must choose <m> a_0 = \emptyset </m>, since it is the minimum.
 		Now remove <m> a_0 </m> so that
 		<md> A_1 = \bigl\{ \{0\}, \{1\}, \{2\}, \{0,1\}, \{0,2\}, \{1,2\}, \{0,1,2\} \bigr\}. </md>
@@ -923,14 +983,18 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 		</md>
 		Notice that the maximum element of <m> A </m> ended up at the <q>top</q> of the total order and the minimum element was forced to the <q>bottom.</q>
 	</p></solution>
+
 	<solution>
 		<title>Graphical solution</title>
+
 		<p>
 		We can perform the algorithm of topological sorting graphically;
 		at each step, choose a vertex that has no adjacent vertices below it in the graph,
 		then cross that vertex and any adjacent edges out of the graph.
 		(See <xref ref="figure-partial-orders-topo-sorting-graphically" />.)
-		</p><p>
+		</p>
+
+		<p>
 		Our end result is a list of our choices, in order:
 		<md>
 			\emptyset \leq \{2\} \leq \{0\} \leq \{0,2\}
@@ -938,10 +1002,14 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 		</md>
 		Notice that the maximum element of <m> A </m> ended up at the <q>top</q> of the total order and the minimum element was forced to the <q>bottom</q>.
 		</p>
+
 		<figure xml:id="figure-partial-orders-topo-sorting-graphically">
 			<caption>Example of a graphical approach to topological sorting.</caption>
+
 			<sbsgroup> <!-- sbsgroup can also take widths ... ? -->
+
 				<sidebyside widths="39.1% 39.1%">
+
 					<figure>
 						<caption>Choose <m> a_0 = \emptyset </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-0">
@@ -949,6 +1017,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/0.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 					<figure>
 						<caption>Choose <m> a_1 = \{2\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-1">
@@ -956,8 +1025,11 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/1.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 				</sidebyside>
+
 				<sidebyside widths="39.1% 39.1%">
+
 					<figure>
 						<caption>Choose <m> a_2 = \{0\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-2">
@@ -965,6 +1037,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/2.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 					<figure>
 						<caption>Choose <m> a_3 = \{0,2\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-3">
@@ -972,8 +1045,11 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/3.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 				</sidebyside>
+
 				<sidebyside widths="39.1% 39.1%">
+
 					<figure>
 						<caption>Choose <m> a_4 = \{1\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-4">
@@ -981,6 +1057,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/4.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 					<figure>
 						<caption>Choose <m> a_5 = \{1,2\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-5">
@@ -988,8 +1065,11 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/5.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 				</sidebyside>
+
 				<sidebyside widths="39.1% 39.1%">
+
 					<figure>
 						<caption>Choose <m> a_6 = \{0,1\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-6">
@@ -997,6 +1077,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/6.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 					<figure>
 						<caption>Choose <m> a_7 = \{0,1,2\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-7">
@@ -1004,12 +1085,15 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/7.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
+
 				</sidebyside>
+
 			</sbsgroup>
+
 		</figure>
-		<p>
-		</p>
+
 	</solution>
+
 </problem>
 
 <note><p>

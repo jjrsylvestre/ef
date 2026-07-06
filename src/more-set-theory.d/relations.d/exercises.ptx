@@ -22,15 +22,20 @@ respective owners.
 
 <exercisegroup xml:id="exercisegroup-relations-draw-graph">
 	<title>Directed graph for a relation</title>
+
 	<introduction><p>
 		In each of
 		<xref ref="exercisegroup-relations-draw-graph" text="type-local">Exercises</xref>,
 		you are given a relation on a specific set.
 		Draw a directed graph that represents the relation.
 	</p></introduction>
+
 	<exercise><p> Relation <m> \mathord{\subsetneqq} </m> on <m> \powset{\{a,b,c\}} </m>. </p></exercise>
+
 	<exercise><p> Relation <m> \mathord{\lt} </m> on <m> \{1,2,3,4\} </m>. </p></exercise>
+
 	<exercise><p> Relation <m> \mathord{\equiv_3} </m> on <m> \natnumlt{13} </m>. </p></exercise>
+
 	<exercise><p>
 		Relation <q>has the same number of occurrences of the letter <m> \mathrm{a} </m> as</q>
 		on <m> \words{\Sigma}_4 </m> for alphabet <m> \Sigma = \{\mathrm{a}, \mathrm{z}\} </m>.
@@ -45,6 +50,7 @@ respective owners.
 
 <exercisegroup xml:id="exercisegroup-relations-determine-properties">
 	<title>Testing reflexivity/symmetry/antisymmetry/transitivity</title>
+
 	<introduction><p>
 		In each of
 		<xref ref="exercisegroup-relations-determine-properties" text="type-local">Exercises</xref>,
@@ -56,58 +62,75 @@ respective owners.
 		<term><xref ref="definition-relations-transitive" text="title" /></term>
 		the given relation possesses.
 	</p></introduction>
+
 	<exercise><p> Relation <m> \mathord{\lt} </m> on <m> \R </m>. </p></exercise>
+
 	<exercise><p> Relation <m> \mathord{\ge} </m> on <m> \R </m>. </p></exercise>
+
 	<exercise><p> Relation <m> \mathord{\mid} </m> on <m> \Z </m>. </p></exercise>
+
 	<exercise><p>
 		Relation <m> \mathord{\subseteq} </m> on <m> \powset{X} </m>,
 		where <m> X </m> is an arbitrary, unspecified set.
 	</p></exercise>
+
 	<exercise><p>
 		Relation <q>is taller than</q> on the set of all living humans.
 	</p></exercise>
+
 	<exercise><p>
 		Relation <q>is parallel to</q> on the set of all straight lines in the plane.
 	</p></exercise>
+
 	<exercise><p>
 		Relation <q>is perpendicular to</q> on the set of all straight lines in the plane.
 	</p></exercise>
+
 	<exercise><p>
 		Relation <q>has the same length as</q> on <m> \words{\Sigma} </m>,
 		where <m> \Sigma </m> is an arbitrary, unspecified alphabet set.
 	</p></exercise>
+
 	<exercise><p>
 		Relation <q>is shorter than</q> on <m> \words{\Sigma} </m>,
 		where <m> \Sigma </m> is an arbitrary, unspecified alphabet set.
 	</p></exercise>
+
 	<exercise><p>
 		Relation <q>contains the same number of occurrences of the letter <m> x </m> as</q> on <m> \words{\Sigma} </m>,
 		where <m> \Sigma </m> is an arbitrary, unspecified alphabet set and <m> x </m> is some fixed choice of letter in <m> \Sigma </m>.
 	</p></exercise>
+
 	<exercise><p>
 		Relation <m> \mathord{\lgcequiv} </m> on the set of all logical statements involving the statement variables
 		<m> p_1,p_2,p_3,\dotsc </m>.
 	</p></exercise>
+
 	<exercise><p>
 		Relation <m> R </m> defined by <q><m> a_1 \mathrel{R} a_2 </m> if <m> f(a_1) = f(a_2) </m></q> on a set <m> A </m>,
 		where <m> \funcdef{f}{A}{B} </m> is an arbitrary, unspecified function.
 	</p></exercise>
+
 </exercisegroup>
 
 <exercisegroup xml:id="exercisegroup-relations-draw-graph-with-properties">
 	<title>Properties of relations reflected in their graphs</title>
+
 	<introduction><p>
 		In each of
 		<xref ref="exercisegroup-relations-draw-graph-with-properties" text="type-local">Exercises</xref>,
 		you are given a list of properties.
 		Draw the directed graph of a relation on the set <m> \{a,b,c,d\} </m> that possesses the given properties.
 	</p></introduction>
+
 	<exercise><p>
 		Symmetric and transitive, but neither reflexive nor antisymmetric.
 	</p></exercise>
+
 	<exercise><p>
 		Reflexive, antisymmetric, and transitive, but not symmetric.
 	</p></exercise>
+
 </exercisegroup>
 
 <exercise><p> Prove that a relation is symmetric if and only if it is equivalent to its own inverse relation. </p></exercise>
@@ -124,7 +147,6 @@ respective owners.
 </p></exercise>
 
 <exercise xml:id="exercise-relations-symm-antisymm-equality"><p>
-<!-- \label{EXERCISE::relations::symm.antisymm.equality} -->
 	Suppose <m> R </m> is a relation on a set <m> A </m> that is both symmetric and antisymmetric.
 	Prove that <m> R </m> is a subset of the identity relation <m> \setdef{(x,x)}{x \in A} </m>.
 </p></exercise>
