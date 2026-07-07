@@ -16,83 +16,110 @@ respective owners.
 <worksheet xml:id="activities-funcs">
 
 <activity>
+
 	<p>
 	Suppose <m> n </m> is a fixed but unknown positive integer,
 	and let <m> \funcdef{D}{\R}{\R^n} </m> represent the function defined by <m> D(x) = (x,x,\dotsc,x) </m>.
-	</p><p>
+	</p>
+
+	<p>
 	Write a set definition in <xref ref="subsection-sets-defining-candidate-condition" text="title" /> for the image set <m> D(\R) </m>.
 	Then do the same for the graph <m> \funcgraph{D} </m>.
 	</p>
+
 </activity>
 
 <activity>
+
 	<task><p> Devise an example of a function <m> \N \to \N </m> that is bijective. </p></task>
+
 	<task><p> Devise an example of a function <m> \N \to \N </m> that is injective but not surjective. </p></task>
+
 	<task><p> Devise an example of a function <m> \N \to \N </m> that is surjective but not injective. </p></task>
+
 	<conclusion><p>
 		Note that when you define a function, you don't necessarily have to give an input-output <em>formula</em> <mdash />
 		you can also use a table of input-output values or just a description in words (<ie /> an <term>algorithm</term>) of how an output is to be produced from an input.
 	</p></conclusion>
+
 </activity>
 
 <activity>
+
 	<introduction><p>
 		For each function defined below:
 		<ol marker="(i)">
+
 			<li>
 				Decide whether the function is injective.
 				Use the <xref ref="test-funcs-inj" text="custom">Injective Function Test</xref>
 				to verify your answer.
 			</li>
+
 			<!-- <li>  TODO NEED BETTER EXAMPLES OF DOING THIS
 				Determine some pattern that all elements of the image <m> f(B) </m> have in common.
 				That is, if you were handed an arbitrary element of the codomain <m> B </m>,
 				describe what property or properties you would use to determine whether it was in the subset <m> f(A) \subseteq B </m>.
 			</li> -->
+
 			<li>
 				Decide whether the function is surjective.
 				Use the <xref ref="test-funcs-surj" text="custom">Surjective Function Test</xref>
 				to verify your answer.
 			</li>
+
 		</ol>
 	</p></introduction>
+
 	<task><p>
 		<m> \Sigma = \{0,1\} </m>,
 		<m> \funcdef{c}{\words{\Sigma}}{\words{\Sigma}} </m> is the <term>bitwise complement</term> function:
 		for input word <m> w </m>, the output word <m> c(w) </m> is the word of the same length as <m> w </m> but with a <m> 0 </m> at every position that <m> w </m> has a <m> 1 </m>, and a <m> 1 </m> at every position that <m> w </m> has a <m> 0 </m>.
 	</p></task>
+
 	<task><p> <m> \funcdef{f}{\R}{\R \times \R} </m>,  <m> f(x) = (x+1,x-1) </m>. </p></task>
+
 	<task><p>
 		<m> A = \powset{\N} \relcmplmnt \{\emptyset\} </m>,
 		<m> \funcdef{m}{A}{\N} </m>,
 		<m> m(X) = </m> the smallest number in <m> X </m>.
 	</p></task>
+
 </activity>
 
 <activity>
+
 	<p>
 	Consider <m> \Sigma = \{0,1\} </m>,
 	and recall that for <m> n \in \N </m>, <m> \words{\Sigma}_n </m> is the subset of <m> \words{\Sigma} </m> consisting of all words from the alphabet <m> \Sigma </m> with length <m> n </m>.
 	Suppose <m> A = \{a_1,a_2,\dotsc,a_n\} </m> is a set with <m> n </m> distinct elements.
 	Construct a bijection <m> \powset{A} \to \words{\Sigma}_n </m>.
-	</p><p>
+	</p>
+
+	<p>
 	When attempting this activity,
 	remember that when you define a function you don't necessarily have to give an input-output <em>formula</em> <mdash />
 	you can also use a description in words (<ie /> an <term>algorithm</term>) of how an output is to be produced from an input.
 	</p>
+
 </activity>
 
 <activity xml:id="activity-funcs-bij-from-restricted-codomain">
+
 	<introduction><p>
 		Suppose <m> A </m> is a set that definitely does not contain any cats,
 		and let <md> \funcdef{f}{\powset{A}}{\powset{A \union \{\text{Grumpy Cat}\}}} </md>
 		represent the function defined by <md> f(X) = X \union \{\text{Grumpy Cat}\} </md>.
 	</p></introduction>
+
 	<task><p> Verify that <m> f </m> is injective. </p></task>
+
 	<task><p> Verify that <m> f </m> is <em>not</em> surjective. </p></task>
+
 	<task xml:id="activity-funcs-bij-from-restricted-codomain-restrict"><p>
 		Describe specifically how to make <m> f </m> bijective by <term><xref ref="definition-funcs-restrict-codomain" text="title" /></term>.
 	</p></task>
+
 	<task><p>
 		As all bijective functions are invertible,
 		the bijective version of <m> f </m> from
@@ -105,29 +132,39 @@ respective owners.
 			<li> <xref ref="definition-funcs-rule" text="title" />. </li>
 		</ol>
 	</p></task>
+
 </activity>
 
 <activity>
+
 	<introduction><p>
 		Let <m> \funcdef{\ell}{\words{\Sigma}}{\N} </m> represent the length function,
 		using alphabet is <m> \Sigma = \{\alpha,\omega\} </m>.
 	</p></introduction>
+
 	<task><p> Compute <m> \ell\bbrac{\funcinvimg{\ell}{B}} </m> for <m> B = \{1,10,100\} </m>. </p></task>
+
 	<task><p>
 		How many elements are there in <m> \inv{\ell}\bbrac{\ell(A)} </m> for
 		<m> A = \{\alpha\alpha, \alpha\omega, \omega\omega\alpha\omega \} </m>?
 	</p></task>
+
 </activity>
 
 <activity>
+
 	<introduction><p>
 		Suppose <m> \funcdef{f}{A}{B} </m> is a function, and <m> B_1,B_2 </m> are subsets of <m> B </m>.
 	</p></introduction>
+
 	<task>
+
 		<p>
 		Draw a Venn diagram illustrating that
 		<md> \funcinvimg{f}{B_1 \intersection B_2} = \funcinvimg{f}{B_1} \intersection \funcinvimg{f}{B_2} </md>.
-		</p><p>
+		</p>
+
+		<p>
 		Include all of the sets
 		<md alignment="gather">
 			<mrow>
@@ -141,22 +178,34 @@ respective owners.
 		</md>
 		in your diagram.
 		</p>
+
 	</task>
+
 	<task><p>
 		Formally prove that <m> \funcinvimg{f}{B_1 \intersection B_2} = \funcinvimg{f}{B_1} \intersection \inv{f}{B_2} </m>,
 		using the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref>.
 	</p></task>
+
 </activity>
 
 <activity>
+
 	<introduction>
-		<p> (<em>Note:</em> The parts of this question are independent of one another.) </p>
+
+		<p> (<em>Note:</em> The tasks in this activity are independent of one another.) </p>
+
 		<p> Suppose <m> \funcdef{f}{A}{B} </m> and <m> \funcdef{g}{B}{C} </m> are functions. </p>
+
 	</introduction>
+
 	<task><p> Argue that if <m> f </m> and <m> g </m> are both surjective, then so is <m> g \funccomp f </m>. </p></task>
+
 	<task><p> If <m> g \funccomp f </m> is surjective, must <m> g </m> be? Must <m> f </m> be? </p></task>
+
 	<task><p> Argue that if <m> f </m> and <m> g </m> are both injective, then so is <m> g \funccomp f </m>. </p></task>
+
 	<task><p> If <m> g \funccomp f </m> is injective, must <m> g </m> be? Must <m> f </m> be? </p></task>
+
 </activity>
 
 </worksheet>

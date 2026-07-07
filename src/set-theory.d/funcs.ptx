@@ -23,24 +23,28 @@ respective owners.
 <title>Terminology and basic concepts</title>
 
 <p><dl width="narrow">
+
 	<li xml:id="definition-funcs-working">
 		<title>function (working definition)</title>
 		<!-- \label{DEFN::function.working.defn} -->
 		<idx><h>function</h><h>definition</h><h>working</h></idx>
 		<p> a rule which assigns to each input element from a set <m> A </m> a single output element from a set <m> B </m> </p>
 	</li>
+
 	<li xml:id="definition-funcs-domain">
 		<title>domain</title>
 		<idx>domain (of a function)</idx>
 		<idx><h>function</h><h>domain</h></idx>
 		<p> the set of all possible input elements for a function </p>
 	</li>
+
 	<li xml:id="definition-funcs-codomain">
 		<title>codomain</title>
 		<idx>codomain (of a function)</idx>
 		<idx><h>function</h><h>codomain</h></idx>
 		<p> a set <em>containing</em> all possible output elements for a function </p>
 	</li>
+
 	<li>
 		<title><m> \funcdef{f}{A}{B} </m></title>
 		<notation>
@@ -49,12 +53,14 @@ respective owners.
 		</notation>
 		<p> <m> f </m> is a function with domain <m> A </m> and codomain <m> B </m> </p>
 	</li>
+
 	<li xml:id="definition-funcs-rule">
 		<title>input-output rule</title>
 		<idx>input-output rule (of a function)</idx>
 		<idx><h>function</h><h>input-output rule</h></idx>
 		<p> the process/algorithm/rule/formula that describes how each input element from the domain will be transformed into an output element in the codomain </p>
 	</li>
+
 	<li>
 		<title><m> f(a) = b </m></title>
 		<notation>
@@ -63,6 +69,7 @@ respective owners.
 		</notation>
 		<p> function <m> \funcdef{f}{A}{B} </m> associates the codomain element <m> b\in B </m> to the domain element <m> a\in A </m> </p>
 	</li>
+
 	<li>
 		<title><m> a \mapsto b </m></title>
 		<notation>
@@ -71,6 +78,7 @@ respective owners.
 		</notation>
 		<p> alternative notation for <m> f(a) = b </m> </p>
 	</li>
+
 	<li>
 		<title>image (of an domain element)</title>
 		<idx><h>image</h><h>of a domain element</h></idx>
@@ -80,6 +88,7 @@ respective owners.
 		or that <m> f </m> <term>maps</term> <m> a </m> to <m> b </m>
 		</p>
 	</li>
+
 </dl></p>
 
 <figure>
@@ -92,15 +101,19 @@ respective owners.
 
 <warning>
 	<title>Domain elements are necessarily inputs, but codomain elements are not necessarily outputs</title>
+
 	<p>
 	When we define a function,
 	the domain should either be implicitly clear from the <xref ref="definition-funcs-rule" text="title" />,
 	or explicitly stated so that the precise collection of allowable input elements is known.
-	</p><p>
+	</p>
+
+	<p>
 	However, it would be too onerous to do the same for the precise collection of output elements <mdash />
 	often when we create a function we won't initially know exactly what outputs it will produce.
 	The purpose of stating a <term>codomain</term> is so that it is at least clear what <em>type</em> of output element is produced.
 	</p>
+
 </warning>
 
 </subsection>
@@ -116,15 +129,25 @@ in which we need to specify <alert>three pieces of information</alert>:
 	<li> the <term><xref ref="definition-funcs-codomain" text="title" /></term>, and </li>
 	<li> the <term><xref ref="definition-funcs-rule" text="title" /></term>. </li>
 </ol>
-</p><p>
+</p>
+
+<p>
 The first two pieces of information are specified in one step,
 when we write
 <md> \funcdef{f}{A}{B} </md>.
 This notation indicates that <m> A </m> will be the domain and <m> B </m> will be the codomain for the function named <m> f </m>.
 Of course, the <term>name</term> of the function is an additional piece of information being specified with this notation,
 but naming a function is optional (though highly recommended!).
-</p><p>
-Specifying the input-output rule may be done in many different ways, <eg /> by a formula, table of values, a description of a step-by-step process or algorithm to determine or compute an output given an arbitrary input, <etc /> <!-- <etc /> already outputs a period -->
+</p>
+
+<p>
+Specifying the input-output rule may be done in many different ways;
+for example, by:
+<ul>
+	<li> A formula. </li>
+	<li> A table of values. </li>
+	<li> A description of a step-by-step process or algorithm to determine or compute an output given an arbitrary input. </li>
+</ul>
 </p>
 
 <example><title>Defining a function by an input-output formula</title><p>
@@ -136,22 +159,28 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 
 <example>
 	<title>Correctly stating a domain and codomain</title>
+
 	<p>
 	In the function definition
 	<md>
-		<mrow> f\colon \R \amp \to \R, </mrow>
-		<mrow> x \amp \mapsto \frac{1}{x^2}, </mrow>
-	</md>
-	the first line of the definition tells us the <term><xref ref="definition-funcs-domain" text="title" /></term> (<m> \R </m>),
+		f\colon \R \to \R,
+		\qquad
+		x \mapsto \frac{1}{x^2}
+	</md>,
+	the first part of the definition tells us the <term><xref ref="definition-funcs-domain" text="title" /></term> (<m> \R </m>),
 	<term><xref ref="definition-funcs-codomain" text="title" /></term> (again <m> \R </m>),
 	and a name for the function (<m> f </m>).
-	The second line tells us the <term><xref ref="definition-funcs-rule" text="title" /></term>,
+	The second part tells us the <term><xref ref="definition-funcs-rule" text="title" /></term>,
 	so that <md> f(x) = \frac{1}{x^2} </md>.
-	</p><p>
+	</p>
+
+	<p>
 	However, on closer inspection we discover that the domain has been <alert>incorrectly</alert> specified,
 	as <m> x=0 </m> is not a permissible input for the input-output rule.
 	Instead, we should write <md> \funcdef{f}{\R \relcmplmnt \{0\}}{\R} </md>.
-	</p><p>
+	</p>
+
+	<p>
 	Even though this function will only ever produce <em>positive</em> real numbers as outputs,
 	the codomain is acceptable as stated.
 	It <em>would</em> be more precise to write
@@ -159,35 +188,41 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 	where <m> \posset{\R} </m> represents the set of positive real numbers,
 	but it is not necessary to do so.
 	</p>
+
 </example>
 
 <example xml:id="example-funcs-defining-by-algorithm">
 	<title>Defining a function by an input-output algorithm</title>
+
 	<p> Consider the function <m> \powset{\Z} \to \N </m> where outputs are computed according to the following algorithm. </p>
+
 	<p>
 	Given an input element <m> X \in \powset{\Z} </m> (which, by definition, is a <em>set</em> of integers), carry out the following.
 	<ol>
+
 		<li>
 			Compute the absolute value of each element in <m> X </m>.
 			(If <m> X </m> is empty, skip this step.)
 		</li>
+
 		<li>
 			Determine the minimum result of the absolute value computations in the previous step.
 			(If <m> X </m> is empty, there will not be any absolute value computation results to compare, so take <m> 0 </m> as the <q>mininum</q> instead.)
 		</li>
+
 		<li>
 			Multiply the minimum value found in the previous step by <m> 2 </m> and add <m> 1 </m>.
 			Output this final result.
 		</li>
+
 	</ol>
 	However, with the right notation, an algorithm like the above can often be converted into an input-output formula <mdash />
 	see <xref ref="example-funcs-comp-of-three" />.
 	</p>
+
 </example>
 
-<!-- all these examples were formerly listed under \label{EXAMPLES::basic.func.exmps} -->
 <example xml:id="example-funcs-define-by-listing">
-	<!-- \label{EXAMPLES::basic.func.exmps::finite.sets} -->
 	<title>Defining a function by listing input-ouput pairs</title>
 	<p>
 	For <m> \mathscr{N} = \{1,2,3\} </m> and <m> \mathscr{A} = \{a,b,c,d\} </m>,
@@ -198,6 +233,7 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 
 <example xml:id="example-funcs-define-multivariable">
 	<title>Multi-variable functions</title>
+
 	<p>
 	In a first course in calculus a student typically studies only <term>single-variable functions</term>,
 	<ie /> functions with a single input variable and a single output variable.
@@ -207,24 +243,28 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 	<md> f\bbrac{(x,y)} = x^2 + y^2 </md>,
 	as the proper definition of <m> f </m> is <m> \funcdef{f}{\R^2}{\R} </m>,
 	but the extra brackets convey no additional information and only clutter things up.
-	</p><p>
+	</p>
+
+	<p>
 	Functions with multiple real output variables are often called <term>vector functions</term>.
 	For example, <m> \funcdef{g}{\R}{\R^2} </m> defined by
 	<md> g(t) = (t,t^2) </md>
 	can be considered as a vector parametrization of a parabola in the plane.
-	</p><p>
+	</p>
+
+	<p>
 	And of course we could consider <term>multi-variable vector functions</term> as well.
 	A function <m> \funcdef{\varphi}{\R^2}{\R^2} </m> like
 	<md> \varphi(s,t) = (s-t,s+t) </md>
 	could be considered as a change of variables
 	<md><mrow> x \amp = s - t, \amp y \amp = s + t. </mrow></md>
 	</p>
+
 </example>
 
 <example><title>Logical statements as functions</title><p>
 	A logical statement <m> S </m> involving statement variables <m> p_1, p_2, \dotsc, p_m </m> is essentially a multi-variable function
-	<md> \funcdef{S}{\Lambda^m}{\Lambda} </md>,
-	where <m> \Lambda = \{ \lgctrue,\, \lgcfalse \} </m>.
+	<m> \funcdef{S}{\Lambda^m}{\Lambda} </m> for <m> \Lambda = \{ \lgctrue,\, \lgcfalse \} </m>.
 	For example, the statement
 	<md> S(p_1,p_2) = (p_1 \lgccond p_2) </md> is a function <m> \funcdef{S}{\Lambda \cartprod \Lambda}{\Lambda} </m>,
 	where
@@ -242,12 +282,14 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 <title>Graph of a function</title>
 
 <p><dl width="narrow">
+
 	<li xml:id="definition-funcs-graph">
 		<title>graph (of a function)</title>
 		<idx><h>graph</h><h>of a function</h></idx>
 		<idx><h>function</h><h>graph</h></idx>
 		<p> the set of all input-output pairs for the function </p>
 	</li>
+
 	<li>
 		<title><m> \funcgraph{f} </m></title>
 		<notation>
@@ -260,15 +302,18 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 			<md> \funcgraph{f} = \setdef{(a,f(a))}{a \in A} \subseteq A \cartprod B </md>
 		</p>
 	</li>
+
 </dl></p>
 
 <example>
 	<title>Graph of a single-variable, real-valued function</title>
+
 	<p>
 	The graph of a function <m> \funcdef{f}{\R}{\R} </m> is a subset of <m> \R \cartprod \R = \R^2 </m>.
 	We usually represent <m> \R^2 </m> visually as the <m> xy </m>-plane
 	and the graph <m> \funcgraph{f} \subseteq \R^2 </m> as a curve in the plane.
 	</p>
+
 	<figure>
 		<caption>The graph <m> \funcgraph{x \mapsto x^2} </m> represented as a curve in the Cartesian plane.</caption>
 		<image xml:id="image-funcs-graph-x-squared" width="36.7%">
@@ -276,26 +321,26 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 			<latex-image><xi:include href="funcs.d/graph-x-squared.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
+
 	<p>
 	In the graph of <m> f(x) = x^2 </m> above, each point on the curve represents an element of <m> \R^2 </m> which is in the subset <m> \funcgraph{f} </m>.
 	For example, <m> (-1,1) \in \funcgraph{f} </m> but <m> (-1,\pi) \notin \funcgraph{f} </m>.
 	</p>
+
 </example>
 
-<example>
-	<title>Graph of a multi-variable, real-valued function</title>
-	<p>
+<example><title>Graph of a multi-variable, real-valued function</title><p>
 	The graph of a function <m> \funcdef{f}{\R^2}{\R} </m> is technically a subset of <m> \R^2 \cartprod \R </m>,
 	but usually we just think of this as <m> \R^3 </m>, or <m> 3 </m>-space.
 	Instead of a curve, such a graph defines a <em>surface</em> in <m> \R^3 </m>.
 	For example, the graph of the function <m> f(x,y) = x^2 + y^2 </m> from
 	<xref ref="example-funcs-define-multivariable" />
 	is a parabolic cone, <ie /> a (non-solid) cone-like surface with parabolic sides.
-	</p>
-</example>
+</p></example>
 
 <example>
 	<title>Graph of a function defined by a list</title>
+
 	<p>
 	To describe the graph of the function <m> \funcdef{f}{\mathscr{N}}{\mathscr{A}} </m> defined in
 	<xref ref="example-funcs-define-by-listing" />,
@@ -303,6 +348,7 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 	<md> \funcgraph{f} = \{ (1,d), (2,a), (3,d) \} </md>.
 	This graph can most simply be represented by a table:
 	</p>
+
 	<tabular top="medium" bottom="medium" halign="center">
 		<col right="minor" /><col /><col /><col />
 		<row bottom="minor">
@@ -318,11 +364,13 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 			<cell><m> d </m></cell>
 		</row>
 	</tabular>
+
 	<p>
 	Similarly to <xref ref="example-sets-visualize-cartesian-prod" />,
 	we can also visualize this graph as a set of <q>points</q> relative to a set of perpendicular <q>axes,</q>
 	where the horizontal axis represents the domain set and the vertical axis represents the codomain set.
 	</p>
+
 	<tabular halign="center">
 		<col /><col /><col /><col /><col />
 		<row><cell><m> \mathscr{A} </m></cell></row>
@@ -348,25 +396,30 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 			<cell><m> \mathscr{N} </m></cell>
 		</row>
 	</tabular>
+
 	<p>
 	Notice that we have not joined the points in the above visualization with lines or a curve,
 	since the three points pictured are the <em>only</em> points on the graph.
 	</p>
+
 </example>
 
 <example>
 	<title>Graph of a logical statement</title>
+
 	<p>
 	We've already encountered the graph of a logical statement:
 	it is usually represented as a truth table.
 	For example, the graph <m> \funcgraph{S} </m> of the logical statement
-	<md><mrow>
-		S \colon \Lambda \cartprod \Lambda \amp \to \Lambda, \amp
-		S(p_1,p_2) \amp = p_1 \lgccond p_2,
-	</mrow></md>
+	<md>
+		S \colon \Lambda \cartprod \Lambda \to \Lambda,
+		\qquad
+		S(p_1,p_2) = p_1 \lgccond p_2
+	</md>,
 	where <m> \Lambda = \{ \lgctrue, \lgcfalse \} </m> as usual,
 	can be represented as below.
 	</p>
+
 	<figure>
 		<caption>The graph <m> \funcgraph{S} </m> of the logical statement <m> S(p_1,p_2) = p_1 \lgccond p_2 </m>.</caption>
 		<tabular halign="center">
@@ -394,6 +447,7 @@ Specifying the input-output rule may be done in many different ways, <eg /> by a
 			</row>
 		</tabular>
 	</figure>
+
 </example>
 
 <p>
@@ -418,15 +472,12 @@ Rather than chasing some circle of definitions, we can come up with a better def
 In this formal definition, we are defining a function to <em>be</em> what we previously would have called its <term>graph</term>.
 </p>
 
-<example>
-	<title>Formal definition for a single-variable, real-valued function</title>
-	<p>
+<example><title>Formal definition for a single-variable, real-valued function</title><p>
 	We are now defining a function <m> \funcdef{f}{\R}{\R} </m> to be the subset of the Cartesian plane <m> \R^2 </m> consisting of the graph of the function.
 	In this case, you can think of the <q>exactly one</q> requirement as equivalent to the <term>vertical line test</term>:
 	an input value may not produce more than one output value.
 	(Though the <q>one</q> part of <q>exactly one</q> captures our requirement that a function be defined on every domain element.)
-	</p>
-</example>
+</p></example>
 
 </subsection>
 
@@ -438,14 +489,10 @@ We have to be careful defining functions;
 sometimes what we think is a function turns out to not be a function.
 </p>
 
-<!--
-	\label{EXAMPLES::nonfunctions::both}
-    .... the next two examples used to be combined into one example, with the above label
--->
-
 <example xml:id="example-funcs-undefined">
 	<title>A function must be defined on the whole domain</title>
 	<idx><h>function</h><h>undefined on domain element</h></idx>
+
 	<p>
 	Again write  <m> \mathscr{N} = \{1,2,3\} </m> and <m> \mathscr{A} = \{a,b,c,d\} </m>,
 	and consider
@@ -457,11 +504,14 @@ sometimes what we think is a function turns out to not be a function.
 	we have no way to tell what result <m> f(2) </m> should return.
 	In other words, such an <m> f </m> will have been left
 	<term>undefined</term> on element <m> 2 </m>, which is supposed to be part of the domain.
-	</p><p>
+	</p>
+
+	<p>
 	The set <m> F </m> <em>does</em> define a function, just not one with domain <m> \mathscr{N} </m>.
 	If we consider the smaller set <m> \mathscr{N}' = \{1,3\} </m>,
 	then there <em>is</em> a function <m> \funcdef{f}{\mathscr{N}'}{\mathscr{A}} </m> with <m> F = \funcgraph{f} </m>.
 	</p>
+
 </example>
 
 <example xml:id="example-funcs-well-defined">
@@ -479,10 +529,7 @@ sometimes what we think is a function turns out to not be a function.
 	</p>
 </example>
 
-<example>
-	<!-- \label{EXAMPLES::nonfunctions::not.well.defined} -->
-	<title>An input-output rule does not necessarily define a function</title>
-	<p>
+<example><title>An input-output rule does not necessarily define a function</title><p>
 	Recall that
 	<md> \Q = \setdef{\frac{m}{n}}{ m,n\in \Z,\, n\ne 0}</md>.
 	Suppose we attempt to define <m> \funcdef{f}{\Q}{\Z} </m> by <m> f(\frac{m}{n}) = m+n </m>.
@@ -493,8 +540,7 @@ sometimes what we think is a function turns out to not be a function.
 	</mrow></md>
 	This is nonsense, because <m> \frac{1}{2} </m> and <m> \frac{2}{4} </m> represent the <em>same element</em> of <m> \Q </m>.
 	Thus, rule <m> f </m> is not well-defined as a function, since to each element of the domain <m> \Q </m> it associates more than one element of the codomain <m> \Z </m>.
-	</p>
-</example>
+</p></example>
 
 </subsection>
 
@@ -512,12 +558,9 @@ sometimes what we think is a function turns out to not be a function.
 	</p>
 </li></dl></p>
 
-<example>
-	<title>Seemingly different input-output rules can define the same function</title>
-	<p>
+<example><title>Seemingly different input-output rules can define the same function</title><p>
 	The functions <m> \funcdef{f}{\R}{\R} </m>, <m> f(x) = \abs{x} </m>, and <m> \funcdef{g}{\R}{\R} </m>, <m> g(x) = \sqrt{x^2} </m>, are equal.
-	</p>
-</example>
+</p></example>
 
 </subsection>
 
@@ -525,6 +568,7 @@ sometimes what we think is a function turns out to not be a function.
 <title>Image of a function</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>image of a function</title>
 		<!-- \label{DEFN::image} -->
@@ -532,6 +576,7 @@ sometimes what we think is a function turns out to not be a function.
 		<idx><h>function</h><h>image</h></idx>
 		<p> the set of all possible outputs of the function </p>
 	</li>
+
 	<li>
 		<title><m> f(A) </m></title>
 		<notation>
@@ -543,6 +588,7 @@ sometimes what we think is a function turns out to not be a function.
 		so that <md> f(A) = \setdef{f(a)}{a \in A} \subseteq B </md>
 		</p>
 	</li>
+
 </dl></p>
 
 <figure>
@@ -555,16 +601,20 @@ sometimes what we think is a function turns out to not be a function.
 
 <warning>
 	<title>Codomain elements are not necessarily image elements</title>
+
 	<p>
 	We have stated before that a codomain in a function definition may be <q>larger</q> than necessary because we do not always know precisely what output elements a given input-output rule will produce.
 	Our idea of codomain is that it should at least tell us what <q>type</q> of outputs will be produced, but not necessarily <em>exactly</em> what outputs will be produced.
-	</p><p>
+	</p>
+
+	<p>
 	With our new concept of <term>function image</term>, we can now repeat this more technically:
 	<alert>
 		a function image is always a subset of the codomain, but it might be a
 		<xref ref="definition-sets-proper-subset" text="title" />
 	</alert>.
 	</p>
+
 </warning>
 
 <paragraphs><title>How do we know if a codomain element is an image element?</title><p>
@@ -574,11 +624,14 @@ sometimes what we think is a function turns out to not be a function.
 
 <problem xml:id="wexample-funcs-verify-function-image"> <!-- worked example -->
 	<title>Verifying a function image description</title>
+
 	<statement><p>
 		Consider <m> \funcdef{f}{\R}{\R} </m>, <m> f(x) = x^2 </m>.
 		Prove <m> f(\R) = \nnegset{\R} </m>, where <m> \nnegset{\R} </m> is the set of nonnegative real numbers.
 	</p></statement>
+
 	<solution>
+
 		<p>
 		Following the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref>,
 		we need to show both
@@ -587,22 +640,27 @@ sometimes what we think is a function turns out to not be a function.
 		we can write
 		<md> \nnegset{\R} = \setdef{x\in \R}{x \ge 0} </md>.
 		</p>
+
 		<case><title>Show <m> f(\R) \subseteq \nnegset{\R} </m></title><p>
 			Let <m> y </m> represent an <em>arbitrary</em> element of <m> f(\R) </m>.
 			As an element of the image of <m> f </m>, <m> y </m> is an output corresponding to some input.
 			That is, there exists some <m> x \in \R </m> such that <md> y = f(x) = x^2 </md>.
 			Therefore, since square numbers are always positive, we have <m> y \ge 0 </m>, and hence <m> y \in \nnegset{\R} </m>.
 		</p></case>
+
 		<case><title>Show <m> f(\R) \supseteq \nnegset{\R} </m></title><p>
 			Let <m> y </m> represent an <em>arbitrary</em> element of <m> \nnegset{\R} </m>.
 			To show <m> y \in f(\R) </m>, we need to find <m> x \in \R </m> such that <m> f(x) = y </m>.
 			Let <m> x = \sqrt{y} </m>, which is defined since <m> y \in \nnegset{\R} </m> implies <m> y\ge 0 </m>.
 			Then <md> f(x) = x^2 = (\sqrt{y})^2 = y </md>, as desired.
 		</p></case>
+
 	</solution>
+
 </problem>
 
 <p><dl width="narrow">
+
 	<li xml:id="definition-funcs-image-on-subset">
 		<title>image of a function on a subset</title>
 		<idx><h>image</h><h>of a function on a subset</h></idx>
@@ -610,6 +668,7 @@ sometimes what we think is a function turns out to not be a function.
 		<idx><h>function</h><h>image</h><h>on a subset</h></idx>
 		<p> the set of all outputs of a function when only fed inputs from a given subset </p>
 	</li>
+
 	<li>
 		<title><m> f(A') </m></title>
 		<notation>
@@ -621,6 +680,7 @@ sometimes what we think is a function turns out to not be a function.
 		so that <md> f(A') = \setdef{f(a)}{a \in A'} \subseteq B </md>
 		</p>
 	</li>
+
 </dl></p>
 
 <example><p>
@@ -638,6 +698,7 @@ sometimes what we think is a function turns out to not be a function.
 <title>Properties of functions</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>surjective function</title>
 		<idx><h>function</h><h>surjective</h></idx>
@@ -646,17 +707,20 @@ sometimes what we think is a function turns out to not be a function.
 		that is, every element of the codomain is an output for the function;
 		</p>
 	</li>
+
 	<li>
 		<title>surjection</title>
 		<idx>surjection</idx>
 		<p> a surjective function </p>
 	</li>
+
 	<li>
 		<title>onto</title>
 		<idx><h>function</h><h>onto</h></idx>
 		<idx>onto</idx>
 		<p> synonym for surjective </p>
 	</li>
+
 	<li>
 		<title><m> \sfuncdef{f}{A}{B} </m></title>
 		<notation>
@@ -665,6 +729,7 @@ sometimes what we think is a function turns out to not be a function.
 		</notation>
 		<p> function <m> f </m> is surjective </p>
 	</li>
+
 </dl></p>
 
 <p>
@@ -677,18 +742,23 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 	<idx><h>Test</h><h>surjective function</h></idx>
 	<idx><h>function</h><h>surjective</h><h>Test</h></idx>
 	<statement><p><ul>
+
 		<li>
 			Function <m> \funcdef{f}{A}{B} </m> is surjective if <m> B \subseteq f(A) </m>.
 			That is, <m> f </m> is surjective if <em>for every</em> element <m> b \in B </m>,
 			there exists <em>at least one</em> element <m> a \in A </m> such that <m> f(a) = b </m>.
-		</li><li>
+		</li>
+
+		<li>
 			Function <m> \funcdef{f}{A}{B} </m> is <em>not</em> surjective if there exists <em>at least one</em> element <m> b \in B </m> for which there is <em>no</em> element <m> a \in A </m> satisfying <m> f(a) = b </m>.
 			(Equivalently, there exists <m> b \in B </m> for which every <m> a \in A </m> satisifes <m> f(a) \neq b </m>.)
 		</li>
+
 	</ul></p></statement>
 </claim>
 
 <problem> <!-- worked example -->
+
 	<statement><p>
 		Show that, of the following functions, <m> f </m> is surjective and <m> g </m> is not.
 		<md>
@@ -696,43 +766,53 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 			<mrow> m \amp \mapsto \abs{m} \amp m \amp \mapsto m/2 </mrow>
 		</md>
 	</p></statement>
+
 	<solution>
+
 		<case><title>Show that <m> f </m> is surjective</title><p>
 			Consider an <em>arbitrary</em> element <m> n </m> of the codomain <m> \N </m>.
 			Since <m> \N \subseteq \Z </m>, <m> n </m> is also an element of the domain.
 			In particular, <m> f(n) = n </m>, since <m> n\ge 0 </m>.
 			Therefore, as an element of the codomain, we have <m> n\in f(\Z) </m>.
 		</p></case>
+
 		<case><title>Show that <m> g </m> is not surjective</title><p>
 			We need to find a <em>specific</em> example of a rational number that is not an output for <m> g </m>.
 			For this, we could use <m> 1/3 </m>, since there is no integer such that <m> m/2 = 1/3 </m>.
 		</p></case>
+
 	</solution>
+
 </problem>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>injective function</title>
 		<idx><h>function</h><h>injective</h></idx>
 		<p> a function for which two different inputs <em>never</em> produce the same output </p>
 	</li>
+
 	<li>
 		<title>injection</title>
 		<idx>injection</idx>
 		<p> an injective function </p>
 	</li>
+
 	<li>
 		<title>embedding</title>
 		<idx><h>function</h><h>embedding</h></idx>
 		<idx>embedding</idx>
 		<p> synonym for injection </p>
 	</li>
+
 	<li>
 		<title>one-to-one</title>
 		<idx><h>function</h><h>one-to-one</h></idx>
 		<idx>one-to-one</idx>
 		<p> synonym for injective </p>
 	</li>
+
 	<li>
 		<title><m> \ifuncdef{f}{A}{B} </m></title>
 		<notation>
@@ -741,6 +821,7 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 		</notation>
 		<p> function <m> f </m> is injective </p>
 	</li>
+
 </dl></p>
 
 <claim xml:id="test-funcs-inj">
@@ -748,38 +829,45 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 	<idx><h>Test</h><h>injective function</h></idx>
 	<idx><h>function</h><h>injective</h><h>Test</h></idx>
 	<statement><p><ul>
+
 		<li>
+
 			<p>
 			Function <m> \funcdef{f}{A}{B} </m> is injective if the following conditional always holds for elements <m> a_1,a_2 \in A </m>:
 			</p>
+
 			<blockquote><p> if <m> a_1 \ne a_2 </m> then <m> f(a_1) \ne f(a_2) </m>. </p></blockquote>
+
 			<p>
 			Alternatively, one can establish that the
 			<xref ref="definition-logic-equiv-contrapositive" text="title" />
 			of the above conditional always holds for elements <m> a_1,a_2 \in A </m>:
 			</p>
+
 			<blockquote><p> if <m> f(a_1) = f(a_2) </m> then <m> a_1 = a_2 </m>. </p></blockquote>
-		</li><li>
+		</li>
+
+		<li>
 			Function <m> \funcdef{f}{A}{B} </m> is <em>not</em> injective if there exists <em>at least one</em> pair of elements <m> a_1,a_2 \in A </m> with <m> a_1 \ne a_2 </m> but <m> f(a_1) = f(a_2) </m>.
 		</li>
+
 	</ul></p></statement>
 </claim>
 
-<example>
-	<title>Demonstrating that a function is not injective</title>
-	<p>
+<example><title>Demonstrating that a function is not injective</title><p>
 	The function <m> \funcdef{f}{\R}{\R} </m>, <m> f(x) = x^2 </m>, is <em>not</em> injective,
 	since <m> f </m> has repeated outputs.
 	For example, <m> f(-1) = f(1) </m>.
 	And in fact, <m> f(-x) = f(x) </m> for every <m> x\in \R </m>.
-	</p>
-</example>
+</p></example>
 
 <problem> <!-- worked example -->
 	<title>Demonstrating that a function is injective</title>
+
 	<statement><p>
 		Verify that the function <m> \funcdef{f}{\N}{\N} </m>, <m> f(n) = 2n+1 </m>, is injective.
 	</p></statement>
+
 	<solution><p>
 		Using the contrapositive version of the
 		<xref ref="test-funcs-inj" text="custom">Injective Function Test</xref>,
@@ -788,6 +876,7 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 		we have <md> 2 n_1 + 1 = 2 n_2 + 1 </md>,
 		which reduces to <m> n_1 = n_2 </m>.
 	</p></solution>
+
 </problem>
 
 <p>
@@ -797,7 +886,9 @@ by considering <m> f(A) \subseteq B </m>.
 
 <example xml:id="example-funcs-letters-embed-into-numbers">
 	<title>Turning letters into numbers</title>
+
 	<p> Let <m> \Sigma = \ShortEngAlphabet </m>, and define <m> \funcdef{\varphi}{\Sigma}{\N} </m> by the following table. </p>
+
 	<tabular top="medium" bottom="medium" halign="center">
 		<col right="minor" /><col /><col /><col /><col /><col />
 		<row>
@@ -817,26 +908,32 @@ by considering <m> f(A) \subseteq B </m>.
 			<cell><m> 26 </m></cell>
 		</row>
 	</tabular>
+
 	<p> Then <m> f </m> <term>embeds</term> <m> \Sigma </m> into <m> \N </m> in a familiar way, and lets us think of letters as numbers. </p>
+
 </example>
 
 <p><dl width="narrow">
+
 	<li xml:id="definition-funcs-bijective">
 		<title>bijective function</title>
 		<idx><h>function</h><h>bijective</h></idx>
 		<p> a function that is both injective and surjective </p>
 	</li>
+
 	<li>
 		<title>bijection</title>
 		<idx>bijection</idx>
 		<p> an bijective function </p>
 	</li>
+
 	<li>
 		<title>one-to-one correspondence</title>
 		<idx><h>function</h><h>one-to-one</h></idx>
 		<idx>one-to-one</idx>
 		<p> synonym for bijection </p>
 	</li>
+
 </dl></p>
 
 <example><p> Function <m> \funcdef{f}{\R}{\R} </m>, <m> f(x) = x^3 </m> is bijective. </p></example>
@@ -864,6 +961,7 @@ by considering <m> f(A) \subseteq B </m>.
 
 <problem> <!-- worked example -->
 	<title>Recognizing bijections</title>
+
 	<statement><p>
 		Which of the following functions are bijections?
 		<md>
@@ -878,25 +976,30 @@ by considering <m> f(A) \subseteq B </m>.
 			</mrow>
 		</md>
 	</p></statement>
+
 	<solution>
+
 		<case><title>Is <m> f </m> bijective?</title><p>
 			No, <m> f </m> is not bijective because it is not surjective.
 			For example, there is no <m> m\in \Z </m> such that <m> f(m) = 1 </m>.
 		</p></case>
+
 		<case><title>Is <m> g </m> bijective?</title><p>
 			No, <m> g </m> is not bijective because it is not injective.
 			For example, <m> g(-1) = g(1) </m>.
 		</p></case>
+
 		<case><title>Is <m> h </m> bijective?</title><p>
 			Yes, <m> h </m> is bijective.
 			It is injective because if <m> m_1 \ne m_2 </m> then <m> -m_1 \ne -m_2 </m>.
 			And it is surjective because for <m> n\in \Z </m>, we can realize <m> n </m> as an output <m> n = h(m) </m> by setting <m> m = -n </m>.
 		</p></case>
+
 	</solution>
+
 </problem>
 
 <exercise><title>Bijections of counting sets</title><p>
-	<!-- \label{TYU::counting.sets} -->
 	For <m> m \in \N </m> write
 	<md> \natnumlt{m} = \setdef{n \in \N}{ n \lt m} = \{ 0,\, 1,\, \dotsc,\, m-1\} </md>.
 	Prove that there exists a bijection <m> \natnumlt{\ell} \to \natnumlt{m} </m> if and only if <m> \ell = m </m>.
@@ -914,12 +1017,14 @@ by considering <m> f(A) \subseteq B </m>.
 -->
 
 <p><dl width="narrow">
+
 	<li>
 		<title>identity function (on a set <m> A </m>)</title>
 		<idx><h>function</h><h>identity</h></idx>
 		<idx>identity function</idx>
 		<p> the function <m> A \to A </m> defined by <m> a \mapsto a </m> </p>
 	</li>
+
 	<li>
 		<title><m> \funcdef{\id_A}{A}{A} </m></title>
 		<notation>
@@ -928,35 +1033,35 @@ by considering <m> f(A) \subseteq B </m>.
 		</notation>
 		<p> the identity function on on set <m> A </m> </p>
 	</li>
+
 </dl></p>
 
 <note><p> An identity function is always a bijection. </p></note>
 
-<p><dl width="narrow">
-	<li>
-		<title>inclusion function (on subset <m> A \subseteq X </m>)</title>
-		<idx><h>function</h><h>inclusion</h></idx>
-		<idx>inclusion function</idx>
-		<p> the function <m> A \to X </m> defined by <m> a \mapsto a </m> </p>
-	</li>
-</dl></p>
+<p><dl width="narrow"><li>
+	<title>inclusion function (on subset <m> A \subseteq X </m>)</title>
+	<idx><h>function</h><h>inclusion</h></idx>
+	<idx>inclusion function</idx>
+	<p> the function <m> A \to X </m> defined by <m> a \mapsto a </m> </p>
+</li></dl></p>
+
 <aside><title>Check your understanding</title><p>
 	Do you understand the difference between the definitions of <term>identity function</term> and <term>inclusion function</term>?
 </p></aside>
-<p><dl width="narrow">
-	<li>
-		<title><m> \funcdef{\inclfunc{A}{X}}{A}{X} </m></title>
-		<notation>
-			<usage><m> \funcdef{\inclfunc{A}{X}}{A}{X} </m></usage>
-			<description>the inclusion function on subset <m> A \subseteq X </m></description>
-		</notation>
-		<p>the inclusion function on subset <m> A \subseteq X </m></p>
-	</li>
-</dl></p>
+
+<p><dl width="narrow"><li>
+	<title><m> \funcdef{\inclfunc{A}{X}}{A}{X} </m></title>
+	<notation>
+		<usage><m> \funcdef{\inclfunc{A}{X}}{A}{X} </m></usage>
+		<description>the inclusion function on subset <m> A \subseteq X </m></description>
+	</notation>
+	<p>the inclusion function on subset <m> A \subseteq X </m></p>
+</li></dl></p>
 
 <note><p> An inclusion function is always an injection. </p></note>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>projection functions (on a Cartesian product <m> A \cartprod B </m>)</title>
 		<idx><h>function</h><h>projection</h></idx>
@@ -966,19 +1071,22 @@ by considering <m> f(A) \subseteq B </m>.
 		<m> (a,b) \mapsto a </m> and <m> (a,b) \mapsto b </m>
 		</p>
 	</li>
+
 	<li>
 		<title><m> \funcdef{\projfunc{A}}{A \cartprod B}{A} </m></title>
 		<p> the projection function onto the first factor <m> A </m> in the Cartesian product <m> A \cartprod B </m> </p>
 	</li>
+
 	<li>
 		<title><m> \funcdef{\projfunc{B}}{A \cartprod B}{B} </m></title>
 		<p> the projection function onto the second factor <m> B </m> in the Cartesian product <m> A \cartprod B </m> </p>
 	</li>
+
 </dl></p>
 
 <example><title>Projection images</title><p>
-Consider <m> (\frac{1}{2},\pi) \in \Q \cartprod \R </m>.
-Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp  p_{\R} \left( \frac{1}{2}, \pi \right) \amp = \pi </mrow></md>.
+	Consider <m> (\frac{1}{2},\pi) \in \Q \cartprod \R </m>.
+	Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp  p_{\R} \left( \frac{1}{2}, \pi \right) \amp = \pi </mrow></md>.
 </p></example>
 
 <paragraphs><title>Extend</title><p>
@@ -1008,8 +1116,8 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 	(except possibly when one or more of the factors in the Cartesian product is the empty set).
 </p></note>
 
-<!-- \label{EXAMPLE::restrict.domain} -->
 <p><dl width="narrow">
+
 	<li xml:id="definition-funcs-restricting-domain">
 		<title>restricting the domain</title>
 		<idx><h>restriction</h><h sortby="domain of a function">of the domain of a function</h></idx>
@@ -1019,6 +1127,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 		by <q>forgetting</q> about all elements of <m> X </m> that do not lie in <m> A </m>
 		</p>
 	</li>
+
 	<li>
 		<title><m> \funcres{f}{A} </m></title>
 		<notation>
@@ -1027,6 +1136,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 		</notation>
 		<p> restriction of function <m> \funcdef{f}{X}{Y} </m> to subset <m> A \subseteq X </m> </p>
 	</li>
+
 	<li>
 		<title><m> \altfuncres{f}{A} </m></title>
 		<notation>
@@ -1035,6 +1145,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 		</notation>
 		<p> alternative domain restriction notation </p>
 	</li>
+
 	<li>
 		<title><m> \res_A^X f </m></title>
 		<notation>
@@ -1043,6 +1154,7 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 		</notation>
 		<p> alternative domain restriction notation </p>
 	</li>
+
 </dl></p>
 
 <figure>
@@ -1057,14 +1169,18 @@ Then <md><mrow> p_{\Q} \left( \frac{1}{2}, \pi \right) \amp = \frac{1}{2}, \amp 
 	For <m> \funcdef{f}{\Z}{\N} </m>, <m> f(m) = \abs{m} </m>, we have <m> \funcres{f}{\N} = \id_{\N} </m>.
 </p></example>
 
-<exercise><title>Properties of restrictions</title><p>
-	Consider function <m> \funcdef{f}{X}{Y} </m> and subset <m> A \subseteq X </m>.
-	<ol>
-		<li> If <m> f </m> is injective, is <m> \funcres{f}{A} </m> injective? </li>
-		<li> If <m> \funcres{f}{A} </m> is injective, must <m> f </m> be injective? </li>
-		<li> Answer the previous two questions replacing <q>injective</q> with <q>surjective</q>. </li>
-	</ol>
-</p></exercise>
+<exercise>
+	<title>Properties of restrictions</title>
+
+	<introduction><p> Consider function <m> \funcdef{f}{X}{Y} </m> and subset <m> A \subseteq X </m>. </p></introduction>
+
+	<task><p> If <m> f </m> is injective, is <m> \funcres{f}{A} </m> injective? </p></task>
+
+	<task><p> If <m> \funcres{f}{A} </m> is injective, must <m> f </m> be injective? </p></task>
+
+	<task><p> Answer the previous two questions replacing <q>injective</q> with <q>surjective</q>. </p></task>
+
+</exercise>
 
 <remark><p>
 	The concept of <term>restricting the domain</term> makes our previously defined concept
@@ -1160,6 +1276,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 
 <example>
 	<title>Extending the identity function by zero</title>
+
 	<p>
 	Define <m> \funcdef{{\widetilde{\id}}_{\Z}}{\R}{\Z} </m> by
 	<md>
@@ -1171,10 +1288,12 @@ One of the most common ways to extend a function to a larger domain is to pick a
 	</md>
 	Then <m> {\widetilde{\id}}_{\Z} </m> is the extension by zero of the identity function <m> \id_{\Z} </m>.
 	</p>
+
 	<aside><title>Compare</title><p>
 		<xref ref="example-funcs-floor-eq-extension" /> also involved an extension of the identity function <m> \id_{\Z} </m> <mdash />
 		was it an <term>extension by zero</term>?
 	</p></aside>
+
 </example>
 
 </section>
@@ -1184,6 +1303,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 <title>Composition of functions</title>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>composition function</title>
 		<idx>composition (of functions)</idx>
@@ -1194,6 +1314,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 
 		</p>
 	</li>
+
 	<li>
 		<title><m> g \funccomp f </m></title>
 		<notation>
@@ -1205,6 +1326,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 		so that <m> \funcdef{g \funccomp f}{A}{C} </m> by <m> (g \funccomp f)(a) = g\bbrac{f(a)} </m>
 		</p>
 	</li>
+
 </dl></p>
 
 <figure>
@@ -1235,14 +1357,18 @@ One of the most common ways to extend a function to a larger domain is to pick a
 </p></example>
 
 <warning><title>Composition order matters</title>
+
 	<p>
 	The notation for the composition of functions <m> f </m> and <m> g </m> involves a reversal of order, so that we write <m> g \funccomp f </m>.
 	This is so that when we use this notation with input-output notation <m> (g \funccomp f)(a) </m>, the notation reminds us that <m> f </m> must first be applied to the input <m> a </m>, and then <m> g </m> is applied to the result <m> f(a) </m>.
-	</p><p>
+	</p>
+
+	<p>
 	In general, <m> f \funccomp g \ne g \funccomp f </m>.
 	Usually, one of the two is not even defined, because domains and codomains of <m> f </m> and <m> g </m> will not necessarily match up in both orders.
 	And when both <em>are</em> defined, the two different orders of composition usually have different domains and codomains.
 	</p>
+
 </warning>
 
 <example><title>Comparing composition order</title><p>
@@ -1276,33 +1402,46 @@ One of the most common ways to extend a function to a larger domain is to pick a
 	</p>
 </example>
 
-<exercise><title>Properties of compositions</title><p>
-	Consider functions <m> \funcdef{f}{A}{B} </m> and <m> \funcdef{g}{B}{C} </m>.
-	<ol>
-		<li> If <m> g \funccomp f </m> is injective, are either or both of <m> f,g </m> necessarily injective? </li>
-		<li> Answer the same question as above with <q>injective</q> replaced by <q>surjective</q>. </li>
-		<li> Demonstrate that if both <m> f </m> and <m> g </m> are bijective, then the composition <m> g \funccomp f </m> is also bijective. </li>
-	</ol>
-</p></exercise>
+<exercise>
+	<title>Properties of compositions</title>
+
+	<introduction><p> Consider functions <m> \funcdef{f}{A}{B} </m> and <m> \funcdef{g}{B}{C} </m>. </p></introduction>
+
+	<task><p> If <m> g \funccomp f </m> is injective, are either or both of <m> f,g </m> necessarily injective? </p></task>
+
+	<task><p> Answer the same question as above with <q>injective</q> replaced by <q>surjective</q>. </p></task>
+
+	<task><p> Demonstrate that if both <m> f </m> and <m> g </m> are bijective, then the composition <m> g \funccomp f </m> is also bijective. </p></task>
+
+</exercise>
 
 <p> Of course, we can compose any number of functions. </p>
 
 <example xml:id="example-funcs-comp-of-three">
 	<title>A composition of three functions</title>
+
 	<p>
 	Let us reconsider the function defined by algorithm in <xref ref="example-funcs-defining-by-algorithm" />.
 	As the function description involved a multi-step algorithm,
 	we should be able to break the steps involved into their own functions,
 	then recreate the original functions as a composition.
-	</p><p>
+	</p>
+
+	<p>
 	First, define <m> \funcdef{\operatorname{abs}}{\powset{\Z}}{\powset{\N}} </m> by
 	<md> \operatorname{abs}(X) = \setdef{\abs{x}}{x \in X} </md>.
-	</p><p>
+	</p>
+
+	<p>
 	Next, define <m> \funcdef{\min}{\powset{\N}}{\N} </m> so that <m> \min(X) </m> outputs the minimum number in input set <m> X </m>,
 	and outputs <m> 0 </m> in case <m> X = \emptyset </m>.
-	</p><p>
+	</p>
+
+	<p>
 	Finally, define <m> \funcdef{f}{\N}{\N} </m> by <m> f(n) = 2 n + 1 </m>.
-	</p><p>
+	</p>
+
+	<p>
 	Each of these functions represents one step in the algorithm defining the function in
 	<xref ref="example-funcs-defining-by-algorithm" />,
 	but to recreate that function we need to compose the functions in the correct order:
@@ -1311,6 +1450,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 	<md> \varphi(X) = 2 \min\bbrac{\operatorname{abs}(X)} + 1 </md>
 	computes the same result for an input set <m> X </m> as the algorithm described in <xref ref="example-funcs-defining-by-algorithm" />.
 	</p>
+
 </example>
 
 </section>
@@ -1324,6 +1464,7 @@ By definition, <m> f </m> associates an element of <m> B </m> to each element of
 Sometimes we want to reverse this process: given an element <m> b \in B </m>, can we determine an element <m> a \in A </m> such that <m> f(a) = b </m>?
 We'll begin to answer this question by first finding all possible <q>reverse results</q> from elements in subsets of <m> B </m>.
 <dl width="narrow">
+
 	<li xml:id="definition-funcs-inverse-set-image">
 		<title>inverse image (of a subset <m> C </m> of the codomain <m> B </m>)</title>
 		<idx><h>inverse</h><h>image</h><h>of a set</h></idx>
@@ -1332,6 +1473,7 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 		the set of all domain elements <m> a \in A </m> for function <m> \funcdef{f}{A}{B} </m> for which the corresponding output element <m> f(a) </m> lies in the subset <m> C </m> of the codomain
 		</p>
 	</li>
+
 	<li>
 		<title><m> \funcinvimg{f}{C} </m></title>
 		<notation>
@@ -1343,6 +1485,7 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 		so that <md> \funcinvimg{f}{C} = \setdef{a \in A}{f(a) \in C} </md>
 		</p>
 	</li>
+
 </dl></p>
 
 <figure>
@@ -1359,37 +1502,50 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 </p></statement></hypothesis>
 
 <example><title>Some inverse images under sine</title>
-	<p> Consider <m> \funcdef{f}{\R}{\R} </m>, <m> f(x) = \sin x </m>. </p>
+
+	<p>
+	Consider <m> \funcdef{\sin}{\R}{\R} </m>,
+	the familiar sine function in trigonometry.
+	</p>
+
 	<p>
 	Then
-	<md> \inv{f}\bbrac{\{-1,0,1\}} = \setdef{\frac{m \pi}{2}}{m \in \Z} </md>
-	because
-	<md> \sin\left(\frac{m \pi}{2}\right) </md>
-	will equal <m> 0 </m> when <m> m </m> is even and will equal <m> 1 </m> or <m> -1 </m> when <m> m </m> is odd,
+	<md> \inv{\sin}\bbrac{\{-1,0,1\}} = \setdef{\frac{m \pi}{2}}{m \in \Z} </md>
+	because <m> \sin(m \pi / 2) </m> will equal <m> 0 </m> when <m> m </m> is even and will equal <m> 1 </m> or <m> -1 </m> when <m> m </m> is odd,
 	and no other input values will produce outputs of <m> 0 </m>, <m> 1 </m>, or <m> -1 </m>.
-	</p><p>
-	However, <md> \inv{f}\bbrac{\setdef{y \in \R}{y \gt 1}} = \emptyset </md>
+	</p>
+
+	<aside valign="middle"><title>Careful</title><p>
+		Here, <m> \inv{\sin} </m> does <em> not </em> represent the inverse sine function you may have learned about in high school or in calculus.
+	</p></aside>
+
+	<p>
+	However, <md> \inv{\sin}\bbrac{\setdef{y \in \R}{y \gt 1}} = \emptyset </md>
 	because there are <em>no</em> input values for sine that will produce an output value greater than <m> 1 </m>.
 	</p>
+
 </example>
 
 <p>
 Now let's return to the question of trying to reverse an input-output relationship <m> f(a) = b </m>:
 the set <m> \inv{f}\bbrac{\{b\}} </m> collects together all possible candidates for the inverse image of <m> b </m>.
 <dl width="narrow">
+
 	<li xml:id="definition-funcs-inverse-element-image">
 		<title>inverse image (of an element <m> b </m> of the codomain <m> B </m>)</title>
 		<idx><h>inverse</h><h>image</h><h>of an element</h></idx>
 		<idx><h>image</h><h>inverse</h><h>of an element</h></idx>
 		<p>
 		the inverse image <m> \inv{f}\bbrac{\{b\}} </m>,
-		which consists of all domain elements <m> a \in A </m> for which <m> f(a) = b </m> 
+		which consists of all domain elements <m> a \in A </m> for which <m> f(a) = b </m>
 		</p>
 	</li>
+
 	<li>
 		<title><m> \funcinvimg{f}{b} </m></title>
 		<p> simplified notation to mean the inverse image of element <m> b </m> </p>
 	</li>
+
 </dl>
 This gives us a way to associate to an element <m> b \in B </m> a set <m> \funcinvimg{f}{b} </m> of elements of <m> A </m>.
 </p>
@@ -1402,22 +1558,26 @@ This gives us a way to associate to an element <m> b \in B </m> a set <m> \funci
 <p>
 There are two possible ways that this will fail to give us a function.
 <ol>
+
 	<li>
 		Suppose there is an element <m> b \in B </m> such that the set <m> \funcinvimg{f}{b} </m> contains (at least) two distinct elements <m> a_1,a_2 </m>.
 		Then in general there is no way to choose between <m> \funcinvimg{f}{b} = a_1 </m> and <m> \funcinvimg{f}{b} = a_2 </m>.
 		Therefore, if <m> f </m> is <em>not injective</em>,
 		the function <m> \funcdef{\inv{f}}{B}{A} </m> is <em>not well-defined</em>.
 	</li>
+
 	<li>
 		Suppose there is an element <m> b \in B </m> such that <m> \funcinvimg{f}{b} = \emptyset </m>.
 		Then there is <em>no</em> element of <m> A </m> which we can assign to <m> \funcinvimg{f}{b} </m>.
 		Therefore, if <m> f </m> is <em>not surjective</em>, the function <m> \funcdef{\inv{f}}{B}{A} </m> is <em>undefined</em> on some elements of <m> B </m>.
 	</li>
+
 </ol>
 So it seems we will need a function to be <em>bijective</em> in order to be able to reverse the input-output rule to obtain an inverse function.
 </p>
 
 <p><dl width="narrow">
+
 	<li>
 		<title>inverse function</title>
 		<idx><h>function</h><h>inverse</h></idx>
@@ -1426,6 +1586,7 @@ So it seems we will need a function to be <em>bijective</em> in order to be able
 		for a bijective function <m> f </m>, the <term>inverse function</term> associates to each codomain element of <m> f </m> the corresponding unique domain element that produces it through <m> f </m>
 		</p>
 	</li>
+
 	<li>
 		<title><m> \inv{f} </m></title>
 		<notation>
@@ -1437,6 +1598,7 @@ So it seems we will need a function to be <em>bijective</em> in order to be able
 		so that for <m> b \in B </m> we have <m> \funcinvimg{f}(b) </m> defined to be the unique element <m> a \in A </m> such that <m> f(a) = b </m>
 		</p>
 	</li>
+
 </dl></p>
 
 <example><title>An invertible single-variable, real-valued function</title><p>

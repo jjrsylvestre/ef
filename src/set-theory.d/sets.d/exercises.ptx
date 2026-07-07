@@ -17,7 +17,7 @@ respective owners.
 <exercises xml:id="exercises-sets">
 <title>Exercises</title>
 
-<exercise xml:id="exercise-sets-op-props"><p> <!-- \label{EXERCISE::sets::set.op.props} -->
+<exercise xml:id="exercise-sets-op-props"><p>
 	Prove each of the set operation rules in <xref ref="proposition-sets-rules-set-ops" />.
 	Use the provided <xref ref="proof-proposition-sets-rules-set-ops" text="custom">proof</xref> <!-- TODO check this -->
 	of the first of DeMorgan's Laws as a model for your proofs.
@@ -26,7 +26,9 @@ respective owners.
 <exercisegroup xml:id="exercisegroup-sets-convert-to-symbols">
 	<!-- TODO \refAdapt[s]{hunter+discrete}{2.2}{4 to 7} -->
 	<title>Expressing relationships using the symbols of set theory</title>
+
 	<introduction>
+
 		<p>
 		In each of
 		<xref ref="exercisegroup-sets-convert-to-symbols" text="type-local">Exercises</xref>,
@@ -34,19 +36,23 @@ respective owners.
 		a collection of symbols,
 		and a collection of statements about those sets and their elements.
 		Use the given symbols to express the given statements in symbolic language.
-		</p><p>
+		</p>
+
+		<p>
 		Note that there may be more than one correct answer for each statement.
 		</p>
+
 	</introduction>
 
 	<exercise>
+
 		<introduction><p>
 			Sets:
 			<md>
-				<mrow> A \amp = \text{ the set of all Augustana students, } </mrow>
-				<mrow> R \amp = \text{ the set of Augustana students who attend class regularly, } </mrow>
-				<mrow> S \amp = \text{ the set of Augustana students who study diligently, } </mrow>
-				<mrow> P \amp = \text{ the set of Augustana students who will pass all their courses. } </mrow>
+				<mrow> A \amp = \text{ the set of all Augustana students } </mrow>
+				<mrow> R \amp = \text{ the set of Augustana students who attend class regularly } </mrow>
+				<mrow> S \amp = \text{ the set of Augustana students who study diligently } </mrow>
+				<mrow> P \amp = \text{ the set of Augustana students who will pass all their courses } </mrow>
 			</md>
 			Symbols:
 			<md>
@@ -64,14 +70,19 @@ respective owners.
 				\subseteq, \quad
 				\subsetneqq, \quad
 				\emptyset
-			</md>.
+			</md>
 		</p></introduction>
+
 		<task><p> All Augustana students who attend class regularly and study diligently will pass all their courses. </p></task>
+
 		<task><p> Some Augustana students attend class regularly but do not study diligently. </p></task>
+
 		<task><p> Some Augustana students who study diligently will still fail a course. </p></task>
+
 	</exercise>
 
 	<exercise>
+
 		<introduction>
 
 			<p>
@@ -82,52 +93,56 @@ respective owners.
 			<p>
 			Sets:
 			<md>
-				<mrow> P \amp = \text{ the set of prime numbers, } </mrow>
-				<mrow> E \amp = \text{ the set of even numbers, } </mrow>
-				<mrow> S \amp = \text{ the set of square numbers. } </mrow>
+				<mrow> P \amp = \text{ the set of prime numbers } </mrow>
+				<mrow> E \amp = \text{ the set of even numbers } </mrow>
+				<mrow> S \amp = \text{ the set of square numbers } </mrow>
 			</md>
 			Symbols:
 			<md>
-				2, \quad
-				\N, \quad
-				P, \quad
-				E, \quad
-				S, \quad
-				\cmplmnt{\N}, \quad
-				\cmplmnt{P}, \quad
-				\cmplmnt{E}, \quad
-				\cmplmnt{S}, \quad
-				\in, \quad
-				\intersection, \quad
-				\union, \quad
-				=, \quad
-				\ne, \quad
-				\subseteq, \quad
-				\subsetneqq, \quad
-				\emptyset, \quad
-				\{\phantom{x}\}.
+				2, \;\;\,
+				\N, \;\;\,
+				P, \;\;\,
+				E, \;\;\,
+				S, \;\;\,
+				\cmplmnt{\N}, \;\;\,
+				\cmplmnt{P}, \;\;\,
+				\cmplmnt{E}, \;\;\,
+				\cmplmnt{S}, \;\;\,
+				\in, \;\;\,
+				\intersection, \;\;\,
+				\union, \;\;\,
+				=, \;\;\,
+				\ne, \;\;\,
+				\subseteq, \;\;\,
+				\subsetneqq, \;\;\,
+				\emptyset
 			</md>
 			</p>
 
 		</introduction>
 
 		<task><p> <m> 2 </m> is the only even, prime number. </p></task>
+
 		<task><p> There exist odd square numbers. </p></task>
+
 		<task><p> No prime number is square. </p></task>
+
 		<task><p> No square number is prime. </p></task>
+
 		<task><p> It is not true that every natural number is either even or prime. </p></task>
 
 	</exercise>
 
 	<exercise>
+
 		<introduction><p>
 			Sets:
 			<md>
-				<mrow> \mathscr{F} \amp = \text{ the set of all functions in a single real variable, } </mrow>
-				<mrow> \mathscr{C} \amp = \text{ the set of continuous functions, } </mrow>
-				<mrow> \mathscr{D} \amp = \text{ the set of differentiable functions, } </mrow>
+				<mrow> \mathscr{F} \amp = \text{ the set of all functions in a single real variable } </mrow>
+				<mrow> \mathscr{C} \amp = \text{ the set of continuous functions } </mrow>
+				<mrow> \mathscr{D} \amp = \text{ the set of differentiable functions } </mrow>
 				<mrow> \mathscr{P} \amp = \text{ nonnegative functions } </mrow>
-				<mrow> \amp = \setdef{f(x)}{ f(x) \ge 0 \text{ for all } x \text{ in the domain of } f }\text{.} </mrow>
+				<mrow> \amp = \setdef{f(x)}{ f(x) \ge 0 \text{ for all } x \text{ in the domain of } f } </mrow>
 			</md>
 			Elements:
 			<md><mrow>
@@ -137,40 +152,47 @@ respective owners.
 			</mrow></md>
 			Symbols:
 			<md>
-				\mathscr{F}, \;\;\;
-				\mathscr{C}, \;\;\;
-				\mathscr{D}, \;\;\;
-				\mathscr{P}, \;\;\;
-				\cmplmnt{\mathscr{F}}, \;\;\;
-				\cmplmnt{\mathscr{C}}, \;\;\;
-				\cmplmnt{\mathscr{D}}, \;\;\;
-				\cmplmnt{\mathscr{P}}, \;\;\;
-				f_1(x), \;\;\;
-				f_2(x), \;\;\;
-				f_3(x), \;\;\;
-				\in, \;\;\;
-				\intersection, \;\;\;
-				\union, \;\;\;
-				=, \;\;\;
-				\ne, \;\;\;
-				\subseteq, \;\;\;
-				\subsetneqq, \;\;\;
-				\emptyset.
+				\mathscr{F}, \:
+				\mathscr{C}, \:
+				\mathscr{D}, \:
+				\mathscr{P}, \:
+				\cmplmnt{\mathscr{F}}, \:
+				\cmplmnt{\mathscr{C}}, \:
+				\cmplmnt{\mathscr{D}}, \:
+				\cmplmnt{\mathscr{P}}, \:
+				f_1(x), \:
+				f_2(x), \:
+				f_3(x), \:
+				\in, \:
+				\intersection, \:
+				\union, \:
+				=, \:
+				\ne, \:
+				\subseteq, \:
+				\subsetneqq, \:
+				\emptyset
 			</md>
 		</p></introduction>
+
 		<task><p> The function <m> f_1(x) </m> is differentiable and nonnegative. </p></task>
+
 		<task><p> The function <m> f_2(x) </m> is continuous and nonnegative, but not differentiable. </p></task>
+
 		<task><p> The function <m> f_3(x) </m> is neither continuous nor nonnegative. </p></task>
+
 		<task><p> Every differentiable function is continuous. </p></task>
+
 		<task><p> Some continuous functions are not differentiable. </p></task>
+
 		<task><p> Not every function is continuous. </p></task>
+
 	</exercise>
 
 </exercisegroup>
 
 <exercisegroup xml:id="exercisegroup-sets-investigate-set-ops">
-	<!-- \label{EXERCISE::sets::adv.set.ops} -->
 	<title>Testing set equality</title>
+
 	<introduction>
 		For each of
 		<xref ref="exercisegroup-sets-investigate-set-ops" text="type-local">Exercises</xref>,
@@ -178,63 +200,77 @@ respective owners.
 		(using the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref>)
 		or demonstrate that it is false by providing a <em>specific</em> counterexample.
 	</introduction>
+
 	<exercise xml:id="exercise-sets-investigate-set-ops-disj-union"><p>
 		<m> A = (A \relcmplmnt B) \disjunion (A \intersection B) </m>
 	</p></exercise>
+
 	<exercise xml:id="exercise-sets-investigate-set-ops-double-relative-complement"><p>
 		<m> A \relcmplmnt (A \relcmplmnt B) = B </m>
 	</p></exercise>
+
 	<exercise xml:id="exercise-sets-investigate-set-ops-union-cart-prod"><p>
 		<m> (A \cartprod B) \union (C \cartprod D) = (A \union C) \cartprod (B \union D) </m>
 	</p></exercise>
+
 	<exercise xml:id="exercise-sets-investigate-set-ops-cart-prod-complement"><p>
 		<m> A \cartprod (B \relcmplmnt C) = (A \cartprod B) \relcmplmnt (A \cartprod C) </m>
 	</p></exercise>
+
 </exercisegroup>
 
 <exercise xml:id="exercise-sets-words-disjoint-union-of-lengths"><p> <!-- \label{EXERCISE::sets::words.disjoint.union.of.lengths} -->
 	Suppose <m> \Sigma </m> is an alphabet.
 	Prove that <m> \words{\Sigma} </m> is the disjoint union of the subsets
-	<md> \words{\Sigma}_0, \words{\Sigma}_1, \words{\Sigma}_2, \dotsc, \words{\Sigma}_n, \dotsc </md>.
+	<md> \words{\Sigma}_0, \quad \words{\Sigma}_1, \quad \words{\Sigma}_2, \quad \dotsc, \quad \words{\Sigma}_n, \quad \dotsc </md>.
 </p></exercise>
 
 <exercise>
+
 	<p>
 	Write out the elements of each of the sets
-	<md><mrow>
-		\amp \powset{ \emptyset }, \amp
-		\amp \powset{ \, \powset{ \emptyset } \, }, \amp
-		\amp \powset{ \, \powset{ \, \powset{ \emptyset } \, } \, }, \amp
-		\amp \powset{ \, \powset{ \, \powset{ \, \powset{ \emptyset } \, } \, } \, }
-	</mrow></md>.
+	<md>
+		\powset{ \emptyset }, \quad
+		\powset{ \, \powset{ \emptyset } \, }, \quad
+		\powset{ \, \powset{ \, \powset{ \emptyset } \, } \, }, \quad
+		\powset{ \, \powset{ \, \powset{ \, \powset{ \emptyset } \, } \, } \, }
+	</md>.
 	Make sure you have all the pairs of braces <m> \{\phantom{x}\} </m> you should have.
-	</p><p>
+	</p>
+
+	<p>
 	Without computing it, make a conjecture about the number of elements in the set
 	<md> \powset{ \, \powset{ \, \powset{ \, \powset{ \, \powset{ \emptyset } \, } \, } \, } \, }. </md>
 	</p>
+
 </exercise>
 
 <exercisegroup xml:id="exercisegroup-sets-investigate-pow-set-ops">
-	<!-- \label{EXERCISE::sets::adv.set.ops} -->
 	<title>Properties of power sets</title>
+
 	<introduction>
 		For each of
 		<xref ref="exercisegroup-sets-investigate-pow-set-ops" text="type-local">Exercises</xref>,
 		either formally prove the given statement about power sets
 		or demonstrate that it is false by providing a <em>specific</em> counterexample.
 	</introduction>
+
 	<exercise xml:id="exercise-sets-investigate-pow-set-ops-union"><p>
 		<m> \powset{A \union B} = \powset{A} \union \powset{B} </m>
 	</p></exercise>
+
 	<exercise xml:id="exercise-sets-investigate-pow-set-ops-intersection"><p>
 		<m> \powset{A \intersection B} = \powset{A} \intersection \powset{B} </m>
 	</p></exercise>
+
 	<exercise xml:id="exercise-sets-investigate-pow-set-ops-subset"><p>
 		If <m> A \subseteq B </m>, then  <m> \powset{A} \subseteq \powset{B} </m>.
 	</p></exercise>
+
 	<exercise xml:id="exercise-sets-investigate-pow-set-ops-complement"><p>
 		If <m> A \subseteq B </m>, then  <m> \powset{B \relcmplmnt A} = \powset{B} \relcmplmnt \powset{A} </m>.
 	</p></exercise>
+
 </exercisegroup>
 
 </exercises>

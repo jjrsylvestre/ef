@@ -25,11 +25,15 @@ respective owners.
 
 <exercisegroup xml:id="exercisegroup-recur-induct-iteration" cols="2">
 	<title>Solving by iteration</title>
+
 	<introduction>
+
 		<p>
 		In each of <xref ref="exercisegroup-recur-induct-iteration" text="type-local">Exercises</xref>,
 		use iteration to determine an expression for the <m> \nth </m> term of the sequence as a formula in <m> n </m> (and the initial term(s) of the sequence, if necessary).
-		</p><p>
+		</p>
+
+		<p>
 		In some of these, you may find the following formulas useful.
 		<md alignment="gather">
 			<mrow> 1 + 2 + 3 + \dotsb + m = \frac{m (m+1)}{2} </mrow>
@@ -37,52 +41,73 @@ respective owners.
 			<mrow> r^0 + r^1 + r^2 + \dotsb + r^{m-1} = \frac{r^m - 1}{r - 1}, \quad r \ne 0,1 </mrow>
 		</md>
 		</p>
+
 	</introduction>
+
 	<exercise><p> <m> a_n = 2na_{n-1} </m>, <m> a_0 = 1 </m>. </p></exercise>
+
 	<exercise><p> <m> a_n = (2n-1)a_{n-1} </m>, <m> a_0 = 1 </m>. </p></exercise>
+
 	<exercise><p> <m> a_n = a_{n-1} + 3^{n-1} </m>, <m> a_0 = 1 </m>. </p></exercise>
+
 	<exercise><p> <m> a_n = a_{n-1} + n - 1 </m>, <m> a_0 = 1 </m>. </p></exercise>
+
 	<exercise><p> <m> a_n = a_{n-1} + n + n^2 </m>, <m> a_0 = 1 </m>. </p></exercise>
+
 	<exercise><p>
 		<m> a_n = f(a_{n-1}) </m>,
 		where <m> f(x) </m> is the linear function <m> f(x) = mx + b </m> for some fixed constants <m> m,b </m>,
 		and with arbitrary initial term <m> a_0 </m>.
 	</p></exercise>
+
 	<exercise>
 		<statement><p> <m> a_n = 4a_{n-2} </m>, <m> n \ge 2 </m>, <m> a_0 = 1 </m>, <m> a_1 = 2 </m>. </p></statement>
 		<hint><p> Treat the cases <m> n </m> even and <m> n </m> odd separately. </p></hint>
 	</exercise>
+
 </exercisegroup>
 
 <exercise>
+
 	<p>
 	<term>Fibonacci numbers</term> are those that appear in the sequence defined recursively by
 	<md><mrow> a_n \amp = a_{n-1} + a_{n-2}, \amp n \amp \ge 2 </mrow></md>,
 	for some choice of initial terms <m> a_0, a_1 </m>.
 	</p>
+
 	<aside><title>See</title><p> <xref ref="example-recur-induct-Fibonacci" />. </p></aside>
+
 	<p> Using initial terms <m> a_0 = a_1 = 1 </m>, use mathematical induction to prove that every Fibonacci number <m> a_n </m> satisfies <m> a_n \lt 2^n </m> (except, of course, for <m> a_0 </m>. </p>
+
 </exercise>
 
 <exercise>
+
 	<introduction>
+
 		<p> You are attempting to predict population dynamics on a yearly basis. </p>
+
 		<p>
 		Suppose a population increases by a factor of <m> i </m> each year.
 		That is, if we set <m> p=100i </m>, then the population increases by <m> p </m> percent.
 		(<alert>Careful:</alert> This is a description of the <em>increase</em> in population, not the total population.
 		For example, <m> i = 1 </m> means that the population doubles.)
 		</p>
+
 	</introduction>
+
 	<task><p> Write down a recurrence relation that expresses the population <m> P_n </m> in the <m> \nth </m> year relative to the previous year. </p></task>
+
 	<task><p>
 		Use iteration to determine an expression for the population in the <m> \nth </m> year as a formula in <m> n </m>, <m> i </m>, and the initial population <m> P_0 </m>.
 	</p></task>
+
 	<task><p>
 		Suppose that on top of the natural population increase of <m> i </m> percent per year, immigration increases the population by fixed amount <m> A </m> people annually.
 		Design a new recurrence relation for <m> P_n </m>,
 		and use iteration to determine an expression for the population in the <m> \nth </m> year as a formula in <m> n </m>, <m> i </m>, <m> A </m>, and the initial population <m> P_0 </m>.
 	</p></task>
+
 </exercise>
 
 <!-- END TODO CHECK WHERE THESE ARE FROM... ROMAN? -->
@@ -99,30 +124,43 @@ respective owners.
 </p></exercise>
 
 <exercise>
+
 	<p> The set <m> \mathscr{C} </m> of <em>constructible numbers</em> can be defined inductively as follows. </p>
+
 	<case><title>Base clause</title><p> Assume <m> 1 \in \mathscr{C} </m>. </p></case>
+
 	<case><title>Inductive clauses</title><p><ol marker="(i)">
+
 		<li>
 			Whenever <m> a,b \in \mathscr{C} </m>,
 			then so are
 			<md> a+b, \quad ab, \quad a/b, \quad \sqrt{a} </md>.
 		</li>
+
 		<li> Whenever <m> a,b \in \mathscr{C} </m> with <m> a>b </m>, then <m> a-b </m> is also in <m> \mathscr{C} </m>. </li>
+
 	</ol></p></case>
+
 	<case><title>Limiting clause</title><p>
 		The set <m> \mathscr{C} </m> contains no elements other than those that can be obtained through a finite number of applications of the base and/or inductive clauses.
 	</p></case>
+
 	<p>
 	Explicitly verify,
 	by listing each application of the relevant clauses,
 	that the roots of the polynomial <m> 2x^2 - 3x + \frac{7}{8} </m> are both constructible numbers.
 	</p>
+
 </exercise>
 
 <exercise>
+
 	<statement>
+
 		<p> Consider the following inductively defined set <m> A \subseteq \N </m>. </p>
+
 		<case><title>Base clause</title><p> Assume <m> 32879 \in A </m>. </p></case>
+
 		<case><title>Inductive clauses</title><p><ol marker="(i)">
 			<li>
 				When <m> a </m> is an element of <m> A </m>,
@@ -130,19 +168,27 @@ respective owners.
 			</li>
 			<li> Whenever prime <m> p </m> is an element of <m> A </m>, then <m> p+1 </m> is also an element of <m> A </m>. </li>
 		</ol></p></case>
+
 		<case><title>Limiting clause</title><p>
 			The set <m> A </m> contains no elements other than those that can be obtained through a finite number of applications of the base and/or inductive clauses.
 		</p></case>
+
 		<p> Determine all elements of <m> A </m>. </p>
+
 	</statement>
+
 	<hint><p> To help with this question, you may wish to search for <q>list of small primes</q> on the internet. </p></hint>
+
 </exercise>
 
 <exercise>
+
 	<p>
 	Devise an algorithm that will produce an answer to the following question in a finite number of applications of the inductive clause that we used to define the natural numbers in <xref ref="example-recur-induct-construct-nat-nums" />.
 	</p>
+
 	<blockquote><p> Given <m> m,n \in \N </m> with <m> m \ne n </m>, is <m> m \gt n </m> or is <m> n \gt m </m> ? </p></blockquote>
+
 </exercise>
 
 </exercises>
