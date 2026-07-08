@@ -360,7 +360,7 @@ Make sure to keep this straight!
 	<figure xml:id="figure-partial-orders-hasse-divides">
 		<caption>The Hasse diagram for the <q>divides</q> partial order on a finite set of integers.</caption>
 		<image xml:id="image-partial-orders-hasse-divides" width="24.1%">
-			<shortdescription> Hasse diagram for the <q>divides</q> partial order. </shortdescription>
+			<shortdescription> Hasse diagram for the “divides” partial order. </shortdescription>
 			<latex-image><xi:include href="partial-orders.d/hasse-divides.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -761,7 +761,7 @@ but could also be understood for elements in a subset of a partially ordered set
 		<figure xml:id="figure-partial-orders-snipped-subseteq-powset">
 			<caption>The Hasse diagram for <m> \mathord{\subseteq} </m> on an <q>uncapped</q> power set.</caption>
 			<image xml:id="image-partial-orders-hasse-uncapped-powset" width="38.8%">
-				<shortdescription> The Hasse diagram for <m> \mathord{\subseteq} </m> on an <q>uncapped</q> power set. </shortdescription>
+				<shortdescription> The Hasse diagram for the subset relation on an “uncapped” power set. </shortdescription>
 				<latex-image><xi:include href="partial-orders.d/hasse-uncapped-powset.tex" parse="text" /></latex-image>
 			</image>
 		</figure>

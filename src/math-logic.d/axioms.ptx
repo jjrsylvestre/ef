@@ -50,35 +50,39 @@ The starting point of a mathematical system (or any logical system, for that mat
 <example xml:id="example-axioms-woozles-dorples">
 	<title>An axiomatic system</title>
 
-	<paragraphs><title>Primitive terms</title><p><ul>
-		<li> <term>woozle</term> (noun) </li>
-		<li> <term>dorple</term> (noun) </li>
-		<li> <term>snarf</term> (verb) </li>
-	</ul></p></paragraphs>
+	<sidebyside widths="25% 70%" margins="0% 0%">
 
-	<paragraphs><title>Axioms</title><p><ol>
+		<p><alert>Primitive terms.</alert><ul>
+			<li> <term>woozle</term> (noun) </li>
+			<li> <term>dorple</term> (noun) </li>
+			<li> <term>snarf</term> (verb) </li>
+		</ul></p>
 
-		<li xml:id="example-axioms-woozles-dorples-exists-three-woozles">  <!-- \label{AXIOM::exists.three.woozles} -->
-			There exist at least three distinct woozles.
-		</li>
+		<p><alert>Axioms.</alert><ol>
 
-		<li xml:id="example-axioms-woozles-dorples-symmetry">  <!-- \label{AXIOM::snarf.symmetry} -->
-			A woozle snarfs a dorple if and only if the dorple snarfs the woozle.
-		</li>
+			<li xml:id="example-axioms-woozles-dorples-exists-three-woozles">  <!-- \label{AXIOM::exists.three.woozles} -->
+				There exist at least three distinct woozles.
+			</li>
 
-		<li xml:id="example-axioms-woozles-dorples-unique-dorple">  <!-- \label{AXIOM::unique.dorple} -->
-			Each pair of distinct woozles snarfs exactly one dorple in common.
-		</li>
+			<li xml:id="example-axioms-woozles-dorples-symmetry">  <!-- \label{AXIOM::snarf.symmetry} -->
+				A woozle snarfs a dorple if and only if the dorple snarfs the woozle.
+			</li>
 
-		<li xml:id="example-axioms-woozles-dorples-triple-woozles">  <!-- \label{AXIOM::triple.woozles} -->
-			There is at least one trio of distinct woozles that snarf no dorple in common.
-		</li>
+			<li xml:id="example-axioms-woozles-dorples-unique-dorple">  <!-- \label{AXIOM::unique.dorple} -->
+				Each pair of distinct woozles snarfs exactly one dorple in common.
+			</li>
 
-		<li xml:id="example-axioms-woozles-dorples-snarf-pair">  <!-- \label{AXIOM::dorple.snarfs.pair} -->
-			Each dorple is snarfed by at least two distinct woozles.
-		</li>
+			<li xml:id="example-axioms-woozles-dorples-triple-woozles">  <!-- \label{AXIOM::triple.woozles} -->
+				There is at least one trio of distinct woozles that snarf no dorple in common.
+			</li>
 
-	</ol></p></paragraphs>
+			<li xml:id="example-axioms-woozles-dorples-snarf-pair">  <!-- \label{AXIOM::dorple.snarfs.pair} -->
+				Each dorple is snarfed by at least two distinct woozles.
+			</li>
+
+		</ol></p>
+
+	</sidebyside>
 
 </example>
 

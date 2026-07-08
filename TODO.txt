@@ -1,8 +1,6 @@
 * More use of <case direction="cycle">
   ---> search for "Proof of the equivalence of"
 
-* Check schema compliance.
-
 * Audit asides for:
   titles
   whether they need valign

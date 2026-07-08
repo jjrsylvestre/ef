@@ -24,15 +24,15 @@ respective owners.
 	<idx><h>Principle</h><h>of Mathematical Induction</h></idx>
 	<idx>Mathematical Induction</idx>
 	<idx>induction (mathematical)</idx>
-	<p>
-	Suppose <m> P(n) </m> is a predicate where the variable <m> n </m> has domain the positive, whole numbers.
-	If
-	<ol marker="(i)">
-		<li> <m> P(1) </m> is true, and </li>
-		<li> <m> (\forall k)\bbrac{P(k) \lgccond P(k+1)} </m> is true, </li>
-	</ol>
-	then <m> (\forall n)P(n) </m> is true.
-	</p>
+	<statement><p>
+		Suppose <m> P(n) </m> is a predicate where the variable <m> n </m> has domain the positive, whole numbers.
+		If
+		<ol marker="(i)">
+			<li> <m> P(1) </m> is true, and </li>
+			<li> <m> (\forall k)\bbrac{P(k) \lgccond P(k+1)} </m> is true, </li>
+		</ol>
+		then <m> (\forall n)P(n) </m> is true.
+	</p></statement>
 </axiom>
 
 <p>
@@ -381,15 +381,15 @@ Now, here is some specific terminology associated to proofs by induction.
 	<idx><h>Principle</h><h>of Mathematical Induction</h><h>strong form</h></idx>
 	<idx><h>Mathematical Induction</h><h>strong form</h></idx>
 	<idx><h>induction (mathematical)</h><h>strong form</h></idx>
-	<p>
-	Suppose <m> P(n) </m> is a predicate where the variable <m> n </m> has domain the positive, whole numbers.
-	If
-	<ol marker="(i)">
-		<li> <m> P(1) </m> is true, and </li>
-		<li> <m> (\forall k)\Bbrac{ \bbrac{ P(1) \lgcand P(2) \lgcand \dotsb \lgcand P(k) } \lgccond P(k+1)} </m> is true, </li>
-	</ol>
-	then <m> (\forall n)P(n) </m> is true.
-	</p>
+	<statement><p>
+		Suppose <m> P(n) </m> is a predicate where the variable <m> n </m> has domain the positive, whole numbers.
+		If
+		<ol marker="(i)">
+			<li> <m> P(1) </m> is true, and </li>
+			<li> <m> (\forall k)\Bbrac{ \bbrac{ P(1) \lgcand P(2) \lgcand \dotsb \lgcand P(k) } \lgccond P(k+1)} </m> is true, </li>
+		</ol>
+		then <m> (\forall n)P(n) </m> is true.
+	</p></statement>
 </axiom>
 
 <proof>
@@ -413,14 +413,30 @@ Now, here is some specific terminology associated to proofs by induction.
 	<title>Proof by strong induction</title>
 	<idx><h>Procedure</h><h>proof by strong induction</h></idx>
 	<idx><h>proof</h><h>by strong induction</h></idx>
+	<p>
+	To prove a universal statement indexed by whole numbers:
+	<ol>
 
-	<case><title>Base case</title><p> Start by proving the statement for the base case <m> n = 1 </m>. </p></case>
+		<li>
+			<title>Base case</title>
+			<p> Start by proving the statement for the base case <m> n = 1 </m>. </p>
+		</li>
 
-	<case><title>Induction step</title><p>
-		Next, assume that <m> k </m> is a fixed number such that <m> k \ge 1 </m>, and that the statement is true for all <m> n \le k </m>.
-		Based on this assumption, try to prove that the next case, <m> n=k+1 </m>, is also true.
-	</p></case>
+		<li>
+			<title>Induction step</title>
+			<p>
+			Next,
+			assume that <m> k </m> is a fixed number such that <m> k \ge 1 </m>,
+			and that the statement is true for all <m> n \le k </m>.
+			Based on this assumption,
+			try to prove that the next case,
+			<m> n=k+1 </m>,
+			is also true.
+			</p>
+		</li>
 
+	</ol>
+	</p>
 </identity>
 
 <problem> <!-- worked example -->

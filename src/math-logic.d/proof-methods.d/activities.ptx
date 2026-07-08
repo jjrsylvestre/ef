@@ -30,10 +30,11 @@ respective owners.
 		Then do the same for a train.
 		</p>
 
-		<paragraphs><title>Note</title><p>
-			Do not go back and modify your definition of <term>car</term>;
-			test the objects <term>transport truck</term> and <term>train</term> against whatever definition you initially came up with in <xref ref="activity-proof-method-define-car-def" text="type-local" />.
-		</p></paragraphs>
+		<p>
+		<alert>Note.</alert>
+		Do not go back and modify your definition of <term>car</term>;
+		test the objects <term>transport truck</term> and <term>train</term> against whatever definition you initially came up with in <xref ref="activity-proof-method-define-car-def" text="type-local" />.
+		</p>
 
 	</task>
 
@@ -81,9 +82,10 @@ respective owners.
 		For every triple of real numbers <m> x </m>, <m> y </m>, and <m> z </m>, <m> \abs{x+y+z} \le \abs{x} + \abs{y} + \abs{z} </m>.
 	</p></blockquote>
 
-	<paragraphs><title>Remark</title><p>
-		Using the two-number version of the inequality to prove the three-number version is an example of <em>inductive reasoning</em>, something that we will soon investigate further.
-	</p></paragraphs>
+	<p>
+	<alert>Remark</alert>
+	Using the two-number version of the inequality to prove the three-number version is an example of <em>inductive reasoning</em>, something that we will soon investigate further.
+	</p>
 
 </activity>
 
@@ -127,11 +129,12 @@ respective owners.
 			Write a technical definition for the concept of <term>composite number</term> with a similar level of detail as in the <q>more complete</q> definition of <term>prime number</term> given in <xref ref="example-proof-methods-define-prime" />.
 		</p>
 
-		<paragraphs><title>Note</title><p>
-			Don't just define it as <q>not prime.</q>
-			And make sure that the equality <m> 7 = 1 \times 7 </m> can't be used to justify the statement <q><m> 7 </m> is composite</q> by your definition
-			(because prime <m> 7 </m> is most definitely <em>not</em> composite).
-		</p></paragraphs>
+		<p>
+		<alert>Note</alert>
+		Don't just define it as <q>not prime.</q>
+		And make sure that the equality <m> 7 = 1 \times 7 </m> can't be used to justify the statement <q><m> 7 </m> is composite</q> by your definition
+		(because prime <m> 7 </m> is most definitely <em>not</em> composite).
+		</p>
 
 	</task>
 

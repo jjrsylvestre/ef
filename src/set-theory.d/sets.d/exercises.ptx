@@ -193,13 +193,13 @@ respective owners.
 <exercisegroup xml:id="exercisegroup-sets-investigate-set-ops">
 	<title>Testing set equality</title>
 
-	<introduction>
+	<introduction><p>
 		For each of
 		<xref ref="exercisegroup-sets-investigate-set-ops" text="type-local">Exercises</xref>,
 		either formally prove the given equivalence of sets
 		(using the <xref ref="test-sets-equality" text="custom">Test for Set Equality</xref>)
 		or demonstrate that it is false by providing a <em>specific</em> counterexample.
-	</introduction>
+	</p></introduction>
 
 	<exercise xml:id="exercise-sets-investigate-set-ops-disj-union"><p>
 		<m> A = (A \relcmplmnt B) \disjunion (A \intersection B) </m>
@@ -248,12 +248,12 @@ respective owners.
 <exercisegroup xml:id="exercisegroup-sets-investigate-pow-set-ops">
 	<title>Properties of power sets</title>
 
-	<introduction>
+	<introduction><p>
 		For each of
 		<xref ref="exercisegroup-sets-investigate-pow-set-ops" text="type-local">Exercises</xref>,
 		either formally prove the given statement about power sets
 		or demonstrate that it is false by providing a <em>specific</em> counterexample.
-	</introduction>
+	</p></introduction>
 
 	<exercise xml:id="exercise-sets-investigate-pow-set-ops-union"><p>
 		<m> \powset{A \union B} = \powset{A} \union \powset{B} </m>

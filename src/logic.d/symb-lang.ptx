@@ -1072,12 +1072,12 @@ Liberal use of extra <q>intermediate</q> columns to analyze substatements separa
 	<title>Substitution Rule</title> <!-- [into a tautology or contradiction] -->
 	<idx><h>Rule(s)</h><h>Substitution</h><h>into a tautology or contradiction</h></idx>
 	<idx><h>Substitution Rule</h><h>into a tautology or contradiction</h></idx>
-	<statement>
+	<statement><p>
 		Suppose <m> A </m> is a logical statement involving substatement variables <m> p_1, p_2, \dotsc, p_m </m>.
 		If <m> A </m> is logically true or logically false,
 		then so is every statement obtained from <m> A </m> by replacing each statement variable <m> p_i </m> by some logical statement <m> B_i </m>,
 		for every possible collection of logical statements <m> B_1, B_2, \dotsc, B_m </m>.
-	</statement>
+	</p></statement>
 </theorem>
 
 <example>

@@ -55,18 +55,12 @@ respective owners.
 
 <activity xml:id="activity-trees-remove-edge-from-just-a-cycle">
 
-	<p>
-	Suppose that <m> G </m> is a connected graph that <em>consists entirely of</em> a proper cycle.
-	(See <xref ref="figure-trees-only-proper-cycle" />.)
-	</p>
+	<p> Suppose that <m> G </m> is a connected graph that <em>consists entirely of</em> a proper cycle. </p>
 
-	<figure xml:id="figure-trees-only-proper-cycle">
-		<caption>A graph that consists entirely of a proper cycle.</caption>
-		<image xml:id="image-trees-only-cycle" width="17.9%">
-			<shortdescription> A graph that consists entirely of a proper cycle. </shortdescription>
-			<latex-image><xi:include href="activities.d/only-cycle.tex" parse="text" /></latex-image>
-		</image>
-	</figure>
+	<image xml:id="image-trees-only-cycle" width="17.9%">
+		<shortdescription> A graph that consists entirely of a proper cycle. </shortdescription>
+		<latex-image><xi:include href="activities.d/only-cycle.tex" parse="text" /></latex-image>
+	</image>
 
 	<p>
 	Let <m> G' </m> represent the subgraph of <m> G </m> that results by removing a single edge.
@@ -84,11 +78,15 @@ respective owners.
 	Argue that <m> H' </m> remains connected.
 	</p>
 
-	<paragraphs><title>Notes</title><p><ul>
+	<p>
+	<alert>Notes.</alert>
+	<ul>
+
 		<li>
 			Your argument here needs to be (slightly) different from your argument in
 			<xref ref="activity-trees-remove-edge-from-just-a-cycle" />.
 		</li>
+
 		<li>
 			Make sure you are using the technical definition of
 			<term><xref ref="definition-paths-connected-graph" text="title" /></term>
@@ -96,7 +94,9 @@ respective owners.
 			What are you assuming about <m> H </m>,
 			and what do you need to verify about <m> H' </m>?
 		</li>
-	</ul></p></paragraphs>
+
+	</ul>
+	</p>
 
 </activity>
 

@@ -577,14 +577,14 @@ as well as how much <q>redundancy</q> the graph contains.
 
 		<figure>
 			<caption>Table of values for distance weight function.</caption>
-			<tabular>
+			<sidebyside><tabular>
 				<col right="minor" /><col />
 				<row bottom="minor"><cell><m> e </m></cell><cell><m> w(e) </m></cell></row>
 				<row><cell>{Camrose, Edmonton}</cell><cell><m> 94 </m></cell></row>
 				<row><cell>{Edmonton, Leduc}</cell><cell><m> 35 </m></cell></row>
 				<row><cell>{Leduc, Wetaskiwin}</cell><cell><m> 35 </m></cell></row>
 				<row><cell>{Wetaskiwin, Camrose}</cell><cell><m> 40 </m></cell></row>
-			</tabular>
+			</tabular></sidebyside>
 		</figure>
 
 	</sidebyside>

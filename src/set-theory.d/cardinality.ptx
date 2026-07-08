@@ -16,7 +16,9 @@ respective owners.
 <chapter xml:id="chapter-cardinality" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Cardinality</title>
 
-<p> In this chapter we will discuss how to measure and compare <q>sizes</q> of sets using bijections. </p>
+<introduction><p>
+	In this chapter we will discuss how to measure and compare <q>sizes</q> of sets using bijections.
+</p></introduction>
 
 <section xml:id="section-cardinality-finite">
 <title>Finite sets</title>
@@ -120,7 +122,7 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 			Bijections <m> \funcdef{\varphi,\psi}{\natnumlt{26}}{\Sigma} </m>
 			defined by a table of values.
 		</caption>
-		<tabular top="medium" bottom="medium" halign="center">
+		<sidebyside><tabular top="medium" bottom="medium" halign="center">
 			<col right="minor" /><col /><col /><col /><col /><col /><col /><col />
 			<row bottom="minor">
 				<cell><m> \sigma </m></cell>
@@ -151,7 +153,7 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 				<cell><m> \mathrm{m} </m></cell>
 				<cell><m> \mathrm{n} </m></cell>
 			</row>
-		</tabular>
+		</tabular></sidebyside>
 	</figure>
 
 </example>
@@ -215,10 +217,9 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 	</proposition>
 
 	<corollary>
+		<title>Cardinality of the empty set</title>
 
-		<statement><title>Cardinality of the empty set</title><p>
-			The cardinality of the empty set is <m> 0 </m>.
-		</p></statement>
+		<statement><p> The cardinality of the empty set is <m> 0 </m>. </p></statement>
 
 		<proof><p>
 			We are required to demonstrate an example of a bijection <m> \natnumlt{0} \to \emptyset </m>.

@@ -68,9 +68,10 @@ Follow the steps of <xref ref="procedure-induction-activities" /> to create a pr
 		<row><cell><m> (q_1 \lgccond r_1) \lgcand (q_2 \lgccond r_2) \lgcand \dotsb \lgcand (q_n \lgccond r_n) </m></cell></row>
 	</tabular>
 
-	<paragraphs><title>Careful</title><p>
-		Recall that in this context, the words <term>valid</term> and <term>true</term> do not have the same meaning.
-	</p></paragraphs>
+	<p>
+	<alert>Careful.</alert>
+	Recall that in this context, the words <term>valid</term> and <term>true</term> do not have the same meaning.
+	</p>
 
 </activity>
 

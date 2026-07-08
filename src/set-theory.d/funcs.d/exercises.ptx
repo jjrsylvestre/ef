@@ -24,7 +24,7 @@ respective owners.
 <exercise><p> <!-- TODO \refAdapt{hunter+discrete}{2.3}{5} -->
 	Let <m> A </m> represent the set of all university students and let <m> C </m> be the set of all university courses.
 	Does the rule <m> \funcdef{f}{A}{C} </m> given by
-	<md> f(a) = c \text{ if student <m> a </m> is registered in course <m> c </m>} </md>
+	<md> f(a) = c \text{ if student } a  \text{ is registered in course } c </md>
 	define a function?
 	Justify your answer.
 </p></exercise>
@@ -205,7 +205,9 @@ respective owners.
 
 <exercise xml:id="exercise-funcs-props-of-composition">
 
-	<statement><p> Let <m> \funcdef{f}{A}{B} </m> and <m> \funcdef{g}{B}{C} </m> be functions. </p></statement>
+	<introduction><p>
+		Let <m> \funcdef{f}{A}{B} </m> and <m> \funcdef{g}{B}{C} </m> be functions.
+	</p></introduction>
 
 	<task xml:id="exercise-funcs-props-of-composition-surjective"><p>
 		Prove that if <m> f </m> and <m> g </m> are both surjective, then <m> g \funccomp f </m> is surjective.
@@ -244,10 +246,10 @@ respective owners.
 
 <exercise>
 
-	<statement><p>
+	<introduction><p>
 		Let <m> \funcdef{f}{A}{B} </m> be a function.
 		Suppose there exists a function <m> \funcdef{g}{B}{A} </m> such that <m> g \funccomp f = \id_A </m> and <m> f \funccomp g = \id_B </m>.
-	</p></statement>
+	</p></introduction>
 
 	<task><p> Prove that <m> f </m> is a bijection. </p></task>
 

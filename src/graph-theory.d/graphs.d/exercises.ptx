@@ -19,20 +19,17 @@ respective owners.
 <!-- TODO check this against Roman -->
 <!-- TODO: figure out a way to put Hunter 2.1 #9 in here. Probably just leave it as an assignment question with attribution. -->
 
-<figure xml:id="figure-graphs-basics-exercise">
-	<caption>An example graph.</caption>
-
-	<image xml:id="image-graphs-basics" width="38.2%">
-		<shortdescription> An example graph. </shortdescription>
-		<latex-image><xi:include href="exercises.d/basics.tex" parse="text" /></latex-image>
-	</image>
-
-</figure>
-
 <exercise>
 
 	<introduction>
-		<p> Consider the graph in <xref ref="figure-graphs-basics-exercise" />. </p>
+
+		<p> Consider the following graph. </p>
+
+		<image xml:id="image-graphs-basics" width="38.2%">
+			<shortdescription> An example graph. </shortdescription>
+			<latex-image><xi:include href="exercises.d/basics.tex" parse="text" /></latex-image>
+		</image>
+
 	</introduction>
 
 	<task><p> Are vertices 1 and 2 incident? </p></task>

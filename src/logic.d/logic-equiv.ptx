@@ -43,10 +43,10 @@ respective owners.
 
 <claim>
 	<title>Equivalence of logical statements</title>
-	<idx><h>Test</h><h>for equivalence of logical statements}</h></idx>
+	<idx><h>Test</h><h>for equivalence of logical statements</h></idx>
 	<idx><h>equivalent</h><h>logical statements</h><h>Test</h></idx>
 	<idx><h>statement(s) (in logic)</h><h>equivalent</h><h>Test</h></idx>
-	<idx><h>logical</h><h>statement(s)</h><h>equivalent</h><h>Test</h></idx>
+	<idx><h>logical</h><h>statement(s)</h><h>equivalence test</h></idx>
 	<statement><p>
 		Statements <m> A </m> and <m> B </m> are logically equivalent if <m> A </m> and <m> B </m> <em>always</em> have the same output truth value whenever the same input truth values are substituted for the substatement variables in each.
 		That is, <m> A \lgcequiv B </m> if <em><m> A </m> and <m> B </m> have the same truth table</em>.

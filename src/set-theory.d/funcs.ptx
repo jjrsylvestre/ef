@@ -317,7 +317,7 @@ for example, by:
 	<figure>
 		<caption>The graph <m> \funcgraph{x \mapsto x^2} </m> represented as a curve in the Cartesian plane.</caption>
 		<image xml:id="image-funcs-graph-x-squared" width="36.7%">
-			<shortdescription> The graph <m> \funcgraph{x \mapsto x^2} </m> represented as a curve in the Cartesian plane. </shortdescription>
+			<shortdescription> The graph of the square function represented as a parabolic curve in the Cartesian plane. </shortdescription>
 			<latex-image><xi:include href="funcs.d/graph-x-squared.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -423,7 +423,7 @@ for example, by:
 
 	<figure>
 		<caption>The graph <m> \funcgraph{S} </m> of the logical statement <m> S(p_1,p_2) = p_1 \lgccond p_2 </m>.</caption>
-		<tabular halign="center">
+		<sidebyside><tabular halign="center">
 			<col /><col right="minor" /><col />
 			<row bottom="minor">
 				<cell><m> p_1 </m></cell>
@@ -446,7 +446,7 @@ for example, by:
 				<cell><m> \lgcfalse </m></cell>
 				<cell><m> \lgctrue </m></cell>
 			</row>
-		</tabular>
+		</tabular></sidebyside>
 	</figure>
 
 </example>
@@ -1100,7 +1100,7 @@ by considering <m> f(A) \subseteq B </m>.
 		<usage><m> \funcdef{\projfunc{i}}{A_1 \cartprod A_2 \cartprod \dotsb \cartprod A_n}{A_i} </m></usage>
 		<description>
 			the projection function onto the <m> \nth[i] </m> factor <m> A_i </m> in the Cartesian product
-			<md> A_1 \cartprod A_2 \cartprod \dotsb \cartprod A_n</md>
+			<m> A_1 \cartprod \dotsb \cartprod A_n </m>
 		</description>
 	</notation>
 	to mean the projection function onto the <m> \nth[i] </m> factor <m> A_i </m> in the Cartesian product

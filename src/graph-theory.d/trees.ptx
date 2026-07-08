@@ -354,7 +354,7 @@ respective owners.
 		</title> -->
 
 		<case direction="cycle">
-\			<!-- <title>
+			<!-- <title>
 				<xref ref="theorem-trees-characterizations-tree" text="local">Statement</xref>
 				implies
 				<xref ref="theorem-trees-characterizations-connected-num-edges" text="local">Statement</xref>

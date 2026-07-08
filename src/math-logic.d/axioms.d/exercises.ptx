@@ -112,32 +112,37 @@ respective owners.
 
 		<p> Consider the following axiomatic system. </p>
 
-		<paragraphs><title>Primitive terms</title><p><ul>
-			<li> <term>wizard</term> (noun), </li>
-			<li> <term>zaps</term> (verb). </li>
-		</ul></p></paragraphs>
+		<sidebyside widths="25% 70%" margins="0% 0%">
 
-		<paragraphs><title>Axioms</title><p><ol marker="1.">
+			<p><alert>Primitive terms.</alert><ul>
+				<li> <term>wizard</term> (noun) </li>
+				<li> <term>zaps</term> (verb) </li>
+			</ul></p>
 
-			<li xml:id="exercise-axioms-wizards-axiom-three-wizards">
-				There are at least three distinct wizards.
-			</li>
+			<p><alert>Axioms.</alert><ol marker="1.">
 
-			<li xml:id="exercise-axioms-wizards-axiom-no-non-zap-pairs">
-				If <m> W_1 </m>, <m> W_2 </m> are distinct wizards, then <m> W_1 </m> zaps <m> W_2 </m> or <m> W_2 </m> zaps <m> W_1 </m>.
-			</li>
+				<li xml:id="exercise-axioms-wizards-axiom-three-wizards">
+					There are at least three distinct wizards.
+				</li>
 
-			<li xml:id="exercise-axioms-wizards-axiom-no-self-zap">
-				No wizard zaps itself.
-			</li>
+				<li xml:id="exercise-axioms-wizards-axiom-no-non-zap-pairs">
+					If <m> W_1 </m>, <m> W_2 </m> are distinct wizards, then <m> W_1 </m> zaps <m> W_2 </m> or <m> W_2 </m> zaps <m> W_1 </m>.
+				</li>
 
-			<li xml:id="exercise-axioms-wizards-axiom-zap-transitive">
-				If <m> W_1 </m>, <m> W_2 </m>, <m> W_3 </m> are wizards such that <m> W_1 </m> zaps <m> W_2 </m> and <m> W_2 </m> zaps <m> W_3 </m>, then <m> W_1 </m> zaps <m> W_3 </m>.
-			</li>
+				<li xml:id="exercise-axioms-wizards-axiom-no-self-zap">
+					No wizard zaps itself.
+				</li>
 
-		</ol></p></paragraphs>
+				<li xml:id="exercise-axioms-wizards-axiom-zap-transitive">
+					If <m> W_1 </m>, <m> W_2 </m>, <m> W_3 </m> are wizards such that <m> W_1 </m> zaps <m> W_2 </m> and <m> W_2 </m> zaps <m> W_3 </m>, then <m> W_1 </m> zaps <m> W_3 </m>.
+				</li>
 
-		<paragraphs><title>Notes</title><p><ul>
+			</ol></p>
+
+		</sidebyside>
+
+		<p>
+		<alert>Notes.</alert><ul>
 
 			<li> Recall that in mathematics and logic, we always interpret <q>or</q> as <em>inclusive or</em>: one or the other or possibly both. </li>
 
@@ -150,7 +155,7 @@ respective owners.
 				In particular, <xref ref="exercise-axioms-wizards-axiom-zap-transitive" text="local">Axiom</xref> could (in principle) be applied to a collection <m> W_1,W_2,W_3 </m> of wizards where <m> W_1 </m> and <m> W_3 </m> are in fact the <em>same</em> wizard.
 			</li>
 
-		</ul></p></paragraphs>
+		</ul></p>
 
 		<p> Prove the following statements based on this axiomatic system. </p>
 

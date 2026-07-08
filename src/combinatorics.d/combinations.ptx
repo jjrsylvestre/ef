@@ -479,8 +479,8 @@ see <xref ref="figure-combinations-pascal" /> below.
 </p>
 
 <figure xml:id="figure-combinations-pascal">
-	<idx>Pascal's triangle</idx>
 	<caption>Pascal's triangle.</caption>
+	<idx>Pascal's triangle</idx>
 	<sidebyside valign="middle" widths="47% 6% 47%">
 
 		<p><md alignment="gather">

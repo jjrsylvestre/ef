@@ -77,8 +77,8 @@ let's extract the binomial coefficients from those expressions.
 </p>
 
 <figure xml:id="figure-multinomial-pascal">
-	<idx>Pascal's triangle</idx>
 	<caption>Pascal's triangle.</caption>
+	<idx>Pascal's triangle</idx>
 
 	<sidebyside valign="middle" widths="47% 6% 47%">
 

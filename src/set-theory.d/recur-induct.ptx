@@ -529,7 +529,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 			</task>
 
 			<task>
-				<title>Associative</title>:
+				<title>Associative</title>
 				<statement><p>
 					That is, <m> (m + n) + \ell </m> is always equal to <m> m + (n + \ell) </m>,
 					where the order of operations implied by the brackets is strictly followed.
