@@ -3,6 +3,11 @@
 
 * Check schema compliance.
 
+* Audit asides for:
+  titles
+  whether they need valign
+  whether they should be asides at all
+
 * Look for use of \abs when it should be \card, especially in graph theory chapter.
 
 * Cool combinatoric formula:
