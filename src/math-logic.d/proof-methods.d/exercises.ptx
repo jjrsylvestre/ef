@@ -193,9 +193,9 @@ respective owners.
 
 	</introduction>
 
-	<task><p> Determine the first (<ie /> smallest) four twin prime pairs. </p></task>
+	<task><p> Determine the first (smallest) four twin prime pairs. </p></task>
 
-	<task><p> Determine the first (<ie /> smallest) two isolated primes. </p></task>
+	<task><p> Determine the first (smallest) two isolated primes. </p></task>
 
 	<task><p> Prove that if <m> p, p+2 </m> is a twin prime pair with <m> p \ge 5 </m>, then <m> p+1 </m> is divisible by <m> 6 </m>. </p></task>
 

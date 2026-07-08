@@ -241,8 +241,9 @@ and can be read as
 
 	<p>
 	Consider the set <md> A = \{ 0, 3, 6, 9, 12, \dotsc \} </md>.
-	We could define this set in a more precise manner
-	(<ie /> without resorting to using dots) as follows.
+	We could define this set in a more precise manner,
+	without resorting to using dots,
+	as follows.
 	<md> A = \setdef{ n \in \N }{ n \text{ divisible by } 3 } </md>
 	The <q><m> n\in\N </m></q> part to the left of the divider tells us that the pool of <q>member candidates</q> for <m> A </m> is the set of natural numbers, and the test to the right of the divider tells us how to decide when a given candidate natural number <m> n </m> is actually a member of <m> A </m>.
 	In words, you should think of the above definition as saying the following.
@@ -538,10 +539,10 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 			This means that
 			<md> \sin\left(\frac{\pi(x-1)}{3}\right) = 0. </md>
 			However, we know from trigonometry that <m> \sin \theta = 0 </m> if and only if <m> \theta </m> is an integer multiple of <m> \pi </m>;
-			<ie /> <m> \theta = m\pi </m> for some <m> m \in \Z </m>.
+			that is, when <m> \theta = m\pi </m> for some <m> m \in \Z </m>.
 			If we set
-			<md> \frac{\pi(x-1)}{3} = m\pi </md>
-			and solve for <m> x </m>, we get <m> x = 3m+1 \in A </m>.
+			<md> \frac{\pi (x - 1)}{3} = m\pi </md>
+			and solve for <m> x </m>, we get <m> x = 3 m + 1 \in A </m>.
 		</p></case>
 
 	</solution>
@@ -596,8 +597,9 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 </p></example>
 
 <remark><p>
-	To show the <m> A \neq B </m> part of <m> A\subsetneqq B </m>, you only need to exhibit <em>one</em> example element of <m> B </m> which is not in <m> A </m>;
-	<ie /> you need to find a <term>counterexample</term> for the logical implication <m> x \in B \lgcimplies x \in A </m>.
+	To show the <m> A \neq B </m> part of <m> A \subsetneqq B </m>,
+	you only need to exhibit <em>one</em> example element of <m> B </m> which is not in <m> A </m>.
+	That is, you need to find a <term>counterexample</term> for the logical implication <m> x \in B \lgcimplies x \in A </m>.
 </p></remark>
 
 </section>
@@ -818,7 +820,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title>disjoint sets</title>
 		<idx><h>disjoint</h><h>sets</h></idx>
 		<idx><h>set(s)</h><h>disjoint</h></idx>
-		<p> sets that have no elements in common, <ie /> sets <m> A,B </m> such that <m> A\intersection B = \emptyset </m> </p>
+		<p> sets that have no elements in common; that is, sets <m> A,B </m> such that <m> A \intersection B = \emptyset </m> </p>
 	</li>
 
 	<li xml:id="definition-sets-disjoint-union">
@@ -986,14 +988,18 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 			If <m> x \in \cmplmnt{(A \union B)} </m> then by definition of complement, <m> x\in U </m> but <m> x \notin A \union B </m>.
 			Then <m> x \notin A </m> must be true, since if <m> x </m> were in <m> A </m> then it would also be in <m> A \union B </m>.
 			Similarly, <m> x \notin B </m> must also be true.
-			So <m> x \in \cmplmnt{A} </m> and <m> x\in\cmplmnt{B} </m>; <ie /> <m> x\in \cmplmnt{A} \intersection \cmplmnt{B} </m>.
+			Therefore, <m> x \in \cmplmnt{A} </m> and <m> x\in\cmplmnt{B} </m>,
+			so that <m> x \in \cmplmnt{A} \intersection \cmplmnt{B} </m>.
 		</p></case>
 
 		<case><title>Show <m> \cmplmnt{A} \intersection \cmplmnt{B} \subseteq \cmplmnt{(A \union B)} </m></title><p>
 			We need to show
 			<md> x \in \cmplmnt{A} \intersection \cmplmnt{B} \lgcimplies x \in \cmplmnt{(A \union B)} </md>.
-			If <m> x \in \cmplmnt{A} \intersection \cmplmnt{B} </m> then by definition of intersection, both <m> x \in \cmplmnt{A} </m> and <m> x \in \cmplmnt{B} </m> are true.; <ie /> <m> x \notin A </m> and <m> x \notin B </m>.
-			Since <m> A \union B </m> is all elements of <m> U </m> which are in one (or both) of <m> A,B </m>, we must have <m> x \notin A \union B </m>. Thus <m> x \in \cmplmnt{(A \union B)} </m>.
+			If <m> x \in \cmplmnt{A} \intersection \cmplmnt{B} </m>,
+			then by definition of intersection both <m> x \in \cmplmnt{A} </m> and <m> x \in \cmplmnt{B} </m> are true;
+			that is, <m> x \notin A </m> and <m> x \notin B </m>.
+			Since <m> A \union B </m> is all elements of <m> U </m> which are in one (or both) of <m> A,B </m>, we must have <m> x \notin A \union B </m>.
+			Thus <m> x \in \cmplmnt{(A \union B)} </m>.
 		</p></case>
 
 	</proof>

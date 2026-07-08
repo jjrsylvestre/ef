@@ -126,8 +126,8 @@ But efficiently counting large collections can be difficult!
 		<case><title>Count <m> \words{\Sigma}_3 </m></title><p>
 			This time we will just use inductive reasoning.
 			Each word in <m> \words{\Sigma}_2 </m> may be extended to a word in <m> \words{\Sigma}_3 </m> by appending either an <m> \alpha </m> or an <m> \omega </m> onto the end.
-			So there must be twice as many words in <m> \words{\Sigma}_3 </m> as in <m> \words{\Sigma}_2 </m>,
-			<ie /> <m> \card{\words{\Sigma}_3} = 8 </m>.
+			So there must be twice as many words in <m> \words{\Sigma}_3 </m> as in <m> \words{\Sigma}_2 </m>.
+			That is, <m> \card{\words{\Sigma}_3} = 8 </m>.
 		</p></case>
 
 		<case><title>Total count</title><p>
@@ -601,7 +601,7 @@ where the collection we actually want to count corresponds to equivalence classe
 	</p></statement>
 
 	<solution><p>
-		Using the people who need to get home (<ie /> your friends <em>and</em> you) as objects and car seats as containers,
+		Using the people who need to get home (that is, your friends <em>and</em> you) as objects and car seats as containers,
 		<xref ref="corollary-counting-pigeon" text="title" /> says that someone will have to sit on someone else's lap.
 	</p></solution>
 
@@ -734,7 +734,7 @@ so that object <m> a \in A </m> is <q>placed</q> in container <m> b \in B </m> w
 
 		<p>
 		We are assuming that each class <m> [a_i] </m> contains no more than <m> \ell </m> elements;
-		<ie /> <m> \card{[a_i]} \le \ell </m>.
+		that is, <m> \card{[a_i]} \le \ell </m>.
 		Since an equivalence relation always partitions a set <m> A </m> into the disjoint union of its equivalence classes, we have
 		<md>
 			<mrow> \card{A} \amp = \card{[a_1]} + \card{[a_2]} + \dotsb + \card{[a_n]} </mrow>

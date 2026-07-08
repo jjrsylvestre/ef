@@ -452,7 +452,7 @@ regardless of the content and truth/falsity of the individual statements making 
 
 		<li> If the conclusion is a tautology, the argument is automatically valid. </li>
 
-		<li> If the premises are all contradictions (<ie /> logically false), the argument is automatically valid. </li>
+		<li> If the premises are all contradictions (logically false), the argument is automatically valid. </li>
 
 		<li> If the argument is valid and the premises are all tautologies, then the conclusion must also be a tautology. </li>
 

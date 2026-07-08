@@ -614,7 +614,7 @@ Therefore, one must demonstrate that no <em>surjection</em> <m> \natnumlt{m} \sf
 		<ol>
 
 			<li xml:id="fact-cardinality-contains-infinite-subset-subset">
-				Every set <m> B </m> that contains <m> A </m> as a subset (<ie /> <m> B \supseteq A </m>) is infinite.
+				Every set <m> B </m> that contains <m> A </m> as a subset (<m> B \supseteq A </m>) is infinite.
 			</li>
 
 			<li> If <m> \funcdef{f}{A}{B} </m> is an injection, then <m> B </m> is also infinite. </li>
@@ -866,7 +866,7 @@ Expanding on this idea, we can think of <em>every</em> bijection as using the el
 
 			<p>
 			Let <m> X </m> represent the <m> x </m>-axis in the plane,
-			<ie /> <md> X = \setdef{(x,0)}{x \in \R} \subseteq \R^2 </md>.
+			so that <md> X = \setdef{(x,0)}{x \in \R} \subseteq \R^2 </md>.
 			Let <m> \funcdef{f}{\hat{S}}{X} </m> be defined as follows:
 			for <m> (x,y)\in \hat{S} </m>, let <m> f(x,y) </m> be the <m> x </m>-intercept of the line through points <m> (0,1),(x,y) </m>.
 			</p>

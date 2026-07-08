@@ -86,7 +86,8 @@ restricting ourselves to discussing whether <q>statements</q> involving one or m
 <example><p>
 	In <xref ref="example-pred-logic-predicates" />,
 	the domain of the variable <m> f </m> could be <q>functions of a single real variable</q>,
-	and the domains of the variables <m> m </m> and <m> n </m> could both be <q>natural numbers</q> (<ie /> whole, nonnegative numbers).
+	and the domains of the variables <m> m </m> and <m> n </m> could both be <q>natural numbers</q>
+	(whole, nonnegative numbers).
 </p></example>
 
 <note><p>

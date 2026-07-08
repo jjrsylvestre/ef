@@ -401,8 +401,8 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 </li></dl></p>
 
 <remark><p>
-	The <em>distinct</em> part of the definition is important,
-	since if <m> a_1,a_2 \in A </m> are <em>not</em> distinct (<ie /> <m> a_2 = a_1 </m>),
+	The <q>distinct</q> part of the definition is important,
+	since if <m> a_1,a_2 \in A </m> are <em>not</em> distinct (so that <m> a_2 = a_1 </m>),
 	then obviously both <m> a_1 \mathrel{R} a_2 </m> and <m> a_2 \mathrel{R} a_1 </m> can be simultaneously true because they are the same statement.
 </p></remark>
 
@@ -443,19 +443,21 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 	<p>
 	By definition, <term><xref ref="definition-relations-antisymmetric" text="custom">antisymmetry</xref></term> is when we <em>never have both</em>.
 	On the other hand, <term><xref ref="definition-relations-symmetric" text="custom">symmetry</xref></term> is when we <em>always have both or neither</em>;
-	that is, for every distinct pair <m> a_1,a_2 \in A </m>, we either have both <m> a_1 \mathrel{R} a_2 </m> and <m> a_2 \mathrel{R} a_1 </m>, or we have both
+	that is, for every distinct pair <m> a_1,a_2 \in A </m>, we either have both <m> a_1 \mathrel{R} a_2 </m> and <m> a_2 \mathrel{R} a_1 </m>,
+	or we have both
 	<!-- <m> a_1 \not\mathrel{R} a_2 </m> -->
 	<m> a_1\ \not R\ a_2 </m>
 	and
 	<!-- <m> a_2 \not\mathrel{R} a_1 </m>. -->
 	<m> a_2\ \not R\ a_1 </m>.
 	However, a relation can fall <em>between</em> symmetry and antisymmetry on the spectrum,
-	such as in <xref ref="example-relations-neither-antisymmetric-symmetric" />,
-	where we sometimes have both (<eg /> both <m> a \mathrel{R} b </m> and <m> b \mathrel{R} a </m> for that example relation)
-	and we also sometimes have only one (<eg /> <m> a \mathrel{R} c </m> but
-	<!-- <m> c \not\mathrel{R} a </m> -->
-	<m> c\ \not R\ a </m>
-	for that example relation).
+	such as in <xref ref="example-relations-neither-antisymmetric-symmetric" />.
+	That is,
+	for that relation <m> R </m> on <m> A </m>
+	there are examples of distinct elements <m> a_1,a_2 \in A </m> where we have both <m> a_1 \mathrel{R} a_2 </m> and <m> a_2 \mathrel{R} a_1 </m>,
+	and there are also examples of distinct elements <m> a_1',a_2' \in A </m> where we have <m> a_1' \mathrel{R} a_2' </m> but
+	<!-- <m> a_2' \not\mathrel{R} a_1' </m> -->
+	<m> a_2'\ \not R\ a_1' </m>.
 	</p>
 
 	<p>

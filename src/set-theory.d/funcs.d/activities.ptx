@@ -38,8 +38,8 @@ respective owners.
 	<task><p> Devise an example of a function <m> \N \to \N </m> that is surjective but not injective. </p></task>
 
 	<conclusion><p>
-		Note that when you define a function, you don't necessarily have to give an input-output <em>formula</em> <mdash />
-		you can also use a table of input-output values or just a description in words (<ie /> an <term>algorithm</term>) of how an output is to be produced from an input.
+		Note that to define a function, you don't necessarily have to give an input-output <em>formula</em> <mdash />
+		you can also use a table of input-output values or just a description in words (an <term>algorithm</term>) of how an output is to be produced from an input.
 	</p></conclusion>
 
 </activity>
@@ -97,9 +97,8 @@ respective owners.
 	</p>
 
 	<p>
-	When attempting this activity,
-	remember that when you define a function you don't necessarily have to give an input-output <em>formula</em> <mdash />
-	you can also use a description in words (<ie /> an <term>algorithm</term>) of how an output is to be produced from an input.
+	Note that to define a function, you don't necessarily have to give an input-output <em>formula</em> <mdash />
+	you can also use a table of input-output values or just a description in words (an <term>algorithm</term>) of how an output is to be produced from an input.
 	</p>
 
 </activity>

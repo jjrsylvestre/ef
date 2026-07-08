@@ -56,7 +56,7 @@ in exactly the same way that we use our counting sets <m> \natnumlt{m} </m> to c
 	<li> An uncountable set is necessarily infinite. </li>
 
 	<li xml:id="note-countable-defs-same-size-countable-uncountable">
-		Two sets which have the same size (<ie /> there exists a bijection between them) are either both countable or both uncountable.
+		Two sets which have the same size (so that there exists a bijection between them) are either both countable or both uncountable.
 	</li>
 
 </ol></p></note>
@@ -76,7 +76,8 @@ in exactly the same way that we use our counting sets <m> \natnumlt{m} </m> to c
 		The <q>each element of <m> A </m></q> property is the same as saying the function is surjective,
 		and the <q>exactly once</q> property is the same as saying the function is injective.
 		So a sequence of the described kind is exactly the same as <em>bijection</em> <m> \N \to A </m>,
-		which is what is required for <m> A </m> to be the same size as <m> \N </m> (<ie /> countably infinite).
+		which is what is required for <m> A </m> to be the same size as <m> \N </m>
+		(in other words, countably infinite).
 	</p></proof>
 
 </fact>
@@ -443,7 +444,7 @@ But <m> \R </m> is so large that it is <em>un</em>countable, so it seems like <m
 				By definition, a subset <m> C \subseteq B </m> has the same size as <m> A </m> when there exists a bijection <m> A \to C </m>.
 				Enlarging the codomain, such a bijection can be thought of as an injection <m> A \ifuncto B </m> whose image is <m> C \subseteq B </m>.
 				If no such injection can also be surjective, then <m> C \subsetneqq B </m>,
-				<ie /> <m> C </m> is a proper subset of <m> B </m>.
+				(<m> C </m> is a proper subset of <m> B </m>).
 			</li>
 		</ol>
 	</p></li>

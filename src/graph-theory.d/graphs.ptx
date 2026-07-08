@@ -40,7 +40,7 @@ respective owners.
 		<idx>vertex</idx>
 		<idx><h>vertices</h><see>vertex</see></idx>
 		<idx><h>graph</h><h>vertex</h></idx>
-		<p> a point in a graph (<ie /> an element of <m> V </m>) </p>
+		<p> a point in a graph (that is, an element of <m> V </m>) </p>
 	</li>
 
 	<li>
@@ -54,7 +54,7 @@ respective owners.
 		<title>edge</title>
 		<idx>edge</idx>
 		<idx><h>graph</h><h>edge</h></idx>
-		<p> a line or arc linking two vertices (<ie /> an element of <m> E </m>) </p>
+		<p> a line or arc linking two vertices (that is, an element of <m> E </m>) </p>
 	</li>
 
 	<li>
@@ -601,10 +601,11 @@ as well as how much <q>redundancy</q> the graph contains.
 	Variations on <xref ref="example-graphs-camrose-road-map" />
 	include any kind of transportation or communication network with transportation/communication lines as edges.
 	Possible weights assigned to an edge include:
-	length of the line;
-	amount of time it takes a vehicle/message to travel along the line from one node to the next;
-	capacity of the line in vehicles/passengers/messages/data per unit time;
-	<etc />.
+	<ul>
+		<li> Length of the line. </li>
+		<li> Amount of time it takes a vehicle/message to travel along the line from one node to the next. </li>
+		<li> Capacity of the line in vehicles/passengers/messages/data per unit time. </li>
+	</ul>
 </p></example>
 
 <p><dl width="wide">

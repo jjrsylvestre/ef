@@ -832,9 +832,9 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 	<title>Ranking choices</title>
 
 	<statement><p>
-		You go to the horsetrack to bet on a race.
+		You go to the horse track to bet on a race.
 		From a field of nine horses, how many ways are there to make a <q>Trifecta</q> bet
-		(<ie /> specify the first three finishers in order)?
+		(that is, specify the first three finishers in order)?
 	</p></statement>
 
 	<solution><p> There are <md> \permutation{9}{3} = \frac{9!}{(9 - 3)!} = 9 \cdot 8 \cdot 7 = 504 </md> possible such bets. </p></solution>

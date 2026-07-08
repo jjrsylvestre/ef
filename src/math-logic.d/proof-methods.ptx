@@ -130,8 +130,8 @@ The proof is left to you as
 <p>
 In mathematics, we often want to prove that some statement <m> P </m>
 <term><xref ref="definition-symb-lang-logically-implies" text="title"/></term>
-some other statement <m> Q </m>;
-<ie /> we want to prove that <m> P \lgcimplies Q </m> or <m> (\forall x)(P(x) \lgcimplies Q(x)) </m>.
+some other statement <m> Q </m>.
+That is, we want to prove that <m> P \lgcimplies Q </m> or <m> (\forall x)(P(x) \lgcimplies Q(x)) </m>.
 Note that the universal form covers the common statement <q>all <m> A </m> are <m> B </m></q>, since this can be rephrased <q>for all <m> x </m>, if <m> x </m> is <m> A </m> then <m> x </m> is <m> B </m></q>.
 </p>
 
@@ -492,7 +492,10 @@ Apply this fact to one of the statements we are trying to prove.
 <section xml:id="section-proof-methods-counterexample">
 <title>Proof by counterexample</title>
 
-<p> Sometimes we want to prove that <m> P \not\lgcimplies Q </m>; <ie /> that <m> P \lgccond Q </m> is <em>not</em> a tautology. </p>
+<p>
+Sometimes we want to prove that <m> P \not\lgcimplies Q </m>;
+that is, that <m> P \lgccond Q </m> is <em>not</em> a tautology.
+</p>
 
 <paragraphs><title>Recall</title><p>
 	The equivalence
@@ -547,7 +550,7 @@ Again, this also works in the universal case since <m> \forall </m> distributes 
 
 <p>
 We also often want to prove that two statements <m> P,Q </m> are equivalent;
-<ie /> that <m> P \lgcequiv Q </m>.
+that is, that <m> P \lgcequiv Q </m>.
 </p>
 
 <fact>
@@ -555,8 +558,9 @@ We also often want to prove that two statements <m> P,Q </m> are equivalent;
 	<statement><p>
 		The equivalence
 		<md> P \lgcbicond Q \; \lgcequiv \; (P \lgccond Q) \lgcand (Q \lgccond P) </md>
-		holds;
-		<ie /> a biconditional is equivalent to the conjunction of the corresponding conditional <m> P\lgccond Q </m> <em>and</em> its converse.
+		holds.
+		That is,
+		a biconditional is equivalent to the conjunction of the corresponding conditional <m> P\lgccond Q </m> <em>and</em> its converse.
 	</p></statement>
 
 	<proof><p>
@@ -630,7 +634,8 @@ As usual, this also works in the universal case since <m> \forall </m> distribut
 		First, <m> s\lgccond t </m> is false precisely when <m> s </m> is true and <m> t </m> is false.
 		On the other hand,
 		<m> (s \lgcand \lgcnot t) \lgccond e </m> is false precisely when <m> s \lgcand \lgcnot t </m> is true,
-		and <m> s \lgcand \lgcnot t </m> is true precisely when <m> s, \lgcnot t </m> are both true, <ie /> when <m> s </m> is true and <m> t </m> is false.
+		and <m> s \lgcand \lgcnot t </m> is true precisely when <m> s, \lgcnot t </m> are both true;
+		that is, when <m> s </m> is true and <m> t </m> is false.
 	</p></proof>
 
 </fact>
@@ -646,7 +651,7 @@ As usual, this also works in the universal case since <m> \forall </m> distribut
 
 		<li>
 			To prove <m> (\forall x)\bbrac{P(x) \lgcimplies Q(x)} </m>, devise a predicate <m> E(x) </m> such that <m> (\forall x)\bbrac{\lgcnot E(x)} </m> is true
-			(<ie /> <m> E(x) </m> is false for <em>all</em> <m> x </m> in the domain),
+			(that is, <m> E(x) </m> is false for <em>all</em> <m> x </m> in the domain),
 			but <m> (\forall x)\bigl[\bbrac{P(x) \lgcand \lgcnot Q(x)} \lgcimplies E(x)\bigr] </m>.
 		</li>
 
@@ -682,7 +687,8 @@ As usual, this also works in the universal case since <m> \forall </m> distribut
 		We want this extra assumption to lead to a false statement.
 		Now, <m> x </m> rational means <m> x = a/b </m> for some integers <m> a,b </m>.
 		We may assume <m> a,b </m> are both positive, since <m> x \gt 0 </m>.
-		We may also assume <m> a,b </m> have no common factors (<ie /> fraction <m> a/b </m> is in lowest terms).
+		We may also assume <m> a,b </m> have no common factors
+		(that is, fraction <m> a/b </m> is in lowest terms).
 		Then,
 		<md>
 			<mrow> x^2 = 2 \amp \; \lgcimplies \; a^2 = 2 b^2, </mrow>
@@ -768,7 +774,8 @@ This translates as the following.
 		Suppose <m> n </m> is a positive number which is both prime and even.
 		Since <m> n </m> is even, it is divisible by <m> 2 </m>.
 		But since <m> n </m> is prime, it is divisble by <em>only</em> <m> 1 </m> and itself.
-		Therefore, <m> 2 </m> and <q>itself</q> must be the same, <ie /> <m> n = 2 </m>.
+		Therefore, <m> 2 </m> and <q>itself</q> must be the same.
+		That is, <m> n = 2 </m>.
 	</p></solution>
 
 </problem>

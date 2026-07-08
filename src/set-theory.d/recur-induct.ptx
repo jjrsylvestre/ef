@@ -115,7 +115,7 @@ For now, we will use them to index the objects in an ordered list.
 
 	<li>
 		Of course, we do not restrict ourselves to the letter <m> a </m> to represent the terms of a sequence.
-		We might write <m> b_k </m>, or <m> s_k </m>, <etc />.
+		We could write <m> b_k </m>, or <m> s_k </m>, or use any <q>base</q> letter we choose.
 	</li>
 
 	<li>

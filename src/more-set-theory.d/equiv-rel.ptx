@@ -112,7 +112,8 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 			If <m> A \lgcequiv B </m> and <m> B \lgcequiv C </m>,
 			then <m> A </m> has the same truth table as <m> B </m>,
 			which has the same truth table as <m> C </m>.
-			So <m> A </m> has the same truth table as <m> C </m>, <ie /> <m> A \lgcequiv C </m>.
+			So <m> A </m> has the same truth table as <m> C </m>;
+			that is, <m> A \lgcequiv C </m>.
 		</p></case>
 
 	</solution>
@@ -196,7 +197,7 @@ an equivalence relation can be used to group equivalent objects together.
 	<p>
 		the subset of <m> A </m> consisting of all elements that are equivalent to the given element <m> a \in A </m>,
 		relative to a specific equivalence relation <m> \mathord{\equiv} </m> on <m> A </m>;
-		<ie /> the set <md> \setdef{x\in A}{ x \equiv a } </md>
+		that is, the set <md> \setdef{x\in A}{ x \equiv a } </md>
 	</p>
 </li></dl>
 

@@ -25,7 +25,7 @@ respective owners.
 
 		<p>
 		<em>Using only your technical definition</em>
-		(<ie /> ignoring your common sense notions of the word <em>car</em>),
+		(that is, ignoring your common sense notions of the word <em>car</em>),
 		decide whether a transport truck should be called a car.
 		Then do the same for a train.
 		</p>
@@ -186,9 +186,9 @@ respective owners.
 		if it is not part of a twin prime pair.
 	</p></introduction>
 
-	<task><p> Determine the first (<ie /> smallest) four twin prime pairs. </p></task>
+	<task><p> Determine the first (smallest) four twin prime pairs. </p></task>
 
-	<task><p> Determine the first (<ie /> smallest) two isolated primes. </p></task>
+	<task><p> Determine the first (smallest) two isolated primes. </p></task>
 
 	<task><p> Prove that if <m> p, p+2 </m> is a twin prime pair with <m> p \ge 5 </m>, then <m> p+1 </m> is divisible by <m> 6 </m>. </p></task>
 

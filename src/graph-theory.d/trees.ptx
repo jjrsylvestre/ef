@@ -453,7 +453,8 @@ respective owners.
 			</p>
 
 			<p>
-			So assume that <m> G </m> is acyclic but not a tree, <ie /> that <m> G </m> is not connected.
+			So assume that <m> G </m> is acyclic but not a tree.
+			This implies that <m> G </m> is not connected.
 			We must prove that the number of edges in <m> G </m> is different from <m> n - 1 </m>, where <m> n </m> is the number of vertices in <m> G </m>.
 			Let <m> G_1,G_2,\dotsc,G_\ell </m> be the connected components of <m> G </m>.
 			Now, since <m> G </m> is assumed acyclic, each of these connected components is a tree
@@ -527,7 +528,7 @@ We can do this by constructing a tree <m> T \preceq G </m>.
 
 		<li xml:id="algorithm-trees-depth-first-search-stop-or-continue">
 			If you have arrived here immediately after beginning the algorithm
-			(<ie /> with <m> x </m> still set to be <m> v </m>),
+			(so that <m> x </m> still set to be <m> v </m>),
 			stop <mdash /> there is no path from <m> v </m> to <m> v' </m>.
 			Otherwise, return to the vertex <m> z </m> adjoined before <m> x </m>.
 			Set <m> x = z </m> and return to

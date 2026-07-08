@@ -77,7 +77,7 @@ However, this outline does not constitute a proof since it technically uses math
 	<p>
 	Each is valid (modus ponens).
 	So if we make the two assumptions stated in the principles
-	(<ie /> that <m> P(1) </m> is true and that <m> P(k) \lgccond P(k+1) </m> is always true)
+	(<m> P(1) </m> is true and <m> P(k) \lgccond P(k+1) </m> is always true)
 	we can trace the flow of truth from premises to conclusion in each argument in turn:
 	<dl width="wide">
 		<li><title>First argument</title> <p> Premises true so conclusion is true. </p></li>
@@ -166,15 +166,16 @@ Now, here is some specific terminology associated to proofs by induction.
 		<case><title>Base case</title><p> <m> 1 = (1\cdot2)/2 </m> is obviously true. </p></case>
 
 		<case><title>Induction step</title><p>
-			Assume the statement is true for <m> n=k </m>; <ie /> assume that <md> 1 + 2 + \dotsb + k = k(k+1)/2 </md>.
+			Assume the statement is true for <m> n=k </m>;
+			that is, assume that <md> 1 + 2 + \dotsb + k = k(k+1)/2 </md>.
 			We want to show that this implies the statement is true for <m> n = k+1 </m>;
-			<ie /> show <md> 1 + 2 + \dotsb + k + (k+1) = (k+1)(k+2)/2</md>.
+			that is, to show <md> 1 + 2 + \dotsb + k + (k + 1) = (k + 1) (k + 2) / 2 </md>.
 			We have
 			<md>
-				<mrow> 1 + 2 + \dotsb + k + (k+1) \amp = (1 + 2 + \dotsb + k) + (k+1) </mrow>
-				<mrow> \amp = \frac{k(k+1)}{2} + (k+1) </mrow>
-				<mrow> \amp = \frac{k^2 + 3k + 2}{2} </mrow>
-				<mrow> \amp = \frac{(k+1)(k+2)}{2} </mrow>
+				<mrow> 1 + 2 + \dotsb + k + (k + 1) \amp = (1 + 2 + \dotsb + k) + (k + 1) </mrow>
+				<mrow> \amp = \frac{k (k + 1)}{2} + (k + 1) </mrow>
+				<mrow> \amp = \frac{k^2 + 3 k + 2}{2} </mrow>
+				<mrow> \amp = \frac{(k + 1)(k + 2)}{2} </mrow>
 			</md>.
 		</p></case>
 

@@ -187,8 +187,8 @@ Make sure to keep this straight!
 	<term>alphabetic order</term>
 	<idx>alphabetic order</idx>
 	<idx><h>order</h><h>alphabetic</h></idx>
-	on the set of words <m> \words{\Sigma} </m>;
-	<eg />
+	on the set of words <m> \words{\Sigma} </m>.
+	For example,
 	<md><mrow>
 		\mathrm{gqtiu} \amp \partorder \mathrm{ppb}, \amp
 		\mathrm{aaay} \amp \partorder \mathrm{aaaz}, \amp
@@ -353,7 +353,7 @@ Make sure to keep this straight!
 
 	<p>
 	Let <m> A = \{2,4,6,8,10,12\} </m>.
-	The Hasse diagram of the partial order <m> \mathord{\mid} </m> (<ie /> <q>divides</q>) on <m> A </m> appears in <xref ref="figure-partial-orders-hasse-divides" />.
+	The Hasse diagram of the <q>divides</q> partial order <m> \mathord{\mid} </m> on <m> A </m> appears in <xref ref="figure-partial-orders-hasse-divides" />.
 	Notice that <m> 2 </m> is not joined directly to either <m> 8 </m> or <m> 12 </m>, since we can use transitivity and the facts that <m> 2 \mid 4 </m> and <m> 2 \mid 6 </m> to infer <m> 2 \mid 8 </m> and <m> 2 \mid 12 </m>, respectively, from the diagram.
 	</p>
 
@@ -923,8 +923,8 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 		</li>
 
 		<li>
-			Set <m> A_{i+1} = A_i \relcmplmnt \{a_i\} </m>
-			(<ie /> create a smaller partially ordered set by discarding <m> a_i </m>).
+			Set <m> A_{i+1} = A_i \relcmplmnt \{a_i\} </m>.
+			(That is, create a smaller partially ordered set by discarding <m> a_i </m>.)
 		</li>
 
 		<li>

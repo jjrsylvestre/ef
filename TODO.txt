@@ -3,8 +3,6 @@
 * More use of <case direction="cycle">
   ---> search for "Proof of the equivalence of"
 
-* Banish <etc /> and <ie /> and <eg />
-
 * Check schema compliance.
 
 * Look for use of \abs when it should be \card, especially in graph theory chapter.

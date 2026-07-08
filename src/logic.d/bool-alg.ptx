@@ -380,7 +380,7 @@ There are two special constant Boolean polynomials.
 <title>Disjunctive normal form</title>
 
 <p>
-It is often desired (<eg /> in computer programming or logic circuit design) to reverse the process:
+It is often desired (for example, in computer programming or logic circuit design) to reverse the process:
 starting with a desired truth table, can we construct a Boolean polynomial with the same outputs?
 </p>
 
@@ -420,9 +420,9 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	<solution><p>
 		We want a <q>true</q> output when the inputs match the first or fourth rows, and only then.
 		The inputs match the first row precisely when both <m> x </m> and <m> y </m> are true
-		(<ie /> when the conjunction <m> x \lgcand y </m> is true),
+		(that is, when the conjunction <m> x \lgcand y </m> is true),
 		and they match the fourth row precisely when both <m> x </m> is not true and <m> y </m> is not true
-		(<ie /> when the conjunction <m> x' \lgcand y' </m> is true).
+		(that is, when the conjunction <m> x' \lgcand y' </m> is true).
 		So take the disjunction of these two conjunctions:
 		<md> p(x,y) = (x \lgcand y) \lgcor (x' \lgcand y') </md>.
 	</p></solution>

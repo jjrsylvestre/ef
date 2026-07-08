@@ -46,13 +46,20 @@ respective owners.
 		For each of the graphs in
 		<xref ref="exercisegroup-trees-spanning-by-removal" text="type-local">Exercises</xref>,
 		use the following algorithm to obtain a spanning tree.
-		<ul>
+		<ol marker="(i)">
+
 			<li> If the graph contains a proper cycle, remove one edge of that cycle. </li>
-			<li> If the resulting subgraph contains a proper cycle, remove one edge of that cycle. </li>
-			<li> If the resulting subgraph contains a proper cycle, remove one edge of that cycle. </li>
-			<li> <etc />. </li>
-			<li> Continue until there are no proper cycles left. </li>
-		</ul>
+
+			<li xml:id="instruction-exercisegroup-trees-spanning-by-removal-remove-from-subgraph">
+				If the resulting subgraph contains a proper cycle, remove one edge of that cycle.
+			</li>
+
+			<li>
+				Repeat <xref ref="instruction-exercisegroup-trees-spanning-by-removal-remove-from-subgraph" text="type-local">step</xref>
+				until there are no proper cycles left.
+			</li>
+
+		</ol>
 	</p></introduction>
 
 	<exercise><image xml:id="image-trees-spanning-by-removal-1" width="22.9%">

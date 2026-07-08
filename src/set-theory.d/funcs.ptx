@@ -235,8 +235,8 @@ for example, by:
 	<title>Multi-variable functions</title>
 
 	<p>
-	In a first course in calculus a student typically studies only <term>single-variable functions</term>,
-	<ie /> functions with a single input variable and a single output variable.
+	In a first course in calculus a student typically studies only <term>single-variable functions</term>;
+	that is, functions with a single input variable and a single output variable.
 	In subsequent calculus courses a student may study <term>multi-variable functions</term> with multiple input variables, such as
 	<md> f(x,y) = x^2 + y^2 </md>.
 	Technically, we should write
@@ -335,7 +335,8 @@ for example, by:
 	Instead of a curve, such a graph defines a <em>surface</em> in <m> \R^3 </m>.
 	For example, the graph of the function <m> f(x,y) = x^2 + y^2 </m> from
 	<xref ref="example-funcs-define-multivariable" />
-	is a parabolic cone, <ie /> a (non-solid) cone-like surface with parabolic sides.
+	is a parabolic cone
+	(a cone-like surface with parabolic sides).
 </p></example>
 
 <example>
