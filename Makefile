@@ -10,9 +10,13 @@ ROOTDOCNAME=book
 SERVEPORT=8081
 BUILDDIR=${XDG_RUNTIME_DIR}/pretext/EF
 #PRETEXT=/opt/pretext/pretext/pretext
-PRETEXT=./pretext/pretext/pretext
+#PRETEXT=./pretext/pretext/pretext
+PRETEXTDIR=./pretext
+ROOT_XMLID=book-elementary-foundations
+REMOTE_LOCATION=
 
-.PHONY: ptx validate-xml \
+
+.PHONY: ptx validate-xml validate-ptx \
   html html-images html-fonts html-all html-serve \
   clean ptx-clean html-clean html-images-clean \
   help list
@@ -21,11 +25,14 @@ list: help
 help:
 	@echo "== TARGETS ==============="
 	@echo "> validate-xml       : Check for XML syntax/format errors. (Does not validate against PTX schema.)"
+	@echo "> validate-ptx       : Check for PTX schema errors."
 	@echo "> html-all           : Perform all steps necessary to create HTML version of the activity set."
 	@echo "> html               : Output (only) HTML files containing all worksheets."
 	@echo "> html-images        : Create SVG image files to accompany the html output for all worksheets."
 	@echo "> html-fonts         : Copy STIX2Text fonts into the HTML build directory."
 	@echo "> html-serve         : Fire up a simple Python web server to locally host the HTML output."
+	@echo "> html-deploy        : rsync HTML files to a remote server."
+	@echo "                       Requires that the REMOTE_LOCATION parameter be set on the command line."
 	@echo "> latex              : Output (only) LaTeX file containing all worksheets."
 	@echo "> ptx                : Only preprocess source to create a single XML file in PTX format containing all worksheets."
 	@echo "> clean              : Remove all output files."
@@ -35,11 +42,19 @@ help:
 	@echo "== PARAMETERS ============"
 	@echo "> BUILDDIR   : Root directory for all output files. [Default: $(BUILDDIR)]"
 	@echo "> BRANDLOGO  : Filename of institutional logo. Needs to exist in images/. [Default: $(BRANDLOGO)]"
-	@echo "> PRETEXT : Path to pretext compilation script [Default: $(PRETEXT)]"
+	@echo "> PRETEXTDIR : Path to PreTeXt installation."
+	@echo "                   [Default: $(PRETEXTDIR)]"
 	@echo "> SERVEPORT  : Local port on which to serve HTML output when using the html-serve target. [Default: $(SERVEPORT)]"
+	@echo "> REMOTE_LOCATION: Remote path to use as rsync target for HTML output."
+	@echo "                   [Default: unset]"
 
 
 html-all: html html-images html-fonts
+
+html-deploy: html-all
+	@[ "$(REMOTE_LOCATION)" ] || $(call log_error, "REMOTE_LOCATION not set!")
+	@echo "Transferring ${BUILDDIR}/html to ${REMOTE_LOCATION} ..."
+	@./scripts/deploy.sh ${BUILDDIR}/html html-deploy.exclude ${REMOTE_LOCATION}
 
 clean: ptx-clean html-clean html-images-clean
 
@@ -75,7 +90,7 @@ ${BUILDDIR}/html/.sentinal: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@-rm -f ${BUILDDIR}/html/.sentinal
 	@mkdir -p ${BUILDDIR}/html/knowl
 	@echo "...calling pretext to compile PreTeXt document"
-	@$(PRETEXT) \
+	@${PRETEXTDIR}/pretext/pretext \
 	  --verbose \
 	  --config pretext.cfg \
 	  --component all \
@@ -99,7 +114,7 @@ ${BUILDDIR}/html/images/.sentinal: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@-rm -f ${BUILDDIR}/html/images/.sentinal
 	@mkdir -p ${BUILDDIR}/html/images
 	@echo "...calling pretext to generate images"
-	@$(PRETEXT) \
+	@${PRETEXTDIR}/pretext/pretext \
 	  --verbose \
 	  --config pretext.cfg \
 	  --component latex-image \
@@ -149,5 +164,13 @@ html-serve:
 validate-xml: $(SOURCES)
 	@echo "Validating xml..."
 	@xmllint --xinclude src/${ROOTDOCNAME}.ptx | xmllint --noout -
-	@mkdir -p ${BUILDDIR}
+	@echo "...DONE"
+
+validate-ptx: ptx
+	@echo "Validating ptx..."
+	@jing ${PRETEXTDIR}/schema/pretext.rng ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx |\
+	  grep -v \
+	    -e "element \"worksheet\" not allowed anywhere" \
+	    -e "attribute \"xml:base\" not allowed here" >\
+	  ${BUILDDIR}/ptx/${ROOTDOCNAME}-schema-errors.txt
 	@echo "...DONE"
