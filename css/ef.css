@@ -235,6 +235,10 @@ dl.description-list + dl.description-list {
   margin-top: 0;
 }
 
+.knowl__content article.li .heading {
+  margin-right: 1em;
+}
+
 /******************************************************************************/
 /*                              ASIDE HEADINGS                                */
 /******************************************************************************/
