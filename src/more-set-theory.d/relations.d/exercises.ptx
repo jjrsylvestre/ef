@@ -139,8 +139,7 @@ respective owners.
 	As described in <xref ref="section-relations-properties" />,
 	the definition of <term><xref ref="definition-relations-antisymmetric" text="title" /> relation</term>
 	can be formulated in symbolic language as
-	<!-- <md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1 \not\mathrel{R} a_2} \lgcor {a_2 \not\mathrel{R} a_1}}) </md>. -->
-	<md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1\ \not R\ a_2} \lgcor {a_2\ \not R\ a_1}}) </md>.
+	<md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1 \nmathrel{R} a_2} \lgcor {a_2 \nmathrel{R} a_1}}) </md>.
 	Prove that each of the two conditionals provided in the
 	<xref ref="test-relations-antisymmetric" text="custom">Antisymmetric Relation Test</xref>
 	are equivalent to the symbolic formulation of the definition of antisymmetric given above.

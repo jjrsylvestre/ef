@@ -13,8 +13,6 @@ PreTeXt source code. All trademarks™ are the registered® marks of their
 respective owners.
 *********************************************************************-->
 
-<!-- TODO search for \not\mathrel and use proper notation once MathJax is updated to v3 -->
-
 <chapter xml:id="chapter-relations" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Relations</title>
 
@@ -185,11 +183,9 @@ Viewing relations as subsets of Cartesian products suggests ways to build new re
 	</li>
 
 	<li>
-		<!-- <title><m> a \not\mathrel{R} b </m></title> -->
-		<title><m> a\ \not R\ b </m></title>
+		<title><m> a \nmathrel{R} b </m></title>
 		<notation>
-			<!-- <usage><m> a \not\mathrel{R} b </m></usage> -->
-			<usage><m> a\ \not R\ b </m></usage>
+			<usage><m> a \nmathrel{R} b </m></usage>
 			<description>alternative notation for <m> a \mathrel{\cmplmnt{R}} b </m></description>
 		</notation>
 		<p> alternative notation for <m> a \mathrel{\cmplmnt{R}} b </m> </p>
@@ -395,8 +391,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 	<idx><h>relation(s)</h><h>antisymmetric</h></idx>
 	<p>
 	for every pair of <em>distinct</em> elements <m> a_1,a_2 \in A </m>,
-	<!-- either <m> a_1 \not\mathrel{R} a_2 </m> or <m> a_2 \not\mathrel{R} a_1 </m> (or both) -->
-	either <m> a_1\ \not R\ a_2 </m> or <m> a_2\ \not R\ a_1 </m> (or both)
+	either <m> a_1 \nmathrel{R} a_2 </m> or <m> a_2 \nmathrel{R} a_1 </m> (or both)
 	</p>
 </li></dl></p>
 
@@ -445,19 +440,16 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 	On the other hand, <term><xref ref="definition-relations-symmetric" text="custom">symmetry</xref></term> is when we <em>always have both or neither</em>;
 	that is, for every distinct pair <m> a_1,a_2 \in A </m>, we either have both <m> a_1 \mathrel{R} a_2 </m> and <m> a_2 \mathrel{R} a_1 </m>,
 	or we have both
-	<!-- <m> a_1 \not\mathrel{R} a_2 </m> -->
-	<m> a_1\ \not R\ a_2 </m>
+	<m> a_1 \nmathrel{R} a_2 </m>
 	and
-	<!-- <m> a_2 \not\mathrel{R} a_1 </m>. -->
-	<m> a_2\ \not R\ a_1 </m>.
+	<m> a_2 \nmathrel{R} a_1 </m>.
 	However, a relation can fall <em>between</em> symmetry and antisymmetry on the spectrum,
 	such as in <xref ref="example-relations-neither-antisymmetric-symmetric" />.
 	That is,
 	for that relation <m> R </m> on <m> A </m>
 	there are examples of distinct elements <m> a_1,a_2 \in A </m> where we have both <m> a_1 \mathrel{R} a_2 </m> and <m> a_2 \mathrel{R} a_1 </m>,
 	and there are also examples of distinct elements <m> a_1',a_2' \in A </m> where we have <m> a_1' \mathrel{R} a_2' </m> but
-	<!-- <m> a_2' \not\mathrel{R} a_1' </m> -->
-	<m> a_2'\ \not R\ a_1' </m>.
+	<m> a_2' \nmathrel{R} a_1' </m>.
 	</p>
 
 	<p>
@@ -472,8 +464,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 In symbolic language,
 the definition of <term><xref ref="definition-relations-antisymmetric" text="title" /> relation</term>
 is
-<!-- <md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1 \not\mathrel{R} a_2} \lgcor {a_2 \not\mathrel{R} a_1}}) </md>. -->
-<md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1\ \not R\ a_2} \lgcor {a_2\ \not R\ a_1}}) </md>.
+<md> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \neq a_2} \lgcimplies {{a_1 \nmathrel{R} a_2} \lgcor {a_2 \nmathrel{R} a_1}}) </md>.
 However, in practise we usually prove antisymmetry using one of two logically equivalent formulations.
 </p>
 
@@ -485,7 +476,7 @@ However, in practise we usually prove antisymmetry using one of two logically eq
 		To verify that relation <m> R </m> on set <m> A </m> is antisymmetric,
 		prove either <alert>one</alert> of the following logical statements.
 		<ul>
-			<!-- <m> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \mathrel{R} a_2} \lgcimplies {a_2 \not\mathrel{R} a_1}) </m>. -->
+			<!-- <m> (\forall a_1 \in A)(\forall a_2 \in A)({a_1 \mathrel{R} a_2} \lgcimplies {a_2 \nmathrel{R} a_1}) </m>. -->
 
 			<li><m>
 				(\forall a_1 \in A)(\forall a_2 \in A)({{a_1 \neq a_2} \lgcand {a_1 \mathrel{R} a_2}} \lgcimplies {a_2\ \not R\ a_1})
