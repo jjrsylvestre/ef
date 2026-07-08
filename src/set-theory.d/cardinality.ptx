@@ -81,7 +81,7 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 		<title><m> \card{A} </m></title>
 		<notation>
 			<usage><m> \card{A} </m></usage>
-			<description>cardinality of the set <m> A </m></description>
+			<description> cardinality of the set <m> A </m> </description>
 		</notation>
 		<p> the cardinality of the finite set <m> A </m> </p>
 	</li>
@@ -90,7 +90,7 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 		<title><m> \cardop A </m></title>
 		<notation>
 			<usage><m> \cardop A </m></usage>
-			<description>alternative notation for the cardinality of the set <m> A </m></description>
+			<description> alternative notation for the cardinality of the set <m> A </m> </description>
 		</notation>
 		<p> alternative notation for the cardinality of the finite set <m> A </m> </p>
 	</li>
@@ -99,7 +99,7 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 		<title><m> \ncardop\{\dots\} </m></title>
 		<notation>
 			<usage><m> \ncardop\{\dots\} </m></usage>
-			<description>alternative notation for the cardinality of the set defined by <m> \{\dots\} </m></description>
+			<description> alternative notation for the cardinality of the set defined by <m> \{\dots\} </m> </description>
 		</notation>
 		<p> alternative notation for the cardinality of the set defined by <m> \{\dots\} </m> </p>
 	</li>
@@ -528,7 +528,7 @@ This fact lets us relate finite sets to each other.
 		<title><m> \card{A} = \infty </m></title>
 		<notation>
 			<usage><m> \card{A} = \infty </m></usage>
-			<description>set <m> A </m> is infinite</description>
+			<description> set <m> A </m> is infinite </description>
 		</notation>
 		<p> set <m> A </m> is infinite </p>
 	</li>
@@ -537,7 +537,7 @@ This fact lets us relate finite sets to each other.
 		<title><m> \card{A} \lt \infty </m></title>
 		<notation>
 			<usage><m> \card{A} \lt \infty </m></usage>
-			<description>set <m> A </m> is finite</description>
+			<description> set <m> A </m> is finite </description>
 		</notation>
 		<p> set <m> A </m> is finite </p>
 	</li>

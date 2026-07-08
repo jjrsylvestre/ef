@@ -238,7 +238,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 		<title><m> \deg v </m></title>
 		<notation>
 			<usage><m> \deg v </m></usage>
-			<description>degree of vertex <m> v </m></description>
+			<description> degree of vertex <m> v </m> </description>
 		</notation>
 		<p> notation for degree of vertex <m> v </m> </p>
 	</li>
@@ -295,7 +295,7 @@ as well as how much <q>redundancy</q> the graph contains.
 	<title><m> \card{E} </m></title>
 	<notation>
 		<usage><m> \card{E} </m></usage>
-		<description>the number of edges in the graph <m> G = (V,E) </m></description>
+		<description> the number of edges in the graph <m> G = (V,E) </m> </description>
 	</notation>
 	<p> the number of edges in the graph <m> G = (V,E) </m> </p>
 </li></dl>
@@ -367,7 +367,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		<title><m> G' \subgraph G </m></title>
 		<notation>
 			<usage><m> G' \subgraph G </m></usage>
-			<description>graph <m> G' </m> is a subgraph of graph <m> G </m></description>
+			<description> graph <m> G' </m> is a subgraph of graph <m> G </m> </description>
 		</notation>
 		<p> graph <m> G' </m> is a subgraph of graph <m> G </m> </p>
 	</li>
@@ -450,7 +450,7 @@ as well as how much <q>redundancy</q> the graph contains.
 			<idx><h>graph</h><h>complete</h></idx>
 			<notation>
 				<usage><m> K_n </m></usage>
-				<description>the unique complete graph with <m> n </m> vertices</description>
+				<description> the unique complete graph with <m> n </m> vertices </description>
 			</notation>
 		</p></li>
 

@@ -25,7 +25,7 @@ respective owners.
 	<title>counting set</title>
 	<notation>
 		<usage><m> \natnumlt{m} </m></usage>
-		<description>the set of natural numbers that are less than <m> m </m></description>
+		<description> the set of natural numbers that are less than <m> m </m> </description>
 	</notation>
 	<p>
 	a set <m> \natnumlt{m} = \setdef{n \in \N}{n \lt m} = \{ 0,\, 1,\, \dotsc,\, m-1\} </m>
@@ -68,7 +68,7 @@ For now, we will use them to index the objects in an ordered list.
 		<title><m> a_k </m></title>
 		<notation>
 			<usage><m> a_k </m></usage>
-			<description><m> \nth[k] </m> term in a sequence</description>
+			<description> <m> \nth[k] </m> term in a sequence </description>
 		</notation>
 		<p>
 		the <m> \nth[k] </m> term in a sequence,
@@ -81,7 +81,7 @@ For now, we will use them to index the objects in an ordered list.
 		<title><m> \{a_k\} </m></title>
 		<notation>
 			<usage><m> \{a_k\} </m></usage>
-			<description>the collection of terms in a sequence</description>
+			<description> the collection of terms in a sequence </description>
 		</notation>
 		<p> the collection of all terms in a sequence </p>
 	</li>
@@ -90,7 +90,7 @@ For now, we will use them to index the objects in an ordered list.
 		<title><m> \{a_k\}_0^m </m></title>
 		<notation>
 			<usage><m> \{a_k\}_0^m </m></usage>
-			<description>the collection of terms in a finite sequence</description>
+			<description> the collection of terms in a finite sequence </description>
 		</notation>
 		<p>
 			the collection of the terms in a sequence up to (and including) the <m> \nth[m] </m> term
@@ -102,7 +102,7 @@ For now, we will use them to index the objects in an ordered list.
 		<title><m> \{a_k\}_0^\infty </m></title>
 		<notation>
 			<usage><m> \{a_k\}_0^\infty </m></usage>
-			<description>the collection of terms in an infinite sequence</description>
+			<description> the collection of terms in an infinite sequence </description>
 		</notation>
 		<p> the collection of all terms in a sequence, where we are explicit that it is an infinite sequence </p>
 	</li>

@@ -43,7 +43,7 @@ restricting ourselves to discussing whether <q>statements</q> involving one or m
 		<title><m> A(x) </m></title>
 		<notation>
 			<usage><m> A(x) </m></usage>
-			<description>a predicate statement <m> A </m> whose truth value depends on the free variable <m> x </m></description>
+			<description> a predicate statement <m> A </m> whose truth value depends on the free variable <m> x </m> </description>
 		</notation>
 		<p> a predicate statement <m> A </m> whose truth value depends on the free variable <m> x </m> </p>
 	</li>
@@ -52,7 +52,7 @@ restricting ourselves to discussing whether <q>statements</q> involving one or m
 		<title><m> A(x,y) </m></title>
 		<notation>
 			<usage><m> A(x,y) </m></usage>
-			<description>a predicate statement <m> A </m> whose truth value depends on the free variables <m> x </m> and <m> y </m></description>
+			<description> a predicate statement <m> A </m> whose truth value depends on the free variables <m> x </m> and <m> y </m> </description>
 		</notation>
 		<p> a predicate statement <m> A </m> whose truth value depends on the free variables <m> x </m> and <m> y </m> </p>
 	</li>
@@ -140,7 +140,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 		<title><m> \forall </m></title>
 		<notation>
 			<usage><m> \forall x </m></usage>
-			<description>the universal quantifier applied to the free variable <m> x </m></description>
+			<description> the universal quantifier applied to the free variable <m> x </m> </description>
 		</notation>
 		<p> symbol for the universal quantifier </p>
 	</li>
@@ -156,7 +156,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 		<title><m> \exists </m></title>
 		<notation>
 			<usage><m> \exists x </m></usage>
-			<description>the existential quantifier applied to the free variable <m> x </m></description>
+			<description> the existential quantifier applied to the free variable <m> x </m> </description>
 		</notation>
 		<p> symbol for the existential quantifier </p>
 	</li>

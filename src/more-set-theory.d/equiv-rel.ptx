@@ -137,7 +137,7 @@ Here is an important equivalence relation on <m> \N </m> or on <m> \Z </m>.
 	<title><m> m_1 \equiv_n m_2 </m></title>
 	<notation>
 		<usage><m> m_1 \equiv_n m_2 </m></usage>
-		<description>integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m></description>
+		<description> integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m> </description>
 	</notation>
 	<p> integers <m> m_1,m_2 </m> are equivalent modulo <m> n </m> </p>
 </li></dl>
@@ -205,7 +205,7 @@ an equivalence relation can be used to group equivalent objects together.
 	<title><m> \eqclass{a} </m></title>
 	<notation>
 		<usage><m> \eqclass{a} </m></usage>
-		<description>the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m></description>
+		<description> the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m> </description>
 	</notation>
 	<p> the equivalence class of the element <m> a \in A </m> relative to some specific equivalence relation on <m> A </m> </p>
 </li></dl>
@@ -553,7 +553,7 @@ But that is always precisely the case.
 	<title><m> A / \mathord{\equiv} </m></title>
 	<notation>
 		<usage><m> A / \mathord{\equiv} </m></usage>
-		<description>the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m></description>
+		<description> the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m> </description>
 	</notation>
 	<p>
 	the quotient of <m> A </m> relative to equivalence relation <m> \mathord{\equiv} </m>,

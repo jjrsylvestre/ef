@@ -98,7 +98,7 @@ We need one more primitive term to make set theory workable.
 		<title><m> x \in S </m></title>
 		<notation>
 			<usage><m> x \in S </m></usage>
-			<description>object <m> x </m> is an element of set <m> S </m></description>
+			<description> object <m> x </m> is an element of set <m> S </m> </description>
 		</notation>
 		<p> object <m> x </m> is an element of set <m> S </m> </p>
 	</li>
@@ -128,7 +128,7 @@ Such a list should be enclosed in
 <term>braces</term>
 <notation>
 	<usage><m> \{a,b,c,\dotsc\} </m></usage>
-	<description>a set defined by listing its elements, enclosed in braces</description>
+	<description> a set defined by listing its elements, enclosed in braces </description>
 </notation>
 to indicate that the objects in the list are being collected into a set.
 </p>
@@ -153,7 +153,7 @@ and in the second two examples we merely describe what the elements are in words
 		<idx><h>numbers</h><h>natural</h></idx>
 		<notation>
 			<usage><m> \N </m></usage>
-			<description>the set of natural numbers</description>
+			<description> the set of natural numbers </description>
 		</notation>
 		<p> the set <m> \{ 0, 1, 2, \dotsc \} </m> of <term>natural numbers</term> </p>
 	</li>
@@ -164,7 +164,7 @@ and in the second two examples we merely describe what the elements are in words
 		<idx><h>numbers</h><h>integers</h></idx>
 		<notation>
 			<usage><m> \Z </m></usage>
-			<description>the set of integers</description>
+			<description> the set of integers </description>
 		</notation>
 		<p> the set <m> \{ \dotsc, -2, -1, 0, 1, 2, \dotsc \} </m> of <term>integers</term> </p>
 	</li>
@@ -175,7 +175,7 @@ and in the second two examples we merely describe what the elements are in words
 		<idx><h>numbers</h><h>rational</h></idx>
 		<notation>
 			<usage><m> \Q </m></usage>
-			<description>the set of rational numbers</description>
+			<description> the set of rational numbers </description>
 		</notation>
 		<p> the set of all fractions, call the set of <term>rational numbers</term> </p>
 	</li>
@@ -186,7 +186,7 @@ and in the second two examples we merely describe what the elements are in words
 		<idx><h>numbers</h><h>real</h></idx>
 		<notation>
 			<usage><m> \R </m></usage>
-			<description>the set of real numbers</description>
+			<description> the set of real numbers </description>
 		</notation>
 		<p> the set of all decimal numbers, called the set of <term>real numbers</term> </p>
 	</li>
@@ -322,7 +322,7 @@ There is one special set, the elements of which are very easy to list.
 		<title><m> \emptyset </m></title>
 		<notation>
 			<usage><m> \emptyset </m></usage>
-			<description>the empty set</description>
+			<description> the empty set </description>
 		</notation>
 		<p> the empty set </p>
 	</li>
@@ -363,7 +363,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title><m> A \subseteq B </m></title>
 		<notation>
 			<usage><m> A \subseteq B </m></usage>
-			<description>set <m> A </m> is a subset of set <m> B </m></description>
+			<description> set <m> A </m> is a subset of set <m> B </m> </description>
 		</notation>
 		<p> set <m> A </m> is a <term>subset of</term> or is <term>contained in</term> set <m> B </m> </p>
 	</li>
@@ -562,7 +562,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title><m> A \subsetneqq B </m></title>
 		<notation>
 			<usage><m> A \subsetneqq B </m></usage>
-			<description>set <m> A </m> is a proper subset of set <m> B </m></description>
+			<description> set <m> A </m> is a proper subset of set <m> B </m> </description>
 		</notation>
 		<p> set <m> A </m> is a proper subset of set <m> B </m> </p>
 	</li>
@@ -649,7 +649,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title><m> \cmplmnt{A} </m></title>
 		<notation>
 			<usage><m> \cmplmnt{A} </m></usage>
-			<description>the complement of <m> A </m> relative to some universal set</description>
+			<description> the complement of <m> A </m> relative to some universal set </description>
 		</notation>
 		<p>
 		the complement of <m> A </m> (in <m> U </m>),
@@ -661,7 +661,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title><m> B \relcmplmnt A </m></title>
 		<notation>
 			<usage><m> B \relcmplmnt A </m></usage>
-			<description>the complement of <m> A </m> relative to some universal set</description>
+			<description> the complement of <m> A </m> relative to some universal set </description>
 		</notation>
 		<p>
 		the complement of <m> A </m> in <m> B </m>,
@@ -736,7 +736,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title><m> A \union B </m></title>
 		<notation>
 			<usage><m> A \union B </m></usage>
-			<description>the union of sets <m> A </m> and <m> B </m></description>
+			<description> the union of sets <m> A </m> and <m> B </m> </description>
 		</notation>
 		<p>
 			the union of sets <m> A </m> and <m> B </m>, so that
@@ -755,7 +755,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title><m> A \intersection B </m></title>
 		<notation>
 			<usage><m> A \intersection B </m></usage>
-			<description>the intersection of <m> A </m> and <m> B </m></description>
+			<description> the intersection of <m> A </m> and <m> B </m> </description>
 		</notation>
 		<p>
 			the intersection of <m> A </m> and <m> B </m>, so that
@@ -835,7 +835,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title><m> A \disjunion B </m></title>
 		<notation>
 			<usage><m> A \disjunion B </m></usage>
-			<description>the disjoint union of sets <m> A </m> and <m> B </m></description>
+			<description> the disjoint union of sets <m> A </m> and <m> B </m> </description>
 		</notation>
 		<p> the disjoint union of sets <m> A </m> and <m> B </m> </p>
 	</li>
@@ -1042,7 +1042,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title><m> A \cartprod B </m></title>
 		<notation>
 			<usage><m> A \cartprod B </m></usage>
-			<description>the Cartesian product of <m> A </m> and <m> B </m></description>
+			<description> the Cartesian product of <m> A </m> and <m> B </m> </description>
 		</notation>
 		<p>
 		the Cartesian product of <m> A </m> and <m> B </m>:
@@ -1276,7 +1276,7 @@ it doesn't really matter in what <q>order</q> we place the elements of <m> A </m
 		<idx><h>set(s)</h><h>of words</h></idx>
 		<notation>
 			<usage><m> \words{\Sigma} </m></usage>
-			<description>the set of words using alphabet set <m> \Sigma </m></description>
+			<description> the set of words using alphabet set <m> \Sigma </m> </description>
 		</notation>
 		<p> the set of words using <term>alphabet</term> set <m> \Sigma </m> </p>
 	</li>
@@ -1345,7 +1345,7 @@ In computing science, a certain set of words is of particular importance.
 		<title><m> \length{w} </m></title>
 		<notation>
 			<usage><m> \length{w} </m></usage>
-			<description>length of the word <m> w \in \words{\Sigma} </m></description>
+			<description> length of the word <m> w \in \words{\Sigma} </m> </description>
 		</notation>
 		<p> length of the word <m> w \in \words{\Sigma} </m> </p>
 	</li>
@@ -1366,7 +1366,7 @@ The concept of <term>length</term> allows us to identify some special subsets an
 		<title><m> \words{\Sigma}_n </m></title>
 		<notation>
 			<usage><m> \words{\Sigma}_n </m></usage>
-			<description>for <m> n \in \N </m>, the subset of <m> \words{\Sigma} </m> consisting of all words of length <m> n </m></description>
+			<description> for <m> n \in \N </m>, the subset of <m> \words{\Sigma} </m> consisting of all words of length <m> n </m> </description>
 		</notation>
 		<p> for <m> n \in \N </m>, the subset of <m> \words{\Sigma} </m> consisting of all words of length <m> n </m> </p>
 	</li>
@@ -1382,7 +1382,7 @@ The concept of <term>length</term> allows us to identify some special subsets an
 		<title><m> \emptyword </m></title>
 		<notation>
 			<usage><m> \emptyword </m></usage>
-			<description>the empty word</description>
+			<description> the empty word </description>
 		</notation>
 		<p> the empty word </p>
 	</li>
@@ -1425,7 +1425,7 @@ The concept of <term>length</term> allows us to identify some special subsets an
 		<title><m> \powset{A} </m></title>
 		<notation>
 			<usage><m> \powset{A} </m></usage>
-			<description>the power set of the set <m> A </m></description>
+			<description> the power set of the set <m> A </m> </description>
 		</notation>
 		<p> the power set of the set <m> A </m> </p>
 	</li>

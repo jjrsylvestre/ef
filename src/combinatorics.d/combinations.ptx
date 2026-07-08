@@ -76,7 +76,7 @@ respective owners.
 		<title><m> \combination{n}{k} </m></title>
 		<notation>
 			<usage><m> \combination{n}{k} </m></usage>
-			<description>the number of combination of size <m> k </m> taken from a set of size <m> n </m></description>
+			<description> the number of combination of size <m> k </m> taken from a set of size <m> n </m> </description>
 		</notation>
 		<p> the number of combinations of size <m> k </m> taken from a set of size <m> n </m> </p>
 	</li>
@@ -85,7 +85,7 @@ respective owners.
 		<title><m> \combinationalt{n}{k} </m></title>
 		<notation>
 			<usage><m> \combinationalt{n}{k} </m></usage>
-			<description>alternative notation for <m> \combination{n}{k} </m></description>
+			<description> alternative notation for <m> \combination{n}{k} </m> </description>
 		</notation>
 		<p>alternative notation for <m> \combination{n}{k} </m></p>
 	</li>
@@ -94,7 +94,7 @@ respective owners.
 		<title><m> \combinationaltalt{n}{k} </m></title>
 		<notation>
 			<usage><m> \combinationaltalt{n}{k} </m></usage>
-			<description>alternative notation for <m> \combination{n}{k} </m></description>
+			<description> alternative notation for <m> \combination{n}{k} </m> </description>
 		</notation>
 		<p>another alternative notation for <m> \combination{n}{k} </m></p>
 	</li>

@@ -261,7 +261,7 @@ For notation, we borrow symbols <m> \lgcand </m> and <m> \lgcor </m> from logic,
 		<title><m> \boolnot{x} </m></title>
 		<notation>
 			<usage><m> \boolnot{x} </m></usage>
-			<description>Boolean negation</description>
+			<description> Boolean negation </description>
 		</notation>
 		<p> Boolean negation </p>
 	</li>

@@ -312,7 +312,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		<idx><h>logical</h><h>negation</h><h>notation for</h></idx>
 		<notation>
 			<usage><m> \lgcnot A </m></usage>
-			<description>logical negation of statement <m> A </m></description>
+			<description> logical negation of statement <m> A </m> </description>
 		</notation>
 		<p> <m> \lgcnot A </m> </p>
 	</li>
@@ -324,7 +324,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		<idx><h>logical</h><h>conjuction</h><h>notation for</h></idx>
 		<notation>
 			<usage><m> A \lgcand B </m></usage>
-			<description>logical conjunction of statements <m> A </m> and <m> B </m></description>
+			<description> logical conjunction of statements <m> A </m> and <m> B </m> </description>
 		</notation>
 		<p> <m> A \lgcand B </m> </p>
 	</li>
@@ -336,7 +336,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		<idx><h>logical</h><h>disjunction</h><h>notation for</h></idx>
 		<notation>
 			<usage><m> A \lgcor B </m></usage>
-			<description>logical disjunction of statements <m> A </m> and <m> B </m></description>
+			<description> logical disjunction of statements <m> A </m> and <m> B </m> </description>
 		</notation>
 		<p> <m> A \lgcor B </m> </p>
 	</li>
@@ -348,7 +348,7 @@ we will introduce symbols to represent the <term><xref ref="definition-symb-lang
 		<idx><h>logical</h><h>conditional</h><h>notation for</h></idx>
 		<notation>
 			<usage><m> A \lgccond B </m></usage>
-			<description>logical conditional where statement <m> A </m> implies statement <m> B </m></description>
+			<description> logical conditional where statement <m> A </m> implies statement <m> B </m> </description>
 		</notation>
 		<p> <m> A \lgccond B </m> </p>
 	</li>
@@ -1132,7 +1132,7 @@ In mathematics, we often wish to prove that a condition <m> A \lgccond B </m> is
 		<title><m> A \lgcimplies B </m></title>
 		<notation>
 			<usage><m> A \lgcimplies B </m></usage>
-			<description>statement <m> A </m> logically implies statement <m> B </m>, so that conditional <m> A \lgccond B </m> is a tautology</description>
+			<description> statement <m> A </m> logically implies statement <m> B </m>, so that conditional <m> A \lgccond B </m> is a tautology </description>
 		</notation>
 		<p> notation for logical implication </p>
 	</li>

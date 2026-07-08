@@ -31,7 +31,7 @@ respective owners.
 		<title><m> a \mathrel{R} b </m></title>
 		<notation>
 			<usage><m> a \mathrel{R} b </m></usage>
-			<description>element <m> a \in A </m> is related to element <m> b \in B </m> by relation <m> R </m></description>
+			<description> element <m> a \in A </m> is related to element <m> b \in B </m> by relation <m> R </m> </description>
 		</notation>
 		<p> element <m> a \in A </m> is related to element <m> b \in B </m> by relation <m> R </m> </p>
 	</li>
@@ -155,7 +155,7 @@ Viewing relations as subsets of Cartesian products suggests ways to build new re
 		<idx><h>relation(s)</h><h>union of</h></idx>
 		<notation>
 			<usage><m> R_1 \union R_2 </m></usage>
-			<description>union of relations <m> R_1,R_2 </m></description>
+			<description> union of relations <m> R_1,R_2 </m> </description>
 		</notation>
 		<p> the relation where <m> a \mathrel{(R_1 \union R_2)} b </m> means that at least one of <m> a \mathrel{R_1} b </m> or <m> a \mathrel{R_2} b </m> is true </p>
 	</li>
@@ -166,7 +166,7 @@ Viewing relations as subsets of Cartesian products suggests ways to build new re
 		<idx><h>relation(s)</h><h>intersection of</h></idx>
 		<notation>
 			<usage><m> R_1 \intersection R_2 </m></usage>
-			<description>intersection of relations <m> R_1,R_2 </m></description>
+			<description> intersection of relations <m> R_1,R_2 </m> </description>
 		</notation>
 		<p> the relation where <m> a \mathrel{(R_1 \intersection R_2)} b </m> means that both <m> a \mathrel{R_1} b </m> and <m> a \mathrel{R_2} b </m> are true </p>
 	</li>
@@ -177,7 +177,7 @@ Viewing relations as subsets of Cartesian products suggests ways to build new re
 		<idx><h>relation(s)</h><h>complement of</h></idx>
 		<notation>
 			<usage><m> \cmplmnt{R} </m></usage>
-			<description>complement of relation <m> R </m></description>
+			<description> complement of relation <m> R </m> </description>
 		</notation>
 		<p> the relation where <m> a \mathrel{\cmplmnt{R}} b </m> means that <m> a \mathrel{R} b </m> is <em>not</em> true </p>
 	</li>
@@ -186,7 +186,7 @@ Viewing relations as subsets of Cartesian products suggests ways to build new re
 		<title><m> a \nmathrel{R} b </m></title>
 		<notation>
 			<usage><m> a \nmathrel{R} b </m></usage>
-			<description>alternative notation for <m> a \mathrel{\cmplmnt{R}} b </m></description>
+			<description> alternative notation for <m> a \mathrel{\cmplmnt{R}} b </m> </description>
 		</notation>
 		<p> alternative notation for <m> a \mathrel{\cmplmnt{R}} b </m> </p>
 	</li>
@@ -241,7 +241,7 @@ every relation can be reversed by simply stating the relationship in the reverse
 	<idx><h>relation(s)</h><h>inverse</h></idx>
 	<notation>
 		<usage><m> \inv{R} </m></usage>
-		<description>inverse of the relation <m> R </m></description>
+		<description> inverse of the relation <m> R </m> </description>
 	</notation>
 	<p> the relation where <m> b \mathrel{\inv{R}} a </m> means that <m> a \mathrel{R} b </m> is true </p>
 </li></dl>
@@ -295,7 +295,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 		<idx><h>relation(s)</h><h>empty</h></idx>
 		<notation>
 			<usage><m> a \mathrel{\emptyset} b </m></usage>
-			<description>the empty relation between elements <m> a </m> and <m> b </m> (always false)</description>
+			<description> the empty relation between elements <m> a </m> and <m> b </m> (always false) </description>
 		</notation>
 		<p>
 		the relation between sets <m> A </m> and <m> B </m> corresponding to the empty subset <m> \emptyset \subseteq A \cartprod B </m>,
@@ -309,7 +309,7 @@ There are two more set-theoretic ideas we can reinterpret as relations.
 		<idx><h>relation(s)</h><h>universal</h></idx>
 		<notation>
 			<usage><m> a \mathrel{U} b </m></usage>
-			<description>the universal relation between elements <m> a </m> and <m> b </m> (always true)</description>
+			<description> the universal relation between elements <m> a </m> and <m> b </m> (always true) </description>
 		</notation>
 		<p>
 		the relation between sets <m> A </m> and <m> B </m> corresponding to the full subset <m> U = {A \cartprod B} \subseteq {A \cartprod B} </m>,

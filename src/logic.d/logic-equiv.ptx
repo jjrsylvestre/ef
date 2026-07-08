@@ -29,7 +29,7 @@ respective owners.
 		<idx><h>logical</h><h>statement(s)</h><h>equivalent</h></idx>
 		<notation>
 			<usage><m> A \lgcequiv B </m></usage>
-			<description>statements <m> A </m> and <m> B </m> are equivalent</description>
+			<description> statements <m> A </m> and <m> B </m> are equivalent </description>
 		</notation>
 		<p> statements <m> A,B </m> such that <m> A \lgcbicond B </m> is a tautology </p>
 	</li>

@@ -49,7 +49,7 @@ respective owners.
 		<title><m> \funcdef{f}{A}{B} </m></title>
 		<notation>
 			<usage><m> \funcdef{f}{A}{B} </m></usage>
-			<description><m> f </m> is a function with domain <m> A </m> and codomain <m> B </m></description>
+			<description> <m> f </m> is a function with domain <m> A </m> and codomain <m> B </m> </description>
 		</notation>
 		<p> <m> f </m> is a function with domain <m> A </m> and codomain <m> B </m> </p>
 	</li>
@@ -65,7 +65,7 @@ respective owners.
 		<title><m> f(a) = b </m></title>
 		<notation>
 			<usage><m> f(a) = b </m></usage>
-			<description>function <m> \funcdef{f}{A}{B} </m> associates the codomain element <m> b\in B </m> to the domain element <m> a\in A </m></description>
+			<description> function <m> \funcdef{f}{A}{B} </m> associates the codomain element <m> b\in B </m> to the domain element <m> a\in A </m> </description>
 		</notation>
 		<p> function <m> \funcdef{f}{A}{B} </m> associates the codomain element <m> b\in B </m> to the domain element <m> a\in A </m> </p>
 	</li>
@@ -74,7 +74,7 @@ respective owners.
 		<title><m> a \mapsto b </m></title>
 		<notation>
 			<usage><m> a \mapsto b </m></usage>
-			<description>alternative notation for <m> f(a) = b </m></description>
+			<description> alternative notation for <m> f(a) = b </m> </description>
 		</notation>
 		<p> alternative notation for <m> f(a) = b </m> </p>
 	</li>
@@ -294,7 +294,7 @@ for example, by:
 		<title><m> \funcgraph{f} </m></title>
 		<notation>
 			<usage><m> \funcgraph{f} </m></usage>
-			<description>graph of function <m> f </m></description>
+			<description> graph of function <m> f </m> </description>
 		</notation>
 		<p>
 			the graph of function <m> \funcdef{f}{A}{B} </m>,
@@ -580,7 +580,7 @@ sometimes what we think is a function turns out to not be a function.
 		<title><m> f(A) </m></title>
 		<notation>
 			<usage><m> f(A) </m></usage>
-			<description>the image of function <m> \funcdef{f}{A}{B} </m></description>
+			<description> the image of function <m> \funcdef{f}{A}{B} </m> </description>
 		</notation>
 		<p>
 		the image of function <m> \funcdef{f}{A}{B} </m>,
@@ -672,7 +672,7 @@ sometimes what we think is a function turns out to not be a function.
 	<title><m> f(A') </m></title>
 	<notation>
 		<usage><m> f(A') </m></usage>
-		<description>the image of function <m> \funcdef{f}{A}{B} </m> on a subset <m> A' \subseteq A </m></description>
+		<description> the image of function <m> \funcdef{f}{A}{B} </m> on a subset <m> A' \subseteq A </m> </description>
 	</notation>
 	<p>
 	the image of the subset <m> A' \subseteq A </m> under a function <m> \funcdef{f}{A}{B} </m>,
@@ -724,7 +724,7 @@ sometimes what we think is a function turns out to not be a function.
 		<title><m> \sfuncdef{f}{A}{B} </m></title>
 		<notation>
 			<usage><m> \sfuncdef{f}{A}{B} </m></usage>
-			<description>function <m> f </m> is surjective</description>
+			<description> function <m> f </m> is surjective </description>
 		</notation>
 		<p> function <m> f </m> is surjective </p>
 	</li>
@@ -816,7 +816,7 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 		<title><m> \ifuncdef{f}{A}{B} </m></title>
 		<notation>
 			<usage><m> \ifuncdef{f}{A}{B} </m></usage>
-			<description>function <m> f </m> is injective</description>
+			<description> function <m> f </m> is injective </description>
 		</notation>
 		<p> function <m> f </m> is injective </p>
 	</li>
@@ -1028,7 +1028,7 @@ by considering <m> f(A) \subseteq B </m>.
 		<title><m> \funcdef{\id_A}{A}{A} </m></title>
 		<notation>
 			<usage><m> \funcdef{\id_A}{A}{A} </m></usage>
-			<description>the identity function on on set <m> A </m></description>
+			<description> the identity function on on set <m> A </m> </description>
 		</notation>
 		<p> the identity function on on set <m> A </m> </p>
 	</li>
@@ -1050,7 +1050,7 @@ by considering <m> f(A) \subseteq B </m>.
 	<title><m> \funcdef{\inclfunc{A}{X}}{A}{X} </m></title>
 	<notation>
 		<usage><m> \funcdef{\inclfunc{A}{X}}{A}{X} </m></usage>
-		<description>the inclusion function on subset <m> A \subseteq X </m></description>
+		<description> the inclusion function on subset <m> A \subseteq X </m> </description>
 	</notation>
 	<p>the inclusion function on subset <m> A \subseteq X </m></p>
 	</li>
@@ -1325,7 +1325,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 		<title><m> g \funccomp f </m></title>
 		<notation>
 			<usage><m> g \funccomp f </m></usage>
-			<description>the composition of functions <m> f </m> and <m> g </m></description>
+			<description> the composition of functions <m> f </m> and <m> g </m> </description>
 		</notation>
 		<p>
 		the composition of functions <m> \funcdef{f}{A}{B} </m> and <m> \funcdef{g}{B}{C} </m>,
@@ -1484,7 +1484,7 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 	<title><m> \funcinvimg{f}{C} </m></title>
 	<notation>
 		<usage><m> \funcinvimg{f}{C} </m></usage>
-		<description>the inverse image of the subset <m> C \subseteq B </m> under the function <m> \funcdef{f}{A}{B} </m></description>
+		<description> the inverse image of the subset <m> C \subseteq B </m> under the function <m> \funcdef{f}{A}{B} </m> </description>
 	</notation>
 	<p>
 	the inverse image of the subset <m> C \subseteq B </m> under the function <m> \funcdef{f}{A}{B} </m>,
@@ -1597,7 +1597,7 @@ So it seems we will need a function to be <em>bijective</em> in order to be able
 	<title><m> \inv{f} </m></title>
 	<notation>
 		<usage><m> \funcdef{\inv{f}}{B}{A} </m></usage>
-		<description>the inverse function associate to bijective function <m> \funcdef{f}{A}{B} </m></description>
+		<description> the inverse function associate to bijective function <m> \funcdef{f}{A}{B} </m> </description>
 	</notation>
 	<p>
 	the inverse function <m> \funcdef{\inv{f}}{B}{A} </m> for bijective function <m> \funcdef{f}{A}{B} </m>,

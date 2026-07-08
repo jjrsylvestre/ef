@@ -27,7 +27,7 @@ In counting, factorials come up a lot.
 		<idx>factorial</idx>
 		<notation>
 			<usage><m> n! </m></usage>
-			<description>factorial <m> n! = n (n - 1) (n - 2) \dotsm 2 \cdot 1 </m></description>
+			<description> factorial <m> n! = n (n - 1) (n - 2) \dotsm 2 \cdot 1 </m> </description>
 		</notation>
 		<p>
 		for natural number <m> n </m>,
@@ -539,7 +539,7 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 		<title><m> \permutation{n}{k} </m></title>
 		<notation>
 			<usage><m> \permutation{n}{k} </m></usage>
-			<description>the number of permutations of size <m> k </m> taken from a set of size <m> n </m></description>
+			<description> the number of permutations of size <m> k </m> taken from a set of size <m> n </m> </description>
 		</notation>
 		<p> the number of permutations of size <m> k </m> taken from a set of size <m> n </m> </p>
 	</li>
@@ -548,11 +548,11 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 		<title> <m> \permutationalt{n}{k} </m>, <m> \permutationaltalt{n}{k} </m></title>
 		<notation>
 			<usage><m> \permutationalt{n}{k} </m></usage>
-			<description>alternative notation for <m> \permutation{n}{k} </m></description>
+			<description> alternative notation for <m> \permutation{n}{k} </m> </description>
 		</notation>
 		<notation>
 			<usage><m> \permutationaltalt{n}{k} </m></usage>
-			<description>alternative notation for <m> \permutation{n}{k} </m></description>
+			<description> alternative notation for <m> \permutation{n}{k} </m> </description>
 		</notation>
 		<p>alternative notation choices for <m> \permutation{n}{k} </m></p>
 	</li>

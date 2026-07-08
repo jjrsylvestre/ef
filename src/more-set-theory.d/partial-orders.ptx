@@ -125,7 +125,7 @@ Make sure to keep this straight!
 		<title><m> a \partorderstrict b </m></title>
 		<notation>
 			<usage><m> a \partorderstrict b </m></usage>
-			<description><m> a \partorder b </m> but <m> a \neq b </m></description>
+			<description> <m> a \partorder b </m> but <m> a \neq b </m> </description>
 		</notation>
 		<p> <m> a </m> is strictly less/smaller than <m> b </m> </p>
 	</li>
