@@ -384,7 +384,7 @@ but we will establish rules that make it easy in symbolic logic.
 	<sidebyside widths="36.1% 50%" valign="middle">
 
 		<image xml:id="image-pred-logic-all-cows-eat-grass">
-			<description>A Venn diagram with the collection of cows completely inside the collection of things that eat grass.</description>
+			<shortdescription> A Venn diagram with the collection of cows completely inside the collection of things that eat grass. </shortdescription>
 			<latex-image><xi:include href="pred-logic.d/all-cows-eat-grass.tex" parse="text" /></latex-image>
 		</image>
 
@@ -395,7 +395,7 @@ but we will establish rules that make it easy in symbolic logic.
 	<sidebyside widths="38.5% 50%" valign="middle">
 
 		<image xml:id="image-pred-logic-some-cows-eat-grass">
-			<description>A Venn diagram with the collection of cows only partially overlapping with the collection of things that eat grass.</description>
+			<shortdescription> A Venn diagram with the collection of cows only partially overlapping with the collection of things that eat grass. </shortdescription>
 			<latex-image><xi:include href="pred-logic.d/some-cows-eat-grass.tex" parse="text" /></latex-image>
 		</image>
 
@@ -406,7 +406,7 @@ but we will establish rules that make it easy in symbolic logic.
 	<sidebyside widths="36.1% 50%" valign="middle">
 
 		<image xml:id="image-pred-logic-no-cows-eat-grass">
-			<description>A Venn diagram with the collection of cows not overlapping at all with the collection of things that eat grass.</description>
+			<shortdescription> A Venn diagram with the collection of cows not overlapping at all with the collection of things that eat grass. </shortdescription>
 			<latex-image><xi:include href="pred-logic.d/no-cows-eat-grass.tex" parse="text" /></latex-image>
 		</image>
 

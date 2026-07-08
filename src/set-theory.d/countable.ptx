@@ -110,7 +110,7 @@ in exactly the same way that we use our counting sets <m> \natnumlt{m} </m> to c
 			<figure>
 				<caption>A grid containing all positive rational numbers.</caption>
 				<image xml:id="image-countable-rational-grid">
-					<description>A grid containing all positive rational numbers.</description>
+					<shortdescription> A grid containing all positive rational numbers. </shortdescription>
 					<latex-image><xi:include href="countable.d/rational-grid.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
@@ -118,7 +118,7 @@ in exactly the same way that we use our counting sets <m> \natnumlt{m} </m> to c
 			<figure>
 				<caption>A path through the positive rational numbers.</caption>
 				<image xml:id="image-countable-rational-grid-path">
-					<description>A path through the grid containing all positive rational numbers.</description>
+					<shortdescription> A path through the grid containing all positive rational numbers. </shortdescription>
 					<latex-image><xi:include href="countable.d/rational-grid-path.tex" parse="text" /></latex-image>
 				</image>
 			</figure>

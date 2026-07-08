@@ -28,12 +28,12 @@ respective owners.
 	</p></introduction>
 
 	<exercise xml:id="exercise-trees-spanning-by-inspection-1"><image xml:id="image-trees-spanning-by-inspection-1" width="17.6%">
-		<description>An example graph for a spanning tree exercise.</description>
+		<shortdescription> An example graph for a spanning tree exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/spanning-by-inspection-1.tex" parse="text" /></latex-image>
 	</image></exercise>
 
 	<exercise xml:id="exercise-trees-spanning-by-inspection-2"><image xml:id="image-trees-spanning-by-inspection-2" width="30.8%">
-		<description>An example graph for a spanning tree exercise.</description>
+		<shortdescription> An example graph for a spanning tree exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/spanning-by-inspection-2.tex" parse="text" /></latex-image>
 	</image></exercise>
 
@@ -63,12 +63,12 @@ respective owners.
 	</p></introduction>
 
 	<exercise><image xml:id="image-trees-spanning-by-removal-1" width="22.9%">
-		<description>An example graph for a spanning tree exercise.</description>
+		<shortdescription> An example graph for a spanning tree exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/spanning-by-removal-1.tex" parse="text" /></latex-image>
 	</image></exercise>
 
 	<exercise><image xml:id="image-trees-spanning-by-removal-2" width="65.8%">
-		<description>An example graph for a spanning tree exercise.</description>
+		<shortdescription> An example graph for a spanning tree exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/spanning-by-removal-2.tex" parse="text" /></latex-image>
 	</image></exercise>
 
@@ -85,17 +85,17 @@ respective owners.
 	</p></introduction>
 
 	<exercise><image xml:id="image-trees-spanning-by-depth-breadth-1" width="46.1%">
-		<description>An example graph for a spanning tree exercise.</description>
+		<shortdescription> An example graph for a spanning tree exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-1.tex" parse="text" /></latex-image>
 	</image></exercise>
 
 	<exercise><image xml:id="image-trees-spanning-by-depth-breadth-2" width="46.1%">
-		<description>An example graph for a spanning tree exercise.</description>
+		<shortdescription> An example graph for a spanning tree exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-2.tex" parse="text" /></latex-image>
 	</image></exercise>
 
 	<exercise><image xml:id="image-trees-spanning-by-depth-breadth-3" width="40.8%">
-		<description>An example graph for a spanning tree exercise.</description>
+		<shortdescription> An example graph for a spanning tree exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/spanning-by-depth-breadth-3.tex" parse="text" /></latex-image>
 	</image></exercise>
 

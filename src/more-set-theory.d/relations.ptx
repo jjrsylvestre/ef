@@ -573,7 +573,7 @@ we draw an arrow from <m> a_1 </m> to <m> a_2 </m> if <m> a_1 \mathrel{R} a_2 </
 	<figure xml:id="figure-relations-divides-small-set">
 		<caption>Graph of the division relation on a small set of natural numbers.</caption>
 		<image xml:id="image-relations-divides-example" width="56.7%">
-			<description>Graph of the division relation on a small set of natural numbers.</description>
+			<shortdescription> Graph of the division relation on a small set of natural numbers. </shortdescription>
 			<latex-image><xi:include href="relations.d/divides-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -626,7 +626,7 @@ we must also have an arrow from <m> a_2 </m> to <m> a_1 </m>.
 	<figure xml:id="figure-relations-graph-symmetric-1">
 		<caption>The graph of a basic symmetric relation.</caption>
 		<image xml:id="image-relations-symmetric-example-1" width="35.5%">
-			<description>The graph of a basic symmetric relation.</description>
+			<shortdescription> The graph of a basic symmetric relation. </shortdescription>
 			<latex-image><xi:include href="relations.d/symmetric-example-1.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -651,7 +651,7 @@ we must also have an arrow from <m> a_2 </m> to <m> a_1 </m>.
 	<figure xml:id="figure-relations-graph-symmetric-2">
 		<caption>The simplified graph of a basic symmetric relation.</caption>
 		<image xml:id="image-relations-symmetric-example-2" width="35.5%">
-			<description>The simplified graph of a basic symmetric relation.</description>
+			<shortdescription> The simplified graph of a basic symmetric relation. </shortdescription>
 			<latex-image><xi:include href="relations.d/symmetric-example-2.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -681,7 +681,7 @@ so in the graph for <m> R </m>, <em>no</em> pair of vertices can have two opposi
 	<figure xml:id="figure-relations-graph-antisymmetric">
 		<caption>The graph of a basic antisymmetric relation.</caption>
 		<image xml:id="image-relations-antisymmetric-example" width="37.6%">
-			<description>The graph of a basic antisymmetric relation.</description>
+			<shortdescription> The graph of a basic antisymmetric relation. </shortdescription>
 			<latex-image><xi:include href="relations.d/antisymmetric-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -712,7 +712,7 @@ every <q>chain</q> of two arrows has a corresponding <q>composite</q> arrow.
 	<figure xml:id="figure-relations-graph-transitive">
 		<caption>The graph of a basic antisymmetric relation.</caption>
 		<image xml:id="image-relations-transitive-example" width="48.8%">
-			<description>The graph of a basic transitive relation.</description>
+			<shortdescription> The graph of a basic transitive relation. </shortdescription>
 			<latex-image><xi:include href="relations.d/transitive-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>

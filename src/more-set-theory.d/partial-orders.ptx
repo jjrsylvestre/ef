@@ -360,7 +360,7 @@ Make sure to keep this straight!
 	<figure xml:id="figure-partial-orders-hasse-divides">
 		<caption>The Hasse diagram for the <q>divides</q> partial order on a finite set of integers.</caption>
 		<image xml:id="image-partial-orders-hasse-divides" width="24.1%">
-			<description>Hasse diagram for the <q>divides</q> partial order.</description>
+			<shortdescription> Hasse diagram for the <q>divides</q> partial order. </shortdescription>
 			<latex-image><xi:include href="partial-orders.d/hasse-divides.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -380,7 +380,7 @@ Make sure to keep this straight!
 	<figure xml:id="figure-partial-orders-hasse-subset">
 		<caption>The Hasse diagram for the subset partial order on the power set of a finite set.</caption>
 		<image xml:id="image-partial-orders-hasse-subset" width="47%">
-			<description>Hasse diagram for the subset partial order.</description>
+			<shortdescription> Hasse diagram for the subset partial order. </shortdescription>
 			<latex-image><xi:include href="partial-orders.d/hasse-subset.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -521,7 +521,7 @@ Make sure to keep this straight!
 	<figure xml:id="figure-partial-orders-total-order-powers-of-two">
 		<caption>A Hasse diagram of a totally ordered set.</caption>
 		<image xml:id="image-partial-orders-hasse-total" width="40.5%">
-			<description>A Hasse diagram of a totally ordered set.</description>
+			<shortdescription> A Hasse diagram of a totally ordered set. </shortdescription>
 			<latex-image><xi:include href="partial-orders.d/hasse-total.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -717,7 +717,7 @@ but could also be understood for elements in a subset of a partially ordered set
 	<figure xml:id="figure-partial-orders-example-connected-components-are-maximal">
 		<caption>An example non-connected graph.</caption>
 		<image xml:id="image-partial-orders-components-are-maximal" width="37.3%">
-			<description>An example non-connected graph.</description>
+			<shortdescription> An example non-connected graph. </shortdescription>
 			<latex-image><xi:include href="partial-orders.d/components-are-maximal.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -761,7 +761,7 @@ but could also be understood for elements in a subset of a partially ordered set
 		<figure xml:id="figure-partial-orders-snipped-subseteq-powset">
 			<caption>The Hasse diagram for <m> \mathord{\subseteq} </m> on an <q>uncapped</q> power set.</caption>
 			<image xml:id="image-partial-orders-hasse-uncapped-powset" width="38.8%">
-				<description>The Hasse diagram for <m> \mathord{\subseteq} </m> on an <q>uncapped</q> power set.</description>
+				<shortdescription> The Hasse diagram for <m> \mathord{\subseteq} </m> on an <q>uncapped</q> power set. </shortdescription>
 				<latex-image><xi:include href="partial-orders.d/hasse-uncapped-powset.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
@@ -1013,7 +1013,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 					<figure>
 						<caption>Choose <m> a_0 = \emptyset </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-0">
-							<description>First step in a graphical approach to topological sorting.</description>
+							<shortdescription> First step in a graphical approach to topological sorting. </shortdescription>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/0.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
@@ -1021,7 +1021,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 					<figure>
 						<caption>Choose <m> a_1 = \{2\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-1">
-							<description>Second step in a graphical approach to topological sorting.</description>
+							<shortdescription> Second step in a graphical approach to topological sorting. </shortdescription>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/1.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
@@ -1033,7 +1033,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 					<figure>
 						<caption>Choose <m> a_2 = \{0\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-2">
-							<description>Third step in a graphical approach to topological sorting.</description>
+							<shortdescription> Third step in a graphical approach to topological sorting. </shortdescription>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/2.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
@@ -1041,7 +1041,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 					<figure>
 						<caption>Choose <m> a_3 = \{0,2\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-3">
-							<description>Fourth step in a graphical approach to topological sorting.</description>
+							<shortdescription> Fourth step in a graphical approach to topological sorting. </shortdescription>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/3.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
@@ -1053,7 +1053,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 					<figure>
 						<caption>Choose <m> a_4 = \{1\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-4">
-							<description>Fifth step in a graphical approach to topological sorting.</description>
+							<shortdescription> Fifth step in a graphical approach to topological sorting. </shortdescription>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/4.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
@@ -1061,7 +1061,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 					<figure>
 						<caption>Choose <m> a_5 = \{1,2\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-5">
-							<description>Sixth step in a graphical approach to topological sorting.</description>
+							<shortdescription> Sixth step in a graphical approach to topological sorting. </shortdescription>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/5.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
@@ -1073,7 +1073,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 					<figure>
 						<caption>Choose <m> a_6 = \{0,1\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-6">
-							<description>Seventh step in a graphical approach to topological sorting.</description>
+							<shortdescription> Seventh step in a graphical approach to topological sorting. </shortdescription>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/6.tex" parse="text" /></latex-image>
 						</image>
 					</figure>
@@ -1081,7 +1081,7 @@ The following definitions apply to a partial order <m> \mathord{\partorder} </m>
 					<figure>
 						<caption>Choose <m> a_7 = \{0,1,2\} </m>.</caption>
 						<image xml:id="image-partial-orders-top-sort-7">
-							<description>Eighth step in a graphical approach to topological sorting.</description>
+							<shortdescription> Eighth step in a graphical approach to topological sorting. </shortdescription>
 							<latex-image><xi:include href="partial-orders.d/top-sort.d/7.tex" parse="text" /></latex-image>
 						</image>
 					</figure>

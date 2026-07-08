@@ -55,7 +55,7 @@ respective owners.
 	<figure xml:id="figure-paths-testing-connected-component-def">
 		<caption>A nonconnected graph.</caption>
 		<image xml:id="image-paths-testing-connected-component-def" width="65.2%">
-			<description>A nonconnected graph.</description>
+			<shortdescription> A nonconnected graph. </shortdescription>
 			<latex-image><xi:include href="activities.d/testing-connected-component-def.tex" parse="text" /></latex-image>
 		</image>
 	</figure>

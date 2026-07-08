@@ -117,14 +117,14 @@ but we can actually prove things from it.
 		</p>
 
 		<image xml:id="image-axioms-woozles-snarf-dorples-1" width="35.2%">
-			<description>A diagram of woozles snarfing dorples.</description>
+			<shortdescription> A diagram of woozles snarfing dorples. </shortdescription>
 			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-1.tex" parse="text" /></latex-image>
 		</image>
 
 		<p> Now, suppose <m> d_1 </m> and <m> d_2 </m> were actually the same dorple <mdash /> then all three woozles would snarf it in common. </p>
 
 		<image xml:id="image-axioms-woozles-snarf-dorples-2" width="32.6%">
-			<description>A diagram of woozles snarfing dorples, assuming two of the dorples coincide.</description>
+			<shortdescription> A diagram of woozles snarfing dorples, assuming two of the dorples coincide. </shortdescription>
 			<latex-image><xi:include href="axioms.d/woozles-snarf-dorples-2.tex" parse="text" /></latex-image>
 		</image>
 
@@ -250,7 +250,7 @@ then any theorems proved under the abstract system are still valid in the new mo
 	</p>
 
 	<image xml:id="image-axioms-points-lines-model" width="28.2%">
-		<description>A diagram of woozles snarfing dorples.</description>
+		<shortdescription> A diagram of woozles snarfing dorples. </shortdescription>
 		<latex-image><xi:include href="axioms.d/points-lines-model.tex" parse="text" /></latex-image>
 	</image>
 

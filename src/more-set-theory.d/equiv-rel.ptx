@@ -416,7 +416,7 @@ But that is always precisely the case.
 		so that <m> A = A_1 \sqcup A_2 \sqcup A_3 \sqcup \dotsb \sqcup A_n </m>.
 	</caption>
 	<image xml:id="image-equiv-rel-partition" width="56.1%">
-		<description>A diagram illustrating a partition of a set.</description>
+		<shortdescription> A diagram illustrating a partition of a set. </shortdescription>
 		<latex-image><xi:include href="equiv-rel.d/partition.tex" parse="text" /></latex-image>
 	</image>
 </figure>
@@ -744,7 +744,7 @@ But that is always precisely the case.
 	<figure>
 		<caption>Diagram illustrating the induced map <m> \tilde{f} </m>.</caption>
 		<image xml:id="image-equiv-rel-induced-quotient-map" width="66.1%">
-			<description>Diagram illustrating an induced map on a quotient</description>
+			<shortdescription> Diagram illustrating an induced map on a quotient </shortdescription>
 			<latex-image><xi:include href="equiv-rel.d/induced-quotient-map.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -826,7 +826,7 @@ what will we observe if we draw the relation's graph?
 	<figure xml:id="figure-equiv-rel-graph-same-cardinality">
 		<caption>Graph for equivalence of cardinality on a power set.</caption>
 		<image xml:id="image-equiv-rel-graph-same-cardinality" width="67.9%">
-			<description>Graph for equivalence of cardinality on a power set.</description>
+			<shortdescription> Graph for equivalence of cardinality on a power set. </shortdescription>
 			<latex-image><xi:include href="equiv-rel.d/graph-same-cardinality.tex" parse="text" /></latex-image>
 		</image>
 	</figure>

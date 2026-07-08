@@ -23,7 +23,7 @@ respective owners.
 	<caption>An example graph.</caption>
 
 	<image xml:id="image-graphs-basics" width="38.2%">
-		<description>An example graph.</description>
+		<shortdescription> An example graph. </shortdescription>
 		<latex-image><xi:include href="exercises.d/basics.tex" parse="text" /></latex-image>
 	</image>
 
@@ -107,7 +107,7 @@ respective owners.
 		<figure xml:id="figure-graphs-complement-basic">
 			<caption>A simple graph.</caption>
 			<image xml:id="image-graphs-complement" width="17.3%">
-				<description>A simple graph.</description>
+				<shortdescription> A simple graph. </shortdescription>
 				<latex-image><xi:include href="exercises.d/complement.tex" parse="text" /></latex-image>
 			</image>
 		</figure>

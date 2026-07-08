@@ -49,15 +49,15 @@ respective owners.
 		as appropriate.
 	</p></introduction>
 	<task><image xml:id="image-graphs-formal-defn-regular" width="26.7%">
-		<description>A graph diagram.</description>
+		<shortdescription> A graph diagram. </shortdescription>
 		<latex-image><xi:include href="activities.d/formal-defn-regular.tex" parse="text" /></latex-image>
 	</image></task>
 	<task><image xml:id="image-graphs-formal-defn-weighted" width="39.4%">
-		<description>A weighted diagram.</description>
+		<shortdescription> A weighted diagram. </shortdescription>
 		<latex-image><xi:include href="activities.d/formal-defn-weighted.tex" parse="text" /></latex-image>
 	</image></task>
 	<task><image xml:id="image-graphs-formal-defn-directed" width="27.0%">
-		<description>A directed graph diagram.</description>
+		<shortdescription> A directed graph diagram. </shortdescription>
 		<latex-image><xi:include href="activities.d/formal-defn-directed.tex" parse="text" /></latex-image>
 	</image></task>
 </activity>
@@ -75,7 +75,7 @@ respective owners.
 		<introduction>
 			<p> Suppose the following graph is a subgraph of the <em>Facebook</em> graph. </p>
 			<image xml:id="image-graphs-friends" width="53.2%">
-				<description>A local friendship graph.</description>
+				<shortdescription> A local friendship graph. </shortdescription>
 				<latex-image><xi:include href="activities.d/friends.tex" parse="text" /></latex-image>
 			</image>
 		</introduction>

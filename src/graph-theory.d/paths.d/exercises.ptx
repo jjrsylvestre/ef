@@ -47,7 +47,7 @@ respective owners.
 		<figure xml:id="figure-paths-find-paths-and-trails">
 			<caption>An example graph.</caption>
 			<image xml:id="image-paths-find-paths-and-trails" width="39.4%">
-				<description>An example graph for an exercise.</description>
+				<shortdescription> An example graph for an exercise. </shortdescription>
 				<latex-image><xi:include href="exercises.d/find-paths-and-trails.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
@@ -63,7 +63,7 @@ respective owners.
 		<figure xml:id="figure-paths-find-all-paths-and-trails">
 			<caption>An example graph.</caption>
 			<image xml:id="image-paths-find-all-paths-and-trails" width="30.8%">
-				<description>An example graph for an exercise.</description>
+				<shortdescription> An example graph for an exercise. </shortdescription>
 				<latex-image><xi:include href="exercises.d/find-all-paths-and-trails.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
@@ -83,15 +83,15 @@ respective owners.
 		identify each edge that is a bridge.
 	</p></introduction>
 	<exercise><image xml:id="image-paths-find-bridges-1" width="22.9%">
-		<description>An example graph for an exercise.</description>
+		<shortdescription> An example graph for an exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/find-bridges-1.tex" parse="text" /></latex-image>
 	</image></exercise>
 	<exercise><image xml:id="image-paths-find-bridges-2" width="22.6%">
-		<description>An example graph for an exercise.</description>
+		<shortdescription> An example graph for an exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/find-bridges-2.tex" parse="text" /></latex-image>
 	</image></exercise>
 	<exercise><image xml:id="image-paths-find-bridges-3" width="22.9%">
-		<description>An example graph for an exercise.</description>
+		<shortdescription> An example graph for an exercise. </shortdescription>
 		<latex-image><xi:include href="exercises.d/find-bridges-3.tex" parse="text" /></latex-image>
 	</image></exercise>
 	<exercise><p> The complete graph with <m> n </m> vertices. </p></exercise>

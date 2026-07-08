@@ -91,7 +91,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 	<figure>
 		<caption>Diagram of the graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-example" width="25.5%">
-			<description>Diagram illustrating a basic example graph.</description>
+			<shortdescription> Diagram illustrating a basic example graph. </shortdescription>
 			<latex-image><xi:include href="graphs.d/basic-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -113,7 +113,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 	<figure>
 		<caption>Diagram of the graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-complicated-example" width="37.9%">
-			<description>Diagram illustrating a slightly more complicated example graph.</description>
+			<shortdescription> Diagram illustrating a slightly more complicated example graph. </shortdescription>
 			<latex-image><xi:include href="graphs.d/basic-complicated-example.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -141,9 +141,9 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 		<figure>
 			<caption>Graph to track possible jug fill states.</caption>
 			<image xml:id="image-graphs-jugs" width="54.1%">
-				<description>
+				<shortdescription>
 					A graph where nodes are jug fill states and edges represent being able to obtain one state from another by a single pour.
-				</description>
+				</shortdescription>
 				<latex-image><xi:include href="graphs.d/jugs.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
@@ -406,7 +406,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		<figure xml:id="figure-graphs-basic-subgraphs">
 			<caption>All possible subgraphs of our basic example graph from <xref ref="example-graphs-basic-graph-1" />.</caption>
 			<image xml:id="image-graphs-basic-subgrphs" width="96.4%">
-				<description>All possible subgraphs of our basic example graph.</description>
+				<shortdescription> All possible subgraphs of our basic example graph. </shortdescription>
 				<latex-image><xi:include href="graphs.d/basic-subgraphs.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
@@ -474,7 +474,7 @@ as well as how much <q>redundancy</q> the graph contains.
 			<figure>
 				<caption><m> K_1 </m>.</caption>
 				<image xml:id="image-graphs-K1">
-					<description>Complete graph with one vertex</description>
+					<shortdescription> Complete graph with one vertex </shortdescription>
 					<latex-image><xi:include href="graphs.d/K1.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
@@ -482,7 +482,7 @@ as well as how much <q>redundancy</q> the graph contains.
 			<figure>
 				<caption><m> K_2 </m>.</caption>
 				<image xml:id="image-graphs-K2">
-					<description>Complete graph with two vertices</description>
+					<shortdescription> Complete graph with two vertices </shortdescription>
 					<latex-image><xi:include href="graphs.d/K2.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
@@ -490,7 +490,7 @@ as well as how much <q>redundancy</q> the graph contains.
 			<figure>
 				<caption><m> K_3 </m>.</caption>
 				<image xml:id="image-graphs-K3">
-					<description>Complete graph with three vertices</description>
+					<shortdescription> Complete graph with three vertices </shortdescription>
 					<latex-image><xi:include href="graphs.d/K3.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
@@ -502,7 +502,7 @@ as well as how much <q>redundancy</q> the graph contains.
 			<figure>
 				<caption><m> K_6 </m>.</caption>
 				<image xml:id="image-graphs-K6">
-					<description>Complete graph with six vertices</description>
+					<shortdescription> Complete graph with six vertices </shortdescription>
 					<latex-image><xi:include href="graphs.d/K6.tex" parse="text" /></latex-image>
 				</image>
 			</figure>
@@ -570,7 +570,7 @@ as well as how much <q>redundancy</q> the graph contains.
 		<figure>
 			<caption>Road map of the area around Camrose, Alberta.</caption>
 			<image xml:id="image-graphs-camrose-highways">
-				<description>Road map of the area around Camrose, Alberta.</description>
+				<shortdescription> Road map of the area around Camrose, Alberta. </shortdescription>
 				<latex-image><xi:include href="graphs.d/camrose-highways.tex" parse="text" /></latex-image>
 			</image>
 		</figure>
@@ -652,7 +652,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 	<figure>
 		<caption>Diagram of the directed graph <m> G = (V,E) </m>.</caption>
 		<image xml:id="image-graphs-basic-directed" width="59.1%">
-			<description>Diagram for a basic directed graph.</description>
+			<shortdescription> Diagram for a basic directed graph. </shortdescription>
 			<latex-image><xi:include href="graphs.d/basic-directed.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -698,7 +698,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 	<figure xml:id="figure-graphs-pow-set">
 		<caption>Directed graph to represent the subset relationships between elements of <m> \powset{A} </m>.</caption>
 		<image xml:id="image-graphs-powset" width="47%">
-			<description>Directed graph representing subset relationships in a power set.</description>
+			<shortdescription> Directed graph representing subset relationships in a power set. </shortdescription>
 			<latex-image><xi:include href="graphs.d/powset.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -753,7 +753,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 	<figure xml:id="figure-graphs-divides">
 		<caption>Directed graph to represent the relationship of division between elements of <m> V </m>.</caption>
 		<image xml:id="image-graphs-divides" width="52%">
-			<description>Directed graph representing division relationships in a set of integers.</description>
+			<shortdescription> Directed graph representing division relationships in a set of integers. </shortdescription>
 			<latex-image><xi:include href="graphs.d/divides.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -774,7 +774,7 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 	<figure>
 		<caption>Road map of major centres in Alberta as a weighted graph.</caption>
 		<image xml:id="image-graphs-travelling" width="100%">
-			<description>Road map of major centres in Alberta as a weighted graph.</description>
+			<shortdescription> Road map of major centres in Alberta as a weighted graph. </shortdescription>
 			<latex-image><xi:include href="graphs.d/travelling.tex" parse="text" /></latex-image>
 		</image>
 	</figure>

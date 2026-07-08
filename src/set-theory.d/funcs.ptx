@@ -94,7 +94,7 @@ respective owners.
 <figure>
 	<caption>A Venn diagram of a function transforming a domain element into a codomain element.</caption>
 	<image xml:id="image-funcs-func-def" width="42.6%">
-		<description>A Venn diagram of a function transforming a domain element into a codomain element.</description>
+		<shortdescription> A Venn diagram of a function transforming a domain element into a codomain element. </shortdescription>
 		<latex-image><xi:include href="funcs.d/func-def.tex" parse="text" /></latex-image>
 	</image>
 </figure>
@@ -317,7 +317,7 @@ for example, by:
 	<figure>
 		<caption>The graph <m> \funcgraph{x \mapsto x^2} </m> represented as a curve in the Cartesian plane.</caption>
 		<image xml:id="image-funcs-graph-x-squared" width="36.7%">
-			<description>The graph <m> \funcgraph{x \mapsto x^2} </m> represented as a curve in the Cartesian plane.</description>
+			<shortdescription> The graph <m> \funcgraph{x \mapsto x^2} </m> represented as a curve in the Cartesian plane. </shortdescription>
 			<latex-image><xi:include href="funcs.d/graph-x-squared.tex" parse="text" /></latex-image>
 		</image>
 	</figure>
@@ -593,7 +593,7 @@ sometimes what we think is a function turns out to not be a function.
 <figure>
 	<caption>A Venn diagram of the image of a function.</caption>
 	<image xml:id="image-funcs-image" width="64.1%">
-		<description>A Venn diagram of the image of a function.</description>
+		<shortdescription> A Venn diagram of the image of a function. </shortdescription>
 		<latex-image><xi:include href="funcs.d/image.tex" parse="text" /></latex-image>
 	</image>
 </figure>
@@ -1167,7 +1167,7 @@ by considering <m> f(A) \subseteq B </m>.
 <figure>
 	<caption>A Venn diagram of restricting the domain of a function.</caption>
 	<image xml:id="image-funcs-domain-res" width="76.4%">
-		<description>A Venn diagram of restricting the domain of a function.</description>
+		<shortdescription> A Venn diagram of restricting the domain of a function. </shortdescription>
 		<latex-image><xi:include href="funcs.d/domain-res.tex" parse="text" /></latex-image>
 	</image>
 </figure>
@@ -1210,7 +1210,7 @@ by considering <m> f(A) \subseteq B </m>.
 <figure>
 	<caption>A Venn diagram of restricting the codomain of a function.</caption>
 	<image xml:id="image-funcs-codomain-res" width="71.1%">
-		<description>A Venn diagram of restricting the codomain of a function.</description>
+		<shortdescription> A Venn diagram of restricting the codomain of a function. </shortdescription>
 		<latex-image><xi:include href="funcs.d/codomain-res.tex" parse="text" /></latex-image>
 	</image>
 </figure>
@@ -1240,7 +1240,7 @@ by considering <m> f(A) \subseteq B </m>.
 <figure>
 	<caption>A Venn diagram of a function extension.</caption>
 	<image xml:id="image-funcs-extension" width="83.5%">
-		<description>A Venn diagram of a function extension.</description>
+		<shortdescription> A Venn diagram of a function extension. </shortdescription>
 		<latex-image><xi:include href="funcs.d/extension.tex" parse="text" /></latex-image>
 	</image>
 </figure>
@@ -1338,7 +1338,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 <figure>
 	<caption>A Venn diagram of a function composition.</caption>
 	<image xml:id="image-funcs-composition" width="92.9%">
-		<description>A Venn diagram of a function composition.</description>
+		<shortdescription> A Venn diagram of a function composition. </shortdescription>
 		<latex-image><xi:include href="funcs.d/composition.tex" parse="text" /></latex-image>
 	</image>
 </figure>
@@ -1497,7 +1497,7 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 <figure>
 	<caption>A Venn diagram of a function inverse image.</caption>
 	<image xml:id="image-funcs-inv-image" width="97%">
-		<description>A Venn diagram of a function inverse image.</description>
+		<shortdescription> A Venn diagram of a function inverse image. </shortdescription>
 		<latex-image><xi:include href="funcs.d/inv-image.tex" parse="text" /></latex-image>
 	</image>
 </figure>
