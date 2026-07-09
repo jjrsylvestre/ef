@@ -626,13 +626,7 @@ First, let's establish the truth tables of the basic connectives
 	<li> Conjunction <m> p \lgcand q </m> is true <em>only</em> when <em>both</em> <m> p </m> and <m> q </m> are true. </li>
 
 	<li>
-		<p> Disjunction <m> p \lgcor q </m> is true when <em>at least one</em> of <m> p </m> and <m> q </m> is true. </p>
-
-		<!-- <aside><title>See</title><p>
-			<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or" text="type-local">Statement</xref>
-			of <xref ref="remark-symb-lang-connectives" />
-			regarding inclusive versus exclusive or.
-		</p></aside> -->
+		<p> Disjunction <m> p \lgcor q </m> is true when <em>at least one</em> of <m> p </m> or <m> q </m> is true. </p>
 
 		<aside><title>See</title><p>
 			<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or">Statement</xref>

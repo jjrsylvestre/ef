@@ -40,7 +40,7 @@ It is usual to take the principle of mathematical induction as an <term>axiom</t
 that is, we <em>assume</em> that mathematical induction is valid without proving it.
 </p>
 
-<aside><title>A look ahead</title><p> We will discuss axioms a little more in <xref ref="chapter-axioms" />. </p></aside>
+<aside valign="middle"><title>A look ahead</title><p> We will discuss axioms a little more in <xref ref="chapter-axioms" />. </p></aside>
 
 <p>
 Below is an outline of the idea behind why it is reasonable to assume that mathematical induction is valid.
@@ -271,14 +271,9 @@ Now, here is some specific terminology associated to proofs by induction.
 
 <remark><p> Indexing of statements does not have to start at <m> 1 </m>. </p></remark>
 
-<problem> <!-- worked example -->
+<problem xml:id="wexmaple-induction-base-case-4"> <!-- worked example -->
 
-	<statement>
-		<p> Prove <m> 2^n \lt n! </m> whenever <m> n \ge 4 </m>. </p>
-		<aside><title>Note</title><p>
-			This statement is actually false for <m> n=1,2,3 </m>.
-		</p></aside>
-	</statement>
+	<statement><p> Prove <m> 2^n \lt n! </m> whenever <m> n \ge 4 </m>. </p></statement>
 
 	<solution>
 
@@ -294,6 +289,12 @@ Now, here is some specific terminology associated to proofs by induction.
 	</solution>
 
 </problem>
+
+<aside valign="middle"><title>Note</title><p>
+	As you can easily check,
+	the statement in <xref ref="wexmaple-induction-base-case-4" /> is actually false for <m> n = 1,2,3 </m>.
+</p></aside>
+
 
 </section>
 
@@ -445,18 +446,15 @@ Now, here is some specific terminology associated to proofs by induction.
 
 	<solution>
 
-		<case><title>Base case</title>
+		<p>
+			Our statement only concerns numbers <em>greater</em> than <m> 1 </m>,
+			so our base case is <m> n = 2 </m>.
+		</p>
 
-			<p>
+		<case><title>Base case</title><p>
 			The first number greater than <m> 1 </m> is <m> n = 2 </m>, and it is prime.
 			So it can be considered a product of <em>one</em> prime.
-			</p>
-
-			<aside><title>Note</title><p>
-				Our base case is at <m> n = 2 </m> because our original statement only concerns numbers <em>greater</em> than <m> 1 </m>.
-			</p></aside>
-
-		</case>
+		</p></case>
 
 		<case><title>Induction step</title>
 

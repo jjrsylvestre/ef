@@ -408,6 +408,7 @@ But efficiently counting large collections can be difficult!
 </problem>
 
 <problem xml:id="wexample-counting-functions"> <!-- worked example -->
+	<title>Counting functions</title>
 
 	<statement><p>
 		Set <m> A = \{a,b,c\} </m> and <m> B = \{0,1,2,3,4\} </m>.
@@ -438,7 +439,7 @@ But efficiently counting large collections can be difficult!
 			So the number of injections is <m> 5 \cdot 4 \cdot 3 = 60 </m>.
 			</p>
 
-			<aside><title>A look ahead</title><p>
+			<aside valign="bottom"><title>A look ahead</title><p>
 				Notice that the number of injections has turned out to be
 				<md> \frac{\card{B}!}{(\card{B} - \card{A})!} </md>.
 				We will understand better how this formula arises in <xref ref="section-permutations-subsets" />.

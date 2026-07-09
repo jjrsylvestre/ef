@@ -226,7 +226,7 @@ Given a recursively defined sequence <m> \{a_k\} </m>,
 we can <q>unravel</q> the recursive definition to determine an explicit formula for the general term <m> a_k </m> which involves only the index <m> k </m>.
 </p>
 
-<problem>
+<problem xml:id="wexample-recur-induct-ball-recurrence">
 
 	<statement><p> Solve the recurrence relation from <xref ref="example-recur-induct-ball-recurrence" />. </p></statement>
 
@@ -280,20 +280,16 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 
 </problem>
 
+<p>
+We can generalize <xref ref="wexample-recur-induct-ball-recurrence" /> by replacing the <q>bounce factor</q> <m> 3 / 4 </m> by an arbitrary factor <m> r </m>.
+</p>
+
 <problem>
 
-	<statement>
-
-		<p>
-		Solve the recurrence relation <m> a_k = r a_{k-1} </m> for <m> k\ge 1 </m>,
+	<statement><p>
+		Solve the recurrence relation <m> a_k = r a_{k-1} </m> for <m> k \ge 1 </m>,
 		where <m> r </m> is a constant and the first term <m> a_0 </m> is arbitrarily chosen.
-		</p>
-
-		<aside><title>Compare</title><p>
-			This example generalizes the previous example.
-		</p></aside>
-
-	</statement>
+	</p></statement>
 
 	<solution><p>
 		Through iteration, we obtain
@@ -301,7 +297,7 @@ we can <q>unravel</q> the recursive definition to determine an explicit formula 
 			a_k
 			= r a_{k-1}
 			= r (r a_{k-2})
-			= r\bbrac{r(r a_{n-3})}
+			= r \bbrac{r (r a_{n-3})}
 			= \dotsb
 			= r^k a_0
 		</md>.

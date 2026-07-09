@@ -94,7 +94,7 @@ respective owners.
 	<md> (p \lgcor q) \lgcand \lgcnot (p \lgcand q) \lgcequiv p \lgcbicond \lgcnot q </md>.
 	</p>
 
-	<aside><title>See</title><p>
+	<aside valign="middle"><title>See</title><p>
 		<xref ref="remark-symb-lang-connectives-inclusive-exclusive-or">Statement</xref>
 		of <xref ref="remark-symb-lang-connectives" /> for the difference between <term>inclusive or</term> and <term>exclusive or</term>.
 	</p></aside>

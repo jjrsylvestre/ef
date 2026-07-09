@@ -58,7 +58,7 @@ respective owners.
 			but by arguing that it is not possible for the statement to be false.
 			</p>
 
-			<aside><title>Don't skip ahead</title><p>
+			<aside valign="middle"><title>Don't skip ahead</title><p>
 				In <xref ref="chapter-logic-equiv" />,
 				we will learn that the two substatements involved in this conditional are <term>logically equivalent</term>.
 				If you have already read ahead into that chapter,

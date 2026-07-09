@@ -220,6 +220,7 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 
 		<li>
 			<title>True</title>
+
 			<p>
 			This statement says <q>for every <m> m </m> there exists an <m> n </m> such that <m> m </m> divides <m> n </m>.</q>
 			To show that this statement is true, we have to provide, for every possible value of <m> m </m>, a value of <m> n </m> that works.
@@ -228,10 +229,13 @@ However, we often do not want to be <em>too</em> specific (or else we would usua
 			When <m> m=3 </m>, we have example <m> n=3 </m>.
 			Similarly, for each value of <m> m </m>, we can choose <m> n </m> to be the same value as <m> m </m> as an example.
 			</p>
-			<aside><title>Note</title><p>
-				If the domain for <m> m </m> and <m> n </m> included <m> 0 </m>,
-				then this third statement would actually be false, as demonstrated by the example <m> m = 0 </m>.
-			</p></aside>
+
+			<p>
+			<alert>Note.</alert>
+			If the domain for <m> m </m> and <m> n </m> included <m> 0 </m>,
+			then this third statement would actually be false, as demonstrated by the example <m> m = 0 </m>.
+			</p>
+
 		</li>
 
 		<li>

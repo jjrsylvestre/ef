@@ -1,11 +1,6 @@
 * More use of <case direction="cycle">
   ---> search for "Proof of the equivalence of"
 
-* Audit asides for:
-  titles
-  whether they need valign
-  whether they should be asides at all
-
 * Look for use of \abs when it should be \card, especially in graph theory chapter.
 
 * Cool combinatoric formula:

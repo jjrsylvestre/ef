@@ -89,14 +89,11 @@ respective owners.
 	<title>Boolean addition</title>
 
 	<p>
-	Comparing the following two tables,
-	we see that Boolean addition is equivalent to <term>exclusive or</term>.
+	Boolean arithmetic is <term>mod <m> 2 </m> arithmetic</term>,
+	in which <m> 2 </m> is considered equivalent to <m> 0 </m>.
+	Using this,
+	by comparing the following two tables we see that Boolean addition is equivalent to <term>exclusive or</term>.
 	</p>
-
-	<aside><title>Boolean arithmetic</title><p>
-		Notice that in the first row for Boolean addition,
-		we use <term>mod <m> 2 </m> arithmetic</term> to define <m> 1+1 = 0 </m>.
-	</p></aside>
 
 	<sidebyside>
 

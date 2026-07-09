@@ -97,15 +97,15 @@ You should view a definition as a <em>technical test</em> or <em>collection of t
 	Then <m> n </m> is prime if and only if <m> n/m </m> is <em>not</em> an integer for every integer <m> m </m> with <m> 2 \le m \lt \frac{n}{2} </m>.
 </p></proposition>
 
+<aside valign="middle"><title>See</title><p>
+	<xref ref="exercise-proof-methods-prime-def-2" />
+	for a refinement of the statement of <xref ref="proposition-proof-methods-prime-refine" />.
+</p></aside>
+
 <p>
 The proof is left to you as
 <xref ref="exercise-proof-methods-prime-def-1" />.
 </p>
-
-<aside><title>See also</title><p>
-	<xref ref="exercise-proof-methods-prime-def-2" />
-	for a refinement of the statement of <xref ref="proposition-proof-methods-prime-refine" />.
-</p></aside>
 
 <problem> <!-- worked example -->
 

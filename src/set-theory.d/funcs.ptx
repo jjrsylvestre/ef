@@ -798,7 +798,7 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 		<p> an injective function </p>
 	</li>
 
-	<li>
+	<li xml:id="definition-funcs-embedding">
 		<title>embedding</title>
 		<idx><h>function</h><h>embedding</h></idx>
 		<idx>embedding</idx>
@@ -1057,9 +1057,9 @@ by considering <m> f(A) \subseteq B </m>.
 
 </dl></p>
 
-<aside valign="top"><title>Check your understanding</title><p>
-	Do you understand the difference between the definitions of <term>identity function</term> and <term>inclusion function</term>?
-</p></aside>
+<exercise><p>
+	Explain the difference between an <term>identity function</term> and an <term>inclusion function</term>.
+</p></exercise>
 
 <note><p> An inclusion function is always an injection. </p></note>
 
@@ -1296,12 +1296,13 @@ One of the most common ways to extend a function to a larger domain is to pick a
 	Then <m> {\widetilde{\id}}_{\Z} </m> is the extension by zero of the identity function <m> \id_{\Z} </m>.
 	</p>
 
-	<aside><title>Compare</title><p>
-		<xref ref="example-funcs-floor-eq-extension" /> also involved an extension of the identity function <m> \id_{\Z} </m> <mdash />
-		was it an <term>extension by zero</term>?
-	</p></aside>
-
 </example>
+
+<exercise><p>
+	<xref ref="example-funcs-floor-eq-extension" /> also involved an extension of the identity function <m> \id_{\Z} </m> to all of <m> \R </m> <mdash />
+	was it an <term>extension by zero</term>?
+</p></exercise>
+
 
 </section>
 

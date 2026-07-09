@@ -73,9 +73,8 @@ respective owners.
 	<term>Fibonacci numbers</term> are those that appear in the sequence defined recursively by
 	<md><mrow> a_n \amp = a_{n-1} + a_{n-2}, \amp n \amp \ge 2 </mrow></md>,
 	for some choice of initial terms <m> a_0, a_1 </m>.
+	(See <xref ref="example-recur-induct-Fibonacci" />.)
 	</p>
-
-	<aside><title>See</title><p> <xref ref="example-recur-induct-Fibonacci" />. </p></aside>
 
 	<p> Using initial terms <m> a_0 = a_1 = 1 </m>, use mathematical induction to prove that every Fibonacci number <m> a_n </m> satisfies <m> a_n \lt 2^n </m> (except, of course, for <m> a_0 </m>. </p>
 

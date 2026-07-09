@@ -96,13 +96,11 @@ and writing <m> (a,b) \in R </m> becomes the same as writing <m> a \mathrel{R} b
 	<p>
 	The difference is that a function <m> A \to B </m> must assign <em>exactly one</em> element of <m> B </m> to <em>each</em> element of <m> A </m>,
 	whereas a relation from <m> A </m> to <m> B </m> can assign any number of elements of <m> B </m> (even zero) to each element of <m> A </m>.
-	That is, a relation does not have to be <term>well-defined</term>,
-	and can be left <term>undefined</term> on some elements of <m> A </m>.
+	That is, a relation does not have to be <term>well-defined</term>
+	(see <xref ref="example-funcs-well-defined" />),
+	and can be left <term>undefined</term> on some elements of <m> A </m>
+	(see <xref ref="example-funcs-undefined" />).
 	</p>
-
-	<aside><title>See</title><p>
-		<xref ref="example-funcs-undefined" /> and <xref ref="example-funcs-well-defined" />.
-	</p></aside>
 
 </remark>
 
@@ -225,7 +223,7 @@ Viewing relations as subsets of Cartesian products suggests ways to build new re
 	In other words, <m> A \mathrel{\cmplmnt{\mathord{\subseteq}}} B </m> means that <m> A \cap \cmplmnt{B} \ne \varnothing </m>.
 	</p>
 
-	<aside><title>Careful</title><p>
+	<aside valign="middle"><title>Careful</title><p>
 		Relation <m> A \mathrel{\cmplmnt{\mathord{\subseteq}}} B </m> does not (necessarily) mean <m> A \subseteq \cmplmnt{B} </m>.
 		Draw a representative Venn diagram to see why.
 	</p></aside>

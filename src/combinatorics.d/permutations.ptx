@@ -437,12 +437,16 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 		how many words in <m> \words{\Sigma} </m> contain each element of the alphabet exactly once?
 	</p></statement>
 
-	<solution>
-		<p> Here we just want to order all the elements of <m> \Sigma </m> into a word, so the answer is <m> n! </m>. </p>
-		<aside><title>Compare</title><p> See <xref ref="wexample-counting-words-no-repeats" />. </p></aside>
-	</solution>
+	<solution><p>
+		Here we just want to order all the elements of <m> \Sigma </m> into a word, so the answer is <m> n! </m>.
+	</p></solution>
 
 </problem>
+
+<aside valign="middle"><title>Compare</title><p>
+	<xref ref="wexample-permutations-counting-words" /> with <xref ref="wexample-counting-words-no-repeats" />.
+</p></aside>
+
 
 <remark><p>
 	<xref ref="wexample-permutations-counting-words" /> justifies the convention <m> 0! = 1 </m>,
@@ -841,19 +845,13 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 
 </problem>
 
-<problem>  <!-- worked example -->
+<problem xml:id="wexample-permutations-words-no-repeats">  <!-- worked example -->
 	<title>Words with no repeated letters</title>
 
-	<statement>
-
-		<p>
+	<statement><p>
 		For alphabet <m> \Sigma = \EngAlphabet </m>,
 		how many four-letter words made up of distinct letters are there in <m> \words{\Sigma} </m>?
-		</p>
-
-		<aside><title>Compare</title><p> See <xref ref="wexample-counting-words-no-repeats" />. </p></aside>
-
-	</statement>
+	</p></statement>
 
 	<solution><p>
 		A four-letter word with no repeated letters is the same as a permutation of size <m> 4 </m>,
@@ -863,18 +861,18 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 
 </problem>
 
-<problem xml:id="wexample-counting-injections-1">  <!-- worked example -->
+<aside valign="middle"><title>Compare</title><p>
+	<xref ref="wexample-permutations-words-no-repeats" /> and <xref ref="wexample-counting-words-no-repeats" />.
+</p></aside>
 
-	<statement>
 
-		<p>
+<problem xml:id="wexample-permutations-counting-injections">  <!-- worked example -->
+	<title> Counting injections </title>
+
+	<statement><p>
 		If <m> \card{A} = k </m> and <m> \card{B} = n </m>,
 		with <m> k \le n </m>, how many injective functions <m> \funcdef{f}{A}{B} </m> exist?
-		</p>
-
-		<aside><title>Compare</title><p> See <xref ref="wexample-counting-functions" />. </p></aside>
-
-	</statement>
+	</p></statement>
 
 	<solution>
 
@@ -910,6 +908,10 @@ Sometimes we want to create an ordered list of a certain length from a larger po
 	</solution>
 
 </problem>
+
+<aside valign="middle"><title>Compare</title><p>
+	<xref ref="wexample-permutations-counting-injections" /> and <xref ref="wexample-counting-functions" />.
+</p></aside>
 
 </section>
 

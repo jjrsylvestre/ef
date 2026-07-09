@@ -105,17 +105,22 @@ respective owners.
 		<p>
 		As usual, <m> \R^m = \R \cartprod \R \cartprod \dotsb \cartprod \R </m> represents the Cartesian product of <m> m </m> copies of <m> \R </m>,
 		where <m> m </m> is a positive integer.
-		Consider the function <m> \funcdef{D}{\R}{\R^m} </m> defined by <m> D(x) = (x,x,\dotsc,x) </m>.
+		Consider the
+		<term>diagonal embedding</term>
+		<m> \funcdef{D}{\R}{\R^m} </m> defined by <m> D(x) = (x,x,\dotsc,x) </m>.
 		</p>
 
-		<aside><title>Terminology</title><p>
-			The function <m> D </m> in this exercise is called a <term>diagonal embedding</term><idx>diagonal embedding</idx>.
-			We can define a similar diagonal embedding <m> \ifuncdef{D}{A}{A^m} </m> for every nonempty set <m> A </m>.
+		<aside valign="middle"><title>Generalize</title><p>
+			We can define a similar
+			<term>diagonal embedding</term>
+			<idx>diagonal embedding</idx>
+			<idx><h>embedding</h><h>diagonal</h></idx>
+			<m> A \ifuncto A^m </m> by <m> a \mapsto (a,a,\dotsc,a) </m> for every nonempty set <m> A </m> and every positive integer <m> m </m>.
 		</p></aside>
 
 	</introduction>
 
-	<task><p> Prove that <m> D </m> embeds <m> \R </m> into <m> \R^m </m>. </p></task>
+	<task><p> Prove that <m> D </m> actually <xref ref="definition-funcs-embedding" text="custom">embeds</xref> <m> \R </m> into <m> \R^m </m>. </p></task>
 
 	<task><p>
 		Fill in the right-hand side of the

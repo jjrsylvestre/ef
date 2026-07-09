@@ -64,16 +64,24 @@ respective owners.
 	<introduction>
 
 		<p>
-		Recall that <m> \matrixring_n(\R) </m> is the set of all <m> n \times n </m> matrices.
-		Let <m> V </m> be the subset of <term>invertible</term> <m> n \times n </m> matrices,
-		and <m> S </m> the set of <term>scalar</term> <m> n \times n </m> matrices.
-		Write <m> \zerovec </m> for the <m> n \times n </m> zero matrix.
+		Recall the following notation and terminology from linear algebra.
+		<ul>
+
+			<li> <m> \matrixring_n(\R) </m> represents the set of all <m> n \times n </m> matrices. </li>
+
+			<li> <term>Scalar matrix</term> means a scalar multiple of the identity matrix. </li>
+
+			<li> <term>Singular matrix</term> means not invertible. </li>
+
+		</ul>
 		</p>
 
-		<aside><title>Recall</title>
-			<p><term>Scalar matrix</term> means a scalar multiple of the identity matrix.</p>
-			<p><term>Singular matrix</term> means not invertible.</p>
-		</aside>
+		<p>
+		Let <m> V </m> and <m> S </m> represent subsets of <m> \matrixring_n(\R) </m>,
+		where <m> V </m> consists of the <term>invertible</term> <m> n \times n </m> matrices,
+		and <m> S </m> consists of the <term>scalar</term> <m> n \times n </m> matrices.
+		Also, as usual write <m> \zerovec </m> for the <m> n \times n </m> zero matrix.
+		</p>
 
 		<p>
 		Express each of the following statements using the symbols of set theory:

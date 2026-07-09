@@ -754,11 +754,10 @@ But that is always precisely the case.
 	But under this equivalence relation, each element in a specific equivalence class shares the same output image in the codomain as all the other elements in that class.
 	For this reason, allowing our <xref ref="definition-funcs-rule" text="title" /> definition
 	<m> \tilde{f}\bbrac{\eqclass{a}} = f(a) </m>
-	to depend on the choice of class representative <m> a </m> is <term>well-defined</term>,
+	to depend on the choice of class representative <m> a </m> is <term>well-defined</term>
+	(see <xref ref="example-funcs-well-defined" />),
 	and hence <em>is</em> a function.
 	</p>
-
-	<aside><title>See</title><p> <xref ref="example-funcs-well-defined" />. </p></aside>
 
 	<p>
 	Moreover, the induced function <m> \tilde{f} </m> is always injective,

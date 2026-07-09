@@ -515,8 +515,8 @@ to manipulate an expression involving a conditional.
 	So our intuition about the logic of a disjunction in a conditional in this way was correct.
 	</p>
 
-	<aside><title>A look ahead</title><p>
-		This observation will come in handy <mdash />
+	<aside valign="middle"><title>A look ahead</title><p>
+		The equivalence in <xref ref="example-logic-equiv-conditional-demorgan" /> will come in handy <mdash />
 		see <xref ref="section-proof-methods-cases" />
 		and <xref ref="section-proof-methods-disj" />.
 	</p></aside>
