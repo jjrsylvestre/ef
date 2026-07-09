@@ -55,7 +55,7 @@ respective owners.
 
 		<blockquote><p>
 			If <m> A </m> and <m> B </m> are finite and do not intersect,
-			then <m> \abs{A \sqcup B} = \abs{A} + \abs{B} </m>.
+			then <m> \card{A \sqcup B} = \card{A} + \card{B} </m>.
 		</p></blockquote>
 
 	</statement>

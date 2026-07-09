@@ -509,8 +509,8 @@ continues.
 	<title>Counting partitions of a finite set</title>
 
 	<statement><p>
-		If <m> \abs{A} = n </m>, then the number of ways to partition <m> A </m> into <m> m </m> disjoint subsets <m> A_1, A_2, \dotsc, A_m </m>,
-		with each subset of predetermined size <m> \abs{A_j} = i_j </m>, is
+		If <m> \card{A} = n </m>, then the number of ways to partition <m> A </m> into <m> m </m> disjoint subsets <m> A_1, A_2, \dotsc, A_m </m>,
+		with each subset of predetermined size <m> \card{A_j} = i_j </m>, is
 		<md> \binom{n}{i_1,i_2,\dotsc,i_m} </md>.
 	</p></statement>
 

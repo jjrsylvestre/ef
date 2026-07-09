@@ -50,7 +50,7 @@ respective owners.
 	</p></task>
 	<task><p>
 		Relation <m> \mathord{\equiv} </m> on <m> A = \powset{\{a,b,c,d\}} </m>,
-		where <m> X \equiv Y </m> means <m> \abs{\cmplmnt{X}} = \abs{\cmplmnt{Y}} </m>.
+		where <m> X \equiv Y </m> means <m> \card{\cmplmnt{X}} = \card{\cmplmnt{Y}} </m>.
 		Example equivalence classes for <m> \emptyset, \{a\}, \{a,b\}, \{a,b,c\}, \{a,b,c,d\} </m>.
 	</p></task>
 	<task><p>

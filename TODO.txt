@@ -1,5 +1,3 @@
-* Look for use of \abs when it should be \card, especially in graph theory chapter.
-
 * Cool combinatoric formula:
   sum(choose(n,k)*2^k,k,0,n) = 3^n
   Proof idea:

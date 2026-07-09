@@ -552,7 +552,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 			so we have <m> \card{\tilde{v}_0} \ge \ell </m>.
 			Therefore,
 			<md>
-				<mrow> \abs{E} \amp \ge k - \ell + \card{\tilde{v}_0} </mrow>
+				<mrow> \card{E} \amp \ge k - \ell + \card{\tilde{v}_0} </mrow>
 				<mrow> \amp \ge k - \ell + \ell </mrow>
 				<mrow> \amp = k \text{.} </mrow>
 			</md>

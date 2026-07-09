@@ -305,7 +305,7 @@ We can generalize <xref ref="wexample-recur-induct-ball-recurrence" /> by replac
 
 </problem>
 
-<!-- So our previous example of <m> a_0 = 1 </m> and <m> a_n = 2a_{n-1} </m> for <m> n\ge 1 </m> gives <m> a_n = 2^n </m>, as expected. [<em>Recall:} this example was determining <m> \abs{\powset{A_n}} </m> for <m> \abs{A_n} = n </m>.] -->
+<!-- So our previous example of <m> a_0 = 1 </m> and <m> a_n = 2a_{n-1} </m> for <m> n\ge 1 </m> gives <m> a_n = 2^n </m>, as expected. [<em>Recall:} this example was determining <m> \card{\powset{A_n}} </m> for <m> \card{A_n} = n </m>.] -->
 
 <problem>
 
