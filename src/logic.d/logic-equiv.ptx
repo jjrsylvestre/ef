@@ -405,21 +405,26 @@ in logical calculations.
 
 	</ol></p></statement>
 
-	<proof><title>Proof idea</title><p><ol>
-
-		<li>
-			Think of <m> X </m> as an intermediate column in the calculation of the truth table of <m> A </m>.
-			Replacing <m> X </m> by <m> Y </m> does not change this column,
-			as the truth tables of <m> X </m> and <m> Y </m> are the same.
-		</li>
-
-		<li>
-			We leave this statement for you, the reader, to consider. (Again, think of the <m> C_i </m> as intermediate columns in the calculations of the truth tables of <m> A' </m> and <m> B' </m>.)
-		</li>
-
-	</ol></p></proof>
+	<proof><title>Proof idea for <xref ref="theorem-logic-equiv-subst-equiv-substatements">Statement</xref></title><p>
+		Think of <m> X </m> as an intermediate column in the calculation of the truth table of <m> A </m>.
+		Replacing <m> X </m> by <m> Y </m> does not change this column,
+		as the truth tables of <m> X </m> and <m> Y </m> are the same.
+	</p></proof>
 
 </theorem>
+
+<exercise>
+
+	<statement><p>
+		Prove <xref ref="theorem-logic-equiv-subst-equiv-into-variables">Statement</xref> of <xref ref="theorem-logic-equiv-subst-equiv" />.
+	</p></statement>
+
+	<hint><p>
+		As in the proof of <xref ref="theorem-logic-equiv-subst-equiv-substatements">Statement</xref>,
+		think of the <m> C_i </m> as intermediate columns in the calculations of the truth tables of <m> A' </m> and <m> B' </m>.
+	</p></hint>
+
+</exercise>
 
 <example><p>
 	One of DeMorgan's Laws

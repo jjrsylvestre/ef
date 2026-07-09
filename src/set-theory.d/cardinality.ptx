@@ -372,20 +372,19 @@ This fact lets us relate finite sets to each other.
 		</ol>
 	</p></statement>
 
-	<proof><title>Proof idea</title><p><ol>
-
-		<li> This is left to you as <xref ref="exercise-cardinality-finite-subset" />. </li>
-
-		<li>
-			Let <m> A </m> represent the image <m> f(C) </m>.
-			Then <m> A \subseteq B </m>, so we can apply
-			<xref ref="fact-cardinality-subset-of-finite-subset" text="local">Statement</xref>
-			and <xref ref="fact-cardinality-vs-bijection" />.
-		</li>
-
-	</ol></p></proof>
+	<proof><title>Proof idea for <xref ref="fact-cardinality-subset-of-finite-inj-image">Statement</xref></title><p>
+		Let <m> A </m> represent the image <m> f(C) </m>.
+		Then <m> A \subseteq B </m>, so we can apply
+		<xref ref="fact-cardinality-subset-of-finite-subset" text="local">Statement</xref>
+		and <xref ref="fact-cardinality-vs-bijection" />.
+	</p></proof>
 
 </fact>
+
+<p>
+The proof of <xref ref="fact-cardinality-subset-of-finite-subset">Statement</xref> of <xref ref="fact-cardinality-subset-of-finite" />
+is left to you as <xref ref="exercise-cardinality-finite-subset" />.
+</p>
 
 <p> We may also relate cardinality of finite sets to the union operation. </p>
 
@@ -618,24 +617,26 @@ Therefore, one must demonstrate that no <em>surjection</em> <m> \natnumlt{m} \sf
 				Every set <m> B </m> that contains <m> A </m> as a subset (<m> B \supseteq A </m>) is infinite.
 			</li>
 
-			<li> If <m> \funcdef{f}{A}{B} </m> is an injection, then <m> B </m> is also infinite. </li>
+			<li xml:id="fact-cardinality-contains-infinite-subset-injection">
+				If <m> \funcdef{f}{A}{B} </m> is an injection, then <m> B </m> is also infinite.
+			</li>
 
 		</ol>
 	</p></statement>
 
-	<proof><p><ol>
-
-		<li> This is left to you as <xref ref="exercise-cardinality-infinite-supset" />. </li>
-
-		<li>
-			This is just the contrapositive of
-			<xref ref="fact-cardinality-subset-of-finite-inj-image" text="local">Statement</xref>
-			of <xref ref="fact-cardinality-subset-of-finite" />.
-		</li>
-
-	</ol></p></proof>
+	<proof><title>Proof of <xref ref="fact-cardinality-contains-infinite-subset-injection">Statement</xref></title><p>
+		This is just the contrapositive of
+		<xref ref="fact-cardinality-subset-of-finite-inj-image" text="local">Statement</xref>
+		of <xref ref="fact-cardinality-subset-of-finite" />.
+	</p></proof>
 
 </fact>
+
+<p>
+The proof of <xref ref="fact-cardinality-contains-infinite-subset-subset">Statement</xref> of <xref ref="fact-cardinality-contains-infinite-subset" />
+is left to you as <xref ref="exercise-cardinality-infinite-supset" />.
+</p>
+
 
 <problem> <!-- worked example -->
 

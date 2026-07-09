@@ -256,7 +256,7 @@ They can be used to more easily prove that a set is countable or uncountable usi
 </p>
 
 <proposition xml:id="proposition-countable-properties">
-	<title>Countability properties</title>
+	<title>Properties of countability</title>
 
 	<statement><p><ol>
 
@@ -284,54 +284,53 @@ They can be used to more easily prove that a set is countable or uncountable usi
 
 	</ol></p></statement>
 
-	<proof><title>Proof outline</title><p><ol>
+	<proof><title>Proof outline for <xref ref="proposition-countable-properties-nat-num">Statement</xref></title><p>
+		Assume <m> A \subseteq \N </m>.
+		If <m> A </m> is finite, then it is countable by definition.
+		So assume that <m> \card{A} = \infty </m>.
+		We can construct a sequence <m> \{a_k\} </m> that contains each element of <m> A </m> exactly once as follows.
+		<md>
+			<mrow> a_0 \amp = \text{ smallest number in } A, </mrow>
+			<mrow> a_1 \amp = \text{ next smallest number in } A, </mrow>
+			<mrow> a_2 \amp = \text{ next smallest number in } A, </mrow>
+			<mrow> \amp \phantom{=} \; \vdots </mrow>
+		</md>
+		Therefore, <m> A </m> is countable.
+	</p></proof>
 
-		<li>
-			Assume <m> A \subseteq \N </m>.
-			If <m> A </m> is finite, then it is countable by definition.
-			So assume that <m> \card{A} = \infty </m>.
-			We can construct a sequence <m> \{a_k\} </m> that contains each element of <m> A </m> exactly once as follows.
-			<md>
-				<mrow> a_0 \amp = \text{ smallest number in } A, </mrow>
-				<mrow> a_1 \amp = \text{ next smallest number in } A, </mrow>
-				<mrow> a_2 \amp = \text{ next smallest number in } A, </mrow>
-				<mrow> \amp \phantom{=} \; \vdots </mrow>
-			</md>
-			Therefore, <m> A </m> is countable.
-		</li>
+	<proof><title>Proof outline for <xref ref="proposition-countable-properties-injection">Statement</xref></title><p>
+		If <m> \ifuncdef{f}{A}{\N} </m> is injective, then <m> \funcdef{f}{A}{f(A)} </m> is a bijection, so that <m> A </m> and its image <m> f(A) </m> have the same size.
+		But <m> f(A) </m> is countable by <xref ref="proposition-countable-properties-nat-num" text="local">Statement</xref>,
+		so using the definition of countable along with <xref ref="fact-cardinality-same-size-transitivity" />,
+		conclude that <m> A </m> is countable.
+	</p></proof>
 
-		<li>
-			If <m> \ifuncdef{f}{A}{\N} </m> is injective, then <m> \funcdef{f}{A}{f(A)} </m> is a bijection, so that <m> A </m> and its image <m> f(A) </m> have the same size.
-			But <m> f(A) </m> is countable by <xref ref="proposition-countable-properties-nat-num" text="local">Statement</xref>,
-			so using the definition of countable along with <xref ref="fact-cardinality-same-size-transitivity" />,
-			conclude that <m> A </m> is countable.
-		</li>
+	<proof><title>Proof outline for <xref ref="proposition-countable-properties-subset">Statement</xref></title><p>
+		If <m> B </m> is countable, then by definition there exists a bijection <m> \funcdef{f}{B}{\N} </m>.
+		Then <m> \funcdef{\funcres{f}{A}}{A}{\N} </m> is an injection.
+		Apply <xref ref="proposition-countable-properties-injection" text="local">Statement</xref>.
+	</p></proof>
 
-		<li>
-			If <m> B </m> is countable, then by definition there exists a bijection <m> \funcdef{f}{B}{\N} </m>.
-			Then <m> \funcdef{\funcres{f}{A}}{A}{\N} </m> is an injection.
-			Apply <xref ref="proposition-countable-properties-injection" text="local">Statement</xref>.
-		</li>
+	<proof><title>Proof outline for <xref ref="proposition-countable-properties-uncountable-subset">Statement</xref></title><p>
+		This is the contrapositive of
+		<xref ref="proposition-countable-properties-subset" text="local">Statement</xref>,
+		under the common assumption <m> A \subseteq B </m>.
+	</p></proof>
 
-		<li>
-			This is the contrapositive of
-			<xref ref="proposition-countable-properties-subset" text="local">Statement</xref>,
-			under the common assumption <m> A \subseteq B </m>.
-		</li>
+	<proof><title>Proof outline for <xref ref="proposition-countable-properties-union-intersection">Statement</xref></title>
 
-		<li>
-			<p> For <m> A \cap B </m>, consider <m> A \cap B \subseteq A </m> and apply <xref ref="proposition-countable-properties-subset" text="local">Statement</xref>. </p>
-			<p>
-			Now consider <m> A \cup B </m>.
-			For simplicity, we will assume <m> A \cap B = \emptyset </m>, so that <m> A \cup B = A \sqcup B </m>.
-			Since <m> A </m> and <m> B </m> are countable, we can write their elements as sequences:
-			<md><mrow> A \amp = \{ \, a_0, \, a_1, \, a_2, \, \dotsc \, \}, \amp B \amp = \{ \, b_0, \, b_1, \, b_2, \, \dotsc \, \} </mrow></md>.
-			We can then write the elements of <m> A \sqcup B </m> in a sequence by interleaving these two sequences:
-			<md> A \sqcup B = \{ \, a_0, \, b_0, \, a_1, \, b_1, \, a_2, \, b_2, \, \dotsc \, \} </md>.
-			</p>
-		</li>
+		<p> For <m> A \cap B </m>, consider <m> A \cap B \subseteq A </m> and apply <xref ref="proposition-countable-properties-subset" text="local">Statement</xref>. </p>
 
-	</ol></p></proof>
+		<p>
+		Now consider <m> A \cup B </m>.
+		For simplicity, we will assume <m> A \cap B = \emptyset </m>, so that <m> A \cup B = A \sqcup B </m>.
+		Since <m> A </m> and <m> B </m> are countable, we can write their elements as sequences:
+		<md><mrow> A \amp = \{ \, a_0, \, a_1, \, a_2, \, \dotsc \, \}, \amp B \amp = \{ \, b_0, \, b_1, \, b_2, \, \dotsc \, \} </mrow></md>.
+		We can then write the elements of <m> A \sqcup B </m> in a sequence by interleaving these two sequences:
+		<md> A \sqcup B = \{ \, a_0, \, b_0, \, a_1, \, b_1, \, a_2, \, b_2, \, \dotsc \, \} </md>.
+		</p>
+
+	</proof>
 
 </proposition>
 
