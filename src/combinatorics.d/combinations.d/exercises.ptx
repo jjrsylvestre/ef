@@ -68,4 +68,20 @@ respective owners.
 	becomes a formula for the sum <m> 1 + 2 + 3 + \dotsb + n </m>.
 </p></exercise>
 
+<exercise><p>
+	Prove the identity
+	<md> \sum_{k = 0}^n \left( \combinationalt{n}{k} \cdot 2^k \right) = 3^n </md>
+	by arguing that each side (separately) represents the cardinality of the set
+	<md> \setdef{ (A,B) \in \powset{X} \cartprod \powset{X} }{ A \intersection B = \emptyset } </md>
+	when <m> \card{X} = n </m>.
+	<!-- SOLUTION
+		LHS:
+			Cases based on k = |A∪B|, possibilities are k=0..n.
+            Case k: Choose k objects to make up A∪B, then for each of those have a binary A-or-B choice.
+        RHS:
+            To create such a pair (A,B), label two bins as 'A' and 'B'.
+            For each object in X, have a ternary A-or-B-or-neither choice.
+	-->
+</p></exercise>
+
 </exercises>

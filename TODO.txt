@@ -1,11 +1,3 @@
-* Cool combinatoric formula:
-  sum(choose(n,k)*2^k,k,0,n) = 3^n
-  Proof idea:
-  For |X|=n, both sides count the size of set
-  { (A,B) ∈ 𝓟 (X) × 𝓟 (X) | A∩B = ∅ }.
-  LHS: Cases based on k = |A∪B|, possibilities are k=0..n.
-       Case k: Choose k objects to make up A∪B, then for each of those have a binary A-or-B choice.
-  RHS: For each object in X, have a ternary A-or-B-or-neither choice.
 
 * Need some better examples in funcs.d/activities.ptx of describing image in set notation.
   (See TODO in that file.)
