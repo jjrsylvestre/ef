@@ -68,6 +68,8 @@ html-clean:
 html-images-clean:
 	@-rm -f ${BUILDDIR}/html/images/.sentinal
 	@-rm -f ${BUILDDIR}/html/images/*.svg
+	@-rm -f ${BUILDDIR}/html-image-pdfs/.sentinal
+	@-rm -f ${BUILDDIR}/html-image-pdfs/*.pdf
 
 ptx: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx preprocess.xsl
 html: ${BUILDDIR}/html/.sentinal html-out.xml
@@ -114,16 +116,34 @@ ${BUILDDIR}/html/images/.sentinal: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@-rm -f ${BUILDDIR}/html/images/.sentinal
 	@mkdir -p ${BUILDDIR}/html/images
 	@echo "...calling pretext to generate images"
+	@echo "...(restricted to ${ROOT_XMLID})"
 	@${PRETEXTDIR}/pretext/pretext \
 	  --verbose \
 	  --config pretext.cfg \
 	  --component latex-image \
 	  --format svg \
+	  --restrict ${ROOT_XMLID} \
 	  --directory ${BUILDDIR}/html/images \
 	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "...copying institution logo"
 	@-cp images/${BRANDLOGO} ${BUILDDIR}/html/images
 	@touch ${BUILDDIR}/html/images/.sentinal
+	@echo "...DONE"
+
+${BUILDDIR}/html-image-pdfs/.sentinal: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
+	@echo "Generating PDF image files..."
+	@-rm -f ${BUILDDIR}/html-image-pdfs/.sentinal
+	@mkdir -p ${BUILDDIR}/html-image-pdfs
+	@echo "...calling pretext to generate images"
+	@echo "...(restricted to ${ROOT_XMLID})"
+	@${PRETEXTDIR}/pretext/pretext \
+	  --verbose \
+	  --component latex-image \
+	  --format pdf \
+	  --restrict ${ROOT_XMLID} \
+	  --directory ${BUILDDIR}/html-image-pdfs \
+	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
+	@touch ${BUILDDIR}/html-image-pdfs/.sentinal
 	@echo "...DONE"
 
 html-fonts: \
