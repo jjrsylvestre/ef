@@ -1,9 +1,9 @@
-SOURCES = \
-  $(wildcard src/*.ptx) $(wildcard src/*.tex) \
-  $(wildcard src/*/*.ptx) $(wildcard src/*/*.tex) \
-  $(wildcard src/*/*/*.ptx) $(wildcard src/*/*/*.tex) \
-  $(wildcard src/*/*/*/*.ptx) $(wildcard src/*/*/*/*.tex)
-# I think that's as deep as things go...
+# recursive wildcard, from answers to
+# https://stackoverflow.com/questions/2483182/recursive-wildcards-in-gnu-make
+#
+rwildcard=$(foreach d,$(wildcard $(1:=/*)),$(call rwildcard,$d,$2) $(filter $(subst *,%,$2),$d))
+
+SOURCES = $(call rwildcard,src,*.ptx *.tex)
 
 BRANDLOGO=AUG-Colour.png
 ROOTDOCNAME=book
@@ -21,6 +21,8 @@ REMOTE_LOCATION=
   clean ptx-clean html-clean html-images-clean \
   help list
 
+log_error = (>&2 echo ">>>> $1" && exit 1)
+
 list: help
 help:
 	@echo "== TARGETS ==============="
@@ -29,7 +31,6 @@ help:
 	@echo "> html-all           : Perform all steps necessary to create HTML version of the activity set."
 	@echo "> html               : Output (only) HTML files containing all worksheets."
 	@echo "> html-images        : Create SVG image files to accompany the html output for all worksheets."
-	@echo "> html-fonts         : Copy STIX2Text fonts into the HTML build directory."
 	@echo "> html-serve         : Fire up a simple Python web server to locally host the HTML output."
 	@echo "> html-deploy        : rsync HTML files to a remote server."
 	@echo "                       Requires that the REMOTE_LOCATION parameter be set on the command line."
@@ -49,7 +50,7 @@ help:
 	@echo "                   [Default: unset]"
 
 
-html-all: html html-images html-fonts
+html-all: html html-images
 
 html-deploy: html-all
 	@[ "$(REMOTE_LOCATION)" ] || $(call log_error, "REMOTE_LOCATION not set!")
@@ -145,22 +146,6 @@ ${BUILDDIR}/html-image-pdfs/.sentinal: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@touch ${BUILDDIR}/html-image-pdfs/.sentinal
 	@echo "...DONE"
-
-html-fonts: \
-  ${BUILDDIR}/html/fonts/STIXTwoText-Bold.woff2 \
-  ${BUILDDIR}/html/fonts/STIXTwoText-BoldItalic.woff2 \
-  ${BUILDDIR}/html/fonts/STIXTwoText-Italic.woff2 \
-  ${BUILDDIR}/html/fonts/STIXTwoText-Medium.woff2 \
-  ${BUILDDIR}/html/fonts/STIXTwoText-MediumItalic.woff2 \
-  ${BUILDDIR}/html/fonts/STIXTwoText-Regular.woff2 \
-  ${BUILDDIR}/html/fonts/STIXTwoText-SemiBold.woff2 \
-  ${BUILDDIR}/html/fonts/STIXTwoText-SemiBoldItalic.woff2
-#   ${BUILDDIR}/html/fonts/STIXTwoMath-Regular.woff2
-
-
-${BUILDDIR}/html/fonts/%.woff2: stixfonts/fonts/static_otf_woff2/%.woff2
-	@mkdir -p ${BUILDDIR}/html/fonts
-	-cp $< ${BUILDDIR}/html/fonts/
 
 ${BUILDDIR}/latex/${ROOTDOCNAME}.tex: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "Converting PTX to LATEX..."
