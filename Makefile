@@ -90,30 +90,28 @@ ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx: $(SOURCES) | validate-xml
 	@echo "...DONE"
 
 ${BUILDDIR}/html/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
-	@echo "${BUILDDIR}/html/.sentinel"
-# ${BUILDDIR}/html/.sentinel: html-fonts ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
-# 	@echo "Converting PTX to HTML..."
-# 	@-rm -f ${BUILDDIR}/html/.sentinel
-# 	@mkdir -p ${BUILDDIR}/html/knowl
-# 	@echo "...calling pretext to compile PreTeXt document"
-# 	@${PRETEXTDIR}/pretext/pretext \
-# 	  --verbose \
-# 	  --config pretext.cfg \
-# 	  --component all \
-# 	  --format html \
-# 	  --publisher html-out.xml \
-# 	  --parameters \
-# 	    html.css.extra ef.css \
-# 	  --directory ${BUILDDIR}/html \
-# 	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
-# 	@echo "...copying css style customizations"
-# 	@cp css/ef.css ${BUILDDIR}/html/
-# 	@sed -i -e 's/scale: 0\.[0-9]*,/scale: 1.00,/' ${BUILDDIR}/html/*.html
-# 	@touch ${BUILDDIR}/html/.sentinel
-# 	@echo "...DONE"
-# 	@echo "Now call:"
-# 	@echo "   make html-images  (to build SVG images)"
-# 	@echo "   make html-serve   (to serve the output locally for previewing)"
+	@echo "Converting PTX to HTML..."
+	@-rm -f ${BUILDDIR}/html/.sentinel
+	@mkdir -p ${BUILDDIR}/html/knowl
+	@echo "...calling pretext to compile PreTeXt document"
+	@${PRETEXTDIR}/pretext/pretext \
+	  --verbose \
+	  --config pretext.cfg \
+	  --component all \
+	  --format html \
+	  --publisher html-out.xml \
+	  --parameters \
+	    html.css.extra ef.css \
+	  --directory ${BUILDDIR}/html \
+	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
+	@echo "...copying css style customizations"
+	@cp css/ef.css ${BUILDDIR}/html/
+	@sed -i -e 's/scale: 0\.[0-9]*,/scale: 1.00,/' ${BUILDDIR}/html/*.html
+	@touch ${BUILDDIR}/html/.sentinel
+	@echo "...DONE"
+	@echo "Now call:"
+	@echo "   make html-images  (to build SVG images)"
+	@echo "   make html-serve   (to serve the output locally for previewing)"
 
 ${BUILDDIR}/html/images/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "Generating SVG files for HTML output..."
