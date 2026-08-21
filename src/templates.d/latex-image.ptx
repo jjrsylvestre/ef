@@ -1,4 +1,6 @@
 <image>
 	<description>HTML ALT TEXT</description>
-	<latex-image><xi:include href="CHAPTER.d/IMAGE.tex" parse="text" /></latex-image>
+	<latex-image label="image-CHAPTER-DESC">
+		<xi:include href="CHAPTER.d/IMAGE.tex" parse="text" />
+	</latex-image>
 </image>

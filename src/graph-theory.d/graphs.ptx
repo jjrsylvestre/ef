@@ -90,9 +90,11 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 
 	<figure>
 		<caption>Diagram of the graph <m> G = (V,E) </m>.</caption>
-		<image xml:id="image-graphs-basic-example" width="25.5%">
+		<image width="25.5%">
 			<shortdescription> Diagram illustrating a basic example graph. </shortdescription>
-			<latex-image><xi:include href="graphs.d/basic-example.tex" parse="text" /></latex-image>
+			<latex-image label="image-graphs-basic-example">
+				<xi:include href="graphs.d/basic-example.tex" parse="text" />
+			</latex-image>
 		</image>
 	</figure>
 
@@ -112,9 +114,11 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 
 	<figure>
 		<caption>Diagram of the graph <m> G = (V,E) </m>.</caption>
-		<image xml:id="image-graphs-basic-complicated-example" width="37.9%">
+		<image width="37.9%">
 			<shortdescription> Diagram illustrating a slightly more complicated example graph. </shortdescription>
-			<latex-image><xi:include href="graphs.d/basic-complicated-example.tex" parse="text" /></latex-image>
+			<latex-image label="image-graphs-basic-complicated-example">
+				<xi:include href="graphs.d/basic-complicated-example.tex" parse="text" />
+			</latex-image>
 		</image>
 	</figure>
 
@@ -140,11 +144,13 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 
 		<figure>
 			<caption>Graph to track possible jug fill states.</caption>
-			<image xml:id="image-graphs-jugs" width="54.1%">
+			<image width="54.1%">
 				<shortdescription>
 					A graph where nodes are jug fill states and edges represent being able to obtain one state from another by a single pour.
 				</shortdescription>
-				<latex-image><xi:include href="graphs.d/jugs.tex" parse="text" /></latex-image>
+				<latex-image label="image-graphs-jugs">
+					<xi:include href="graphs.d/jugs.tex" parse="text" />
+				</latex-image>
 			</image>
 		</figure>
 
@@ -405,9 +411,11 @@ as well as how much <q>redundancy</q> the graph contains.
 
 		<figure xml:id="figure-graphs-basic-subgraphs">
 			<caption>All possible subgraphs of our basic example graph from <xref ref="example-graphs-basic-graph-1" />.</caption>
-			<image xml:id="image-graphs-basic-subgrphs" width="96.4%">
+			<image width="96.4%">
 				<shortdescription> All possible subgraphs of our basic example graph. </shortdescription>
-				<latex-image><xi:include href="graphs.d/basic-subgraphs.tex" parse="text" /></latex-image>
+				<latex-image label="image-graphs-basic-subgrphs">
+					<xi:include href="graphs.d/basic-subgraphs.tex" parse="text" />
+				</latex-image>
 			</image>
 		</figure>
 
@@ -473,25 +481,31 @@ as well as how much <q>redundancy</q> the graph contains.
 
 			<figure>
 				<caption><m> K_1 </m>.</caption>
-				<image xml:id="image-graphs-K1">
+				<image>
 					<shortdescription> Complete graph with one vertex </shortdescription>
-					<latex-image><xi:include href="graphs.d/K1.tex" parse="text" /></latex-image>
+					<latex-image label="image-graphs-K1">
+						<xi:include href="graphs.d/K1.tex" parse="text" />
+					</latex-image>
 				</image>
 			</figure>
 
 			<figure>
 				<caption><m> K_2 </m>.</caption>
-				<image xml:id="image-graphs-K2">
+				<image>
 					<shortdescription> Complete graph with two vertices </shortdescription>
-					<latex-image><xi:include href="graphs.d/K2.tex" parse="text" /></latex-image>
+					<latex-image label="image-graphs-K2">
+						<xi:include href="graphs.d/K2.tex" parse="text" />
+					</latex-image>
 				</image>
 			</figure>
 
 			<figure>
 				<caption><m> K_3 </m>.</caption>
-				<image xml:id="image-graphs-K3">
+				<image>
 					<shortdescription> Complete graph with three vertices </shortdescription>
-					<latex-image><xi:include href="graphs.d/K3.tex" parse="text" /></latex-image>
+					<latex-image label="image-graphs-K3">
+						<xi:include href="graphs.d/K3.tex" parse="text" />
+					</latex-image>
 				</image>
 			</figure>
 
@@ -501,9 +515,11 @@ as well as how much <q>redundancy</q> the graph contains.
 
 			<figure>
 				<caption><m> K_6 </m>.</caption>
-				<image xml:id="image-graphs-K6">
+				<image>
 					<shortdescription> Complete graph with six vertices </shortdescription>
-					<latex-image><xi:include href="graphs.d/K6.tex" parse="text" /></latex-image>
+					<latex-image label="image-graphs-K6">
+						<xi:include href="graphs.d/K6.tex" parse="text" />
+					</latex-image>
 				</image>
 			</figure>
 
@@ -569,9 +585,11 @@ as well as how much <q>redundancy</q> the graph contains.
 
 		<figure>
 			<caption>Road map of the area around Camrose, Alberta.</caption>
-			<image xml:id="image-graphs-camrose-highways">
+			<image>
 				<shortdescription> Road map of the area around Camrose, Alberta. </shortdescription>
-				<latex-image><xi:include href="graphs.d/camrose-highways.tex" parse="text" /></latex-image>
+				<latex-image label="image-graphs-camrose-highways">
+					<xi:include href="graphs.d/camrose-highways.tex" parse="text" />
+				</latex-image>
 			</image>
 		</figure>
 
@@ -651,9 +669,11 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 
 	<figure>
 		<caption>Diagram of the directed graph <m> G = (V,E) </m>.</caption>
-		<image xml:id="image-graphs-basic-directed" width="59.1%">
+		<image width="59.1%">
 			<shortdescription> Diagram for a basic directed graph. </shortdescription>
-			<latex-image><xi:include href="graphs.d/basic-directed.tex" parse="text" /></latex-image>
+			<latex-image label="image-graphs-basic-directed">
+				<xi:include href="graphs.d/basic-directed.tex" parse="text" />
+			</latex-image>
 		</image>
 	</figure>
 
@@ -697,9 +717,11 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 
 	<figure xml:id="figure-graphs-pow-set">
 		<caption>Directed graph to represent the subset relationships between elements of <m> \powset{A} </m>.</caption>
-		<image xml:id="image-graphs-powset" width="47%">
+		<image width="47%">
 			<shortdescription> Directed graph representing subset relationships in a power set. </shortdescription>
-			<latex-image><xi:include href="graphs.d/powset.tex" parse="text" /></latex-image>
+			<latex-image label="image-graphs-powset">
+				<xi:include href="graphs.d/powset.tex" parse="text" />
+			</latex-image>
 		</image>
 	</figure>
 
@@ -752,9 +774,11 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 
 	<figure xml:id="figure-graphs-divides">
 		<caption>Directed graph to represent the relationship of division between elements of <m> V </m>.</caption>
-		<image xml:id="image-graphs-divides" width="52%">
+		<image width="52%">
 			<shortdescription> Directed graph representing division relationships in a set of integers. </shortdescription>
-			<latex-image><xi:include href="graphs.d/divides.tex" parse="text" /></latex-image>
+			<latex-image label="image-graphs-divides">
+				<xi:include href="graphs.d/divides.tex" parse="text" />
+			</latex-image>
 		</image>
 	</figure>
 
@@ -773,9 +797,11 @@ consider the direction of <m> e </m> to be <m> v \to v' </m>.
 
 	<figure>
 		<caption>Road map of major centres in Alberta as a weighted graph.</caption>
-		<image xml:id="image-graphs-travelling" width="100%">
+		<image width="100%">
 			<shortdescription> Road map of major centres in Alberta as a weighted graph. </shortdescription>
-			<latex-image><xi:include href="graphs.d/travelling.tex" parse="text" /></latex-image>
+			<latex-image label="image-graphs-travelling">
+				<xi:include href="graphs.d/travelling.tex" parse="text" />
+			</latex-image>
 		</image>
 	</figure>
 

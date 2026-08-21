@@ -25,9 +25,11 @@ respective owners.
 
 		<p> Consider the following graph. </p>
 
-		<image xml:id="image-graphs-basics" width="38.2%">
+		<image width="38.2%">
 			<shortdescription> An example graph. </shortdescription>
-			<latex-image><xi:include href="exercises.d/basics.tex" parse="text" /></latex-image>
+			<latex-image label="image-graphs-basics">
+				<xi:include href="exercises.d/basics.tex" parse="text" />
+			</latex-image>
 		</image>
 
 	</introduction>
@@ -103,9 +105,11 @@ respective owners.
 
 		<figure xml:id="figure-graphs-complement-basic">
 			<caption>A simple graph.</caption>
-			<image xml:id="image-graphs-complement" width="17.3%">
+			<image width="17.3%">
 				<shortdescription> A simple graph. </shortdescription>
-				<latex-image><xi:include href="exercises.d/complement.tex" parse="text" /></latex-image>
+				<latex-image label="image-graphs-complement">
+					<xi:include href="exercises.d/complement.tex" parse="text" />
+				</latex-image>
 			</image>
 		</figure>
 

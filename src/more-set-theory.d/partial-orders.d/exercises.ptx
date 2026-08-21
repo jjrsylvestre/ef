@@ -28,15 +28,19 @@ respective owners.
 		Justify your answers.
 	</p></introduction>
 	<exercise>
-		<image xml:id="image-partial-orders-verify-from-graph-1" width="51.6%">
+		<image width="51.6%">
 			<shortdescription> An example graph for verifying the partial order definition. </shortdescription>
-			<latex-image><xi:include href="exercises.d/verify-from-graph-1.tex" parse="text" /></latex-image>
+			<latex-image label="image-partial-orders-verify-from-graph-1">
+				<xi:include href="exercises.d/verify-from-graph-1.tex" parse="text" />
+			</latex-image>
 		</image>
 	</exercise>
 	<exercise>
-		<image xml:id="image-partial-orders-verify-from-graph-2" width="51.6%">
+		<image width="51.6%">
 			<shortdescription> An example graph for verifying the partial order definition. </shortdescription>
-			<latex-image><xi:include href="exercises.d/verify-from-graph-2.tex" parse="text" /></latex-image>
+			<latex-image label="image-partial-orders-verify-from-graph-2">
+				<xi:include href="exercises.d/verify-from-graph-2.tex" parse="text" />
+			</latex-image>
 		</image>
 	</exercise>
 </exercisegroup>
@@ -122,15 +126,19 @@ respective owners.
 		<xref ref="definition-partial-orders-compatible-total-order" text="title" /> on <m> A </m>.
 	</p></introduction>
 	<exercise>
-		<image xml:id="image-partial-orders-total-from-hasse-1" width="71.0%">
+		<image width="71.0%">
 			<shortdescription> A Hasse diagram for a topological sorting exercise. </shortdescription>
-			<latex-image><xi:include href="exercises.d/total-from-hasse-1.tex" parse="text" /></latex-image>
+			<latex-image label="image-partial-orders-total-from-hasse-1">
+				<xi:include href="exercises.d/total-from-hasse-1.tex" parse="text" />
+			</latex-image>
 		</image>
 	</exercise>
 	<exercise>
-		<image xml:id="image-partial-orders-total-from-hasse-2" width="92.2%">
+		<image width="92.2%">
 			<shortdescription> A Hasse diagram for a topological sorting exercise. </shortdescription>
-			<latex-image><xi:include href="exercises.d/total-from-hasse-2.tex" parse="text" /></latex-image>
+			<latex-image label="image-partial-orders-total-from-hasse-2">
+				<xi:include href="exercises.d/total-from-hasse-2.tex" parse="text" />
+			</latex-image>
 		</image>
 	</exercise>
 </exercisegroup>

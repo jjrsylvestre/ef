@@ -41,9 +41,11 @@ respective owners.
 
 		<p> Determine the equivalence classes for this relation when <m> G </m> is the graph below. </p>
 
-		<image xml:id="image-equiv-rel-even-trails" width="39.4%">
+		<image width="39.4%">
 			<shortdescription> An example graph for vertices equivalent when connected by a trail traversing an even number of edges. </shortdescription>
-			<latex-image><xi:include href="exercises.d/even-trails.tex" parse="text" /></latex-image>
+			<latex-image label="image-equiv-rel-even-trails">
+				<xi:include href="exercises.d/even-trails.tex" parse="text" />
+			</latex-image>
 		</image>
 
 	</task>

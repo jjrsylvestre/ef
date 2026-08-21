@@ -57,9 +57,11 @@ respective owners.
 
 	<p> Suppose that <m> G </m> is a connected graph that <em>consists entirely of</em> a proper cycle. </p>
 
-	<image xml:id="image-trees-only-cycle" width="17.9%">
+	<image width="17.9%">
 		<shortdescription> A graph that consists entirely of a proper cycle. </shortdescription>
-		<latex-image><xi:include href="activities.d/only-cycle.tex" parse="text" /></latex-image>
+		<latex-image label="image-trees-only-cycle">
+			<xi:include href="activities.d/only-cycle.tex" parse="text" />
+		</latex-image>
 	</image>
 
 	<p>

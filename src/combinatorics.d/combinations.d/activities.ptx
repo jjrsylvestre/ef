@@ -65,9 +65,11 @@ respective owners.
 
 		<figure xml:id="figure-combinations-plinko">
 			<caption>A Plinko<trademark />-style pyramid.</caption>
-			<image xml:id="image-combinations-plinko" width="50%">
+			<image width="50%">
 				<shortdescription> A pyramid maze.</shortdescription>
-				<latex-image><xi:include href="activities.d/plinko.tex" parse="text" /></latex-image>
+				<latex-image label="image-combinations-plinko">
+					<xi:include href="activities.d/plinko.tex" parse="text" />
+				</latex-image>
 			</image>
 		</figure>
 
