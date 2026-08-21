@@ -1208,54 +1208,55 @@ it doesn't really matter in what <q>order</q> we place the elements of <m> A </m
 	Consider the sets <m> A = \{a, \alpha, \phi, z\} </m> and <m> B = \{1,2,3\} </m>.
 	Instead of listing the elements of <m> A \cartprod B </m>,
 	we will place them in a grid.
-	In <xref ref="figure-sets-visualize-cartesian-prod" />,
+	<!-- In <xref ref="figure-sets-visualize-cartesian-prod" />, -->
+	In the diagram below,
 	you might imagine that the elements of <m> A </m> listed along the bottom row make up a horizontal axis and the elements of <m> B </m> along the leftmost column make up a vertical axis.
 	But take care that these <q>axes</q> are not a continuum of values <mdash />
 	there are no other <q>values</q> between these <q>coordinate values</q> along the <q>axes</q>.
-	For example, there is no <m> 1.5 </m> along the <q>horizontal axis.</q>
+	For example, there is no <m> 1.5 </m> along the <q>vertical axis.</q>
 	Similarly, there are no other <q>points</q> between the elements of <m> A \cartprod B </m>.
 	</p>
 
-	<figure xml:id="figure-sets-visualize-cartesian-prod">
+	<!-- <figure xml:id="figure-sets-visualize-cartesian-prod">
 		<caption>Visualizing elements of <m> A \cartprod B </m> as <q>points</q> in a grid relative to a set of perpendicular <q>axes.</q></caption>
-		<sidebyside>
+		<sidebyside> -->
 
-			<tabular halign="center">
-				<col /><col /><col /><col /><col /><col />
-				<row><cell><m> B </m></cell></row>
-				<row>
-					<cell right="medium"><m> 3 </m></cell>
-					<cell><m> (a,3) </m></cell>
-					<cell><m> (\alpha,3) </m></cell>
-					<cell><m> (\phi,3) </m></cell>
-					<cell><m> (z,3) </m></cell>
-				</row>
-				<row>
-					<cell right="medium"><m> 2 </m></cell>
-					<cell><m> (a,2) </m></cell>
-					<cell><m> (\alpha,2) </m></cell>
-					<cell><m> (\phi,2) </m></cell>
-					<cell><m> (z,2) </m></cell>
-				</row>
-				<row bottom="medium">
-					<cell right="medium"><m> 1 </m></cell>
-					<cell><m> (a,1) </m></cell>
-					<cell><m> (\alpha,1) </m></cell>
-					<cell><m> (\phi,1) </m></cell>
-					<cell><m> (z,1) </m></cell>
-				</row>
-				<row>
-					<cell right="medium" />
-					<cell><m> a </m></cell>
-					<cell><m> \alpha </m></cell>
-					<cell><m> \phi </m></cell>
-					<cell><m> z </m></cell>
-					<cell><m> A </m></cell>
-				</row>
-			</tabular>
+	<tabular halign="center">
+		<col /><col /><col /><col /><col /><col />
+		<row><cell><m> B </m></cell></row>
+		<row>
+			<cell right="medium"><m> 3 </m></cell>
+			<cell><m> (a,3) </m></cell>
+			<cell><m> (\alpha,3) </m></cell>
+			<cell><m> (\phi,3) </m></cell>
+			<cell><m> (z,3) </m></cell>
+		</row>
+		<row>
+			<cell right="medium"><m> 2 </m></cell>
+			<cell><m> (a,2) </m></cell>
+			<cell><m> (\alpha,2) </m></cell>
+			<cell><m> (\phi,2) </m></cell>
+			<cell><m> (z,2) </m></cell>
+		</row>
+		<row bottom="medium">
+			<cell right="medium"><m> 1 </m></cell>
+			<cell><m> (a,1) </m></cell>
+			<cell><m> (\alpha,1) </m></cell>
+			<cell><m> (\phi,1) </m></cell>
+			<cell><m> (z,1) </m></cell>
+		</row>
+		<row>
+			<cell right="medium" />
+			<cell><m> a </m></cell>
+			<cell><m> \alpha </m></cell>
+			<cell><m> \phi </m></cell>
+			<cell><m> z </m></cell>
+			<cell><m> A </m></cell>
+		</row>
+	</tabular>
 
-		</sidebyside>
-	</figure>
+		<!-- </sidebyside>
+	</figure> -->
 </example>
 
 </subsection>

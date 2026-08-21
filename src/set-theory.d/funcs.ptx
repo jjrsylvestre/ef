@@ -425,33 +425,35 @@ for example, by:
 	can be represented as below.
 	</p>
 
-	<figure>
+	<!-- <figure>
 		<caption>The graph <m> \funcgraph{S} </m> of the logical statement <m> S(p_1,p_2) = p_1 \lgccond p_2 </m>.</caption>
-		<sidebyside><tabular halign="center">
-			<col /><col right="minor" /><col />
-			<row bottom="minor">
-				<cell><m> p_1 </m></cell>
-				<cell><m> p_2 </m></cell>
-				<cell><m> S(p_1,p_2) </m></cell>
-			</row><row>
-				<cell><m> \lgctrue </m></cell>
-				<cell><m> \lgctrue </m></cell>
-				<cell><m> \lgctrue </m></cell>
-			</row><row>
-				<cell><m> \lgctrue </m></cell>
-				<cell><m> \lgcfalse </m></cell>
-				<cell><m> \lgcfalse </m></cell>
-			</row><row>
-				<cell><m> \lgcfalse </m></cell>
-				<cell><m> \lgctrue </m></cell>
-				<cell><m> \lgctrue </m></cell>
-			</row><row>
-				<cell><m> \lgcfalse </m></cell>
-				<cell><m> \lgcfalse </m></cell>
-				<cell><m> \lgctrue </m></cell>
-			</row>
-		</tabular></sidebyside>
-	</figure>
+		<sidebyside> -->
+	<tabular halign="center">
+		<col /><col right="minor" /><col />
+		<row bottom="minor">
+			<cell><m> p_1 </m></cell>
+			<cell><m> p_2 </m></cell>
+			<cell><m> S(p_1,p_2) </m></cell>
+		</row><row>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+		</row><row>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+		</row><row>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+			<cell><m> \lgctrue </m></cell>
+		</row><row>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgcfalse </m></cell>
+			<cell><m> \lgctrue </m></cell>
+		</row>
+	</tabular>
+	<!-- </sidebyside>
+	</figure> -->
 
 </example>
 

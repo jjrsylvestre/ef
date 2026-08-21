@@ -576,42 +576,52 @@ as well as how much <q>redundancy</q> the graph contains.
 
 	<p>
 	A road map with distances as weights is a weighted graph.
-	Below is a simplified road map of the area around Camrose, Alberta.
+	In <xref ref="figure-graphs-weighted-road-map-graph" /> is a simplified road map of the area around Camrose, Alberta.
 	The vertex set is the set of cities, and the edge set is the set of highways.
 	For example, the two-city set {Camrose, Edmonton} represents the edge on the graph between Camrose and Edmonton, and corresponds to Highway 21.
 	</p>
 
-	<sidebyside widths="53.2% 37%">
-
-		<figure>
-			<caption>Road map of the area around Camrose, Alberta.</caption>
-			<image>
-				<shortdescription> Road map of the area around Camrose, Alberta. </shortdescription>
-				<latex-image label="image-graphs-camrose-highways">
-					<xi:include href="graphs.d/camrose-highways.tex" parse="text" />
-				</latex-image>
-			</image>
-		</figure>
-
-		<figure>
-			<caption>Table of values for distance weight function.</caption>
-			<sidebyside><tabular>
-				<col right="minor" /><col />
-				<row bottom="minor"><cell><m> e </m></cell><cell><m> w(e) </m></cell></row>
-				<row><cell>{Camrose, Edmonton}</cell><cell><m> 94 </m></cell></row>
-				<row><cell>{Edmonton, Leduc}</cell><cell><m> 35 </m></cell></row>
-				<row><cell>{Leduc, Wetaskiwin}</cell><cell><m> 35 </m></cell></row>
-				<row><cell>{Wetaskiwin, Camrose}</cell><cell><m> 40 </m></cell></row>
-			</tabular></sidebyside>
-		</figure>
-
-	</sidebyside>
-
 	<p>
 	The edges in the graph are weighted by the (rounded) highway distances between cities.
 	Formally, this is a function <m> w </m> from the edge set to the natural numbers.
-	The input-output relationship defining this function is tabulated above right.
+	The input-output relationship defining this function is tabulated in <xref ref="table-graphs-weighted-road-map-weights" text="type-global">Figure</xref>.
 	</p>
+
+	<figure xml:id="figure-graphs-weighted-road-map">
+		<caption> A weighted graph and its weight function. </caption>
+
+		<sidebyside widths="53.2% 37%">
+
+			<figure xml:id="figure-graphs-weighted-road-map-graph">
+				<caption> Road map of the area around Camrose, Alberta. </caption>
+				<image>
+					<shortdescription> Road map of the area around Camrose, Alberta. </shortdescription>
+					<latex-image label="image-graphs-camrose-highways">
+						<xi:include href="graphs.d/camrose-highways.tex" parse="text" />
+					</latex-image>
+				</image>
+			</figure>
+
+			<table xml:id="table-graphs-weighted-road-map-weights">
+				<title>
+					Weight function as a table of values,
+					assigning weights (distances) to edges (highways).
+				</title>
+
+				<tabular>
+					<col right="minor" /><col />
+						<row bottom="minor"><cell><m> e </m></cell><cell><m> w(e) </m></cell></row>
+						<row><cell>{Camrose, Edmonton}</cell><cell><m> 94 </m></cell></row>
+						<row><cell>{Edmonton, Leduc}</cell><cell><m> 35 </m></cell></row>
+						<row><cell>{Leduc, Wetaskiwin}</cell><cell><m> 35 </m></cell></row>
+						<row><cell>{Wetaskiwin, Camrose}</cell><cell><m> 40 </m></cell></row>
+				</tabular>
+
+			</table>
+
+		</sidebyside>
+
+	</figure>
 
 </example>
 

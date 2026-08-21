@@ -114,47 +114,50 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 
 	<p>
 	For <m> \Sigma = \ShortEngAlphabet </m>, we have <m> \card{\Sigma} = 26 </m>.
-	Below are two example bijections <m> \funcdef{\varphi,\psi}{\natnumlt{26}}{\Sigma} </m> that verify this cardinality number.
+	Below are two example bijections <m> \funcdef{\varphi,\psi}{\natnumlt{26}}{\Sigma} </m>,
+	either one of which verifies this cardinality number.
 	</p>
 
-	<figure>
+	<!-- <figure>
 		<caption>
 			Bijections <m> \funcdef{\varphi,\psi}{\natnumlt{26}}{\Sigma} </m>
 			defined by a table of values.
 		</caption>
-		<sidebyside><tabular top="medium" bottom="medium" halign="center">
-			<col right="minor" /><col /><col /><col /><col /><col /><col /><col />
-			<row bottom="minor">
-				<cell><m> \sigma </m></cell>
-				<cell><m> 0 </m></cell>
-				<cell><m> 1 </m></cell>
-				<cell><m> 2 </m></cell>
-				<cell><m> 3 </m></cell>
-				<cell><m> \cdots </m></cell>
-				<cell><m> 24 </m></cell>
-				<cell><m> 25 </m></cell>
-			</row><row bottom="minor">
-				<cell><m> \varphi(\sigma) </m></cell>
-				<cell><m> \mathrm{a} </m></cell>
-				<cell><m> \mathrm{b} </m></cell>
-				<cell><m> \mathrm{c} </m></cell>
-				<cell><m> \mathrm{d} </m></cell>
-				<cell><m> \cdots </m></cell>
-				<cell><m> \mathrm{y} </m></cell>
-				<cell><m> \mathrm{z} </m></cell>
-			</row>
-			<row>
-				<cell><m> \psi(\sigma) </m></cell>
-				<cell><m> \mathrm{a} </m></cell>
-				<cell><m> \mathrm{z} </m></cell>
-				<cell><m> \mathrm{b} </m></cell>
-				<cell><m> \mathrm{y} </m></cell>
-				<cell><m> \cdots </m></cell>
-				<cell><m> \mathrm{m} </m></cell>
-				<cell><m> \mathrm{n} </m></cell>
-			</row>
-		</tabular></sidebyside>
-	</figure>
+		<sidebyside> -->
+	<tabular top="medium" bottom="medium" halign="center">
+		<col right="minor" /><col /><col /><col /><col /><col /><col /><col />
+		<row bottom="minor">
+			<cell><m> \sigma </m></cell>
+			<cell><m> 0 </m></cell>
+			<cell><m> 1 </m></cell>
+			<cell><m> 2 </m></cell>
+			<cell><m> 3 </m></cell>
+			<cell><m> \cdots </m></cell>
+			<cell><m> 24 </m></cell>
+			<cell><m> 25 </m></cell>
+		</row><row bottom="minor">
+			<cell><m> \varphi(\sigma) </m></cell>
+			<cell><m> \mathrm{a} </m></cell>
+			<cell><m> \mathrm{b} </m></cell>
+			<cell><m> \mathrm{c} </m></cell>
+			<cell><m> \mathrm{d} </m></cell>
+			<cell><m> \cdots </m></cell>
+			<cell><m> \mathrm{y} </m></cell>
+			<cell><m> \mathrm{z} </m></cell>
+		</row>
+		<row>
+			<cell><m> \psi(\sigma) </m></cell>
+			<cell><m> \mathrm{a} </m></cell>
+			<cell><m> \mathrm{z} </m></cell>
+			<cell><m> \mathrm{b} </m></cell>
+			<cell><m> \mathrm{y} </m></cell>
+			<cell><m> \cdots </m></cell>
+			<cell><m> \mathrm{m} </m></cell>
+			<cell><m> \mathrm{n} </m></cell>
+		</row>
+	</tabular>
+	<!-- </sidebyside>
+	</figure> -->
 
 </example>
 
