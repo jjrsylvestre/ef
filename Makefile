@@ -96,7 +96,6 @@ ${BUILDDIR}/html/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "...calling pretext to compile PreTeXt document"
 	@${PRETEXTDIR}/pretext/pretext \
 	  --verbose \
-	  --config pretext.cfg \
 	  --component all \
 	  --format html \
 	  --publisher html-out.xml \
@@ -121,7 +120,6 @@ ${BUILDDIR}/html/images/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "...(restricted to ${ROOT_XMLID})"
 	@${PRETEXTDIR}/pretext/pretext \
 	  --verbose \
-	  --config pretext.cfg \
 	  --component latex-image \
 	  --format svg \
 	  --restrict ${ROOT_XMLID} \
