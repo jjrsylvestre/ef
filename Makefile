@@ -186,3 +186,4 @@ validate-ptx: ptx
 	    -e "attribute \"xml:base\" not allowed here" >\
 	  ${BUILDDIR}/ptx/${ROOTDOCNAME}-schema-errors.txt
 	@echo "...DONE"
+	@echo "(See ${BUILDDIR}/ptx/${ROOTDOCNAME}-schema-errors.txt)"
