@@ -182,24 +182,25 @@ respective owners.
 	Logical equivalence has the following properties.
 	<ol>
 
-		<li>
-			It is <term>reflexive</term>.
-			That is, <m> A \lgcequiv A </m> is always true.
+		<li><title>Reflexive</title>
+			<p> It is always true that <m> A \lgcequiv A </m>. </p>
 		</li>
 
-		<li>
-			It is <term>symmetric</term>.
-			That is, whenever <m> A \lgcequiv B </m>, then also <m> B \lgcequiv A </m>.
+		<li><title>Symmetric</title>
+			<p> Whenever <m> A \lgcequiv B </m>, then also <m> B \lgcequiv A </m>. </p>
 		</li>
 
-		<li>
-			It is <term>transitive</term>.
-			That is, whenever <m> A \lgcequiv B </m> and <m> B \lgcequiv C </m>, then also <m> A \lgcequiv C </m>.
+		<li><title>Transitive</title>
+			<p> Whenever <m> A \lgcequiv B </m> and <m> B \lgcequiv C </m>, then also <m> A \lgcequiv C </m>. </p>
 		</li>
 
-		<li> Every pair of tautologies is an equivalent pair of logical statements. </li>
+		<li><title>Equivalence of tautologies</title>
+			<p> Every pair of tautologies is an equivalent pair of logical statements. </p>
+		</li>
 
-		<li> Every pair of contradictions is an equivalent pair of logical statements. </li>
+		<li><title>Equivalence of contradictions</title>
+			<p> Every pair of contradictions is an equivalent pair of logical statements. </p>
+		</li>
 
 	</ol>
 </p></proposition>
