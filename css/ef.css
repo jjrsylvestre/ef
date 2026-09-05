@@ -72,6 +72,11 @@ dt {
   font-style: italic;
 }
 
+/* bold for titles of li in theorem-like */
+.ptx-content article.theorem-like li .li--heading-title {
+  font-weight: bold;
+}
+
 /* Chapter root pages: section titles */
 .ptx-content .summary-links li:hover .title {
   font-weight: normal;
@@ -272,7 +277,7 @@ dl.description-list + dl.description-list {
 .ptx-content article.definition-like,
 .ptx-content article.theorem-like,
 .ptx-content article.remark-like,
-.ptx-content section.chapter article.exercise.exercise-like,
+.ptx-content section.section article.exercise.exercise-like,
 .ptx-content section > .para > .description-list
 {
   border-left: 10px solid var(--block-border-color);
@@ -290,11 +295,11 @@ dl.description-list + dl.description-list {
 :root.dark-mode .ptx-content section > .para > .description-list {
   background: color-mix(in oklab, var(--page-color), var(--primary-color) 10%);
 }
-:root:not(.dark-mode) .ptx-content section.chapter article.exercise.exercise-like {
+:root:not(.dark-mode) .ptx-content section.section article.exercise.exercise-like {
   border-left-color: var(--secondary-color);
   background: var(--primary-color-white-95);
 }
-:root.dark-mode .ptx-content section.chapter article.exercise.exercise-like {
+:root.dark-mode .ptx-content section.section article.exercise.exercise-like {
   border-left-color: color-mix(in oklab, var(--uofa-gold), black 20%);
   background: color-mix(in oklab, var(--page-color), var(--uofa-gold) 10%);
 }
