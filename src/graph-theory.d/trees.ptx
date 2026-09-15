@@ -722,7 +722,7 @@ The following algorithm will.
 <p>
 If we carry out either of the depth-first or breadth-first search algorithms,
 but aren't looking for a path between specific vertices, the end result will be a spanning tree for the original graph.
-<dl width="wide">
+<dl width="medium">
 
 	<li>
 		<title>depth-first spanning tree</title>
