@@ -596,7 +596,7 @@ We can do this by constructing a tree <m> T \preceq G </m>.
 				</image>
 			</figure></sidebyside>
 
-			<sidebyside width="72.9%"><figure xml:id="figure-trees-depth-first-result-largest">
+			<sidebyside width="37.3%"><figure xml:id="figure-trees-depth-first-result-largest">
 				<caption>Result of always choosing to move to the next adjacent vertex of largest index.</caption>
 				<image>
 					<shortdescription> Another result tree of depth-first search on an example graph. </shortdescription>
