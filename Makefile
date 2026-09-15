@@ -15,9 +15,10 @@ PRETEXTDIR=./pretext
 ROOT_XMLID=book-elementary-foundations
 REMOTE_LOCATION=
 STIXFONTS_VERSION := $(shell cat stixfonts_version.txt)
+LATEX_IMAGE_PATH=generated/latex-image
 
 .PHONY: ptx validate-xml validate-ptx \
-  html html-images html-fonts html-all html-serve \
+  html html-images html-image-pdfs html-fonts html-all html-serve \
   clean ptx-clean html-clean html-images-clean \
   help list
 
@@ -31,6 +32,7 @@ help:
 	@echo "> html-all           : Perform all steps necessary to create HTML version of the activity set."
 	@echo "> html               : Output (only) HTML files containing all worksheets."
 	@echo "> html-images        : Create SVG image files to accompany the html output for all worksheets."
+	@echo "> html-image-pdfs    : Create PDF image files for the html output."
 	@echo "> html-fonts         : Copy STIX2Text fonts into the HTML build directory."
 	@echo "> html-serve         : Fire up a simple Python web server to locally host the HTML output."
 	@echo "> html-deploy        : rsync HTML files to a remote server."
@@ -68,19 +70,21 @@ html-clean:
 	@-rm -f ${BUILDDIR}/html/*.html
 	@-rm -f ${BUILDDIR}/html/knowl/*.html
 html-images-clean:
-	@-rm -f ${BUILDDIR}/html/images/.sentinel
-	@-rm -f ${BUILDDIR}/html/images/*.svg
+	@-rm -f ${BUILDDIR}/html/${LATEX_IMAGE_PATH}/.sentinel
+	@-rm -f ${BUILDDIR}/html/${LATEX_IMAGE_PATH}/*.svg
 	@-rm -f ${BUILDDIR}/html-image-pdfs/.sentinel
 	@-rm -f ${BUILDDIR}/html-image-pdfs/*.pdf
 
 ptx: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx preprocess.xsl
 html: ${BUILDDIR}/html/.sentinel html-out.xml html-fonts
-html-images: ${BUILDDIR}/html/images/.sentinel
+html-images: ${BUILDDIR}/html/${LATEX_IMAGE_PATH}/.sentinel
+html-image-pdfs: ${BUILDDIR}/html-image-pdfs/.sentinel
 latex: ${BUILDDIR}/latex/${ROOTDOCNAME}.tex
 
 ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx: $(SOURCES) | validate-xml
 	@echo "Consolidating document into one PTX file, output will be placed in ${BUILDDIR}/ptx..."
 	@mkdir -p ${BUILDDIR}/ptx
+	@ln -sf --no-dereference ${BUILDDIR} build
 	@echo "...calling xsltproc..."
 	@xsltproc \
 	  --xinclude \
@@ -93,6 +97,7 @@ ${BUILDDIR}/html/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "Converting PTX to HTML..."
 	@-rm -f ${BUILDDIR}/html/.sentinel
 	@mkdir -p ${BUILDDIR}/html/knowl
+	@ln -sf --no-dereference ${BUILDDIR} build
 	@echo "...calling pretext to compile PreTeXt document"
 	@${PRETEXTDIR}/pretext/pretext \
 	  --verbose \
@@ -112,10 +117,11 @@ ${BUILDDIR}/html/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "   make html-images  (to build SVG images)"
 	@echo "   make html-serve   (to serve the output locally for previewing)"
 
-${BUILDDIR}/html/images/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
+${BUILDDIR}/html/${LATEX_IMAGE_PATH}/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "Generating SVG files for HTML output..."
-	@-rm -f ${BUILDDIR}/html/images/.sentinel
-	@mkdir -p ${BUILDDIR}/html/images
+	@mkdir -p ${BUILDDIR}/html/${LATEX_IMAGE_PATH}
+	@ln -sf --no-dereference ${BUILDDIR} build
+	@-rm -f ${BUILDDIR}/html/${LATEX_IMAGE_PATH}/.sentinel
 	@echo "...calling pretext to generate images"
 	@echo "...(restricted to ${ROOT_XMLID})"
 	@${PRETEXTDIR}/pretext/pretext \
@@ -123,17 +129,18 @@ ${BUILDDIR}/html/images/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	  --component latex-image \
 	  --format svg \
 	  --restrict ${ROOT_XMLID} \
-	  --directory ${BUILDDIR}/html/images \
+	  --directory ${BUILDDIR}/html/${LATEX_IMAGE_PATH} \
 	  ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "...copying institution logo"
 	@-cp images/${BRANDLOGO} ${BUILDDIR}/html/images
-	@touch ${BUILDDIR}/html/images/.sentinel
+	@touch ${BUILDDIR}/html/${LATEX_IMAGE_PATH}/.sentinel
 	@echo "...DONE"
 
 ${BUILDDIR}/html-image-pdfs/.sentinel: ${BUILDDIR}/ptx/${ROOTDOCNAME}.ptx
 	@echo "Generating PDF image files..."
-	@-rm -f ${BUILDDIR}/html-image-pdfs/.sentinel
 	@mkdir -p ${BUILDDIR}/html-image-pdfs
+	@ln -sf --no-dereference ${BUILDDIR} build
+	@-rm -f ${BUILDDIR}/html-image-pdfs/.sentinel
 	@echo "...calling pretext to generate images"
 	@echo "...(restricted to ${ROOT_XMLID})"
 	@${PRETEXTDIR}/pretext/pretext \
