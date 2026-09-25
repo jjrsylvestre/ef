@@ -27,9 +27,9 @@ Follow the steps of <xref ref="procedure-induction-activities" /> to create a pr
 
 		<li> Write the statement with <m> n </m> replaced by <m> k </m>. </li>
 
-		<li> Write the statement with <m> n </m> replaced by <m> k+1 </m>. </li>
+		<li> Write the statement with <m> n </m> replaced by <m> k + 1 </m>. </li>
 
-		<li> Identify the connection between the <m> \nth[k] </m> statement and the <m> \nth[(k+1)] </m> statement. </li>
+		<li> Identify the connection between the <m> \nth[k] </m> statement and the <m> \nth[(k + 1)] </m> statement. </li>
 
 		<li>
 			Complete the <term>induction step</term> by <em>assuming</em> that the <m> n = k </m> version of the statement is <em>true</em>,
@@ -52,12 +52,16 @@ Follow the steps of <xref ref="procedure-induction-activities" /> to create a pr
 </activity>
 
 <activity><p>
-	Prove that for every positive integer <m> n </m>, the binomial <m> 1-x^n </m> can be factored as <m> (1-x)(1+x+x^2+\dotsb + x^{n-1}) </m>.
+	Prove that for every positive integer <m> n </m>,
+	the binomial <m> 1 - x^n </m> can be factored as
+	<md> 1 - x^n = (1 - x) (1 + x + x^2 + \dotsb + x^{n-1}) </md>.
 </p></activity>
 
 <activity>
 
-	<p> Prove that the following argument is valid for all positive integers <m> n </m>. </p>
+	<p>
+	Prove that for every positive integer <m> n </m>,
+	the following argument is valid. </p>
 
 	<tabular halign="left">
 		<row><cell><m> (p_1 \lgcand q_1) \lgccond r_1 </m></cell></row>
@@ -81,7 +85,7 @@ Follow the steps of <xref ref="procedure-induction-activities" /> to create a pr
 
 <activity><p>
 	Prove that a knight can be moved from any square to any other square on an <m> n \times n </m> chess board by some sequence of allowed moves,
-	for every <m> n\ge 4 </m>.
+	for every <m> n \ge 4 </m>.
 </p></activity>
 
 </worksheet>
