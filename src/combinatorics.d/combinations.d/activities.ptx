@@ -55,23 +55,21 @@ respective owners.
 
 	<introduction>
 
+		<p> Consider the Plinko<trademark />-style pyramid in the diagram below. </p>
+
+		<image width="50%">
+			<shortdescription> A pyramid maze.</shortdescription>
+			<latex-image label="image-combinations-plinko">
+				<xi:include href="activities.d/plinko.tex" parse="text" />
+			</latex-image>
+		</image>
+
 		<p>
-		<xref ref="figure-combinations-plinko" /> contains a diagram in a pyramid shape.
 		The unfilled circles represent <q>positions</q> in the pyramid,
 		and the smaller dots represent <q>dividers</q> between positions.
 		Consider <q>paths</q> through this pyramid that begin at the peak position and end on the lowest level.
 		The filled circles joined by line segments represent <em>one</em> such path.
 		</p>
-
-		<figure xml:id="figure-combinations-plinko">
-			<caption>A Plinko<trademark />-style pyramid.</caption>
-			<image width="50%">
-				<shortdescription> A pyramid maze.</shortdescription>
-				<latex-image label="image-combinations-plinko">
-					<xi:include href="activities.d/plinko.tex" parse="text" />
-				</latex-image>
-			</image>
-		</figure>
 
 	</introduction>
 
