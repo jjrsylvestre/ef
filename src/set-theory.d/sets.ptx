@@ -631,7 +631,7 @@ Often we want to distinguish a collection of certain <q>special</q> elements wit
 		<title>complement</title>
 		<idx><h>complement</h><h>set</h></idx>
 		<idx><h>set(s)</h><h>complement</h></idx>
-		<p> the set of elements of <m> U </m> thar are <em>not</em> in <m> A </m> </p>
+		<p> the set of elements of <m> U </m> that are <em>not</em> in <m> A </m> </p>
 	</li>
 
 	<li>
