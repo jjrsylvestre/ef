@@ -209,9 +209,14 @@ article:has(.case)>*:not(:first-child):has(.heading) {
 }
 
 /* use drop-down arrows for expand/collapse instead of chevrons */
-.ptx-toc.focused .toc-item > .toc-title-box > .toc-expander > .icon:before { content: "arrow_drop_down"; }
+/*
+ *  NOW HANDLED WITHIN pretext/jsyl-fork
+ *  BUT if they still don't show up,
+ *  run 'npm install' in the pretext/script/cssbuilder directory
+ */
+/* .ptx-toc.focused .toc-item > .toc-title-box > .toc-expander > .icon:before { content: "arrow_drop_down"; }
 .ptx-toc.focused .toc-item.expanded > .toc-title-box > .toc-expander > .icon:before { content: "arrow_drop_up"; }
-.ptx-toc.focused .toc-item.expanded > .toc-title-box > .toc-expander > .icon { transform: none; }
+.ptx-toc.focused .toc-item.expanded > .toc-title-box > .toc-expander > .icon { transform: none; } */
 
 /* fourth level toc background */
 .ptx-toc .toc-item .toc-item .toc-item .toc-item {
