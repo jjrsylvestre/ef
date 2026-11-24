@@ -26,7 +26,7 @@ but ultimately we will need to analyze how statements can be combined into an <t
 that tries to convince others that some particular <term>conclusion</term> is true.
 </p>
 
-<p><dl width="medium">
+<p xml:id="arg-defnblock-argument"><dl width="medium">
 
 	<li>
 		<title>argument</title>
@@ -145,7 +145,7 @@ regardless of the content and truth/falsity of the individual statements making 
 	Is there a difference?
 </p></insight>
 
-<p><dl width="medium"><li>
+<p xml:id="arg-defnblock-valid"><dl width="medium"><li>
 	<title>valid argument</title>
 	<idx>valid argument</idx>
 	<idx><h>argument</h><h>valid</h></idx>
@@ -495,7 +495,7 @@ regardless of the content and truth/falsity of the individual statements making 
 <subsection>
 <title>Modus ponens</title>
 
-<p><dl width="medium"><li>
+<p xml:id="arg-defnblock-ponens"><dl width="medium"><li>
 	<title>modus ponens</title>
 	<idx>modus ponens</idx>
 
@@ -545,7 +545,7 @@ regardless of the content and truth/falsity of the individual statements making 
 <subsection>
 <title>Modus tollens</title>
 
-<p><dl width="medium"><li>
+<p xml:id="arg-defnblock-tollens"><dl width="medium"><li>
 	<title>modus tollens</title>
 	<idx><h>modus tollens</h><h>standard argument</h></idx>
 
@@ -598,7 +598,7 @@ regardless of the content and truth/falsity of the individual statements making 
 <subsection>
 <title>Law of Syllogism</title>
 
-<p><dl width="medium"><li xml:id="definition-arg-law-of-syllogism">
+<p xml:id="arg-defnblock-syllogism"><dl width="medium"><li xml:id="definition-arg-law-of-syllogism">
 	<title>Law of Syllogism</title>
 	<idx><h>Law</h><h>of Syllogism</h></idx>
 	<idx>Syllogism, Law of</idx>
@@ -621,7 +621,7 @@ regardless of the content and truth/falsity of the individual statements making 
 
 <p> The Law of Syllogism may be extended to chains of conditionals of arbitrary (finite) length. </p>
 
-<p><dl width="medium"><li xml:id="definition-arg-extended-law-of-syllogism">
+<p xml:id="arg-defnblock-extended-syllogism"><dl width="medium"><li xml:id="definition-arg-extended-law-of-syllogism">
 	<title>Extended Law of Syllogism</title>
 	<idx><h>Law</h><h>of Syllogism</h><h>extended</h></idx>
 	<idx><h>Syllogism, Law of</h><h>extended</h></idx>

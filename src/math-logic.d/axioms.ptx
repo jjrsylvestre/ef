@@ -24,7 +24,7 @@ Any mathematical system must have a starting point; we cannot create something o
 The starting point of a mathematical system (or any logical system, for that matter) is a collection of basic terminology accompanied by a collection of assumed facts about the things the terminology describes.
 </p>
 
-<p><dl width="medium">
+<p xml:id="axioms-defnblock-ingredients"><dl width="medium">
 
 	<li>
 		<title>primitive term</title>
@@ -147,7 +147,7 @@ but we can actually prove things from it.
 
 <p> It is often useful to give names to important properties of objects. </p>
 
-<p><dl width="medium">
+<p xml:id="axioms-defnblock-defined"><dl width="medium">
 
 	<li>
 		<title>defined term</title>
@@ -222,7 +222,7 @@ But we can now also prove the following.
 
 </theorem>
 
-<p>
+<p xml:id="axioms-defnblock-model">
 A nonsense system like the one in <xref ref="example-axioms-woozles-dorples" /> is just that <mdash />
 nonsense <mdash />
 and not much use unless there are actual examples to which the developed theory can be applied.

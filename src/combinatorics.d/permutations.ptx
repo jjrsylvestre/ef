@@ -19,7 +19,7 @@ respective owners.
 <section xml:id="section-permutations-factorials">
 <title>Factorials</title>
 
-<p>
+<p xml:id="permutations-defnblock-factorial">
 In counting, factorials come up a lot.
 <dl width="narrow">
 	<li>
@@ -69,7 +69,7 @@ In counting, factorials come up a lot.
 
 <p> We often want to count how many ways we can <q>mix up</q> the objects in a collection. </p>
 
-<p><dl><li>
+<p xml:id="permutations-defnblock-permulation"><dl><li>
 	<title>permutation</title>
 	<idx>permutation</idx>
 	<idx><h>function</h><h>permutation</h></idx>
@@ -529,7 +529,7 @@ Each of the provided proofs for <xref ref="theorem-permutations-counting" /> abo
 <section xml:id="section-permutations-subsets">
 <title>Permutations of subsets</title>
 
-<p>
+<p xml:id="permutations-defnblock-subset-permutation">
 Sometimes we want to create an ordered list of a certain length from a larger pool of candidates.
 <dl width="narrow">
 

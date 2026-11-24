@@ -251,7 +251,7 @@ respective owners.
 
 </example>
 
-<p>
+<p xml:id="bool-alg-defnblock-negation">
 For notation, we borrow symbols <m> \lgcand </m> and <m> \lgcor </m> from logic, but add new negation notation.
 <dl width="narrow">
 	<li>
@@ -272,7 +272,7 @@ we have
 </mrow></md>
 </p>
 
-<p><dl width="wide"><li>
+<p xml:id="bool-alg-defnblock-poly"><dl width="wide"><li>
 	<title>Boolean polynomial</title>
 	<idx><h>Boolean</h><h>polynomial</h></idx>
 	<p>
@@ -283,7 +283,7 @@ we have
 
 <note><p> Every Boolean polynomial can be interpreted as a logical statement. </p></note>
 
-<p>
+<p xml:id="bool-alg-defnblock-special-poly">
 There are two special constant Boolean polynomials.
 <dl width="medium">
 
@@ -360,7 +360,7 @@ There are two special constant Boolean polynomials.
 
 </example>
 
-<p><dl width="wide"><li>
+<p xml:id="bool-alg-defnblock-equiv-poly"><dl width="wide"><li>
 		<title>equivalent polynomials</title>
 		<idx><h>equivalent</h><h>polynomials</h></idx>
 		<p> Boolean polynomials that represent equivalent logical statements </p>
@@ -437,7 +437,7 @@ starting with a desired truth table, can we construct a Boolean polynomial with 
 	then we know we must be either in the input state of the first row <em>or</em> of the fourth row.
 </p></remark>
 
-<p><dl width="medium"><li>
+<p xml:id="bool-alg-defnblock-normal-form"><dl width="medium"><li>
 	<title>disjunctive normal form</title>
 	<idx>disjunctive normal form</idx>
 	<p>

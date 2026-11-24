@@ -22,7 +22,7 @@ respective owners.
 <subsection>
 <title>Terminology and basic concepts</title>
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-basic-defs"><dl width="medium">
 
 	<li xml:id="definition-funcs-working">
 		<title>function (working definition)</title>
@@ -283,7 +283,7 @@ for example, by:
 <subsection xml:id="subsection-funcs-graph">
 <title>Graph of a function</title>
 
-<p><dl width="wide">
+<p xml:id="funcs-defnblock-graph"><dl width="wide">
 
 	<li xml:id="definition-funcs-graph">
 		<title>graph (of a function)</title>
@@ -465,7 +465,7 @@ what is a <q>rule</q>?
 Rather than chasing some circle of definitions, we can come up with a better definition by noticing that the graph of a function contains all the necessary information about the function.
 </p>
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-formal-defn"><dl width="medium">
 	<li xml:id="definition-funcs-formal">
 		<title>function (formal definition)</title>
 		<idx><h>function</h><h>definition</h><h>formal</h></idx>
@@ -554,7 +554,7 @@ sometimes what we think is a function turns out to not be a function.
 <subsection>
 <title>Equality of functions</title>
 
-<p><dl width="narrow"><li xml:id="definition-funcs-equality">
+<p xml:id="funcs-defnblock-equality"><dl width="narrow"><li xml:id="definition-funcs-equality">
 	<title>equality of functions</title>
 	<idx><h>equality</h><h>of functions</h></idx>
 	<idx><h>function</h><h>equality</h></idx>
@@ -573,7 +573,7 @@ sometimes what we think is a function turns out to not be a function.
 <subsection>
 <title>Image of a function</title>
 
-<p><dl width="wide">
+<p xml:id="funcs-defnblock-image"><dl width="wide">
 
 	<li>
 		<title>image of a function</title>
@@ -666,7 +666,7 @@ sometimes what we think is a function turns out to not be a function.
 
 </problem>
 
-<p>
+<p xml:id="funcs-defnblock-subset-image">
 
 <dl width="wide"><li xml:id="definition-funcs-image-on-subset">
 	<title>image of a function on a subset</title>
@@ -704,7 +704,7 @@ sometimes what we think is a function turns out to not be a function.
 <section xml:id="section-funcs-properties">
 <title>Properties of functions</title>
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-surj"><dl width="medium">
 
 	<li>
 		<title>surjective function</title>
@@ -792,7 +792,7 @@ Since we have <m> f(A) \subseteq B </m> by definition of image, to show that a f
 
 </problem>
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-inj"><dl width="medium">
 
 	<li>
 		<title>injective function</title>
@@ -920,7 +920,7 @@ by considering <m> f(A) \subseteq B </m>.
 
 </example>
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-bij"><dl width="medium">
 
 	<li xml:id="definition-funcs-bijective">
 		<title>bijective function</title>
@@ -1023,7 +1023,7 @@ by considering <m> f(A) \subseteq B </m>.
 	Etc.
 -->
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-identity"><dl width="medium">
 
 	<li>
 		<title>identity function (on a set <m> A </m>)</title>
@@ -1045,7 +1045,7 @@ by considering <m> f(A) \subseteq B </m>.
 
 <note><p> An identity function is always a bijection. </p></note>
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-inclusion"><dl width="medium">
 
 	<li>
 	<title>inclusion function (on subset <m> A \subseteq X </m>)</title>
@@ -1071,7 +1071,7 @@ by considering <m> f(A) \subseteq B </m>.
 
 <note><p> An inclusion function is always an injection. </p></note>
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-proj"><dl width="medium">
 
 	<li>
 		<title>projection functions (on Cartesian product <m> A \cartprod B </m>)</title>
@@ -1127,7 +1127,7 @@ by considering <m> f(A) \subseteq B </m>.
 	(except possibly when one or more of the factors in the Cartesian product is the empty set).
 </p></note>
 
-<p>
+<p xml:id="funcs-defnblock-domain-restriction">
 
 <dl width="wide"><li xml:id="definition-funcs-restricting-domain">
 	<title>restricting the domain</title>
@@ -1206,7 +1206,7 @@ by considering <m> f(A) \subseteq B </m>.
 	the image of <m> f </m> on <m> A </m> is the same as the image of the restriction <m> \funcres{f}{A} </m>.
 </p></remark>
 
-<p><dl width="medium"><li xml:id="definition-funcs-restrict-codomain">
+<p xml:id="funcs-defnblock-codomain-restriction"><dl width="medium"><li xml:id="definition-funcs-restrict-codomain">
 	<title>restricting the codomain</title>
 	<idx><h>restriction</h><h sortby="codomain of a function">of the codomain of a function</h></idx>
 	<idx><h>function</h><h>restricting the codomain</h></idx>
@@ -1239,7 +1239,7 @@ by considering <m> f(A) \subseteq B </m>.
 	In particular, if <m> \ifuncdef{f}{X}{Y} </m> is injective, then by restricting the codomain we can obtain a <em>bijection</em> <m> \funcdef{f}{X}{f(X)} </m>.
 </p></note>
 
-<p><dl width="medium"><li>
+<p xml:id="funcs-defnblock-extension"><dl width="medium"><li>
 	<title>extension of a function</title>
 	<idx>extension (of a function)</idx>
 	<idx><h>function</h><h>extension</h></idx>
@@ -1277,7 +1277,7 @@ by considering <m> f(A) \subseteq B </m>.
 One of the most common ways to extend a function to a larger domain is to pick an appropriate constant value in the codomain to assign to all <q>new</q> inputs in the enlarged domain.
 </p>
 
-<p><dl width="medium"><li>
+<p xml:id="funcs-defnblock-ext-by-zero"><dl width="medium"><li>
 	<title>extenstion by zero</title>
 	<idx><h>extension (of a function)</h><h>by zero</h></idx>
 	<idx><h>function</h><h>extension</h><h>by zero</h></idx>
@@ -1324,7 +1324,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 <section xml:id="section-funcs-composition">
 <title>Composition of functions</title>
 
-<p><dl width="medium">
+<p xml:id="funcs-defnblock-comp"><dl width="medium">
 
 	<li>
 		<title>composition function</title>
@@ -1481,7 +1481,7 @@ One of the most common ways to extend a function to a larger domain is to pick a
 <section xml:id="section-funcs-inverses">
 <title>Inverses</title>
 
-<p>
+<p xml:id="funcs-defnblock-inv-image">
 
 Suppose <m> \funcdef{f}{A}{B} </m> is a function.
 By definition, <m> f </m> associates an element of <m> B </m> to each element of <m> A </m>.
@@ -1551,7 +1551,7 @@ We'll begin to answer this question by first finding all possible <q>reverse res
 
 </example>
 
-<p>
+<p xml:id="funcs-defnblock-element-inv-image">
 
 Now let's return to the question of trying to reverse an input-output relationship <m> f(a) = b </m>:
 the set <m> \inv{f}\bbrac{\{b\}} </m> collects together all possible candidates for the inverse image of <m> b </m>.
@@ -1601,7 +1601,7 @@ There are two possible ways that this will fail to give us a function.
 So it seems we will need a function to be <em>bijective</em> in order to be able to reverse the input-output rule to obtain an inverse function.
 </p>
 
-<p>
+<p xml:id="funcs-defnblock-inv-func">
 
 <dl width="medium"><li>
 	<title>inverse function</title>

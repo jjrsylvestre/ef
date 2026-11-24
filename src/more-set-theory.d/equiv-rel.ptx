@@ -35,7 +35,7 @@ respective owners.
 <section xml:id="section-equiv-rel-basics-and-examples">
 <title>Basics and examples</title>
 
-<p>
+<p xml:id="equiv-rel-defnblock-defn">
 What properties should a relation on a set have to be useful as a notion of <q>equivalence</q>?
 
 <ul>
@@ -120,7 +120,7 @@ What properties should a relation on a set have to be useful as a notion of <q>e
 
 </problem>
 
-<p>
+<p xml:id="equiv-rel-defnblock-mod-n">
 Here is an important equivalence relation on <m> \N </m> or on <m> \Z </m>.
 
 <dl width="wide"><li>
@@ -188,7 +188,7 @@ an equivalence relation can be used to group equivalent objects together.
 
 </example>
 
-<p>
+<p xml:id="equiv-rel-defnblock-class">
 
 <dl width="wide"><li>
 	<title>equivalence class (of an element <m> a </m>)</title>
@@ -321,7 +321,7 @@ an equivalence relation can be used to group equivalent objects together.
 
 </proposition>
 
-<p>
+<p xml:id="equiv-rel-defnblock-class-rep">
 <xref ref="proposition-equiv-rel-properties-equal-classes" text="type-local">Statement</xref>
 of <xref ref="proposition-equiv-rel-properties" />
 tells us that any member of an equivalence class may be used to define the class.
@@ -388,7 +388,7 @@ we are deciding to always interchange an element for the chosen representative o
 
 </example>
 
-<p>
+<p xml:id="equiv-rel-defnblock-partition">
 The definition of <term><xref ref="definition-equiv-rel-complete-rep-set" text="title" /></term>
 implicitly assumes that the equivalence classes <q>fill up</q> the whole set <m> A </m>.
 But that is always precisely the case.
@@ -541,7 +541,7 @@ But that is always precisely the case.
 
 </problem>
 
-<p>
+<p xml:id="equiv-rel-defnblock-quotient">
 
 <dl width="wide"><li>
 	<title>quotient (of a set <m> A </m> relative to an equivalence relation <m> \mathord{\equiv} </m>)</title>
@@ -616,7 +616,7 @@ But that is always precisely the case.
 
 </problem>
 
-<p><dl width="wide"><li>
+<p xml:id="equiv-rel-defnblock-projection"><dl width="wide"><li>
 	<title>natural projection (on a set <m> A </m> relative to an equivalence relation <m> \mathord{\equiv} </m>)</title>
 	<idx><h>natural</h><h>projection</h></idx>
 	<idx><h>projection</h><h>natural (onto a quotient)</h></idx>

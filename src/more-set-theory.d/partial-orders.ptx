@@ -59,7 +59,7 @@ respective owners.
 <section xml:id="section-partial-orders-defns-exmps">
 <title>Definition and examples</title>
 
-<p>
+<p xml:id="partial-orders-defnblock-defn">
 Notice that in each of the examples in <xref ref="section-partial-orders-motivation" />,
 the notion of <q>is smaller than</q> is defined via a relation.
 We will use <m> \mathord{\le} </m> on <m> \N </m> as our model for a relation on a set
@@ -338,7 +338,7 @@ Make sure to keep this straight!
 <section xml:id="section-partial-orders-graph">
 <title>Graph for a partial order</title>
 
-<p><dl width="medium"><li>
+<p xml:id="partial-orders-defnblock-hasse"><dl width="medium"><li>
 	<title>Hasse diagram</title>
 	<idx>Hasse diagram</idx>
 	<p>
@@ -396,7 +396,7 @@ Make sure to keep this straight!
 <section xml:id="section-partial-orders-total">
 <title>Total orders</title>
 
-<p><dl width="wide">
+<p xml:id="partial-orders-defnblock-comparable"><dl width="wide">
 
 	<li>
 		<title>comparable elements</title>
@@ -433,7 +433,7 @@ Make sure to keep this straight!
 	As long as each of a pair of subsets contains an element that the other doesn't, then the two will be incomparable by <m> \mathord{\subseteq} </m>.
 </p></example>
 
-<p><dl width="medium">
+<p xml:id="partial-orders-defnblock-total"><dl width="medium">
 
 	<li xml:id="definition-partial-orders-total">
 		<title>total order</title>
@@ -539,7 +539,7 @@ Make sure to keep this straight!
 <section xml:id="section-partial-orders-max-min">
 <title>Maximal/minimal elements</title>
 
-<p>
+<p xml:id="partial-orders-defnblock-bounds">
 Each of the following definitions are for a subset <m> B </m> of a partially ordered set <m> A </m>.
 <dl width="wide">
 
@@ -653,7 +653,7 @@ Each of the following definitions are for a subset <m> B </m> of a partially ord
 	and one can find a greatest lower bound by taking the intersection of all the subsets of <m> U </m> contained in <m> \mathscr{A} </m>.
 </p></example>
 
-<p>
+<p xml:id="partial-orders-defnblock-maximal-minimal">
 The next two definitions are stated for elements in a partially ordered set,
 but could also be understood for elements in a subset of a partially ordered set, as every subset of a partially ordered set is also a partially ordered set.
 <dl width="medium">
@@ -861,7 +861,7 @@ because we risk contradicting the required properties of a partial order
 (see <xref ref="example-partial-orders-failed-top-sorting" />).
 </p>
 
-<p>
+<p xml:id="partial-orders-defnblock-sorting">
 The following definitions apply to a partial order <m> \mathord{\partorder} </m> on a set <m> A </m>.
 <dl width="medium">
 

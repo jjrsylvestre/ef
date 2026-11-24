@@ -48,7 +48,7 @@ if we can match up the elements of <m> A </m> with the elements of <m> \natnumlt
 then <m> A </m> must also contain exactly <m> m </m> elements.
 </p>
 
-<p><dl width="narrow"><li xml:id="definition-cardinality-finite-set">
+<p xml:id="cardinality-defnblock-finite"><dl width="narrow"><li xml:id="definition-cardinality-finite-set">
 	<title>finite set</title>
 	<idx><h>finite</h><h>set</h></idx>
 	<idx><h>set(s)</h><h>finite</h></idx>
@@ -68,7 +68,7 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 
 <exercise><p> Prove <xref ref="fact-cardinality-is-unique" /> in the case of non-empty <m> A </m>. </p></exercise>
 
-<p>
+<p xml:id="cardinality-defnblock-basic-defs">
 
 <dl width="medium"><li xml:id="definition-cardinality-itself">
 	<title>cardinality (of a finite set <m> A </m>)</title>
@@ -175,7 +175,7 @@ then <m> A </m> must also contain exactly <m> m </m> elements.
 	as well.
 	</p>
 
-	<p><dl width="medium"><li xml:id="definition-cardinality-empty-function">
+	<p xml:id="cardinality-defnblock-empty-func"><dl width="medium"><li xml:id="definition-cardinality-empty-function">
 		<title>empty function</title>
 		<idx><h>empty</h><h>function</h></idx>
 		<p> a function with domain <m> \emptyset </m> </p>
@@ -518,7 +518,7 @@ is left to you as <xref ref="exercise-cardinality-finite-subset" />.
 <subsection>
 <title>Infinite sets</title>
 
-<p><dl width="narrow">
+<p xml:id="cardinality-defnblock-inifinte"><dl width="narrow">
 
 	<li>
 		<title>infinite set</title>
@@ -678,7 +678,7 @@ And in this case, by defining <m> \card{A} = m </m>, we are declaring that <m> A
 Expanding on this idea, we can think of <em>every</em> bijection as using the elements of one set to <q>count</q> the elements of another.
 </p>
 
-<p><dl width="narrow"><li xml:id="definition-cardinality-same-size">
+<p xml:id="cardinality-defnblock-same-size"><dl width="narrow"><li xml:id="definition-cardinality-same-size">
 	<title>same size</title>
 	<idx><h>set(s)</h><h>same size</h></idx>
 	<idx>same size (for sets)</idx>

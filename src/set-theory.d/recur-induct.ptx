@@ -20,7 +20,7 @@ respective owners.
 <title>Sequences</title>
 <idx>sequence</idx>
 
-<p>
+<p xml:id="recur-induct-defnblock-counting-set">
 <dl width="medium"><li xml:id="definition-recur-induct-counting-set">
 	<title>counting set</title>
 	<notation>
@@ -37,7 +37,7 @@ In <xref ref="chapter-cardinality" /> we will use these counting sets to, well, 
 For now, we will use them to index the objects in an ordered list.
 </p>
 
-<p>
+<p xml:id="recur-induct-defnblock-seq">
 
 <dl width="medium">
 
@@ -142,7 +142,7 @@ For now, we will use them to index the objects in an ordered list.
 <section xml:id="section-recur-induct-recur-relation">
 <title>Recurrence relations</title>
 
-<p><dl width="medium">
+<p xml:id="recur-induct-defnblock-recur-seq"><dl width="medium">
 
 	<li>
 		<title>recursively-defined sequence</title>
@@ -372,7 +372,7 @@ We can generalize <xref ref="wexample-recur-induct-ball-recurrence" /> by replac
 
 <p> We can use the idea of recursive definitions in a more general manner. </p>
 
-<p><dl width="narrow">
+<p xml:id="recur-induct-defnblock-inductive-defn"><dl width="narrow">
 
 	<li>
 		<title>inductive definition</title>

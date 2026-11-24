@@ -63,7 +63,7 @@ respective owners.
 <section xml:id="section-combinations-basics">
 <title>Basics</title>
 
-<p><dl width="narrow">
+<p xml:id="combinations-defnblock-combinations"><dl width="narrow">
 
 	<li>
 		<title>combination</title>

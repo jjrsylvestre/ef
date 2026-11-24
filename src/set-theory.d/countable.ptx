@@ -26,7 +26,7 @@ then we can think of a bijection <m> \N \to A </m> as <q>counting</q> the elemen
 in exactly the same way that we use our counting sets <m> \natnumlt{m} </m> to count finite sets.
 </p>
 
-<p><dl width="medium">
+<p xml:id="countable-defnblock-basic-defs"><dl width="medium">
 
 	<li>
 		<title>countable</title>
@@ -391,7 +391,7 @@ We know <m> \N </m>, <m> \Z </m>, and <m> \Q </m> all have the same size (counta
 But <m> \R </m> is so large that it is <em>un</em>countable, so it seems like <m> \R </m> should be <q>larger</q> than <m> \N </m>, <m> \Z </m>, and <m> \Q </m>.
 </p>
 
-<p><dl width="narrow">
+<p xml:id="countable-defnblock-relative-size"><dl width="narrow">
 
 	<li xml:id="definition-countable-larger-set">
 		<title>larger set</title>

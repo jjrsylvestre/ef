@@ -56,7 +56,7 @@ respective owners.
 
 <p> Suppose <m> G = (V,E) </m> is a graph. </p>
 
-<p><dl width="medium">
+<p xml:id="paths-defnblock-basic-defs"><dl width="medium">
 
 	<li>
 		<title>walk</title>
@@ -249,7 +249,7 @@ respective owners.
 <section xml:id="section-paths-connected">
 <title>Connected vertices, graphs, and components</title>
 
-<p><dl width="medium">
+<p xml:id="paths-defnblock-connected"><dl width="medium">
 
 	<li xml:id="definition-paths-connected-vertices">
 		<title>connected vertices</title>
@@ -368,7 +368,7 @@ respective owners.
 
 </proposition>
 
-<p>
+<p xml:id="paths-defnblock-components">
 A nonconnected graph can be considered to simply be a collection of connected subgraphs.
 <dl width="wide">
 
@@ -597,7 +597,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 <section xml:id="section-paths-edge-connectivity">
 <title>Articulation vertices, bridges, and edge connectivity</title>
 
-<p><dl width="narrow">
+<p xml:id="paths-defnblock-bridge-articulation"><dl width="narrow">
 
 	<li>
 		<title>articulation vertex</title>
@@ -674,7 +674,7 @@ A nonconnected graph can be considered to simply be a collection of connected su
 	if subgraph <m> G' </m> is connected.)
 </p></remark>
 
-<p><dl width="wide"><li>
+<p xml:id="paths-defnblock-edge-conn"><dl width="wide"><li>
 	<title>edge connectivity</title>
 	<idx><h>edge</h><h>connectivity</h></idx>
 	<idx><h>graph</h><h>edge</h><h>connectivity</h></idx>

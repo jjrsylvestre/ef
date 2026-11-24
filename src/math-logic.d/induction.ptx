@@ -93,7 +93,7 @@ However, this outline does not constitute a proof since it technically uses math
 
 </proof>
 
-<p>
+<p xml:id="induction-defnblock-steps">
 Now, here is some specific terminology associated to proofs by induction.
 <dl width="medium">
 

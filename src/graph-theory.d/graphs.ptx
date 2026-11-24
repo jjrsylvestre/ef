@@ -19,7 +19,7 @@ respective owners.
 <section xml:id="section-graphs-basics">
 <title>Basics and examples</title>
 
-<p><dl width="medium">
+<p><dl xml:id="graphs-defnblock-basic-defs" width="medium">
 
 	<li>
 		<title>graph (working definition)</title>
@@ -169,7 +169,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 <subsection>
 <title>Properties of vertices and edges</title>
 
-<p><dl width="medium">
+<p xml:id="graphs-defnblock-prop-defs"><dl width="medium">
 
 	<li>
 		<title>adjacent vertices</title>
@@ -294,7 +294,7 @@ If <m> e </m> consists of exactly one element of <m> V </m>, draw a line from th
 	</ul>
 </p></example>
 
-<p>
+<p xml:id="graphs-defnblock-num-edges">
 The number of edges in a graph is an important measure both of how <q>connected</q> the graph is,
 as well as how much <q>redundancy</q> the graph contains.
 <dl width="narrow"><li>
@@ -360,7 +360,7 @@ as well as how much <q>redundancy</q> the graph contains.
 <subsection>
 <title>Subgraphs</title>
 
-<p><dl width="narrow">
+<p xml:id="graphs-defnblock-subgraph"><dl width="narrow">
 
 	<li>
 		<title>subgraph</title>
@@ -434,7 +434,7 @@ as well as how much <q>redundancy</q> the graph contains.
 <subsection>
 <title>Complete graphs</title>
 
-<p><dl width="medium">
+<p xml:id="graphs-defnblock-complete"><dl width="medium">
 	<li xml:id="definition-graphs-complete">
 		<title>complete graph</title>
 		<idx>complete graph</idx>
@@ -540,7 +540,7 @@ as well as how much <q>redundancy</q> the graph contains.
 <section xml:id="section-graphs-adding-info">
 <title>Adding information to graphs</title>
 
-<p><dl width="wide">
+<p xml:id="graphs-defnblock-weighted"><dl width="wide">
 
 	<li>
 		<title>weighted graph (working definition)</title>
@@ -636,7 +636,7 @@ as well as how much <q>redundancy</q> the graph contains.
 	</ul>
 </p></example>
 
-<p><dl width="wide">
+<p xml:id="graphs-defnblock-directed"><dl width="wide">
 
 	<li>
 		<title>directed graph (working definition)</title>

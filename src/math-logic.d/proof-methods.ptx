@@ -511,7 +511,7 @@ Again, this also works in the universal case since <m> \forall </m> distributes 
 (<xref ref="proposition-pred-logic-distrib-quants" />).
 </p>
 
-<p><dl width="medium"><li>
+<p xml:id="proof-methods-defnblock-counterexample"><dl width="medium"><li>
 	<title>counterexample</title>
 	<idx>counterexample</idx>
 	<p>
