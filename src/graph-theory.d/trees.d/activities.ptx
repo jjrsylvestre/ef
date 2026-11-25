@@ -55,7 +55,7 @@ respective owners.
 
 <activity xml:id="activity-trees-remove-edge-from-just-a-cycle">
 
-	<p> Suppose that <m> G </m> is a connected graph that <em>consists entirely of</em> a proper cycle. </p>
+	<p> Suppose that <m> G </m> is a simple, connected graph that <em>consists entirely of</em> a proper cycle. </p>
 
 	<image width="17.9%">
 		<shortdescription> A graph that consists entirely of a proper cycle. </shortdescription>
@@ -74,9 +74,9 @@ respective owners.
 <activity xml:id="activity-trees-remove-edge-from-contains-a-cycle">
 
 	<p>
-	Suppose that <m> H </m> is a connected graph that <em>contains</em> a proper cycle.
+	Suppose that <m> H </m> is a simple, connected graph that <em>contains</em> a proper cycle.
 	Let <m> H' </m> represent the subgraph of <m> H </m> that results by removing a single edge from <m> H </m>,
-	where the edge removed is part of the proper cycle that <m> H </m>contains.
+	where the edge removed is part of the proper cycle that <m> H </m> contains.
 	Argue that <m> H' </m> remains connected.
 	</p>
 
