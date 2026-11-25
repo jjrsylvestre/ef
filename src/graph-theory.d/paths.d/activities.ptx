@@ -91,7 +91,7 @@ respective owners.
 <activity xml:id="activity-paths-maximal-simple-nonconnected">
 
 	<p>
-	Suppose <m> G </m> is a simple, nonconnected graph with <m> n </m> vertices that is <term>maximal</term> with respect to these properties.
+	Suppose <m> G </m> is a simple, nonconnected graph with <m> n \ge 2 </m> vertices that is <term>maximal</term> with respect to these properties.
 	That is, if you tried to make a larger graph in which <m> G </m> is a subgraph,
 	this larger graph will lose at least one of the properties (a) simple, (b) nonconnected, or (c) has <m> n </m> vertices.
 	</p>
