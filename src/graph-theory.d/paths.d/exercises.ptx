@@ -88,7 +88,7 @@ respective owners.
 	</p></introduction>
 	<exercise><image width="22.9%">
 		<shortdescription> An example graph for an exercise. </shortdescription>
-		<latex-image labels="image-paths-find-bridges-1">
+		<latex-image label="image-paths-find-bridges-1">
 			<xi:include href="exercises.d/find-bridges-1.tex" parse="text" />
 		</latex-image>
 	</image></exercise>
